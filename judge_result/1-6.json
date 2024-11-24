@@ -1,0 +1,2919 @@
+[
+    {
+        "Q": "Turin的航空公司有哪些？",
+        "A": [
+            "Flight Solutions S.R.L."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Turin\";",
+        "actual_answer": "都灵（Turin）主要由都灵-卡塞莱机场（Turin-Caselle Airport，机场代码TRN）提供服务。从这个机场出发或到达的航空公司较多，有些主要的包括：\n\n1. **意大利航空（Alitalia）**：意大利国家航空公司，提供国内和国际航班。\n2. **蓝色全景航空（Blue Panorama Airlines）**：涵盖几个旅游目的地的航班。\n3. **瑞安航空（Ryanair）**：提供低成本的短途和中途航班，连接许多欧洲城市。\n4. **易捷航空（easyJet）**：另一个为旅客提供经济实惠的欧洲航班的低成本航空公司。\n5. **汉莎航空（Lufthansa）**：德国主要航空公司，提供到德国以及全球多个目的地的航班。\n6. **英国航空（British Airways）**：提供往来伦敦和其他英国城市的航班。\n7. **法航（Air France）**：法国主要航空公司，提供到巴黎及其他国际目的地的航班。\n\n除了以上几家，还有其他一些航空公司提供季节性或特定目的地的航班。航班和航空公司的服务范围可能会根据季节和其他因素有所变化，所以最好在计划旅行前查看最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Oberhasli的航空公司有哪些？",
+        "A": [
+            "Swiss ACM"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Oberhasli\";",
+        "actual_answer": "Oberhasli位于瑞士，是一个相对较小的地区，没有大型的商业机场，因此没有航空公司直接以Oberhasli为基地或枢纽。不过，瑞士的主要航空公司是瑞士国际航空（Swiss International Air Lines），其主要枢纽是苏黎世机场。如果你计划从Oberhasli出发旅行，可以前往较大的城市如苏黎世或日内瓦，那里有更多的航空服务和国际航班选择。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Springdale的航空公司有哪些？",
+        "A": [
+            "Airresource Charter LLC",
+            "Executive Aviation Services"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Springdale\";",
+        "actual_answer": "Springdale 是一个普遍的地名，可能位于不同的地区，如美国的阿肯色州、犹他州等。如果您指的是阿肯色州的Springdale，那么附近的主要机场是西北阿肯色地区机场（Northwest Arkansas National Airport, XNA），这有较多的航空公司运营。\n\n在此机场，通常有以下一些主要航空公司提供服务：\n- 美国航空（American Airlines）\n- 达美航空（Delta Air Lines）\n- 联合航空（United Airlines）\n- 西南航空（Southwest Airlines）\n\n这些航空公司会提供连接到美国各主要城市的航班。具体的航空公司名单和航班信息可能会有所变化，建议查看机场或航空公司的官方网站以获取更新的详情。如您指的是其他州的Springdale，可能需要查找相近主要国际或地区机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Port Clinton的航空公司有哪些？",
+        "A": [
+            "Griffing Flying Service Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Port Clinton\";",
+        "actual_answer": "截至我最新的信息，Port Clinton 是位于美国俄亥俄州的一座小城镇，主要的机场是Erie-Ottawa International Airport (PCW)。由于这是一个较小的区域机场，定期航班非常有限，主要用于通用航空和私人飞机。\n\n因此，Port Clinton当地没有大型商业航空公司运营。如果您需要搭乘商业航班，通常建议通过相对较近的大型机场，例如克利夫兰霍普金斯国际机场（CLE）或托莱多结克伍德县机场（TOL），这些机场有更广泛的航空公司选择和航班服务。\n\n如果你在寻找特定的私人包机服务或小型航空公司服务建议，可以查阅当地的机场信息或联系旅行代理获取最新动态。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Broward County的航空公司有哪些？",
+        "A": [
+            "Plane Travel Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Broward County\";",
+        "actual_answer": "Broward County位于佛罗里达州，该地区的主要机场是劳德代尔堡-好莱坞国际机场（Fort Lauderdale-Hollywood International Airport, FLL）。在这个机场，有多家航空公司提供服务，包括：\n\n1. **美航（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **西南航空（Southwest Airlines）**\n4. **捷蓝航空（JetBlue Airways）**\n5. **精神航空（Spirit Airlines）**\n6. **边疆航空（Frontier Airlines）**\n7. **阿拉斯加航空（Alaska Airlines）**\n\n此外，还有许多国际航空公司从FLL机场运营航班，具体的航空公司名单可能会根据季节和市场需求变化。对于最新的信息，建议查看劳德代尔堡-好莱坞国际机场的官方网站或直接联系航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Prince Albert的航空公司有哪些？",
+        "A": [
+            "Rise Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Prince Albert\";",
+        "actual_answer": "Prince Albert 是加拿大萨斯喀彻温省的一个城市。它的航空服务主要通过当地的 Prince Albert (Glass Field) 机场提供。通常情况下，区域性的航空公司可能会提供飞往萨斯喀彻温省以及周边地区的航班服务。然而，具体的航空公司名单可能会有所变化，您可以查询机场官网或联系机场获取最新的航空公司和航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Zug的航空公司有哪些？",
+        "A": [
+            "Haute Aviation AG",
+            "K5-aviation Gmbh"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Zug\";",
+        "actual_answer": "Zug是瑞士的一个内陆城市，并没有自己的机场，因此没有航空公司总部设在Zug。然而，许多航空公司在瑞士运营，主要通过苏黎世机场（Zurich Airport）、日内瓦国际机场（Geneva International Airport）和巴塞尔-米卢斯机场（EuroAirport Basel-Mulhouse-Freiburg）等主要国际机场进行航班服务。瑞士的主要航空公司是瑞士国际航空公司（Swiss International Air Lines），此外也有许多国际航空公司在瑞士提供服务。如果你需要从Zug出发，可以通过这些机场搭乘航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Richmond的航空公司有哪些？",
+        "A": [
+            "Anderson Air Ltd",
+            "Dominion Aviation Services Inc.",
+            "HeliJet International Inc.",
+            "Million Air Richmond",
+            "London Air Services"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Richmond\";",
+        "actual_answer": "在Richmond，通常指的是美国弗吉尼亚州的里士满（Richmond）国际机场（RIC）。这个机场服务的航空公司包括：\n\n1. **American Airlines** - 提供前往多个目的地的航班。\n2. **Delta Air Lines** - 提供前往主要枢纽机场的航班。\n3. **United Airlines** - 提供飞往多个枢纽和目的地的航班。\n4. **Southwest Airlines** - 以其实惠的票价和飞往多个城市的航班闻名。\n5. **JetBlue Airways** - 提供前往几个主要城市的服务。\n6. **Alaska Airlines** - 通常提供飞往西海岸的航班。\n7. **Spirit Airlines** - 提供低成本航班。\n\n请注意，航空公司提供的服务和目的地可能会随时间变化，因此建议在旅行前查看机场或航空公司官网以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Portsmouth的航空公司有哪些？",
+        "A": [
+            "Air New England LLC.",
+            "Cobalt Air LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Portsmouth\";",
+        "actual_answer": "Portsmouth是一个以海港为主的城市，不是主要的航空枢纽，因此没有大型国际机场。 但以下是一些可能与Portsmouth相关的航空公司信息：\n\n1. **索伦特机场（Solent Airport）**：虽然不是一个主要的商业机场，但可能会有一些小型飞行服务或私人包机。\n\n2. **附近主要机场**：\n    - **南安普顿机场（Southampton Airport）**：位于Portsmouth以北约30公里。主要航空公司包括Flybe、石航（easyJet）和瑞安航空（Ryanair）等。\n    - **伦敦希思罗机场（London Heathrow Airport）**：距离Portsmouth大约100公里，是英国最大的机场之一，有众多国际和国内航空公司运营。\n    - **伦敦盖特威克机场（London Gatwick Airport）**：约在Portsmouth以东约120公里，同样也是一个繁忙的国际机场。\n\n从Portsmouth前往这些机场通常可以通过火车、巴士或自驾等方式实现，因此很多航空公司的服务是通过这些邻近的主要机场提供的。如果您计划从Portsmouth出发前往其他城市或国家，可能需要首先前往这些较大型的机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Schwechat的航空公司有哪些？",
+        "A": [
+            "AC Aviation Charter(Austria)"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Schwechat\";",
+        "actual_answer": "Schwechat是奥地利维也纳的一个地方，该地也是维也纳国际机场（Vienna International Airport，代码：VIE）的所在地。以下是一些通常在维也纳国际机场运营的主要航空公司：\n\n1. **奥地利航空（Austrian Airlines）** - 作为奥地利的国家航空公司，这是机场的主要航空公司之一。\n\n2. **汉莎航空（Lufthansa）** - 德国的主要航空公司，也是星空联盟的一部分。\n\n3. **瑞士国际航空公司（SWISS）** - 瑞士的国家航空公司。\n\n4. **法国航空（Air France）** - 法国国家航空公司。\n\n5. **荷兰皇家航空（KLM）** - 荷兰的国家航空公司。\n\n6. **英国航空（British Airways）** - 英国的国家航空公司。\n\n7. **汉莎航空集团旗下的Eurowings** - 主要提供廉价航班选项。\n\n此外，许多其他国际和地区航空公司也在维也纳国际机场运营，包括低成本航空公司如瑞安航空（Ryanair）和易捷航空（easyJet）等。请注意，航线和航空公司可能会随时间改变，因此在计划旅行时最好查询最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dallas的航空公司有哪些？",
+        "A": [
+            "Aviation Services Elite",
+            "Business Jet Access",
+            "Chairman Aviation",
+            "Jet-ten",
+            "Leviate Air Group",
+            "Liberty Air",
+            "Mach Point Aviation",
+            "North Dallas Aviation",
+            "Professional Aviation Solutions LLC",
+            "Superior Air Charter",
+            "Trinity Private Jet Charter"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Dallas\";",
+        "actual_answer": "Dallas有两个主要机场：达拉斯-沃思堡国际机场（DFW）和达拉斯爱田机场（DAL）。在这些机场，运营的主要航空公司包括：\n\n1. **达拉斯-沃思堡国际机场（DFW）**：\n   - **美国航空（American Airlines）**：DFW是美国航空的一个主要枢纽。\n   - **联合航空（United Airlines）**\n   - **达美航空（Delta Air Lines）**\n   - **西南航空（Southwest Airlines）**\n   - **精神航空（Spirit Airlines）**\n   - **阿拉斯加航空（Alaska Airlines）**\n   - **捷蓝航空（JetBlue Airways）**\n   - 还有许多国际航空公司，如英国航空（British Airways）、空中法国（Air France）、阿联酋航空（Emirates）等。\n\n2. **达拉斯爱田机场（DAL）**：\n   - **西南航空（Southwest Airlines）**：这是其重要的运营基地。\n   - 其他较小规模的航班由达美航空（Delta Air Lines）和美国航空（American Airlines）等提供。\n\n请注意，航班和运营可能会随时间变化，建议在旅行前核实最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Varazdin的航空公司有哪些？",
+        "A": [
+            "Winair Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Varazdin\";",
+        "actual_answer": "截至我最后的更新时间，瓦拉日丁（Varazdin）并没有大型的国际机场，因此没有主要航空公司直接在瓦拉日丁运营。要搭乘航空公司航班，通常需要从附近的大型机场出发，如克罗地亚首都萨格勒布的弗拉诺·图季曼机场（Zagreb Franjo Tuđman Airport），那里有多家国际和区域性航空公司运营航班。如果需要前往瓦拉日丁，可以从萨格勒布机场搭乘汽车，巴士或火车。是否有新的航空服务会在以后加入，可查阅最近的旅行公告或机场信息。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Warsaw的航空公司有哪些？",
+        "A": [
+            "AMC Aviation",
+            "Call & Fly",
+            "Image Air Charter",
+            "Jet Story",
+            "Smart Jet Sp Z O.O."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Warsaw\";",
+        "actual_answer": "截至2023年，华沙的主要航空公司包括：\n\n1. **LOT波兰航空** - 这是波兰的国家航空公司，总部设在华沙肖邦机场（Warsaw Chopin Airport），提供国内和国际航班服务。\n\n2. **Ryanair** - 作为欧洲最大的低成本航空公司之一，Ryanair在华沙经营多个航点，主要从华沙莫德林机场（Warsaw Modlin Airport）起飞。\n\n3. **Wizz Air** - 另一家著名的低成本航空公司，提供从华沙飞往欧洲各大城市的航班，多数航班也从华沙肖邦机场运营。\n\n4. **Lufthansa、Air France、KLM等国际航空公司** - 这些航司提供从华沙起飞飞往全球各地的航班。\n\n这些航空公司通过华沙的主要机场提供广泛的国内和国际航班服务。具体航班信息可能会有所变化，建议直接在航空公司官网或旅行平台上查询以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Malta的航空公司有哪些？",
+        "A": [
+            "Air Horizont Ltd",
+            "Jetclub Malta Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Malta\";",
+        "actual_answer": "截至我的信息更新时间，主要的马耳他航空公司有：\n\n1. **马耳他航空公司（Air Malta）**：这是马耳他的国家航空公司，提供飞往欧洲及其他地区的航班服务。\n\n请注意，航空业的状况可能会随着时间的推移发生变化，因此建议在旅行前查阅最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Nassau的航空公司有哪些？",
+        "A": [
+            "Azure Aviation Ltd",
+            "Blessings Aviation Charter",
+            "Exclusive Aviation",
+            "Southern Air Charter",
+            "Titan Air Ltd",
+            "Trans Island Airways"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Nassau\";",
+        "actual_answer": "Nassau，位于巴哈马，是一个受欢迎的旅游目的地，尤其以其美丽的海滩和度假村闻名。从北美、欧洲和加勒比地区，有多家航空公司提供飞往拿骚的航班。 主要的航空公司包括：\n\n1. **巴哈马航空（Bahamasair）** - 这是巴哈马的国家航空公司，提供往返加勒比地区、中美洲和美国的一些航班。\n\n2. **美国航空（American Airlines）** - 提供从多个美国城市如迈阿密、夏洛特等飞往拿骚的航班。\n\n3. **达美航空（Delta Air Lines）** - 提供从美国主要城市如亚特兰大、纽约等飞往拿骚的航班。\n\n4. **联合航空（United Airlines）** - 提供从美国主要城市如纽瓦克等飞往拿骚的航班。\n\n5. **西南航空（Southwest Airlines）** - 提供从美国一些城市飞往拿骚的航班。\n\n6. **捷蓝航空（JetBlue Airways）** - 从美国东海岸的几个城市如纽约、波士顿等提供航班服务。\n\n7. **边疆航空（Frontier Airlines）** - 提供从美国一些城市飞往拿骚的低成本航班。\n\n此外，还有一些其他的航空公司也提供季节性或包机航班服务，尤其是在旅游旺季时。建议在计划旅行时查看各大航空公司的官方网站或旅游网站，以获取最准确的航班信息和航班安排。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Brooksville的航空公司有哪些？",
+        "A": [
+            "Global Jetcare",
+            "Jet I.C.U."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Brooksville\";",
+        "actual_answer": "Brooksville，位于佛罗里达州，虽然有一个当地的机场——Brooksville-Tampa Bay Regional Airport（以前称为Hernando County Airport），但它主要服务于通用航空和私人飞行，并不提供商业航空公司的定期航班服务。对于商业航班服务，你可能需要前往较大的机场，例如坦帕国际机场（Tampa International Airport），那里有多家航空公司提供国内和国际航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ogden的航空公司有哪些？",
+        "A": [
+            "CB Skyshare"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Ogden\";",
+        "actual_answer": "截至我所知，Ogden位于犹他州，主要的航空公司服务于Ogden-Hinckley机场（OGD）的航班较为有限。通常，该机场的商业航空服务包括一些廉价航空公司，如Allegiant Air。这些航班主要集中在到拉斯维加斯、洛杉矶等地的定期航线。但由于航线和航空公司服务可能随时变化，建议您直接查询机场官方网站或与航空公司联系以获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Saguenay–Lac-Saint-Jean的航空公司有哪些？",
+        "A": [
+            "Exact Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Saguenay–Lac-Saint-Jean\";",
+        "actual_answer": "Saguenay–Lac-Saint-Jean地区的主要机场是Saguenay-Bagotville机场（YBG），它服务于该地区的航空需求。虽然具体的航空公司可能会随着时间的推移而变化，但传统上，一些常见的航空公司可能包括：\n\n1. **Air Canada**: 通常提供往返大城市（如蒙特利尔）的航班。\n   \n2. **Pascan Aviation**: 一家区域性航空公司，可能提供省内其他城市间的航班。\n\n3. **其他包机航空公司**：根据季节和需求的不同，可能会有其他提供包机服务的小型航空公司。\n\n如果你计划旅行，建议直接查看Saguenay-Bagotville机场的官方网站或联系航空公司获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Oberbayern的航空公司有哪些？",
+        "A": [
+            "Aeroways GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Oberbayern\";",
+        "actual_answer": "Oberbayern（上巴伐利亚）是德国巴伐利亚州的一个地区，其主要城市包括慕尼黑。虽然Oberbayern本身并没有自己的“区域性航空公司”，但慕尼黑国际机场（Flughafen München）是一个主要的国际枢纽机场，多个航空公司在此运营。以下是一些在慕尼黑机场运营的重要航空公司：\n\n1. **汉莎航空（Lufthansa）**：德国的旗舰航空公司，在慕尼黑拥有一个重要的枢纽，提供广泛的国际和国内航班。\n\n2. **德国之翼（Eurowings）**：作为汉莎航空集团的一部分，提供许多欧洲境内的航班。\n\n3. **柏林航空（Air Berlin）**：虽然此公司在2017年停止了运营，但之前在慕尼黑也曾有大量航班。\n\n4. **德国渡鸦航空（Condor）**：提供一些长途和休闲目的地的航班。\n\n5. **TUIfly**：专注于休闲和度假目的地。\n\n此外，很多其他国际和欧洲航空公司也在慕尼黑提供服务，比如英国航空（British Airways）、法荷航（Air France-KLM）、土耳其航空（Turkish Airlines）等。慕尼黑机场的业务覆盖范围非常广泛，所以可以在这里找到几乎所有主要的国际航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Oshawa的航空公司有哪些？",
+        "A": [
+            "Smoothair Charter"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Oshawa\";",
+        "actual_answer": "截至我最新的数据，Oshawa没有主要的商用航空公司，因为Oshawa Executive Airport (CYOO)主要服务于私人、企业和一些小型包机航班。如果你需要从Oshawa出发乘坐商用航班，你通常可以前往相对较近的皮尔逊国际机场（Toronto Pearson International Airport，YYZ），这个机场是多伦多的主要国际机场，由多家国际和国内航空公司运营，包括加拿大航空（Air Canada）、西捷航空（WestJet）等。\n\n如果你需要从Oshawa出发安排航班，通常会考虑通过多伦多皮尔逊机场等大机场来进行旅行规划。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Rhône的航空公司有哪些？",
+        "A": [
+            "Jetcorp"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Rhône\";",
+        "actual_answer": "Rhône是法国的一个区域，不是一个拥有自己航空公司的国家。然而，该地区有一些主要的机场，比如里昂圣埃克苏佩里机场（Lyon-Saint Exupéry Airport），这个机场有许多航空公司提供服务，包括：\n\n1. 法国航空公司（Air France）\n2. 易捷航空（easyJet）\n3. 汉莎航空（Lufthansa）\n4. 瑞士国际航空（SWISS）\n5. 英国航空（British Airways）\n\n这些航空公司提供各种国内和国际航班。如果你有特定的航空公司或航班需求，可以查看相关机场的详细信息或直接访问航空公司官网以获取更多准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Le Havre的航空公司有哪些？",
+        "A": [
+            "Phenix Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Le Havre\";",
+        "actual_answer": "截至我的知识更新时间，勒阿弗尔（Le Havre）没有大型的国际机场，所以没有基于勒阿弗尔的主要航空公司。最接近勒阿弗尔的国际机场是巴黎的戴高乐机场（CDG）和奥利机场（ORY），而勒阿弗尔的小型机场，例如勒阿弗尔-奥克特维尔机场（Le Havre Octeville Airport，IATA: LEH），主要服务于短途航班和私人飞机。一般情况下，这些小机场不会有大型航空公司运营。如果你计划飞往或从勒阿弗尔出发，通常需要通过巴黎等较大的国际机场进行中转。建议查看相关机场的网站或旅行预订平台，以获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "San Antonio的航空公司有哪些？",
+        "A": [
+            "Encore Jet Management LLC",
+            "Merlin One",
+            "Stargazer Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"San Antonio\";",
+        "actual_answer": "截至我所知，圣安东尼奥国际机场（San Antonio International Airport, SAT）有多家航空公司运营。主要的航空公司包括：\n\n1. **美联航（United Airlines）**\n2. **美国航空（American Airlines）**\n3. **西南航空（Southwest Airlines）**\n4. **达美航空（Delta Air Lines）**\n5. **边疆航空（Frontier Airlines）**\n6. **阿拉斯加航空（Alaska Airlines）**\n7. **捷蓝航空（JetBlue Airways）**\n\n这些航空公司提供飞往美国国内多个城市以及一些国际目的地的航班。航线和航空公司可能会有所变化，所以建议查看圣安东尼奥国际机场的官方网站或直接与航空公司确认以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Martinsburg的航空公司有哪些？",
+        "A": [
+            "International Group LLC",
+            "MRB Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Martinsburg\";",
+        "actual_answer": "Martinsburg 位于美国西弗吉尼亚州，服务这一地区的主要机场是位于附近的Eastern West Virginia Regional Airport，也称为Shepherd Field。这是一个相对较小的机场，主要用于通用航空，因此没有大型商业航空公司在此运营定期的商业航班。\n\n居民通常会选择前往附近的大型机场进行旅行，例如：\n\n1. 华盛顿杜勒斯国际机场（IAD） - 位于弗吉尼亚州，提供多家国内和国际航空公司的服务。\n2. 巴尔的摩-华盛顿国际机场（BWI） - 位于马里兰州，也有多家航空公司提供服务。\n3. 华盛顿里根国家机场（DCA） - 位于华盛顿特区，主要运营国内航班。\n\n如果您在Martinsburg，希望搭乘商业航班，可能需要从这些较大的机场之一出发。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pittsfield的航空公司有哪些？",
+        "A": [
+            "Lyon Aviation Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Pittsfield\";",
+        "actual_answer": "截至目前，Pittsfield通常没有大型商用航空公司直接服务。Pittsfield，位于马萨诸塞州，一般由Pittsfield Municipal Airport（皮茨菲尔德市立机场）提供航空服务。这个机场主要用于通用航空，包括私人飞机和小型商业航班。\n\n对于商业航班，最近的主要机场是Albany International Airport（奥尔巴尼国际机场）或是Bradley International Airport（布拉德利国际机场），这两个机场提供多家大型航空公司的服务。如果你需要从Pittsfield飞往其他城市，通常需要从这些较大机场出发。建议查看具体机场和航空公司的信息来获取更详细的服务内容。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Helena的航空公司有哪些？",
+        "A": [
+            "Exec Air Montana, Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Helena\";",
+        "actual_answer": "Helena并不是一个以航空公司闻名的地方，所以可能需要进一步澄清是指哪个地区或哪种背景下的“Helena”。然而，如果你说的是美国蒙大拿州的海伦娜（Helena），那里的主要机场是海伦娜地区机场（Helena Regional Airport），但并没有特定的“Helena航空公司”。提供服务的航空公司可能包括美国境内一些主要航空公司，如达美航空、美联航等，它们提供往返于主要城市的航班。如果你需要的是具体的航空公司名称，请提供更多背景信息以便更准确地回答。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mississauga的航空公司有哪些？",
+        "A": [
+            "FlyXcite"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Mississauga\";",
+        "actual_answer": "Mississauga位于加拿大安大略省，是多伦多皮尔逊国际机场（Toronto Pearson International Airport, 代码：YYZ）的所在地。以下是一些常见的航空公司，在该机场运营：\n\n1. **加拿大航空（Air Canada）** - 加拿大的国家航空公司，提供国内和国际航班。\n2. **西捷航空（WestJet）** - 加拿大的主要航空公司之一，服务于多个国内和国际目的地。\n3. **航空公司爵士乐（Air Jazz）** - 加拿大航空的区域性合作伙伴，提供一些短途航班。\n4. **加航Rouge（Air Canada Rouge）** - 加拿大航空旗下的休闲航空品牌。\n5. **夸斯航空（Air Transat）** - 主要提供包机和度假目的地的航班。\n6. **Porter航空公司（Porter Airlines）** - 提供区域和部分国际航线的优质服务。\n7. **太阳之翼航空公司（Sunwing Airlines）** - 主要服务于度假和旅游目的地。\n8. **Flair航空公司（Flair Airlines）** - 低成本航空公司，提供国内和国际航班。\n\n此外，来自世界各地的许多国际航空公司，例如美国航空、英国航空、德国汉莎航空、阿联酋航空等，也在多伦多皮尔逊国际机场有运营。不同航空公司提供的航班会根据季节和需求有所调整。建议直接查阅航空公司官网或机场公告以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Long Beach的航空公司有哪些？",
+        "A": [
+            "Alerion Aviation",
+            "Nexjet Corporation",
+            "Quantum Jets",
+            "Speedbird Jets"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Long Beach\";",
+        "actual_answer": "截至目前，长滩市（Long Beach）的主要机场是长滩机场（Long Beach Airport, LGB）。在这里运营的航空公司相对较少，但通常包括以下几家：\n\n1. **西南航空（Southwest Airlines）** - 提供多条国内航线。\n2. **美鹰航空（American Eagle）** - 通常作为美国航空的区域品牌，提供一些国内航线。\n\n其他航空公司可能会临时或季节性地在长滩机场运营。由于航班安排和航空公司选择可能会经常更改，建议您访问长滩机场的官方网站或直接与航空公司联系，以获取最新的航班信息和航空公司列表。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Renton的航空公司有哪些？",
+        "A": [
+            "Seattle Aircraft Charter"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Renton\";",
+        "actual_answer": "截至目前，Renton位于华盛顿州，主要以波音的飞机制造工厂而闻名。Renton并没有自己的商业机场，因此没有直接运营的航空公司。然而，Renton附近的西雅图-塔科马国际机场（Sea-Tac）是区内主要的商业机场，许多大型航空公司在此运营，包括：\n\n1. 美国航空（American Airlines）\n2. 达美航空（Delta Air Lines）\n3. 联合航空（United Airlines）\n4. 阿拉斯加航空（Alaska Airlines）\n5. 西南航空（Southwest Airlines）\n\n如果你是要从Renton出发乘坐航班，通常需要前往Sea-Tac机场。在Renton机场（Renton Municipal Airport），主要是私人和包机服务，而不是商业航班。如果你有更多特定需求或计划，建议查看各航空公司官网或联系旅游代理。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Spartanburg的航空公司有哪些？",
+        "A": [
+            "Aloft Aviation Services LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Spartanburg\";",
+        "actual_answer": "在Spartanburg地区，主要的航空交通枢纽是格林维尔-斯帕坦堡国际机场（GSP）。一些主要航空公司在这个机场提供服务，包括：\n\n1. **美鹰航空（American Eagle）** - 这是美国航空的区域性航线运营商。\n2. **达美连线航空（Delta Connection）** - 由达美航空运营的一些区域航班。\n3. **联合快运（United Express）** - 这是美国联合航空的区域性服务。\n4. **美国精神航空（Spirit Airlines）** - 提供一些经济航班选项。\n\n这些航空公司通过GSP机场连接Spartanburg与其他主要城市和枢纽。如果你计划从这个地区乘飞机，可以查看这些航空公司的航班安排以找到合适的航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bremen的航空公司有哪些？",
+        "A": [
+            "Atlas Air Service"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bremen\";",
+        "actual_answer": "截至我所知的最新信息，以下是一些在德国不来梅（Bremen）附近运营的航空公司：\n\n1. **汉莎航空公司（Lufthansa）** - 作为德国的国家航空公司，汉莎航空通常提供从不来梅机场（Bremen Airport）出发的连接航班。\n\n2. **瑞安航空（Ryanair）** - 作为一家低成本航空公司，瑞安航空在不来梅机场运营航班，涵盖多个欧洲目的地。\n\n3. **布鲁塞尔航空（Brussels Airlines）** - 这家航空公司可能提供往返不来梅的航班，具体航线可能根据季节变化。\n\n4. **葡萄牙航空（TAP Air Portugal）** - 提供连接葡萄牙与德国之间的航班。\n\n请注意，航空公司的运营情况可能会因市场需求和季节性变化而有所不同。因此，在计划旅行时，建议查看不来梅机场的官方网站或直接联系航空公司以获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mountain View的航空公司有哪些？",
+        "A": [
+            "Aero Sotravia"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Mountain View\";",
+        "actual_answer": "Mountain View位于加利福尼亚州硅谷的中心，是许多高科技公司的总部所在地。然而，Mountain View本身并没有机场。因此，没有真正的航空公司以Mountain View为基地或从这里起飞。\n\n最近的主要机场是位于圣荷西的诺曼·峰田圣荷西国际机场（SJC），以及旧金山国际机场（SFO）和奥克兰国际机场（OAK）。这些机场由多家航空公司运营，从主要的国际航线到国内短途航班均有涵盖。如果你需要从Mountain View出行，通常需要前往这些机场之一。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Orange County的航空公司有哪些？",
+        "A": [
+            "Foundation Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Orange County\";",
+        "actual_answer": "位于加利福尼亚州的橙县（Orange County）主要由圣安娜的约翰·韦恩机场（John Wayne Airport, SNA）服务。几家主要航空公司在这个机场提供国内和国际航班服务。以下是一些常见的航空公司：\n\n1. **American Airlines** - 提供多条国内航线，并连接一些国际目的地。\n2. **Delta Air Lines** - 主要飞往国内主要城市，也提供一些国际航班。\n3. **Southwest Airlines** - 著名的低成本航空公司，覆盖广泛的国内线路。\n4. **United Airlines** - 运营众多国内航班，连接多个国际目的地。\n5. **Alaska Airlines** - 主要专注于美国西海岸及部分国际航线。\n6. **JetBlue Airways** - 提供高性价比的国内航线服务。\n7. **Frontier Airlines** - 以低票价著称，主要提供国内航班。\n\n这些航空公司定期调整航线和服务，因此建议查阅约翰·韦恩机场的官方网站或各航空公司的官网以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Curitiba的航空公司有哪些？",
+        "A": [
+            "Taxi Aereo Hercules"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Curitiba\";",
+        "actual_answer": "截至目前，库里提巴的主要机场是阿方索·彭纳国际机场（Aeroporto Internacional Afonso Pena，代码：CWB）。从该机场运营的主要航空公司包括：\n\n1. 拉塔姆巴西航空公司（LATAM Brasil）\n2. 高尔航空（GOL Linhas Aéreas）\n3. 阿苏尔巴西航空公司（Azul Linhas Aéreas）\n4. 维亚航空（Voepass Linhas Aéreas）\n\n这些航空公司提供国内和部分国际航线的航班服务。具体航线和服务可能会有所变化，建议在出行前查阅相关航空公司的官方网站或直接联系机场以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Smyrna的航空公司有哪些？",
+        "A": [
+            "Contour Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Smyrna\";",
+        "actual_answer": "Smyrna位于美国田纳西州，如果你指的是Smyrna机场（Smyrna/Rutherford County Airport Authority），这通常是一个较小的地区性机场，而不是一个有商业航空公司运营的主要机场。商业航空公司通常在更大的区域机场，比如纳什维尔国际机场（BNA）运营。\n\n在纳什维尔国际机场，你可以找到多家航空公司，包括但不限于：\n\n- 美国航空（American Airlines）\n- 达美航空（Delta Air Lines）\n- 联合航空（United Airlines）\n- 西南航空（Southwest Airlines）\n- 捷蓝航空（JetBlue Airways）\n- 边疆航空（Frontier Airlines）\n\n对于更具体的信息或私人包机服务，你可能需要直接联系Smyrna机场或查看其官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lexington的航空公司有哪些？",
+        "A": [
+            "Air Business LLC",
+            "Nexgen Aviation",
+            "Triton Airways LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lexington\";",
+        "actual_answer": "截至我的知识更新到2023年，蓝草机场（Blue Grass Airport，代码LEX）是服务于肯塔基州列克星敦的主要机场。该机场有几家主要的航空公司提供服务，包括：\n\n1. **美国航空**（American Airlines）\n2. **达美航空**（Delta Air Lines）\n3. **西南航空**（Southwest Airlines）\n4. **联合航空**（United Airlines）\n\n这些航空公司提供从列克星敦前往其他大城市的直飞航班以及转机服务。航线和运营航空公司可能会有变化，建议在计划旅行时核实最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Buenos Aires的航空公司有哪些？",
+        "A": [
+            "Aerorutas",
+            "Argentina Jets",
+            "Baires Fly S.A",
+            "Dos Mil Aerosistema S.A.",
+            "Flyzar",
+            "Jag Executive Aviation",
+            "Pacific Ocean SA",
+            "Royal Class",
+            "Sundown Jet S.A."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Buenos Aires\";",
+        "actual_answer": "截至我最后的更新时间，布宜诺斯艾利斯主要有两个国际机场：埃塞萨国际机场（Ministro Pistarini International Airport，通常简称EZE）和豪尔赫·纽贝里机场（Aeroparque Jorge Newbery，通常简称AEP）。在这些机场运营的主要航空公司包括：\n\n1. **Aerolíneas Argentinas**（阿根廷航空）：这是阿根廷的国家航空公司，提供国内和国际航班。\n\n2. **LATAM Airlines**：这是一家总部位于智利的航空公司，在南美洲提供广泛的航班网络。\n\n3. **Avianca**：一家哥伦比亚的航空公司，提供从布宜诺斯艾利斯到其他国际目的地的航班。\n\n4. **Gol Linhas Aéreas**：一家巴西的航空公司，提供主要往返巴西和其他南美国家的航班。\n\n5. **American Airlines**、**Delta Air Lines** 和 **United Airlines**：这些美国航空公司提供从布宜诺斯艾利斯飞往美国多个城市的直飞航班。\n\n6. **Air France**、**Lufthansa** 和 **British Airways**：这些欧洲航空公司提供连接布宜诺斯艾利斯和欧洲主要城市的航班。\n\n此外，还有其他国际和地区性航空公司在布宜诺斯艾利斯两个主要机场运营。具体航班信息可能会有所变化，建议在旅行前查询相关航空公司的网站或联系旅行代理以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Landvetter的航空公司有哪些？",
+        "A": [
+            "Jivair AB"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Landvetter\";",
+        "actual_answer": "Landvetter 机场是位于瑞典哥德堡的主要国际机场，正式名称为哥德堡-兰德维特机场（Göteborg Landvetter Airport）。这座机场服务于多个国际和国内航班，以下是一些常见在Landvetter运营的航空公司：\n\n1. 瑞典航空公司（SAS）\n2. 挪威航空（Norwegian Air Shuttle）\n3. 汉莎航空（Lufthansa）\n4. 英国航空（British Airways）\n5. 北欧航空（Finnair）\n6. 荷兰皇家航空（KLM）\n7. 瑞安航空（Ryanair）\n8. 易捷航空（easyJet）\n9. 德国之翼（Eurowings）\n10. 法国航空（Air France）\n\n请注意，航空公司和航线可能会随市场需求和季节变化有所调整，因此在计划旅行时建议查看航班的最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ithaca的航空公司有哪些？",
+        "A": [
+            "Taughannock Aviation Corp."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Ithaca\";",
+        "actual_answer": "截至2021年，伊萨卡（Ithaca）汤普金斯国际机场（Ithaca Tompkins International Airport）的一些主要航空公司包括：\n\n1. 达美航空（Delta Air Lines）\n2. 联合航空（United Airlines）\n3. 美国航空（American Airlines）\n\n航空公司和航班的运营可能会有所变化，建议你在旅行之前查阅最新的航班信息或直接联系机场进行确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Plovdiv的航空公司有哪些？",
+        "A": [
+            "Paradox Jets Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Plovdiv\";",
+        "actual_answer": "截至我所知，普罗夫迪夫（Plovdiv）主要由普罗夫迪夫国际机场（Plovdiv International Airport）提供服务。虽然这个机场较小，但有几家航空公司可能会提供从普罗夫迪夫出发或到达的航班。不过，由于航空公司的航班计划经常变动，建议您查看普罗夫迪夫国际机场的官方网站或直接联系航空公司以获取最新的信息。\n\n请注意，这里提供的信息可能已经过时或者不完整，所以确认当前航班信息最好通过官方途径。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Yaba的航空公司有哪些？",
+        "A": [
+            "Falcon Aerospace Limited"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Yaba\";",
+        "actual_answer": "Yaba 是尼日利亚拉各斯的一個地區，本身並没有机场，因此在 Yaba 區本身沒有航空公司。然而，拉各斯是尼日利亚最大城市之一，其主要机场是穆尔塔拉·穆罕默德国际机场（Murtala Muhammed International Airport），位于 Ikeja 区，这里有众多航空公司运营，包括尼日利亚本土航空公司和国际航空公司。例如：\n\n1. 尼日利亚航空（Air Peace）\n2. 阿里克航空（Arik Air）\n3. 达纳航空（Dana Air）\n4. 曼达航空（Med-View Airline）\n5. 伊比欧航空（Ibom Air）\n\n还有其他许多国际航班公司，如阿联酋航空、英国航空、法国航空等都在拉各斯的主要机场提供服务。如果你想了解更多航空公司信息，可以查看机场官方网站或各航空公司的官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Nairobi的航空公司有哪些？",
+        "A": [
+            "East African Air Charters"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Nairobi\";",
+        "actual_answer": "Nairobi是肯尼亚的首都和最大的城市，它的主要机场是乔莫·肯雅塔国际机场（Jomo Kenyatta International Airport，IATA代码：NBO）。以下是一些在此机场运营的主要航空公司：\n\n1. **肯尼亚航空（Kenya Airways）** - 这是肯尼亚的国家航空公司，也是该机场的主要承运商，提供广泛的国内和国际航班。\n\n2. **Fly540** - 一家区域性航空公司，提供肯尼亚境内及部分东非国家的航班服务。\n\n3. **Jambojet** - 是肯尼亚航空的子公司，主要运营廉价航班，服务于国内多个城市。\n\n4. **Safarilink** - 提供往返野生动物保护区及其他旅游目的地的航班服务。\n\n此外，也有众多国际航空公司通过乔莫·肯雅塔国际机场运营，如：\n\n- 阿联酋航空（Emirates）\n- 卡塔尔航空（Qatar Airways）\n- 土耳其航空（Turkish Airlines）\n- 英国航空（British Airways）\n- 荷兰皇家航空（KLM）\n\n这些航空公司链接了内罗毕与全球主要目的地，是游客和商务旅客的重要选择。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Seattle的航空公司有哪些？",
+        "A": [
+            "Erin Air Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Seattle\";",
+        "actual_answer": "Seattle（西雅图）是一个主要的航空枢纽，主要的航空公司包括：\n\n1. **阿拉斯加航空（Alaska Airlines）**：总部设在西雅图，是该地区的主要航空公司之一，以其广泛的国内和国际航线网络而闻名。\n\n2. **达美航空（Delta Air Lines）**：虽然总部不在西雅图，但达美航空在西雅图-塔科马国际机场设有一个重要的枢纽，提供大量的航班服务。\n\n除了这两家主要航空公司外，还有许多其他国内和国际航空公司在西雅图提供服务，包括美国航空（American Airlines）、联合航空（United Airlines）、西南航空（Southwest Airlines）以及国际航空公司如大韩航空（Korean Air）、汉莎航空（Lufthansa）等。西雅图-塔科马国际机场为西雅图及周边地区提供服务，是该地区的主要机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Craig的航空公司有哪些？",
+        "A": [
+            "Island Air Express"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Craig\";",
+        "actual_answer": "很抱歉，我无法找到有名为“Craig”的航空公司。可能是一个小型或区域性航空公司，或者在公众中不太知名。如果你能提供更多信息，我可能会更好地帮助你。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ankara的航空公司有哪些？",
+        "A": [
+            "Zafer Havacilik AS"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Ankara\";",
+        "actual_answer": "截至我最后更新的信息，安卡拉的主要机场是埃森博阿国际机场（Esenboğa International Airport），位于土耳其首都安卡拉。以下是一些通常在安卡拉运行的航空公司：\n\n1. **土耳其航空（Turkish Airlines）** - 土耳其的国家航空公司，提供多条国内和国际航线。\n2. **安纳托利亚喷气航空（AnadoluJet）** - 土耳其航空的子公司，主要提供国内航班服务。\n3. **飞马航空（Pegasus Airlines）** - 土耳其的一家低成本航空公司，运营多条国内和国际航线。\n4. **太阳快运（SunExpress）** - 由土耳其航空和汉莎航空合作成立的公司，提供飞往多个欧洲和中东目的地的航班。\n5. **Onur Air** - 提供部分国内航班，但其运营状况可能随时更改。\n\n除了这些航空公司，还有一些国际航空公司提供航班到达和离开安卡拉，具体的航空公司和航线可能会随着时间变化而有所不同，建议在出行前查看机场官网或相应的旅行预订平台以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ciudad Apodaca的航空公司有哪些？",
+        "A": [
+            "Jetlife"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Ciudad Apodaca\";",
+        "actual_answer": "Ciudad Apodaca 位于墨西哥的新莱昂州，紧邻蒙特雷市。蒙特雷大都会区的主要机场是蒙特雷国际机场（Aeropuerto Internacional de Monterrey，IATA代码：MTY），位于Apodaca境内。以下是一些常见的航空公司，通常在蒙特雷国际机场运营：\n\n1. 墨西哥国际航空（Aeroméxico）\n2. 墨西哥国家航空（Interjet）- 请注意，这家航空公司在2020年暂停了运营。\n3. 墨西哥智选航空（Volaris）\n4. VivaAerobus\n5. 美国航空（American Airlines）\n6. 联合航空（United Airlines）\n7. 达美航空（Delta Air Lines）\n8. 西南航空（Southwest Airlines）- 有时会季节性运营。\n\n请注意，航空公司运营情况可能会有所变化，因此在计划旅行时最好核实最新的航班信息和航班时间表。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jalisco的航空公司有哪些？",
+        "A": [
+            "Usmx Airlink"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Jalisco\";",
+        "actual_answer": "截至我最近的信息更新，Jalisco, México并没有总部设在该地的主要航空公司。然而，Jalisco的首府瓜达拉哈拉（Guadalajara）拥有Miguel Hidalgo y Costilla Guadalajara International Airport，这是该国最繁忙的机场之一，很多航空公司在此运营，提供国内和国际航班服务。\n\n一些在瓜达拉哈拉机场运营的主要航空公司包括：\n\n1. **Aeroméxico** - 墨西哥主要航空公司之一，提供多条国内和国际航线。\n2. **Volaris** - 墨西哥的低成本航空公司，总部设在墨西哥城，提供广泛的国内航线和一些国际航线。\n3. **Interjet** - 虽然目前面临运营问题，该公司曾提供多个目的地的服务。\n4. **VivaAerobus** - 另一家低成本航空公司，在墨西哥和一些国际目的地之间运营航班。\n\n此外，还有一些国际航空公司，如美国航空（American Airlines）、达美航空（Delta Air Lines）、美联航（United Airlines）等，也在瓜达拉哈拉运营。这些航空公司连接Jalisco与全球各地的城市。航班和航空公司可能随时发生变化，因此建议在计划出行时查看最新的航班和航空公司信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Rehovot的航空公司有哪些？",
+        "A": [
+            "Arrow Aviation Ltd."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Rehovot\";",
+        "actual_answer": "Rehovot 是以色列的一个城市，然而，它本身并没有机场，因此没有航空公司总部设在这个城市。 若你想知道以色列有哪些主要航空公司，总部都设在特拉维夫或其附近的本古里安国际机场，一些主要的以色列航空公司包括：\n\n1. 以色列航空公司（El Al Israel Airlines）\n2. Arkia Israeli Airlines\n3. Israir Airlines\n\n这些航空公司提供从以色列到全球各地的航班。如果你需要更多关于航班或航空公司的信息，建议访问其官方网站或咨询旅游代理。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Casper的航空公司有哪些？",
+        "A": [
+            "Business Aviators Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Casper\";",
+        "actual_answer": "截至目前，Casper这个名字并没有特别关联的航空公司。如果你指的是一家名为“Casper”的航空公司，那么可能是一个相对较小或新的公司，尚未广泛知名。如果你有关于该航空公司的更多具体信息或上下文，可能会帮助更准确地回答你的问题。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Veracruz的航空公司有哪些？",
+        "A": [
+            "ESP Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Veracruz\";",
+        "actual_answer": "在Veracruz，主要的航空公司包括：\n\n1. **墨西哥航空（Aeroméxico）** - 墨西哥的国家航空公司，提供从Veracruz到国内外主要城市的航班。\n\n2. **沃拉里斯航空（Volaris）** - 作为墨西哥的重要低成本航空公司，沃拉里斯提供多个国内航班连接Veracruz。\n\n3. **VivaAerobus** - 另一家墨西哥的低成本航空公司，提供从Veracruz到墨西哥其他城市的航班。\n\n4. **Interjet** - 尽管在2020年和2021年该公司经历了财务困难，该航空公司之前也为Veracruz提供服务，建议确认最新的运营状态。\n\n这些航空公司运营的航班可能会根据季节和需求有所变化，因此建议在计划旅行时查看最新的航班信息和航班表。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "St Julians的航空公司有哪些？",
+        "A": [
+            "Hans Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"St Julians\";",
+        "actual_answer": "St Julians 是位于马耳他的一个城镇，并没有自己的机场。马耳他的主要机场是马耳他国际机场（Malta International Airport，简称MLA）。一些主要的航空公司如：\n\n1. 马耳他航空（Air Malta）\n2. 瑞安航空（Ryanair）\n3. 易捷航空（easyJet）\n4. 汉莎航空（Lufthansa）\n5. 英国航空（British Airways）\n\n和其他一些提供飞往欧洲以及其他地区航线的航空公司在马耳他国际机场运营。如果你需要更多具体信息或者计划旅行，建议查看机场官网或航空公司的官方网站以获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Shannon的航空公司有哪些？",
+        "A": [
+            "ACASS(Ireland)",
+            "Gainjet Ireland"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Shannon\";",
+        "actual_answer": "截至我最后的更新，香农（Shannon）机场位于爱尔兰，是一些航空公司的运营枢纽和目的地。服务于香农机场的航空公司可能包括：\n\n1. **瑞安航空（Ryanair）** - 这是一家欧洲廉价航空公司，通常提供前往欧洲各地的航班。\n2. **爱尔兰航空（Aer Lingus）** - 作为爱尔兰的国家航空公司，提供前往欧洲和跨大西洋目的地的航班。\n3. **美国航空公司（如达美航空、美国航空）** - 通常提供从美国到香农的跨大西洋航班，但这些航班可能根据需求和季节变化。\n\n航空公司服务路线及目的地常常更新，因此建议查看香农机场的官方网站或相关航班查询平台，以获取最新的航空公司和航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Klagenfurt的航空公司有哪些？",
+        "A": [
+            "Glock Aviation GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Klagenfurt\";",
+        "actual_answer": "Klagenfurt的主要机场是克拉根福特机场（Klagenfurt Airport，机场代码：KLU）。虽然这是一个相对较小的机场，但它提供了一些区域和国际航班。以下是一些常见运营Klagenfurt航班的航空公司：\n\n1. 奥地利航空（Austrian Airlines）\n2. 瑞安航空（Ryanair）\n\n航班及航空公司可能会随季节变化或因其他因素而有所不同，因此建议在计划旅行时查阅机场或航空公司的官方网站以获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Westhampton Beach的航空公司有哪些？",
+        "A": [
+            "Sunrise Jets"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Westhampton Beach\";",
+        "actual_answer": "Westhampton Beach 位于纽约州长岛，附近的主要机场是 Francis S. Gabreski Airport (FOK)，这是一个主要用于通用航空的机场，而不是商业航空。由于它不是一个主要的商业机场，因此没有定期的商业航空公司在那里运行。乘客要搭乘商业航班通常需要前往更大的机场，比如纽约市的约翰·F·肯尼迪国际机场 (JFK)、拉瓜迪亚机场 (LGA) 或新泽西州的纽瓦克自由国际机场 (EWR)。这些机场有众多航空公司提供国内和国际航班服务。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Sacramento的航空公司有哪些？",
+        "A": [
+            "Axis Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sacramento\";",
+        "actual_answer": "截至目前，萨克拉门托国际机场（Sacramento International Airport，SMF）有多家航空公司运营航班。以下是一些主要的航空公司：\n\n1. **美国航空公司（American Airlines）**\n2. **达美航空公司（Delta Air Lines）**\n3. **西南航空公司（Southwest Airlines）**\n4. **联合航空公司（United Airlines）**\n5. **阿拉斯加航空公司（Alaska Airlines）**\n6. **捷蓝航空公司（JetBlue Airways）**\n7. **边疆航空公司（Frontier Airlines）**\n8. **康菲航空公司（Contour Airlines）** \n\n具体的航空公司和航线可能会根据季节和市场需求有所变化。建议查看机场官方网站或直接联系航空公司以获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Napa County的航空公司有哪些？",
+        "A": [
+            "Airsf Flight Service",
+            "Napa Jet Center Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Napa County\";",
+        "actual_answer": "Napa County 位于美国加利福尼亚州，以其葡萄酒产业闻名。Napa County 的主要机场是 Napa County Airport（也称为 Napa Valley Airport）。该机场主要用于私人和商务航空，没有主要的商业航空公司提供定期的商业航班服务。\n\n如果您计划从 Napa County 出发或到达 Napa County，通常需要使用邻近的主要机场，比如旧金山国际机场（SFO）、奥克兰国际机场（OAK）或萨克拉门托国际机场（SMF），这些机场由多家航空公司服务，包括美国航空公司、联合航空公司、西南航空公司等。\n\n如果您需要私人或包机服务，可以通过Napa County Airport的多个航空服务公司安排。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jersey的航空公司有哪些？",
+        "A": [
+            "Ortac Limited"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Jersey\";",
+        "actual_answer": "截至我所知的最新信息，泽西（Jersey）是英吉利海峡中的一个岛屿，是英王直属地之一。虽然泽西本身并没有大型的本土航空公司，但它的主要机场——泽西机场（Jersey Airport）有多个航空公司提供航班服务。这些航空公司可能包括：\n\n1. **英国航空（British Airways）** - 提供往返于伦敦等地的航线。\n2. **易捷航空（easyJet）** - 提供从泽西飞往英国主要城市的低成本航班。\n3. **蓝岛航空（Blue Islands）** - 这是一家区域性航空公司，提供泽西与其他海峡群岛及英国城市之间的航班服务。\n4. **奥利航空（Aurigny Air Services）** - 提供通往格恩西岛等地的航班服务。\n\n航班和航空公司可能会根据季节和需求发生变化，因此建议查看泽西机场的官方网站或联系相关航空公司以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Danbury的航空公司有哪些？",
+        "A": [
+            "Reliant Air Charter Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Danbury\";",
+        "actual_answer": "Danbury, Connecticut 并没有大型商业机场，因此没有主要航空公司直接在Danbury运营。离Danbury最近的主要商业机场是纽约的几个机场和哈特福德的布拉德利国际机场 (Bradley International Airport)。在这些机场，你可以找到许多主要的美国和国际航空公司，如美国航空 (American Airlines)、达美航空 (Delta Air Lines)、联合航空 (United Airlines) 以及捷蓝航空 (JetBlue Airways) 等。Danbury 本身有一个小型的市政机场，主要供私人飞行和通勤航班使用。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Berlin的航空公司有哪些？",
+        "A": [
+            "Peak Air GmbH",
+            "Windrose Air Jetcharter GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Berlin\";",
+        "actual_answer": "截至到2023年，柏林的主要机场是柏林勃兰登堡机场（Berlin Brandenburg Airport, BER）。许多航空公司在此运营。以下是一些常见的航空公司：\n\n1. **汉莎航空（Lufthansa）** - 德国的国家航空公司，也是在柏林活跃的主要航空公司之一。\n2. **柏林航空（Air Berlin）** - 曾是德国的第二大航空公司，但已在2017年停止运营。\n3. **易捷航空（easyJet）** - 低成本航空公司，提供许多往返欧洲目的地的航班。\n4. **瑞安航空（Ryanair）** - 另一家主要的低成本航空公司，提供广泛的欧洲航线。\n5. **德国之翼（Eurowings）** - 隶属于汉莎集团，主要提供欧洲的短程和中程航班。\n6. **北欧航空（SAS Scandinavian Airlines）** - 主要服务于北欧和欧洲其他地区。\n7. **法国航空（Air France）** - 提供从巴黎和其他城市到柏林的航班。\n8. **英国航空（British Airways）** - 连接伦敦和柏林的主要航空公司。\n9. **卡塔尔航空（Qatar Airways）** - 提供从多哈到柏林的航班，是一个连接中东和欧洲的主要航空公司。\n10. **阿联酋航空（Emirates）** - 提供从迪拜到柏林的长途国际航班。\n\n此外，还有许多其他区域和国际航空公司在柏林运营，航线覆盖欧洲大部分城市以及一些跨大洲的目的地。在选择航空公司时，建议查看最新的航班信息和航空公司服务情况。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mudjimba的航空公司有哪些？",
+        "A": [
+            "Flight Options (Australia) Pty Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Mudjimba\";",
+        "actual_answer": "Mudjimba位于澳大利亚昆士兰州的阳光海岸地区，临近的主要机场是阳光海岸机场（Sunshine Coast Airport），其IATA代码为MCY。阳光海岸机场运营着多家航空公司的航班，包括但不限于：\n\n1. **澳洲航空（Qantas）** - 提供从阳光海岸到墨尔本、悉尼等地的航班。\n2. **维珍澳大利亚航空（Virgin Australia）** - 运营前往各大城市和地区的航线。\n3. **捷星航空（Jetstar）** - 提供前往悉尼、墨尔本等地的低成本航班。\n4. **联盟航空（Alliance Airlines）** - 通常用于包机和特殊航线服务。\n\n不过，航班和航空公司服务可能会根据不同季节和市场需求发生变化，因此建议在出行前查看阳光海岸机场的官方网站或与航空公司直接联系，以获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Speyer的航空公司有哪些？",
+        "A": [
+            "Silver Cloud Air",
+            "Transavia"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Speyer\";",
+        "actual_answer": "Speyer 位于德国，是一座小城市，因此并没有自己的大型国际机场。不过，Speyer 附近的主要国际机场是法兰克福机场（Frankfurt Airport，FRA），这是一座大型国际机场，服务众多国际和国内航空公司。\n\n如果你在寻找从 Speyer 出发的航空公司，你大概需要从法兰克福机场出发。在法兰克福机场运营的主要航空公司包括德国汉莎航空（Lufthansa）、德国之翼航空（Eurowings）、法国航空（Air France）、英国航空（British Airways）、阿联酋航空（Emirates）、新加坡航空（Singapore Airlines）等。\n\n此外，曼海姆机场（Mannheim City Airport）距离 Speyer 也较近，但这是一个小型区域性机场，服务的航班和航空公司相对较少，多数为国内航线。\n\n如果需要具体航班信息或其他附近机场的信息，建议查看相关机场的官方网站或联系旅游服务机构。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Province of Varese的航空公司有哪些？",
+        "A": [
+            "Elilombarda S.R.L."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Province of Varese\";",
+        "actual_answer": "截至目前，Varese 是意大利伦巴第大区的一个省，虽然它本身并没有主要的航空公司总部，但其邻近的米兰有一些主要的航空公司。在米兰的马尔彭萨机场（Malpensa Airport），你会找到许多国际和国内航空公司运营航班。意大利的一些主要航空公司包括：\n\n1. **意大利航空（Alitalia）** - 这是意大利的国家航空公司（注：请注意，在2021年，意大利航空被ITA Airways取代）。\n2. **意大利国家航空（ITA Airways）** - 接替意大利航空的国家航空公司。\n3. **易捷航空（easyJet）** - 英国低成本航空公司，在米兰有大量运营。\n4. **瑞安航空（Ryanair）** - 另一家主要的低成本航空公司，也在该地区提供服务。\n\n除此之外，还有许多国际航空公司在米兰马尔彭萨机场运营，包括汉莎航空（Lufthansa）、法航（Air France）、以及英国航空（British Airways）等。对于具体的航空公司运营和航线信息，建议查看机场网站或航空公司官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Freiburg的航空公司有哪些？",
+        "A": [
+            "Heron Luftfahrt GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Freiburg\";",
+        "actual_answer": "截至目前，弗赖堡主要不是通过大型国际机场直接运营，因为它本身并没有一个大型商业机场。最接近弗赖堡的国际机场是巴塞尔-米卢斯-弗赖堡欧洲机场（EuroAirport Basel-Mulhouse-Freiburg），虽然它位于瑞士和法国边境，但距离弗赖堡较近。该机场由多家国际和低成本航空公司运营，包括但不限于：\n\n1. 法国航空（Air France）\n2. 瑞士国际航空（SWISS）\n3. 英国航空（British Airways）\n4. 德国汉莎航空（Lufthansa）\n5. 依捷航空（easyJet）\n6. 瑞安航空（Ryanair）\n\n此外，距离弗赖堡较远但仍然可作为备选方案的机场包括斯图加特机场和法兰克福机场，这些机场由更多国际航线和航空公司服务。要获取最新和最具体的航班信息，建议参考具体机场和航空公司的官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bristol的航空公司有哪些？",
+        "A": [
+            "Capital Air Ambulance",
+            "Centreline AV Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bristol\";",
+        "actual_answer": "截至我所知的最新信息，布里斯托尔机场主要由以下航空公司运营：\n\n1. **易捷航空（easyJet）** - 提供大量欧洲目的地的航班。\n2. **瑞安航空（Ryanair）** - 以低成本航班闻名，覆盖多个国际和国内目的地。\n3. **途易航空（TUI Airways）** - 主要提供包机航班，前往热门度假胜地。\n4. **捷克航空（Jet2）** - 主要集中在欧洲节假日目的地。\n\n此外，还有一些其他航空公司如KLM、英国航空（British Airways）、爱尔兰航空（Aer Lingus）等提供特定目的地的服务。具体的航空公司和航班信息可能会随时间更新，建议直接查看布里斯托尔机场的官方网站或航空公司官网以获得最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Polk County的航空公司有哪些？",
+        "A": [
+            "Exec 1 Aviation Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Polk County\";",
+        "actual_answer": "Polk County有几个主要的机场，主要提供的是通用航空服务，而不是商业航空公司提供的定期航班。以下是一些机场：\n\n1. **Lakeland Linder International Airport (LAL)** - 位于莱克兰市，是Polk County最大和最知名的机场之一。虽然它主要用于通用航空，但也有少量的商业航班以及货运服务。机场每年还会举办著名的Sun 'n Fun Aerospace Expo，吸引大量的航空爱好者。\n\n2. **Winter Haven Regional Airport (GIF)** - 这也是一个主要用于通用航空的小型机场，提供航班培训和私人飞机服务。\n\n3. **Bartow Executive Airport (BOW)** - 提供通用航空服务，包括飞行训练、飞机维修和私人航空服务。\n\n由于Polk County主要服务的是通用航空领域，所以没有大的商业航空公司在这些机场设有常规航班。如果你需要乘坐商业航班旅行，通常建议去附近的大型机场，如奥兰多国际机场（MCO）或坦帕国际机场（TPA）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Medicine Hat的航空公司有哪些？",
+        "A": [
+            "Super T Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Medicine Hat\";",
+        "actual_answer": "截至我所知的最新信息，Medicine Hat城市位于加拿大亚伯达省，拥有一个名为Medicine Hat机场（IATA代码：YXH）的地方机场。这个机场主要提供区域性的航空服务。在过去，WestJet Link是这个机场的主要航空公司之一，提供往返卡尔加里的航班。然而，航空公司服务和航班安排可能会发生变化，因此我建议你访问Medicine Hat机场的官方网站或联系机场以获取最新的航空公司和航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tel Aviv的航空公司有哪些？",
+        "A": [
+            "Shino Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Tel Aviv\";",
+        "actual_answer": "截至2021年，特拉维夫的主要机场是本·古里安国际机场（Ben Gurion International Airport），位于以色列。以下是一些主要运营于特拉维夫的航空公司：\n\n1. **以色列航空公司（El Al Airlines）** - 这是以色列的国家航空公司，是最大和最知名的以色列航空公司之一。\n2. **Arkia Israeli Airlines** - 是以色列的另一家重要航空公司，提供国内和一些国际航班。\n3. **Israir Airlines** - 主要运营国内航班以及一些国际航班。\n\n此外，还有许多国际航空公司在本·古里安国际机场运营，从而将特拉维夫与世界各地连接。如需要更准确和最新的信息，建议查看机场官方网站或航空公司信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Salzburg的航空公司有哪些？",
+        "A": [
+            "Airlink Luftverkehrs GmbH",
+            "Bairline",
+            "Porsche Air Service GmbH",
+            "Salzburg Jetaviation GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Salzburg\";",
+        "actual_answer": "萨尔茨堡主要的航空公司包括奥地利航空（Austrian Airlines）和欧翼航空（Eurowings）。此外，在旅游旺季或特定航线期间，其他国际航空公司也可能提供飞往萨尔茨堡的航班。具体航班和运营情况会根据季节和市场需求有所变化，因此建议你在计划旅行时查看最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Darlington的航空公司有哪些？",
+        "A": [
+            "Ias Medical Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Darlington\";",
+        "actual_answer": "Darlington 本身没有大型的国际机场，最近的主要机场是在英国东北部的Teesside International Airport（泰赛德国际机场），以前称为Durham Tees Valley Airport。这是一个小型的国际机场，提供一些国内和国际航班。以下是一些可能在Teesside International Airport运营的航空公司，虽然具体运营的航空公司和航线可能会经常变化：\n\n1. KLM Royal Dutch Airlines（荷兰皇家航空）：曾经运营前往阿姆斯特丹的航班。\n2. Eastern Airways：这是一家区域航空公司，可能提供飞往英国其他城市的航班。\n\n请注意，航班和航空公司可能会因季节、市场需求或其他因素而变化，所以建议在计划行程时查阅机场官网或相关在线订票平台以获得最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Zurich的航空公司有哪些？",
+        "A": [
+            "AC Aviation Charter AG(Switzerland)",
+            "Axis Aviation Group",
+            "Cat Aviation AG",
+            "Comlux Aviation",
+            "Execujet Europe",
+            "Jet Aviation Business Jets AG",
+            "Premium Jet AG"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Zurich\";",
+        "actual_answer": "截至我最后的更新，苏黎世（Zurich）的主要航空公司包括：\n\n1. **瑞士国际航空（Swiss International Air Lines）**：这是瑞士的国家航空公司，也是苏黎世机场的主要航空运营商，提供许多国际和国内航线。\n\n2. **瑞士欧洲航空（Swiss European Air Lines）**：是瑞士国际航空的区域分支，主要运营短途航线。\n\n3. **瑞士全球货运公司（Swiss WorldCargo）**：提供货运服务，也是瑞士国际航空的一部分。\n\n此外，还有许多其他国际航空公司在苏黎世机场运营，提供各种目的地的服务，如：\n\n- 汉莎航空（Lufthansa）\n- 英国航空（British Airways）\n- 阿联酋航空（Emirates）\n- 荷兰皇家航空（KLM）\n- 法国航空（Air France）\n- 达美航空（Delta Air Lines）\n- 美国联合航空（United Airlines）\n\n苏黎世机场是一个重要的国际航空枢纽，通航世界各地的许多城市。如果你需要最新的信息或特定的航线服务，建议查看苏黎世机场的官方网站或相关航空公司的官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Essex的航空公司有哪些？",
+        "A": [
+            "Jet Concierge Club"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Essex\";",
+        "actual_answer": "截至我了解到的信息，埃塞克斯（Essex）并不直接拥有自己的航空公司，但该地区的伦敦斯坦斯特德机场（London Stansted Airport）是一个重要的航空枢纽。许多航空公司在该机场运营，包括：\n\n1. **瑞安航空（Ryanair）** - 这是斯坦斯特德机场最大的航空公司，提供众多欧洲目的地的航班。\n2. **易捷航空（easyJet）** - 这家低成本航空公司在斯坦斯特德也有航班。\n3. **Jet2.com** - 提供一些假日目的地的航班。\n4. **TUI Airways** - 提供旅游胜地的包机服务。\n\n还有一些其他航空公司可能在这个机场运营，提供区域性和国际性的航班服务。具体航班和航空公司可能会根据季节和需求有所变动，建议查看斯坦斯特德机场的官方网站或直接联系航空公司获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tampa的航空公司有哪些？",
+        "A": [
+            "Execujet Charter Service Inc",
+            "Odyssey Airways LLC",
+            "Xpress One Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Tampa\";",
+        "actual_answer": "Tampa的主要航空公司包括：\n\n1. **American Airlines** - 提供多条国内和国际航线。\n2. **Delta Air Lines** - 提供广泛的国内航班以及国际目的地。\n3. **Southwest Airlines** - 主要运营国内航线，以其高频率和低成本的航班著称。\n4. **United Airlines** - 提供众多国内和跨境航线。\n5. **JetBlue Airways** - 以其舒适的座位和良好的客户服务闻名，主要提供国内航班。\n6. **Spirit Airlines** - 低成本航空公司，提供美国和加勒比地区的多条航线。\n7. **Frontier Airlines** - 低成本航空公司，提供跨美国的航班。\n\nTampa国际机场（Tampa International Airport, TPA）是这些航空公司的主要运营枢纽之一，还可能有其他一些较小的航空公司和地区性航空服务在此运营。具体的航空公司名单可以随时间和季节有所变化，建议您查看Tampa国际机场的官方网站以获得最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Monterrey的航空公司有哪些？",
+        "A": [
+            "Execujet Caribbean"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Monterrey\";",
+        "actual_answer": "Monterrey是墨西哥的新莱昂州的一个主要城市，拥有一个主要的国际机场，名为蒙特雷国际机场（General Mariano Escobedo International Airport, 机场代码：MTY）。以下是一些常见的航空公司，它们通常在蒙特雷运营：\n\n1. **墨西哥航空公司（Aeroméxico）** - 墨西哥的国家航空公司，提供国内和国际航班。\n2. **Volaris** - 墨西哥的低成本航空公司，提供多个目的地的服务。\n3. **VivaAerobus** - 另一家墨西哥的低成本航空公司，提供一些国内和国际航线。\n4. **Interjet** - 虽然近年遇到了一些财务困难，历史上也是重要的航空公司之一。\n5. **美国航空公司（American Airlines）** - 提供到美国多个城市的航线。\n6. **达美航空公司（Delta Airlines）** - 主要提供到美国的航班。\n7. **联合航空公司（United Airlines）** - 提供往返美国的航线。\n8. **西南航空公司（Southwest Airlines）** - 有直飞美国的航线。\n9. **COPA航空（Copa Airlines）** - 提供连接到中美洲和南美洲的航班。\n\n请注意，由于行业的动态变化，航空公司提供的具体航班可能会有所变动，因此建议查看机场官方网站或联系相关航空公司以获得最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aurora的航空公司有哪些？",
+        "A": [
+            "Aurora Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Aurora\";",
+        "actual_answer": "截至我所知的最新信息，Aurora是一家以俄罗斯远东地区为主要运营基地的航空公司。以下是Aurora航空公司的主要航线目的地：\n\n1. 俄罗斯远东地区的城市，如海参崴、堪察加半岛和萨哈林岛。\n2. 一些国际航班，可能包括日本、中国和韩国的部分城市。\n\nAurora航空公司是俄罗斯联合航空集团（Aeroflot Group）的子公司，专注于为俄罗斯远东地区提供服务。请注意，这些信息可能会随着时间变化，因此建议查看他们的官方网站或联系机场以获取最新的航班信息和目的地更新。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lodz的航空公司有哪些？",
+        "A": [
+            "Bartolini Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lodz\";",
+        "actual_answer": "截至我最后的更新，罗兹（Łódź）的主要机场是罗兹-瓦迪斯瓦夫·雷蒙特机场（Port Lotniczy Łódź im. Władysława Reymonta），也称为罗兹机场。虽然罗兹机场相比波兰的其他国际机场要小一些，但它通常会提供一些国内和国际航班服务。\n\n一些可能运营过往来该机场的航空公司包括：\n\n1. 莱恩航空（Ryanair）\n2. 中欧航空公司（LOT Polish Airlines）\n\n请注意，航空公司的航线和服务可能会根据季节或市场需求发生变化，因此若需要最新的航班信息，建议查看机场官方网站或相关航班搜索平台。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bedfordshire的航空公司有哪些？",
+        "A": [
+            "Pen-Avia Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bedfordshire\";",
+        "actual_answer": "截至我最后的信息更新，Bedfordshire郡并没有知名的主要航空公司总部。这一区域最著名的与航空相关的设施是位于卢顿的伦敦卢顿机场（London Luton Airport）。该机场是英国重要的国际机场之一，服务于多家航空公司，包括易捷航空（easyJet）、瑞安航空（Ryanair）、威兹航空（Wizz Air）等，提供各种国内和国际航班。\n\n如果你有具体需要了解的小型或特定航空运营商，建议查看当地机场或航空相关服务的最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Brusnice的航空公司有哪些？",
+        "A": [
+            "Flycom D.O.O."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Brusnice\";",
+        "actual_answer": "Brusnice是一個位於捷克的小村莊，而並非一個城市或主要交通樞紐。因此，Brusnice本身並沒有航空公司運營。捷克的主要國際機場是位於布拉格的瓦茨拉夫·哈維爾機場，這裡提供國際和國內航班服務。多數捷克的航空公司，如捷克航空（Czech Airlines），以及其他國際航空公司，會在這個機場運營。如果你打算從Brusnice出發旅行，通常需要前往鄰近的城市機場進行航空旅行。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jerome County的航空公司有哪些？",
+        "A": [
+            "Precision Aviation Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Jerome County\";",
+        "actual_answer": "截至我最后的更新时，Jerome County 位于美国爱达荷州。然而，Jerome County 内并没有主要的商业机场。因此，没有专属的航空公司服务于这个县。不过，离 Jerome County 最近的主要商业机场是 Twin Falls 的 Magic Valley Regional Airport (TWF)，从这里可以乘坐航空公司的航班。如果你需要特定航空公司或航班信息，建议查看 Magic Valley Regional Airport 的官方网站或者直接联系机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Adelaide的航空公司有哪些？",
+        "A": [
+            "Corporate Aircraft Charter Pty"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Adelaide\";",
+        "actual_answer": "截至我所知，阿德莱德机场（Adelaide Airport）服务于多家航空公司。主要的航空公司包括：\n\n1. 澳洲航空（Qantas）\n2. 维珍澳洲航空（Virgin Australia）\n3. 捷星航空（Jetstar）\n4. 新加坡航空（Singapore Airlines）\n5. 长荣航空（EVA Air）\n6. 阿联酋航空（Emirates）\n7. 斐济航空（Fiji Airways）\n8. 蒙古航空（Mongolian Airlines）\n\n此外，还有一些较小的和区域性的航空公司提供国内和国际航班。具体的航空公司列表可能会根据航线调整、季节性服务或其他因素变化，因此建议在旅行前查阅阿德莱德机场官方网站或直接联系航空公司以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Oakdale的航空公司有哪些？",
+        "A": [
+            "Sierra West Airlines"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Oakdale\";",
+        "actual_answer": "Oakdale并不是一个以大型机场著名的城市，因此可能没有主要航空公司直接在此运营。如果您指的是美国加州的Oakdale，最接近的大型国际机场是位于旧金山(San Francisco International Airport)和萨克拉门托(Sacramento International Airport)的机场。在这些大型机场，您可以找到几乎所有主要的国际和国内航空公司。如果Oakdale指的是其他地方，您可能需要澄清具体的地理位置，以获得更准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Belo Horizonte的航空公司有哪些？",
+        "A": [
+            "Lider Taxi Aereo S/A - Air Brasil"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Belo Horizonte\";",
+        "actual_answer": "截至我掌握的信息，贝洛奥里藏特（Belo Horizonte）作为巴西的重要城市，主要由坦克雷多·内维斯国际机场（Confins Airport, IATA代码：CNF）和庞普利亚机场（Pampulha Airport, IATA代码：PLU）服务。以下是一些运营该市的主要航空公司：\n\n1. **GOL航空公司（GOL Linhas Aéreas Inteligentes）** - 这是巴西的一家主要航空公司，提供国内和国际航班服务。\n\n2. **LATAM航空公司** - 作为南美洲最大的航空公司之一，LATAM提供多个国内和国际航线。\n\n3. **Azul巴西航空公司** - 这是一家以其广泛的国内航线网络闻名的航空公司，连接了巴西的多个城市。\n\n4. **泛美航空（曾用名Passaredo航空，现为VOEPASS）** - 提供地区性航班服务，连接较小的城市。\n\n除了这些主要航空公司，有时也可能会有其他航空公司提供季节性或包机服务。对于最新和特定的航班信息，建议查看相关机场或航空公司的官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Wevelgem的航空公司有哪些？",
+        "A": [
+            "Luxaviation Belgium"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Wevelgem\";",
+        "actual_answer": "Wevelgem位于比利时，那里有一个小型区域机场，称为科特赖克-韦弗尔海姆机场（Kortrijk-Wevelgem International Airport）。这座机场主要用于商务和私人航空服务，因此运营的航空公司相对较少，通常没有大型商业航空公司的定期航班。大多数情况下，使用该机场的是包机公司、小型航空服务提供商和个人飞机。如果需要详细的航空公司列表或航班信息，建议直接联系机场或访问其官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mooresville的航空公司有哪些？",
+        "A": [
+            "MTJ Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Mooresville\";",
+        "actual_answer": "截至我最近的更新，Mooresville 并没有自己的商业机场，因此也没有总部设在那里的航空公司。然而，Mooresville 位于北卡罗来纳州，距离夏洛特不远，而夏洛特有一个主要的国际机场，即夏洛特道格拉斯国际机场（Charlotte Douglas International Airport）。在该机场，有多个航空公司提供国内和国际航班服务。\n\n如果你计划从 Mooresville 旅行，通常你需要先前往夏洛特的机场，以选择适合的航空公司和航线。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Burleson的航空公司有哪些？",
+        "A": [
+            "Air Center Helicopters Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Burleson\";",
+        "actual_answer": "Burleson位于德克萨斯州，通常没有大型商业机场直接位于小城镇内。因此，Burleson本身没有主要的航空公司在当地运营。然而，离Burleson最近的大型商业机场是达拉斯-沃斯堡国际机场（DFW）和达拉斯爱田机场（DAL）。在这些主要机场，多个大型航空公司提供航班服务，包括但不限于：\n\n1. **American Airlines** - 总部位于达拉斯并在DFW有大量航班。\n2. **Southwest Airlines** - 主要从达拉斯爱田机场运营。\n3. **Delta Air Lines**\n4. **United Airlines**\n5. **Spirit Airlines**\n\n如果你需要从Burleson飞往其他地区，可以考虑前往这些大机场搭乘航班。当地也可能有一些小型私人机场用于私人或通用航空。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Amarillo的航空公司有哪些？",
+        "A": [
+            "Panavia Air Taxi LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Amarillo\";",
+        "actual_answer": "在美国德克萨斯州的阿马里洛（Amarillo）运营的主要机场是里克·哈斯本德·阿马里洛国际机场（Rick Husband Amarillo International Airport, IATA代码：AMA）。截至我最后更新的信息，以下是一些通常在该机场运营的主要航空公司：\n\n1. **美联航（United Airlines）** - 提供飞往休斯顿和丹佛等枢纽城市的航班。\n2. **美国航空（American Airlines）** - 提供飞往达拉斯/沃思堡及其他目的地的航班。\n3. **西南航空（Southwest Airlines）** - 提供飞往达拉斯等地的航班。\n\n请注意，航班目的地和运营航空公司可能会因季节或航空公司运营决定而有所变化，因此在计划旅行时最好直接查看机场或航空公司官网以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Vitoria的航空公司有哪些？",
+        "A": [
+            "Nordjet Airlines"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Vitoria\";",
+        "actual_answer": "Vitoria是西班牙巴斯克自治区的一座城市，拥有一个小型机场，即维多利亚机场（Vitoria Airport，IATA代码：VIT）。虽然不是一个主要的国际机场，但它有一些航空公司提供航班服务，尤其是货运和低成本航空公司。\n\n一般来说，提供客运服务的主要航空公司可能包括像伏林航空（Vueling）、瑞安航空（Ryanair）等廉价航空公司，但具体航线和航空公司可能会因季节和需求而变化。\n\n为了获得最新和最准确的信息，包括航班时刻表和目的地，建议你访问维多利亚机场的官方网站或直接查询相关航空公司的官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ronkonkoma的航空公司有哪些？",
+        "A": [
+            "Executive Fliteways"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Ronkonkoma\";",
+        "actual_answer": "Ronkonkoma, New York，是长岛麦克阿瑟机场（Long Island MacArthur Airport, 代码：ISP）的所在地。这是一个相对较小的区域性机场，所以运营的航空公司数量有限。根据我的知识，截至2023年，该机场主要由以下航空公司提供服务：\n\n1. **美国航空**（American Airlines） - 提供前往费城等地的航班。\n2. **西南航空**（Southwest Airlines） - 提供前往佛罗里达、巴尔的摩、奥兰多等地的航班。\n3. **前沿航空**（Frontier Airlines） - 提供季节性或有限的航班服务。\n\n请注意，航空公司可能会根据需求和商业考量调整航线，因此建议在计划旅行前检查最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Munster的航空公司有哪些？",
+        "A": [
+            "Blissair GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Munster\";",
+        "actual_answer": "Munster（明斯特）位于德国的北莱茵-威斯特法伦州，附近的主要机场是明斯特-奥斯纳布吕克国际机场（Flughafen Münster/Osnabrück)。从这个机场运营的主要航空公司通常包括：\n\n1. 汉莎航空（Lufthansa）：提供往返德国国内和其他欧洲国家的航班。\n2. 瑞安航空（Ryanair）：通常提供往返于欧洲主要城市的低成本航班。\n3. 欧罗巴翱翔航空（Eurowings）：提供区域性和国际航班服务。\n4. 图易航空（TUIfly）：提供主要旅游目的地的航班。\n\n请注意，航空公司和航线可能会随时间变化，因此在计划旅行时最好查阅机场官网或航空公司官网以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Thunder Bay的航空公司有哪些？",
+        "A": [
+            "Thunder Airlines",
+            "Wasaya Airways"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Thunder Bay\";",
+        "actual_answer": "Thunder Bay, 位于加拿大安大略省，是一个提供商业航班服务的城市。Thunder Bay International Airport (YQT) 是主要的机场。在这里运营的航空公司可能包括：\n\n1. **Air Canada** - 提供前往多伦多Pearson International Airport的航班。\n2. **WestJet** - 通常运营飞往其他加拿大主要城市的航班。\n3. **Bearskin Airlines** - 提供区域性航班服务，连接安大略省和曼尼托巴省的一些城市。\n4. **Porter Airlines** - 通常提供从Thunder Bay飞往多伦多Billy Bishop Toronto City Airport的航班。\n\n具体的航空公司和线路可能会有所变化，建议查看机场或相关航空公司官网以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Velaux的航空公司有哪些？",
+        "A": [
+            "Jav Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Velaux\";",
+        "actual_answer": "Velaux是法国的一个小镇，它本身没有大型航空公司或机场。最近的大型机场是位于马赛的马赛普罗旺斯机场（Aéroport de Marseille Provence）。在该机场，你可以找到许多航空公司运营国内和国际航班，包括法国航空（Air France）、瑞安航空（Ryanair）、易捷航空（EasyJet）等。具体可用的航空公司和航线可能会有所变化，建议在计划旅行时查看马赛普罗旺斯机场的官方网站或联系航空公司获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Fort Worth的航空公司有哪些？",
+        "A": [
+            "Baker Aviation LLC",
+            "Rvr Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Fort Worth\";",
+        "actual_answer": "Fort Worth主要的航空运输枢纽是达拉斯-沃思堡国际机场（DFW），这是美国和全球最大的航空枢纽之一。以下是一些主要的航空公司，它们在DFW机场经营航班：\n\n1. **美国航空（American Airlines）**：这是DFW的最大承运商，也是其总部所在地，占据了大量的航班和目的地。\n\n2. **美国鹰航空（American Eagle）**：作为美国航空的区域品牌，它在DFW提供多个短途和区域航班。\n\n3. **达美航空（Delta Air Lines）**：提供前往许多国内和国际目的地的航班。\n\n4. **联合航空（United Airlines）**：提供广泛的国内和国际航线服务。\n\n5. **西南航空（Southwest Airlines）**：运营众多国内航班，以其灵活的票务和两件免费托运行李政策闻名。\n\n6. **阿拉斯加航空（Alaska Airlines）**、 **捷蓝航空（JetBlue）** 和 **嘉鲁达印尼航空（Spirit Airlines）**等廉价航空公司也在此经营。\n\n除此之外，还有许多国际航空公司也在DFW机场运营，提供飞往全球多个国际目的地的航班。如果你指的是Fort Worth Meacham International Airport，这里主要用于私人、公司和货运航班，较少有商业客运航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Manassas的航空公司有哪些？",
+        "A": [
+            "Skynet LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Manassas\";",
+        "actual_answer": "Manassas, 位于美国弗吉尼亚州，是一个相对较小的城市，没有大型商业机场。因此，Manassas本身并没有主要的航空公司提供服务。如果你想了解前往Manassas的航空旅行信息，你通常会通过邻近的大型机场，例如华盛顿特区附近的杜勒斯国际机场（IAD）或里根国家机场（DCA）来进行。\n\n这些大型机场有许多主要航空公司提供服务，包括但不限于：\n\n- 美国航空（American Airlines）\n- 达美航空（Delta Air Lines）\n- 联合航空（United Airlines）\n- 西南航空（Southwest Airlines）\n- 捷蓝航空（JetBlue Airways）\n- 阿拉斯加航空（Alaska Airlines）\n\n从这些机场，你可以乘坐地面交通工具（如汽车、出租车或班车服务）前往Manassas。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Fayetteville的航空公司有哪些？",
+        "A": [
+            "Jett Aircraft"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Fayetteville\";",
+        "actual_answer": "Fayetteville 有两个主要机场：一个在阿肯色州的 Fayetteville 和一个在北卡罗来纳州的 Fayetteville。不同城市的机场有不同的航空公司服务。\n\n1. **阿肯色州Fayetteville（西北阿肯色国家机场 - XNA）**\n   - 美国航空（American Airlines）\n   - 达美航空（Delta Air Lines）\n   - 联合航空（United Airlines）\n   - 以及低成本航空公司如西南航空（Southwest Airlines）和边疆航空（Frontier Airlines）\n\n2. **北卡罗来纳州Fayetteville（Fayetteville地区机场 - FAY）**\n   - 美国航空（American Airlines）\n\n请注意，航空公司提供的具体航班和服务可能会有所变化，建议查看机场或航空公司的网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Saltillo的航空公司有哪些？",
+        "A": [
+            "Aeronaves Tsm S.A."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Saltillo\";",
+        "actual_answer": "截至我所知的最新信息，墨西哥的萨尔蒂约（Saltillo）机场有以下一些航空公司运营：\n\n1. **Aeroméxico** - 提供国内的一些航线服务。\n2. **Viva Aerobus** - 可能会提供廉价的国内航班。\n\n请注意，航空公司的运营情况可能会随时发生变化，因此在计划旅行时，最好直接查看机场或航空公司的官方网站以获取最新的航班信息和服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "El Paso的航空公司有哪些？",
+        "A": [
+            "ATI Jet Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"El Paso\";",
+        "actual_answer": "截至最新的信息，El Paso国际机场（ELP）通常由以下航空公司提供服务：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **联合航空（United Airlines）**\n4. **阿拉斯加航空（Alaska Airlines）**\n5. **西南航空（Southwest Airlines）**\n6. **边疆航空（Frontier Airlines）**\n\n这些航空公司提供往返不同目的地的航班服务。不过，请注意航空公司和航班信息可能会发生变化，因此在计划旅行时，最好查阅El Paso国际机场的官方网站或直接联系相关航空公司以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Augusta的航空公司有哪些？",
+        "A": [
+            "Maine Instrument Flight"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Augusta\";",
+        "actual_answer": "Augusta 是指美国乔治亚州的奥古斯塔市。从奥古斯塔地区出发的主要机场是奥古斯塔地区机场（Augusta Regional Airport, 机场代码：AGS）。截至我最后的更新，以下是一些常见的航空公司，它们通常在奥古斯塔地区机场运营：\n\n1. **达美航空（Delta Air Lines）** - 通常提供飞往亚特兰大的航班，并通过亚特兰大转机连接到许多其他目的地。\n\n2. **美国航空（American Airlines）** - 通常提供飞往夏洛特的航班，同样可以通过夏洛特转机到其他城市。\n\n根据季节和需求，这些航空公司可能会调整航线和航班频率。在计划旅行时，最好直接访问航空公司或奥古斯塔地区机场的官方网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kenmore的航空公司有哪些？",
+        "A": [
+            "Kenmore Air Harbor Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Kenmore\";",
+        "actual_answer": "Kenmore是华盛顿州的一座小城市，而不是一家航空公司。不过，Kenmore Air是一家以Kenmore命名的航空公司，主要提供水上飞机和小型飞机的服务，连接西雅图、圣胡安群岛和加拿大不列颠哥伦比亚省的一些目的地。Kenmore Air并不是从Kenmore城市本身起飞，而是从西雅图地区的纽约湖（Lake Union）和鲍沙湖（Lake Washington）起飞。如果你有其他问题或者需要进一步的信息，请告诉我！",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Barcelona的航空公司有哪些？",
+        "A": [
+            "Clipper National Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Barcelona\";",
+        "actual_answer": "巴塞罗那的主要机场是巴塞罗那-埃尔普拉特机场（Barcelona-El Prat Airport），其国际代码是BCN。在这个机场运营的主要航空公司包括：\n\n1. **伊比利亚航空（Iberia）** - 西班牙的国家航空公司。\n2. **伏林航空（Vueling）** - 以巴塞罗那为基地的低成本航空公司。\n3. **瑞安航空（Ryanair）** - 知名的欧洲低成本航空公司。\n4. **易捷航空（easyJet）** - 另一家大型低成本航空公司。\n5. **汉莎航空（Lufthansa）** - 德国的主要航空公司。\n6. **法航荷航集团（Air France-KLM）** - 法国和荷兰合作的大型航空集团。\n7. **英航（British Airways）** - 英国的国家航空公司。\n8. **土耳其航空（Turkish Airlines）** - 提供通往中东、亚洲等地的航班。\n9. **卡塔尔航空（Qatar Airways）** - 提供通往亚洲、非洲等地的航线。\n\n此外，还有其他许多国际和区域航空公司在这个机场运营，提供飞往各地的航班。具体的航班信息可能因季节和需求而变化，因此建议查看机场或航空公司的官方网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Shenzhen的航空公司有哪些？",
+        "A": [
+            "Amber Aviation Limited",
+            "Donghai Jet Co. Ltd.",
+            "Shenzhen Funian Business Aviation Co., Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Shenzhen\";",
+        "actual_answer": "深圳作为一个重要的经济中心，有多家航空公司在此运营。以下是一些主要的航空公司：\n\n1. **深圳航空（Shenzhen Airlines）**：这是深圳本土的一家大型航空公司，隶属于中国国际航空公司（Air China）的成员之一，也是星空联盟的成员。\n\n2. **中国南方航空（China Southern Airlines）**：虽然总部位于广州，但它在深圳运营大量航班，是中国三大航空公司之一。\n\n3. **春秋航空（Spring Airlines）**：这是一家低成本航空公司，也在深圳有很多国内和国际航线。\n\n4. **海南航空（Hainan Airlines）**：虽然总部在海口，它在深圳也有广泛的航班网络。\n\n5. **厦门航空（Xiamen Airlines）**：也是一家在深圳提供多条航线的航空公司。\n\n此外，还有一些其他的国内和国际航空公司也在深圳宝安国际机场运营航班，提供前往不同目的地的服务。具体的航班信息和服务，建议访问相关航空公司的官方网站或通过航空信息平台查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hesperange的航空公司有哪些？",
+        "A": [
+            "Jetfly Aviation Sa"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Hesperange\";",
+        "actual_answer": "Hesperange 是卢森堡的一个城镇，而卢森堡的主要国际机场是卢森堡-芬德尔国际机场（Luxembourg Airport，IATA代码：LUX），位于卢森堡市附近。卢森堡市是距离 Hesperange 最近的城市，乘坐飞机旅行通常会使用这个机场。\n\n虽然卢森堡的航空公司选择有限，但主要有以下一些：\n\n1. **卢森堡航空公司 (Luxair)**：这是卢森堡的国家航空公司，提供飞往欧洲多个目的地的航线。\n\n2. **Cargolux**：虽然主要是一家货运航空公司，但它是欧洲领先的货运航空公司之一，总部位于卢森堡。\n\n卢森堡机场还有其他几家国际航空公司运营，提供各种往返欧洲和其他国际目的地的航班。出行时建议查看机场的官方网站或航空公司的官网以获取最新的航班信息和服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Senningerberg的航空公司有哪些？",
+        "A": [
+            "Luxaviation Luxembourg"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Senningerberg\";",
+        "actual_answer": "Senningerberg 是位于卢森堡的大公国，那里主要的机场是卢森堡芬德尔机场（Luxembourg Findel Airport, IATA: LUX）。许多国际和区域航空公司在此运营。以下是一些常见的航空公司：\n\n1. **卢森堡航空（Luxair）** - 卢森堡的国家航空公司，提供覆盖欧洲多个城市的航班。\n2. **瑞安航空（Ryanair）** - 作为一家低成本航空公司，提供覆盖多个欧洲目的地的航班。\n3. **汉莎航空（Lufthansa）** - 提供连接德国主要城市及其他国际目的地的航班。\n4. **KLM 荷兰皇家航空（KLM Royal Dutch Airlines）** - 提供前往阿姆斯特丹及全球其他目的地的航班。\n5. **英国航空（British Airways）** - 提供连接伦敦和其他国际目的地的航班。\n6. **易捷航空（easyJet）** - 提供低成本航班，覆盖多个欧洲城市。\n\n这仅是部分航空公司，具体的航空公司及航班信息可能会根据季节和市场需求变化，因此建议查看机场官网或航空公司官网以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Opa-Locka的航空公司有哪些？",
+        "A": [
+            "Topjet Executive"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Opa-Locka\";",
+        "actual_answer": "截至目前，Opa-Locka并没有商业航空公司运营定期的客运航班，因为Opa-Locka Executive Airport (OPF) 主要用于通用航空、私人和公务航空。如果你正在寻找在Opa-Locka机场运营的包机公司或私人航空服务，建议直接联系机场或通过其官方网站获取最新的服务提供者信息。附近的主要商业航班机场是迈阿密国际机场（MIA），那里有多家航空公司提供国内和国际航班服务。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Braga的航空公司有哪些？",
+        "A": [
+            "PHS Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Braga\";",
+        "actual_answer": "截至我所掌握的信息，布拉加（Braga）并没有自己的商业机场，因此没有直接以布拉加为基地的航空公司。布拉加附近的主要机场是位于波尔图的弗朗西斯科·萨·卡内罗机场（Francisco Sá Carneiro Airport），那里有多家航空公司运营，提供国内和国际航线服务。你可以通过前往波尔图机场来乘坐航班。如果你需要获取具体的航空公司信息或航班安排，建议查看波尔图机场的官方网站或联系相关航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lincoln的航空公司有哪些？",
+        "A": [
+            "Sacramento Air Charter"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lincoln\";",
+        "actual_answer": "林肯是美国内布拉斯加州的一个城市，而不是一个大型航空枢纽，因此没有专属于林肯的航空公司。不过，林肯市有一个主要的机场——林肯市立机场（Lincoln Airport, LNK），该机场提供若干定期的国内航班服务。\n\n一些主要的航空公司，例如美国航空（American Airlines）和达美航空（Delta Air Lines），曾经在该机场运营，提供前往主要枢纽城市的航班服务。具体的航空公司和航线可能会因市场需求和季节变化而有所不同。乘客可以通过航空公司的官方网站或旅行预订平台查询当前林肯机场有服务的航空公司和航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sencur的航空公司有哪些？",
+        "A": [
+            "United Eagle Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sencur\";",
+        "actual_answer": "Sencur（或Šenčur）是斯洛文尼亚的一个城镇，距离卢布尔雅那约有北方几公里。如果你指的是位于该地区的卢布尔雅那国际机场（Jože Pučnik Airport），那么该机场服务的航空公司会有：\n\n1. **Adria Airways**（历史上，该航空公司是斯洛文尼亚的国家航空公司，但已在2019年破产）。\n2. **Lufthansa**：提供从卢布尔雅那到各大城市的航班。\n3. **easyJet**：低成本航空公司，提供前往不同欧洲目的地的航班。\n4. **Wizz Air**：另一家低成本航空公司，也提供不同目的地的航班。\n5. **Air France**、**LOT Polish Airlines**、**Turkish Airlines**、**Swiss International Air Lines**等常见的欧洲及国际航空公司。\n\n航班和航空公司可能随时变化，建议你在旅行前查阅最新的航班时刻表或机场网站以获取详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Wheeling的航空公司有哪些？",
+        "A": [
+            "N-Jet",
+            "Northwest Flyers",
+            "Priester Aviation",
+            "Ventis Aviation Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Wheeling\";",
+        "actual_answer": "Wheeling位于美国伊利诺伊州，最接近的主要机场是芝加哥奥黑尔国际机场（ORD）。虽然Wheeling本身并没有大型商业机场，但你可以在奥黑尔国际机场找到许多主要航空公司，例如：\n\n1. 美国航空（American Airlines）\n2. 达美航空（Delta Air Lines）\n3. 联合航空（United Airlines）\n4. 西南航空（Southwest Airlines）\n5. 捷蓝航空（JetBlue Airways）\n6. 阿拉斯加航空（Alaska Airlines）\n7. 边疆航空（Frontier Airlines）\n8. 精灵航空（Spirit Airlines）\n\n这些航空公司提供多样的国内和国际航班服务。小型机场如芝加哥行政机场（Chicago Executive Airport）通常用于私人和包机航班。请确保在旅行前查看特定航空公司的航班信息和可用性。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mosta的航空公司有哪些？",
+        "A": [
+            "Sparfell Malta Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Mosta\";",
+        "actual_answer": "Mosta 是马耳他的一个小城市，但它本身没有航空公司。马耳他主要的国际机场是位于卢加的马耳他国际机场（Malta International Airport）。以下是一些常见的马耳他航空公司：\n\n1. **马耳他航空（Air Malta）**：这是马耳他的国家航空公司，提供前往欧洲、北非和中东多个目的地的航班。\n\n如果你需要从Mosta出发的航班信息，通常需要通过马耳他国际机场进行安排。建议查看具体航空公司的官方网站或机场网站以获取最新的航班信息和服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Rancho Cordova的航空公司有哪些？",
+        "A": [
+            "Pacific Jet Charter"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Rancho Cordova\";",
+        "actual_answer": "Rancho Cordova 是加利福尼亚州萨克拉门托县的一个城市，本身并没有一个商业机场。因此，Rancho Cordova 没有直接的航空公司服务。不过，最近的主要商业机场是萨克拉门托国际机场（Sacramento International Airport, SMF），距离 Rancho Cordova 大约20英里。\n\n在萨克拉门托国际机场，常见的航空公司包括：\n\n- 美国航空（American Airlines）\n- 达美航空（Delta Air Lines）\n- 阿拉斯加航空（Alaska Airlines）\n- 联合航空（United Airlines）\n- 西南航空（Southwest Airlines）\n- 捷蓝航空（JetBlue Airways）\n- 边境航空（Frontier Airlines）\n\n这些航空公司提供从萨克拉门托到美国各地和国际部分城市的航班服务。您可以查看具体的航空公司网站或机场官网以获得更多的航班和目的地信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Modesto的航空公司有哪些？",
+        "A": [
+            "Modesto Jet Center"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Modesto\";",
+        "actual_answer": "截至目前，Modesto City-County Airport（也称为Modesto机场）并没有主要的商业航空公司提供定期的客运航班服务。这是一个主要用于通用航空和私人飞机的机场。有时可能会有包机服务或季节性航班。\n\n如果你需要乘坐商业航班，可以考虑前往离Modesto较近的主要机场，例如：\n\n- 萨克拉门托国际机场（Sacramento International Airport，SMF）\n- 奥克兰国际机场（Oakland International Airport，OAK）\n- 圣何塞国际机场（San Jose International Airport，SJC）\n- 旧金山国际机场（San Francisco International Airport，SFO）\n\n这些机场有较多的航空公司和航班选择，能够提供国内和国际航线服务。建议根据你的目的地选择最方便的机场。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Phoenix的航空公司有哪些？",
+        "A": [
+            "Cutter Flight Management, Inc.",
+            "Worldwide Jet Charter Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Phoenix\";",
+        "actual_answer": "Phoenix有几个主要的机场，其中最大的机场是凤凰城天港国际机场（Phoenix Sky Harbor International Airport）。在这个机场运营的主要航空公司包括：\n\n1. 美国航空（American Airlines）\n2. 西南航空（Southwest Airlines）\n3. 达美航空（Delta Air Lines）\n4. 联合航空（United Airlines）\n5. 阿拉斯加航空（Alaska Airlines）\n6. 边疆航空（Frontier Airlines）\n7. 精灵航空（Spirit Airlines）\n8. 捷蓝航空（JetBlue Airways）\n\n除此之外，还有一些较小型或区域性的航空公司在凤凰城运营，包括一些包机和低成本航空公司。具体的航空公司列表可能会随时间变化，因此建议查看机场官方网站或相关的航空服务平台以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Porto Alegre的航空公司有哪些？",
+        "A": [
+            "Uniair Taxi Aereo Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Porto Alegre\";",
+        "actual_answer": "截至我最近的资料更新日期，以下是一些在巴西南部城市Porto Alegre（阿雷格里港）Salgado Filho国际机场（POA）运营的主要航空公司：\n\n1. **巴西南方航空公司（LATAM Airlines Brazil）** - 提供国内和国际航班。\n2. **巴西高尔航空公司（Gol Linhas Aéreas）** - 主要提供国内航班，也有一些国际航班。\n3. **阿苏尔巴西航空公司（Azul Brazilian Airlines）** - 以国内航班为主。\n4. **阿根廷航空（Aerolineas Argentinas）** - 提供前往阿根廷的航班。\n\n除了这些主要运营商外，还有一些小型航空公司提供区域性航班。请注意，航空公司和航班信息可能会发生变化，建议查看机场官方网站或直接联系航空公司以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Augsburg的航空公司有哪些？",
+        "A": [
+            "Augsburg Airways"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Augsburg\";",
+        "actual_answer": "截至我掌握的信息，奥格斯堡（Augsburg）并不是一个拥有大型国际机场的城市，因此没有主要航空公司驻扎在奥格斯堡。然而，附近的慕尼黑（Munich）拥有一个主要的国际机场——慕尼黑国际机场（Munich International Airport），那里有许多国际和国内航空公司运营。\n\n如果你正在寻找从奥格斯堡出发的航空旅行选项，最常见的方法是前往慕尼黑机场或纽伦堡机场（Nuremberg Airport），在那里有多家航空公司提供服务。\n\n请注意，情况可能会随时间变化，建议查阅当地机场的最新信息以获取最新的航空公司列表。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Brisbane的航空公司有哪些？",
+        "A": [
+            "Aergo International Pty Ltd",
+            "Avcair",
+            "XO Jet Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Brisbane\";",
+        "actual_answer": "截至最新数据，布里斯班的主要航空公司包括澳大利亚航空公司（Qantas）、维珍澳大利亚航空（Virgin Australia）、捷星航空（Jetstar）、澳洲虎航（Tigerair Australia）以及一些国际航空公司如新加坡航空（Singapore Airlines）、国泰航空（Cathay Pacific）等。这些航空公司在布里斯班机场运营国内和国际航班。请注意，航空公司的运营情况可能会随时变化，建议查看布里斯班机场或相应航空公司的官方网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Memmingerberg的航空公司有哪些？",
+        "A": [
+            "Excellent Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Memmingerberg\";",
+        "actual_answer": "Memmingerberg 位于德国巴伐利亚州，靠近美因州的默明根（Memmingen）。在该地区临近的机场是美明根机场（Memmingen Airport），通常也被称为阿尔高机场（Allgäu Airport Memmingen）。美明根机场主要运营廉价航空和其他一些航空公司的航班。常见的航空公司包括：\n\n1. 瑞安航空（Ryanair）\n2. 威兹航空（Wizz Air）\n3. 伊斯坦堡航空（Corendon Airlines）\n4. 联达航空（TUI fly）\n\n这些航空公司提供飞往欧洲多个目的地的航班。不过，具体的航空公司和航班可能会根据季节和需求有所变化，因此建议在出行前查看机场网站或航空公司的官方信息以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Batavia的航空公司有哪些？",
+        "A": [
+            "Thunderun Aviation Corporation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Batavia\";",
+        "actual_answer": "Batavia位于印度尼西亚，雅加达的旧称是Batavia。目前，印尼的首都雅加达有多个航空公司在运营。主要的印尼航空公司包括：\n\n1. 狮航 (Lion Air)\n2. 鹰航 (Garuda Indonesia)\n3. 翼航空 (Wings Air)\n4. 巴泽航空 (Batik Air)\n5. 城市快线 (Citilink)\n6. 印尼亚洲航空 (Indonesia AirAsia)\n\n这些航空公司提供国内和国际航班服务。当然，航空公司的运营状况可能随时间变化，建议在计划旅行时查阅最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pribram District的航空公司有哪些？",
+        "A": [
+            "Ok Aviation Group"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Pribram District\";",
+        "actual_answer": "截至目前，Pribram District 并没有大型国际或国内机场，因此没有主要的航空公司在该地区设有基地。Pribram 是捷克共和国的一部分，离布拉格较近。大多数航空交通需求通常通过捷克的主要航空枢纽布拉格的瓦茨拉夫・哈维尔机场（Prague Václav Havel Airport）满足。\n\n在布拉格机场，有许多国际和国内航空公司运营，包括大多数欧洲国家的国家航空公司、低成本航空公司，以及一些洲际航空公司。\n\n如果你需要更多具体的航空公司信息或目的地，请告知。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Honolulu的航空公司有哪些？",
+        "A": [
+            "Mid-Pacific Jets"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Honolulu\";",
+        "actual_answer": "截至2021年10月，从霍诺卢鲁国际机场（丹尼尔·K·井上国际机场，HNL）运营的主要航空公司包括：\n\n1. **夏威夷航空（Hawaiian Airlines）** - 夏威夷的旗舰航空公司，提供广泛的国际和国内航班。\n2. **美联航（United Airlines）** - 提供从美国大陆和国际目的地飞往夏威夷的航班。\n3. **美国航空（American Airlines）** - 提供往返美国和其他国际目的地的航班。\n4. **达美航空（Delta Air Lines）** - 提供从主要美国城市和国际地点飞往夏威夷的航班。\n5. **阿拉斯加航空（Alaska Airlines）** - 主要从美国西海岸的城市提供服务。\n6. **西南航空（Southwest Airlines）** - 相对较新进入夏威夷市场，提供从美国大陆不同城市的航班。\n7. **捷蓝航空（JetBlue Airways）** - 主要通过与夏威夷航空的合作提供服务。\n8. **日本航空（Japan Airlines）** 和 **全日空（ANA）** - 提供从日本多个城市飞往夏威夷的航班。\n\n此外，还有许多其他国际和地区性航空公司提供航班，包括韩国航空（Korean Air）、中华航空（China Airlines）、大韩航空（Asiana Airlines）等。请注意，航空公司服务和可用航班可能会根据市场需求和季节性变化而有所调整。建议检查航空公司的官方网站或旅行平台以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sydney的航空公司有哪些？",
+        "A": [
+            "Execujet Australia Pty Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sydney\";",
+        "actual_answer": "Sydney是澳大利亚的一个主要城市，拥有几个主要的航空公司。以下是一些著名的航空公司，它们在悉尼运营：\n\n1. **澳洲航空（Qantas Airways）**：这是澳大利亚的旗舰航空公司，总部位于悉尼，并以悉尼国际机场作为主要枢纽之一。\n\n2. **维珍澳大利亚航空（Virgin Australia）**：这是一家大型的澳大利亚航空公司，也以悉尼为其中一个主要基地。\n\n3. **捷星航空（Jetstar Airways）**：这是一家低成本航空公司，隶属澳洲航空集团，在悉尼有广泛的航班网络。\n\n4. **瑞克斯航空（Regional Express Airlines，简称Rex）**：一家主要运营区域航班的航空公司，提供从悉尼到新南威尔士州和其他地区的服务。\n\n另外，还有许多国际航空公司也在悉尼运营国际航班，比如：\n\n- 新加坡航空（Singapore Airlines）\n- 阿联酋航空（Emirates）\n- 新西兰国际航空（Air New Zealand）\n- 国泰航空（Cathay Pacific）\n- 美国航空（American Airlines）\n\n这些航空公司通过悉尼国际机场连接澳大利亚与全球其他地区。具体航班情况可能会因时间和季节变化，请查看各航空公司的官方网站或旅行代理进行详细查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Port Moresby的航空公司有哪些？",
+        "A": [
+            "Tropicair Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Port Moresby\";",
+        "actual_answer": "截至2021年，飞往和飞出巴布亚新几内亚首都莫尔兹比港（Port Moresby）杰克逊国际机场的主要航空公司包括：\n\n1. **巴新航空（Air Niugini）** - 作为巴布亚新几内亚的国家航空公司，提供国内和国际航线。\n\n2. **PNG航空（PNG Air）** - 主要提供国内航班服务，也有一些区域国际航班。\n\n3. **澳洲航空（Qantas）** - 提供往返于澳大利亚部分城市的国际航班。\n\n4. **维珍澳大利亚航空（Virgin Australia）** - 也提供从澳大利亚到莫尔兹比港的航班。\n\n5. **菲律宾航空（Philippine Airlines）** - 提供菲律宾和莫尔兹比港之间的航班服务。\n\n6. **新加坡航空（Singapore Airlines）** - 通过其工程子公司胜安航空提供服务。\n\n请注意，航空公司运营的航线和服务会因市场需求、季节变化及其他因素而调整，具体信息建议查看各航空公司的官方网站或联系旅行社获取最新航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Grand Forks的航空公司有哪些？",
+        "A": [
+            "GFK Flight Support"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Grand Forks\";",
+        "actual_answer": "Grand Forks是位于美国北达科他州的一个城市，它的主要机场是Grand Forks International Airport（GFK）。在该机场运营的主要航空公司包括：\n\n1. **Delta Air Lines** - 通常提供飞往明尼阿波利斯-圣保罗国际机场（MSP）的航班。\n\n2. **Allegiant Air** - 提供季节性或特定目的地的航班，通常飞往像拉斯维加斯、凤凰城等休闲旅游地。\n\n需要注意的是，航班和航空公司的运营情况可能会有变动，因此建议查看机场官方网站或航空公司网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Merritt Island的航空公司有哪些？",
+        "A": [
+            "Buzz Air Inc"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Merritt Island\";",
+        "actual_answer": "截至目前，Merritt Island并没有大型商业机场，因此没有主要的商业航空公司直接在此运营。Merritt Island位于佛罗里达州，是一个著名的旅游胜地，靠近奥兰多。最近的大型商业机场是奥兰多国际机场（MCO），在那里有许多航空公司提供国内外航班。如果你计划从Merritt Island出发，通常需要通过奥兰多国际机场或其他附近的机场乘坐航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hamilton的航空公司有哪些？",
+        "A": [
+            "Jetport"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Hamilton\";",
+        "actual_answer": "Hamilton是新西兰的一座城市，位于北岛。在Hamilton及其周边地区运营的航空公司主要在于服务当地的Hamilton国际机场。截至我最后的更新，以下是几个可能服务该机场的航空公司：\n\n1. **Air New Zealand** - 提供往返于其他新西兰主要城市的航班。\n2. **Jetstar Airways** - 可能提供一些国内航班服务。\n3. **其他区域性航空公司** - 可能会有一些小型或区域性的航空公司提供特定目的地的航班。\n\n航班和航空公司服务可能会因季节、经济状况以及航空政策的变化而有所调整，因此建议查看Hamilton国际机场的官方网站或联系相关航空公司以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sturgis的航空公司有哪些？",
+        "A": [
+            "Rai Jets LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sturgis\";",
+        "actual_answer": "截至我所知，Sturgis并没有大型商业机场，因此没有主要的航空公司直接服务于Sturgis。最邻近的主要机场是南达科他州的拉皮德城地区机场（Rapid City Regional Airport，代码RAP）。该机场有几家航空公司提供服务，包括美国航空（American Airlines）、达美航空（Delta Air Lines）、联合航空（United Airlines）以及忠实航空（Allegiant Air）等。乘客通常需要从这些大城市转飞到拉皮德城，再驱车前往Sturgis。请在旅行前查阅相关航空公司的官方网站或通过旅游代理商确认最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Charlottesville的航空公司有哪些？",
+        "A": [
+            "Meridian Air Group"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Charlottesville\";",
+        "actual_answer": "截至我最后更新的信息，夏洛茨维尔-阿尔伯马尔机场（Charlottesville-Albemarle Airport，机场代码：CHO）由以下几家主要航空公司提供服务：\n\n1. **美国航空（American Airlines）** - 提供前往美国各地的航班。\n2. **达美航空（Delta Air Lines）** - 提供通往多个枢纽城市的航班。\n3. **联合航空（United Airlines）** - 提供连接其他城市的航班。\n\n航空公司及其航线可能会根据市场需求和其他因素随时调整，因此建议在计划旅行时查看机场官方网站或直接联系航空公司以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Belfast的航空公司有哪些？",
+        "A": [
+            "247 Aviation Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Belfast\";",
+        "actual_answer": "Belfast有两个主要的机场：贝尔法斯特城市机场和贝尔法斯特国际机场。以下是一些通常在这些机场运营的航空公司：\n\n1. **贝尔法斯特城市机场（George Best Belfast City Airport）**：\n   - 英国航空（British Airways）\n   - 盎格里亚航空（Loganair）\n   - 荷兰皇家航空（KLM）\n   - 翡翠航空（Emerald Airlines）\n\n2. **贝尔法斯特国际机场（Belfast International Airport）**：\n   - 易捷航空（easyJet）\n   - 瑞安航空（Ryanair）\n   - 捷特二航空（Jet2）\n   - 托马斯·库克航空（以前运营，现在已不复存在）\n   - 途易航空（TUI Airways）\n\n这些航空公司提供往返英国其他城市和欧洲主要目的地的航班。请注意，航空公司和航线可能会随时变动，因此在计划旅行时最好查询最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Santo Domingo的航空公司有哪些？",
+        "A": [
+            "Helidosa Aviation Group",
+            "Sky High Aviation Services"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Santo Domingo\";",
+        "actual_answer": "在圣多明各（Santo Domingo），主要的航空公司主要在拉斯美利坚国际机场（Las Américas International Airport，IATA代码：SDQ）运营。以下是一些在该机场运营的主要航空公司：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **美联航（United Airlines）**\n4. **捷蓝航空（JetBlue Airways）**\n5. **西南航空（Southwest Airlines）**\n6. **精神航空（Spirit Airlines）**\n7. **法航（Air France）**\n8. **Grupo Aeroméxico**\n9. **哥伦比亚国家航空（Avianca）**\n\n此外，还有一些区域和本地航空公司，如：\n\n1. **普麦尔航空（PAWA Dominicana）** - 注：这家公司在2018年已停止运营。\n2. **土耳其航空（Turkish Airlines）**\n3. **智利国家航空（LATAM Airlines）**\n\n航空公司和航线可能会根据需求和季节性变化，因此建议在计划旅行之前查看最新的航班信息和航空运营商的家庭网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Seine-Saint-Denis的航空公司有哪些？",
+        "A": [
+            "ADM Aviation Executive",
+            "Ixair",
+            "Luxaviation France"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Seine-Saint-Denis\";",
+        "actual_answer": "Seine-Saint-Denis是法国巴黎的一个郊区，并没有自己的国际航空公司或机场。不过，它靠近巴黎主要的两个机场：查尔斯·戴高乐国际机场（CDG）和奥利机场（ORY）。这些机场服务于众多国际和国内航空公司。以下是一些在这两个机场运营的主要航空公司：\n\n1. **法国航空（Air France）** - 法国的国家航空公司，提供广泛的国内和国际航班。\n2. **易捷航空（easyJet）** - 一家大型的廉价航空公司，提供许多欧洲和部分国际航班。\n3. **伏林航空（Vueling Airlines）** - 西班牙的低成本航空公司，也从巴黎出发。\n4. **汉莎航空（Lufthansa）** - 德国的主要航空公司，提供连接德国及其他国际目的地的航班。\n5. **英国航空（British Airways）** - 英国的国家航空公司，提供通往伦敦及其他国际目的地的航班。\n\n此外，还有许多其他国际航空公司在这些机场运营。如果您需要特定航空公司或航班信息，可以查看相应机场的网站或在线航班查询服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lamar County的航空公司有哪些？",
+        "A": [
+            "Air Direct LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lamar County\";",
+        "actual_answer": "Lamar County通常指的是美国的某个地区，如德克萨斯州或密西西比州，其本身并不设有主要的商业机场。因此，在Lamar County本地通常没有大型航空公司运营。不过，邻近的大都市或者更大规模的机场，可能有更多的航空公司服务此区域。\n\n例如，如果是德克萨斯州的Lamar County，您可能会考虑达拉斯-沃思堡地区的机场，如达拉斯/沃思堡国际机场（DFW）或达拉斯爱田机场（DAL），这些机场有多家航空公司运营，包括美国航空、达美航空、西南航空和联合航空等。\n\n如果是密西西比州的Lamar County，最邻近的大型商业机场可能是杰克逊的杰克逊-梅德加·艾弗斯国际机场（JAN），那里有美国航空、达美航空和西南航空等公司提供服务。\n\n具体哪家航空公司运营飞往你所在或关注的地域航线，可能需要查看邻近大型机场的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Schkeuditz的航空公司有哪些？",
+        "A": [
+            "FSH Luftfahrtunternehmen GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Schkeuditz\";",
+        "actual_answer": "Schkeuditz是德国莱比锡/哈雷机场（Leipzig/Halle Airport，IATA代码：LEJ）的所在地。在此机场运营的航空公司可能会根据季节和航空公司战略调整，但通常包括以下一些主要航空公司：\n\n1. **汉莎航空（Lufthansa）** - 作为德国的国家航空公司，汉莎航空通常会提供从莱比锡/哈雷机场飞往慕尼黑、法兰克福等主要城市的航班。\n   \n2. **瑞安航空（Ryanair）** - 这是一家主要的低成本航空公司，可能提供飞往欧洲主要城市的航班。\n\n3. **欧翼航空（Eurowings）** - 它是一家德国廉价航空公司，可能提供飞往国内及欧洲其他城市的航班。\n\n4. **土耳其航空（Turkish Airlines）** - 通常提供飞往伊斯坦布尔及其他国际目的地的航班。\n\n5. **其他季节性或包机航空公司** - 根据旅游旺季和包机需求，来自不同国家的其他航空公司可能会提供临时航班。\n\n建议访问莱比锡/哈雷机场的官方网站或直接与航空公司联系以获取最新的航班信息和服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Taipei的航空公司有哪些？",
+        "A": [
+            "Skyvision Aviation",
+            "Winair Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Taipei\";",
+        "actual_answer": "台北的主要航空公司包括：\n\n1. **中华航空（China Airlines）** - 中华航空是台湾的国家航空公司，总部设在台北。它运营着众多国际和国内航线。\n\n2. **长荣航空（EVA Air）** - 长荣航空是台湾另一家主要的航空公司，以其优质的服务著称，同样提供广泛的国际和国内航线。\n\n3. **台湾虎航（Tigerair Taiwan）** - 这是一家低成本航空公司，总部位于台北，提供多条区域和国际航线。\n\n4. **星宇航空（Starlux Airlines）** - 这是一家较新的航空公司，以豪华服务和高品质的乘客体验为特点，逐渐扩展其航线网络。\n\n这些航空公司从台北的主要机场（桃园国际机场和台北松山机场）出发，提供到达世界各地的航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Innsbruck的航空公司有哪些？",
+        "A": [
+            "Fly Tyrol"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Innsbruck\";",
+        "actual_answer": "截至我的知识更新日期，在奥地利的因斯布鲁克机场运营的航空公司包括：\n\n1. 奥地利航空（Austrian Airlines）\n2. 汉莎航空（Lufthansa）\n3. 瑞士国际航空（SWISS）\n4. 荷兰皇家航空（KLM）\n5. 易捷航空（easyJet）\n6. 英国航空（British Airways）\n7. 星际航空（Transavia）\n8. 桑航航空（TUIfly）\n\n还有其他一些航空公司可能会在特定季节或特定航线运营。建议查看因斯布鲁克机场官方网站或联系航空公司以获取最新的航班信息和运营航空公司列表。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Osijek的航空公司有哪些？",
+        "A": [
+            "Air Pannonia D.O.O."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Osijek\";",
+        "actual_answer": "截至我最后更新的信息，奥西耶克（Osijek）是克罗地亚的一座城市，拥有一个小型国际机场——奥西耶克机场（Osijek Airport）。由于机场规模较小，通常服务的航空公司数量有限且航线可能会随季节变化。常见的航空公司可能包括：\n\n1. **克罗地亚航空公司（Croatia Airlines）**：作为克罗地亚的国家航空公司，通常提供国内和部分国际航班。\n2. **莱恩航空（Ryanair）**：这是一家低成本航空公司，可能会提供到奥西耶克的季节性航班。\n\n请注意，航班信息和航空公司运营情况可能会随时变动，建议查看奥西耶克机场的官方网站或直接与航空公司联系获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Napier的航空公司有哪些？",
+        "A": [
+            "Jet Charters Nz"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Napier\";",
+        "actual_answer": "Napier是新西兰北岛哈沃克湾的一个城市，其主要的机场是霍克斯湾机场（Hawke's Bay Airport）。该机场有多家航空公司运营，提供往返新西兰国内多个主要城市的航班。常见的航空公司包括：\n\n1. **Air New Zealand（新西兰航空）** - 提供往返奥克兰、惠灵顿和基督城等城市的航班。\n\n2. **Sounds Air** - 提供往返皮克顿和帕拉帕拉乌姆等地点的航班。\n\n航空公司和航班服务会有所变化，因此建议在计划旅行时查看最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Zelienople的航空公司有哪些？",
+        "A": [
+            "Private Jet Center"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Zelienople\";",
+        "actual_answer": "Zelienople, Pennsylvania, 并没有主要的商业机场，因此没有基于该地区的主要航空公司。最近的主要机场是匹兹堡国际机场（Pittsburgh International Airport），位于匹兹堡市附近，该机场有多家国内和国际航空公司运营服务。如果你正在寻找从Zelienople前往匹兹堡国际机场的交通选项，通常可以通过汽车或其它交通方式到达该机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Boca Raton的航空公司有哪些？",
+        "A": [
+            "Florida Wings Inc.",
+            "Journey Aviation LLC",
+            "M&n Aviation Inc.",
+            "Privaira",
+            "Skyways Charter LLC",
+            "South Florida Aviation Group LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Boca Raton\";",
+        "actual_answer": "Boca Raton, Florida, 并没有大型商业航空公司直接运营的主要机场。但是，Boca Raton Airport (BCT) 是一个非常常使用的小型机场，主要服务于私人飞机和一些包机服务。因此，使用Boca Raton Airport进行航空服务的并不是传统意义上的大型商业航空公司，而是一些提供私人航班和包机服务的公司。\n\n对于商业航班服务，最接近Boca Raton的主要机场是Fort Lauderdale-Hollywood International Airport (FLL) 和 Palm Beach International Airport (PBI)。这两个机场有多家主要的美国国内和国际航空公司运营，包括但不限于美国航空 (American Airlines)、达美航空 (Delta Air Lines)、西南航空 (Southwest Airlines)、捷蓝航空 (JetBlue Airways) 等。\n\n如果您需要更具体的信息，建议访问各大航空公司官网或者机场官网查询航班及航空公司服务信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "St. Louis County的航空公司有哪些？",
+        "A": [
+            "Aero Charter Inc.",
+            "Corporate Aircraft Management",
+            "Spiritjets LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"St. Louis County\";",
+        "actual_answer": "St. Louis County的主要机场是圣路易斯兰伯特国际机场（St. Louis Lambert International Airport），该机场由多家航空公司运营。以下是一些主要的航空公司，它们在圣路易斯兰伯特国际机场提供航班服务：\n\n1. **美国航空（American Airlines）**\n2. **西南航空（Southwest Airlines）**\n3. **达美航空（Delta Air Lines）**\n4. **联合航空（United Airlines）**\n5. **阿拉斯加航空（Alaska Airlines）**\n6. **边疆航空（Frontier Airlines）**\n7. **太阳国航空（Sun Country Airlines）**\n\n请注意，航空公司及其航班服务可能会随时更改，因此您可能需要检查机场的官方网站或直接联系航空公司以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "West Trenton的航空公司有哪些？",
+        "A": [
+            "Aviation Charters Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"West Trenton\";",
+        "actual_answer": "West Trenton 并没有大型商业机场，因此也就没有大型的航空公司总部或主要航班运营基地。然而，West Trenton 附近有一些较大的机场可以供居民和旅客使用，最接近的大型机场是费城国际机场（PHL）和纽瓦克自由国际机场（EWR）。这些机场由多家主要航空公司经营，包括美联航、达美航空、美国航空、西南航空等。如果需要从West Trenton出发，通常需要前往这些附近的大型机场搭乘航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "McAllen的航空公司有哪些？",
+        "A": [
+            "Mccreery Aviation Inc"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"McAllen\";",
+        "actual_answer": "截至我所知的最新信息，麦卡伦（McAllen）国际机场（MFE）有几家主要航空公司提供服务。这些航空公司可能包括：\n\n1. **美国航空（American Airlines）** - 通常提供往返达拉斯/沃斯堡（DFW）的航班。\n   \n2. **联合航空（United Airlines）** - 提供飞往休斯顿乔治·布什洲际机场（IAH）的航班。\n   \n3. **边疆航空（Frontier Airlines）** - 虽然不定期，但有时会提供一些热门旅游目的地的季节性航班。\n   \n航空公司运营情况可能会随季节、需求和其他因素而变化，建议在计划旅行之前查看机场或航空公司网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Marcoola的航空公司有哪些？",
+        "A": [
+            "Machjet International Pty Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Marcoola\";",
+        "actual_answer": "截至目前，Marcoola是位于澳大利亚昆士兰州阳光海岸的一小部分，其主要机场是阳光海岸机场（Sunshine Coast Airport）。从这个机场出发的航空公司可能会有所变化，但通常会有以下几家主要航空公司提供服务：\n\n1. **澳洲航空（Qantas）** - 提供飞往澳大利亚各大城市的服务。\n2. **捷星航空（Jetstar）** - 提供经济实惠的国内航线。\n3. **维珍澳大利亚航空（Virgin Australia）** - 提供多条国内航线。\n4. **联盟航空（Alliance Airlines）** - 通常提供包机服务，有时也会提供定期航班。\n\n请注意，航空公司的航班安排可能会因为季节变化或其他因素而有所调整，因此建议在计划出行时查看具体的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Victoria的航空公司有哪些？",
+        "A": [
+            "VIH Execujet Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Victoria\";",
+        "actual_answer": "Victoria是澳大利亚的一个州，主要城市是墨尔本。墨尔本作为主要交通枢纽，拥有多个航空公司运营。以下是一些在维多利亚州活跃的航空公司：\n\n1. **澳洲航空（Qantas）** - 澳大利亚的国家航空公司，提供国内和国际航班。\n2. **维珍澳洲航空（Virgin Australia）** - 提供多条国内航线，并有一些国际航班。\n3. **捷星航空（Jetstar Airways）** - 澳航旗下的低成本航空公司，运营多条国内和国际航线。\n4. **新西兰航空（Air New Zealand）** - 提供从墨尔本出发的跨塔斯曼海航班。\n5. **虎航澳大利亚（Tigerair Australia）** - 另一家低成本航空公司（请注意其运营情况可能变化）。\n6. **丰盛航空（Rex - Regional Express）** - 主要提供地区航班。\n\n除此之外，还有多家国际航空公司在墨尔本运营，提供从墨尔本出发的国际航班。具体航空公司和航班可能会有变化，建议查看航空公司的官方网站或相关订票平台以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "St. Julian's的航空公司有哪些？",
+        "A": [
+            "Alliance Executive Jets"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"St. Julian's\";",
+        "actual_answer": "St. Julian's位于马耳他，并没有自己的机场，最近的主要机场是马耳他国际机场（Luqa Airport），其机场代码为MLA。虽然St. Julian's本身没有航空公司，但通过马耳他国际机场，可以乘坐多家航空公司的航班。这些航空公司可能包括：\n\n1. 马耳他航空（Air Malta）\n2. 瑞安航空（Ryanair）\n3. 易捷航空（easyJet）\n4. 汉莎航空（Lufthansa）\n5. 英国航空（British Airways）\n6. 法国航空（Air France）\n7. 阿联酋航空（Emirates）\n\n这些航空公司提供连接到欧洲、北非和中东等地的航班。具体的航空公司和目的地可能会根据季节和航空公司的运营计划变化，因此建议在旅行前查看马耳他国际机场的最新信息或者相关航空公司的官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Entzheim的航空公司有哪些？",
+        "A": [
+            "Airailes",
+            "Eatis"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Entzheim\";",
+        "actual_answer": "截至我最新的信息更新，恩茨海姆（Entzheim）的主要机场是斯特拉斯堡恩茨海姆国际机场（Strasbourg Entzheim International Airport）。在此机场运营的航空公司可能会有所变化，但通常包括以下几家：\n\n1. 法国航空（Air France）\n2. 瑞安航空（Ryanair）\n3. 伏林航空（Vueling）\n\n这些航空公司提供飞往欧洲各地的航班。请注意航空公司的运营情况可能会发生变化，因此建议你在计划旅行前查看机场的官方网站或直接联系航空公司以获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Washington County的航空公司有哪些？",
+        "A": [
+            "Global Aviation Inc.",
+            "Hillsboro Aviation Inc.",
+            "Triton Air LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Washington County\";",
+        "actual_answer": "“Washington County”可能指美国的多个县，因此如果没有具体的州名，我将很难准确给出该地区的航空公司信息。不同州的Washington County可能会有不同的机场和航空公司服务。如果您能提供更准确的位置或州名，我将尝试提供更具体的信息。一般来说，地方性机场可能会有一些区域性或小型航空公司提供服务，而主要的国际和国家航空公司通常在主要城市的大型机场运营。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Zweibrucken的航空公司有哪些？",
+        "A": [
+            "Arcus-air GmbH & Co. KG"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Zweibrucken\";",
+        "actual_answer": "截至我最近的资料更新时间，德国的二布吕肯（Zweibrücken）曾经有一个小型的区域机场——Zweibrücken Airport。然而，值得注意的是，该机场在2014年因财政问题而停止了定期的商业航班运营。\n\n在其运营期间，曾经有一些低成本航空公司和包机运营商在该机场提供服务。如果您计划前往这个地区，目前您可能需要通过更大的邻近机场，比如法兰克福机场或斯图加特机场，然后继续前往Zweibrücken。\n\n请务必查看最新的资料或联系当地旅游信息中心，以获得最新的航班及交通信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Budapest的航空公司有哪些？",
+        "A": [
+            "Jet Solution",
+            "Trust Air Aviation Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Budapest\";",
+        "actual_answer": "截至目前，服务于布达佩斯李斯特·费伦茨国际机场的主要航空公司包括：\n\n1. **汉莎航空（Lufthansa）** - 提供通往多个欧洲和国际目的地的航班。\n2. **土耳其航空（Turkish Airlines）** - 连接伊斯坦布尔以及其他国际目的地。\n3. **德国之翼（Eurowings）** - 提供多条欧洲内部航线。\n4. **瑞安航空（Ryanair）** - 主要是一家低成本航空公司，提供许多欧洲目的地的航班。\n5. **威兹航空（Wizz Air）** - 总部位于布达佩斯，是一家知名的低成本航空公司，提供众多欧洲和国际航线。\n6. **英国航空（British Airways）** - 连接伦敦及其他国际目的地。\n7. **法航（Air France）** - 提供通往巴黎及其他目的地的航班。\n8. **卡塔尔航空（Qatar Airways）** - 提供通往多哈及其他国际目的地的服务。\n9. **阿联酋航空（Emirates）** - 提供直接连接迪拜的航班。\n\n此外，还有许多其他航空公司运营往返布达佩斯的航班，包括一些区域性和季节性的承运商。航班和航空公司可能根据需求和季节性变化而在不同时间段有所变化。建议在计划旅行时查看机场网站或航空公司官方网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Stuttgart的航空公司有哪些？",
+        "A": [
+            "DC Aviation Group",
+            "E-aviation/eisele Flugdienst GmbH",
+            "Proair Charter Transport GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Stuttgart\";",
+        "actual_answer": "Stuttgart拥有一个主要的国际机场，名为斯图加特机场（Flughafen Stuttgart，IATA代码：STR）。多家航空公司在该机场运营，提供国内和国际航班服务。以下是一些在斯图加特机场常见的航空公司：\n\n1. 汉莎航空（Lufthansa）\n2. 欧洲之翼航空（Eurowings）\n3. 瑞士国际航空（SWISS）\n4. 奥地利航空（Austrian Airlines）\n5. 土耳其航空（Turkish Airlines）\n6. 英国航空（British Airways）\n7. 法国航空（Air France）\n8. 荷兰皇家航空（KLM）\n9. 瑞安航空（Ryanair）\n10. 伊比利亚航空（Iberia）\n\n此外，还有许多其他航空公司提供季节性或包机服务。运营的航空公司可能会根据季节或市场需求发生变化，因此在计划旅行时，最好查看最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Guam的航空公司有哪些？",
+        "A": [
+            "Pacific Missionary Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Guam\";",
+        "actual_answer": "截至目前，关岛的主要航空公司没有总部设在岛上，但有几家航空公司提供往返关岛的航班服务。这些航空公司包括：\n\n1. **联合航空（United Airlines）**：提供从关岛到美国本土以及亚洲多个城市的航班。\n2. **韩亚航空（Asiana Airlines）**：提供从关岛飞往首尔的航班。\n3. **大韩航空（Korean Air）**：提供从关岛到韩国的航班。\n4. **菲律宾航空（Philippine Airlines）**：提供从关岛到菲律宾的航班。\n5. **全日空（ANA）** 和 **日本航空（JAL）**：提供从关岛到日本的航班。\n6. **济州航空（Jeju Air）** 和其他一些低成本航空公司也提供往返关岛的航班。\n\n这些航空公司通过各自的航线网络连接关岛与亚洲和太平洋地区的其他目的地。关岛本地没有自己的主要航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Antwerp的航空公司有哪些？",
+        "A": [
+            "Flyinggroup"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Antwerp\";",
+        "actual_answer": "Antwerp, Belgium, is served by Antwerp International Airport (ANR). Although it's a smaller airport compared to Brussels Airport, a few airlines operate there. As of my last update, TUI fly Belgium is the primary airline operating from Antwerp International Airport, offering flights to various destinations, primarily leisure and holiday locations. It's always advisable to check the airport's official website or contact them directly for the most current information on airlines and destinations, as these can change frequently.",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hampshire的航空公司有哪些？",
+        "A": [
+            "Tag Aviation S.A."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Hampshire\";",
+        "actual_answer": "Hampshire位于英国南部，虽然这个地区没有大型国际机场，但附近有一些机场常被归为Hampshire的服务范围，包括Southampton Airport（南安普顿机场）。这里有几家航空公司提供航班服务，但航班和航空公司可能会根据季节和市场需求有所变化。常见在Southampton Airport运营的航空公司包括British Airways、easyJet和Loganair等。\n\n如果你想了解最新的航空公司信息，建议你查看南安普顿机场的官方网站或直接咨询机场客服以获取最新的航班和航空公司信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Greenville的航空公司有哪些？",
+        "A": [
+            "Air Charter Express Inc.",
+            "SAI Flight Service Inc.",
+            "Aeronautical Services",
+            "Special Services Corporation",
+            "Venture Aviation Group LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Greenville\";",
+        "actual_answer": "Greenville 有两个主要的机场：格林维尔-斯帕坦堡国际机场 (GSP) 和格林维尔市中心机场 (GMU)。在格林维尔-斯帕坦堡国际机场 (GSP)，有几家主要的航空公司提供服务，包括：\n\n1. **美联航 (United Airlines)**\n2. **达美航空 (Delta Air Lines)**\n3. **美国航空 (American Airlines)**\n4. **边疆航空 (Frontier Airlines)**\n5. **忠实航空 (Allegiant Air)**\n6. **西南航空 (Southwest Airlines)**\n\n这些航空公司提供国内各主要城市和一些国际目的地的航班服务。而格林维尔市中心机场 (GMU) 主要用于通用航空，并不提供定期的商业航班服务。如果你计划从格林维尔出发，建议查看上述航空公司的航班安排以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Toowoomba的航空公司有哪些？",
+        "A": [
+            "Redjet Aviation Pty Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Toowoomba\";",
+        "actual_answer": "截至我最新的信息，Toowoomba 是澳大利亚昆士兰州的一个城市，拥有一个主要的机场：Toowoomba Wellcamp Airport (IATA代码：WTB)。该机场有一些定期航班服务，但提供服务的航空公司数量相对有限，可能包括以下几家：\n\n1. **QantasLink** - 提供往返于昆士兰州和其他主要城市的航班。\n2. **Rex (Regional Express)** - 提供区域内的航班服务。\n3. **Airnorth** - 可能提供飞往其他一些地区目的地的航班。\n\n航空公司和航线安排可能会根据需求和季节变化而有所调整，因此，建议你在计划行程时查看机场或相关航空公司官网，以获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Medellin的航空公司有哪些？",
+        "A": [
+            "Searca S.A."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Medellin\";",
+        "actual_answer": "截至我所知的最后信息，Medellín 有两个主要机场：何塞·玛丽亚·科尔多瓦国际机场（Jose Maria Cordova International Airport，MDE）和奥拉亚·埃雷拉机场（Olaya Herrera Airport，EOH）。以下是一些通常在这些机场运营的航空公司：\n\n### 何塞·玛丽亚·科尔多瓦国际机场（MDE）：\n1. **Avianca**\n2. **LATAM Airlines**\n3. **Viva Air Colombia**\n4. **Copa Airlines**\n5. **Aeroméxico**\n6. **American Airlines**\n7. **JetBlue**\n8. **Spirit Airlines**\n\n### 奥拉亚·埃雷拉机场（EOH）：\n1. **Satena**\n2. **EasyFly**\n\n这些航空公司提供国内和国际航班服务，但是具体的航班和航空公司可能会有所变化，建议在出行前查看最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Shanghai的航空公司有哪些？",
+        "A": [
+            "Deer Jet (Shanghai) Company Ltd",
+            "Suzhou Aviation Co., Ltd.",
+            "Star Jet Co., Ltd.",
+            "Jetbay Co., Ltd.",
+            "AviationX"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Shanghai\";",
+        "actual_answer": "上海作为中国的一个主要航空枢纽，拥有多个航空公司。以下是一些主要的上海基于或与之有紧密关联的航空公司：\n\n1. **中国东方航空**（China Eastern Airlines）：总部位于上海，是中国三大国有航空公司之一，是上海最大的航空公司。\n   \n2. **上海航空公司**（Shanghai Airlines）：这是中国东方航空的子公司，总部同样位于上海，主要在国内市场运营。\n\n3. **春秋航空**（Spring Airlines）：这是一家总部位于上海的低成本航空公司，提供国内外经济实惠的航班。\n\n此外，还有一些国际航空公司在上海设有分支或者运营中心。然而，以上提到的公司是主要在上海成立或由上海公司运营的航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Beirut的航空公司有哪些？",
+        "A": [
+            "Cedar Executive"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Beirut\";",
+        "actual_answer": "Beirut是黎巴嫩的首都，其主要的国际机场是贝鲁特拉菲克·哈里里国际机场（Beirut Rafic Hariri International Airport）。几家主要航空公司在此运营，包括：\n\n1. **中东航空公司（Middle East Airlines, MEA）**：这是一家黎巴嫩的国家航空公司，是该国的主要航空承运人，提供广泛的国际和地区航班。\n\n2. **阿联酋航空（Emirates）**：阿联酋的国家航空公司，提供飞往迪拜及其他国际目的地的航班。\n\n3. **卡塔尔航空（Qatar Airways）**：卡塔尔的国家航空公司，提供从贝鲁特到多哈及其他国际目的地的航班。\n\n4. **土耳其航空（Turkish Airlines）**：土耳其的国家航空公司，提供从贝鲁特到伊斯坦布尔及多条国际航线的服务。\n\n5. **沙特阿拉伯航空（Saudia）**：沙特阿拉伯的国家航空公司，提供连接贝鲁特和沙特多个城市的航班服务。\n\n此外，还有其他一些航空公司也在贝鲁特运营，包括阿提哈德航空（Etihad Airways）、埃及航空（EgyptAir）、皇家约旦航空（Royal Jordanian）等。根据航班安排和季节，其他国际和区域航空公司也可能提供服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Umeå的航空公司有哪些？",
+        "A": [
+            "Jonair Affarsflyg AB"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Umeå\";",
+        "actual_answer": "Umeå市位于瑞典，Umeå机场（Umeå Airport, 机场代码：UME）是其主要的航空枢纽。虽然具体的航空公司和航线可能会根据季节或其他因素有所变化，但通常运营至和从Umeå机场的航空公司包括：\n\n1. **Scandinavian Airlines (SAS)** - 提供前往斯德哥尔摩等主要城市的航班。\n2. **Norwegian Air Shuttle** - 也可能提供服务，尤其是在较为繁忙的航线或季节。\n3. **Braathens Regional Airlines (BRA)** - 通常提供瑞典境内的航班。\n\n建议旅客在出行前查阅最新的航班信息或联系航空公司以确保安排。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hainan的航空公司有哪些？",
+        "A": [
+            "Jinxiang Airlines"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Hainan\";",
+        "actual_answer": "截至目前，海南有几家主要的航空公司，包括：\n\n1. **海南航空（Hainan Airlines）**：这是海南省最大的航空公司，也是中国最大的民营航空公司之一。它提供国内和国际航班。\n\n2. **福州航空（Fuzhou Airlines）**：由海南航空控股，与福州市政府合作成立，主要运营国内航线。\n\n3. **广西北部湾航空（GX Airlines）**：尽管总部位于南宁，它也是由海航集团投资成立的，提供国内航班服务。\n\n这些航空公司主要经营国内航线，同时也逐步拓展国际航线。信息可能会随时间变化，建议查看官方网站或相关资料以获取最新详情。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Limburg的航空公司有哪些？",
+        "A": [
+            "ASL Group"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Limburg\";",
+        "actual_answer": "Limburg是比利时和荷兰的两个不同地区，每个地区没有特定的以Limburg命名的航空公司。不过，这些地区可能服务于更大的航空公司，这些航空公司在靠近Limburg的主要机场运营。\n\n1. **比利时Limburg**：最近的主要机场是布鲁塞尔机场（Brussels Airport）和列日机场（Liège Airport）。许多国际和欧洲航空公司在这些机场运营，例如比利时航空（Brussels Airlines）、瑞安航空（Ryanair）和法荷航（Air France-KLM）等。\n\n2. **荷兰Limburg**：马斯特里赫特亚琛机场（Maastricht Aachen Airport）是最接近的机场，一些较小的航空公司和包机航空公司可能在这里运营。\n\n如果你需要去特定地点或者有其他具体需求，可以查看这些机场的官方网站，以获取最新的航空公司信息和航班选择。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lagos的航空公司有哪些？",
+        "A": [
+            "Anap Business Jets Ltd",
+            "Triton Aviation Limited"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lagos\";",
+        "actual_answer": "拉各斯是尼日利亚的主要城市之一，也是该国的航空枢纽。以下是一些主要在拉各斯运营的航空公司：\n\n1. **尼日利亚航空公司**（Air Nigeria） - 尽管历史上曾运营，但该公司已经停止运营。\n2. **阿里克航空**（Arik Air） - 是尼日利亚最大的航空公司之一，提供国内和国际航班。\n3. **艾克航空**（Aero Contractors） - 提供国内和一些区域性国际航班服务。\n4. **亚斯曼航空**（Azman Air） - 主要提供国内航班服务。\n5. **达娜航空**（Dana Air） - 提供国内航班服务，特别是在一些主要城市之间。\n6. **爱彼国际航空**（Ibom Air） - 尼日利亚的相对较新的航空公司，提供国内航线。\n7. **和平航空**（Air Peace） - 提供广泛的国内和一些区域性国际航班。\n\n这些航空公司提供从穆尔塔拉·穆罕默德国际机场（Murtala Muhammed International Airport，IATA代码：LOS）出发的航班。除此之外，还有一些国际航空公司也在拉各斯运营，从这里飞往世界各地的目的地。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Red Bluff的航空公司有哪些？",
+        "A": [
+            "PJ Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Red Bluff\";",
+        "actual_answer": "Red Bluff位于美国加利福尼亚州，但该城市并没有大型商业机场。因此，Red Bluff本身没有提供商业航班的航空公司。最近的主要机场是Redding Municipal Airport (RDD)，位于Redding市，距离Red Bluff大约30英里。在Redding Municipal Airport，通常有一些区域性的航空公司提供航班服务，如United Express等。\n\n如果需要更多的航空选择，您可以考虑前往更大的机场，比如位于萨克拉门托（Sacramento International Airport, SMF）或旧金山（San Francisco International Airport, SFO），这些机场提供更多的国内和国际航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Greenwood的航空公司有哪些？",
+        "A": [
+            "Fedair LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Greenwood\";",
+        "actual_answer": "截至我最后更新的信息，Greenwood并不是一个大型城市或著名的航空枢纽，因此可能并没有专门以Greenwood命名的航空公司。通常情况下，较大的航空公司会在主要城市设有运营业务。例如，如果你指的是美国的某个Greenwood市，例如印第安纳州的Greenwood市，最近的主要机场可能是位于印第安纳波利斯的印第安纳波利斯国际机场（IND）。\n\n如果你有关于Greenwood的更多具体信息或指的是其他地名（例如某个国家的机场），请提供更多细节，方便我为你提供更准确的回答。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gatineau的航空公司有哪些？",
+        "A": [
+            "Tag - Transport Aerien Gatineau"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Gatineau\";",
+        "actual_answer": "在Gatineau，主要使用的机场是Gatineau-Ottawa Executive Airport，但并没有大型商业航空公司在此运营定期的商业航班。该机场主要用于一般航空活动，包括私人飞行、包机服务和飞行训练。如果你需要乘坐商业航班，通常会通过附近的渥太华麦克唐纳-卡蒂埃国际机场（Ottawa Macdonald-Cartier International Airport）进行，这里有众多国际和国内航空公司运营。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Eau Claire的航空公司有哪些？",
+        "A": [
+            "Heartland Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Eau Claire\";",
+        "actual_answer": "截至我了解到的信息，Eau Claire, Wisconsin的主要机场是Chippewa Valley Regional Airport (EAU)。从这个机场运营的主要航空公司包括：\n\n1. **United Airlines**（通过United Express）：通常提供飞往芝加哥奥黑尔国际机场（ORD）的航班，从而连接到更多的国内和国际目的地。\n\n建议您在计划出行时查看机场或航空公司的官方网站，以获取最新的航班信息和航班时刻表。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Thessaloniki的航空公司有哪些？",
+        "A": [
+            "Air Intersalonika",
+            "Flygr8"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Thessaloniki\";",
+        "actual_answer": "截至我的最新信息，在塞萨洛尼基（Thessaloniki）的主要机场，塞萨洛尼基国际机场（又名马其顿国际机场，SKG）的运营航空公司通常包括：\n\n1. 爱琴海航空（Aegean Airlines）\n2. 奥林匹克航空（Olympic Air）\n3. 瑞安航空（Ryanair）\n4. 易捷航空（easyJet）\n5. 汉莎航空（Lufthansa）\n6. 法国航空（Air France）\n7. 卡塔尔航空（Qatar Airways）\n8. 土耳其航空（Turkish Airlines）\n\n此外，还有许多其他航空公司提供季节性或包机航班。在计划行程时，建议查看具体航空公司的网站或订票平台以获取最新的航班信息和选择。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Chesapeake的航空公司有哪些？",
+        "A": [
+            "Jet Air Charter LLC",
+            "Jet It Flight Operations"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Chesapeake\";",
+        "actual_answer": "截至目前，切萨皮克（Chesapeake）并没有自己的主要商业机场，因此没有基于切萨皮克的主要航空公司。切萨皮克位于弗吉尼亚州东南部，通常使用附近的几个主要机场，这些机场包括：\n\n1. 诺福克国际机场（Norfolk International Airport，ORF） - 位于诺福克，距离切萨皮克不远，是服务该地区的主要机场之一。\n\n2. 纽波特纽斯/威廉斯堡国际机场（Newport News/Williamsburg International Airport，PHF） - 也距切萨皮克较近，提供部分航班服务。\n\n3. 里士满国际机场（Richmond International Airport，RIC） - 虽然稍远一些，但仍是邻近切萨皮克地区居民的常用选择。\n\n这些机场有多个航空公司运营，为该地区提供国内和有限的国际航班服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Općina Gola的航空公司有哪些？",
+        "A": [
+            "Fly-coop Legiszolgaltato Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Općina Gola\";",
+        "actual_answer": "Općina Gola 是克罗地亚的一个小地方，没有自己的机场或航空公司。通常，居民会使用附近大城市的机场，如萨格勒布（Zagreb）机场。从那里，乘客可以搭乘多家航空公司的航班前往国内外目的地。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Langenhagen的航空公司有哪些？",
+        "A": [
+            "Aerowest GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Langenhagen\";",
+        "actual_answer": "Langenhagen 是德国汉诺威的一个城区，汉诺威机场（Flughafen Hannover-Langenhagen）就位于此处。虽然我没有实时数据，但在汉诺威机场运营的航空公司通常包括德国本地航司如汉莎航空（Lufthansa）、德国之翼（eurowings），以及其他国际航空公司，如瑞安航空（Ryanair）、易捷航空（easyJet）等。具体的航空公司可能会因季节和市场需求有所变化。为了获取最新的信息，建议访问汉诺威机场的官方网站或联系机场客服。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Manteo的航空公司有哪些？",
+        "A": [
+            "Outer Banks Air Charters Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Manteo\";",
+        "actual_answer": "Manteo位于北卡罗来纳州，最接近的机场是位于邻近城市基尔戴维尔希尔斯的达雷县地区机场（Dare County Regional Airport）。然而，这个机场主要处理通用航空，商业定期航班服务非常有限或没有。如果你需要飞往Manteo，通常建议的是前往更大的机场，如位于诺福克的诺福克国际机场（Norfolk International Airport），这可能有更多的航空公司和航班选择。从诺福克，你可以租车或使用其他地面交通工具前往Manteo。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Norwich的航空公司有哪些？",
+        "A": [
+            "Saxonair"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Norwich\";",
+        "actual_answer": "截至我最后的信息更新，诺里奇（Norwich）机场是一家相对较小的区域机场，因此提供的航空公司和航班目的地比较有限。在这个机场运营的主要航空公司通常包括：\n\n1. Loganair - 提供英国国内的一些航线。\n2. KLM - 提供飞往阿姆斯特丹的国际航线，通常可连接到其他欧洲和全球目的地。\n\n此外，季节性的包机服务有时候也会在诺里奇机场运营，尤其是在度假高峰季节。请注意航空公司和航线信息可能会有所变化，因此建议访问诺里奇机场的官方网站或联系机场以获取最新的航班信息和航空公司名单。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Trento的航空公司有哪些？",
+        "A": [
+            "Italfly"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Trento\";",
+        "actual_answer": "截至我最后的数据更新时间，特伦托（Trento）本身没有主要的商业机场。因此，特伦托没有基地于当地的大型航空公司。最接近特伦托的主要机场是维罗纳机场（Verona Villafranca Airport，代码：VRN）和博尔扎诺机场（Bolzano Airport，代码：BZO）。这些机场有来自意大利及其他欧洲国家的航空公司运营航班。\n\n如果您计划从特伦托出发旅行，可能需要前往这些附近的机场搭乘航班。为了获取最新的航空公司和航班信息，建议直接查询这些机场的官方网站或联系旅行社。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Galesburg的航空公司有哪些？",
+        "A": [
+            "Jet Air Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Galesburg\";",
+        "actual_answer": "截至我最近的信息更新，Galesburg, Illinois 的机场是 Galesburg Municipal Airport (GBG)。然而，该机场主要用于通用航空，而不是商业航空。因此，Galesburg没有主要的商业航空公司提供定期的客运航班服务。\n\n如果你需要乘坐商业航班，你可能需要考虑邻近城市的大型机场。例如，Quad City International Airport (MLI) 在莫林，Peoria International Airport (PIA) 在皮奥里亚，或芝加哥的 O'Hare International Airport (ORD) 和 Midway International Airport (MDW)。这些机场由多家航空公司运营，提供国内和国际航班服务。\n\n建议查看这些较大机场的官网，或使用在线机票搜索平台，了解更多具体的航班信息和航空公司选择。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Suffolk County的航空公司有哪些？",
+        "A": [
+            "Executive Fliteways Inc.",
+            "Liberty Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Suffolk County\";",
+        "actual_answer": "Suffolk County位于美国纽约州，其中主要的机场是长岛麦克阿瑟机场（Long Island MacArthur Airport）。截至我最近的更新，这个机场的主要航空公司包括：\n\n1. **American Airlines** - 提供飞往费城等地的航班。\n2. **Frontier Airlines** - 提供前往奥兰多等目的地的服务。\n3. **Southwest Airlines** - 提供多个国内航班，包括飞往巴尔的摩、奥兰多、坦帕等城市的直飞服务。\n\n请注意，航空公司的服务和航线会有所变化，因此建议在计划行程时，直接查阅机场或航空公司的官网以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Manaus的航空公司有哪些？",
+        "A": [
+            "Mill Taxi Aereo"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Manaus\";",
+        "actual_answer": "Manaus，作为巴西亚马逊州的首府，是该地区的一个重要交通枢纽，拥有自己的国际机场——马瑙斯－爱德华多·戈梅斯国际机场（Eduardo Gomes International Airport）。在此机场运营的航空公司包括：\n\n1. **南美航空（LATAM Airlines）**：提供前往巴西国内以及南美洲其他目的地的航班。\n\n2. **阿苏尔航空（Azul Brazilian Airlines）**：主要运营国内航班，连接马瑙斯与巴西其他主要城市。\n\n3. **戈尔航空（GOL Linhas Aéreas）**：也是一家主要的巴西国内航空公司，提供多条国内航线。\n\n4. **MAP Linhas Aéreas**：一家区域航空公司，专注于亚马逊地区的航班。\n\n5. **亚马航空（Amazonas Air Services）**：专注于区域性航班，服务亚马逊流域的多个小型机场。\n\n这只是一些主要的航空公司，航空公司的航班和运营情况可能会随时变动，建议在旅行前查阅最新的航班信息，以确保行程顺利。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "New York的航空公司有哪些？",
+        "A": [
+            "Vistajet Us Inc.",
+            "Wheels Up Partners LLC",
+            "Excelaire LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"New York\";",
+        "actual_answer": "在纽约，有几家主要的航空公司，其中包括：\n\n1. **JetBlue Airways** - 总部设在纽约市，被认为是“纽约的航空公司”之一，以其宽敞的客舱和免费机上娱乐闻名。\n\n2. **American Airlines** - 尽管总部位于德克萨斯州，但在纽约的约翰·F·肯尼迪国际机场（JFK）和拉瓜迪亚机场（LGA）都有大量业务。\n\n3. **Delta Air Lines** - 总部位于亚特兰大，但在纽约的几个主要机场都有重要的枢纽。\n\n4. **United Airlines** - 虽然总部在芝加哥，但在纽约及周围地区也有大量的航班。\n\n5. **全部美国航空公司** - 是美国航线的一部分，主要通过纽约的纽瓦克自由国际机场运营。\n\n纽约也是许多国际航空公司的重要目的地，它们运营许多国际航线。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Heraklion的航空公司有哪些？",
+        "A": [
+            "Panellenic S.A."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Heraklion\";",
+        "actual_answer": "Heraklion是希腊克里特岛上的一个重要城市，拥有一个主要的国际机场，名为尼科斯·卡赞察基斯国际机场（Heraklion International Airport, Nikos Kazantzakis）。许多航空公司在此机场运营，包括但不限于：\n\n1. 爱琴海航空（Aegean Airlines）\n2. 瑞安航空（Ryanair）\n3. 易捷航空（easyJet）\n4. 汉莎航空（Lufthansa）\n5. 法国航空（Air France）\n6. 英国航空（British Airways）\n7. 捷克航空（Czech Airlines）\n8. 土耳其航空（Turkish Airlines）\n\n此外，还有许多季节性和包机航班，由不同航空公司运营，主要为服务于旅游业旺季。由于航班和航空公司可能会因季节和其他因素而有所变化，因此在旅行前查阅最新的航班信息是个好主意。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Callao的航空公司有哪些？",
+        "A": [
+            "Aero Transporte S.A."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Callao\";",
+        "actual_answer": "Callao是秘鲁的一个港口城市，也是利马大都会区的一部分。它毗邻豪尔赫·查韦斯国际机场（Aeropuerto Internacional Jorge Chávez），这是秘鲁的主要国际和国内枢纽。以下是一些在豪尔赫·查韦斯国际机场运营的主要航空公司：\n\n1. **拉塔姆航空（LATAM Airlines）**：这是拉丁美洲最大的航空公司，提供广泛的国内和国际航线。\n   \n2. **阿维安卡航空（Avianca）**：这家哥伦比亚的航空公司提供多个前往拉丁美洲和北美的航班。\n\n3. **天巡航空（Sky Airline）**：一家智利的低成本航空公司，提供一些区域航线。\n\n4. **哥伦比亚航空（Aeroméxico）**：提供往返墨西哥及其他目的地的航班。\n\n5. **美洲航空（American Airlines）**、**达美航空（Delta Airlines）**、和**联合航空（United Airlines）**等：这些美国航空公司提供多条通往美国的航线。\n\n6. **欧洲航空公司**如西班牙的**伊比利亚航空（Iberia）**和法国的**法航（Air France）**等也有航班往返欧洲。\n\n此外，还有一些其他国际和地区航空公司在豪尔赫·查韦斯国际机场运营。具体的航空公司和航班服务可能会根据季节和市场需求有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Casablanca的航空公司有哪些？",
+        "A": [
+            "Sarah Airways"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Casablanca\";",
+        "actual_answer": "截至我所知，卡萨布兰卡的穆罕默德五世国际机场是摩洛哥最大的机场之一，有许多航空公司运营航班。以下是一些主要运营的航空公司：\n\n1. **摩洛哥皇家航空（Royal Air Maroc）** - 摩洛哥的国家航空公司，以卡萨布兰卡为枢纽。\n2. **阿联酋航空（Emirates）** - 提供前往迪拜及其他国际目的地的航班。\n3. **法国航空（Air France）** - 提供飞往巴黎的航班。\n4. **汉莎航空（Lufthansa）** - 提供前往德国的航班。\n5. **土耳其航空（Turkish Airlines）** - 连接伊斯坦布尔及其他目的地。\n6. **英国航空（British Airways）** - 有飞往伦敦的航班。\n7. **卡塔尔航空（Qatar Airways）** - 提供飞往多哈的航班。\n\n此外，还有一些其他欧洲、非洲和中东地区的航空公司提供航班服务，具体的航班信息可能会根据季节或其他因素有所变化。建议查看机场官网或相关航空公司网站以获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sedgwick County的航空公司有哪些？",
+        "A": [
+            "Clemens Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sedgwick County\";",
+        "actual_answer": "Sedgwick County位于堪萨斯州，其中最大的城市是威奇托（Wichita）。威奇托是一个重要的航空业中心，有多个航空相关的公司。以下是一些在Sedgwick County活动的重要航空公司：\n\n1. **Textron Aviation** - 拥有Cessna和Beechcraft品牌，是轻型和中型飞机的主要制造商。\n2. **Spirit AeroSystems** - 主要从事飞机零部件和结构的设计和制造，是全球最大的一级航空承包商之一。\n3. **Boeing** - 虽然波音在威奇托的直接存在减少了，但历史上波音在这里有过重要的制造设施。\n4. **Bombardier Aerospace** - 它在威奇托的服务和维护设施为其全球客户提供支持。\n\n这些公司在威奇托及其周边地区对经济有重要影响，并巩固了Sedgwick County作为全球航空产业中心的地位。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Singapore的航空公司有哪些？",
+        "A": [
+            "Seletar Jet Charter",
+            "Pacific Flight Services Pte Ltd",
+            "Vertex Air Charter Services Pte. Ltd.",
+            "Vertex Airlines"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Singapore\";",
+        "actual_answer": "新加坡有几家主要的航空公司，以下是其中一些：\n\n1. **新加坡航空（Singapore Airlines）**：这是新加坡的国家航空公司，也是全球领先的航空公司之一，以其卓越的服务和豪华体验而闻名。\n\n2. **酷航（Scoot）**：这是新加坡航空的低成本子公司，专注于提供经济实惠的国际航班。\n\n3. **胜安航空（SilkAir）**：这原本是新加坡航空的地区性子公司，但从2021年起，其大部分航线和运营已经并入新加坡航空。\n\n4. **捷星亚洲航空（Jetstar Asia Airways）**：这是一家以新加坡为基地的低成本航空公司，隶属于捷星航空集团。\n\n这些航空公司提供从新加坡出发的多条国际航线，以满足不同旅客的需求。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "S. Domingos de Rana的航空公司有哪些？",
+        "A": [
+            "Valair Private Jets"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"S. Domingos de Rana\";",
+        "actual_answer": "S. Domingos de Rana 位于葡萄牙，是一个相对较小的城镇，并没有自己的机场。因此，它没有自己的航空公司。如果你要寻找航空公司信息，可能需要前往距离较近的大城市，如里斯本，里斯本的温贝尔肯机场（Humberto Delgado Airport，也称为里斯本机场）有很多国内和国际航空公司运营服务。你可以通过里斯本机场搭乘多家航空公司的航班，飞往全球各地。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Winnipeg的航空公司有哪些？",
+        "A": [
+            "Fast Air",
+            "Kivalliq Air (Nunavut Lifeline)"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Winnipeg\";",
+        "actual_answer": "截至最新的信息，Winnipeg（温尼伯）的主要航空公司包括：\n\n1. **Air Canada（加航）** - 加拿大最大的航空公司，提供国内和国际航班服务。\n2. **WestJet（西捷航空）** - 另一家主要的加拿大航空公司，提供广泛的国内航班以及一些国际目的地。\n3. **Swoop** - 西捷航空旗下的低成本航空公司，提供价格合理的航班选择。\n4. **Flair Airlines** - 另一家加拿大的低成本航空公司，提供国内的廉价航班选项。\n5. **Lynx Air** - 新兴的低成本航空公司，近年来开始提供更具竞争力的票价。\n\n除了这些，加拿大和国际的其他航空公司也通过代码共享或合作伙伴关系在温尼伯运营。\n\n这些公司通常在James Armstrong Richardson International Airport（温尼伯国际机场）运营，该机场是温尼伯及周边地区的主要航空枢纽。根据季节和需求，这些航空公司可能增加或减少航班，因此建议查看各航空公司的官网获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kenai的航空公司有哪些？",
+        "A": [
+            "Kenai Aviation Operations LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Kenai\";",
+        "actual_answer": "Kenai 是阿拉斯加州的一座城市，Kenai市及其周边地区的主要机场是 Kenai Municipal Airport (ENA)。在 Kenai Municipal Airport 提供服务的航空公司可能会有所变动，但通常包括：\n\n1. **Ravn Alaska** - 提供到阿拉斯加主要城市如安克雷奇的航班。\n2. **Grant Aviation** - 提供区域性航班，连接 Kenai 与周边较小社区。\n\n请注意，航班和航空公司可能会因季节变化或其他原因有所调整，因此建议在旅行前查阅机场或航空公司的官方网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Praha的航空公司有哪些？",
+        "A": [
+            "Atmospherica Aviation",
+            "DSA AS"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Praha\";",
+        "actual_answer": "截至2023年，布拉格的主要机场是瓦茨拉夫·哈维尔国际机场（Václav Havel Airport Prague）。该机场有许多航空公司运营，包括但不限于：\n\n1. **捷克航空公司（Czech Airlines）** - 这是捷克的国家航空公司。\n2. **瑞安航空（Ryanair）** - 一家爱尔兰的低成本航空公司，提供许多欧洲航线。\n3. **易捷航空（easyJet）** - 英国的低成本航空公司，提供多条欧洲航线。\n4. **汉莎航空（Lufthansa）** - 德国的主要航空公司，提供国际和洲际航线。\n5. **荷兰皇家航空（KLM）** - 荷兰的国家航空公司。\n6. **法航-荷航（Air France-KLM）** - 提供从布拉格到各个目的地的航班。\n7. **阿联酋航空（Emirates）** - 提供从布拉格到迪拜及其他国际目的地的航班。\n8. **土耳其航空（Turkish Airlines）** - 提供从布拉格到伊斯坦布尔及其他全球目的地的航班。\n9. **英国航空（British Airways）** - 提供从布拉格到伦敦及其他国际目的地的航班。\n\n这些航空公司中既有全方位服务航空公司，也有低成本航空公司，运营的航班覆盖欧洲和全球许多主要目的地。请注意，航空公司的运营航线和服务可能会有所变化，具体信息建议咨询相关航空公司或机场官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jakarta的航空公司有哪些？",
+        "A": [
+            "CeoJetset (pt. Jet Eksekutif Travya)",
+            "Pt Elang Lintas Indonesia",
+            "Transwisata Prima Aviation",
+            "Premiair"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Jakarta\";",
+        "actual_answer": "在雅加达，有几家主要的航空公司提供国内和国际航班服务。以下是其中一些主要的航空公司：\n\n1. **鹰航（Garuda Indonesia）** - 这是印度尼西亚的国家航空公司，是雅加达最大、最知名的航空公司之一，提供广泛的国内和国际航班服务。\n\n2. **狮航（Lion Air）** - 狮航是印度尼西亚的一家低成本航空公司，也是雅加达的主要航空公司之一，经营许多国内航线以及一些国际航班。\n\n3. **巴迪航空（Batik Air）** - 狮航集团旗下的全服务航空公司，以较高的舒适度和服务质量著称。\n\n4. **城市快捷（Citilink）** - 这是一家低成本航空公司，也是鹰航的子公司，主要经营国内航班。\n\n5. **亚航（AirAsia Indonesia）** - 作为亚航集团的一部分，这家低成本航空公司提供从雅加达出发的多个国际及国内航班。\n\n这些航空公司在苏加诺-哈达国际机场（Soekarno-Hatta International Airport）运营，提供涵盖广泛目的地的多样化服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Fort Lauderdale的航空公司有哪些？",
+        "A": [
+            "A-OK Jets",
+            "Discovery Jets",
+            "Execuflight Inc.",
+            "Florida Jet Service Inc.",
+            "Gold Aviation",
+            "Hop-a-jet Worldwide Jet Charter",
+            "Pioneer Jets",
+            "Presidential Aviation Inc.",
+            "Reva Inc.",
+            "Tropic Ocean Airways",
+            "Wilderness Aircraft Company LLC",
+            "Velox Jets"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Fort Lauderdale\";",
+        "actual_answer": "在劳德代尔堡（Fort Lauderdale）的主要机场是劳德代尔堡-好莱坞国际机场（Fort Lauderdale-Hollywood International Airport, FLL）。许多航空公司在这里运营，包括：\n\n1. **美国航空（American Airlines）**\n2. **西南航空（Southwest Airlines）**\n3. **捷蓝航空（JetBlue Airways）**\n4. **精神航空（Spirit Airlines）**\n5. **达美航空（Delta Air Lines）**\n6. **联合航空（United Airlines）**\n7. **阿拉斯加航空（Alaska Airlines）**\n8. **边疆航空（Frontier Airlines）**\n\n此外，还有一些国际航空公司和其他廉价航空公司也在这个机场提供服务。航班和航空公司信息随时可能变化，因此建议你访问机场官方网站或直接联系航空公司以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Nashville的航空公司有哪些？",
+        "A": [
+            "Helistar Aviacion",
+            "Jetright",
+            "Secure Air Charter LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Nashville\";",
+        "actual_answer": "截至我获取信息的时间，纳什维尔国际机场（BNA）有多家航空公司运营，以下是一些主要的航空公司：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **西南航空（Southwest Airlines）**\n4. **联合航空（United Airlines）**\n5. **捷蓝航空（JetBlue Airways）**\n6. **阿拉斯加航空（Alaska Airlines）**\n7. **边疆航空（Frontier Airlines）**\n8. **精神航空（Spirit Airlines）**\n9. **太阳乡村航空（Sun Country Airlines）**\n10. **空气加拿大（Air Canada）**\n\n这些航空公司提供多种国内和国际航班，但航线和服务可能会随着时间有所变动，旅行时最好提前确认最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Luqa的航空公司有哪些？",
+        "A": [
+            "Vista Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Luqa\";",
+        "actual_answer": "作为马耳他国际机场所在地，位于Luqa的主要航空公司包括：\n\n1. 马耳他航空（Air Malta） - 这是马耳他的国家航空公司，提供飞往欧洲、北非和中东多个目的地的航班。\n2. 瑞安航空（Ryanair） - 这家低成本航空公司提供从马耳他出发的多个国际航班。\n3. 易捷航空（easyJet） - 另一家著名的低成本航空公司，也运营马耳他出发的航班。\n4. 维兹航空（Wizz Air） - 这家低成本航空公司提供从马耳他到欧洲多个目的地的航班。\n\n除了这些，还有许多其他国际航空公司在马耳他国际机场运营，包括英国航空、汉莎航空、意大利航空等。航班和航空公司可能随季节和市场需求变化，因此建议查看马耳他国际机场或各航空公司的官方网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tokyo的航空公司有哪些？",
+        "A": [
+            "Aero Asahi Corporation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Tokyo\";",
+        "actual_answer": "东京有两大主要的机场：成田国际机场和羽田国际机场。以下是一些主要航空公司，它们在这些机场有航班运营：\n\n1. **全日空（All Nippon Airways, ANA）** - 日本最大的航空公司之一，提供国内和国际航班。\n\n2. **日本航空（Japan Airlines, JAL）** - 另一家主要的日本航空公司，同样提供广泛的国内和国际航线。\n\n3. **乐桃航空（Peach Aviation）** - 低成本航空公司，主要提供国内和一些地区性国际航班。\n\n4. **捷星日本航空（Jetstar Japan）** - 低成本航空公司，提供国内航班和部分国际航班。\n\n5. **春秋航空日本（Spring Airlines Japan）** - 低成本航空公司，提供国内航班。\n\n此外，还有许多国际航空公司在东京的机场运营，如：\n- 美国航空公司（American Airlines）\n- 英国航空公司（British Airways）\n- 法国航空公司（Air France）\n- 新加坡航空（Singapore Airlines）\n- 大韩航空（Korean Air）\n\n这些航空公司确保了东京与世界各地的连接。东京作为一个重要的国际航空枢纽，机场也有很多其他国家和地区的航空公司设有航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Otopeni的航空公司有哪些？",
+        "A": [
+            "Tiriac Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Otopeni\";",
+        "actual_answer": "Otopeni是指布加勒斯特亨利·科安德国际机场（Henri Coandă International Airport），是罗马尼亚最主要的国际机场。以下是一些通常在该机场运营的主要航空公司：\n\n1. **Tarom** - 罗马尼亚的国家航空公司，提供国内和国际航班。\n2. **蓝色航空（Blue Air）** - 罗马尼亚低成本航空公司，提供欧洲内多个目的地的航班。\n3. **瑞安航空（Ryanair）** - 爱尔兰低成本航空公司，提供欧洲多个城市的航班。\n4. **威兹航空（Wizz Air）** - 匈牙利低成本航空公司，提供广泛的欧洲航线。\n5. **汉莎航空（Lufthansa）** - 德国航空公司，提供飞往法兰克福和其他枢纽的航班。\n6. **法航-荷航（Air France-KLM）** - 提供飞往巴黎和阿姆斯特丹的航班。\n7. **英国航空（British Airways）** - 提供飞往伦敦的航班。\n8. **阿提哈德航空（Etihad Airways）** - 提供飞往阿布扎比及其他国际目的地的航班。\n\n此外，还有许多其他国际航空公司在Otopeni提供飞往主要城市和旅游目的地的航班。航空公司及其运营的航线可能会有变化，因此建议在旅行前查询最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hayward的航空公司有哪些？",
+        "A": [
+            "CTP Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Hayward\";",
+        "actual_answer": "截至目前，Hayward，加州的主要机场是Hayward Executive Airport (HWD)，它主要用于普通航空和私人飞机。Hayward Executive Airport 不提供商业航空公司定期服务。因此，没有商业航空公司直接在Hayward运营。\n\n如果你需要搭乘商业航班，通常需要前往附近的大型机场，如：\n\n1. **旧金山国际机场 (SFO)：** 提供全球多家航空公司的服务。\n2. **奥克兰国际机场 (OAK)：** 提供美国国内和一些国际航班。\n3. **圣荷西国际机场 (SJC)：** 提供国内和有限的国际航班服务。\n\n这些机场距离Hayward都很近，提供了众多的航空公司选择。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Monterey的航空公司有哪些？",
+        "A": [
+            "MPI Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Monterey\";",
+        "actual_answer": "Monterey（蒙特雷，加州）有一个主要的机场，叫做蒙特雷半岛机场（Monterey Peninsula Airport），其正式名称为蒙特雷地区机场（Monterey Regional Airport）。在这个机场运营的航空公司通常包括：\n\n1. **American Airlines** - 提供飞往其枢纽城市（如达拉斯/沃斯堡）以及其他连接航点的航班。\n   \n2. **United Airlines** - 提供飞往旧金山和洛杉矶等地的航班。\n   \n3. **Alaska Airlines** - 提供飞往西雅图和圣地亚哥等地的航班。\n\n4. **Allegiant Air** - 这家航空公司有时提供季节性或特定航线的航班。\n\n航班可能会根据季节和需求变化，因此建议你在计划行程时查看蒙特雷地区机场的官网或直接咨询航空公司以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Albany的航空公司有哪些？",
+        "A": [
+            "Backcountry Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Albany\";",
+        "actual_answer": "Albany是美国纽约州的首府，拥有一个主要的商业机场，即奥尔巴尼国际机场（Albany International Airport）。这个机场有多家航空公司提供服务，包括但不限于：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **西南航空（Southwest Airlines）**\n4. **联合航空（United Airlines）**\n5. **捷蓝航空（JetBlue Airways）**\n6. **边疆航空（Frontier Airlines）**\n\n这些航空公司提供前往多个国内目的地的班机。请注意，航空公司和航线可能会根据季节和市场需求有所变化，因此在旅行之前查询最新的航班信息是很重要的。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Okayama的航空公司有哪些？",
+        "A": [
+            "Okayama Air Service Co., Ltd."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Okayama\";",
+        "actual_answer": "截至我所知的最新信息，冈山机场（OKJ）主要有以下一些航空公司运营：\n\n1. 全日空（ANA）\n2. 日本航空（JAL）\n3. 荷兰皇家航空（KLM，通常通过与其他航空公司的代码共享飞往国际目的地）\n4. 韩国航空（Korean Air，通常通过与其他航空公司的代码共享飞往国际目的地）\n\n此外，有些低成本航空公司可能会增加或减少航线。具体航班信息可能会因季节性变化或其他因素而有所改变，建议你在旅行前查阅最新的航班信息或直接访问冈山机场的官方网站以获取最准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Clark County的航空公司有哪些？",
+        "A": [
+            "Hangar 7 Aviation",
+            "Air Smart",
+            "Thrive Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Clark County\";",
+        "actual_answer": "Clark County位于美国内华达州，主要城市是拉斯维加斯。拉斯维加斯的主要机场是麦卡伦国际机场（Harry Reid International Airport），以前被称为麦卡伦国际机场（McCarran International Airport）。在这个机场，许多航空公司提供国内和国际航班服务。以下是一些主要的航空公司：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **联合航空（United Airlines）**\n4. **西南航空（Southwest Airlines）**\n5. **阿拉斯加航空（Alaska Airlines）**\n6. **捷蓝航空（JetBlue Airways）**\n7. **边疆航空（Frontier Airlines）**\n8. **精神航空（Spirit Airlines）**\n9. **太阳之国航空（Sun Country Airlines）**\n\n此外，还有一些国际航空公司提供飞往其他国家的航班，如：\n1. **加拿大航空（Air Canada）**\n2. **英航（British Airways）**\n3. **墨西哥国际航空（Aeroméxico）**\n\n航空公司服务的具体情况可能会因为季节变化和旅游需求而有所不同，所以查询机场官网或航空公司官网可以获得最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Madrid的航空公司有哪些？",
+        "A": [
+            "Gestair",
+            "Gestair Aviation",
+            "Initium Aviation",
+            "Orionjets",
+            "Welojets LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Madrid\";",
+        "actual_answer": "马德里是西班牙的首都，拥有多个航空公司运营航班，包括：\n\n1. **西班牙国家航空公司（Iberia）**：这是西班牙的国家航空公司，其主要枢纽位于马德里-巴拉哈斯机场（Adolfo Suárez Madrid-Barajas Airport）。\n\n2. **欧洲之翼（Vueling）**：这是一家低成本航空公司，提供从马德里出发的多个欧洲目的地的航班。\n\n3. **高星航空（Iberia Express）**：这是西班牙国家航空公司旗下的低成本航空子公司，提供短途和中途航班。\n\n4. **加那利航空（Air Europa）**：这是西班牙另一家大型航空公司，运营国内和国际航班。\n\n5. **瑞安航空（Ryanair）**：这是一家主要的欧洲低成本航空公司，提供从马德里到许多欧洲城市的航班。\n\n6. **易捷航空（easyJet）**：这也是一家低成本航空公司，提供多条从马德里出发的航线。\n\n此外，还有其他国际和国内航空公司通过马德里提供服务。马德里-巴拉哈斯机场是一个重要的国际交通枢纽，因而可以连接到世界各地的许多城市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dublin的航空公司有哪些？",
+        "A": [
+            "Meregrass Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Dublin\";",
+        "actual_answer": "Dublin是爱尔兰的首都，其主要的机场是都柏林机场（Dublin Airport）。在都柏林运营的航空公司有：\n\n1. 瑞安航空（Ryanair）：作为欧洲最大的低成本航空公司之一，瑞安航空以都柏林为枢纽，提供覆盖广泛的欧洲航线。\n\n2. 爱尔兰航空（Aer Lingus）：这是爱尔兰的国家航空公司，提供欧洲、北美以及部分其他国际目的地的航班。\n\n3. 英国航空（British Airways）、汉莎航空（Lufthansa）、荷兰皇家航空（KLM）等其他国际航空公司：这些航空公司提供从都柏林到全球各地的航班连接。\n\n此外，还有一些其他欧洲和国际航空公司在都柏林机场运营，连接到不同的国际和欧洲目的地。航班和航空公司服务可能会根据季节和年限有所变化，因此建议在旅行前检查最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ciudad de Mexico的航空公司有哪些？",
+        "A": [
+            "Performance Air S.A."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Ciudad de Mexico\";",
+        "actual_answer": "截至2021年，墨西哥城拥有众多航空公司，其主要机场是贝尼托·华雷斯国际机场（Aeropuerto Internacional Benito Juárez，MEX）。以下是一些主要的航空公司：\n\n1. **墨西哥国际航空公司（Aeroméxico）** - 墨西哥的国家航空公司，也是该国最大、最知名的航空公司之一。\n\n2. **墨西哥国际航空快运（Aeroméxico Connect）** - 墨西哥国际航空公司的区域性子公司，提供国内和短途国际航班。\n\n3. **Yalitza航空（Interjet）** - 提供低成本航班选择，但请注意，由于财务问题，这家航空公司的运营情况可能会有变动。\n\n4. **沃拉里斯（Volaris）** - 另一家主要的低成本航空公司，在墨西哥及国际航线上提供服务。\n\n5. **VivaAerobus** - 提供经济实惠的国内和国际航班的低成本航空公司。\n\n6. **考帕航空（Copa Airlines）** - 总部位于巴拿马城的航空公司，提供往返拉丁美洲的航班。\n\n此外，还有一些国际航空公司在墨西哥城运营，提供飞往世界各地的航班。请注意，航空公司的运营状况可能会随时间变化，因此建议在预订航班前查看最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ouest Lausannois District的航空公司有哪些？",
+        "A": [
+            "Fly 7 Executive Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Ouest Lausannois District\";",
+        "actual_answer": "Ouest Lausannois District 位于瑞士的沃州（Vaud），是一个并不以航空公司闻名的地区。事实上，该地区并没有总部设在这里的大型航空公司。然而，瑞士的主要航空公司是瑞士国际航空公司（Swiss International Air Lines），但其总部位于苏黎世。\n\n如果你需要关于从Ouest Lausannois地区如何前往主要机场的信息，例如日内瓦机场或苏黎世机场，可以为你提供帮助。此外，这些机场提供服务的航空公司将取决于时间和特定的航线，因此建议你查看机场的官方网站或联系旅行社以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Carroll County的航空公司有哪些？",
+        "A": [
+            "Skytech Travel LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Carroll County\";",
+        "actual_answer": "Carroll County没有自己的大型商业机场，因此没有基于Carroll County的主要航空公司。然而，该地区的居民通常会前往附近的大城市机场，如巴尔的摩-华盛顿国际机场（BWI）和华盛顿杜勒斯国际机场（IAD），这些机场提供多家航空公司的服务。如果您需要有关当地小型机场或私人航空服务的信息，请具体说明，以便我能提供更相关的帮助。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Haverfordwest的航空公司有哪些？",
+        "A": [
+            "Fly Wales"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Haverfordwest\";",
+        "actual_answer": "Haverfordwest 是位于英国威尔士的一个小镇，其主要机场是 Haverfordwest Airport (也称为 Withybush Airport)。由于这是一个较小的机场，它通常没有主要商业航空公司提供定期航班服务。机场主要用于通用航空，包括私人飞行、飞行训练和其他非商业航空活动。\n\n如果你需要从较大的国际机场出发，可以考虑从卡迪夫机场（Cardiff Airport）或布里斯托机场（Bristol Airport）开始旅行，这些机场有更多的航空公司和航班选择。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Fort Wayne的航空公司有哪些？",
+        "A": [
+            "Sweet Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Fort Wayne\";",
+        "actual_answer": "截至目前，提供服务的航空公司可能会有所变化，但一般来说，印第安纳州的韦恩堡国际机场（Fort Wayne International Airport）通常由以下一些主要航空公司提供航班：\n\n1. **American Airlines** - 通常提供飞往美国主要枢纽城市的航班。\n2. **Delta Air Lines** - 提供飞往他们各大枢纽的服务。\n3. **United Airlines** - 也常提供连接到多个枢纽的航班。\n4. **Allegiant Air** - 提供飞往特定目的地的低成本航班。\n\n请注意，航班和航空公司的服务会根据季节和其他因素有所变化，建议在旅行前查看航空公司和机场的官网以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Fort Myers的航空公司有哪些？",
+        "A": [
+            "Aeronautical Charter Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Fort Myers\";",
+        "actual_answer": "截至我所知的数据，飞往或飞出佛罗里达州迈尔斯堡（Fort Myers）西南佛罗里达国际机场（RSW）的航空公司通常包括以下一些：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **西南航空（Southwest Airlines）**\n4. **联合航空（United Airlines）**\n5. **精神航空（Spirit Airlines）**\n6. **捷蓝航空（JetBlue Airways）**\n7. **边疆航空（Frontier Airlines）**\n8. **阿拉斯加航空（Alaska Airlines）**\n\n还可能有季节性航班或其他航空公司提供服务，因此实际的航空公司列表可能会有所变化。为获取最新信息，建议直接访问西南佛罗里达国际机场的官方网站或联系各航空公司查询具体航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kununurra的航空公司有哪些？",
+        "A": [
+            "Aviair"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Kununurra\";",
+        "actual_answer": "Kununurra位于澳大利亚西澳大利亚州的东北部。作为一个偏远的地区，它有一个小型的区域机场——Kununurra机场（IATA代码：KNX）。截至我所知的最新信息，有几家航空公司提供往返于Kununurra的航班：\n\n1. **Airnorth**：提供飞往达尔文和布鲁姆的航班。\n2. **Virgin Australia**：季节性地提供到达尔文和佩斯的航班。\n3. **QantasLink**：也有一些往返于佩斯的航班。\n\n航班和航空公司可能会根据季节和需求发生变化，因此在计划旅行时，最好查看最新的航班信息和时间表。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Addis Ababa的航空公司有哪些？",
+        "A": [
+            "Trans Nation Airways P.L.C"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Addis Ababa\";",
+        "actual_answer": "截至2021年，常在亚的斯亚贝巴博莱国际机场运营的航空公司包括：\n\n1. **埃塞俄比亚航空公司（Ethiopian Airlines）**：这是埃塞俄比亚的国家航空公司，也是非洲最大的航空公司之一，提供国内和国际航班。\n\n2. **汉雅航空（Hahn Air）**：这家公司提供定期包机航班服务。\n\n3. **西亚尔航空（CEIBA Intercontinental）**：主要运营连接非洲城市的航班。\n\n4. **其他国际航空公司**：包括土耳其航空（Turkish Airlines）、卡塔尔航空（Qatar Airways）、阿联酋航空（Emirates）、联合航空（United Airlines）、英航（British Airways）等，也有提供飞往亚的斯亚贝巴的航班服务。\n\n需要注意的是，航空市场是不断变化的，新的航空公司可能会开通航线，而已有的航空公司可能调整或取消航班服务。因此，获取最新信息请查看相关航空公司的官方网站或与旅行社联系。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Arnsberg的航空公司有哪些？",
+        "A": [
+            "Air Alliance Group GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Arnsberg\";",
+        "actual_answer": "截至目前，Arnsberg 是德国北莱茵-威斯特法伦州的一个城市，但它并没有自己的商业机场。因此，没有商业航空公司直接在 Arnsberg 运营。如果你要寻找航空服务，你可能需要查看附近的较大城市，例如多特蒙德或杜塞尔多夫，这些城市有更大型的机场，提供更多的航班选择。多特蒙德机场和杜塞尔多夫国际机场都有多家航空公司运营，提供飞往欧洲和其他国际目的地的航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Marshfield的航空公司有哪些？",
+        "A": [
+            "Shoreline Aviation Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Marshfield\";",
+        "actual_answer": "截至我最近的信息更新日期，没有一家名为“Marshfield”的航空公司。Marshfield可能指的是一个地方，例如在美国威斯康星州的Marshfield市。关于该地的具体航空服务，通常会有小型地区机场或更大的临近城市机场提供商业航班服务。如果您有其他问题或需要有关具体机场的信息，可以提供更多细节。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Zaventem的航空公司有哪些？",
+        "A": [
+            "Abelag Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Zaventem\";",
+        "actual_answer": "布鲁塞尔机场（Zaventem Airport）是比利时的主要国际机场，位于布鲁塞尔附近。多家航空公司在该机场运营，常见的航空公司包括：\n\n1. 布鲁塞尔航空公司（Brussels Airlines）\n2. 瑞安航空（Ryanair）\n3. 荷兰皇家航空公司（KLM）\n4. 法国航空公司（Air France）\n5. Lufthansa（汉莎航空）\n6. 英国航空公司（British Airways）\n7. 易捷航空（easyJet）\n8. 阿联酋航空（Emirates）\n9. 卡塔尔航空公司（Qatar Airways）\n10. 土耳其航空（Turkish Airlines）\n\n这些是一些在布鲁塞尔机场运营的主要航空公司，但实际上还有许多其他国际和地区航空公司在此运营。具体航班和航空公司可能会根据季节和航空市场的变化有所调整。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Agno的航空公司有哪些？",
+        "A": [
+            "Air-Dynamic"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Agno\";",
+        "actual_answer": "截至我最近的知识更新，Agno 指的是位于瑞士卢加诺附近的小型机场，正式名称为卢加诺机场（Lugano Airport）。这个机场主要服务于瑞士的卢加诺地区和周边地区。\n\n不过，由于其规模较小，卢加诺机场的航空公司和航班情况可能会发生变化，尤其是因为瑞士国内和欧洲短途运营的市场需求、财政状况和航空公司战略的调适。通常，一些区域性航空公司可能会提供连接瑞士其他大城市或邻国的航班。\n\n为了获取最新的航空公司列表及航班信息，建议你直接访问卢加诺机场的官方网站或联系机场以获取最新的航班时刻和航空公司信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Waterloo Regional Municipality的航空公司有哪些？",
+        "A": [
+            "Flightpath Charter Airways"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Waterloo Regional Municipality\";",
+        "actual_answer": "Waterloo Regional Municipality位于加拿大安大略省，主要的机场是位于基奇纳的区域机场——滑铁卢国际机场（Region of Waterloo International Airport，IATA代码：YKF）。这个机场虽然不算大，但有几家航空公司运营航班。根据2023年的情况，以下是一些在滑铁卢国际机场运营的主要航空公司：\n\n1. **西捷航空（WestJet）** - 提供飞往加拿大其他城市的航班。\n2. **飞鸟航空（Flair Airlines）** - 提供低成本的国内和部分国际航班。\n3. **阳翼航空（Sunwing Airlines）** - 通常提供季节性飞往南方度假胜地的航班，特别是在冬季。\n\n注意，航班和航空公司服务可能会随时间变化，具体航班信息最好在计划旅行时通过机场官方网站或相关航空公司确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Portland的航空公司有哪些？",
+        "A": [
+            "MAC Air Group"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Portland\";",
+        "actual_answer": "截至我最后的更新时间，波特兰国际机场（PDX）常见的航空公司包括：\n\n1. **阿拉斯加航空（Alaska Airlines）**\n2. **美国航空（American Airlines）**\n3. **达美航空（Delta Air Lines）**\n4. **联合航空（United Airlines）**\n5. **西南航空（Southwest Airlines）**\n6. **边疆航空（Frontier Airlines）**\n7. **捷蓝航空（JetBlue Airways）**\n8. **夏威夷航空（Hawaiian Airlines）**\n9. **阳翼航空（Sun Country Airlines）**\n10. **灵魂航空（Spirit Airlines）**\n\n此外，还有一些国际航空公司，如西捷航空（WestJet）、加拿大航空（Air Canada）、汉莎航空（Lufthansa）等，提供飞往国际目的地的航班。 航空公司运营情况可能会根据市场需求和季节波动有所变化，建议在出行前查询最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Arapahoe County的航空公司有哪些？",
+        "A": [
+            "ASI Charter Inc.",
+            "Moser Aviation LLC",
+            "Precision Aircraft Management",
+            "Prime Jet LLC",
+            "Raber Flight Services LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Arapahoe County\";",
+        "actual_answer": "Arapahoe County位于科罗拉多州，虽然它本身并不直接拥有航空公司，但在附近的大都会地区，例如丹佛市，有很多主要航空公司运营。通常，与Arapahoe County相关的航班都会经过丹佛国际机场（Denver International Airport, DEN），这是一个主要的航空枢纽。可能在丹佛国际机场运营的航空公司包括：\n\n1. United Airlines（联合航空）\n2. Southwest Airlines（西南航空）\n3. Frontier Airlines（边疆航空）\n4. Delta Air Lines（达美航空）\n5. American Airlines（美国航空）\n\n如果你是在寻找特定的航空服务或本地运营商，建议查看丹佛国际机场的官方网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bologna的航空公司有哪些？",
+        "A": [
+            "Aelia S.R.L",
+            "Interjet S.R.L."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bologna\";",
+        "actual_answer": "在博洛尼亚运营的主要航空公司包括意大利国内的航空公司和一些国际航空公司。以下是一些在博洛尼亚马可尼机场（Aeroporto Guglielmo Marconi di Bologna）运营的主要航空公司：\n\n1. **意大利航空（ITA Airways）** - 这是意大利的国家航空公司，提供国内和一些国际航班。\n2. **瑞安航空（Ryanair）** - 这是一家低成本航空公司，提供大量欧洲目的地的航班。\n3. **易捷航空（easyJet）** - 另一家低成本航空公司，提供主要欧洲城市的航班。\n4. **汉莎航空（Lufthansa）** - 提供前往法兰克福等枢纽城市的航班，便于转机。\n5. **法兰西航空（Air France）** - 提供前往巴黎及其他目的地的航班。\n6. **瑞士国际航空（Swiss International Air Lines）** - 提供前往苏黎世及其他目的地的航班。\n7. **伏林航空（Vueling）** - 提供前往西班牙及其他欧洲目的地的航班。\n\n另外，还有其他航空公司提供季节性或固定航班。具体航班信息可能会随时间变化而有所不同，因此建议查看博洛尼亚机场官方网站或直接联系相关航空公司以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cape Girardeau的航空公司有哪些？",
+        "A": [
+            "Cape Air Charter"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Cape Girardeau\";",
+        "actual_answer": "截至目前，Cape Girardeau（密苏里州）主要的商业机场是Cape Girardeau Regional Airport（CGI）。就商业航空服务而言，提供服务的航空公司相对较少。最近几年，这个地区通常由像Contour Airlines这样的地区性航空公司提供服务。这类航空公司往往提供到达较大枢纽机场的连接航班。这种情况可能会随着时间的推移有所变化，所以我建议在旅行前查看机场的官方网站或直接联系机场以获取最新的航班和航空公司信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bloomington的航空公司有哪些？",
+        "A": [
+            "Synergy Flight Center"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bloomington\";",
+        "actual_answer": "Bloomington通常指的是美国的两个主要城市之一，分别是伊利诺伊州的布卢明顿（Bloomington, Illinois）和印第安纳州的布卢明顿（Bloomington, Indiana）。两地的航空服务主要是在附近的主要机场提供。\n\n1. **伊利诺伊州布卢明顿**：\n   - 中心机场是中伊利诺伊区域机场（Central Illinois Regional Airport at Bloomington-Normal, CIRA）。\n   - 主要航空公司包括：\n     - American Airlines\n     - Delta Air Lines\n     - Allegiant Air\n\n2. **印第安纳州布卢明顿**：\n   - 没有主要机场。因此，居民通常使用印第安纳波利斯国际机场（Indianapolis International Airport）。\n   - 主要航空公司包括：\n     - American Airlines\n     - Delta Air Lines\n     - United Airlines\n     - Southwest Airlines\n     - Allegiant Air\n     - Frontier Airlines\n\n不同的航空公司可能会提供不同的航线和服务，因此在出行前建议查看相关航空公司的具体航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cagliari的航空公司有哪些？",
+        "A": [
+            "Sardinian Sky Service"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Cagliari\";",
+        "actual_answer": "Cagliari的主要机场是卡利亚里埃尔马斯机场（Cagliari Elmas Airport），位于意大利撒丁岛。虽然航空公司的航线和服务可能会因季节和市场需求而变化，但以下是一些常见的航空公司，它们通常会在卡利亚里运营：\n\n1. **意大利航空（Alitalia）** - 提供往返意大利国内和国际的一些航线。\n2. **瑞安航空（Ryanair）** - 低成本航空公司，提供许多欧洲目的地的航班。\n3. **欧罗巴航空（Volotea）** - 主要运营欧洲区域航线。\n4. **伏林航空（Vueling）** - 提供往来西班牙和其他欧洲城市的航线。\n5. **汉莎航空（Lufthansa）** - 提供飞往德国语言区的航班（需要确认是否为直飞）。\n6. **意大利航空公司（ITA Airways）** - 原意大利航空的重新品牌化提供国内和国际航线。\n\n还有其他许多航空公司可能提供季节性或包机服务。建议查看机场官网或各航空公司的官方网站，获取最新的航班信息和服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Traverse City的航空公司有哪些？",
+        "A": [
+            "45 North Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Traverse City\";",
+        "actual_answer": "Traverse City, 密歇根州的Cherry Capital Airport（TVC）提供服务的主要航空公司包括：\n\n1. 达美航空（Delta Air Lines）\n2. 美国航空（American Airlines）\n3. 联合航空（United Airlines）\n\n这些航空公司通常提供往返于美国各大城市的航班。在旅游旺季，可能还有其他航空公司提供季节性的航班服务。为了获得最新的信息，建议直接访问机场或各航空公司的官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Raleigh的航空公司有哪些？",
+        "A": [
+            "Bell Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Raleigh\";",
+        "actual_answer": "Raleigh的主要机场是Raleigh-Durham国际机场（RDU）。提供服务的主要航空公司包括：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **西南航空（Southwest Airlines）**\n4. **联合航空（United Airlines）**\n5. **捷蓝航空（JetBlue Airways）**\n6. **阿拉斯加航空（Alaska Airlines）**\n7. **边疆航空（Frontier Airlines）**\n8. **精神航空（Spirit Airlines）**\n\n这些航空公司提供飞往全美多个目的地的航班，有时也提供国际航班。航班和航空公司可能会有所变化，建议查询航空公司官网或机场网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Melbourne的航空公司有哪些？",
+        "A": [
+            "Australian Corporate Jet Centres Pty Ltd",
+            "Shortstop Jet Charter Pty Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Melbourne\";",
+        "actual_answer": "截至最近的信息，墨尔本的主要航空公司包括：\n\n1. **澳洲航空（Qantas Airways）** - 澳大利亚最大的航空公司，提供国内和国际航班服务。\n2. **维珍澳大利亚航空（Virgin Australia）** - 提供各种国内和短途国际航班。\n3. **捷星航空（Jetstar Airways）** - 是澳洲航空的廉价子公司，提供国内和国际低成本航班。\n4. **虎航澳大利亚（Tigerair Australia）** - 也是一家提供低成本国内航班的航空公司（需要注意的是，虎航在2020年停止了运营）。\n5. **天西航空（Regional Express Airlines, 宣称为Rex）** - 主要运营国内地区航班。\n\n此外，还有一些国际航空公司在墨尔本提供服务，例如新加坡航空（Singapore Airlines）、阿联酋航空（Emirates）、国泰航空（Cathay Pacific）、新西兰航空（Air New Zealand）等。\n\n请注意航空公司可能会因市场条件和其他因素而发生变化，建议出行前核实最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Upper Franconia的航空公司有哪些？",
+        "A": [
+            "Fair Air GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Upper Franconia\";",
+        "actual_answer": "上弗兰肯（Upper Franconia）是德国巴伐利亚州的一个行政区，并没有自己的主要机场，因此也没有总部设在上弗兰肯的主要商业航空公司。上弗兰肯的交通通常依赖于附近城市或地区的机场，例如纽伦堡机场（Nuremberg Airport）或慕尼黑机场（Munich Airport），这些机场则有许多国际和区域航空公司提供服务。\n\n如果你在寻找当地提供专门服务的小型航空公司或飞行俱乐部，建议查看该地区的通用航空机场或者飞行学校。这些地方有时会有小型的航空运营商提供如包机服务、空中游览或飞行训练。\n\n对于更详尽的信息，可以查询当地的商务目录或者联系上弗兰肯的旅游信息中心咨询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Selangor的航空公司有哪些？",
+        "A": [
+            "Berjaya Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Selangor\";",
+        "actual_answer": "Selangor 是马来西亚的一個州，位於馬來半島的西海岸。該地區有几家主要的航空公司，它们的总部或主要业务都与雪兰莪有联系，尤其是因为附近的吉隆坡国际机场（KLIA）和苏邦机场（Sultan Abdul Aziz Shah Airport，又称梳邦机场）：\n\n1. **马来西亚航空公司（Malaysia Airlines）**：虽然其正式总部位于吉隆坡国际机场（KLIA），但实际上KLIA位于雪兰莪州的边界上。\n\n2. **亚航（AirAsia）**：亚洲知名的廉价航空公司，总部设在雪兰莪州的吉隆坡国际机场区域。\n\n3. **马印航空（Malindo Air）**：也经常使用雪兰莪的机场。\n\n4. **飞萤航空（Firefly）**：这家航空公司是马来西亚航空的子公司，总部设在苏邦机场，主要提供区域性航班。\n\n这些航空公司都在雪兰莪或其附近区域开展业务，并使之成为一个重要的航空枢纽。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Santa Barbara的航空公司有哪些？",
+        "A": [
+            "Silver Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Santa Barbara\";",
+        "actual_answer": "Santa Barbara市的主要机场是圣塔芭芭拉市机场（Santa Barbara Municipal Airport，代码SBA）。在这个机场运营的主要航空公司通常包括：\n\n1. **美联航（United Airlines）**\n2. **美国航空（American Airlines）**\n3. **达美航空（Delta Air Lines）**\n4. **阿拉斯加航空（Alaska Airlines）**\n5. **西南航空（Southwest Airlines）**\n\n航班和航空公司运营情况可能会有变动，因此建议在旅行前查阅机场官网或相关航空公司的网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jackson County的航空公司有哪些？",
+        "A": [
+            "Polaris Aviation Solutions LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Jackson County\";",
+        "actual_answer": "Jackson County 可能存在于多个州或地区，如在美国有多个州都有名为 Jackson County 的地方。因此，如果您指的是特定州或者区域，提供更多信息会更有帮助。在一些较小的 Jackson County，可能没有主要的航空公司在该地区运营，但一些主要的航空公司通常会在较大城市或州的主要机场运营。\n\n如果您指的是某个特定的 Jackson County 的机场，通常可以通过查看该机场的官网或联系机场的信息台来获取具体的航空公司名单。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Geneva的航空公司有哪些？",
+        "A": [
+            "Albinati Aeronautics",
+            "Dasnair",
+            "Global Jet",
+            "Sparfell Airways Sa",
+            "Swiss Private Jet Sa"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Geneva\";",
+        "actual_answer": "截至最近的信息，提供服务的航空公司主要有以下几家：\n\n1. **瑞士国际航空（SWISS International Air Lines）** - 这是瑞士的国家航空公司，提供从日内瓦出发的许多国际和国内航班。\n\n2. **易捷航空（easyJet）** - 这是一家低成本航空公司，在日内瓦有很大的运营基地，提供大量的欧洲目的地航班。\n\n3. **汉莎航空（Lufthansa）** - 德国的国家航空公司，也提供从日内瓦到主要欧洲城市的航班。\n\n4. **英国航空（British Airways）** - 提供从日内瓦到英国及其他国际目的地的航班。\n\n5. **法航（Air France）** - 法国的国家航空公司，也有从日内瓦起飞的航班。\n\n此外，还有其他一些航空公司提供季节性或包机航班。如需最新的航班信息和航空公司列表，建议查看日内瓦国际机场的官方网站或直接联系相关航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bogota的航空公司有哪些？",
+        "A": [
+            "Medicalfly"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bogota\";",
+        "actual_answer": "波哥大是哥伦比亚的首都，位于该市的主要机场是埃尔多拉多国际机场（El Dorado International Airport）。以下是一些在波哥大运营的主要航空公司：\n\n1. **哥伦比亚航空公司（Avianca）** - 这是哥伦比亚的旗舰航空公司，也是拉丁美洲最大的航空公司之一。\n\n2. **Viva Air Colombia** - 一家低成本航空公司，提供国内和国际航班服务。\n\n3. **LATAM Airlines** - 尽管其总部在智利，但LATAM在波哥大提供多条国际和国内航线。\n\n4. **Copa Airlines** - 巴拿马的航空公司，提供连接哥伦比亚与中美洲和北美的航班。\n\n5. **American Airlines**、**United Airlines**、**Delta Air Lines**等美国航空公司，也从波哥大提供前往美国的航班。\n\n6. **Air France**、**KLM**、**Iberia**等国际航空公司，提供飞往欧洲的航线。\n\n此外，还有其他许多国际航空公司在波哥大运营，提供连接拉丁美洲、北美、欧洲和其他地区的航班。航班和航空公司运营情况可能会随时间有所变化，因此建议在旅行前核实最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bregenz的航空公司有哪些？",
+        "A": [
+            "Smartline Luftfahrt GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bregenz\";",
+        "actual_answer": "Bregenz位于奥地利，虽然它是一个美丽的城市，但并没有自己的机场。离Bregenz最近的主要机场是位于德国的腓特烈港机场（Friedrichshafen Airport, FDH）和瑞士的苏黎世机场（Zurich Airport, ZRH）。这些机场有许多国际和区域航空公司提供服务，因此游客通常通过这些机场来访问Bregenz。具体有哪些航空公司可能因时间而异，建议直接查看这些机场的官方网站或旅行网站以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Derby的航空公司有哪些？",
+        "A": [
+            "Rvl Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Derby\";",
+        "actual_answer": "Derby是英国英格兰中部的一个城市，虽然它本身没有主要的商业机场，但离Derby最近的主要机场是东米德兰机场（East Midlands Airport）。许多航空公司在该机场运营。主要的航空公司通常包括：\n\n1. 瑞安航空（Ryanair）\n2. 易捷航空（easyJet）\n3. 捷特航空（Jet2）\n4. 汤姆森航空（TUI Airways）\n5. 伏林航空（Vueling）\n\n这些航空公司提供飞往欧洲和其他国际目的地的航班。具体的航空公司和航班信息可能会因季节和年度规划而有所变化，因此建议查看机场的官方网站或直接联系相关航空公司以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bratislava的航空公司有哪些？",
+        "A": [
+            "Elite Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bratislava\";",
+        "actual_answer": "截至我的知识截止日期，布拉迪斯拉发（Bratislava）的主要航空公司包括：\n\n1. **莱特航空（Ryanair）** - 作为低成本航空公司，莱特航空提供多条从布拉迪斯拉发出发的欧洲航线。\n\n2. **Wizz Air** - 另一家低成本航空公司，也提供从布拉迪斯拉发到欧洲多个城市的航班。\n\n这些航空公司常常根据季节或市场需求调整其航线和频次。除此之外，也可能有其他航空公司提供季节性或包机服务。旅行前建议查看机场官方网站或联系航空公司获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Howell的航空公司有哪些？",
+        "A": [
+            "Aira Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Howell\";",
+        "actual_answer": "霍威尔（Howell）是一个常见的地名或人名，不过在已知的主要航空公司名单中并没有一个叫“霍威尔航空公司”的。如果你指的是特定地区或特定背景下的小型航空公司或包机服务，可能需要提供更多信息来确认其存在或相关细节。如果你是指位于某个名为Howell的城市或区域附近的航空公司，通常可以查找到一些主要服务该地区的航空公司，通常是大型航空公司的区域航班或包机服务。如果有具体的地点或细节，我可以进一步协助查找相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Houston的航空公司有哪些？",
+        "A": [
+            "Airstat Inc.",
+            "American Jet International Corp.",
+            "Ameritex Airways Inc.",
+            "Charter One",
+            "Empyreal Jet Inc.",
+            "Houston Jet Direct",
+            "Starflite Aviation",
+            "Tapjets",
+            "Tavaero Jet Charter",
+            "Wing Aviation Charter Services LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Houston\";",
+        "actual_answer": "Houston 作为美国得克萨斯州的重要城市，有多个航空公司在此运营。以下是一些主要的航空公司，它们在航空旅行中具有显著的存在：\n\n1. **美联航（United Airlines）**：美联航是休斯顿乔治·布什洲际机场（IAH）的主要承运人之一，并且拥有一个大型枢纽。许多国际和国内航班均由此出发。\n\n2. **西南航空（Southwest Airlines）**：该航空公司是一个低成本航空公司，主要从休斯顿哈比机场（HOU）运营，提供多个城市的国内航班。\n\n3. **达美航空（Delta Air Lines）**：提供从休斯敦到多个目的地的航班，虽然它不是主要的枢纽，但仍有大量服务。\n\n4. **美国航空（American Airlines）**：在休斯顿有一定的航班服务，包括通往全国各地的航班。\n\n5. **Spirit Airlines 和 Frontier Airlines**：作为超低成本航空公司，它们提供前往多个目的地的经济航班。\n\n此外，还有其他国际航空公司也在休斯顿设有航班，为从这里出发的国际旅行者提供服务。具体的航班和服务情况可能会随时间有所变化，因此建议在旅行前查看最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cobb County的航空公司有哪些？",
+        "A": [
+            "Atlanta Air Charter Inc.",
+            "Flightworks",
+            "Priority Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Cobb County\";",
+        "actual_answer": "Cobb County, Georgia, 没有大型的商业航空公司直接运营的主要机场。然而，该地区靠近亚特兰大的哈兹菲尔德-杰克逊国际机场（Hartsfield-Jackson Atlanta International Airport），这是主要的商业航班枢纽。\n\n在Cobb County本身，有几个小型机场，如Cobb County Airport-McCollum Field，这些地方主要服务于私人和商务航空，而不是商业航空。由于没有主要商业航空公司在Cobb County机场直接运营，因此你可能需要前往亚特兰大的大型国际机场来搭乘商业航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "St Jean的航空公司有哪些？",
+        "A": [
+            "St Barth Executive"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"St Jean\";",
+        "actual_answer": "截至目前，St Jean是一个较小的地方，没有大型的国际机场，因此没有主要的航空公司直接在此运营。然而，如果你指的是Saint-Jean-sur-Richelieu，它位于加拿大魁北克省，离蒙特利尔不远。蒙特利尔的皮埃尔·埃利奥特·特鲁多国际机场（YUL）是附近的主要机场，许多国际和国内航空公司在此运营，包括：\n\n1. 加拿大航空（Air Canada）\n2. 西捷航空（WestJet）\n3. 法国航空（Air France）\n4. 美联航（United Airlines）\n5. 达美航空（Delta Air Lines）\n6. 英国航空（British Airways）\n7. 德国汉莎航空（Lufthansa）\n\n这些航空公司中部分提供飞往世界各地的航班。如果有特定的需求或目的地，建议查看具体的航空公司和航班安排。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Montreal的航空公司有哪些？",
+        "A": [
+            "ACASS Canada Ltd",
+            "Aviation Starlink Inc.",
+            "Execaire",
+            "Flightexec",
+            "Max Aviation Inc.",
+            "Novajet Aviation Group",
+            "Private Air Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Montreal\";",
+        "actual_answer": "蒙特利尔是加拿大的一座主要城市，拥有多个航空公司。以下是一些基于蒙特利尔的主要航空公司：\n\n1. **加拿大航空（Air Canada）**：这是加拿大最大的航空公司，其枢纽之一位于蒙特利尔-皮埃尔·埃利奥特·特鲁多国际机场。\n\n2. **越洋航空（Air Transat）**：这是一家总部设在蒙特利尔的航空公司，主要提供包机和定期航班服务，特别是飞往度假目的地。\n\n3. **Rouge航空（Air Canada Rouge）**：这是加拿大航空的子公司，主要提供休闲旅游目的地的航班服务。\n\n请注意有些信息可能会随时间变化，建议查看各航空公司的官方网站或参阅最新信息以获取最准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kane County的航空公司有哪些？",
+        "A": [
+            "Chicago Jet Group",
+            "Executive Flight Management"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Kane County\";",
+        "actual_answer": "Kane County 位于美国伊利诺伊州，但它本身没有主要的商业机场。许多居民可能依赖于附近的大型机场，比如芝加哥奥黑尔国际机场（O'Hare International Airport，ORD）或芝加哥中途国际机场（Chicago Midway International Airport，MDW），来乘坐航空公司提供的航班服务。\n\n因为Kane County没有自己的商业航空机场，因此没有航空公司以该县为基地。不过，你可以从邻近的大型机场找到各种航空公司运营的国内和国际航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Munich的航空公司有哪些？",
+        "A": [
+            "Euro Link",
+            "Imperialjet Europe GmbH",
+            "Mhs Aviation GmbH",
+            "Meajet GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Munich\";",
+        "actual_answer": "慕尼黑是德国的一个主要城市，拥有一个大型国际机场，即慕尼黑国际机场（Munich International Airport，IATA代码：MUC）。多家航空公司在此运营，以下是一些主要的航空公司：\n\n1. **德国汉莎航空公司（Lufthansa）** - 德国的国家航空公司，以慕尼黑作为其重要的枢纽之一。\n   \n2. **德国之翼（Eurowings）** - 这是一家德国的低成本航空公司，也是汉莎航空集团的一部分。\n\n3. **德国康多尔航空（Condor）** - 主要进行包机和休闲航线运营。\n\n4. **汉莎城际航空（Lufthansa CityLine）** - 是德国汉莎航空的地区航空公司，提供连接中小城市的航班服务。\n\n除了德国本土的航空公司，许多国际航空公司也在慕尼黑运营，包括：\n\n- 英国航空（British Airways）\n- 法国航空（Air France）\n- 荷兰皇家航空（KLM）\n- 俄航（Aeroflot）\n- 阿联酋航空（Emirates）\n- 卡塔尔航空（Qatar Airways）\n\n还有许多其他欧洲和国际航空公司提供从慕尼黑出发或抵达的航班。航班和航空公司的具体运营情况可能会随时变化，因此在计划行程时建议查看最新的信息或机场的官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lydd的航空公司有哪些？",
+        "A": [
+            "Lydd Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lydd\";",
+        "actual_answer": "截至目前，Lydd机场，又称伦敦阿什福德机场，是一个较小的区域性机场，航空服务较为有限。通常情况下，Lydd机场主要用于包机服务和私人飞行活动，而不是定期的商业航空公司服务。因此，到达和离开Lydd机场的商业航班选择相对较少，具体服务的航空公司可能会根据租赁和包机安排而有所不同。建议直接联系Lydd机场或查看其官方网站以获取最新的航空公司和航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Latrobe的航空公司有哪些？",
+        "A": [
+            "Laurel Highlands Jet Center"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Latrobe\";",
+        "actual_answer": "Latrobe位于宾夕法尼亚州，主要由阿诺德·帕尔默地区机场（Arnold Palmer Regional Airport, LBE）提供服务。该机场的主要航空公司是精神航空（Spirit Airlines），提供从Latrobe飞往几个目的地的航班。不过，航空公司运营情况可能会有所变化，建议你在旅行前查看机场或航空公司的最新信息以获取最准确的航班安排。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Morristown的航空公司有哪些？",
+        "A": [
+            "Fl Aviation Corporation",
+            "Sunnyfield Aviation Associates LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Morristown\";",
+        "actual_answer": "Morristown位于美国新泽西州，附近的小型机场是Morristown Municipal Airport。由于这是一个地区性机场，它主要用于通用航空，而不是商业航空公司航班。通常，这类机场接待私人飞机、包机和空中出租车等。如果你需要搭乘商业航班，则需要前往附近的大型机场，如纽瓦克自由国际机场（Newark Liberty International Airport），那里有多家国际和国内航空公司提供服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Eberswalde的航空公司有哪些？",
+        "A": [
+            "Fas Finow Air Service GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Eberswalde\";",
+        "actual_answer": "Eberswalde 位于德国勃兰登堡州，但并不直接拥有商业机场。因此，Eberswalde 本身没有航空公司。最近的主要国际机场是位于柏林的柏林勃兰登堡国际机场（Berlin Brandenburg Airport, BER）。这是一个大型国际机场，有多个航空公司运营航班。如果你需要从 Eberswalde 出行，可以考虑从 BER 出发。在 BER，你会找到许多国际和欧洲的航空公司，比如德国汉莎航空、易捷航空、瑞安航空等。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Washington的航空公司有哪些？",
+        "A": [
+            "Skyward Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Washington\";",
+        "actual_answer": "在华盛顿州和华盛顿特区，主要的航空公司如下：\n\n### 华盛顿州：\n1. **阿拉斯加航空公司（Alaska Airlines）**：总部位于西雅图，这是一家主要的航空公司，为美国、西雅图及太平洋西北地区提供广泛的国内和国际航班服务。\n\n2. **地平线航空公司（Horizon Air）**：是阿拉斯加航空的全资子公司，主要运营支线航班。\n\n### 华盛顿特区：\n虽然华盛顿特区本身没有航空公司总部，但其主要机场迪伦赛国际机场（Dulles International Airport）和罗纳德·里根华盛顿国家机场（Ronald Reagan Washington National Airport）有多家主要航空公司运营航班服务，这些航空公司包括：\n\n1. **美联航（United Airlines）**：在迪伦赛国际机场拥有一个重要的枢纽。\n\n2. **美国航空（American Airlines）**：在罗纳德·里根华盛顿国家机场具有重要的航班业务。\n\n这些航空公司为华盛顿州和华盛顿特区提供了广泛的国内和国际航班服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Burlington的航空公司有哪些？",
+        "A": [
+            "Skysouth Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Burlington\";",
+        "actual_answer": "Burlington, Vermont的主要机场是Burlington国际机场（BTV）。根据2023年的信息，通常在这个机场运营的主要航空公司包括：\n\n1. **American Airlines** - 提供飞往其枢纽机场如Charlotte和Philadelphia的航班。\n2. **Delta Air Lines** - 提供飞往其枢纽机场如Atlanta和New York City的航班。\n3. **United Airlines** - 提供飞往其枢纽机场如Chicago ORD和Washington D.C.的航班。\n4. **JetBlue Airways** - 提供飞往城市如New York City的航班。\n\n以上信息可能会随着时间和市场需求的变化而变化，因此在计划旅行之前，建议查看航空公司的官方网站或BTV机场的官网以获取最新航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Upper Bavaria的航空公司有哪些？",
+        "A": [
+            "Air Independence",
+            "Voyage Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Upper Bavaria\";",
+        "actual_answer": "上巴伐利亚（Upper Bavaria）是德国巴伐利亚州的一个行政区，其中包含了慕尼黑等重要城市。这一区域的航空公司主要有以下几家：\n\n1. **汉莎航空公司（Lufthansa）** - 总部位于德国法兰克福，但在慕尼黑也设有重要的枢纽。\n\n2. **巴伐利亚航空（Bavaria Airlines）** - 这是一家较小的区域性航空公司，提供连接巴伐利亚州内外的一些航班。\n\n3. **德国之翼（Eurowings）** - 虽然不是总部位于上巴伐利亚，但在慕尼黑有运营。\n\n请注意，航空公司时常调整航线和运营基地，因此建议查看最新的信息以获得最准确的航班安排和航空公司运营地点。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "New Orleans的航空公司有哪些？",
+        "A": [
+            "Flightline First LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"New Orleans\";",
+        "actual_answer": "新奥尔良的主要机场是路易斯·阿姆斯特朗新奥尔良国际机场（Louis Armstrong New Orleans International Airport，机场代码：MSY）。在这个机场运营的航空公司有：\n\n1. **美国航空**（American Airlines）\n2. **达美航空**（Delta Air Lines）\n3. **西南航空**（Southwest Airlines）\n4. **联合航空**（United Airlines）\n5. **捷蓝航空**（JetBlue Airways）\n6. **边疆航空**（Frontier Airlines）\n7. **精神航空**（Spirit Airlines）\n8. **阿拉斯加航空**（Alaska Airlines）\n9. **银色航空**（Silver Airways）\n10. **阿莱让航空**（Allegiant Air）\n11. **太阳国家航空**（Sun Country Airlines）\n12. **Volaris**（一家墨西哥航空公司）\n\n此外，还有一些国际航空公司提供季节性或定期航班。在出行前，建议您查阅航空公司官网或机场官网以获取最新的航班和航空公司信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Goodyear的航空公司有哪些？",
+        "A": [
+            "Aircraft Transport Service"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Goodyear\";",
+        "actual_answer": "Goodyear（固特异）是一家以生产轮胎而闻名的公司，并不运营航空公司。然而，固特异确实在航空领域提供产品和服务，主要包括航空轮胎和相关解决方案，广泛应用于全球各大航空公司及飞机制造商。如果你指的是其他与Goodyear相关的航空事务或项目，欢迎提供更多信息以便我帮助解答。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Megara的航空公司有哪些？",
+        "A": [
+            "Ifly S.A."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Megara\";",
+        "actual_answer": "截至我最近的信息更新，Megara 是希腊的一个小城市，并没有自己的商业机场，因此没有航空公司直接以Megara为基地。然而，该地区可能会有一些小型的通用航空活动。如果你的问题指的是某附近主要城市的机场或者航空公司，雅典的埃莱夫塞里奥斯·韦尼泽洛斯国际机场是距离Megara最近的主要机场，那里有多家国际和国内航空公司运营，包括爱琴海航空、奥林匹克航空等。请根据具体需求，查看最新的航班和航空公司信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Westchester County的航空公司有哪些？",
+        "A": [
+            "Fly the Whale",
+            "Flying Zebra"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Westchester County\";",
+        "actual_answer": "西彻斯特县的主要商业机场是威彻斯特县机场（Westchester County Airport，机场代码：HPN）。在这个机场运营的主要航空公司包括：\n\n1. **American Airlines** - 提供飞往多个目的地的航班。\n2. **Delta Air Lines** - 提供连接主要枢纽机场的航班。\n3. **JetBlue Airways** - 提供飞往多个城市的航班。\n4. **United Airlines** - 提供主要城市之间的航班服务。\n5. **Allegiant Air** - 提供有限的低成本航班服务。\n\n请注意，航班提供和航空公司运营情况可能会根据季节和其他因素有所变化，因此建议查看机场或航空公司官网以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "San Fernando del Valle de Catamarca的航空公司有哪些？",
+        "A": [
+            "Aerovida S.A"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"San Fernando del Valle de Catamarca\";",
+        "actual_answer": "San Fernando del Valle de Catamarca是阿根廷的一座城市，这里的主要机场是Catamarca机场（Aeropuerto Coronel Felipe Varela）。截至我最后获取的信息时间，阿根廷国内的一些航空公司，例如Aerolineas Argentinas和Flybondi，可能会提供到达或离开Catamarca的航班。然而，航班和航空公司服务可能会随着时间而改变，所以我建议您查看最新的机场信息或相关航空公司的官方网站，以获取最新的航班和服务信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bexar County的航空公司有哪些？",
+        "A": [
+            "Buena Vista Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bexar County\";",
+        "actual_answer": "Bexar County, 德克萨斯州，以圣安东尼奥国际机场（San Antonio International Airport, SAT）为主要航空枢纽。以下是一些常服务于该机场的主要航空公司：\n\n1. **美国航空（American Airlines）**\n2. **联合航空（United Airlines）**\n3. **达美航空（Delta Air Lines）**\n4. **西南航空（Southwest Airlines）**\n5. **边疆航空（Frontier Airlines）**\n6. **阿拉斯加航空（Alaska Airlines）**\n\n这些航空公司提供国内和部分国际航班，连接美国各大城市和一些国际目的地。航空公司服务可能会随时间有所变化，建议检查机场或航空公司的网站以获取实时信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ocala的航空公司有哪些？",
+        "A": [
+            "Proav Charters"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Ocala\";",
+        "actual_answer": "在Ocala, Florida附近没有大型商业机场，所以没有主要的航空公司直接服务于Ocala市。不过，附近的一些主要机场提供多家航空公司的服务，包括：\n\n1. **奥兰多国际机场 (MCO)** - 距离约1.5至2小时车程，有多家航空公司提供广泛的国内和国际航班。\n\n2. **坦帕国际机场 (TPA)** - 与Ocala类似距离之内，也提供许多航空公司的航班。\n\n3. **盖恩斯维尔地区机场 (GNV)** - 比较近的小型机场，主要提供区域航班，有少数几家航空公司提供服务，如Delta Air Lines和American Airlines的支线航班。\n\n如果需要从Ocala出发，常常需要先驾车到以上的其中一个机场才能乘坐商业航班。建议根据你的旅行需求选择最方便的机场。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Midland的航空公司有哪些？",
+        "A": [
+            "Basin Aviation Inc.",
+            "Deer Horn Aviation, Ltd. Co.",
+            "Haskin Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Midland\";",
+        "actual_answer": "Midland指的是美国俄亥俄州的米德兰市、德克萨斯州的米德兰市，或者英国的米德兰地区等不同地方。如果你指的是美国德克萨斯州的米德兰，那么主要的机场是米德兰国际机场（Midland International Air and Space Port）。一些主要的航空公司在该机场提供服务，包括：\n\n1. **美國航空（American Airlines）**：通常提供飞往达拉斯/沃斯堡和其他大型枢纽的航班。\n2. **西南航空（Southwest Airlines）**：提供多条国内航线，飞往多个大城市。\n3. **联合航空（United Airlines）**：通常提供飞往其主要枢纽机场如休斯顿和丹佛的航班。\n\n如果你指的是英国的东米德兰（East Midlands）或西米德兰（West Midlands）地区，则主要的机场包括伯明翰机场（Birmingham Airport）和东米德兰机场（East Midlands Airport）。多家航空公司在这些机场运营，包括:\n\n1. **英国航空（British Airways）**\n2. **瑞安航空（Ryanair）**\n3. **易捷航空（easyJet）**\n\n根据你的具体需求或者目的地，你可能需要查阅相应机场的官网来获取更多详细信息和最新航线。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Will County的航空公司有哪些？",
+        "A": [
+            "Blatti Aviation, Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Will County\";",
+        "actual_answer": "Will County位于伊利诺伊州，靠近芝加哥。虽然Will County本身未必有大型的商业机场，但芝加哥大都会区拥有两个主要的国际机场，即奥黑尔国际机场（O'Hare International Airport, ORD）和中途国际机场（Chicago Midway International Airport, MDW）。以下是一些常见的航空公司，它们通常在这些机场运营：\n\n1. **美国航空（American Airlines）**\n2. **联合航空（United Airlines）**\n3. **达美航空（Delta Air Lines）**\n4. **西南航空（Southwest Airlines）**\n5. **边疆航空（Frontier Airlines）**\n6. **捷蓝航空（JetBlue Airways）**\n7. **阿拉斯加航空（Alaska Airlines）**\n8. **精神航空（Spirit Airlines）**\n\n这些航空公司为乘客提供广泛的国内和国际航线选择。如果你特定想了解Will County内部的小型机场或私人航空公司服务，可能需要查阅当地的机场资源，如Joliet Regional Airport等。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "La Roche-sur-Yon的航空公司有哪些？",
+        "A": [
+            "SD Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"La Roche-sur-Yon\";",
+        "actual_answer": "La Roche-sur-Yon拥有一个名为La Roche-sur-Yon Les Ajoncs Airport的小型机场，但该机场主要用于私人飞行、飞行员训练和某些包机航班。它并不是一个商业航空枢纽，通常没有主要航空公司提供定期的客运航班服务。\n\n如果你正在寻找从La Roche-sur-Yon出发的商业航班，你可能需要前往附近的较大城市的机场，例如南特大西洋机场（Nantes Atlantique Airport），那里有更多的航空公司运营，并提供更广泛的国内和国际航班选择。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "White Plains的航空公司有哪些？",
+        "A": [
+            "Eagle Air Inc.",
+            "Sofar",
+            "Sky LLC",
+            "White Cloud Charter LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"White Plains\";",
+        "actual_answer": "White Plains, 纽约的机场主要是Westchester County Airport（机场代码：HPN）。几家航空公司在此提供航班服务，包括：\n\n1. **American Airlines**：提供飞往主要枢纽城市如Charlotte和Philadelphia的航班。\n2. **Delta Air Lines**：通常提供飞往Atlanta等地的航班。\n3. **JetBlue Airways**：通常提供飞往佛罗里达和其他目的地的航班。\n4. **United Airlines**：提供前往Chicago等主要城市的航班。\n\n航线和航空公司可能会有所变动，因此建议查看机场或航空公司官网以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Middle Franconia的航空公司有哪些？",
+        "A": [
+            "Franconia Air Service GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Middle Franconia\";",
+        "actual_answer": "Middle Franconia是德国巴伐利亚州的一个行政区，以其主要城市纽伦堡为中心。虽然Middle Franconia本身没有专属的航空公司，但纽伦堡的纽伦堡机场（Nuremberg Airport, NUE）是该地区主要的航空枢纽。许多国际和国内航空公司在纽伦堡机场运营，包括但不限于：\n\n1. 汉莎航空（Lufthansa）\n2. 瑞安航空（Ryanair）\n3. 易捷航空（easyJet）\n4. 澳洲航空公司（Air France）\n5. 瑞士国际航空公司（SWISS）\n6. 奥地利航空（Austrian Airlines）\n7. 泛航航空（KLM）\n8. 英国航空（British Airways）\n\n这些航空公司提供从纽伦堡到欧洲其他主要城市和国际目的地的航班。具体航班信息和运营航空公司可能会有所变化，建议在计划旅行时检查相关机场和航空公司的最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "South Lanarkshire的航空公司有哪些？",
+        "A": [
+            "Air Charter Scotland"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"South Lanarkshire\";",
+        "actual_answer": "南拉纳克郡（South Lanarkshire）位于苏格兰，是一个以城镇和乡村为主的地区，并没有大型的商业机场，因此没有直接以它为总部或运营基地的航空公司。苏格兰的主要机场通常位于格拉斯哥、爱丁堡和阿伯丁等地，这些地方也是许多航空公司的枢纽。若要了解有哪些航空公司在苏格兰运营，你可以查看这些主要机场的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Santa Ana的航空公司有哪些？",
+        "A": [
+            "AAC Jet",
+            "Paragon Airways",
+            "Regency Air LLC",
+            "STA Jets",
+            "West Coast Aviation Services"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Santa Ana\";",
+        "actual_answer": "截至我所知的最新信息，圣安娜（Santa Ana）的主要机场是约翰·韦恩机场（John Wayne Airport，SNA）。该机场有多家航空公司运营，提供国内和国际航班服务。以下是一些常见的航空公司：\n\n1. 美国航空（American Airlines）\n2. 达美航空（Delta Air Lines）\n3. 联合航空（United Airlines）\n4. 西南航空（Southwest Airlines）\n5. 阿拉斯加航空（Alaska Airlines）\n6. 精灵航空（Spirit Airlines）\n7. 捷蓝航空（JetBlue Airways）\n\n请注意，航空公司可能会根据季节和市场需求调整其航线和服务，因此建议直接查看约翰·韦恩机场或相关航空公司的官方网站，以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Clovis的航空公司有哪些？",
+        "A": [
+            "Flight Level Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Clovis\";",
+        "actual_answer": "截至我最新的信息更新，Clovis是加利福尼亚州和新墨西哥州的一个城市。具体提到哪个Clovis会影响到相关的航空服务信息。一般情况下，较小城市如Clovis通常没有大型国际机场，可能有区域性或地方小型机场。例如：\n\n1. **Clovis, California**：最近的主要机场是弗雷斯诺优胜美地国际机场（Fresno Yosemite International Airport，IATA代码：FAT），这也是服务Clovis市民的主要机场。\n\n2. **Clovis, New Mexico**：主要服务机场是Cannon Air Force Base有时可以用于有限的非军事用途，但民用航班通常使用距其较远的城市机场，如Lubbock Preston Smith International Airport或Albuquerque International Sunport。\n\n建议根据你的具体位置和需求查看当地机场的航班选项或航司。此外，航空公司的服务信息可能会因市场需求和其他因素而有所变化，因此查看最新的机场公告或航空公司网站会提供最准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dortmund的航空公司有哪些？",
+        "A": [
+            "Starwings GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Dortmund\";",
+        "actual_answer": "到目前为止，多特蒙德机场（Dortmund Airport）有几家主要航空公司运营航班。以下是一些主要的航空公司（根据时间和运营情况可能有所变化）：\n\n1. **欧洲之翼航空（Eurowings）** - 德国的一家低成本航空公司，提供欧洲境内的多个目的地航班。\n   \n2. **瑞安航空（Ryanair）** - 总部位于爱尔兰的低成本航空公司，提供欧洲和其他地区的许多航线。\n   \n3. **维兹航空（Wizz Air）**- 一家以匈牙利为基地的低成本航空公司，主要运营东欧和中欧地区的航线。\n\n4. **土耳其航空（Turkish Airlines）** - 提供从多特蒙德到土耳其的航班以及许多其他国际目的地的选择。\n\n这些航空公司提供的航线和服务可能会根据季节和市场需求有所调整，因此建议在计划旅行前查看多特蒙德机场的官方网站或直接联系航空公司获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Oakland的航空公司有哪些？",
+        "A": [
+            "GoodJet",
+            "Pacific Coast Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Oakland\";",
+        "actual_answer": "奥克兰国际机场（OAK）由多家航空公司运营，提供各种国内和国际航班。主要的航空公司包括：\n\n1. 西南航空（Southwest Airlines）：提供大量国内航班，是奥克兰机场的主要航空公司之一。\n2. 阿拉斯加航空（Alaska Airlines）：提供从奥克兰到西海岸以及其他目的地的航班。\n3. 精神航空（Spirit Airlines）：通常提供低成本的国内航班。\n4. 联合航空（United Airlines）：提供一些国内线路的服务。\n5. 遍达航空（Condor Airlines）：季节性提供飞往欧洲的航班。\n6. 佛罗里达边疆航空（Frontier Airlines）：主要集中在低成本的国内航班。\n\n此外，还有其他一些航空公司可能会不定期地运行季节性航班或包机服务。由于航空公司运营情况可能随时发生变化，建议在计划旅行时查看最新的航班和航空公司信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Comal County的航空公司有哪些？",
+        "A": [
+            "Toddcoe Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Comal County\";",
+        "actual_answer": "截至目前，Comal County位于德克萨斯州，主要的城市包括新布朗费尔斯。Comal County本身没有主要的商业机场，因此没有总部设在此的航空公司。最近的大型商业机场是位于圣安东尼奥的圣安东尼奥国际机场（San Antonio International Airport, SAT），或位于奥斯汀的奥斯汀-柏格史东国际机场（Austin-Bergstrom International Airport, AUS）。这些机场由多家国内和国际航空公司服务。如果需要详细的航空公司列表，可以查看这些大型机场的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sanford的航空公司有哪些？",
+        "A": [
+            "Air Unlimited",
+            "Hera Flight"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sanford\";",
+        "actual_answer": "Sanford是佛罗里达州中部的一个城市，那里的奥兰多·桑福德国际机场（Orlando Sanford International Airport, SFB）有多家航空公司运营。以下是一些在该机场运营的航空公司：\n\n1. **Allegiant Air（忠实航空）**：这是桑福德机场的主要运营航空公司之一，提供飞往美国各地的廉价航班。\n\n2. **TUI Airways（途易航空）**：这是一家以欧洲为基地的航空公司，提供往返英国和桑福德的季节性航班。\n\n除了这些，其他一些包机服务和季节性航班运营商可能会根据需求增加或减少。对于最新的信息，建议访问奥兰多·桑福德国际机场的官方网站或直接联系各航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Farnborough的航空公司有哪些？",
+        "A": [
+            "Acropolis Aviation Ltd",
+            "Executive Jet Charter Ltd",
+            "Gama Aviation Ltd(UK)",
+            "Voluxis"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Farnborough\";",
+        "actual_answer": "Farnborough 是英国的一个著名航空与航天中心，以其航空展览而闻名。然而，Farnborough 并没有一个大型的商用机场，因此没有航空公司直接从这里运营商业航班。\n\n不过，Farnborough Airport（Farnborough Aerodrome）是一个专门的商务航空机场，主要用于私人和公司包机服务。经营该机场的公司是 TAG Farnborough Airport，该机场提供高端公务航空服务，可以为客户安排全球范围内的飞行。\n\n如果你感兴趣的是周边地区的航空公司，则需考虑从伦敦的主要机场出发，如希思罗机场、盖特威克机场、伦敦城市机场等，它们有多家国际和国内航空公司运营航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Guangzhou的航空公司有哪些？",
+        "A": [
+            "Phxaero",
+            "Southern-Jet Co., Ltd.",
+            "Honsan General Aviation (Hong Kong) Co., Limited"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Guangzhou\";",
+        "actual_answer": "广州拥有多家航空公司，以下是一些主要的航空公司：\n\n1. **中国南方航空（China Southern Airlines）** - 这是中国最大的一家航空公司，总部位于广州白云国际机场。\n2. **九元航空（9 Air）** - 这是一家低成本航空公司，也以广州为基地。\n3. **深圳航空（Shenzhen Airlines）** - 虽然总部在深圳，但也在广州有大量的航班运营。\n4. **海南航空（Hainan Airlines）** - 总部虽在海南，但在广州同样运营多条航线。\n\n除了这些，公司也可能有其他的国内和国际航空运营商在广州白云国际机场提供服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mobile的航空公司有哪些？",
+        "A": [
+            "Jet Services Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Mobile\";",
+        "actual_answer": "在中国，拥有移动应用程序的航空公司相当多，以下是一些主要的航空公司，它们通常都有自己的官方手机应用：\n\n1. **中国国际航空公司（Air China）** - 国航的移动应用提供机票预订、航班查询、在线值机等服务。\n\n2. **中国东方航空公司（China Eastern Airlines）** - 东航的App支持机票购买、航班动态查询、登机手续办理等功能。\n\n3. **中国南方航空公司（China Southern Airlines）** - 南航的移动应用提供航班预订、在线值机、行李托运等便捷服务。\n\n4. **海南航空公司（Hainan Airlines）** - 其应用程序也支持各种航空服务如航班预订和查询。\n\n5. **深圳航空公司（Shenzhen Airlines）** - 提供航班查询、机票预订等功能。\n\n6. **厦门航空公司（Xiamen Airlines）** - 操作简便的移动应用供用户预订机票，查看航班动态等。\n\n7. **吉祥航空公司（Juneyao Airlines）** - 其应用为乘客提供全面的航班服务。\n\n8. **春秋航空公司（Spring Airlines）** - 主打低成本航空市场，提供在线机票预订服务。\n\n9. **四川航空公司（Sichuan Airlines）** - 应用程序包括航班查询、值机选座、机票购买等服务。\n\n这些航空公司的移动应用程序通常可以从各大应用商店（如Apple App Store或Google Play Store）下载，乘客可以通过这些应用程序便捷地处理各种旅行相关事务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lafayette的航空公司有哪些？",
+        "A": [
+            "Executive Aircraft Charter Services LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lafayette\";",
+        "actual_answer": "拉斐特（Lafayette）通常是指美国印第安纳州或路易斯安那州的城市。根据你提问的具体城市，以下是一些信息：\n\n1. **印第安纳州拉斐特**（Lafayette, Indiana）：这个城市通常通过附近的普渡大学机场（Purdue University Airport）服务，但该机场主要用于通用航空和学校的航空项目。商业航班的乘客通常需要前往印第安纳波利斯国际机场（Indianapolis International Airport）。\n\n2. **路易斯安那州拉斐特**（Lafayette, Louisiana）：拉斐特地区的主要机场是拉斐特地区机场（Lafayette Regional Airport，简称LFT）。该机场由几家主要的航空公司服务，包括达美航空（Delta Air Lines）、美国航空（American Airlines）和美联航（United Airlines），提供飞往主要枢纽城市的航班连接。\n\n请确认你指的是哪个拉斐特，以便提供更准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Salt Lake City的航空公司有哪些？",
+        "A": [
+            "Elevate Jet",
+            "Monument Airworks LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Salt Lake City\";",
+        "actual_answer": "盐湖城 (Salt Lake City) 的主要机场是盐湖城国际机场 (Salt Lake City International Airport, SLC)。以下是一些常见的航空公司，它们在盐湖城提供服务：\n\n1. **达美航空 (Delta Air Lines)** - 这是盐湖城国际机场的主要枢纽航空公司，提供广泛的国内和国际航班。\n\n2. **西南航空 (Southwest Airlines)** - 提供大量的国内航班。\n\n3. **联合航空 (United Airlines)** - 连接多个国内和国际城市。\n\n4. **美国航空 (American Airlines)** - 提供国内和一些国际航班。\n\n5. **阿拉斯加航空 (Alaska Airlines)** - 主要服务于西海岸航线。\n\n6. **捷蓝航空 (JetBlue Airways)** - 提供若干条跨大陆航线。\n\n7. **边疆航空 (Frontier Airlines)** - 提供低成本航班。\n\n8. **精神航空 (Spirit Airlines)** - 提供低成本航班。\n\n这些航空公司提供覆盖国内多个主要城市和一些国际目的地的航班服务。如果你计划旅行，建议查阅个别航空公司或机场的官方网站以获取最新的航班信息和服务详情。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Milton的航空公司有哪些？",
+        "A": [
+            "Brenzil Pty Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Milton\";",
+        "actual_answer": "Milton是一个非常常见的名字，在不同的国家和地区都有可能有不同的公司或品牌。但是，如果你指的是一家具体的航空公司或与Milton相关的航空公司，可能并不存在一家叫“Milton航空”的知名航空公司。\n\n如果你是在寻找与Milton相关的某个具体航空业公司或品牌，可能需要提供更多的信息，比如所在国家、城市或者其他相关的详细信息。这样我才能更好地帮助你找到答案。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "New Castle County的航空公司有哪些？",
+        "A": [
+            "Dumont Jets",
+            "Fly Advanced Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"New Castle County\";",
+        "actual_answer": "New Castle County位于美国特拉华州，该地区的主要机场是Wilmington Airport（ILG），也被称为New Castle Airport。然而，Wilmington Airport的商业航班选择相对有限，航空公司和航线可能会根据市场需求和航空公司的商业策略而有所变化。\n\n截至目前，并没有大量的主要航空公司在New Castle Airport提供定期的商业航班服务。不过，有时会有一些廉价航空公司或包机公司在这里运营，比如Frontier Airlines。建议你查看机场官网或直接联系航空公司以获取最新的航班信息。\n\n如果你需要更多选择，可能需要前往附近的主要机场，如费城国际机场（PHL），那里有更多的国内和国际航班服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Zapopan的航空公司有哪些？",
+        "A": [
+            "Vuela International"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Zapopan\";",
+        "actual_answer": "Zapopan 是墨西哥哈利斯科州的一个城市，临近瓜达拉哈拉，它没有自己的国际机场。最近的主要机场是位于瓜达拉哈拉的米格尔·伊达尔戈-科斯特利亚国际机场 (Aeropuerto Internacional de Guadalajara Miguel Hidalgo y Costilla, 代号 GDL)。许多航空公司在此运营，包括：\n\n1. 墨西哥国际航空公司 (Aeroméxico)\n2. 墨西哥捷运航空 (Volaris)\n3. 幸福航空 (VivaAerobus)\n4. 美国航空 (American Airlines)\n5. 达美航空 (Delta Air Lines)\n6. 联合航空 (United Airlines)\n7. 西南航空 (Southwest Airlines)\n8. 加拿大航空 (Air Canada)\n9. 拉塔姆航空 (LATAM Airlines)\n\n这些航空公司提供一些国际航班和国内航班，更多具体航线可通过机场或航空公司官网查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sellersburg的航空公司有哪些？",
+        "A": [
+            "Private Flite Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sellersburg\";",
+        "actual_answer": "Sellersburg 是位于美国印第安纳州的一个小镇，并没有商业机场。因此，Sellersburg 本地没有航空公司。不过，附近的主要机场之一是位于肯塔基州路易斯维尔的路易斯维尔国际机场（Louisville Muhammad Ali International Airport），距离 Sellersburg 约30分钟车程。该机场有多个航空公司提供航班服务，包括：\n\n1. 达美航空（Delta Air Lines）\n2. 美国航空（American Airlines）\n3. 西南航空（Southwest Airlines）\n4. 联合航空（United Airlines）\n5. 阿莱吉安特航空（Allegiant Air）\n\n如果需要乘坐航班，可以通过这些航空公司从路易斯维尔国际机场出发。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Newcastle的航空公司有哪些？",
+        "A": [
+            "Naljets Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Newcastle\";",
+        "actual_answer": "截至我所知，Newcastle（纽卡斯尔）主要是指位于英国的纽卡斯尔，并有一个主要的机场，纽卡斯尔国际机场（Newcastle International Airport）。从这个机场运营的航空公司有若干家，包括：\n\n1. **英国航空（British Airways）**\n2. **易捷航空（easyJet）**\n3. **瑞安航空（Ryanair）**\n4. **汉莎航空（Lufthansa）**\n5. **法航（Air France）**\n6. **KLM荷兰皇家航空（KLM Royal Dutch Airlines）**\n\n这些航空公司提供前往欧洲及其他国际目的地的航班。具体的航空公司和航线可能会因市场需求、季节等因素有所变化，因此建议在旅行前查看机场的官方网站或直接与航空公司确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Innerschwand的航空公司有哪些？",
+        "A": [
+            "Pink Sparrow GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Innerschwand\";",
+        "actual_answer": "Innerschwand 是奥地利的一个小镇，位于蒙德湖附近。由于它是一个小镇，那里没有国际或地区机场。因此，Innerschwand 本身没有航空公司。然而，旅客可以通过奥地利的主要机场，如萨尔茨堡机场或维也纳国际机场，进入和离开该地区。这些机场由多家国际和欧洲航空公司服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Oberursel的航空公司有哪些？",
+        "A": [
+            "Hype Private Jets GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Oberursel\";",
+        "actual_answer": "截至我最后了解的情况，Oberursel是德国黑森州的一个小镇，并没有自己的国际机场或航空公司。最近的主要国际机场是法兰克福机场（Frankfurt Airport），距离Oberursel大约20公里。法兰克福机场是欧洲的一个主要航空枢纽，有众多国际和国内航空公司在此运营航班。如果你需要从Oberursel出发旅行，可以考虑通过法兰克福机场预订航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Fort Nelson的航空公司有哪些？",
+        "A": [
+            "Villers Air Services Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Fort Nelson\";",
+        "actual_answer": "截至我所知的最新信息，Fort Nelson（福特内尔逊）是加拿大不列颠哥伦比亚省的一座小镇，其机场是Fort Nelson Airport（IATA代码：YYE）。航空公司和航班服务可能会随时间而变化，但历史上，通常只有少数区域性航空公司提供往返于Fort Nelson的航班。\n\n主要运营的航司相对有限，可能包括航班前往不列颠哥伦比亚省内其它城市或更大的交通枢纽。因时效性，建议你在计划旅行时，通过航空公司网站或旅游服务商获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bucharest的航空公司有哪些？",
+        "A": [
+            "My Jet",
+            "Toyo Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bucharest\";",
+        "actual_answer": "在布加勒斯特（Bucharest），主要的机场是亨利·科安达国际机场（Henri Coanda International Airport），也被称为奥托佩尼机场（Otopeni Airport）。以下是一些常见的航空公司，它们在布加勒斯特运营：\n\n1. **罗马尼亚航空（TAROM）** - 罗马尼亚的国家航空公司。\n2. **蓝色航空（Blue Air）** - 罗马尼亚的一家低成本航空公司。\n3. **瑞安航空（Ryanair）** - 一家知名的低成本航空公司，总部位于爱尔兰。\n4. **威兹航空（Wizz Air）** - 一家低成本航空公司，总部位于匈牙利，运营多条欧洲航线。\n5. **汉莎航空（Lufthansa）** - 德国的主要国际航空公司。\n6. **法荷航空（KLM-Air France）** - 法国和荷兰的联合航空公司。\n7. **英国航空（British Airways）** - 英国的旗舰航空公司。\n8. **土耳其航空（Turkish Airlines）** - 土耳其的国家航空公司。\n\n此外，还有其他许多国际和区域航空公司在布加勒斯特运营。具体航班和服务可能会随时间变化，所以建议在旅行前查询最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kelowna的航空公司有哪些？",
+        "A": [
+            "Carson Air Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Kelowna\";",
+        "actual_answer": "截至我最后掌握的信息，Kelowna国际机场（YLW）有以下一些航空公司运营：\n\n1. 西捷航空（WestJet）\n2. 加航（Air Canada）\n3. Swoop\n4. Flair Airlines\n5. Pacific Coastal Airlines\n\n这些航空公司提供国内和一些国际航班服务。请注意，航空公司和航线可能会随着时间变更，所以在计划旅行时最好查阅机场官方网站或直接与航空公司确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "El Cajon的航空公司有哪些？",
+        "A": [
+            "Jet Up Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"El Cajon\";",
+        "actual_answer": "El Cajon 位于加利福尼亚州，主要的机场是小型的 Gillespie Field (IATA: SEE)，它主要用于通用航空和私用飞机，因此没有商业航空公司在这里运营。如果你想找商业航班，可以考虑前往距离较近的圣地亚哥国际机场 (San Diego International Airport, IATA: SAN)，这个大型机场有多家航空公司运营，例如：\n\n1. 美联航（United Airlines）\n2. 美国航空（American Airlines）\n3. 达美航空（Delta Air Lines）\n4. 西南航空（Southwest Airlines）\n5. 阿拉斯加航空（Alaska Airlines）\n\n这些航空公司提供到美国各地及国际航线的服务。你可以根据你的旅行需求选择合适的航空公司和航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sonderborg的航空公司有哪些？",
+        "A": [
+            "Air Alsie"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sonderborg\";",
+        "actual_answer": "Sønderborg 是位于丹麦的一座城市，其主要机场是 Sønderborg Lufthavn (SGD)。该机场相对较小，因此航班选择有限。通常情况下，提供服务的航空公司包括：\n\n- 丹麦的 Alsie Express，它通常提供前往哥本哈根的航班。\n\n航班信息可能会随时间变化，因此建议你在旅行前查阅机场或航空公司官网以获取最新信息。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Ventura County的航空公司有哪些？",
+        "A": [
+            "Air 7 LLC",
+            "Sun Air Jets",
+            "XCEL Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Ventura County\";",
+        "actual_answer": "Ventura County, California, does not have any major commercial airlines based directly within it. However, it is served by several nearby airports. The closest major airport is Los Angeles International Airport (LAX), which hosts numerous airlines. Additionally, Hollywood Burbank Airport (BUR) and Santa Barbara Airport (SBA) are also nearby options.\n\nVentura County itself has smaller airports like Camarillo Airport (CMA) and Oxnard Airport (OXR), which primarily serve private, charter, and general aviation flights rather than major commercial airline services. For commercial flights, travelers in Ventura County typically use the larger airports mentioned above.",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Greenfield的航空公司有哪些？",
+        "A": [
+            "Solutions Air Charter LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Greenfield\";",
+        "actual_answer": "\"Greenfield\"通常指的是新建的项目或设施，而不特指某个地方或者城市的名称。因此，如果你指的是在一个被称为Greenfield的特定城市或地区的航空公司，这可能需要更具体的信息来准确回答。\n\n然而，如果你指的是航空业中的一些新创办公司或是正在开发的新航空服务，可以参考一些专业的航空新闻和杂志获取最新的信息，因为航空公司市场是动态变化的，新的航空公司可能会不时出现。\n\n如果你提供更多的上下文或具体地点，我可以尝试提供更相关的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "London Biggin Hill的航空公司有哪些？",
+        "A": [
+            "Zenith Aviation Limited"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"London Biggin Hill\";",
+        "actual_answer": "截至最新数据，伦敦毕金山机场（London Biggin Hill Airport）主要是一座商务航空机场，主要为私人飞机和包机航班提供服务。因此，它并没有像商业机场那样有固定航班的航空公司运营。不过，一些商务航空公司和私人飞机运营商在该机场提供服务，例如NetJets、Flexjet和Air Charter Service等。\n\n如果您需要特定的航空服务或航班信息，建议直接联系机场或者使用私人包机服务进行查询。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Toluca的航空公司有哪些？",
+        "A": [
+            "Aero JL S.A de C.V",
+            "Destiny Jets",
+            "Flymex",
+            "Pabe Tax S.A. de C.V.",
+            "Servicios Aereos Across",
+            "Servicios Aereos Estrella",
+            "Jets Capital Trasportes Aereos S.A. de C.V.",
+            "Aeromaan S.A. de C.V."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Toluca\";",
+        "actual_answer": "Toluca国际机场（Licenciado Adolfo López Mateos International Airport）是位于墨西哥Toluca的一座机场。虽然相较于墨西哥城的主要机场，Toluca机场规模较小，但仍有一些航空公司在此运营。以下是一些可能在Toluca机场运营的航空公司：\n\n1. **Volaris** - 墨西哥的低成本航空公司之一。\n2. **Interjet** - 曾是一家墨西哥的低成本航空公司，不过需要注意的是，Interjet在2020年停止了运营，因此需查阅最新信息确认其运行状态。\n\n通常，航空公司的航班和运营情况会根据季节、需求和其他商业因素而变动。因此，建议在计划旅行前通过机场官网或联系相关航空公司以获得最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Whanganui的航空公司有哪些？",
+        "A": [
+            "Air Whanganui"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Whanganui\";",
+        "actual_answer": "截至我最近的更新，Whanganui机场是一个小型区域机场，主要服务于新西兰国内的短途航班。较常见的航空公司可能包括Air Chathams，他们提供往返奥克兰的定期航班。不过，航空公司及航班安排可能会有所变动，因此建议你查看Whanganui机场的官方网站或直接联系他们以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Johannesburg的航空公司有哪些？",
+        "A": [
+            "Comair Flight Services",
+            "Owen Air",
+            "United Charter Services"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Johannesburg\";",
+        "actual_answer": "截至目前，约翰内斯堡是南非最大的城市之一，其主要机场是奥利弗·坦博国际机场（OR Tambo International Airport）。服务于该机场的航空公司有许多，其中包括：\n\n1. **南非航空公司（South African Airways）** - 这是南非的国家航空公司，提供国内和国际航班。\n2. **库鲁拉航空公司（Kulula.com）** - 提供低成本的国内航班。\n3. **Mango航空公司** - 另一家低成本航空公司，主要运营国内航线。\n4. **Comair航空公司** - 是英国航空在南非的合作伙伴，运营以BA品牌标识的航班。\n5. **FlySafair** - 提供南非国内的廉价航班服务。\n6. **CemAir** - 提供国内和区域航班服务。\n7. **国际航空公司** - 多家国际航空公司也运营往返约翰内斯堡的航班，如：英国航空、汉莎航空、阿联酋航空、卡塔尔航空、澳航等。\n\n这些航空公司为旅客提供了丰富的选择，满足国内及国际旅行的需求。请注意，航空公司及其运营航线可能会根据市场需求和运营情况调整，建议在旅行前确认最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "San Jose的航空公司有哪些？",
+        "A": [
+            "QuikCharter"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"San Jose\";",
+        "actual_answer": "San Jose, California is served primarily by the Norman Y. Mineta San Jose International Airport (SJC). The airport hosts a variety of airlines that offer both domestic and international flights. As of the latest information, some of the major airlines operating out of SJC include:\n\n1. **Alaska Airlines**\n2. **American Airlines**\n3. **Delta Air Lines**\n4. **Southwest Airlines**\n5. **United Airlines**\n\nAdditionally, international carriers such as **Air Canada** and **Volaris** also operate flights from San Jose. Keep in mind that airline operations can change, so it's a good idea to check with the airport or the airlines directly for the most current information.",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Charlotte的航空公司有哪些？",
+        "A": [
+            "Davinci Jets"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Charlotte\";",
+        "actual_answer": "截至我所知的信息，夏洛特道格拉斯国际机场（Charlotte Douglas International Airport，CLT）是北卡罗来纳州夏洛特市的主要机场。该机场有多家航空公司运营航班。以下是一些主要在CLT运营的航空公司：\n\n1. **美国航空（American Airlines）** - 这是CLT的最大航司枢纽之一，提供大量国内和国际航班。\n\n2. **达美航空（Delta Air Lines）** - 提供飞往美国各地及其他目的地的航班。\n\n3. **联合航空（United Airlines）** - 提供多条国内和国际航线。\n\n4. **西南航空（Southwest Airlines）** - 提供低成本的国内航班。\n\n5. **边疆航空（Frontier Airlines）** - 提供经济型国内航班。\n\n6. **捷蓝航空（JetBlue Airways）** - 主要提供国内航班服务。\n\n这些航空公司中，美国航空在夏洛特有非常重要的枢纽地位。因此，乘客通过CLT进行中转或选择从夏洛特出发的航班时，常会看到美国航空的选项。此外，季节性和不定期航班可能由其他航空公司提供。\n\n建议在计划旅行时查看最新的航班信息，以确保获得最准确和最新的服务列表。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Surrey的航空公司有哪些？",
+        "A": [
+            "Synergy Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Surrey\";",
+        "actual_answer": "截至目前，Surrey 是英国的一个郡，并没有大型的国际航空公司总部位于Surrey。不过，Surrey临近伦敦，很多航空公司在伦敦设有办事处或者运营基地。以下是一些可能与Surrey相关的情况：\n\n1. **盖特威克机场（Gatwick Airport）** - 虽然并不直接位于Surrey，但盖特威克机场靠近Surrey的东南边界，是一个重要的国际机场，许多航空公司在此运营。\n\n2. **希思罗机场（Heathrow Airport）** - 这是伦敦的主要国际机场之一，位于Surrey北部边界附近，众多国际和国内航空公司在此进行航班运营。\n\n如果你指的是位于Surrey的小型或区域性航空业务，比如包机服务或者飞行培训学校，那么这些则更多是在小型机场或飞机场进行的。建议根据具体需求进一步调查。在选择航空公司时，考虑出发地和目的地的便利性尤为重要。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Waterford的航空公司有哪些？",
+        "A": [
+            "Corporate Eagle Management Services Inc.",
+            "Corporate Flight Inc.",
+            "DCT Air",
+            "Ifl Group Inc.",
+            "Royal Air Charter",
+            "Pentastar Aviation Charter Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Waterford\";",
+        "actual_answer": "截至我所知的最新信息，Waterford（沃特福德，爱尔兰）并没有主要的商业航空公司进行定期客运服务。这是因为Waterford Airport（沃特福德机场）的商业客运服务有限。过去，该机场有时会提供往返英国的季节性或包机服务。\n\n如果计划从沃特福德出发，旅客通常需要前往更大的机场，如都柏林机场或科克机场，这两个机场有更多的航班和航空公司选择。建议您查看当地机场的最新信息和公告，以获取最新的航班和航空公司服务动态。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Nuremberg的航空公司有哪些？",
+        "A": [
+            "Fai Aviation Group",
+            "Fly Away Boutique Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Nuremberg\";",
+        "actual_answer": "纽伦堡（Nuremberg）有一个主要的机场，叫做纽伦堡机场（Nuremberg Airport，IATA代码：NUE）。以下是一些常在纽伦堡机场运营的航空公司，不过请注意，这些信息可能随时间而改变，因此在计划旅行时最好确认最新的航班信息：\n\n1. **德国汉莎航空（Lufthansa）** - 提供飞往德国其他主要城市及欧洲目的地的航班。\n2. **瑞安航空（Ryanair）** - 通常提供低成本的欧洲境内航班。\n3. **易捷航空（easyJet）** - 一家低成本航空公司，提供多个欧洲目的地的航班。\n4. **途易飞（TUI fly）** - 提供度假目的地的航班。\n5. **土耳其航空（Turkish Airlines）** - 提供飞往伊斯坦布尔及其他国际目的地的航班。\n\n尽管这些是常见的航空公司，补充和变动是常见的，尤其是低成本航空公司可能会根据季节或需求增加或减少服务。因此，建议在旅行前查看纽伦堡机场官网或具体航空公司的官网，以获取最新的航班信息和服务情况。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Baku的航空公司有哪些？",
+        "A": [
+            "ASG Business Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Baku\";",
+        "actual_answer": "Baku是阿塞拜疆的首都，其主要机场是盖达尔·阿利耶夫国际机场（Heydar Aliyev International Airport）。在这个机场，有多家国际和区域航空公司运营。以下是一些常见的航空公司：\n\n1. **阿塞拜疆航空公司（Azerbaijan Airlines, AZAL）** - 这是阿塞拜疆的国家航空公司，提供大量国内和国际航班。\n\n2. **布塔航空（Buta Airways）** - 这是一家低成本航空公司，也是阿塞拜疆航空的子公司，主要运营短程和中程航班。\n\n3. **土耳其航空（Turkish Airlines）** - 提供从伊斯坦布尔到巴库的航班。\n\n4. **阿联酋航空（Emirates）** - 提供从迪拜到巴库的航班。\n\n5. **卡塔尔航空（Qatar Airways）** - 提供从多哈到巴库的航班。\n\n6. **汉莎航空（Lufthansa）** - 提供从法兰克福到巴库的航班。\n\n此外，还有许多其他航空公司提供季节性或不定期的航班，所以具体的航空公司可能会随着时间和季节有所变化。建议在计划旅行时查看相关航空公司和航班信息，以获取最新的运营情况。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mexico City的航空公司有哪些？",
+        "A": [
+            "Eurus Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Mexico City\";",
+        "actual_answer": "墨西哥城的主要航空公司包括：\n\n1. **墨西哥国际航空（Aeroméxico）** - 墨西哥的国家航空公司，是该国最大的航空公司，提供国内和国际航班。\n\n2. **伏尔坎航空（Volaris）** - 这是一家低成本航空公司，提供墨西哥国内及多个国际目的地的航班。\n\n3. **悦翼航空（Viva Aerobus）** - 另一家低成本航空公司，专注于提供墨西哥国内和部分国际航线。\n\n4. **Interjet** - 虽然该航空公司曾是墨西哥的主要航空公司之一，但自2020年以来暂停了所有航班，目前状态不明确。\n\n这些航空公司主要在墨西哥城的贝尼托·胡亚雷斯国际机场（Benito Juárez International Airport）运营，该机场是墨西哥全国最繁忙的机场之一。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Billund的航空公司有哪些？",
+        "A": [
+            "Blackbird Air Charter A/S",
+            "Global Reach Aviation A/S",
+            "Joinjet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Billund\";",
+        "actual_answer": "Billund是丹麦的一个主要机场，其航空公司涵盖了多家国际和区域航空公司。主要的航空公司包括：\n\n1. 北欧航空（SAS）\n2. 瑞安航空（Ryanair）\n3. 易捷航空（easyJet）\n4. 汉莎航空（Lufthansa）\n5. 荷兰皇家航空（KLM）\n6. 英国航空（British Airways）\n7. 挪威航空（Norwegian Air Shuttle）\n8. 瓦罗瑞航空（Wizz Air）\n\n此外，还有一些季节性和包机航班运营，由不同航空公司提供服务，以满足旅游需求。具体航班和航空公司可能会有所变化，所以建议在计划旅行时查看Billund机场的官方网站或相关航班信息平台。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Chambery的航空公司有哪些？",
+        "A": [
+            "Pan Europeenne Air Service"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Chambery\";",
+        "actual_answer": "截至2021年，Chambéry Airport（尚贝里机场）主要是为滑雪季节的旅客提供服务，因此在这个时期，通常有一些航空公司提供航班。常见为滑雪季节提供包机或季节性航班的航空公司包括：\n\n1. 英国航空（British Airways）\n2. 易捷航空（easyJet）\n3. 汤姆森航空（TUI Airways）\n\n需要注意的是，这些航班和航空公司可能会根据季节和年度变化。因此，最好在计划旅行前查看机场或航空公司的官方网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lincoln County的航空公司有哪些？",
+        "A": [
+            "Legacy Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lincoln County\";",
+        "actual_answer": "Lincoln County可能有多个地方同名，因此我需要知道具体指的是哪个州或国家的Lincoln County。同时，Lincoln County通常不会有主要的航空公司总部，因为这些公司通常设在较大的城市和交通枢纽。如果你指的是某个具体机场服务的航空公司，请提供更多细节，比如机场名称。一般来说，小型地方机场可能由区域性或小型航空公司运营。查询具体机场的网站或联系他们可以获得最准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bakersfield的航空公司有哪些？",
+        "A": [
+            "Golden State Air Charter LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bakersfield\";",
+        "actual_answer": "截至我所知的最新信息，巴克斯菲尔德（Bakersfield）的主要机场是梅多菲尔德机场（Meadows Field Airport，机场代码：BFL）。以下是一些通常在梅多菲尔德机场运营的航空公司：\n\n1. **美国航空（American Airlines）** - 提供前往菲尼克斯的航班。\n2. **联合航空（United Airlines）** - 提供前往旧金山的航班。\n\n请注意，航空公司可能会根据市场需求和季节变化调整航班服务，因此建议在计划旅行时查看航空公司的官方网站或机场的航班信息以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Louisville的航空公司有哪些？",
+        "A": [
+            "Central American Airways Inc.",
+            "Crew Aviation LLC",
+            "Fliteaccess LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Louisville\";",
+        "actual_answer": "Louisville, Kentucky的主要机场是路易斯维尔国际机场（Louisville Muhammad Ali International Airport，SDF）。在该机场运营的航空公司通常包括：\n\n1. **美國航空（American Airlines）**\n2. **達美航空（Delta Air Lines）**\n3. **西南航空（Southwest Airlines）**\n4. **聯合航空（United Airlines）**\n5. **阿莱吉安特航空（Allegiant Air）**\n6. **边疆航空（Frontier Airlines）**\n\n这些航空公司提供国内多个城市的航班服务。航空公司和航线可能会随时调整，因此在旅行前最好确认最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Fresno的航空公司有哪些？",
+        "A": [
+            "CSM Aviation",
+            "Jetsplus"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Fresno\";",
+        "actual_answer": "截至 2023年，服务于加利福尼亚州弗雷斯诺的主要机场是弗雷斯诺优胜美地国际机场（Fresno Yosemite International Airport，IATA代码：FAT）。该机场的主要航空公司通常包括：\n\n1. **美联航（United Airlines）**\n2. **美国航空（American Airlines）**\n3. **西南航空（Southwest Airlines）**\n4. **达美航空（Delta Air Lines）**\n5. **阿拉斯加航空（Alaska Airlines）**\n6. **边疆航空（Frontier Airlines）**\n\n航空公司及航线可能会随时间变化，建议查看机场官网或直接联系相关航空公司以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Armidale的航空公司有哪些？",
+        "A": [
+            "Edwards Aviation Australia"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Armidale\";",
+        "actual_answer": "截至我最后更新的信息，阿米代尔（Armidale）位于澳大利亚新南威尔士州，拥有一个区域机场，即阿米代尔地方机场（Armidale Regional Airport）。该机场主要由一些地区性航空公司提供服务。这些航空公司通常包括：\n\n1. **Rex Regional Express** - 提供往返于悉尼的航班。\n2. **QantasLink** - 作为澳洲航空的区域分支，也提供往返于悉尼的航班。\n\n航班和航空公司可能会随时间变化，因此建议访问阿米代尔地方机场的官方网站或相关旅行平台，以获取最新的航空公司信息和航班安排。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sao Paulo的航空公司有哪些？",
+        "A": [
+            "Flapper"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sao Paulo\";",
+        "actual_answer": "圣保罗是巴西的重要航空枢纽，拥有多家航空公司运营。以下是一些主要的航空公司：\n\n1. **巴西南美航空公司（LATAM Airlines Brasil）** - 这是拉丁美洲最大的航空公司之一，其枢纽包括圣保罗的瓜鲁柳斯国际机场。\n\n2. **高尔航空（GOL Linhas Aéreas Inteligentes）** - 巴西的低成本航空公司之一，运营大量国内和国际航线。\n\n3. **阿苏尔巴西航空（Azul Brazilian Airlines）** - 这是一家提供广泛国内航班的航空公司，也经营部分国际航线。\n\n除了这些巴西本土的航空公司，还有许多国际航空公司在圣保罗运营，提供从圣保罗出发或到达的国际航班。这些包括美国航空（American Airlines）、德国汉莎航空（Lufthansa）、法国航空（Air France）等。圣保罗拥有两个主要的机场——瓜鲁柳斯国际机场（GRU）和圣保罗-孔戈尼亚斯机场（CGH），它们都连接着多条国内和国际航线。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Prague的航空公司有哪些？",
+        "A": [
+            "ABS Jets",
+            "Aeropartner",
+            "Air Bohemia S.R.O.",
+            "Air Prague S.R.O.",
+            "Airstream A.S.",
+            "Eclair Aviation",
+            "Jetbee Czech S.R.O.",
+            "Smartwings A.S.",
+            "Time Air",
+            "BusinessAir A.S."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Prague\";",
+        "actual_answer": "Prague的主要航空公司包括：\n\n1. **捷克航空（Czech Airlines）** - 这是捷克共和国的国家航空公司，总部设在布拉格。\n2. **Smartwings** - 这是一家低成本航空公司，总部同样位于布拉格。\n3. **Ryanair** 和 **easyJet** - 这两家是欧洲知名的低成本航空公司，也在布拉格运营航班。\n4. **瑞安航空（Wizz Air）** - 这是另一家重要的欧洲低成本航空公司，在布拉格提供航班服务。\n\n此外，许多国际航空公司也在布拉格瓦茨拉夫·哈维尔国际机场运营，包括汉莎航空、英国航空、法航、荷航等，它们提供往返不同国际目的地的航班服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Opava District的航空公司有哪些？",
+        "A": [
+            "Silesia Air S.R.O."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Opava District\";",
+        "actual_answer": "Opava District 位于捷克共和国，但该地区没有大型商业机场，因此也没有总部设在Opava的主要航空公司。捷克共和国的主要航空公司通常都在较大的城市，如布拉格的伏尔塔瓦（Czech Airlines）和Smartwings等。对于从Opava出行的人来说，最近的国际机场是位于附近城市的机场，如奥斯特拉发的莱奥什·雅纳切克机场（Ostrava Leos Janacek Airport）。如果你有进一步的需求，可以考虑在这些机场出发的航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cody的航空公司有哪些？",
+        "A": [
+            "Choice Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Cody\";",
+        "actual_answer": "Cody的航空公司可能指的是美国怀俄明州的科迪市（Cody, WY）。在 Cody 的黄石地区地区机场（Yellowstone Regional Airport, 代码：COD）运营的主要航空公司通常包括：\n\n1. 美国航空 (American Airlines) - 提供飞往丹佛或达拉斯等地的航班。\n\n2. 联合航空 (United Airlines) - 提供飞往丹佛等地的航班。\n\n请注意，航班和航空公司服务可能会根据季节和市场需求有所变化，因此最好在计划旅行时核实最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "correct_rate": 3.0,
+        "sample_size": 300,
+        "correct_count": 9
+    }
+]

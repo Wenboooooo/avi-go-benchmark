@@ -1,0 +1,2107 @@
+[
+    {
+        "Q": "Jeva Air航司的总部位于哪个城市？",
+        "A": "Miami",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jeva Air\";",
+        "actual_answer": "Jeva Air并不是一个真实存在的航空公司，因此没有实际的总部所在地。如果你在寻找某个具体航空公司的信息，请提供更多详细信息以便帮助你。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jetfly Airline GmbH航司的总部位于哪个城市？",
+        "A": "Linz",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jetfly Airline GmbH\";",
+        "actual_answer": "Jetfly Airline GmbH的总部位于德国的汉堡市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Port Havacilik航司的总部位于哪个城市？",
+        "A": "Istanbul",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Port Havacilik\";",
+        "actual_answer": "Port Havacilik航空公司的总部位于土耳其的伊斯坦布尔。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Jetsplus航司的总部位于哪个城市？",
+        "A": "Fresno",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jetsplus\";",
+        "actual_answer": "Jetsplus航司的总部位于香港。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jet Luxe航司的总部位于哪个城市？",
+        "A": "Dubai",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Luxe\";",
+        "actual_answer": "Jet Luxe航司的总部位于迪拜。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Outer Banks Air Charters Inc.航司的总部位于哪个城市？",
+        "A": "Manteo",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Outer Banks Air Charters Inc.\";",
+        "actual_answer": "Outer Banks Air Charters Inc.航司的总部位于美国北卡罗来纳州的Manteo。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Rotana Jet Aviation航司的总部位于哪个城市？",
+        "A": "Abu Dhabi",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Rotana Jet Aviation\";",
+        "actual_answer": "Rotana Jet Aviation的总部位于阿联酋的阿布扎比。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Royal-star Sp. Z O.O.航司的总部位于哪个城市？",
+        "A": "Rzeszow",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Royal-star Sp. Z O.O.\";",
+        "actual_answer": "Royal-star Sp. Z O.O. 航空公司的总部位于波兰华沙。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Imperialjet Europe GmbH航司的总部位于哪个城市？",
+        "A": "Munich",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Imperialjet Europe GmbH\";",
+        "actual_answer": "ImperialJet Europe GmbH的总部位于德国慕尼黑。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "UAC Charter航司的总部位于哪个城市？",
+        "A": "Gainesville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"UAC Charter\";",
+        "actual_answer": "UAC Charter航司的总部位于中国北京。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Searca S.A.航司的总部位于哪个城市？",
+        "A": "Medellin",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Searca S.A.\";",
+        "actual_answer": "Searca S.A.是一家位于阿根廷的航空公司，其总部设在布宜诺斯艾利斯。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Porsche Air Service GmbH航司的总部位于哪个城市？",
+        "A": "Salzburg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Porsche Air Service GmbH\";",
+        "actual_answer": "Porsche Air Service GmbH 是一家与汽车制造商保时捷相关的航空服务公司。它的总部位于德国的斯图加特，与保时捷的主要企业总部位置一致。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Suzhou Aviation Co., Ltd.航司的总部位于哪个城市？",
+        "A": "Shanghai",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Suzhou Aviation Co., Ltd.\";",
+        "actual_answer": "Suzhou Aviation Co., Ltd. 的总部位于中国江苏省的苏州市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "New World Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Allentown",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"New World Aviation Inc.\";",
+        "actual_answer": "New World Aviation Inc.的总部位于美国宾夕法尼亚州的Allentown市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Jet Concierge Club航司的总部位于哪个城市？",
+        "A": "Essex",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Concierge Club\";",
+        "actual_answer": "Jet Concierge Club航司的总部位于深圳市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aeroeste航司的总部位于哪个城市？",
+        "A": "Andres Ibanez Province",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aeroeste\";",
+        "actual_answer": "Aeroeste航司的总部位于巴西巴西利亚。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jetfly Aviation Sa航司的总部位于哪个城市？",
+        "A": "Hesperange",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jetfly Aviation Sa\";",
+        "actual_answer": "Jetfly Aviation SA的总部位于卢森堡市，卢森堡。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Air Direct LLC航司的总部位于哪个城市？",
+        "A": "Lamar County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air Direct LLC\";",
+        "actual_answer": "抱歉，我没有关于Air Direct LLC航司的具体信息。如果您有其他问题或者需要其他帮助，请随时告诉我。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Excelaire LLC航司的总部位于哪个城市？",
+        "A": "New York",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Excelaire LLC\";",
+        "actual_answer": "Excelaire LLC是一家私人航空公司，其总部位于美国纽约州朗贝尔特，位于长岛的麦克阿瑟机场（Long Island MacArthur Airport）附近。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Jag Executive Aviation航司的总部位于哪个城市？",
+        "A": "Buenos Aires",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jag Executive Aviation\";",
+        "actual_answer": "Jag Executive Aviation航司的总部位于巴西圣保罗。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kivalliq Air (Nunavut Lifeline)航司的总部位于哪个城市？",
+        "A": "Winnipeg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Kivalliq Air (Nunavut Lifeline)\";",
+        "actual_answer": "Kivalliq Air（Nunavut Lifeline）的总部位于加拿大曼尼托巴省的温尼伯市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Aladdin Jet Co., Ltd航司的总部位于哪个城市？",
+        "A": "Beijing",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aladdin Jet Co., Ltd\";",
+        "actual_answer": "Aladdin Jet Co., Ltd航司的总部位于日本东京。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Max Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Montreal",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Max Aviation Inc.\";",
+        "actual_answer": "Max Aviation Inc.航司的总部位于加拿大的卡尔加里。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tropicair Ltd航司的总部位于哪个城市？",
+        "A": "Port Moresby",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Tropicair Ltd\";",
+        "actual_answer": "Tropicair Ltd的总部位于巴布亚新几内亚的莫尔兹比港。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Wing Aviation Charter Services LLC航司的总部位于哪个城市？",
+        "A": "Houston",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Wing Aviation Charter Services LLC\";",
+        "actual_answer": "抱歉，我没有关于Wing Aviation Charter Services LLC总部位置的具体信息。建议您访问他们的官方网站或直接联系该公司以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jetclub Malta Ltd航司的总部位于哪个城市？",
+        "A": "Malta",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jetclub Malta Ltd\";",
+        "actual_answer": "Jetclub Malta Ltd航司的总部位于马耳他。具体的城市是卢加（Luqa）。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Jet It Flight Operations航司的总部位于哪个城市？",
+        "A": "Chesapeake",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet It Flight Operations\";",
+        "actual_answer": "Jet It Flight Operations航司的总部位于美国北卡罗来纳州的格林斯伯勒市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "OHFLYER Aviation Technology Co., Ltd.航司的总部位于哪个城市？",
+        "A": "Beijing",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"OHFLYER Aviation Technology Co., Ltd.\";",
+        "actual_answer": "OHFLYER Aviation Technology Co., Ltd.的总部位于中国南京市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jet Charters Nz航司的总部位于哪个城市？",
+        "A": "Napier",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Charters Nz\";",
+        "actual_answer": "Jet Charters NZ航司的总部位于新西兰的奥克兰市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dragonfly Executive Aviation Charter航司的总部位于哪个城市？",
+        "A": "Cardiff",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Dragonfly Executive Aviation Charter\";",
+        "actual_answer": "抱歉，我没有关于Dragonfly Executive Aviation Charter的具体信息。如果这是一个小型或新成立的航空公司，详情可能不在我的数据范围内。你可以通过查阅他们的官方网站或联系他们以获取相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "TCA LLC航司的总部位于哪个城市？",
+        "A": "Tbilisi",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"TCA LLC\";",
+        "actual_answer": "很抱歉，我没有关于TCA LLC航空公司的相关信息。如果这是一个新成立或小规模运营的公司，它可能还没有被广泛记录。您可以查阅其官方网站或相关新闻发布以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sparfell Airways Sa航司的总部位于哪个城市？",
+        "A": "Geneva",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sparfell Airways Sa\";",
+        "actual_answer": "Sparfell Airways SA 的总部位于瑞士日内瓦。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Airjade航司的总部位于哪个城市？",
+        "A": "Beijing",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Airjade\";",
+        "actual_answer": "Airjade航司的总部位于成都。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tag Aviation S.A.航司的总部位于哪个城市？",
+        "A": "Hampshire",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Tag Aviation S.A.\";",
+        "actual_answer": "TAG Aviation S.A.航司的总部位于瑞士日内瓦。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Smartline Luftfahrt GmbH航司的总部位于哪个城市？",
+        "A": "Bregenz",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Smartline Luftfahrt GmbH\";",
+        "actual_answer": "Smartline Luftfahrt GmbH 航空公司的总部位于德国柏林。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bonair航司的总部位于哪个城市？",
+        "A": "Istanbul",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bonair\";",
+        "actual_answer": "Bonair航司的总部位于台湾台北市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pacific Flight Services Pte Ltd航司的总部位于哪个城市？",
+        "A": "Singapore",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Pacific Flight Services Pte Ltd\";",
+        "actual_answer": "Pacific Flight Services Pte Ltd航司的总部位于新加坡。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Premiair航司的总部位于哪个城市？",
+        "A": "Jakarta",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Premiair\";",
+        "actual_answer": "Premiair航司的总部位于印度尼西亚的雅加达。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Medicalfly航司的总部位于哪个城市？",
+        "A": "Bogota",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Medicalfly\";",
+        "actual_answer": "Medicalfly是一家专注于医疗旅游的公司，其总部位于德国柏林。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "ASI Charter Inc.航司的总部位于哪个城市？",
+        "A": "Arapahoe County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"ASI Charter Inc.\";",
+        "actual_answer": "ASI Charter Inc. 航司的总部位于美国迈阿密。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Skyjets Europe航司的总部位于哪个城市？",
+        "A": "Brno",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Skyjets Europe\";",
+        "actual_answer": "Skyjets Europe航司的总部位于马耳他。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Corporate Eagle Management Services Inc.航司的总部位于哪个城市？",
+        "A": "Waterford",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Corporate Eagle Management Services Inc.\";",
+        "actual_answer": "Corporate Eagle Management Services Inc.的总部位于美国密歇根州的奥克兰县，具体位于Waterford Township。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "XO Jet Inc.航司的总部位于哪个城市？",
+        "A": "Brisbane",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"XO Jet Inc.\";",
+        "actual_answer": "XO Jet Inc.的总部位于美国加利福尼亚州的布里斯班（Brisbane）。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Avcenter Inc.航司的总部位于哪个城市？",
+        "A": "Pocatello",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Avcenter Inc.\";",
+        "actual_answer": "Avcenter Inc.航司的总部位于美国爱达荷州的爱达荷福尔斯。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Caribbean Support & Flight Services航司的总部位于哪个城市？",
+        "A": "Cartagena",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Caribbean Support & Flight Services\";",
+        "actual_answer": "Caribbean Support & Flight Services航司的总部位于基拉尼，爱尔兰。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Baires Fly S.A航司的总部位于哪个城市？",
+        "A": "Buenos Aires",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Baires Fly S.A\";",
+        "actual_answer": "Baires Fly S.A. 航空公司的总部位于阿根廷布宜诺斯艾利斯。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "North Country Aviation航司的总部位于哪个城市？",
+        "A": "Alpena",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"North Country Aviation\";",
+        "actual_answer": "North Country Aviation的总部位于美国密歇根州的佩尔斯顿（Pellston）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Napa Jet Center Inc.航司的总部位于哪个城市？",
+        "A": "Napa County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Napa Jet Center Inc.\";",
+        "actual_answer": "Napa Jet Center Inc. 航司的总部位于美国加利福尼亚州的纳帕市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Partouche Air Group航司的总部位于哪个城市？",
+        "A": "Miami",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Partouche Air Group\";",
+        "actual_answer": "Partouche Air Group航司的总部位于日内瓦，瑞士。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tulpar Aero Group Ltd.航司的总部位于哪个城市？",
+        "A": "Kazan",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Tulpar Aero Group Ltd.\";",
+        "actual_answer": "Tulpar Aero Group Ltd.航司的总部位于俄罗斯喀山。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Select Jet航司的总部位于哪个城市？",
+        "A": "Grand Rapids",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Select Jet\";",
+        "actual_answer": "Select Jet航司的总部位于中国南京市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "FlyXcite航司的总部位于哪个城市？",
+        "A": "Mississauga",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"FlyXcite\";",
+        "actual_answer": "很抱歉，我没有关于FlyXcite航司的信息。如果这是一个新的或较小的航司，可能没有被广泛报道或记录。如果您有进一步的信息或有其他问题，请告诉我。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Air-Dynamic航司的总部位于哪个城市？",
+        "A": "Agno",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air-Dynamic\";",
+        "actual_answer": "Air-Dynamic航司的总部位于瑞士的卢加诺(Lugano)。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Meridian Air Group航司的总部位于哪个城市？",
+        "A": "Charlottesville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Meridian Air Group\";",
+        "actual_answer": "Meridian Air Group的总部位于美国弗吉尼亚州的夏洛茨维尔（Charlottesville）。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Aerovias DAP航司的总部位于哪个城市？",
+        "A": "Punta Arenas",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aerovias DAP\";",
+        "actual_answer": "Aerovías DAP航司的总部位于智利的蓬塔阿雷纳斯市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "SAI Flight Service Inc.航司的总部位于哪个城市？",
+        "A": "Greenville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"SAI Flight Service Inc.\";",
+        "actual_answer": "截至目前，并没有关于名为SAI Flight Service Inc.的航空公司或航司的具体信息。如果这是一个新成立或不广为人知的公司，可能相关信息尚未广泛披露或记录。如果您有更多信息或上下文，我可以帮助进一步查找。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "N-Jet航司的总部位于哪个城市？",
+        "A": "Wheeling",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"N-Jet\";",
+        "actual_answer": "N-Jet航司的总部位于新加坡。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Myflug Hf航司的总部位于哪个城市？",
+        "A": "Mývatn",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Myflug Hf\";",
+        "actual_answer": "Myflug Hf航司的总部位于冰岛的阿克雷里市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Elite Air Inc.航司的总部位于哪个城市？",
+        "A": "Saint Petersburg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Elite Air Inc.\";",
+        "actual_answer": "Elite Air Inc.的总部位于纽约市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Phenix Jet航司的总部位于哪个城市？",
+        "A": "West Palm Beach",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Phenix Jet\";",
+        "actual_answer": "Phenix Jet航司的总部位于日本东京。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "M&n Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Boca Raton",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"M&n Aviation Inc.\";",
+        "actual_answer": "M&N Aviation Inc. 航空公司的总部位于美国的弗吉尼亚州列斯顿。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Union Aviation航司的总部位于哪个城市？",
+        "A": "Riga",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Union Aviation\";",
+        "actual_answer": "抱歉，我找不到有关Union Aviation航司总部所在地的信息。如果这是一个较新的或小型的航空公司，可能需要查看他们的官方网站或官方公告以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ijet Aviation航司的总部位于哪个城市？",
+        "A": "Malaga",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Ijet Aviation\";",
+        "actual_answer": "Ijet Aviation航司的总部位于马耳他的卢加市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tag Aviation Asia航司的总部位于哪个城市？",
+        "A": "Hong Kong",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Tag Aviation Asia\";",
+        "actual_answer": "Tag Aviation Asia航司的总部位于中国香港。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "247 Aviation Ltd航司的总部位于哪个城市？",
+        "A": "Belfast",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"247 Aviation Ltd\";",
+        "actual_answer": "247 Aviation Ltd航司的总部位于英国伦敦。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Grandview Aviation LLC航司的总部位于哪个城市？",
+        "A": "Baltimore County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Grandview Aviation LLC\";",
+        "actual_answer": "Grandview Aviation LLC航司的总部位于美国马里兰州的巴尔的摩市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "MPI Jet航司的总部位于哪个城市？",
+        "A": "Monterey",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"MPI Jet\";",
+        "actual_answer": "MPI Jet航司的总部位于香港。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Atmospherica Aviation航司的总部位于哪个城市？",
+        "A": "Praha",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Atmospherica Aviation\";",
+        "actual_answer": "抱歉，我无法提供关于Atmospherica Aviation航司的信息。可能是因为这家公司不在我的数据库中，或者可能是一家较小或较新的公司。请尝试通过其他渠道查找该公司的详细信息，比如访问其官方网站或查看相关的新闻报道。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Airflair Inc.航司的总部位于哪个城市？",
+        "A": "Sioux County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Airflair Inc.\";",
+        "actual_answer": "据我所知，没有一家名为Airflair Inc.的航空公司。如果这是一个虚构的公司或是新近成立的公司，我可能没有相关的信息。如果您指的是其他航空公司，或者想要获取有关具体航空公司的信息，请提供更多细节。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Seattle Aircraft Charter航司的总部位于哪个城市？",
+        "A": "Renton",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Seattle Aircraft Charter\";",
+        "actual_answer": "Seattle Aircraft Charter航司的总部位于美国华盛顿州的西雅图市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Air Intersalonika航司的总部位于哪个城市？",
+        "A": "Thessaloniki",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air Intersalonika\";",
+        "actual_answer": "Air Intersalonika航司的总部位于希腊的塞萨洛尼基（Thessaloniki）市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Swan Aviation航司的总部位于哪个城市？",
+        "A": "Istanbul",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Swan Aviation\";",
+        "actual_answer": "很抱歉，我无法提供有关Swan Aviation的具体信息。如果Swan Aviation是一个公司或组织，建议您查看其官方网站或联系相关方以获取具体的地理信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Super T Aviation航司的总部位于哪个城市？",
+        "A": "Medicine Hat",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Super T Aviation\";",
+        "actual_answer": "Super T Aviation航司的总部位于加拿大艾伯塔省的梅迪辛哈特市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Chairman Aviation航司的总部位于哪个城市？",
+        "A": "Dallas",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Chairman Aviation\";",
+        "actual_answer": "Chairman Aviation航司的总部位于中国北京市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Reliant Air Charter Inc.航司的总部位于哪个城市？",
+        "A": "Danbury",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Reliant Air Charter Inc.\";",
+        "actual_answer": "Reliant Air Charter Inc. 的总部位于美国康涅狄格州丹伯里。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Heli Air Services航司的总部位于哪个城市？",
+        "A": "Sofia",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Heli Air Services\";",
+        "actual_answer": "Heli Air Services的总部位于保加利亚的普罗夫迪夫市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Integrated Flight Resources Inc.航司的总部位于哪个城市？",
+        "A": "DuPage County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Integrated Flight Resources Inc.\";",
+        "actual_answer": "Integrated Flight Resources Inc.航司的总部位于美国的加利福尼亚州洛杉矶。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Castle Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Akron",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Castle Aviation Inc.\";",
+        "actual_answer": "Castle Aviation Inc.航司的总部位于美国俄亥俄州的阿克伦-坎顿地区。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Gestair Aviation航司的总部位于哪个城市？",
+        "A": "Madrid",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Gestair Aviation\";",
+        "actual_answer": "Gestair Aviation 的总部位于西班牙马德里。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Centreline AV Ltd航司的总部位于哪个城市？",
+        "A": "Bristol",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Centreline AV Ltd\";",
+        "actual_answer": "Centreline AV Ltd 的总部位于英国布里斯托尔市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Machjet International Pty Ltd航司的总部位于哪个城市？",
+        "A": "Marcoola",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Machjet International Pty Ltd\";",
+        "actual_answer": "Machjet International Pty Ltd航司的总部位于澳大利亚的阳光海岸（Sunshine Coast）。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Global Jetcare航司的总部位于哪个城市？",
+        "A": "Brooksville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Global Jetcare\";",
+        "actual_answer": "Global Jetcare航司的总部位于中国的大连市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aitheras Aviation Group LLC航司的总部位于哪个城市？",
+        "A": "Cleveland",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aitheras Aviation Group LLC\";",
+        "actual_answer": "Aitheras Aviation Group LLC航司的总部位于美国俄亥俄州的克利夫兰市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Aergo International Pty Ltd航司的总部位于哪个城市？",
+        "A": "Brisbane",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aergo International Pty Ltd\";",
+        "actual_answer": "Aergo International Pty Ltd是一家总部位于澳大利亚悉尼的航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Spiritjets LLC航司的总部位于哪个城市？",
+        "A": "St. Louis County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Spiritjets LLC\";",
+        "actual_answer": "Spiritjets LLC 的总部位于美国密苏里州圣路易斯市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aircraft Transport Service航司的总部位于哪个城市？",
+        "A": "Goodyear",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aircraft Transport Service\";",
+        "actual_answer": "Aircraft Transport Service（后来成为British Airways的一部分）的总部位于伦敦，英国。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cape Air Charter航司的总部位于哪个城市？",
+        "A": "Cape Girardeau",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Cape Air Charter\";",
+        "actual_answer": "Cape Air Charter的总部位于马萨诸塞州的海恩尼斯市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "X-press Charter Services Inc.航司的总部位于哪个城市？",
+        "A": "Longview",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"X-press Charter Services Inc.\";",
+        "actual_answer": "X-press Charter Services Inc. 航空公司的总部位于美国佛罗里达州的奥兰多市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sterling Air Service航司的总部位于哪个城市？",
+        "A": "Corpus Christi",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sterling Air Service\";",
+        "actual_answer": "抱歉，我找不到有关Sterling Air Service航司的信息。可能是一个较小或新成立的公司，或者是一个假设的名称。如果有其他问题或者需要有关航空公司的帮助，请告诉我！",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Executive Aircraft Charter Services LLC航司的总部位于哪个城市？",
+        "A": "Lafayette",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Executive Aircraft Charter Services LLC\";",
+        "actual_answer": "Executive Aircraft Charter Services LLC 的总部位于美国亚利桑那州的斯科茨代尔市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hop-a-jet Worldwide Jet Charter航司的总部位于哪个城市？",
+        "A": "Fort Lauderdale",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Hop-a-jet Worldwide Jet Charter\";",
+        "actual_answer": "Hop-a-jet Worldwide Jet Charter航司的总部位于美国佛罗里达州的劳德代尔堡。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Rvr Aviation LLC航司的总部位于哪个城市？",
+        "A": "Fort Worth",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Rvr Aviation LLC\";",
+        "actual_answer": "RVR Aviation LLC航司的总部位于美国特拉华州威尔明顿市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pacific Coast Jet航司的总部位于哪个城市？",
+        "A": "Oakland",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Pacific Coast Jet\";",
+        "actual_answer": "Pacific Coast Jet航司的总部位于美国加利福尼亚州的普莱森顿。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hi Fly - Transportes Aereos S.A.航司的总部位于哪个城市？",
+        "A": "Lisbon",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Hi Fly - Transportes Aereos S.A.\";",
+        "actual_answer": "Hi Fly - Transportes Aereos S.A.航空公司的总部位于葡萄牙里斯本。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Solairus Aviation航司的总部位于哪个城市？",
+        "A": "Sonoma County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Solairus Aviation\";",
+        "actual_answer": "Solairus Aviation航司的总部位于美国加利福尼亚州的佩塔卢马（Petaluma）。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Fair Wind Air Charter航司的总部位于哪个城市？",
+        "A": "Stuart",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fair Wind Air Charter\";",
+        "actual_answer": "Fair Wind Air Charter航司的总部位于美国佛罗里达州的博卡拉顿。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Clay Lacy Aviation航司的总部位于哪个城市？",
+        "A": "Los Angeles",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Clay Lacy Aviation\";",
+        "actual_answer": "Clay Lacy Aviation的总部位于美国加利福尼亚州的洛杉矶。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Taughannock Aviation Corp.航司的总部位于哪个城市？",
+        "A": "Ithaca",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Taughannock Aviation Corp.\";",
+        "actual_answer": "Taughannock Aviation Corp.的总部位于美国纽约州伊萨卡（Ithaca）。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Deer Horn Aviation, Ltd. Co.航司的总部位于哪个城市？",
+        "A": "Midland",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Deer Horn Aviation, Ltd. Co.\";",
+        "actual_answer": "我无法找到有关Deer Horn Aviation, Ltd. Co.的信息，因此不清楚其总部位于哪个城市。可能是一个不广为人知或较小的公司。建议查阅公司的官方网站或相关的商业注册资料，以获取更准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Argentina Jets航司的总部位于哪个城市？",
+        "A": "Buenos Aires",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Argentina Jets\";",
+        "actual_answer": "Argentina Jets航司的总部位于阿根廷的布宜诺斯艾利斯。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Great Flight Inc.航司的总部位于哪个城市？",
+        "A": "Wellington",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Great Flight Inc.\";",
+        "actual_answer": "抱歉，我没有关于Great Flight Inc.航司的信息，因此无法确认其总部位于哪个城市。您可能需要查看该公司的官方网站或相关资料以获取确切信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gama Aviation Ltd(UK)航司的总部位于哪个城市？",
+        "A": "Farnborough",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Gama Aviation Ltd(UK)\";",
+        "actual_answer": "Gama Aviation Ltd 的总部位于英国的法恩伯勒（Farnborough）。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Valkyrie Air LLC航司的总部位于哪个城市？",
+        "A": "Eugene",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Valkyrie Air LLC\";",
+        "actual_answer": "很抱歉，我无法找到关于Valkyrie Air LLC具体信息的数据。可能这是一家较小的或新成立的航空公司，或者是一个虚构的名称。如果你有关于这个航司的更多信息，比如它是否有特定的服务区域或特色，或许我可以帮助你更好地搜索相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "International Jet Aviation Services Inc.航司的总部位于哪个城市？",
+        "A": "Douglas County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"International Jet Aviation Services Inc.\";",
+        "actual_answer": "International Jet Aviation Services Inc. 航空公司的总部位于美国科罗拉多州的恩格尔伍德（Englewood）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jet Up Aviation航司的总部位于哪个城市？",
+        "A": "El Cajon",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Up Aviation\";",
+        "actual_answer": "关于Jet Up Aviation航司的信息较为有限，可能是一家小型或区域性的航空公司，没有广泛的公众知名度或公开信息。如果您需要具体的总部位置信息，建议访问其官方网站或联系其客户服务代表以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Griffing Flying Service Inc.航司的总部位于哪个城市？",
+        "A": "Port Clinton",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Griffing Flying Service Inc.\";",
+        "actual_answer": "Griffing Flying Service Inc.航司的总部位于美国俄亥俄州的桑达斯基市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "American Jet International Corp.航司的总部位于哪个城市？",
+        "A": "Houston",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"American Jet International Corp.\";",
+        "actual_answer": "American Jet International Corp.航司的总部位于美国德克萨斯州的休斯顿市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Let's Jett Inc.航司的总部位于哪个城市？",
+        "A": "Los Angeles",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Let's Jett Inc.\";",
+        "actual_answer": "Let's Jett Inc.航司的总部位于美国亚利桑那州的斯科茨代尔。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lydd Air航司的总部位于哪个城市？",
+        "A": "Lydd",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Lydd Air\";",
+        "actual_answer": "Lydd Air航空公司的总部位于英国肯特郡的利德（Lydd）镇。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Quantum Jets航司的总部位于哪个城市？",
+        "A": "Long Beach",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Quantum Jets\";",
+        "actual_answer": "Quantum Jets航司的总部位于香港。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Avionord S.R.L.航司的总部位于哪个城市？",
+        "A": "Milan",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Avionord S.R.L.\";",
+        "actual_answer": "Avionord S.R.L.航司的总部位于意大利米兰。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Wasaya Airways航司的总部位于哪个城市？",
+        "A": "Thunder Bay",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Wasaya Airways\";",
+        "actual_answer": "Wasaya Airways的总部位于加拿大安大略省的桑德贝（Thunder Bay）。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Moser Aviation LLC航司的总部位于哪个城市？",
+        "A": "Arapahoe County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Moser Aviation LLC\";",
+        "actual_answer": "很抱歉，我没有找到关于Moser Aviation LLC这家航司的具体信息。如果你需要关于某个公司的详细资料，建议查阅其官方网站或相关的商业信息数据库。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bridger Aerospace航司的总部位于哪个城市？",
+        "A": "Belgrade",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bridger Aerospace\";",
+        "actual_answer": "Bridger Aerospace的总部位于美国蒙大拿州的博兹曼市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Thrive Aviation航司的总部位于哪个城市？",
+        "A": "Clark County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Thrive Aviation\";",
+        "actual_answer": "Thrive Aviation航司的总部位于美国内华达州的拉斯维加斯。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Smoothair Charter航司的总部位于哪个城市？",
+        "A": "Oshawa",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Smoothair Charter\";",
+        "actual_answer": "Smoothair Charter航司的总部位于中国上海。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Choice Aviation LLC航司的总部位于哪个城市？",
+        "A": "Cody",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Choice Aviation LLC\";",
+        "actual_answer": "Choice Aviation LLC的总部位于美国怀俄明州的科迪市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Panavia Air Taxi LLC航司的总部位于哪个城市？",
+        "A": "Amarillo",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Panavia Air Taxi LLC\";",
+        "actual_answer": "抱歉，我没有关于“Panavia Air Taxi LLC”航司的信息。因此，我无法确定其总部位于哪个城市。可能是一个新成立的或小型的航司，建议你查阅相关的商业注册或官方网站以获取最新的详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pt Elang Lintas Indonesia航司的总部位于哪个城市？",
+        "A": "Jakarta",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Pt Elang Lintas Indonesia\";",
+        "actual_answer": "PT Elang Lintas Indonesia航司的总部位于印度尼西亚的雅加达。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Nolinor Aviation航司的总部位于哪个城市？",
+        "A": "Laurentides",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Nolinor Aviation\";",
+        "actual_answer": "Nolinor Aviation航空公司的总部位于加拿大魁北克省的米拉贝勒市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Florida Jet Service Inc.航司的总部位于哪个城市？",
+        "A": "Fort Lauderdale",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Florida Jet Service Inc.\";",
+        "actual_answer": "Florida Jet Service Inc.航司的总部位于美国佛罗里达州的劳德代尔堡市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Sky Ride Group S.A.航司的总部位于哪个城市？",
+        "A": "Panama City",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sky Ride Group S.A.\";",
+        "actual_answer": "Sky Ride Group S.A.航司的总部位于华沙，波兰。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Air Trek Inc.航司的总部位于哪个城市？",
+        "A": "Punta Gorda",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air Trek Inc.\";",
+        "actual_answer": "Air Trek Inc.的总部位于美国佛罗里达州的蓬塔戈尔达。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Lyon Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Pittsfield",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Lyon Aviation Inc.\";",
+        "actual_answer": "Lyon Aviation Inc.航司的总部位于美国马萨诸塞州的皮茨菲尔德市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "AEM Aviation航司的总部位于哪个城市？",
+        "A": "Orlando",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"AEM Aviation\";",
+        "actual_answer": "截至目前，没有关于名为AEM Aviation的航空公司的广泛公开信息。如果这是一家新成立或较小规模的航空公司，可能相关信息尚未广泛传播。建议查阅其官方网站或相关的新闻报道以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "DCT Air航司的总部位于哪个城市？",
+        "A": "Waterford",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"DCT Air\";",
+        "actual_answer": "DCT Air航司的总部位于东京，日本。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jet Linx Aviation LLC航司的总部位于哪个城市？",
+        "A": "Omaha",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Linx Aviation LLC\";",
+        "actual_answer": "Jet Linx Aviation LLC航司的总部位于美国内布拉斯加州的奥马哈市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Flexflight Group航司的总部位于哪个城市？",
+        "A": "Roskilde",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Flexflight Group\";",
+        "actual_answer": "Flexflight Group的总部位于丹麦的罗斯基勒。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Air Adriatic D.O.O.航司的总部位于哪个城市？",
+        "A": "Ljubljana",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air Adriatic D.O.O.\";",
+        "actual_answer": "Air Adriatic D.O.O.是一家已停止运营的航空公司，曾经总部位于克罗地亚的里耶卡市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kenai Aviation Operations LLC航司的总部位于哪个城市？",
+        "A": "Kenai",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Kenai Aviation Operations LLC\";",
+        "actual_answer": "Kenai Aviation Operations LLC航司的总部位于美国阿拉斯加州的基奈市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Seletar Jet Charter航司的总部位于哪个城市？",
+        "A": "Singapore",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Seletar Jet Charter\";",
+        "actual_answer": "Seletar Jet Charter航司的总部位于新加坡。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Private Jets Inc航司的总部位于哪个城市？",
+        "A": "Oklahoma City",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Private Jets Inc\";",
+        "actual_answer": "很抱歉，我没有关于名为“Private Jets Inc”的具体航空公司的信息。如果这是一个小型或私人公司，他们的信息可能不广泛公开。您可能需要直接访问他们的官方网站或通过其他可靠来源获取相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Triton Air LLC航司的总部位于哪个城市？",
+        "A": "Washington County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Triton Air LLC\";",
+        "actual_answer": "Triton Air LLC航司的总部位于美国加利福尼亚州的卡尔斯巴德。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Time Air航司的总部位于哪个城市？",
+        "A": "Prague",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Time Air\";",
+        "actual_answer": "Time Air是一家位于加拿大的地区性航空公司，其总部位于不列颠哥伦比亚省的基洛纳市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tryp Air Charter航司的总部位于哪个城市？",
+        "A": "Orlando",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Tryp Air Charter\";",
+        "actual_answer": "Tryp Air Charter航司的总部位于美国德克萨斯州的达拉斯。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mill Taxi Aereo航司的总部位于哪个城市？",
+        "A": "Manaus",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Mill Taxi Aereo\";",
+        "actual_answer": "很抱歉，我无法找到有关Mill Taxi Aereo航司的信息。可能是一个较小或不太知名的航空公司，或者可能是拼写或名称上有变化。如果这是一个虚构的或新成立的公司，我也可能无法得到最新的信息。如果您有其他相关信息或拼写可以确认，我会很乐意帮忙继续查找。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Saturn Aviation LLC航司的总部位于哪个城市？",
+        "A": "Austin",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Saturn Aviation LLC\";",
+        "actual_answer": "抱歉，我无法提供关于Saturn Aviation LLC的具体信息。如果您需要这家航司的信息，建议您访问其官方网站或查阅其他可靠的来源。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Servicios Aereos Estrella航司的总部位于哪个城市？",
+        "A": "Toluca",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Servicios Aereos Estrella\";",
+        "actual_answer": "Servicios Aéreos Estrella航司的总部位于墨西哥城。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Contour Aviation航司的总部位于哪个城市？",
+        "A": "Smyrna",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Contour Aviation\";",
+        "actual_answer": "Contour Aviation的总部位于美国田纳西州的史密斯维尔。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Fly 7 Executive Aviation航司的总部位于哪个城市？",
+        "A": "Ouest Lausannois District",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fly 7 Executive Aviation\";",
+        "actual_answer": "Fly 7 Executive Aviation航司的总部位于瑞士洛桑。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Luxair Charters LLC航司的总部位于哪个城市？",
+        "A": "Kendall",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Luxair Charters LLC\";",
+        "actual_answer": "Luxair Charters LLC的总部位于美国明尼苏达州的明尼阿波利斯。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Rai Jets LLC航司的总部位于哪个城市？",
+        "A": "Sturgis",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Rai Jets LLC\";",
+        "actual_answer": "Rai Jets LLC航司的总部位于美国密歇根州的卡拉马祖市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Florida Wings Inc.航司的总部位于哪个城市？",
+        "A": "Boca Raton",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Florida Wings Inc.\";",
+        "actual_answer": "Florida Wings Inc.航司的总部位于哪个城市的信息并不在我已知的公共数据中。如果这是一家较小或不太知名的航空公司，其详细信息可能没有广泛公布。你可能需要访问该公司的官方网站或联系其客服以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Call & Fly航司的总部位于哪个城市？",
+        "A": "Warsaw",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Call & Fly\";",
+        "actual_answer": "Call & Fly航司的总部位于西班牙的巴塞罗那。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sovereign Business Jets航司的总部位于哪个城市？",
+        "A": "Berkshire",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sovereign Business Jets\";",
+        "actual_answer": "Sovereign Business Jets 航空公司的总部位于英国伦敦。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Crew Aviation LLC航司的总部位于哪个城市？",
+        "A": "Louisville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Crew Aviation LLC\";",
+        "actual_answer": "Crew Aviation LLC的总部位于美国肯塔基州的路易斯维尔市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bighorn Airways Inc.航司的总部位于哪个城市？",
+        "A": "Sheridan",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bighorn Airways Inc.\";",
+        "actual_answer": "Bighorn Airways Inc.的总部位于美国怀俄明州的谢里登。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Forum 1 Aviation Ltd航司的总部位于哪个城市？",
+        "A": "New Delhi",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Forum 1 Aviation Ltd\";",
+        "actual_answer": "关于“Forum 1 Aviation Ltd”，当前没有广泛的公共信息能够确认其总部所在。如果这是一个新成立或较小的公司，建议查阅该公司的官方网站或联系其客户服务以获取准确的位置信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "My Jet航司的总部位于哪个城市？",
+        "A": "Jacksonville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"My Jet\";",
+        "actual_answer": "My Jet航司的总部位于中国南京市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Speed Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Pensacola",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Speed Aviation Inc.\";",
+        "actual_answer": "很抱歉，我没有关于Speed Aviation Inc.这样一家航空公司的信息。可能这是一家较小或新成立的公司，或者信息不够公开。如果这是一个虚构的公司，请提供更多背景信息以便更好地帮助你。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Blessings Aviation Charter航司的总部位于哪个城市？",
+        "A": "Nassau",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Blessings Aviation Charter\";",
+        "actual_answer": "Blessings Aviation Charter航司的总部位于中国北京。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kirkhope Aviation Pty Ltd航司的总部位于哪个城市？",
+        "A": "Moorabbin",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Kirkhope Aviation Pty Ltd\";",
+        "actual_answer": "截至当前信息，Kirkhope Aviation Pty Ltd的总部位于澳大利亚维多利亚州的默里澳尔斯伯里。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hughes Flying Service Inc.航司的总部位于哪个城市？",
+        "A": "Miami",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Hughes Flying Service Inc.\";",
+        "actual_answer": "Hughes Flying Service Inc.的历史名称更为人所知的是“Hughes Airwest”，它是一家美国已停运的航空公司。Hughes Airwest的总部位于内华达州的拉斯维加斯。然而，请注意，该航空公司在1980年被Republic Airlines收购后停止了独立运营。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Air New England LLC.航司的总部位于哪个城市？",
+        "A": "Portsmouth",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air New England LLC.\";",
+        "actual_answer": "Air New England LLC. 航空公司的总部位于美国马萨诸塞州的贝德福德 (Bedford, Massachusetts)。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Fai Aviation Group航司的总部位于哪个城市？",
+        "A": "Nuremberg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fai Aviation Group\";",
+        "actual_answer": "Fai Aviation Group的总部位于德国纽伦堡。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Sunrise Jets航司的总部位于哪个城市？",
+        "A": "Westhampton Beach",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sunrise Jets\";",
+        "actual_answer": "Sunrise Jets航司的总部位于纽约州的麦克阿瑟国际机场附近，具体城市为朗康马。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Boomerang Air Charter航司的总部位于哪个城市？",
+        "A": "Jacksonville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Boomerang Air Charter\";",
+        "actual_answer": "Boomerang Air Charter航司的总部位于澳大利亚珀斯市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jet I.C.U.航司的总部位于哪个城市？",
+        "A": "Brooksville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet I.C.U.\";",
+        "actual_answer": "Jet I.C.U.航司的总部位于美国得克萨斯州的休斯顿。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jett Aircraft航司的总部位于哪个城市？",
+        "A": "Fayetteville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jett Aircraft\";",
+        "actual_answer": "Jett Aircraft航司的总部位于中国北京市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Orion Aviation Solutions LLC航司的总部位于哪个城市？",
+        "A": "Oshkosh",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Orion Aviation Solutions LLC\";",
+        "actual_answer": "抱歉，我没有关于Orion Aviation Solutions LLC公司总部的信息。该公司可能是一个不太知名或较新的公司，相关信息未广泛公开。若需获取其具体信息，建议访问该公司的官方网站或联系其客服以获得准确信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Advanced Air LLC航司的总部位于哪个城市？",
+        "A": "Los Angeles",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Advanced Air LLC\";",
+        "actual_answer": "Advanced Air LLC航司的总部位于美国加利福尼亚州的霍桑市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Airlink Luftverkehrs GmbH航司的总部位于哪个城市？",
+        "A": "Salzburg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Airlink Luftverkehrs GmbH\";",
+        "actual_answer": "Airlink Luftverkehrs GmbH的总部位于奥地利的林茨。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lowe Aviation航司的总部位于哪个城市？",
+        "A": "Macon",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Lowe Aviation\";",
+        "actual_answer": "截至目前，并没有一家名为“Lowe Aviation”的航空公司被广泛认可或知晓，可能您所指的是一个较小的或区域性的航空公司，也可能是近期成立的新公司。如果您有更多的信息或者可能是其他名称的变体，请提供更多细节以便更好地协助您。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Meajet GmbH航司的总部位于哪个城市？",
+        "A": "Munich",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Meajet GmbH\";",
+        "actual_answer": "Meajet GmbH是一家位于德国的公务机航司，其总部位于慕尼黑。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Airailes航司的总部位于哪个城市？",
+        "A": "Entzheim",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Airailes\";",
+        "actual_answer": "抱歉，我没有相关Airailes航司的信息，可能这是一个小型或较新的航空公司，或者是一个虚构品牌。如果你有更多的背景信息或想要查询其他已知航空公司的信息，我会很乐意帮你。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Shino Aviation航司的总部位于哪个城市？",
+        "A": "Tel Aviv",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Shino Aviation\";",
+        "actual_answer": "抱歉，我无法提供Shino Aviation航司的信息。在我的训练数据中没有关于这个航司的详细信息。如果这是一个新成立或不广为人知的公司，您可能需要通过其他方式查找相关信息，比如访问公司的官方网站或查看最新的商业报道。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Franconia Air Service GmbH航司的总部位于哪个城市？",
+        "A": "Middle Franconia",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Franconia Air Service GmbH\";",
+        "actual_answer": "Franconia Air Service GmbH的总部位于德国的纽伦堡市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Okayama Air Service Co., Ltd.航司的总部位于哪个城市？",
+        "A": "Okayama",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Okayama Air Service Co., Ltd.\";",
+        "actual_answer": "Okayama Air Service Co., Ltd.航司的总部位于日本冈山市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Secure Air Charter LLC航司的总部位于哪个城市？",
+        "A": "Nashville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Secure Air Charter LLC\";",
+        "actual_answer": "Secure Air Charter LLC的总部位于美国的托莱多（Toledo），俄亥俄州。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Nexgen Flight Solutions航司的总部位于哪个城市？",
+        "A": "Easton",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Nexgen Flight Solutions\";",
+        "actual_answer": "Nexgen Flight Solutions航司的总部位于休斯顿。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Oklahoma Aviation LLC航司的总部位于哪个城市？",
+        "A": "Oklahoma County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Oklahoma Aviation LLC\";",
+        "actual_answer": "Oklahoma Aviation LLC航司的总部位于美国俄克拉荷马州的奥克拉荷马城。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "AB Jets航司的总部位于哪个城市？",
+        "A": "Memphis",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"AB Jets\";",
+        "actual_answer": "AB Jets航司的总部位于美国田纳西州孟菲斯市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Unnamra Aviation航司的总部位于哪个城市？",
+        "A": "Abu Dhabi",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Unnamra Aviation\";",
+        "actual_answer": "截至我最后的更新，我没有关于“Unnamra Aviation”航司的信息。可能这是一家比较新的或者不太知名的航空公司，建议您查看官方网站或其他可靠的资源以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dreamline Aviation LLC航司的总部位于哪个城市？",
+        "A": "Los Angeles",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Dreamline Aviation LLC\";",
+        "actual_answer": "Dreamline Aviation LLC 航空公司的总部位于美国加利福尼亚州的洛杉矶。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Execaire航司的总部位于哪个城市？",
+        "A": "Montreal",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Execaire\";",
+        "actual_answer": "Execaire航司的总部位于加拿大蒙特利尔。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Donghai Jet Co. Ltd.航司的总部位于哪个城市？",
+        "A": "Shenzhen",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Donghai Jet Co. Ltd.\";",
+        "actual_answer": "东海公务机有限公司（Donghai Jet Co. Ltd.）的总部位于中国深圳市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Carson Air Ltd航司的总部位于哪个城市？",
+        "A": "Kelowna",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Carson Air Ltd\";",
+        "actual_answer": "Carson Air Ltd的总部位于加拿大不列颠哥伦比亚省的温哥华市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Airco Aircraft Charters Ltd航司的总部位于哪个城市？",
+        "A": "Edmonton",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Airco Aircraft Charters Ltd\";",
+        "actual_answer": "Airco Aircraft Charters Ltd的总部位于新西兰基督城。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sacramento Air Charter航司的总部位于哪个城市？",
+        "A": "Lincoln",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sacramento Air Charter\";",
+        "actual_answer": "Sacramento Air Charter航司的总部位于美国加利福尼亚州的萨克拉门托市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Excellent Air航司的总部位于哪个城市？",
+        "A": "Memmingerberg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Excellent Air\";",
+        "actual_answer": "Excellent Air航司的总部位于深圳市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Skyways Charter LLC航司的总部位于哪个城市？",
+        "A": "Boca Raton",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Skyways Charter LLC\";",
+        "actual_answer": "Skyways Charter LLC航司的总部位于美国北卡罗来纳州的夏洛特市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Direct Jet Charter LLC航司的总部位于哪个城市？",
+        "A": "Greensboro",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Direct Jet Charter LLC\";",
+        "actual_answer": "Direct Jet Charter LLC航司的总部位于美国的博卡拉顿（Boca Raton），佛罗里达州。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "PAD Aviation Service航司的总部位于哪个城市？",
+        "A": "Detmold",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"PAD Aviation Service\";",
+        "actual_answer": "PAD Aviation Service航司的总部位于德国汉堡市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jetflite航司的总部位于哪个城市？",
+        "A": "Helsinki",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jetflite\";",
+        "actual_answer": "Jetflite航司的总部位于芬兰的万塔市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Century Aviation航司的总部位于哪个城市？",
+        "A": "Klamath Falls",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Century Aviation\";",
+        "actual_answer": "我很抱歉，但我无法找到有关“Century Aviation”航空公司的具体信息，因此无法确认其总部所在地。可能是一个不太知名或是地域性的航空公司。您可能需要检查该公司的官方网站或相关的商业登记记录以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gama Aviation LLC航司的总部位于哪个城市？",
+        "A": "West Palm Beach",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Gama Aviation LLC\";",
+        "actual_answer": "Gama Aviation LLC的总部位于美国康涅狄格州的谢尔顿市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "45 North Aviation航司的总部位于哪个城市？",
+        "A": "Traverse City",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"45 North Aviation\";",
+        "actual_answer": "截至目前，我没有关于45 North Aviation航司的信息。如果这是一个新的或小型的航空公司，其总部信息可能不广泛可用。建议查阅该公司的官方网站或相关的公开资料以获取最新和准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "STA Jets航司的总部位于哪个城市？",
+        "A": "Santa Ana",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"STA Jets\";",
+        "actual_answer": "STA Jets航司的总部位于美国加利福尼亚州的圣安娜市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Servicios Aereos Across航司的总部位于哪个城市？",
+        "A": "Toluca",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Servicios Aereos Across\";",
+        "actual_answer": "Servicios Aereos Across航司的总部位于墨西哥城。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Skynet LLC航司的总部位于哪个城市？",
+        "A": "Manassas",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Skynet LLC\";",
+        "actual_answer": "抱歉，我没有关于Skynet LLC航司的信息。如果这是一个新的或小型的航司，建议您查看其官方网站或联系有关部门以获取详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pinnacle Air Charter LLC航司的总部位于哪个城市？",
+        "A": "Maricopa County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Pinnacle Air Charter LLC\";",
+        "actual_answer": "Pinnacle Air Charter LLC的总部位于美国阿肯色州的斯普林代尔（Springdale）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aerovida S.A航司的总部位于哪个城市？",
+        "A": "San Fernando del Valle de Catamarca",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aerovida S.A\";",
+        "actual_answer": "关于Aerovida S.A航司的信息似乎不广为人知，可能是一个小型或地区性的航空公司或新成立的公司。因此，我目前没有公开的资料显示其总部位于哪个城市。如果这是一个新成立的或地方性的航空公司，可能需要查阅最新的商业登记或航空业的新闻来源以获得更准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Susiair航司的总部位于哪个城市？",
+        "A": "West Java",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Susiair\";",
+        "actual_answer": "Susi Air航司的总部位于印度尼西亚爪哇岛的茂物。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Uniair Taxi Aereo Ltd航司的总部位于哪个城市？",
+        "A": "Porto Alegre",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Uniair Taxi Aereo Ltd\";",
+        "actual_answer": "Uniair Taxi Aereo Ltd（优奈尔航空）的总部位于巴西的圣保罗市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Execujet (UK) Limited航司的总部位于哪个城市？",
+        "A": "Cambridge",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Execujet (UK) Limited\";",
+        "actual_answer": "ExecuJet (UK) Limited 航空公司的总部位于英国的伦敦。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pen-Avia Ltd航司的总部位于哪个城市？",
+        "A": "Bedfordshire",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Pen-Avia Ltd\";",
+        "actual_answer": "Pen-Avia Ltd航司的总部位于德克萨斯州的科珀斯克里斯蒂。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Best Jets Int.航司的总部位于哪个城市？",
+        "A": "St Paul",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Best Jets Int.\";",
+        "actual_answer": "Best Jets International航司的总部位于美国明尼苏达州的明尼阿波利斯。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Reva Inc.航司的总部位于哪个城市？",
+        "A": "Fort Lauderdale",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Reva Inc.\";",
+        "actual_answer": "截至目前，我找不到名为“Reva Inc.”的航空公司的具体信息。如果这是一个最近成立的公司，或者名称有误，可能需要您确认下公司名称或提供更多背景信息。如果您指的是其他类似名称的航空公司，请提供更多详细信息以便我能更好地为您解答。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dream Jet航司的总部位于哪个城市？",
+        "A": "Bedford",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Dream Jet\";",
+        "actual_answer": "Dream Jet航司的总部位于法国巴黎。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pegasus Elite Aviation航司的总部位于哪个城市？",
+        "A": "Los Angeles",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Pegasus Elite Aviation\";",
+        "actual_answer": "Pegasus Elite Aviation的总部位于美国加利福尼亚州的范奈斯（Van Nuys）。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hangar 7 Aviation航司的总部位于哪个城市？",
+        "A": "Clark County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Hangar 7 Aviation\";",
+        "actual_answer": "Hangar 7 Aviation航司的总部位于中国香港。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Avcon Jet AG航司的总部位于哪个城市？",
+        "A": "Vienna",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Avcon Jet AG\";",
+        "actual_answer": "Avcon Jet AG航司的总部位于奥地利维也纳。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "SD Aviation航司的总部位于哪个城市？",
+        "A": "La Roche-sur-Yon",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"SD Aviation\";",
+        "actual_answer": "截至我所知的信息，SD Aviation的具体总部城市未被广泛公开。然而，通常此类公司可能会有公开的联系信息或在其官方网站上提供此类信息。如果您需要非常准确的细节，建议直接查看SD Aviation的官网或通过官方渠道进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "St Barth Executive航司的总部位于哪个城市？",
+        "A": "St Jean",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"St Barth Executive\";",
+        "actual_answer": "St Barth Executive是一家位于加勒比地区的航空公司，其总部设在法属圣巴泰勒米岛，也被称为圣巴。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Shenzhen Funian Business Aviation Co., Ltd航司的总部位于哪个城市？",
+        "A": "Shenzhen",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Shenzhen Funian Business Aviation Co., Ltd\";",
+        "actual_answer": "深圳符霓商务航空有限公司（Shenzhen Funian Business Aviation Co., Ltd）的总部位于中国深圳市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Prime Jet LLC航司的总部位于哪个城市？",
+        "A": "Arapahoe County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Prime Jet LLC\";",
+        "actual_answer": "Prime Jet LLC航司的总部位于美国科罗拉多州恩格尔伍德（Englewood）。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cirrus Aviation Services航司的总部位于哪个城市？",
+        "A": "Las Vegas",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Cirrus Aviation Services\";",
+        "actual_answer": "Cirrus Aviation Services航司的总部位于美国内华达州的拉斯维加斯。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Aero Charter Inc.航司的总部位于哪个城市？",
+        "A": "St. Louis County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aero Charter Inc.\";",
+        "actual_answer": "Aero Charter Inc.的总部位于美国密苏里州的圣路易斯。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Sky Partners Inc.航司的总部位于哪个城市？",
+        "A": "El Dorado County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sky Partners Inc.\";",
+        "actual_answer": "对不起，我无法找到有关Sky Partners Inc.航司的具体信息。因此，没有关于其总部位置的信息。如果这是一个新成立或小型的航空公司，建议查阅其官方网站或相关的媒体报道以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Global Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Washington County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Global Aviation Inc.\";",
+        "actual_answer": "抱歉，我没有关于Global Aviation Inc.航司的信息。如果这是一个较新的或不太知名的公司，您可能需要查看该公司官网或其他官方资料以获取准确信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Accent Airways LLC航司的总部位于哪个城市？",
+        "A": "Miami",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Accent Airways LLC\";",
+        "actual_answer": "关于Accent Airways LLC航司的信息并不广泛，因此我无法确定其总部所在的城市。如果您有确切的信息或具体来源，建议直接查询公司官方网站或相关可靠资源以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Skyalps航司的总部位于哪个城市？",
+        "A": "Bolzano",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Skyalps\";",
+        "actual_answer": "Skyalps航空公司的总部位于意大利博尔扎诺。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Flymex航司的总部位于哪个城市？",
+        "A": "Toluca",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Flymex\";",
+        "actual_answer": "Flymex航司的总部位于墨西哥城。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Axiom Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Cleveland",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Axiom Aviation Inc.\";",
+        "actual_answer": "很抱歉，我没有关于Axiom Aviation Inc.航司的信息。如果这是一个新成立的航空公司或者小型企业，可能未被广泛报道。如果您有更多的具体信息或问题，我将很乐意帮助您。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Falcon Wings航司的总部位于哪个城市？",
+        "A": "Abu Dhabi",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Falcon Wings\";",
+        "actual_answer": "抱歉，我无法找到名为Falcon Wings航司的具体信息。因此，我无法告知其总部的位置。如果这是一家小型或新成立的航空公司，建议查阅公司官方网站或相关公告以获取准确信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Air Reldan Inc.航司的总部位于哪个城市？",
+        "A": "St. Tammany Parish",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air Reldan Inc.\";",
+        "actual_answer": "对不起，我没有关于Air Reldan Inc.航司的相关信息。如果这是一个近期成立的或较小的航空公司，它的信息可能不在我的数据库中。你可能需要查看该公司官网或其他在线资源以获取其总部所在地。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ok Aviation Group航司的总部位于哪个城市？",
+        "A": "Pribram District",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Ok Aviation Group\";",
+        "actual_answer": "Ok Aviation Group航司的总部位于中国北京市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Noble Air Charter航司的总部位于哪个城市？",
+        "A": "Miami",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Noble Air Charter\";",
+        "actual_answer": "Noble Air Charter航司的总部位于美国佛罗里达州的迈阿密。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Elite Jet航司的总部位于哪个城市？",
+        "A": "Bratislava",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Elite Jet\";",
+        "actual_answer": "关于Elite Jet航司的总部信息，我没有相关资料。如果您需要这方面的信息，建议访问该航空公司的官方网站或联系其客户服务部门以获取准确的地点信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Southern Sky Aviation LLC航司的总部位于哪个城市？",
+        "A": "Birmingham",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Southern Sky Aviation LLC\";",
+        "actual_answer": "Southern Sky Aviation LLC航司的总部位于美国亚拉巴马州的伯明翰市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "AstonJet航司的总部位于哪个城市？",
+        "A": "Paris",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"AstonJet\";",
+        "actual_answer": "AstonJet航司的总部位于法国巴黎。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Jet-ten航司的总部位于哪个城市？",
+        "A": "Dallas",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet-ten\";",
+        "actual_answer": "Jet-ten航司的总部位于北京市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tavaero Jet Charter航司的总部位于哪个城市？",
+        "A": "Houston",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Tavaero Jet Charter\";",
+        "actual_answer": "Tavaero Jet Charter航司的总部位于美国德克萨斯州休斯顿。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Ics-Aero航司的总部位于哪个城市？",
+        "A": "Borgo Maggiore",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Ics-Aero\";",
+        "actual_answer": "Ics-Aero航司好像不是一家知名航空公司，可能是地区性的小型航空公司或者虚构的。如果是虚构的或不广为人知的企业，我没有相关的数据信息。您可以检查一下拼写或提供更多背景信息，我将尽力帮助您找到更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Talon Air LLC航司的总部位于哪个城市？",
+        "A": "Farmingdale",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Talon Air LLC\";",
+        "actual_answer": "Talon Air LLC航司的总部位于美国纽约。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Euro-asia Air Company Jsc航司的总部位于哪个城市？",
+        "A": "Almaty",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Euro-asia Air Company Jsc\";",
+        "actual_answer": "Euro-Asia Air Company JSC 的总部位于哈萨克斯坦的阿特劳市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "B-Jets航司的总部位于哪个城市？",
+        "A": "Vilnius",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"B-Jets\";",
+        "actual_answer": "B-Jets航司的总部位于上海市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Limitless Aviation Sm航司的总部位于哪个城市？",
+        "A": "San Marino",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Limitless Aviation Sm\";",
+        "actual_answer": "很抱歉，我没有关于Limitless Aviation Sm航司的具体信息。在我的数据库中没有记录这个航空公司的数据。如果这是一个新的或小型的航空公司，可能没有广泛的公开资料。你可能需要查阅航空公司的官方网站或其他可靠的来源以获得准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ever Jet Aviation Limited航司的总部位于哪个城市？",
+        "A": "Hong Kong",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Ever Jet Aviation Limited\";",
+        "actual_answer": "Ever Jet Aviation Limited的总部位于中国香港。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Action Air Express航司的总部位于哪个城市？",
+        "A": "Santa Monica",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Action Air Express\";",
+        "actual_answer": "Action Air Express航司的总部位于阿肯色州的小石城。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Malone Aircharter Inc航司的总部位于哪个城市？",
+        "A": "Jacksonville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Malone Aircharter Inc\";",
+        "actual_answer": "Malone AirCharter Inc.的总部位于美国佛罗里达州的杰克逊维尔市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Mali Air航司的总部位于哪个城市？",
+        "A": "Moederbrugg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Mali Air\";",
+        "actual_answer": "Mali Air的总部位于奥地利的克恩顿州。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tampa Bay Air Charter航司的总部位于哪个城市？",
+        "A": "Saint Petersburg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Tampa Bay Air Charter\";",
+        "actual_answer": "Tampa Bay Air Charter航空公司的总部位于美国佛罗里达州的坦帕市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aviation Starlink Inc.航司的总部位于哪个城市？",
+        "A": "Montreal",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aviation Starlink Inc.\";",
+        "actual_answer": "截至目前，没有名为“Starlink Inc.航司”的航空公司。Starlink 是 SpaceX 公司旗下的卫星互联网服务项目，而不是一家航空公司。SpaceX 的总部位于美国加利福尼亚州的霍桑市。如果有新的企业或品牌信息，请提供更多细节，以便我为您提供准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Haskin Aviation航司的总部位于哪个城市？",
+        "A": "Midland",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Haskin Aviation\";",
+        "actual_answer": "抱歉，我无法找到名为Haskin Aviation的航空公司，因此无法提供其总部所在的城市。可能是一个较小的或新成立的公司，或者名字有所不同。如果您有更多信息，可能会更有帮助。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Flybywire International Private Ltd航司的总部位于哪个城市？",
+        "A": "Telangana State",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Flybywire International Private Ltd\";",
+        "actual_answer": "Flybywire International Private Ltd 的总部位于新加坡。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Comlux Aviation航司的总部位于哪个城市？",
+        "A": "Zurich",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Comlux Aviation\";",
+        "actual_answer": "Comlux Aviation航司的总部位于瑞士苏黎世。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Lanier Flight Express LLC航司的总部位于哪个城市？",
+        "A": "Gainesville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Lanier Flight Express LLC\";",
+        "actual_answer": "Lanier Flight Express LLC是一家较小的航空公司，其总部位于美国佛罗里达州的奥卡拉市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Precision Aircraft Management航司的总部位于哪个城市？",
+        "A": "Arapahoe County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Precision Aircraft Management\";",
+        "actual_answer": "Precision Aircraft Management 航空公司的总部位于美国印第安纳州的瓦尔帕莱索（Valparaiso）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Phxaero航司的总部位于哪个城市？",
+        "A": "Guangzhou",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Phxaero\";",
+        "actual_answer": "Phxaero航司的总部位于中国西安市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "OIA Air Corp.航司的总部位于哪个城市？",
+        "A": "Nashua",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"OIA Air Corp.\";",
+        "actual_answer": "OIA Air Corp.航司的总部位于青岛市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "East Coast Flight Services Inc.航司的总部位于哪个城市？",
+        "A": "Easton",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"East Coast Flight Services Inc.\";",
+        "actual_answer": "East Coast Flight Services Inc.的总部位于美国马里兰州的Easton。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "VIH Execujet Ltd航司的总部位于哪个城市？",
+        "A": "Victoria",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"VIH Execujet Ltd\";",
+        "actual_answer": "VIH Execujet Ltd是一家总部位于加拿大维多利亚的航空公司。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Executive Jet Management Inc.航司的总部位于哪个城市？",
+        "A": "Cincinnati",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Executive Jet Management Inc.\";",
+        "actual_answer": "Executive Jet Management Inc.的总部位于美国俄亥俄州辛辛那提市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "First Av Group LLC航司的总部位于哪个城市？",
+        "A": "Tyler",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"First Av Group LLC\";",
+        "actual_answer": "First Av Group LLC 航空公司的总部位于美国的迈阿密市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mccreery Aviation Inc航司的总部位于哪个城市？",
+        "A": "McAllen",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Mccreery Aviation Inc\";",
+        "actual_answer": "McCreery Aviation Inc的总部位于美国德克萨斯州的麦卡伦市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Catalina Aerospace Corp.航司的总部位于哪个城市？",
+        "A": "Miami",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Catalina Aerospace Corp.\";",
+        "actual_answer": "抱歉，我目前没有关于Catalina Aerospace Corp.的详细信息。这个公司可能是一个虚构的公司、一个新创企业或者是在我知识更新后成立的。如果你有更多的背景信息或拼写提示，或许我能更好地帮助你。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Wheels Up Partners LLC航司的总部位于哪个城市？",
+        "A": "New York",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Wheels Up Partners LLC\";",
+        "actual_answer": "Wheels Up Partners LLC航司的总部位于美国纽约市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Italfly航司的总部位于哪个城市？",
+        "A": "Trento",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Italfly\";",
+        "actual_answer": "Italfly 航空公司的总部位于意大利的特伦托市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Execujet South Africa Pty Ltd航司的总部位于哪个城市？",
+        "A": "Lanseria",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Execujet South Africa Pty Ltd\";",
+        "actual_answer": "ExecuJet South Africa Pty Ltd的总部位于南非的约翰内斯堡。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Beijing Airlines航司的总部位于哪个城市？",
+        "A": "Beijing",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Beijing Airlines\";",
+        "actual_answer": "北京航空（Beijing Airlines）的总部位于中国北京市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "DC Aviation Al Futtaim航司的总部位于哪个城市？",
+        "A": "Dubai",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"DC Aviation Al Futtaim\";",
+        "actual_answer": "DC Aviation Al Futtaim航司的总部位于阿联酋的迪拜。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "The Little Jet Company Ltd航司的总部位于哪个城市？",
+        "A": "Gloucester",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"The Little Jet Company Ltd\";",
+        "actual_answer": "Little Jet Company Ltd是一家位于英国的私人包机公司，其总部设在格洛斯特。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Aero JL S.A de C.V航司的总部位于哪个城市？",
+        "A": "Toluca",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aero JL S.A de C.V\";",
+        "actual_answer": "Aero JL S.A de C.V航司的总部位于墨西哥的瓜达拉哈拉市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Meregrass Inc.航司的总部位于哪个城市？",
+        "A": "Dublin",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Meregrass Inc.\";",
+        "actual_answer": "抱歉，我没有找到有关Meregrass Inc.航司的信息。该公司可能是一个小型或未广泛记录的公司。如果这是一个新兴公司或小规模企业，其详细信息可能尚未广泛发布。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Abelag Aviation航司的总部位于哪个城市？",
+        "A": "Zaventem",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Abelag Aviation\";",
+        "actual_answer": "Abelag Aviation的总部位于比利时布鲁塞尔。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Legacy Aviation LLC航司的总部位于哪个城市？",
+        "A": "Lincoln County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Legacy Aviation LLC\";",
+        "actual_answer": "Legacy Aviation LLC航司的总部位于美国的宾夕法尼亚州费城市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Platoon Aviation航司的总部位于哪个城市？",
+        "A": "Hamburg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Platoon Aviation\";",
+        "actual_answer": "Platoon Aviation航司的总部位于德国汉堡。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Vuela International航司的总部位于哪个城市？",
+        "A": "Zapopan",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Vuela International\";",
+        "actual_answer": "Vuela International航司的总部位于墨西哥城。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Thunder Airlines航司的总部位于哪个城市？",
+        "A": "Thunder Bay",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Thunder Airlines\";",
+        "actual_answer": "抱歉，我找不到与Thunder Airlines航空公司相关的信息。可能是因为这家公司并不广为人知或者是虚构的。如果你有其他相关的信息或问题，我会很乐意帮助你。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pro Airways LLC航司的总部位于哪个城市？",
+        "A": "Plymouth",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Pro Airways LLC\";",
+        "actual_answer": "Pro Airways LLC的总部位于波士顿。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Flyinggroup航司的总部位于哪个城市？",
+        "A": "Antwerp",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Flyinggroup\";",
+        "actual_answer": "Flyinggroup航司的总部位于比利时的安特卫普。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Flycom D.O.O.航司的总部位于哪个城市？",
+        "A": "Brusnice",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Flycom D.O.O.\";",
+        "actual_answer": "Flycom D.O.O. 是一家总部位于斯洛文尼亚马里博尔的公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Prestige Air Group航司的总部位于哪个城市？",
+        "A": "Las Vegas",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Prestige Air Group\";",
+        "actual_answer": "Prestige Air Group航司的总部位于香港。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Crotts Aircraft Service Inc.航司的总部位于哪个城市？",
+        "A": "Dodge City",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Crotts Aircraft Service Inc.\";",
+        "actual_answer": "Crotts Aircraft Service Inc.的总部位于美国堪萨斯州道奇城。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Rennia Aviation航司的总部位于哪个城市？",
+        "A": "Gainesville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Rennia Aviation\";",
+        "actual_answer": "关于Rennia Aviation航司的信息比较有限，我无法确定其总部位于哪个城市。如果你有其他相关信息或是更多问题，我会很乐意提供帮助。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mirair B.V.航司的总部位于哪个城市？",
+        "A": "Groningen",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Mirair B.V.\";",
+        "actual_answer": "Mirair B.V. 并不是一家广为人知的航空公司，至少在我截至2023年10月的数据中没有相关信息。如果这是一个新成立或较小的航司，或者是某个特定地区的运营商，我可能没有其详细信息。\n\n如果您有特定的上下文或更多信息，我建议查看该公司的官方网站或相关新闻以获取最新的详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jet 1 Charter Inc.航司的总部位于哪个城市？",
+        "A": "Naples",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet 1 Charter Inc.\";",
+        "actual_answer": "Jet 1 Charter Inc. 的总部位于美国佛罗里达州的奥帕洛卡。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Wisconsin Aviation航司的总部位于哪个城市？",
+        "A": "Watertown",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Wisconsin Aviation\";",
+        "actual_answer": "Wisconsin Aviation航司的总部位于威斯康星州的沃特敦（Watertown）。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "CareFlight航司的总部位于哪个城市？",
+        "A": "Wentworthville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"CareFlight\";",
+        "actual_answer": "CareFlight是一家澳大利亚的航空医疗服务公司，其总部位于新南威尔士州的悉尼。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Fair Air GmbH航司的总部位于哪个城市？",
+        "A": "Upper Franconia",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fair Air GmbH\";",
+        "actual_answer": "抱歉，我无法获得关于Fair Air GmbH航司的信息。如果这是一个新成立的或不太知名的公司，可能没有被包含在我训练数据中。你可以通过访问该公司的官方网站或查看相关行业信息来获取他们总部的具体位置。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "SkyFirst航司的总部位于哪个城市？",
+        "A": "Birkirkara",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"SkyFirst\";",
+        "actual_answer": "SkyFirst航司的总部位于哪个城市的信息并不广泛可用。如果这是一个虚构或不知名的航空公司，可能没有公开的资料。如果它是一个真实公司的话，建议查看他们的官方网站或联系公司获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Amber Aviation Limited航司的总部位于哪个城市？",
+        "A": "Shenzhen",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Amber Aviation Limited\";",
+        "actual_answer": "Amber Aviation Limited的总部位于中国深圳市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Genel Havacilik A.S.航司的总部位于哪个城市？",
+        "A": "Istanbul",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Genel Havacilik A.S.\";",
+        "actual_answer": "Genel Havacilik A.S. 航空公司的总部位于土耳其的伊斯坦布尔市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Select Aero Inc.航司的总部位于哪个城市？",
+        "A": "Vancouver",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Select Aero Inc.\";",
+        "actual_answer": "Select Aero Inc. 航空公司的总部位于北京，中国。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Air Unlimited航司的总部位于哪个城市？",
+        "A": "Sanford",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air Unlimited\";",
+        "actual_answer": "Air Unlimited航司的总部位于美国佛罗里达州的奥兰多。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Copenhagen Airtaxi A/s航司的总部位于哪个城市？",
+        "A": "Roskilde",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Copenhagen Airtaxi A/s\";",
+        "actual_answer": "Copenhagen Airtaxi A/S航司的总部位于丹麦的哥本哈根。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Charter Airlines LLC航司的总部位于哪个城市？",
+        "A": "Las Vegas",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Charter Airlines LLC\";",
+        "actual_answer": "截至我最后的更新时间，具体名为“Charter Airlines LLC”的航空公司信息可能并不普遍或知名，因此我无法提供其总部所在的城市。如果这是一个小型或区域性的公司，建议查看其官方网站或相关的企业注册信息以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Helistar Aviacion航司的总部位于哪个城市？",
+        "A": "Nashville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Helistar Aviacion\";",
+        "actual_answer": "Helistar Aviación 航司的总部位于哥伦比亚的波哥大。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "AC Aviation Charter AG(Switzerland)航司的总部位于哪个城市？",
+        "A": "Zurich",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"AC Aviation Charter AG(Switzerland)\";",
+        "actual_answer": "AC Aviation Charter AG（瑞士）的总部位于瑞士的巴塞尔市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sinojet (Beijing) Company Ltd航司的总部位于哪个城市？",
+        "A": "Beijing",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sinojet (Beijing) Company Ltd\";",
+        "actual_answer": "Sinojet (Beijing) Company Ltd的总部位于中国北京市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Million Air Richmond航司的总部位于哪个城市？",
+        "A": "Richmond",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Million Air Richmond\";",
+        "actual_answer": "Million Air Richmond航司的总部位于美国弗吉尼亚州的里士满市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Shanxi Victory General Aviation Co., Ltd.航司的总部位于哪个城市？",
+        "A": "Shanxi",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Shanxi Victory General Aviation Co., Ltd.\";",
+        "actual_answer": "山西翼胜通用航空有限公司（Shanxi Victory General Aviation Co., Ltd.）的总部位于中国山西省的太原市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Professional Aviation Solutions LLC航司的总部位于哪个城市？",
+        "A": "Dallas",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Professional Aviation Solutions LLC\";",
+        "actual_answer": "Professional Aviation Solutions LLC的总部位于美国华盛顿州的西雅图。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Backcountry Aviation航司的总部位于哪个城市？",
+        "A": "Albany",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Backcountry Aviation\";",
+        "actual_answer": "截至我最近的信息更新，并没有关于名为Backcountry Aviation的航司的具体信息。如果这是一家较新的或者较小型的航空公司，建议查看其官方网站或通过其他在线资源查找最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "AC Aviation Charter(Austria)航司的总部位于哪个城市？",
+        "A": "Schwechat",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"AC Aviation Charter(Austria)\";",
+        "actual_answer": "AC Aviation Charter（奥地利）航司的总部位于奥地利的维也纳。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Corporate Air Charters Inc.航司的总部位于哪个城市？",
+        "A": "Miami",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Corporate Air Charters Inc.\";",
+        "actual_answer": "Corporate Air Charters Inc.航司的总部位于美国威斯康星州的杰克逊。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Joinjet航司的总部位于哪个城市？",
+        "A": "Billund",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Joinjet\";",
+        "actual_answer": "Joinjet航司的总部位于瑞典的马尔默市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Apex Aero航司的总部位于哪个城市？",
+        "A": "Houma",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Apex Aero\";",
+        "actual_answer": "抱歉，我目前无法提供有关Apex Aero航司的具体信息。如果这是一个新近成立的航空公司或不广为人知的公司，建议查看他们的官方网站或联系他们的客户服务以获取最新的总部信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Silver Flight航司的总部位于哪个城市？",
+        "A": "Haarlemmermeer",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Silver Flight\";",
+        "actual_answer": "银航（Silver Airways）的总部位于美国佛罗里达州的劳德代尔堡市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "StarJet Inc.航司的总部位于哪个城市？",
+        "A": "Los Angeles",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"StarJet Inc.\";",
+        "actual_answer": "截至我的知识更新日期2023年10月，并没有一家名为StarJet Inc.的广泛知晓的航空公司。如果这是一个新成立的或是一家不知名的公司，建议查看其官方网站或相关官方公开资料以获取最新信息。如果StarJet是一个虚构或特定上下文中的公司，请提供更多背景信息以便更好地协助你。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Reynolds Jet Management航司的总部位于哪个城市？",
+        "A": "Cincinnati",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Reynolds Jet Management\";",
+        "actual_answer": "Reynolds Jet Management航司的总部位于美国的辛辛那提市。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Luxaviation France航司的总部位于哪个城市？",
+        "A": "Seine-Saint-Denis",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Luxaviation France\";",
+        "actual_answer": "Luxaviation France航司的总部位于巴黎。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Executive Wings航司的总部位于哪个城市？",
+        "A": "Bangkok",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Executive Wings\";",
+        "actual_answer": "Executive Wings航司的总部位于哪个城市的信息并不在我的数据库中。如果这是一个较新的或者较小型的航空公司，建议通过其官方网站或官方发布的资料获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Air Ocean Maroc航司的总部位于哪个城市？",
+        "A": "Rabat",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air Ocean Maroc\";",
+        "actual_answer": "Air Ocean Maroc航司的总部位于摩洛哥的卡萨布兰卡。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Advance Aviation航司的总部位于哪个城市？",
+        "A": "Bangkok",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Advance Aviation\";",
+        "actual_answer": "Advance Aviation航司的总部位于曼谷，泰国。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "LILY JET航司的总部位于哪个城市？",
+        "A": "Shenyang",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"LILY JET\";",
+        "actual_answer": "LILY JET航司的总部位于上海市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Trinity Private Jet Charter航司的总部位于哪个城市？",
+        "A": "Dallas",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Trinity Private Jet Charter\";",
+        "actual_answer": "截至我最近掌握的信息，并没有关于名为Trinity Private Jet Charter的航司详细资料。如果这是一个新成立的小型公司或地区服务提供商，可能相关信息有限或者不在我目前的数据库中。您可以访问该公司的官方网站或通过其他最新的在线资源获取其总部所在地信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Priority Jet航司的总部位于哪个城市？",
+        "A": "Cobb County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Priority Jet\";",
+        "actual_answer": "Priority Jet航司的总部位于美国佐治亚州的亚特兰大。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aeropartner航司的总部位于哪个城市？",
+        "A": "Prague",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aeropartner\";",
+        "actual_answer": "Aeropartner航司的总部位于捷克共和国的布拉格。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "correct_rate": 33.67,
+        "sample_size": 300,
+        "correct_count": 101
+    }
+]

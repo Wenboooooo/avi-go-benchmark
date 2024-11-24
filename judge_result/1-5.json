@@ -1,0 +1,2107 @@
+[
+    {
+        "Q": "飞机注册号为N727KB的飞机是哪一家公司的？",
+        "A": "Moser Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N727KB\";",
+        "actual_answer": "抱歉，我无法实时查询特定飞机的注册信息。通常，飞机的注册号可以通过在线飞机追踪服务查找，例如Flightradar24或FlightAware。这些服务提供实时和历史的航班数据，包括飞机的注册号码与所属航空公司或所有者信息。建议您查看这些网站以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为HA-EFD的飞机是哪一家公司的？",
+        "A": "Fly-coop Legiszolgaltato Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"HA-EFD\";",
+        "actual_answer": "抱歉，我无法实时查询飞机注册号的信息。根据注册号“HA-EFD”，这个注册号的前缀“HA”通常是分配给匈牙利的航空器。因此，您可能需要查找与匈牙利有关的航空公司或者直接通过在线航空数据库查询以获得最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N618PJ的飞机是哪一家公司的？",
+        "A": "Private Jets Inc",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N618PJ\";",
+        "actual_answer": "根据飞机注册号查询信息，N618PJ通常是由私人飞机或包机公司运营的注册号。这类飞机的注册信息可能会发生变更，因此，准确的信息需要通过在线的飞机注册数据库或美国联邦航空管理局（FAA）的注册数据库进行查询。如果您需要了解当前的运营情况或历史信息，建议访问相关的数据库或联系专业的航空信息提供商获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为EC-KRN的飞机是哪一家公司的？",
+        "A": "Executive Jet Management Europe",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"EC-KRN\";",
+        "actual_answer": "注册号为EC-KRN的飞机属于西班牙航空公司伏林航空（Vueling Airlines）。请注意，航空公司可能会更改或更新其机队，因此建议确认最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N787CH的飞机是哪一家公司的？",
+        "A": "Cirrus Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N787CH\";",
+        "actual_answer": "抱歉，我无法提供特定飞机注册号（如N787CH）的详细信息或其所属公司的信息。飞机的注册信息通常是由相关航空监管机构维护的，可能需要直接访问这些机构的数据库或公示平台来获取。建议您查阅相关的公共航空数据库或联系相关的航空监管机构以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为CN-TME的飞机是哪一家公司的？",
+        "A": "Air Ocean Maroc",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"CN-TME\";",
+        "actual_answer": "飞机注册号为CN-TME的飞机属于摩洛哥皇家航空公司（Royal Air Maroc）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OE-LOE的飞机是哪一家公司的？",
+        "A": "Sparfell Luftfahrt GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OE-LOE\";",
+        "actual_answer": "飞机注册号为OE-LOE的飞机属于奥地利的Lauda航空公司。这家航空公司是瑞安航空的子公司，专注于廉价航空服务。请注意具体信息可能会有所变化，建议查阅最新的航空注册数据库以获取最准确的资讯。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N718HC的飞机是哪一家公司的？",
+        "A": "Secure Air Charter LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N718HC\";",
+        "actual_answer": "飞机注册号为N718HC的飞机属于谷歌公司（Google）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N1103G的飞机是哪一家公司的？",
+        "A": "Lowe Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N1103G\";",
+        "actual_answer": "很抱歉，我无法实时访问航班或飞机注册信息数据库，因此无法提供特定飞机注册号N1103G所对应的公司信息。建议您通过航空数据库网站如Flightradar24或专业的航空追踪工具查询最新的注册信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N888GJ的飞机是哪一家公司的？",
+        "A": "GoodJet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N888GJ\";",
+        "actual_answer": "飞机的注册号通常由飞机注册国家的航空管理当局分配，并可以用于识别特定飞机的注册信息。然而，飞机注册详情，特别是私人公司或个人拥有的飞机，可能不会公开披露。\n\n如果N888GJ是一个有效的注册号，您可以尝试通过美国联邦航空管理局（FAA）的飞机注册数据库查询更多信息。FAA数据库通常提供关于飞机的制造商、型号、所有者和运营商的信息。请注意，飞机的所有者信息可能会受到隐私限制，根据不同的国家和地区法律这些信息的披露程度可能不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N83SD的飞机是哪一家公司的？",
+        "A": "Aviation Advisor Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N83SD\";",
+        "actual_answer": "抱歉，我无法实时访问到特定航空器的注册号信息。飞机的注册号通常与其所属的航空公司或私人所有者相关，但这些信息可能会随时改变。如果你需要特定飞机的信息，可以通过一些在线航空信息平台或航空监管机构的网站进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N702SS的飞机是哪一家公司的？",
+        "A": "Cirrus Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N702SS\";",
+        "actual_answer": "飞机的注册号（N702SS）对应的公司或运营人信息需要通过查询联邦航空管理局（FAA）或其他相关航空注册数据库来获得。这些数据库会为公众提供有关飞机注册的信息，包括飞机的所有者、运营人以及类型等。不过，具体到某架飞机的信息可能会随时间改变。如果你需要最新的信息，建议直接访问FAA的官网下载或使用其相关查询工具。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为XA-UXX的飞机是哪一家公司的？",
+        "A": "Execujet Caribbean",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"XA-UXX\";",
+        "actual_answer": "飞机注册号以\"XA\"开头表示，该飞机注册在墨西哥。\"UA\"部分通常不提供具体的公司信息。为了获取该具体飞机的公司信息，建议您查阅墨西哥的航空注册数据库或者联系相关的航空管理部门以获取最新的注册信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N297AP的飞机是哪一家公司的？",
+        "A": "Century Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N297AP\";",
+        "actual_answer": "飞机注册号为N297AP的飞机属于American Airlines（美国航空公司）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N15RK的飞机是哪一家公司的？",
+        "A": "Catalina Aerospace Corp.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N15RK\";",
+        "actual_answer": "抱歉，我无法实时查询飞机注册号的信息。飞机的注册号通常是由国家航空管理部门分配的，可以通过相关的航空数据库或网站，如Flightradar24或FAA的注册数据库进行查询。这些资源可以提供飞机的所有权、运营公司以及其他相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N1220W的飞机是哪一家公司的？",
+        "A": "Golden State Air Charter LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N1220W\";",
+        "actual_answer": "抱歉，我无法提供特定飞机注册号码的详细信息，包括其所属的公司或运营者。飞机注册号通常是由国家航空管理机构管理的信息，可能涉及隐私或保密性。如果你有相关需求，建议通过合法途径联系相关机构如FAA（美国联邦航空管理局）来获取更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为LY-CER的飞机是哪一家公司的？",
+        "A": "KlasJet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"LY-CER\";",
+        "actual_answer": "飞机注册号为LY-CER的飞机属于Avion Express，这是一家总部位于立陶宛的航空公司，专门提供飞机租赁服务。请注意，飞机的注册信息可能会发生变化，因此建议查阅最新的航空注册数据库以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N367DA的飞机是哪一家公司的？",
+        "A": "Global Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N367DA\";",
+        "actual_answer": "飞机注册号为N367DA的飞机属于达美航空（Delta Air Lines）。航空公司的飞机注册号通常有规律，达美航空的飞机注册号经常以\"N\"开头并包含\"DA\"。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N308MR的飞机是哪一家公司的？",
+        "A": "Merlin One",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N308MR\";",
+        "actual_answer": "很抱歉，我没有实时访问或查阅特定飞机注册信息的能力。飞机的注册号通常用于在国家航空管理机构的注册数据库中识别特定的飞机。若需要确定某架飞机的所属公司，您可以查阅相应国家的民航管理机构网站或使用飞机追踪服务，这些服务通常提供飞机注册号与其所属航空公司的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-IOVA的飞机是哪一家公司的？",
+        "A": "Proair Charter Transport GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-IOVA\";",
+        "actual_answer": "飞机注册号为D-IOVA的飞机属于德国的汉莎航空公司（Lufthansa）。这种注册号以\"D-\"开头的格式是德国的航空器标识。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N331NG的飞机是哪一家公司的？",
+        "A": "Skytech Travel LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N331NG\";",
+        "actual_answer": "飞机的注册号为N331NG的归属信息并不是公开的实时信息，因此我无法提供该飞机属于哪家公司。不过，你可以通过FAA（美国联邦航空管理局）或相关的航空注册管理机构进行查询以获取更多信息。这些注册信息通常会提供飞机当前的注册状态和所有者信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N375JP的飞机是哪一家公司的？",
+        "A": "Flightline First LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N375JP\";",
+        "actual_answer": "对不起，我无法实时访问数据库以确认特定飞机的注册信息。不过，飞机的注册信息通常可以通过在线航空登记数据库或相关航空公司的官方网站查询。你也可以联系相关航空管理机构查询更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N369FG的飞机是哪一家公司的？",
+        "A": "Alerion Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N369FG\";",
+        "actual_answer": "很抱歉，我无法提供实时数据或查询特定飞机的当前注册信息。不过，您可以通过FlightAware、Flightradar24或FAA的在线注册查询工具等网站查找飞机注册号N369FG的详细信息，以获取该飞机所属公司的最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OH-WIC的飞机是哪一家公司的？",
+        "A": "Jetflite",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OH-WIC\";",
+        "actual_answer": "飞机注册号为OH-WIC的飞机属于芬兰的航空公司，常用于标识飞机所有者或运营者。为了确认最新的信息，建议查看当前的航空注册数据库或相关航空公司的网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N177BB的飞机是哪一家公司的？",
+        "A": "Execuflight Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N177BB\";",
+        "actual_answer": "飞机的注册号与其所属的公司或拥有者相关联，但这类具体的注册信息可能会随时间变动。为了获得最新的信息，建议您通过在线航空数据库或相关的航空监管机构网站进行查询，如美国的FAA（联邦航空管理局）网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为HA-BAT的飞机是哪一家公司的？",
+        "A": "Fly-coop Legiszolgaltato Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"HA-BAT\";",
+        "actual_answer": "注册号为HA-BAT的飞机属于匈牙利的Wizz Air公司。这是一家低成本航空公司，以其显眼的粉色和紫色涂装而闻名。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N573CM的飞机是哪一家公司的？",
+        "A": "Flightline First LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N573CM\";",
+        "actual_answer": "对不起，我没有权限访问数据库来获取特定飞机的实时注册信息。飞机的注册号通常可以通过航空公司的官网、飞行跟踪网站或航空管理局的数据库来查询，这些地方会提供与特定飞机注册号相关的信息。您可以尝试访问相关网站来获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N688HL的飞机是哪一家公司的？",
+        "A": "Mach One Air Charters Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N688HL\";",
+        "actual_answer": "注册号为N688HL的飞机属于美国直升机股份有限公司（Heli-USA Airways）的机队。这家公司主要运营观光和租赁直升机服务。不过，具体的所属可能会因转让或租赁而改变，因此需要核实最新的飞机注册信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N608SG的飞机是哪一家公司的？",
+        "A": "Northern Jet Management",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N608SG\";",
+        "actual_answer": "根据已知的信息，飞机的注册号通常与特定的公司或个人相关联。不过，要查找特定飞机注册号（如N608SG）的所有者或运营者信息，需要通过航空注册局（如美国的联邦航空管理局FAA或其他国家对应机构）的数据库进行查询。你可以访问FAA的网站，并使用他们的在线注册数据库来查找详细的注册信息。请注意，具体的归属可能会随时间变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为HB-FZC的飞机是哪一家公司的？",
+        "A": "Albinati Aeronautics",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"HB-FZC\";",
+        "actual_answer": "注册号为HB-FZC的飞机属于瑞士飞鸿航空公司（Pilatus Aircraft）的测试飞机。这是一架Pilatus PC-12NGX，一般用于公司内部的测试和展示用途。请注意，飞机的注册信息可能会有更新或变动，建议查阅相关航空登记处以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OE-HPL的飞机是哪一家公司的？",
+        "A": "Sparfell Airways Sa",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OE-HPL\";",
+        "actual_answer": "飞机的注册号为OE-HPL的航班是属于捷克私人航空公司（Avcon Jet）。Avcon Jet是一家提供私人飞机包机服务的公司，注册号OE-HPL通常用于该公司的某架私人飞机。请注意，飞机的注册信息可能会随时间而改变，因此建议查看最新的航空注册数据库以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为SP-DLV的飞机是哪一家公司的？",
+        "A": "Bartolini Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"SP-DLV\";",
+        "actual_answer": "飞机注册号为SP-DLV的飞机属于波兰的Enter Air航空公司。这是一家主要经营包机航班的航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为EC-NGX的飞机是哪一家公司的？",
+        "A": "Heron Luftfahrt GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"EC-NGX\";",
+        "actual_answer": "飞机注册号EC-NGX属于西班牙的伏林航空公司（Vueling Airlines）。飞机注册号通常与一家航空公司相关联，以便于识别和管理。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N288HL的飞机是哪一家公司的？",
+        "A": "Rennia Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N288HL\";",
+        "actual_answer": "飞机注册号为N288HL的具体所属公司信息可能会有所变化，并且涉及到私人信息以及商业隐私，因此不一定能随时获取到最新和准确的信息。一般来说，这类信息可以通过在线航空注册数据库、联邦航空管理局（FAA）网站或相关航空跟踪服务来查询。如果你需要最新的信息，建议通过这些渠道进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-AHRN的飞机是哪一家公司的？",
+        "A": "Heron Luftfahrt GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-AHRN\";",
+        "actual_answer": "飞机注册号为D-AHRN的飞机属于德国汉莎航空（Lufthansa）。德国家用飞机的注册号以D-开头，接下来的字母通常用于识别具体的航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为ZS-DLB的飞机是哪一家公司的？",
+        "A": "Execujet South Africa Pty Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"ZS-DLB\";",
+        "actual_answer": "飞机的注册号为ZS-DLB表示这架飞机是在南非注册的。ZS是南非的航空器注册标识。然而，仅凭注册号很难确定具体是哪一家航空公司拥有这架飞机。飞机的注册信息可能会变更，具体所有者或运营公司需通过南非的相关航空注册机构或数据库进行查询以获得最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N440WP的飞机是哪一家公司的？",
+        "A": "Bell Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N440WP\";",
+        "actual_answer": "抱歉，我无法提供飞机注册号N440WP的具体归属信息。飞机的注册信息通常可以通过相关航空注册数据库进行查询，但这需要访问最新的公共或专业数据库。你可以尝试通过FAA（联邦航空管理局）或其他相关航空机构的官方网站来查询飞机的注册信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为XA-UUQ的飞机是哪一家公司的？",
+        "A": "Aero JL S.A de C.V",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"XA-UUQ\";",
+        "actual_answer": "飞机注册号为XA-UUQ的飞机属于墨西哥的航司Volaris。Volaris 是一家低成本航空公司，以提供墨西哥国内及国际航线为主。请注意，飞机的归属情况可能会变化，最好查阅最新的航空注册信息来确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为VH-PFV的飞机是哪一家公司的？",
+        "A": "Pacific Flight Services Pte Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"VH-PFV\";",
+        "actual_answer": "注册号为VH-PFV的飞机属于澳大利亚的小型航空运营商 Penjet Pty Ltd。这类注册号根据澳大利亚民航安全局（CASA）的注册信息可能会有变动，建议查询最新的航空器注册数据库以获得最准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N308JE的飞机是哪一家公司的？",
+        "A": "Vistajet Us Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N308JE\";",
+        "actual_answer": "飞机注册号为N308JE的飞机属于JetBlue航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-AMY的飞机是哪一家公司的？",
+        "A": "Air X Charter Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-AMY\";",
+        "actual_answer": "飞机注册号为9H-AMY的飞机属于艾尔马耳他（Air Malta）航空公司。9H 是马耳他航空器的注册标识。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为B-652S的飞机是哪一家公司的？",
+        "A": "Amber Aviation Limited",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"B-652S\";",
+        "actual_answer": "飞机注册号通常在特定的注册号范围内标识一家航空公司，但具体的注册信息可能会随时间变化。中国的民用航空器注册号通常以“B-”开头，后面跟随4位数字或字母数字组合。\n\n为了知道特定注册号B-652S是哪一家公司的飞机，需要查阅最新的民用航空器注册数据库或相关航空公司官网的信息。请注意，由于飞机可能会出售或转让，因此注册信息可能会改变。建议您查询最新的航空器注册记录或联系相关航空当局获取准备的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N11HM的飞机是哪一家公司的？",
+        "A": "Erin Air Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N11HM\";",
+        "actual_answer": "很抱歉，我无法实时查找或访问具体的飞机注册信息。飞机的注册号可以在相关的航空管理或追踪网站上查询，比如Flightradar24或FAA（美国联邦航空管理局）的网站。如果你需要特定的信息，建议通过这些平台查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为P4-787的飞机是哪一家公司的？",
+        "A": "Comlux Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"P4-787\";",
+        "actual_answer": "飞机注册号为P4-787的飞机注册地是阿鲁巴（注册标识为P4-），但具体是哪一家航空公司的飞机，通常可能需要查阅航空公司的机队信息或使用在线航空数据库服务如Planespotters、FlightRadar24等进行进一步验证。这些数据库通常会提供详细的飞机注册号和其归属航空公司的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N244JX的飞机是哪一家公司的？",
+        "A": "Superior Air Charter",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N244JX\";",
+        "actual_answer": "飞机注册号为N244JX的具体归属情况可能会发生变化，因此建议您查阅最新的航空注册数据库或相关航空追踪网站，如FAA（美国联邦航空管理局）注册数据库或FlightAware等，以获取实时信息。通常，这些网站会提供关于飞机当前所属航空公司或所有者的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N328GV的飞机是哪一家公司的？",
+        "A": "Grandview Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N328GV\";",
+        "actual_answer": "根据飞机注册号“N328GV”，该飞机属于谷歌公司（Google）的机队。这个机号通常与谷歌的私人飞机队伍相关联。需要注意的是，飞机的注册信息可能会随时间变化，建议查阅最新的航空注册数据库以获取最准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为HZ-A22的飞机是哪一家公司的？",
+        "A": "Alpha Star Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"HZ-A22\";",
+        "actual_answer": "飞机注册号为HZ-A22的飞机属于沙特阿拉伯的国家航空公司——沙特阿拉伯航空公司（Saudia）或其子公司。注册号以“HZ-”开头通常代表沙特阿拉伯的注册信息。具体的飞机信息可以通过航空追踪网站或者有关的航空注册数据库获取进一步详情。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为SX-CDY的飞机是哪一家公司的？",
+        "A": "KapaJet Sa",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"SX-CDY\";",
+        "actual_answer": "飞机注册号为SX-CDY的飞机属于希腊的爱琴海航空公司（Aegean Airlines）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9A-JSE的飞机是哪一家公司的？",
+        "A": "Jung Sky D.O.O.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9A-JSE\";",
+        "actual_answer": "飞机注册号为9A-JSE的飞机属于克罗地亚航空公司（Croatia Airlines）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为A7-CGF的飞机是哪一家公司的？",
+        "A": "Qatar Executive",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"A7-CGF\";",
+        "actual_answer": "飞机注册号A7-CGF属于卡塔尔航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N771DE的飞机是哪一家公司的？",
+        "A": "Koury Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N771DE\";",
+        "actual_answer": "飞机注册号为N771DE的飞机属于达美航空公司（Delta Air Lines）。注册号通常反映了航空公司对飞机的登记信息，其中以\"N\"开头的注册号表示该飞机在美国注册。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-AWBF的飞机是哪一家公司的？",
+        "A": "Air Independence",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-AWBF\";",
+        "actual_answer": "飞机注册号为D-AWBF的飞机属于德国柏林航空（Lufthansa CityLine）公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N76ZE的飞机是哪一家公司的？",
+        "A": "Chairman Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N76ZE\";",
+        "actual_answer": "抱歉，我无法查找实时或特定的飞机注册信息。不过，飞机注册号通常可以通过航空相关网站或航空公司的官方渠道查找到。如果你需要特定航空器的信息，建议通过这些途径或者相关飞行跟踪平台查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N650DR的飞机是哪一家公司的？",
+        "A": "Triton Airways LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N650DR\";",
+        "actual_answer": "抱歉，我无法实时访问或查询特定飞机的注册信息。飞机注册号通常可通过航空注册数据库或飞行追踪网站查询。这些平台提供关于某架飞机的详细信息，包括注册国家、所属公司以及飞机型号等信息。您可以尝试使用这些工具来查询您所需的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N71HC的飞机是哪一家公司的？",
+        "A": "Ventura Air Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N71HC\";",
+        "actual_answer": "很抱歉，我无法实时获取特定飞机的注册信息。飞机注册号的信息通常可以通过航空监管机构的数据库或相关服务提供商查询。如果你想查找N71HC的具体信息，建议访问FAA（美国联邦航空管理局）或相应国家的航空管理机构网站来获取最新的注册详情。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为A7-CEV的飞机是哪一家公司的？",
+        "A": "Qatar Executive",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"A7-CEV\";",
+        "actual_answer": "飞机的注册号A7-CEV属于卡塔尔航空公司（Qatar Airways）。\"A7-\" 是卡塔尔飞机的国籍代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为DC-TTT的飞机是哪一家公司的？",
+        "A": "Euro Link",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"DC-TTT\";",
+        "actual_answer": "根据国际民航组织（ICAO）的规定，飞机注册号通常以国家代码开头，后面跟随一系列字符。然而，没有任何国家的注册代码是“DC”。 常见的国家代码例如美国是“N”，英国是“G”，德国是“D”等。如果“DC-TTT”确实是某个飞机的注册号，则可能是一个自定义或非标准的代码，或者属于尚未公开的信息。如果这是一个真实的或需要特殊访问的信息，建议联系有关航空管理机构或航空公司以获取详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为SE-FNE的飞机是哪一家公司的？",
+        "A": "Jonair Affarsflyg AB",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"SE-FNE\";",
+        "actual_answer": "飞机注册号为SE-FNE的飞机属于北欧航空（SAS Scandinavian Airlines）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N140WT的飞机是哪一家公司的？",
+        "A": "Bell Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N140WT\";",
+        "actual_answer": "很抱歉，我无法提供关于飞机注册号N140WT的特定信息或其所属的航空公司信息。飞机的注册信息通常可以通过相关的航空管理机构或飞机数据库进行查询，例如美国的联邦航空管理局（FAA）网站。如果你有兴趣，可以通过这些渠道来获取相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N939HE的飞机是哪一家公司的？",
+        "A": "Charter Jet Transport Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N939HE\";",
+        "actual_answer": "飞机的注册号通常与特定航空公司或租赁公司的飞机相对应。然而，飞机的注册信息是动态的，经常发生变化，因此要获取最新的信息，你可以通过在线航空数据库或相关的航空跟踪工具进行查询，如FlightAware、Flightradar24或FAA的飞机注册查询系统。建议使用这些工具以获得准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N534XJ的飞机是哪一家公司的？",
+        "A": "Vistajet Us Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N534XJ\";",
+        "actual_answer": "飞机注册号为N534XJ的飞机属于美国的达美航空（Delta Air Lines）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-VJN的飞机是哪一家公司的？",
+        "A": "Vista Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-VJN\";",
+        "actual_answer": "飞机注册号为9H-VJN的飞机属于VistaJet公司。这是一家提供私人喷气机租赁服务的公司，总部位于马耳他。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N1624K的飞机是哪一家公司的？",
+        "A": "Lyon Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N1624K\";",
+        "actual_answer": "抱歉，我无法实时访问特定飞机注册号的信息，并且这些信息可能会因飞机的销售、出租或运营变更等原因而发生变化。建议您通过相关的航空监管机构或使用飞机追踪服务的网站来获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N356BZ的飞机是哪一家公司的？",
+        "A": "Ultimate Jetcharters LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N356BZ\";",
+        "actual_answer": "很抱歉，我无法提供有关特定飞机注册号的信息，包括其隶属的航空公司或机主。这些信息可以通过航空爱好者社区网站或相关航空追踪服务获得。如果你需要这方面的信息，建议查阅公众可以获取的在线航空登记资料或与相关专业人士联系。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-CBBS的飞机是哪一家公司的？",
+        "A": "PAD Aviation Service",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-CBBS\";",
+        "actual_answer": "很抱歉，我不能实时查询飞机的注册信息。然而，飞机的注册号可以通过一些在线航空跟踪平台或国家航空管理局的数据库进行查询，以确定其所属的航空公司或运营者。你可以尝试在这些平台上输入D-CBBS来获取相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为TC-ACN的飞机是哪一家公司的？",
+        "A": "Bonair",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"TC-ACN\";",
+        "actual_answer": "飞机注册号为TC-ACN的飞机通常属于土耳其的一家航空公司，因为「TC」是土耳其的国籍标识。具体是哪家航空公司的可以通过网上的飞机注册数据库或者追踪工具进行查询。不过注册号的信息可能会变动，所以建议通过最新的实时数据来确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N224LD的飞机是哪一家公司的？",
+        "A": "Aircraft Services Group Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N224LD\";",
+        "actual_answer": "抱歉，我无法实时查询特定飞机的注册信息。不过，你可以通过一些在线飞行跟踪服务或航空数据库（如Flightradar24、FlightAware或FAA的飞机注册数据库）来查找飞机注册号N224LD的详细信息。这些平台通常可以提供有关特定飞机的运营公司、机型、制造商等信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N389RA的飞机是哪一家公司的？",
+        "A": "Eastern Air Express",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N389RA\";",
+        "actual_answer": "注册号为N389RA的飞机属于美国一家叫做JetBlue Airways的航空公司。这些识别码通常用于商业飞机的登记和识别，具体详情可能会因为飞机的买卖或者租赁等原因而有所改变。如需确认最新信息，请查阅相关的航空注册数据库或联系相关航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-VBG的飞机是哪一家公司的？",
+        "A": "Sparfell Malta Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-VBG\";",
+        "actual_answer": "飞机注册号为9H-VBG的飞机属于VistaJet。VistaJet是一家提供私人和商务喷气机包机服务的公司，注册号中“9H”是马耳他登记的飞机代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为VH-PFS的飞机是哪一家公司的？",
+        "A": "Pacific Flight Services Pte Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"VH-PFS\";",
+        "actual_answer": "飞机的注册号通常与具体的航空公司或飞机运营公司相关联。然而，由于注册信息可能会随时变更，我无法提供实时信息。你可以通过访问澳大利亚民航安全局（CASA）的网站或者相关的在线飞机注册数据库来查找这一具体飞机的当前所有者或运营者信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N768JJ的飞机是哪一家公司的？",
+        "A": "Journey Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N768JJ\";",
+        "actual_answer": "抱歉，我无法实时访问当前的数据库来查询特定飞机的注册信息。通常，飞机的注册号可以通过在线飞机追踪网站或者航空公司的官方网站查询到。如果你需要了解这一信息，建议查看相关的飞行追踪平台或联系航空公司了解详情。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为VP-CYT的飞机是哪一家公司的？",
+        "A": "Gama Aviation Ltd(UK)",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"VP-CYT\";",
+        "actual_answer": "很抱歉，我无法实时查询特定飞机注册号的信息。不过，一般来说，飞机的注册号可以通过航空公司、飞机数据库或者相关航空网站查询到。你可以查阅线上资源如飞机跟踪网站（如Flightradar24）或者航空注册资料库以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N2664F的飞机是哪一家公司的？",
+        "A": "Wisconsin Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N2664F\";",
+        "actual_answer": "很抱歉，我无法实时访问数据库来查询特定飞机注册号的信息，如N2664F。因此，我无法确认与特定注册号关联的公司。建议您通过航空业的相关公开数据库或网站进行查询，例如FAA（美国联邦航空管理局）注册数据库，以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N8JW的飞机是哪一家公司的？",
+        "A": "Mach Point Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N8JW\";",
+        "actual_answer": "飞机注册号为N8JW的具体信息并不在公开的数据库中持续更新，因此我无法提供当前这架飞机所属的航空公司或公司的名称。通常情况下，飞机的注册号可以通过向相关航空管理机构查询或在飞行跟踪网站上获得更多信息。建议您检查最新的在线资源或联系相关管理机构以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-III的飞机是哪一家公司的？",
+        "A": "SkyFirst",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-III\";",
+        "actual_answer": "飞机注册号为9H-III的飞机注册在马耳他的登记局，因为“9H”是马耳他飞机的注册前缀。具体到该注册号对应哪一家航空公司或私人公司，这种信息可能会频繁变动。通常，这类信息可以通过飞机追踪服务如Flightradar24或通过相关航空管理机构的数据库进行查询。如果有更具体的需求或上下文，建议查阅最新的飞机注册信息数据库或相关网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-VCK的飞机是哪一家公司的？",
+        "A": "Vista Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-VCK\";",
+        "actual_answer": "飞机注册号为9H-VCK的飞机属于VistaJet公司。VistaJet是一家提供商务和私人包机服务的航空公司，注册地为马耳他，9H是其常用的航空器注册国代码。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N220PF的飞机是哪一家公司的？",
+        "A": "Executive Air Taxi Corporation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N220PF\";",
+        "actual_answer": "飞机注册号为N220PF的飞机为微软公司（Microsoft Corporation）所有。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C-FXAJ的飞机是哪一家公司的？",
+        "A": "Chartright Air Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FXAJ\";",
+        "actual_answer": "抱歉，我无法实时查找或访问特定飞机注册号的当前信息。飞机注册号通常可以通过在线飞机追踪服务或航空公司的官方网站进行查询。这些平台可以提供关于飞机型号、运营的航空公司以及航班历史等相关信息。如果你需要关于C-FXAJ的具体信息，建议你使用这些专业工具或联系相关航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为G-JNRE的飞机是哪一家公司的？",
+        "A": "Air Charter Scotland",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"G-JNRE\";",
+        "actual_answer": "飞机注册号为G-JNRE的飞机属于英国航空公司Jet2。这家航空公司以提供包机和低成本航班经营为主，服务于欧洲的多个目的地。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N64VM的飞机是哪一家公司的？",
+        "A": "Pinnacle Air Charter LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N64VM\";",
+        "actual_answer": "飞机注册号为N64VM的飞机曾属于微软公司（Microsoft Corporation）。请注意，飞机的注册信息可能会随时间改变，因此建议查阅最新的航空登记资料以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N178WF的飞机是哪一家公司的？",
+        "A": "Skytech Travel LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N178WF\";",
+        "actual_answer": "根据公开的注册信息，飞机的注册号N178WF属于美国环球航空公司（World Atlantic Airlines）。这家公司主要提供包机服务和客运航班。如果你需要进一步的信息，建议直接联系航空公司或查阅官方的航空注册数据库。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N772HM的飞机是哪一家公司的？",
+        "A": "Aviation Charter Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N772HM\";",
+        "actual_answer": "飞机注册号 N772HM 属于美国夏威夷航空公司（Hawaiian Airlines）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N835CB的飞机是哪一家公司的？",
+        "A": "Latitude 33 Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N835CB\";",
+        "actual_answer": "不好意思，我无法直接查询到特定飞机注册号的信息，包括N835CB的所属公司。不过，您可以通过一些在线航空数据库或国家航空管理机构查询飞机注册信息，以获得详细的归属信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N551ST的飞机是哪一家公司的？",
+        "A": "New World Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N551ST\";",
+        "actual_answer": "抱歉，我无法提供特定飞机注册号N551ST的实时信息或其所属公司的详细信息。飞机注册信息可以在相关航空监管机构的网站上查找，比如美国的联邦航空管理局（FAA）。您可以访问他们的网站，使用注册号进行查询以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N720XJ的飞机是哪一家公司的？",
+        "A": "XO Jet Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N720XJ\";",
+        "actual_answer": "飞机注册号为N720XJ的飞机属于达美航空（Delta Air Lines）的子公司Endeavor Air。这个注册号通常分配给该公司运营的庞巴迪CRJ（一种支线客机）系列飞机。请注意，具体的分配可能会有变动，因此建议查阅最新的信息来确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N613KJ的飞机是哪一家公司的？",
+        "A": "Cirrus Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N613KJ\";",
+        "actual_answer": "很抱歉，我无法实时查找飞机注册号的信息。飞机注册号（也称为尾号）可以通过航空监管机构的数据库或航空爱好者的在线平台进行查询。例如，美国的联邦航空管理局（FAA）有一个在线注册信息数据库，你可以使用它来查找与该注册号相关的详细信息。如果需要准确的信息，请查阅相关的官方数据库或联系相关机构。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N959CR的飞机是哪一家公司的？",
+        "A": "Moser Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N959CR\";",
+        "actual_answer": "飞机注册号为N959CR的飞机是属于多米尼加国家航空公司（Dominican Wings）的。这架飞机是一架空客A321。在不同时间，飞机的注册信息可能会发生变化，因此建议定期核查最新的航空注册数据以获取准确信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N550TN的飞机是哪一家公司的？",
+        "A": "Jet Air Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N550TN\";",
+        "actual_answer": "抱歉，我无法查找特定飞机注册号如N550TN所对应的公司的实时信息。飞机的注册信息可能会随着时间而变化，并且可能会受到隐私和数据保护的限制。您可以尝试通过在线数据库或航空注册查询网站（如FAA的注册数据库）进行查询，以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N525KY的飞机是哪一家公司的？",
+        "A": "Nexgen Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N525KY\";",
+        "actual_answer": "对不起，我无法提供特定飞机注册号的实时信息，包括它所属的公司或运营商。飞机的注册信息可能会随时间更改，因此建议你查阅最新的航空注册数据库或相关的航空监管机构以获取此类信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N116TT的飞机是哪一家公司的？",
+        "A": "Orchid Island Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N116TT\";",
+        "actual_answer": "很抱歉，我无法实时获取或查询具体飞机的最新注册信息，如飞机注册号N116TT的当前所属公司。飞机的注册信息可以通过相关航空管理部门或飞机追踪网站查询，比如FAA（美国联邦航空管理局）的注册数据库或其他提供航空数据的在线服务。如需详细的信息，建议访问这些平台进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N283VC的飞机是哪一家公司的？",
+        "A": "Air Smart",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N283VC\";",
+        "actual_answer": "飞机注册号为N283VC的具体飞机所属公司信息并不在我的训练数据中。飞机的注册信息通常可以通过相关航空管理机构的网站或航空追踪网站查询。例如，美国的飞机注册信息可以通过联邦航空管理局（FAA）的网站查询。你可以访问这些网站来获取最新的和具体的注册信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为HA-BGQ的飞机是哪一家公司的？",
+        "A": "Fly-coop Legiszolgaltato Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"HA-BGQ\";",
+        "actual_answer": "飞机注册号为HA-BGQ的飞机注册属于匈牙利。具体到哪一家公司需要查阅最新的航空器注册信息，因为航空公司可以在一段时间内更换其机队的注册号。建议您查看匈牙利的民航局或相关航空注册机构的数据库以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OE-GDR的飞机是哪一家公司的？",
+        "A": "Salzburg Jetaviation GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OE-GDR\";",
+        "actual_answer": "飞机注册号为OE-GDR的飞机属于奥地利公司的注册代码。但是，具体是哪一家航空公司或飞机运营商拥有这架飞机的信息可能需要查询最新的航空器注册数据库或相关的航空信息平台。建议你查阅最新的航空注册记录，或者联系相关航空管理部门以获得最准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N160GG的飞机是哪一家公司的？",
+        "A": "Aurora Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N160GG\";",
+        "actual_answer": "很抱歉，我无法提供飞机注册号N160GG对应的具体公司信息。不过，您可以通过访问相关的航空数据网站或者查询国家民航管理机构的数据库来获取更多的信息。通常这些注册信息是公开的，并且可以通过在线资源进行查阅。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N277XX的飞机是哪一家公司的？",
+        "A": "Journey Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N277XX\";",
+        "actual_answer": "很抱歉，我无法实时访问特定飞机的注册信息。飞机的注册信息通常包括所属航空公司或租赁公司的详细资料，这些信息可以通过航空监管机构的数据库或航空爱好者网站获取。对于美国登记的飞机，您可以通过美国联邦航空管理局 (FAA) 的登记数据库进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C-GCAQ的飞机是哪一家公司的？",
+        "A": "Aviation Starlink Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-GCAQ\";",
+        "actual_answer": "飞机注册号为C-GCAQ的具体信息无法实时提供。不过，加拿大的飞机注册号以“C-”开头，因此这个飞机注册号属于加拿大。要查找特定飞机的注册信息，您可以通过加拿大的民航局或类似的航空注册数据库进行搜索，以获取最新的详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-VID的飞机是哪一家公司的？",
+        "A": "Vista Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-VID\";",
+        "actual_answer": "飞机注册号为9H-VID的飞机属于VistaJet，这是一家提供私人商务航空服务的公司。VistaJet的飞机通常使用马耳他（国家代码为9H）的注册号，因为公司在马耳他注册了一部分机队。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为9H-BOD的飞机是哪一家公司的？",
+        "A": "Air Charter Scotland",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-BOD\";",
+        "actual_answer": "飞机注册号为9H-BOD的飞机由Malta MedAir运营。这是一家位于马耳他的航空公司，通常提供包机服务以及与其他航空公司的湿租赁（ACMI）合作。请注意，由于航空公司可能会在不同时间租赁或购买飞机，具体的运营公司也有可能发生变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-IETB的飞机是哪一家公司的？",
+        "A": "Fas Finow Air Service GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-IETB\";",
+        "actual_answer": "飞机的注册号为D-IETB的情况下，根据国际航空器登记信息的标准格式，这个注册号似乎表明这是一架在德国注册的飞机，因为\"D-\"是德国的国家代码。不过具体到哪家公司的飞机，您可能需要查询相关航空登记或航空公司运营数据库，比如德国的航空局或使用一些在线平台和数据库提供的服务，以获取最新、具体的航班和运营公司信息。这些信息通常不是公开的，需要通过专业渠道或者订阅服务进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N247FS的飞机是哪一家公司的？",
+        "A": "Aviation Advisor Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N247FS\";",
+        "actual_answer": "很抱歉，我无法实时查询特定飞机的注册号和相关信息。飞机注册信息通常可以通过航空局或者相关的航空信息服务获取，例如美国的联邦航空管理局（FAA）的注册数据库。如果您需要这类信息，可以通过访问这些官方网站或者使用专门的航空信息应用程序查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N610GW的飞机是哪一家公司的？",
+        "A": "Journey Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N610GW\";",
+        "actual_answer": "飞机注册号为N610GW的飞机属于美国的NetJets公司。这是一家提供私人飞机共享和租赁服务的公司。请注意，飞机注册信息可以随时变动，建议查阅最新的航空数据库或相关资料以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OE-FIX的飞机是哪一家公司的？",
+        "A": "Voyage Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OE-FIX\";",
+        "actual_answer": "飞机注册号为OE-FIX的飞机属于捷克飞机制造商Aeropilot公司。该飞机型号通常为轻型运动飞机，如Aeropilot Legend 540。如果需要获取更详细的信息，建议查询最新的航空注册数据库或联系相关航空管理机构。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N415JA的飞机是哪一家公司的？",
+        "A": "Northern Jet Management",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N415JA\";",
+        "actual_answer": "抱歉，我无法提供特定飞机注册号对应的航空公司信息。飞机的注册号与航空公司的信息通常可以通过航空追踪网站或航空数据库获取。你可以尝试使用Flightradar24或其他类似的服务查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为A7-CHA的飞机是哪一家公司的？",
+        "A": "Qatar Executive",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"A7-CHA\";",
+        "actual_answer": "飞机注册号A7-CHA属于卡塔尔航空公司（Qatar Airways）。根据国际航空代码“A7”，这是卡塔尔的国家代码，用于卡塔尔航空的飞机注册。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-IRL的飞机是哪一家公司的？",
+        "A": "Air Charter Scotland",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-IRL\";",
+        "actual_answer": "注册号为9H-IRL的飞机属于马耳他航空公司Malta Air。这是一家与瑞安航空合作的航空公司，注册编号以“9H-”开头的飞机通常是在马耳他注册的。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N46CV的飞机是哪一家公司的？",
+        "A": "Executive Air Taxi Corporation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N46CV\";",
+        "actual_answer": "飞机注册号为N46CV的飞机属于高空冒险有限公司（High Adventure LLC），该公司是一家从事特技飞行的公司。该飞机是一架名为“Sean Tucker's Challenger III”的特技飞机，由著名特技飞行员Sean Tucker驾驶。请注意，飞机的注册信息可能会发生变化，建议核实最新资料以确保准确性。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N707WB的飞机是哪一家公司的？",
+        "A": "Saturn Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N707WB\";",
+        "actual_answer": "注册号为N707WB的飞机属于美国华纳兄弟公司（Warner Bros. Entertainment Inc.）。该注册号通常用于私人飞机而不是商业航班。如果您需要更多详细信息，建议查阅相关航空注册数据库或联系有关管理机构以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N875DM的飞机是哪一家公司的？",
+        "A": "Golden State Air Charter LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N875DM\";",
+        "actual_answer": "很抱歉，我无法提供特定飞机注册号的信息。飞机注册号是基于所在国家的航空注册管理部门分配的，通常可以通过相应国家的航空管理数据库或者飞行跟踪网站查询具体信息。如果你需要查找特定飞机的信息，建议使用Flightradar24、FlightAware等工具，或者查看相关的公开航空注册数据库。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N631AD的飞机是哪一家公司的？",
+        "A": "Priester Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N631AD\";",
+        "actual_answer": "无法通过飞机注册号直接查到对应的公司信息，因为飞机的管理和所有权信息可能发生变化。你可以通过联系相关的航空监管机构，如美国的联邦航空管理局（FAA），以获取最新的信息。他们通常提供一个在线数据库，让公众可以查询飞机的注册信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N448CJ的飞机是哪一家公司的？",
+        "A": "Mira Vista Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N448CJ\";",
+        "actual_answer": "抱歉，但我无法提供特定飞机注册号对应的公司信息。飞机的注册信息通常可以通过民航管理机构的数据库或相关网站查到。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N950SV的飞机是哪一家公司的？",
+        "A": "Sky LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N950SV\";",
+        "actual_answer": "抱歉，我无法提供飞机注册号与其所属公司的具体对应信息。如果您想查询特定飞机的注册信息，可以通过相关航空管理机构的网站或数据库，比如美国联邦航空管理局（FAA）的飞机注册数据库进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为2-NITE的飞机是哪一家公司的？",
+        "A": "Volare Aviation Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"2-NITE\";",
+        "actual_answer": "飞机的注册号为2-NITE的具体信息并不是公开的常识，可能需要查询最新的航空注册数据库或联系相关航空监管机构才能获得。如果该飞机属于某家公司的私人或商业用途，公司可能并未公开此信息。建议查看专业的飞机注册服务或相关网站获取更准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N702QV的飞机是哪一家公司的？",
+        "A": "Cirrus Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N702QV\";",
+        "actual_answer": "飞机注册号为N702QV的注册信息无法在我的数据库中直接找到。然而，注册号可以通过美国联邦航空管理局（FAA）的注册数据库或其他相关航空登记机构进行查询，以获取详细信息。飞机的注册通常信息会包括所属航空公司的名字、飞机机型、制造年份等。你可以访问FAA的网站或者其他相关资料库来确认具体的注册信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C-GNFN的飞机是哪一家公司的？",
+        "A": "VIH Execujet Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-GNFN\";",
+        "actual_answer": "飞机注册号为C-GNFN的飞机属于加拿大航空公司（Air Canada）。飞机注册号可以用来追踪具体的飞行器及其所属公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-IPOD的飞机是哪一家公司的？",
+        "A": "Proair Charter Transport GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-IPOD\";",
+        "actual_answer": "飞机注册号为D-IPOD的飞机属于Novespace公司。Novespace是一家提供失重飞行和其他科学研究飞行的公司，运营一架名为“Zero-G”的空客A310飞机。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为B-5999的飞机是哪一家公司的？",
+        "A": "Beijing Red Cross Emergency Med. Center",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"B-5999\";",
+        "actual_answer": "飞机注册号为B-5999的飞机属于中国国际航空公司（Air China）。这个注册号对应的是一架空客A330飞机。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N300RC的飞机是哪一家公司的？",
+        "A": "Castle Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N300RC\";",
+        "actual_answer": "飞机的注册号可以用来查询飞机的所有信息，包括它的所有者和运营公司。然而，具体的注册信息可能会随时间变化，并且可能需要专门的数据库或工具，例如航空注册数据库（如FAADatabase或Planespotters）才能进行详细查询。\n\n截至我获取数据的时间，我无法直接查询到N300RC的当前状态或所属公司。建议使用在线飞机注册数据库或联系相关航空管理机构获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N451KR的飞机是哪一家公司的？",
+        "A": "Worldwide Jet Charter Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N451KR\";",
+        "actual_answer": "抱歉，我无法提供特定飞机注册号（如N451KR）的所属公司信息。飞机注册信息经常更新，具体的注册信息可以通过相关航空管理机构或在线航空数据库查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为VH-VKX的飞机是哪一家公司的？",
+        "A": "Flight Options (Australia) Pty Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"VH-VKX\";",
+        "actual_answer": "注册号为VH-VKX的飞机属于澳洲航空（Qantas）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N20XP的飞机是哪一家公司的？",
+        "A": "Venture Jets Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N20XP\";",
+        "actual_answer": "抱歉，我无法确定特定飞机注册号N20XP的所有者或归属公司。飞机注册信息可能会发生变化，通常需要通过相关的航空注册数据库或者联系相关航空管理机构进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-VFE的飞机是哪一家公司的？",
+        "A": "Vista Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-VFE\";",
+        "actual_answer": "注册号为9H-VFE的飞机属于VistaJet，一家提供私人和商务航空服务的公司。9H-前缀表明这架飞机注册在马耳他，VistaJet在该地拥有飞机注册。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为9H-ARE的飞机是哪一家公司的？",
+        "A": "Albinati Aeronautics",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-ARE\";",
+        "actual_answer": "飞机注册号为9H-ARE的飞机属于马耳他注册的航空公司。9H-前缀是马耳他飞机的注册标志。具体航空公司的信息可能会发生变化，因此建议你查阅最新的航空公司数据库或使用在线航空器追踪工具以获取准确的结果。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为VH-VSK的飞机是哪一家公司的？",
+        "A": "Execujet Australia Pty Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"VH-VSK\";",
+        "actual_answer": "注册号为VH-VSK的飞机属于澳大利亚航空公司捷星航空（Jetstar Airways）。飞机注册号通常与特定的航空公司相关联，这个注册号的前缀“VH”表示该飞机注册于澳大利亚。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N111CM的飞机是哪一家公司的？",
+        "A": "Thrive Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N111CM\";",
+        "actual_answer": "很抱歉，我无法实时访问最新的数据库或在线信息来确认飞机注册号为N111CM的飞机属于哪家公司。飞机的注册信息通常可以通过航空监管机构的数据库进行查询，比如美国联邦航空管理局（FAA）的注册数据库。你可以访问这些官方网站或相关平台进行查找。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为TC-VTN的飞机是哪一家公司的？",
+        "A": "Vatanjet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"TC-VTN\";",
+        "actual_answer": "飞机注册号为TC-VTN属于土耳其的Corendon Airlines。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-FCM的飞机是哪一家公司的？",
+        "A": "Air X Charter Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-FCM\";",
+        "actual_answer": "飞机注册号为9H-FCM的飞机隶属于TAG航空公司（TAG Aviation）。注册编号以“9H-”开头的飞机通常在马耳他注册。请注意，飞机的所属公司可能会发生变更，因此建议核实最新信息以确保准确。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C-FJDQ的飞机是哪一家公司的？",
+        "A": "Max Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FJDQ\";",
+        "actual_answer": "飞机注册号为C-FJDQ的飞机注册于加拿大。然而，仅凭注册号并不能确定具体是哪家航空公司拥有这架飞机，因为飞机的所有权和运营状况可能会随时发生变化。这个信息通常需要通过注册号在相关的航空注册网站或者数据库来查询。另外，您可以通过联系加拿大的航空监管机构，例如加拿大运输局，了解更详细和最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N43GV的飞机是哪一家公司的？",
+        "A": "Aircraft Transport Service",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N43GV\";",
+        "actual_answer": "飞机注册号为N43GV的飞机属于湾流航空航天公司（Gulfstream Aerospace Corporation）。湾流的飞机通常使用\"N\"作为注册标记的开头字母，这是美国的航空器注册标识，后面的数字和字母则具体指代该架飞机的型号和生产序列。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N390SB的飞机是哪一家公司的？",
+        "A": "Lyddon Aero Center",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N390SB\";",
+        "actual_answer": "飞机的注册号是一个唯一的识别码，用来标识该飞机的具体信息。根据航空信息的惯例，注册号通常由国家的航空管理机构进行分配，并记录与该飞机相关的详细信息，包括所属航空公司、飞机型号等等。然而，这类具体的实时信息会随时更新或变更。\n\n若需查询注册号为N390SB的飞机所属的航空公司，最直接的方法是通过在线航空数据库或联系国家的航空管理部门，如美国的联邦航空管理局（FAA）。这类机构网站通常提供查询功能，可以帮助识别飞机的注册信息，包括当前的运营者或所有者。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N900LY的飞机是哪一家公司的？",
+        "A": "Lyon Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N900LY\";",
+        "actual_answer": "飞机的注册号为N900LY，根据常见的信息披露，这架飞机通常与美国歌手及企业家泰勒·斯威夫特（Taylor Swift）有关。不过，飞机注册信息可能会有所变动或更新，建议通过最新的航空数据库或相关资源进行确认，以获得准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-EGTD的飞机是哪一家公司的？",
+        "A": "Sylt Air GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-EGTD\";",
+        "actual_answer": "抱歉，我无法实时访问互联网以获取特定飞机的注册信息。飞机的注册信息通常由各国的民航局或相关航空管理机构管理。如果您想了解一架特定飞机的注册详情，建议您查阅相关的民航数据库或网站，如Flightradar24、Planespotters或国家航空注册管理部门的网站。这些地方通常可以提供飞机注册号的详细信息，包括所属公司或个人的相关资料。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为HB-JFI的飞机是哪一家公司的？",
+        "A": "Jet Aviation Business Jets AG",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"HB-JFI\";",
+        "actual_answer": "注册号为HB-JFI的飞机属于瑞士国际航空公司（Swiss International Air Lines）。飞机的注册号通常是由所在国家的航空管理机构分配的，其中“HB”是瑞士的注册标识。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OK-PRM的飞机是哪一家公司的？",
+        "A": "Alpha Aviation S.R.O.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OK-PRM\";",
+        "actual_answer": "飞机注册号为OK-PRM的飞机属于捷克航空公司（Czech Airlines）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N600CA的飞机是哪一家公司的？",
+        "A": "Meta Special Aerospace Transportation, Llc",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N600CA\";",
+        "actual_answer": "飞机注册号为N600CA的飞机属于冻结公司飞机融资和租赁公司（CAI公司，Corporate Aircraft Financing and Leasing Company, CAI）。然而，请注意，飞机注册号可能会随着飞机的出售或租赁而更改，因此建议查阅最新的航空注册数据库以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为LV-CCO的飞机是哪一家公司的？",
+        "A": "Baires Fly S.A",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"LV-CCO\";",
+        "actual_answer": "飞机注册号为LV-CCO的飞机属于阿根廷航空公司（Aerolíneas Argentinas）。该注册号通常用于指示一架飞机的注册信息和所属公司。请注意，航空器注册信息可能会发生变动，建议核实最新信息以确保准确。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N100WT的飞机是哪一家公司的？",
+        "A": "Jet Services Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N100WT\";",
+        "actual_answer": "飞机注册号为N100WT的信息并不在公开常识范围内，因此我无法确切地告诉你这架飞机所属的公司。建议你查询相关的航空数据库或联系相关航空机构获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N579M的飞机是哪一家公司的？",
+        "A": "Jet Air Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N579M\";",
+        "actual_answer": "很抱歉，我无法实时查询飞机注册号或特定飞机的所属公司。为了获取准确的信息，你可以通过航空公司官方网站、航空追踪网站或者相关的航空数据库查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N561ST的飞机是哪一家公司的？",
+        "A": "Meridian Air Group",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N561ST\";",
+        "actual_answer": "飞机注册号为N561ST的飞机属于美国航空公司。注册号可以用于识别飞机的所有权和所属公司，不过具体信息可能会有所变化，建议查看最新的航空注册资料或相关数据库以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-CJMS的飞机是哪一家公司的？",
+        "A": "Platoon Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-CJMS\";",
+        "actual_answer": "飞机注册号为D-CJMS的喷气式飞机是一架庞巴迪挑战者300，归属于德国的MHS Aviation公司。MHS Aviation是一家专营商务航空和包机服务的公司。如果需要获取最新信息，建议查阅相关航空数据库或联系MHS Aviation公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N225GT的飞机是哪一家公司的？",
+        "A": "Charter Airlines LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N225GT\";",
+        "actual_answer": "飞机注册号N225GT属于亚马逊航空（Amazon Air）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OO-RKS的飞机是哪一家公司的？",
+        "A": "ASL Group",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OO-RKS\";",
+        "actual_answer": "注册号为OO-RKS的飞机是比利时航空公司TUI fly Belgium的飞机。OO-是比利时民航飞机的注册前缀。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N170JC的飞机是哪一家公司的？",
+        "A": "Dreamline Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N170JC\";",
+        "actual_answer": "很抱歉，我无法实时访问数据库或互联网来查找最新的飞机注册信息。不过，根据美国联邦航空管理局（FAA）的规定，飞机注册号是用来识别飞机的独特标识符，可以通过FAA的官网或者相关航空来查找具体信息。如果你需要这种信息，你可以尝试联系相关的航空公司或者通过FAA的注册数据库进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N710VM的飞机是哪一家公司的？",
+        "A": "Thrive Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N710VM\";",
+        "actual_answer": "飞机注册号为N710VM的具体所属公司信息并不在我的已知数据中。飞机注册号可以变更或过期，且可能涉及不同的租用或运营安排。如果你需要确切的信息，建议联系相关航空管理机构或者使用在线飞机追踪工具来查找最新的登记信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N904FL的飞机是哪一家公司的？",
+        "A": "Private Jets Inc",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N904FL\";",
+        "actual_answer": "飞机注册号为N904FL的飞机属于美国货运航空公司Kalitta Charters II。该公司主要从事包机货运和医疗运输服务。请注意，飞机的归属可能会随时间变化，因此建议核实最新信息以确保准确性。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N560CF的飞机是哪一家公司的？",
+        "A": "Corporate Flight Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N560CF\";",
+        "actual_answer": "抱歉，我无法实时访问注册信息或特定飞机的最新数据。飞机的注册号通常可以通过航空公司的官方资源或航空追踪网站（如FlightAware、Flightradar24）来查询，以获取其运营公司的信息。建议您访问这些网站或与相关航空管理机构联系以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N93AM的飞机是哪一家公司的？",
+        "A": "Executive Air Taxi Corporation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N93AM\";",
+        "actual_answer": "抱歉，我无法提供特定飞机注册号对应的航空公司或拥有者的信息。飞机注册信息通常由国家航空管理机构管理，您可以通过这些机构的官方网站或其他合法渠道进行查询。请确保遵循相关法律和隐私规定。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为ES-PVH的飞机是哪一家公司的？",
+        "A": "Panaviatic AS",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"ES-PVH\";",
+        "actual_answer": "登记号为ES-PVH的飞机属于Nordica航空公司。Nordica是一家总部位于爱沙尼亚的航空公司，提供定期航班和包机服务。需要注意的是，飞行器的注册信息可能会发生变化，因此建议查阅相关航空注册数据库以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N345LC的飞机是哪一家公司的？",
+        "A": "West Coast Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N345LC\";",
+        "actual_answer": "很抱歉，我无法即时查询具体航班或飞机注册信息。如果您想知道某架飞机的所属公司，建议使用航空追踪网站或服务，例如FlightAware、Flightradar24等，通过这些平台输入飞机注册号即可获得相关信息。这些网站通常可以提供关于航班状态、飞机所属航空公司等详细资料。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-VCB的飞机是哪一家公司的？",
+        "A": "Vista Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-VCB\";",
+        "actual_answer": "飞机注册号9H-VCB属于马耳他公司VistaJet。VistaJet是一家提供公务机包机服务的公司，以其银色和红色条纹的飞机涂装而闻名。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为9H-VCN的飞机是哪一家公司的？",
+        "A": "Vista Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-VCN\";",
+        "actual_answer": "飞机注册号为9H-VCN的飞机属于Lufthansa（汉莎航空）的子公司Eurowings（欧洲之翼）。这种注册编号表明该飞机在马耳他注册，通常租赁给其他航空公司使用。具体信息可能随时间更新，因此建议查看最新的航空数据库或公司公告以获取准确信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N527NP的飞机是哪一家公司的？",
+        "A": "Alerion Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N527NP\";",
+        "actual_answer": "飞机注册号为N527NP的飞机信息并不在我的数据库中。飞机的注册号可以查到其所属的航空公司或租赁公司，但这些具体信息通常需要通过航空登记机构、飞行跟踪服务或相关公司的官方渠道查询。您可以通过网站如FlightAware、Flightradar24或联系美国联邦航空管理局（FAA）来获得更详细的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N383JP的飞机是哪一家公司的？",
+        "A": "Atlanta Air Charter Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N383JP\";",
+        "actual_answer": "很抱歉，我无法实时查询或访问特定飞机的注册信息数据库。飞机的注册号可以在航空监管机构的网站上查找到，例如美国的联邦航空管理局（FAA）数据库。你可以通过这些官方网站查询最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N851GV的飞机是哪一家公司的？",
+        "A": "My Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N851GV\";",
+        "actual_answer": "飞机注册号为N851GV的飞机属于美国公司Gulfstream Aerospace Corporation。这家公司主要制造私人喷气式飞机。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N50NM的飞机是哪一家公司的？",
+        "A": "Aircharters Worldwide Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N50NM\";",
+        "actual_answer": "飞机的注册号一般是由各国的航空管理机构颁发的，用于识别飞机的归属和用途。注册号为N50NM的飞机，其注册号开头的“N”代表该飞机是在美国注册的，因为“N”是美国联邦航空管理局（FAA）指定的国际航空器注册国号。\n\n至于N50NM具体是哪一家公司的飞机，这种信息通常可以通过FAA的注册数据库查询到。不过，这类信息可能会定期更新，且出于隐私和商业机密的考虑，不总是公开发布。如果需要获取最新的信息，建议访问FAA的网站或联系相关航空管理部门进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N339TA的飞机是哪一家公司的？",
+        "A": "Tropic Ocean Airways",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N339TA\";",
+        "actual_answer": "注册号为N339TA的飞机属于塔卡国际航空（TACA Airlines）。该航空公司是中美洲的一家航空公司，总部位于萨尔瓦多。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N884SG的飞机是哪一家公司的？",
+        "A": "STA Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N884SG\";",
+        "actual_answer": "很抱歉，我无法实时访问数据库或互联网来提供最新的信息。然而，截至我训练数据的时间，我没有关于具体注册号N884SG的飞机所属公司的信息。为了获取最新的信息，可以通过在线航班跟踪服务或者国家航空注册数据库查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N301RD的飞机是哪一家公司的？",
+        "A": "Saturn Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N301RD\";",
+        "actual_answer": "飞机注册号N301RD的具体归属信息，例如所属公司或运营状态，可以通过相关航空网站、数据库或航空公司的公开记录查询。这些信息通常并不固定，因为飞机可能被出售、租赁或转移给不同的航空公司。如果您需要这一特定飞机的最新信息，建议使用在线航空数据库或飞机追踪网站，这些平台通常提供实时的注册信息更新。不过请注意，一些信息可能需要付费获取或有访问限制。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N918JL的飞机是哪一家公司的？",
+        "A": "Spiritjets LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N918JL\";",
+        "actual_answer": "根据注册号\"N918JL\"，这架飞机属于Jet Linx航空公司。Jet Linx是一家提供私人飞机包机和管理服务的公司。飞机的注册号是唯一的，并且可以在美国联邦航空管理局（FAA）和其他相关数据库中查找有关的信息以确认其所有权。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N130GA的飞机是哪一家公司的？",
+        "A": "Hughes Flying Service Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N130GA\";",
+        "actual_answer": "飞机注册号为N130GA的飞机通常与特定公司的飞机注册数据库相关。为了获取最新和最准确的信息，建议您查阅FAA（美国联邦航空管理局）的注册数据库或联系相关航空公司。请注意，飞机的所有权和运营商可能会随着时间的推移而变化，因此及时获取信息非常重要。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N203SS的飞机是哪一家公司的？",
+        "A": "Cape Air Charter",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N203SS\";",
+        "actual_answer": "根据公开的航空器注册信息，飞机注册号为N203SS的飞机曾经属于美国SpaceShipOne（太空船一号）的飞机，该飞机是由Scaled Composites公司设计和制造，用于实验性亚轨道载人航天飞行。然而，航空器的注册信息可能会随时间发生变化，因此建议查阅最新的FAA（美国联邦航空管理局）注册数据库以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N700JE的飞机是哪一家公司的？",
+        "A": "Talon Air LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N700JE\";",
+        "actual_answer": "飞机的注册号为N700JE的具体所属公司信息并不在公开数据库之内，且飞机的注册信息会不断变化。如果你有需要查询特定飞机的注册信息，可以使用像FAA（美国联邦航空管理局）的飞机注册查询工具或者其他商业航空数据库来获取最新的信息。这些工具可以提供飞机的所有权历史、型号和其他相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C-GENL的飞机是哪一家公司的？",
+        "A": "VIH Execujet Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-GENL\";",
+        "actual_answer": "飞机注册号为 C-GENL 的飞机属于加拿大航空（Air Canada）公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为HZ-A15的飞机是哪一家公司的？",
+        "A": "Alpha Star Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"HZ-A15\";",
+        "actual_answer": "注册号为HZ-A15的飞机属于沙特阿拉伯航空公司（Saudia）。飞机的注册号通常由一个国家代码和一个具体号码组成，HZ是沙特阿拉伯的国家代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为A6-RTS的飞机是哪一家公司的？",
+        "A": "Falcon Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"A6-RTS\";",
+        "actual_answer": "注册号为A6-RTS的飞机属于阿提哈德航空（Etihad Airways）。A6-是阿拉伯联合酋长国的飞机注册前缀，而阿提哈德航空是阿联酋的国家航空公司之一。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N2926E的飞机是哪一家公司的？",
+        "A": "CTP Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N2926E\";",
+        "actual_answer": "抱歉，我无法实时获取具体飞机注册号的信息。要查找飞机注册号 N2926E 所属的公司，你可以使用在线航空数据库或飞机跟踪网站，这些平台通常会提供最新的飞机注册信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N750FR的飞机是哪一家公司的？",
+        "A": "Mid-Pacific Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N750FR\";",
+        "actual_answer": "飞机注册号为N750FR的飞机属于Frontier Airlines。这是一家美国的低成本航空公司，以经营国内航班为主。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N357VJ的飞机是哪一家公司的？",
+        "A": "Vistajet Us Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N357VJ\";",
+        "actual_answer": "很抱歉，我无法实时访问最新的飞机注册信息。飞机注册号会在不同的航空公司间转移，并且注册信息可能会发生改变。要获得N357VJ的最新信息，建议访问FAA（美国联邦航空管理局）或其他相关航空监管机构的网站，或者使用飞机追踪服务以获取实时数据。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-VCD的飞机是哪一家公司的？",
+        "A": "Vista Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-VCD\";",
+        "actual_answer": "飞机注册号为9H-VCD的飞机属于VistaJet，该公司是一家提供私人包机服务的全球性企业。9H-注册号表示该飞机在马耳他注册，这是VistaJet常用的注册地之一。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N511JL的飞机是哪一家公司的？",
+        "A": "Jet Linx Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N511JL\";",
+        "actual_answer": "飞机注册号为N511JL的飞机属于JetBlue Airways。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为F-HSFN的飞机是哪一家公司的？",
+        "A": "Gestair",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"F-HSFN\";",
+        "actual_answer": "飞机注册号为F-HSFN的飞机属于法国航空公司（Air France）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-IFAS的飞机是哪一家公司的？",
+        "A": "Franconia Air Service GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-IFAS\";",
+        "actual_answer": "飞机注册号为D-IFAS的飞机注册在德国。具体是哪一家公司的飞机，可以通过查询德国的航空器注册信息或联系德国航空管理机构来获取最新信息。然而，具体的飞机所属公司可能会根据出租、买卖等情况而有所变更。因此，对于最新的细节信息，建议直接通过官方的航空注册数据库进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N720EE的飞机是哪一家公司的？",
+        "A": "Grandview Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N720EE\";",
+        "actual_answer": "很抱歉，我无法提供特定飞机的注册号与其所属公司的对应信息。不过，你可以通过一些在线航空数据库或飞机追踪网站（例如Flightradar24或FlightAware）进行查询。这些网站通常提供关于飞机注册号的详细信息，包括所属航空公司或运营者。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OY-RAB的飞机是哪一家公司的？",
+        "A": "Air Alsie",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OY-RAB\";",
+        "actual_answer": "飞机注册号为OY-RAB的飞机属于丹麦的丹纳航空（Danish Air Transport，简称DAT）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N817SD的飞机是哪一家公司的？",
+        "A": "Laurel Highlands Jet Center",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N817SD\";",
+        "actual_answer": "很抱歉，我无法提供实时或特定登记号码的飞机所有权信息。飞机注册信息通常由国家航空管理机构管理，例如美国的联邦航空管理局（FAA）。建议您访问相关机构的官方网站或使用在线数据库来查询特定航空器的注册信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N242SD的飞机是哪一家公司的？",
+        "A": "Avalair Aircraft Management LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N242SD\";",
+        "actual_answer": "很抱歉，我无法实时访问特定飞机注册号的最新数据或其所属公司信息。飞机注册号通常由民航管理机构进行管理，并可能会随时间改变其所归属的公司。如果您需要关于特定飞机注册号的最新信息，建议您访问相关民航管理机构或使用专业的航空数据查询工具。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N62GX的飞机是哪一家公司的？",
+        "A": "Westair Charter",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N62GX\";",
+        "actual_answer": "飞机注册号为N62GX的飞机属于美国湾流宇航公司（Gulfstream Aerospace）。这架飞机通常是用来展示湾流公司最新技术和设计的展示机，也可能用于一些市场推广活动。具体的情况可能会根据不同的时间和用途有所变更。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N819AP的飞机是哪一家公司的？",
+        "A": "Sky Partners Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N819AP\";",
+        "actual_answer": "飞机注册号为N819AP的飞机属于美国航空公司American Airlines。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为HS-LEE的飞机是哪一家公司的？",
+        "A": "Advance Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"HS-LEE\";",
+        "actual_answer": "注册号为HS-LEE的飞机属于泰国亚洲航空公司（Thai AirAsia）。注册号开头的“HS”代表泰国国籍注册标识。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-RMD的飞机是哪一家公司的？",
+        "A": "Air Charter Scotland",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-RMD\";",
+        "actual_answer": "注册号为9H-RMD的飞机属于VistaJet公司。VistaJet是一家全球性的公务航空公司，总部位于马耳他，提供按需包机服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N48KZ的飞机是哪一家公司的？",
+        "A": "Clay Lacy Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N48KZ\";",
+        "actual_answer": "很抱歉，我无法实时获取特定飞机注册号的信息。不过，N48KZ的注册号看起来像是美国注册的飞机，因为美国的飞机注册号通常以\"N\"开头。要获取特定飞机的信息，包括所属公司，建议您通过美国联邦航空管理局（FAA）的注册信息数据库进行查询，或者使用一些航空爱好者网站提供的追踪服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N495WG的飞机是哪一家公司的？",
+        "A": "Fly Alliance Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N495WG\";",
+        "actual_answer": "飞机注册号N495WG属于美国一家名为Western Global Airlines的航空公司。这是一家货运航空公司，提供全球范围内的货物运输服务。如果你需要进一步的信息，建议通过官方的航空注册数据库或公司发布的公告来确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N214CS的飞机是哪一家公司的？",
+        "A": "Westair Charter",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N214CS\";",
+        "actual_answer": "对不起，我无法确定注册号为N214CS的飞机属于哪家公司。飞机的注册信息可能会随时间改变，因此建议查阅最新的航空注册数据库或相关网站获取具体的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N333BD的飞机是哪一家公司的？",
+        "A": "Fliteaccess LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N333BD\";",
+        "actual_answer": "很抱歉，我无法提供特定飞机注册号的信息，包括N333BD的注册公司或所有者。这类信息通常需要通过飞机注册数据库或有关航空管理机构获取。你可以尝试使用一些在线工具或者联系相关的航空管理机构，如美国联邦航空管理局(FAA)，来获得更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为A7-CEE的飞机是哪一家公司的？",
+        "A": "Qatar Executive",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"A7-CEE\";",
+        "actual_answer": "飞机注册号A7-CEE属于卡塔尔航空（Qatar Airways）。在国际航空业中，卡塔尔航空的飞机注册号通常以A7-开头。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OE-GGG的飞机是哪一家公司的？",
+        "A": "Jetfly Airline GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OE-GGG\";",
+        "actual_answer": "飞机注册号OE-GGG属于奥地利注册号，以OE开头通常是奥地利注册的飞机。具体到OE-GGG是哪一家公司的，这类信息可能会发生变化，具体信息需要通过实时的航空数据库来确认，例如Flightradar24或其他航空追踪网站。在这些网站上，你可以输入注册号以获取更新的所有权和运营细节。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N96PB的飞机是哪一家公司的？",
+        "A": "Latitude 33 Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N96PB\";",
+        "actual_answer": "飞机注册号为N96PB的具体信息，如所属公司等，通常需要通过注册数据库或航空监控工具查询。美国的飞机注册号通常可以通过联邦航空管理局（FAA）的注册数据库进行查找。不过，单凭注册号无法确定飞机当前的所属公司，因为飞机可能会被租赁或转售。如果您需要详细的所有者信息，建议查阅FAA的官方数据库或使用专门的航空跟踪服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为VH-PFK的飞机是哪一家公司的？",
+        "A": "Pacific Flight Services Pte Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"VH-PFK\";",
+        "actual_answer": "飞机注册号为VH-PFK的飞机属于澳大利亚的一家公司。然而，具体是哪家公司的信息可能会随着时间的推移而发生变化，因为飞机的注册和所有权可能会转移。您可以使用澳大利亚民航安全局（CASA）或类似的航空数据服务来查找最新的信息，以确认该飞机当前的运营公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N156RE的飞机是哪一家公司的？",
+        "A": "Airstat Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N156RE\";",
+        "actual_answer": "我没有权限直接查找实时的飞机注册信息。但是，根据飞机注册号，你可以查询美国联邦航空管理局（FAA）的数据库来获取最新的信息，包括该飞机所属的公司。请访问FAA的官方网站或使用相关的航空追踪服务进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N114HA的飞机是哪一家公司的？",
+        "A": "Maxair LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N114HA\";",
+        "actual_answer": "飞机注册号为N114HA的飞机属于夏威夷航空公司（Hawaiian Airlines）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N776RB的飞机是哪一家公司的？",
+        "A": "Vistajet Us Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N776RB\";",
+        "actual_answer": "抱歉，我无法查找特定飞机的注册信息。这类信息通常可以通过航空注册数据库、航空爱好者网站或相关机构查询。你可以尝试访问这些资源以获取最新的注册信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N601EJ的飞机是哪一家公司的？",
+        "A": "Empyreal Jet Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N601EJ\";",
+        "actual_answer": "飞机注册号N601EJ对应的飞机可能会更换注册信息或者属于不同的公司，具体信息需要查询最新的航空器注册数据库。通常情况下，美国的飞机注册信息可以在FAA（美国联邦航空管理局）的官方网站上查询。不过，如果有更新或特别的租赁情况，可能需要联系航空公司或查阅相关专业数据库以获得最准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N116DA的飞机是哪一家公司的？",
+        "A": "Contour Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N116DA\";",
+        "actual_answer": "飞机注册号为N116DA的飞机属于达美航空（Delta Air Lines）。飞机注册号通常以\"N\"开头是美国注册飞机的标志。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N332CG的飞机是哪一家公司的？",
+        "A": "Paradigm Jet Management",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N332CG\";",
+        "actual_answer": "抱歉，我无法获取特定尾号的飞机所属公司的实时或具体信息。飞机的注册信息通常由各国的航空管理机构维护，例如美国的联邦航空管理局（FAA）。要获取有关特定飞机的信息，您可以查阅相关的航空管理局网站或数据库。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-ELF的飞机是哪一家公司的？",
+        "A": "Air X Charter Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-ELF\";",
+        "actual_answer": "飞机注册号为9H-ELF的飞机注册于马耳他，9H-是马耳他的航空器注册前缀。要知道具体是哪家航空公司的飞机，可以查阅最新的航空器注册数据库或联系相关航空监管机构，因为这类信息可能会频繁更改，涉及租赁或航空公司本身的变动。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N8888H的飞机是哪一家公司的？",
+        "A": "GoodJet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N8888H\";",
+        "actual_answer": "很抱歉，我无法查找到特定飞机注册号（如N8888H）所对应的航空公司或所有者信息。注册信息通常由相关航空管理机构管理，并且可能不公开提供。您可以尝试通过美国联邦航空管理局（FAA）的飞机注册数据库或相关国家的航空管理机构查找此信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为ZS-DEX的飞机是哪一家公司的？",
+        "A": "Comair Flight Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"ZS-DEX\";",
+        "actual_answer": "飞机注册号ZS-DEX属于南非的国家航空公司南非航空（South African Airways）。ZS是南非的国家代码，而DEX是该特定飞机的个别注册标识。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N920JR的飞机是哪一家公司的？",
+        "A": "Pacific Coast Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N920JR\";",
+        "actual_answer": "飞机注册号为N920JR的具体公司归属信息无法通过公开数据库实时获取。飞机注册号通常可以通过美国联邦航空管理局（FAA）或者相关航空公司的公开记录进行查询。如果您需要这一准确信息，建议您查阅FAA的注册数据库或联系相关航空公司以获取最新数据。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N604SG的飞机是哪一家公司的？",
+        "A": "Jetsplus",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N604SG\";",
+        "actual_answer": "截至我最后的更新，飞机的注册号信息可能随时变化，并且这些信息通常涉及隐私和安全问题。飞机注册号（如N604SG）的相关信息通常可以通过专门的航空数据库、民用航空管理局的注册信息或航空追踪网站查询。这类平台包括FAA的注册搜索工具、FlightAware或Flightradar24等。建议通过这些工具查找最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N513BE的飞机是哪一家公司的？",
+        "A": "Premier Private Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N513BE\";",
+        "actual_answer": "飞机注册号为N513BE的飞机属于美国的百捷航空（BE-BEECH）的系列，具体哪个公司的信息需要查阅具体的航空公司记录或者相关的航空领域数据库。在大部分情况下，使用在线的航空注册信息查询工具或者联系航空管理局可以获得具体的公司归属信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N264RV的飞机是哪一家公司的？",
+        "A": "Nexgen Flight Solutions",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N264RV\";",
+        "actual_answer": "抱歉，我无法查找特定飞机的实时注册信息。飞机注册号通常可以通过在线航空数据库或航空监管机构的网站查询，建议您查阅这些渠道以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N6BR的飞机是哪一家公司的？",
+        "A": "Mach Point Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N6BR\";",
+        "actual_answer": "根据飞机注册号「N6BR」来确定某架飞机所属的公司可能会有些困难，因为这一注册号在公开的数据库或信息中未必能查到具体所属。如果它是商业航空公司或私人拥有的飞机，可以通过以下几种方式尝试获取信息：\n\n1. **FAA数据库**：如果这是美国注册的飞机，您可以通过美国联邦航空管理局（FAA）的登记注册数据库查询。\n\n2. **在线飞机追踪平台**：一些网站，如Flightradar24或FlightAware，可能会提供关于该飞机近期活动的信息。\n\n3. **社交媒体和论坛**：在航空爱好者的社区中，有时可以找到有关特定注册号的信息。\n\n请确保您拥有合法搜寻和使用这些信息的权限。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N46CK的飞机是哪一家公司的？",
+        "A": "Pro Airways LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N46CK\";",
+        "actual_answer": "抱歉，我无法提供特定飞机注册号对应的公司信息。飞机的注册号可以由不同的航空公司或私人持有者拥有，航班或航空注册数据库可能提供这样的信息。如果你对某个特定的航班或机型有疑问，可以查阅公共的航空注册数据库或联系相关航空管理部门获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N617MW的飞机是哪一家公司的？",
+        "A": "Dream Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N617MW\";",
+        "actual_answer": "很抱歉，我无法提供某个特定飞机注册号（如N617MW）的所属公司信息。飞机注册信息可以通过相关的航空管理机构或飞机登记数据库来查询。你可能需要查阅美国联邦航空管理局（FAA）的飞机注册数据库，以找到最新和最准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OY-JSW的飞机是哪一家公司的？",
+        "A": "Flexflight Group",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OY-JSW\";",
+        "actual_answer": "飞机注册号为OY-JSW的飞机属于Danish Air Transport (DAT)。DAT是一家总部位于丹麦的航空公司，提供定期客运和包机服务。请注意，飞机的注册信息可能会发生变化，建议查阅最新的航空数据以获取准确的情况。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C-FPCP的飞机是哪一家公司的？",
+        "A": "Airco Aircraft Charters Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FPCP\";",
+        "actual_answer": "飞机注册号为 C-FPCP 的飞机属于加拿大的航空公司 WestJet。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C-FJFW的飞机是哪一家公司的？",
+        "A": "Chartright Air Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FJFW\";",
+        "actual_answer": "飞机注册号为C-FJFW的具体所属公司信息在公共数据库或追踪网站上可能可以找到，如Flightradar24或其他航空信息网站。通常情况下，飞机的注册信息可以通过加拿大的民用航空管理部门查询，因为C-开头的注册号表示这架飞机是在加拿大注册的。请务必使用合法和公开的途径获取这些信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为LX-SCO的飞机是哪一家公司的？",
+        "A": "Global Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"LX-SCO\";",
+        "actual_answer": "飞机注册号为LX-SCO的飞机属于卢森堡的一家航空公司，通常是卢森堡航空公司或与其有关的其他航空公司。为了获取最新的注册信息，可以查看相关航空数据库或航空公司的官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C-GQCC的飞机是哪一家公司的？",
+        "A": "Private Air Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-GQCC\";",
+        "actual_answer": "注册号为C-GQCC的飞机属于加拿大航空公司（Air Canada）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OE-CNC的飞机是哪一家公司的？",
+        "A": "Airlink Luftverkehrs GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OE-CNC\";",
+        "actual_answer": "飞机注册号为OE-CNC的飞机属于奥地利的达霍飞机公司（Diamond Aircraft）。这是达霍飞机公司的一架型号为DA42的双引擎飞机。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为G-EMLG的飞机是哪一家公司的？",
+        "A": "Jet Concierge Club",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"G-EMLG\";",
+        "actual_answer": "飞机注册号为G-EMLG的飞机属于英国航空（British Airways）的子公司英国国民航空（BA CityFlyer）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为A7-CHC的飞机是哪一家公司的？",
+        "A": "Qatar Executive",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"A7-CHC\";",
+        "actual_answer": "飞机注册号为A7-CHC的飞机属于卡塔尔航空公司。航空器注册编号通常以国家的字母代码开头，例如“A7”代表卡塔尔。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N755JG的飞机是哪一家公司的？",
+        "A": "Air 7 LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N755JG\";",
+        "actual_answer": "抱歉，我无法实时获取特定飞机注册号的信息。若要查询飞机注册号N755JG的所属公司或相关信息，请使用在线航空数据库或者联系相关航空管理机构以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N5861B的飞机是哪一家公司的？",
+        "A": "Skyward Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N5861B\";",
+        "actual_answer": "抱歉，我无法提供特定飞机注册号对应的航空公司信息。飞机的注册信息通常是公共的，但具体的查询需要通过航空注册数据库或联系相关的航空管理机构来获取。你可以查阅FAA（美国联邦航空管理局）的注册数据库以获取相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N776CJ的飞机是哪一家公司的？",
+        "A": "Jet Linx Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N776CJ\";",
+        "actual_answer": "抱歉，我无法提供特定飞机注册号对应的公司信息。这类信息可能涉及隐私或动态变化，建议您查阅相关的航空监管机构或使用专业的航空追踪服务获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-CHDJ的飞机是哪一家公司的？",
+        "A": "Silver Cloud Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-CHDJ\";",
+        "actual_answer": "根据飞机注册号的格式 \"D-****\"，可以判断这是德国的飞机注册号。具体到某个注册号 D-CHDJ 的飞机归属哪家公司，这类信息通常在航空运营数据库或者航空爱好者平台上更新，如Planespotters、FlightRadar24 等。但由于飞机的注册信息可能会经常变动，我建议通过这些专业平台或相关航空部门数据库进行查询以获得最新、最准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N716AP的飞机是哪一家公司的？",
+        "A": "Baton Rouge Air Charter And Management Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N716AP\";",
+        "actual_answer": "根据飞机注册号N716AP，很难直接确定其所属航空公司，因为飞机注册号可以被转让、重新分配或用于私人飞机。如果你想知道这架飞机目前的所属公司，建议你使用在线的飞机注册数据库，例如FAA（美国联邦航空管理局）的注册查询工具，或者其他类似的航空数据服务来查找最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N156RK的飞机是哪一家公司的？",
+        "A": "Atlanta Air Charter Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N156RK\";",
+        "actual_answer": "对不起，我没有关于飞机注册号为N156RK的最新信息或实时数据。飞机注册号码通常通过航空部门或相关数据库可以查询，例如通过FAA注册数据库，如果你有权限或访问途径的话。建议检查最新的航空数据库或联系相关的航空公司以获得准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N228MH的飞机是哪一家公司的？",
+        "A": "Velox Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N228MH\";",
+        "actual_answer": "飞机注册号为N228MH的飞机属于达美航空公司（Delta Air Lines）。注册号通常用于识别和跟踪飞机的归属以及其法律状态。如果你需要更详细的信息，可以查阅相关航空数据库或达美航空的官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为VH-JGR的飞机是哪一家公司的？",
+        "A": "Australian Corporate Jet Centres Pty Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"VH-JGR\";",
+        "actual_answer": "很抱歉，我不能保证实时获取飞机的注册信息。飞机的注册号可以在相关航空管理机构或航空公司的网站上找到。如果需要关于特定飞机注册号的信息，建议查看澳大利亚民航安全局（CASA）的飞机注册数据库或联系相关航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为LV-IKB的飞机是哪一家公司的？",
+        "A": "Aerorutas",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"LV-IKB\";",
+        "actual_answer": "飞机注册号为LV-IKB的飞机属于阿根廷航空公司。LV-前缀表示该飞机在阿根廷注册。具体的信息可以在阿根廷的航空注册数据库中查找，以获取最新的运营公司和飞机型号等详细资料。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N631KA的飞机是哪一家公司的？",
+        "A": "Speed Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N631KA\";",
+        "actual_answer": "飞机注册号N631KA属于靛蓝合作伙伴（Indigo Partners）的子公司领航航空（Frontier Airlines）。不过，飞机注册信息可能会发生变化，建议通过相关航空监管机构或航空公司的官方网站查询最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-CMSL的飞机是哪一家公司的？",
+        "A": "Platoon Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-CMSL\";",
+        "actual_answer": "飞机的注册号通常对应特定航空公司或私人运营方，如果您想知道注册号为D-CMSL的飞机所属公司，需要查阅相关的航空注册数据库或网站。这类信息会在一些飞行跟踪网站或航空爱好者论坛上得到更新。另外，德国民航局或类似机构的注册信息也可以提供准确的信息。然而，这类信息的实时性可能会有所不同，建议查看最新的在线资源。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N117KB的飞机是哪一家公司的？",
+        "A": "Dreamline Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N117KB\";",
+        "actual_answer": "抱歉，我无法查找特定飞机注册号的信息。如果您想了解特定飞机的信息，可以尝试通过相关航空监管机构的在线数据库进行查询，比如美国的联邦航空管理局（FAA）网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OO-PAR的飞机是哪一家公司的？",
+        "A": "Abelag Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OO-PAR\";",
+        "actual_answer": "飞机注册号为OO-PAR的飞机属于比利时天蓝航空（Air Belgium）。OO-是比利时的飞机注册代码，而OO-PAR是分配给天蓝航空的一架飞机的具体注册号。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N950MJ的飞机是哪一家公司的？",
+        "A": "Aircraft Management Group",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N950MJ\";",
+        "actual_answer": "飞机注册号为N950MJ的飞机属于美国老鹰航空（Envoy Air），这是美国航空的一家地区性子公司。请注意，飞机的分配和注册信息可能会发生变化，以最新的官方信息为准。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-VJL的飞机是哪一家公司的？",
+        "A": "Vista Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-VJL\";",
+        "actual_answer": "飞机注册号为9H-VJL的飞机属于VistaJet公司。这是一家提供按需包机服务的私营航空公司，其机队通常注册在马耳他，所有飞机的注册号都以“9H-”开头。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为EC-NQS的飞机是哪一家公司的？",
+        "A": "Clipper National Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"EC-NQS\";",
+        "actual_answer": "飞机注册号EC-NQS属于西班牙航空公司伏林航空（Vueling Airlines）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N78BQ的飞机是哪一家公司的？",
+        "A": "Jet Linx Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N78BQ\";",
+        "actual_answer": "抱歉，我无法获取或查询特定飞机的注册号（如N78BQ）及其所属公司的信息。您可以通过联系相关的航空管理机构或使用在线飞机注册查询工具来获取此类信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N1776C的飞机是哪一家公司的？",
+        "A": "Executive Aviation Corporation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N1776C\";",
+        "actual_answer": "很抱歉，我无法提供特定飞机注册号（如N1776C）对应的实时公司信息。飞机注册号可用于识别特定的飞机，相关信息可能会在航空数据或注册数据库中找到，例如美国联邦航空管理局（FAA）的注册数据库。你可以通过访问这些数据库来查找具体的飞机注册信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N604CH的飞机是哪一家公司的？",
+        "A": "Ventura Air Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N604CH\";",
+        "actual_answer": "飞机注册号为N604CH的飞机与特定公司的关联信息可能会随时间变化，因为飞机的所有权和运营方可能会发生改变。要找到当前与该注册号关联的公司，您可以查询美国联邦航空管理局（FAA）的飞机注册数据库，该数据库提供最新的注册信息。此外，相关的航空专业网站或数据库也可能提供更新的所有权信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-AIFL的飞机是哪一家公司的？",
+        "A": "ACM Air Charter",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-AIFL\";",
+        "actual_answer": "注册号为D-AIFL的飞机属于德国汉莎航空公司（Lufthansa）。飞机的注册号通常由国家代码和具体的航空器序列号组成，不过具体的飞机信息可能会有所变动，因此建议通过权威的航空注册网站或汉莎航空官方渠道进行确认以确保信息准确。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N154EA的飞机是哪一家公司的？",
+        "A": "Contour Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N154EA\";",
+        "actual_answer": "注册号为N154EA的飞机属于美国东方航空公司（Eastern Air Lines）。不过，需要注意的是，飞机的注册信息可能会有所变动，建议核实最新的注册数据以确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N829SA的飞机是哪一家公司的？",
+        "A": "Avalair Aircraft Management LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N829SA\";",
+        "actual_answer": "抱歉，我无法确认具体飞机（如N829SA）当前所属的航空公司信息。这类信息经常会发生变动，包括出售、租赁或其他商业交易。\n\n如果您需要获取某架飞机的注册信息，建议访问航空跟踪网站，如Flightradar24或FlightAware，这类平台提供实时的飞机追踪及其注册信息。此外，您也可以查询美国联邦航空管理局（FAA）的飞机注册数据库进行核实。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N365PT的飞机是哪一家公司的？",
+        "A": "Triton Airways LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N365PT\";",
+        "actual_answer": "抱歉，我无法实时获取飞机注册号的信息。要查找特定飞机注册号的所属公司，您可以访问航空公司的官方网站或使用在线航空数据库和跟踪工具，例如FlightAware或Flightradar24。这些平台通常提供关于飞机注册、航班信息及所属公司的详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N741VE的飞机是哪一家公司的？",
+        "A": "Wing Aviation Charter Services LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N741VE\";",
+        "actual_answer": "飞机注册号为N741VE的飞机属于Westair Aviation， LLC。请注意，飞机注册信息可能会发生变化，建议与相关航空管理机构核实以获得最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-IBEA的飞机是哪一家公司的？",
+        "A": "Proair Charter Transport GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-IBEA\";",
+        "actual_answer": "飞机注册号为D-IBEA的飞机属于德国之翼航空公司（Germanwings）。德国的飞机注册号通常以“D-”开头，后跟四个字母。具体的航空公司分配和飞机使用情况可能会发生变化，因此建议您查阅最新的航空器数据库或相关航空信息网站以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N290PS的飞机是哪一家公司的？",
+        "A": "Nexgen Flight Solutions",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N290PS\";",
+        "actual_answer": "飞机注册号为N290PS的飞机属于美国捷蓝航空公司（JetBlue Airways）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N483RA的飞机是哪一家公司的？",
+        "A": "Quantum Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N483RA\";",
+        "actual_answer": "飞机注册号为N483RA的飞机属于美国航空公司JetBlue Airways。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OE-IGL的飞机是哪一家公司的？",
+        "A": "Glock Aviation GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OE-IGL\";",
+        "actual_answer": "飞机注册号为OE-IGL的飞机属于奥地利航空公司Lauda，Lauda是瑞安航空旗下的一家子公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-VJP的飞机是哪一家公司的？",
+        "A": "Vista Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-VJP\";",
+        "actual_answer": "飞机注册号为9H-VJP的一般是由Malta注册的，而9H-前缀表示它是马耳他注册的飞机。根据过去的信息，9H-VJP是一架庞巴迪环球6000，由VistaJet公司运营。这是一家提供商务航空服务的公司。但请注意，飞机的注册信息可能会随时间变化，建议核查最新的航空注册数据库以获得最准确的信息。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为ZK-MFT的飞机是哪一家公司的？",
+        "A": "Jet Charters Nz",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"ZK-MFT\";",
+        "actual_answer": "注册号为ZK-MFT的飞机属于新西兰航空公司（Air New Zealand）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N400SF的飞机是哪一家公司的？",
+        "A": "Starflite Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N400SF\";",
+        "actual_answer": "抱歉，我无法实时访问数据库或互联网来确认特定飞机的注册信息。飞机的注册信息通常可以在民航局或相关航空数据网站上查到。然而，由于隐私和数据保护的原因，某些信息可能不是公开可查的。如果您需要这一信息，建议您通过官方渠道进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为XA-HNY的飞机是哪一家公司的？",
+        "A": "Performance Air S.A.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"XA-HNY\";",
+        "actual_answer": "飞机注册号为XA-HNY的具体所属航空公司信息可能会有所变动，建议查阅最新的航空登记数据库或联系相关航空管理机构以获取最新的确认信息。通常情况下，这类信息可以通过航空论坛、飞机爱好者网站或专业的航空数据库找到。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为F-HPHX的飞机是哪一家公司的？",
+        "A": "Valljet Airline",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"F-HPHX\";",
+        "actual_answer": "飞机注册号为F-HPHX的飞机隶属于法国航空（Air France）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为LY-KDT的飞机是哪一家公司的？",
+        "A": "KlasJet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"LY-KDT\";",
+        "actual_answer": "飞机注册号为LY-KDT的飞机属于立陶宛的Avion Express航空公司。Avion Express是一家主要从事飞机租赁和包机服务的公司。请注意，航空器的注册信息可能会发生变化，具体情况应以最新的官方记录为准。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N312DB的飞机是哪一家公司的？",
+        "A": "Southern Sky Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N312DB\";",
+        "actual_answer": "很抱歉，我无法实时访问飞机注册号码数据库或互联网信息，以获取特定飞机的注册信息。通常，飞机的注册信息可以通过专门的航空数据库、相关民航管理部门的在线注册信息查询工具或飞行跟踪网站进行查询。如果您需要获取N312DB的具体注册信息，建议使用这些工具进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为ZS-SGC的飞机是哪一家公司的？",
+        "A": "Execujet South Africa Pty Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"ZS-SGC\";",
+        "actual_answer": "飞机注册号ZS-SGC是南非航空（South African Airways）的飞机。ZS-是南非的航空器注册前缀。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N300GV的飞机是哪一家公司的？",
+        "A": "Grandview Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N300GV\";",
+        "actual_answer": "飞机注册号为N300GV的飞机属于湾流宇航公司（Gulfstream Aerospace）。该注册号通常与公司用于演示和测试其新型飞机的项目有关。湾流是著名的商务喷气机制造商。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N876UC的飞机是哪一家公司的？",
+        "A": "ACI Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N876UC\";",
+        "actual_answer": "飞机注册号为N876UC的飞机属于美国联合包裹运送服务公司（UPS）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N8850的飞机是哪一家公司的？",
+        "A": "Jet Linx Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N8850\";",
+        "actual_answer": "很抱歉，我无法提供实时的飞机注册信息。根据N8850的注册号，你可以查询相关的航空数据库或注册网站，如美国的联邦航空管理局（FAA）网站，来获取该飞机的最新注册信息和所属公司。请注意，这些信息可能会定期更新。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C-GRKB的飞机是哪一家公司的？",
+        "A": "Chartright Air Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-GRKB\";",
+        "actual_answer": "飞机注册号为C-GRKB的是加拿大航空（Air Canada）旗下的飞机。加拿大的飞机注册号通常以“C-”开头。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为SP-ZEN的飞机是哪一家公司的？",
+        "A": "Jet Story",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"SP-ZEN\";",
+        "actual_answer": "飞机注册号为SP-ZEN的飞机属于波兰的Enter Air航空公司。这是一家总部位于华沙的包机航空公司，主要运营航班服务于旅游和度假市场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为B-7696的飞机是哪一家公司的？",
+        "A": "LILY JET",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"B-7696\";",
+        "actual_answer": "飞机注册号B-7696属于中国国际航空公司（Air China）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C-FXDB的飞机是哪一家公司的？",
+        "A": "Flightpath Charter Airways",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FXDB\";",
+        "actual_answer": "飞机注册号为 C-FXDB 的飞机属于加拿大航空 (Air Canada)。注册号通常用于标识特定国家或地区的航空器，C-FXDB 是加拿大注册的航空器号码。而具体到某个注册号对应的航司或飞机信息，可能会有变动，建议查阅最新的航空注册数据库或相关信息以获得准确的结果。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为EJ-PRLN的飞机是哪一家公司的？",
+        "A": "ACASS Canada Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"EJ-PRLN\";",
+        "actual_answer": "抱歉，我无法提供特定飞机注册号（如EJ-PRLN）对应的航空公司信息。这类信息涉及隐私和安全问题，通常不在公开数据中可查到。建议通过飞机注册国家的民航管理局网站或相关专业服务进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N875SP的飞机是哪一家公司的？",
+        "A": "Pacific Missionary Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N875SP\";",
+        "actual_answer": "很抱歉，我无法实时访问具体的飞机注册信息。飞机的注册信息通常可以通过航空监管机构的数据库或相关网站查询。如果您需要查找特定飞机的注册详情，建议访问美国联邦航空管理局（FAA）网站或其他相关的航空数据库。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为OE-IXI的飞机是哪一家公司的？",
+        "A": "Global Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OE-IXI\";",
+        "actual_answer": "飞机注册号为OE-IXI的飞机属于奥地利的伏林航空（Vueling Airlines）。飞机注册号通常可以用于识别注册在特定国家或航空公司的特定飞机，但具体信息可能因时间变化而有所不同。建议查看专业的航空数据库或该航空公司的公告以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N518JA的飞机是哪一家公司的？",
+        "A": "Global Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N518JA\";",
+        "actual_answer": "飞机注册号为N518JA的飞机属于美国捷蓝航空公司（JetBlue Airways）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N17TX的飞机是哪一家公司的？",
+        "A": "First Av Group LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N17TX\";",
+        "actual_answer": "抱歉，我无法提供特定飞机注册号对应的公司信息。飞机注册信息可能会随时更新，并且通常涉及隐私和安全考虑。建议你查阅相关的航空公司或航空注册机构的官方渠道获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N401LX的飞机是哪一家公司的？",
+        "A": "Aero Charter Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N401LX\";",
+        "actual_answer": "很抱歉，我无法实时获取特定飞机的注册信息，如注册号为 N401LX 的飞机。如果您想查找某架飞机的运营者或相关信息，可以使用在线航空数据库或飞机追踪平台，如 Flightradar24 或 FlightAware。这些平台通常提供有关飞机注册和运营的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N528CL的飞机是哪一家公司的？",
+        "A": "Modesto Jet Center",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N528CL\";",
+        "actual_answer": "飞机注册号为N528CL的飞机属于Jet Edge International。这是一家提供私人飞机包机和管理服务的公司。请注意，飞机的所有权和管理归属可能会有所变动，因此了解最新的具体信息需要查询航空注册数据库。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N441QC的飞机是哪一家公司的？",
+        "A": "Nea Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N441QC\";",
+        "actual_answer": "飞机的注册号可以用来识别其所属的航空公司或运营商。注册号为N441QC的飞机属于美国的注册编号，前缀N表示这是在美国注册的飞机。具体的运营航空公司信息通常可以通过航空信息服务网站或者数据库（例如FlightAware、Flightradar24等）找到。\n\n截至我的知识更新，注册信息可能会发生变化，因此建议你通过上述工具或FAA（美国联邦航空管理局）的注册数据库来查找最新的详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为D-IDAZ的飞机是哪一家公司的？",
+        "A": "Das Private Jets GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-IDAZ\";",
+        "actual_answer": "飞机注册号为D-IDAZ的飞机注册信息不一定公开，也可能随着时间的推移而发生变化。一般来说，德国的注册号以“D-”开头，但具体的运营公司或所有者信息需要查询航空信息数据库，或者通过相关的航班跟踪网站和工具（如Flightradar24）进行核实。如果你有权限访问更多详细的航空注册数据，也可以通过专业的航空注册查询服务来获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N550JP的飞机是哪一家公司的？",
+        "A": "Dumont Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N550JP\";",
+        "actual_answer": "抱歉，我无法实时访问或查询数据库来确认特定飞机注册号的信息。飞机的注册号可能会对应不同的公司，具体信息可能需要通过航空注册数据库、民航管理机构或相关网站进行查询。你可以尝试访问像FAA或相关国家的民航网站，输入注册号查询详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N650GA的飞机是哪一家公司的？",
+        "A": "Aero Dynamic Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N650GA\";",
+        "actual_answer": "飞机注册号为N650GA是由美国航空公司Gulfstream Aerospace Corporation制造的。Gulfstream主要生产私人和公务喷气式飞机。具体而言，注册号可以用于追踪某架特定飞机的所有权和运营历史，但这些信息可能会发生变化，建议查阅最新的航空注册数据库或联系相关的航空当局以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N560MC的飞机是哪一家公司的？",
+        "A": "Bell Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N560MC\";",
+        "actual_answer": "飞机注册号为N560MC的飞机属于美国的Atlas Air公司。这是一家货运航空公司，主要提供全球货物运输服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N409MN的飞机是哪一家公司的？",
+        "A": "M&n Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N409MN\";",
+        "actual_answer": "很抱歉，我无法提供实时的飞机注册信息。飞机的注册号与特定航空公司或所有者相关联的详细信息通常可以通过航空信息数据库查询获得，例如FAA（美国联邦航空管理局）或其他国家的民航管理机构。您可以查阅这些机构的官方网站或使用专门的航空追踪服务以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N891L的飞机是哪一家公司的？",
+        "A": "M&n Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N891L\";",
+        "actual_answer": "抱歉，我无法实时查询特定飞机的注册信息。通常，飞机的注册号（如N891L）可以通过在线航空数据库或相关机构（如FAA在美国）的官方网站查询到。可以尝试使用这些资源以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N963AD的飞机是哪一家公司的？",
+        "A": "Custom Jet Charters LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N963AD\";",
+        "actual_answer": "飞机注册号为N963AD的飞机属于美国阿拉斯加航空公司（Alaska Airlines）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C-FREQ的飞机是哪一家公司的？",
+        "A": "Chartright Air Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FREQ\";",
+        "actual_answer": "飞机注册号为C-FREQ的飞机属于加拿大的航空公司Air Canada Jazz。请注意，航空公司的运营和飞机注册情况可能会发生变化，因此建议查阅最新资料以获取准确信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N269WR的飞机是哪一家公司的？",
+        "A": "STA Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N269WR\";",
+        "actual_answer": "飞机注册号通常与特定航空公司或机主相关联，但这些详细信息会随着飞机的租赁、销售或其他变更而改变。要获取最新和准确的信息，建议使用在线航空数据库，如FlightAware、Flightradar24或通过联系相关航空管理机构来查找。由于这些信息可能频繁变动，建议查看最新的飞行或注册记录。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-AZZA的飞机是哪一家公司的？",
+        "A": "Alliance Executive Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-AZZA\";",
+        "actual_answer": "飞机注册号为9H-AZZA的飞机属于Hi Fly Malta，这是一家位于马耳他的包机公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N605DD的飞机是哪一家公司的？",
+        "A": "Wheels Up Partners LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N605DD\";",
+        "actual_answer": "抱歉，我无法实时获取特定飞机的注册信息。飞机的注册号通常可以通过航空爱好者网站或者相关的航空数据库查找。如果你有兴趣，可以访问这些网站，或者联系相关航空管理机构获取更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为VH-LEP的飞机是哪一家公司的？",
+        "A": "Execujet Australia Pty Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"VH-LEP\";",
+        "actual_answer": "飞机注册号VH-LEP属于澳大利亚的注册编号。对于具体的航空公司或飞机所有者的信息，需要通过相关的航空注册数据库或航空管理局查询，以获得最新和准确的资料。一般来说，澳大利亚民航安全局（CASA）会有这一类详细的信息。建议进行数据库查验以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N68005的飞机是哪一家公司的？",
+        "A": "Planet Nine Private Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N68005\";",
+        "actual_answer": "飞机的注册号为N68005，表示它是在美国注册的，因为美国的飞机注册号以“N”开头。不过，注册号并不能直接显示该飞机所属哪一家航空公司或哪一个所有者。要确定具体的公司或个人，需要访问美国联邦航空管理局（FAA）的飞机注册数据库或其他类似的航空登记数据库来查询最新的注册信息。请注意，飞机的所有权与注册信息可能会随着时间发生变化，所以建议查询时访问最新的数据源。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为T7-ALEX的飞机是哪一家公司的？",
+        "A": "Alex Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"T7-ALEX\";",
+        "actual_answer": "飞机注册号为T7-ALEX的飞机注册在圣马力诺，\"T7\"是其国家的飞机注册前缀。具体哪家公司拥有这架飞机可能需要访问注册信息数据库或联系相关航空管理部门才能获得。通常，这类详细信息并不总是公开可用且可能涉及隐私问题。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为PH-NDK的飞机是哪一家公司的？",
+        "A": "Exxaero",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"PH-NDK\";",
+        "actual_answer": "飞机的注册号为PH-NDK，表明这架飞机在荷兰注册。荷兰的注册号通常以“PH-”开头。具体到这架飞机属于哪家公司，需要查阅最新的航空注册数据库或航空追踪网站，以获取最准确的信息。一般来说，Flightradar24、FlightAware等网站可以提供这类详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C6-CAY的飞机是哪一家公司的？",
+        "A": "Titan Air Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C6-CAY\";",
+        "actual_answer": "飞机注册号为C6-CAY的飞机注册于巴哈马。根据注册号查询，C6-CAY属于西印度群岛航空——巴哈马航空公司(Western Air)的机队。不过，航空公司和飞机注册信息可能会有变动，因此建议查阅最新的航空器注册数据库或航空公司官方网站以获取确认信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N300CQ的飞机是哪一家公司的？",
+        "A": "Plus One Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N300CQ\";",
+        "actual_answer": "飞机注册号为N300CQ的具体归属信息通常不公开在公共数据库中，因为这一信息会根据飞机的买卖或租赁情况发生变化。如果您需要获取最新的信息，可以查阅相关的航空注册数据库，例如美国联邦航空管理局（FAA）的注册数据库，也可以联系相关航空公司或另外的专业服务机构进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N753A的飞机是哪一家公司的？",
+        "A": "Jetright",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N753A\";",
+        "actual_answer": "飞机注册号为N753A的飞机属于私人飞机注册编号，这类编号的信息通常不公开或不与特定公司直接关联。不过，根据美国的航空注册规则，该编号是由美国联邦航空管理局（FAA）管理的，通常与美国注册的飞机相关。\n\n如需了解某一架特定飞机的详细信息，建议查看FAA的注册数据库，或通过相关合法途径联系注册机构获取详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为LV-GWZ的飞机是哪一家公司的？",
+        "A": "Argentina Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"LV-GWZ\";",
+        "actual_answer": "注册号为LV-GWZ的飞机属于阿根廷航空公司（Aerolineas Argentinas）。这是阿根廷的国家航空公司，负责运营国内和国际航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N725VM的飞机是哪一家公司的？",
+        "A": "Thrive Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N725VM\";",
+        "actual_answer": "很抱歉，我无法实时查询具体飞机注册号的信息。飞机的注册号（如N725VM）通常可以通过航空数据库、航空公司官方网站或机场记录查找到。你可以尝试使用航空追踪网站或应用程序来了解这架飞机隶属于哪家航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N788SC的飞机是哪一家公司的？",
+        "A": "Fly Advanced Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N788SC\";",
+        "actual_answer": "根据可用的资料，飞机注册号为N788SC的飞机属于美国的太空探索技术公司（SpaceX）。该公司常用此类注册号为其公务机注册。请注意，飞机的注册信息可能会随时间变化，建议查阅最新的数据库或官方资料以获取最为准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为HB-JSC的飞机是哪一家公司的？",
+        "A": "Dasnair",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"HB-JSC\";",
+        "actual_answer": "飞机注册号为HB-JSC的飞机属于瑞士国际航空公司（Swiss International Air Lines）。瑞士的飞机注册号一般以“HB-”开头。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N428S的飞机是哪一家公司的？",
+        "A": "Griffing Flying Service Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N428S\";",
+        "actual_answer": "抱歉，我无法提供特定飞机注册号（如N428S）的所有者或运营方的信息。这类信息通常涉及隐私，并且可能会随时间而变化。我建议查看FAA（美国联邦航空管理局）或相应的民航管理机构的官方网站，他们可能提供相关注册信息的查询服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N646LA的飞机是哪一家公司的？",
+        "A": "Direct2 Air LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N646LA\";",
+        "actual_answer": "注册号为N646LA的飞机属于LATAM航空集团。飞机注册号通常由国家的航空机构分配，并且可以用来识别特定航空公司的飞机。如果你需要了解更多关于这架飞机的信息，可以访问相关的航空注册或航空追踪网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N24US的飞机是哪一家公司的？",
+        "A": "N-Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N24US\";",
+        "actual_answer": "抱歉，我无法实时查询特定飞机的注册信息。飞机注册号通常可以通过民航局的数据库或相关航空跟踪服务查找。如果您需要了解特定飞机的运营公司或其他详细信息，建议查看这些官方渠道或使用航空追踪网站，如FlightAware或Flightradar24。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N330GC的飞机是哪一家公司的？",
+        "A": "OIA Air Corp.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N330GC\";",
+        "actual_answer": "飞机注册号为N330GC的飞机属于Gulfstream Aerospace Corporation，一家美国的喷气式飞机制造商。这类注册号通常用于公司在美国注册的飞机。具体的飞机详情可能会根据时间进行更改，如果你需要最新的信息，建议查看相关航空数据资源或Gulfstream的官方发布。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-RBA的飞机是哪一家公司的？",
+        "A": "Aelia S.R.L",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-RBA\";",
+        "actual_answer": "飞机注册号为9H-RBA的飞机属于瑞安航空（Ryanair）。瑞安航空是一家总部位于爱尔兰的低成本航空公司，注册号以“9H”开头通常表示该飞机在马耳他注册，因为9H是马耳他国家代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为9H-VJH的飞机是哪一家公司的？",
+        "A": "Vista Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-VJH\";",
+        "actual_answer": "9H-VJH的注册号是属于VistaJet公司的一架私人飞机。VistaJet是一家提供高级包机服务的公司，总部位于马耳他，其飞机通常会使用马耳他注册代码“9H-”开头。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N511WS的飞机是哪一家公司的？",
+        "A": "Jetsplus",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N511WS\";",
+        "actual_answer": "飞机注册号为N511WS的飞机通常与其运营公司或所有者相关联，但具体信息并不总是公开或易于查找。为了获取最新的注册信息，你可以查询美国联邦航空管理局（FAA）的飞机注册数据库，这会提供关于飞机所有者和运营者的最新信息。如果此飞机为商业运营，可能与某家航空公司或包机公司有关。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N8YU的飞机是哪一家公司的？",
+        "A": "Aspen Air Charter Co.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N8YU\";",
+        "actual_answer": "很抱歉，我无法查找具体飞机注册号N8YU的当前信息。飞机注册号的信息通常需要通过相关的航空和注册数据库查询以获得最新的详细信息。建议您查阅相关航空公司的网站或者联系航空管理机构以获得具体的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N511DP的飞机是哪一家公司的？",
+        "A": "Executive Aircraft Charter Services LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N511DP\";",
+        "actual_answer": "很抱歉，我无法提供特定飞机注册号对应的航空公司信息。这类信息常常涉及隐私或是动态变化的，并且通常需要通过专门的航空数据平台或相关执法机构来查询。你可以尝试在公开的航空注册数据库或联系相关航空管理部门获取更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为CS-DOG的飞机是哪一家公司的？",
+        "A": "Worldjets Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"CS-DOG\";",
+        "actual_answer": "飞机注册号为CS-DOG的飞机属于NetJets公司。NetJets是一家提供私人飞机共享服务的公司，总部位于美国。CS-前缀表示这架飞机注册在葡萄牙。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N229LH的飞机是哪一家公司的？",
+        "A": "Sky LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N229LH\";",
+        "actual_answer": "根据飞机注册号“N229LH”的格式，它很可能是注册在美国的飞机，因为美国的民航飞机注册号通常以“N”开头。具体的飞机所属公司可以通过多个途径查询，例如使用FAA（美国联邦航空管理局）的注册数据库或者使用飞机追踪网站如FlightAware、Flightradar24等。不过，飞机的注册信息可能会变动，建议查阅最新的在线数据库来获取当前的所有者信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N290MX的飞机是哪一家公司的？",
+        "A": "Justice Air Charter",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N290MX\";",
+        "actual_answer": "飞机注册号为N290MX的飞机属于West Air公司。这是一家总部位于美国的航空公司，主要运营国内和国际航班。请注意，飞机的注册和归属信息可能会随时间变化，因此建议通过官方渠道获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为HS-CPG的飞机是哪一家公司的？",
+        "A": "Executive Wings",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"HS-CPG\";",
+        "actual_answer": "飞机注册号HS-CPG属于泰国亚洲航空（Thai AirAsia）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为ZS-PIR的飞机是哪一家公司的？",
+        "A": "Execujet South Africa Pty Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"ZS-PIR\";",
+        "actual_answer": "飞机的注册号ZS-PIR表明这架飞机是在南非注册的。不过，要具体确定这架飞机属于哪一家航空公司或运营商，通常需要访问最新的航空注册数据库或航空公司官方网站，因为这一信息可能会随时间变化。建议检查南非民航局或相关的航空数据库以获取最新和准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N944GL的飞机是哪一家公司的？",
+        "A": "Solairus Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N944GL\";",
+        "actual_answer": "很抱歉，我无法实时访问最新的飞机注册信息。不过，你可以通过美国联邦航空管理局（FAA）的在线注册数据库查找飞机注册号为N944GL的飞机的相关信息。该数据库会提供飞机的所有者和运营者的详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为N610GG的飞机是哪一家公司的？",
+        "A": "Plane Travel Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N610GG\";",
+        "actual_answer": "飞机注册号为N610GG的相关信息并不在公开数据库中提供，因此我无法为您确认这架飞机属于哪家公司的。飞机注册号的信息通常可以通过联系相关的航空管理部门或通过一些商业数据库查询获得。请确保在查询时遵循相关的隐私和数据使用法律规定。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "correct_rate": 3.0,
+        "sample_size": 300,
+        "correct_count": 9
+    }
+]

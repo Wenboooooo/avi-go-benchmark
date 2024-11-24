@@ -1,0 +1,1344 @@
+[
+    {
+        "Q": "Cessna Citation X+机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation X+\";",
+        "actual_answer": "Cessna Citation X+公务机通常配置8到12个座位，具体座位数可以根据客户的要求和内部配置进行调整。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna Citation Jet机型的座位数是多少？",
+        "A": 4,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Jet\";",
+        "actual_answer": "Cessna Citation系列包含多个不同型号的公务机，每个型号的座位数可能有所不同。一般来说，Cessna Citation系列的小型喷气公务机通常可以容纳大约5到12名乘客。例如：\n\n- Citation Mustang：通常可以容纳4到5名乘客。\n- Citation CJ1/CJ2/CJ3/CJ4系列：一般可容纳6到10名乘客，具体取决于机型和内部布局。\n\n具体的座位数可能会因内部配置和客户定制选择而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Global 6000机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 6000\";",
+        "actual_answer": "庞巴迪环球6000（Bombardier Global 6000）是一款远程公务机，通常配置用于商务用途，座位数因具体的内饰配置和客户需求而有所不同。一般来说，这种机型可以舒适地容纳大约12到16名乘客。如果是完全自定义的内饰布局，这个数字可能有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechcraft 1900D机型的座位数是多少？",
+        "A": 19,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft 1900D\";",
+        "actual_answer": "Beechcraft 1900D是一种双发涡桨客机，通常用于短途支线航班。该机型一般配置有19个乘客座位，这是因为美国的一些航空法规规定，配备超过19个座位的飞机需要额外的乘务员，因此这种配置使其在运营上更加经济高效。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Embraer ERJ 145机型的座位数是多少？",
+        "A": 50,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer ERJ 145\";",
+        "actual_answer": "Embraer ERJ 145是巴西航空制造商Embraer生产的一种支线飞机，通常配置为单一经济舱布局，提供50个座位。这种飞机设计用于短途航线，因其高效率和舒适性在区域航空市场中非常受欢迎。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 50机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 50\";",
+        "actual_answer": "Dassault Falcon 50是一款三引擎的远程中型商务喷气机，通常配置为8至10个乘客座位。根据客户的需求和内饰配置的不同，座位数可能会有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Boeing 787机型的座位数是多少？",
+        "A": 243,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Boeing 787\";",
+        "actual_answer": "波音787是一个广泛使用的远程中型宽体客机，其座位数视具体的航空公司配置和机型变体而有所不同。通常情况下：\n\n- **波音787-8**：通常可容纳约242到290名乘客。\n- **波音787-9**：通常可容纳约290到340名乘客。\n- **波音787-10**：通常可容纳约310到330名乘客。\n\n具体座位数会根据航空公司选择的座舱布局（比如经济舱、商务舱和头等舱的比例）而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Learjet 75机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 75\";",
+        "actual_answer": "Bombardier Learjet 75是一款轻型公务机，通常设计有8个乘客座位。这些座位通常包括在一个舒适的商务舱内，提供高端的设施和舒适度，以满足商务旅行的需求。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 900B机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900B\";",
+        "actual_answer": "Dassault Falcon 900B是一款远程商务喷气机，通常配置为8到12个乘客座位。然而，实际座位数可能会因为具体的内部配置和客户的需求而有所不同。在定制私人飞机时，常会根据乘客的舒适性和其他功能需求来调整座位布局。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hawker 900XP机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 900XP\";",
+        "actual_answer": "Hawker 900XP通常配置为提供6到8个乘客座位。这是一款中型公务机，适合较小团体的商务旅行。具体的座位数可能会因不同的内饰配置而稍有不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dassault Falcon 50EX机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 50EX\";",
+        "actual_answer": "Dassault Falcon 50EX是一款三引擎喷气公务机，通常配置能够容纳8到10名乘客。然而，具体的座位安排可能会根据客户的需求和机舱配置而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 20机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 20\";",
+        "actual_answer": "Dassault Falcon 20是法国达索航空公司生产的一款双引擎商务喷气机。该机型通常配置为能够容纳8至10名乘客，具体的座位数量可能会根据飞机的内饰配置和运营方的需求有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation CJ1机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ1\";",
+        "actual_answer": "Cessna Citation CJ1是一种小型商务喷气机，通常配置为载客6至7人，包括飞行员。该机型主要用于短程公务飞行和出租飞机服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bombardier Learjet 35机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 35\";",
+        "actual_answer": "Bombardier Learjet 35是小型公务机，其典型座位数为6到8个乘客座位。具体的座位布局可能会根据客户的定制要求有所不同，但一般在这个范围内。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 2000机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000\";",
+        "actual_answer": "Dassault Falcon 2000是一款中型商务喷气机，典型情况下可以容纳8到10名乘客。不过，具体的座位数量可能会根据机舱配置的不同而有所变化，例如，一些专门定制的内部布局可能会增加或减少座位数。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Piper PA-46机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-46\";",
+        "actual_answer": "Piper PA-46是一款小型单引擎飞机，通常配置为4到6个座位。这包括了飞行员和乘客座位。具体的座位数量可能会根据不同的配置和版本有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hawker 1000机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 1000\";",
+        "actual_answer": "Hawker 1000是一款中型商务喷气机，通常配置提供8到9个乘客座位。具体座位数可能会根据内饰和运营商的选择有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Embraer ERJ 135机型的座位数是多少？",
+        "A": 30,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer ERJ 135\";",
+        "actual_answer": "Embraer ERJ 135 是一种支线喷气式客机，通常配置有 37 个座位。其设计旨在用于短途航线，以提供灵活的座位安排和舒适的乘坐体验。不同航空公司可能会根据其运营需求对机舱布局进行调整，因此座位数可能略有变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gulfstream GIII机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GIII\";",
+        "actual_answer": "Gulfstream GIII是一款商务喷气式飞机，通常根据不同的舱内配置可以容纳12到19名乘客。具体的座位数可能会因飞机的内部布局和客户的定制需求而有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna Citation VI机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation VI\";",
+        "actual_answer": "Cessna Citation VI是一款中型商务喷气机，通常设计配置为提供6到8个乘客座位。机舱内座位的具体数量和布局可能会根据客户的定制需求有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bombardier Challenger 850机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 850\";",
+        "actual_answer": "Bombardier Challenger 850是一款公务机，根据其配置和布局的不同，一般可以容纳12到16名乘客。具体座位数可能因客户需求和内部布局定制而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Gulfstream GV机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GV\";",
+        "actual_answer": "Gulfstream GV是一款大型的喷气式公务机，通常的座位配置可以容纳12到16名乘客。这一具体数量可能会根据客户的定制需求而有所不同，因为许多用户会根据自身的需要对机舱布局进行个性化配置。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Gulfstream G700机型的座位数是多少？",
+        "A": 15,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G700\";",
+        "actual_answer": "Gulfstream G700是一款豪华私人喷气式飞机，通常被配置为最多可容纳19名乘客。具体座位数可能会根据客户的需求以及内部配置的不同而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pilatus PC-24机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Pilatus PC-24\";",
+        "actual_answer": "Pilatus PC-24是一种瑞士生产的轻型公务喷气机，这款飞机通常可以容纳6到8名乘客，具体数量可以根据机舱配置和客户需求稍作调整。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier CRJ-200机型的座位数是多少？",
+        "A": 48,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier CRJ-200\";",
+        "actual_answer": "Bombardier CRJ-200是一种支线客机，通常配置有50个座位。不过，具体的座位数可能会因航空公司或机舱布局的不同而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hawker 4000机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 4000\";",
+        "actual_answer": "Hawker 4000是一款中型公务机，通常配置有8到10个座位。这一座位数可以根据具体的内饰设计和客户需求有所调整。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna 414机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 414\";",
+        "actual_answer": "Cessna 414是一款小型双引擎轻型飞机，通常设计用于载客任务。根据其配置不同，Cessna 414通常可以搭载6到8名乘客。具体的座位数可能会因为内部布局的不同而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hawker 800XPi机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800XPi\";",
+        "actual_answer": "Hawker 800XPi是一种中型喷气式公务机，通常可以容纳约8到9名乘客。不过，具体的座位配置可能会因运营商的不同而有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Honda HondaJet机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Honda HondaJet\";",
+        "actual_answer": "Honda HondaJet是一款小型商务喷气机，通常配置为4到5个乘客座位。具体座位数量可能会根据内部布局和客户定制需求有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Global 5500机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 5500\";",
+        "actual_answer": "Bombardier Global 5500是一款豪华公务机，通常配置可以容纳10到16名乘客。具体的座位数可能会根据机型的内部配置和客户的需求有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna Citation VII机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation VII\";",
+        "actual_answer": "Cessna Citation VII是为高端商务市场设计的双引擎喷气式公务机。它通常可以容纳8位乘客，但根据内部布局和配置的不同，座位数可能会有所变动。一些设置可能会增加或减少座位数量，以满足特定客户的需求。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hawker 750机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 750\";",
+        "actual_answer": "Hawker 750是一款中型商务喷气机。该机型通常配置8个座位，可以根据客户的需求进行一定程度的内部布局定制，以提供更舒适和实用的空间。实际上，具体的座位数和布局可能会因飞机的具体配置和改装情况而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cirrus SR22机型的座位数是多少？",
+        "A": 4,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cirrus SR22\";",
+        "actual_answer": "Cirrus SR22是一款小型单引擎活塞式飞机，通常配置有4个座位，包括飞行员在内。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation Excel机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Excel\";",
+        "actual_answer": "Cessna Citation Excel（塞斯纳奖状Excel）是一款流行的公务机，其通常座位配置可以容纳8到9名乘客。具体座位数可能会根据飞机的内部配置和客户的定制要求有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation XLS机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation XLS\";",
+        "actual_answer": "Cessna Citation XLS是一种中型商务喷气机，通常配置为提供8到9个乘客座位。这个配置可能会根据特定机主的需求进行调整。例如，有的可能会选择减少座位以提供更多的行李空间或改进客舱设施。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bombardier Challenger 350机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 350\";",
+        "actual_answer": "Bombardier Challenger 350是一款非常流行的中型商务喷气机。它通常可以容纳8到10名乘客，这取决于机舱配置和内饰设计。在某些情况下，可能会有不同的内部布局，但一般来说，它能为这个数量的乘客提供舒适的座位。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Learjet 36机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 36\";",
+        "actual_answer": "Bombardier Learjet 36是一种轻型商务喷气机，其典型座位配置通常为6至8个乘客座位，取决于具体的内部布局和客户的定制需求。值得注意的是，该机型主要用于公务和私人飞行，因此座位数量可能依据客户的需求有所调整。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Embraer Praetor 500机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Praetor 500\";",
+        "actual_answer": "Embraer Praetor 500是一款中型公务机，通常根据配置可以容纳7到9名乘客。具体的座位数可能会因内部布局的不同而有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Embraer Lineage 1000机型的座位数是多少？",
+        "A": 19,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Lineage 1000\";",
+        "actual_answer": "Embraer Lineage 1000是一款豪华公务机，基于Embraer 190客机设计。它的座位数取决于客户的具体配置和布局需求。一般来说，这款飞机可以容纳约13到19名乘客。具体的座位配置可以根据客户的需求进行定制，以提供最大的舒适性和豪华体验。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cirrus SR20机型的座位数是多少？",
+        "A": 4,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cirrus SR20\";",
+        "actual_answer": "Cirrus SR20是一款小型轻型飞机，它通常配置有4个座位，包括飞行员的位置。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna 206机型的座位数是多少？",
+        "A": 3,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 206\";",
+        "actual_answer": "Cessna 206通常配置为六个座位，包括一名驾驶员和五名乘客。这个轻型飞机广泛用于私人飞行、跳伞和其他需要短途运输的活动。配置可能会根据具体用途或定制需求有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Gulfstream G350机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G350\";",
+        "actual_answer": "Gulfstream G350通常设计为搭载10名乘客。这一布局可以有一定的变化，根据客户的具体需求进行定制。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bombardier Learjet 40机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 40\";",
+        "actual_answer": "Bombardier Learjet 40是一款轻型商务喷气机，通常配置为6个座位。这包括5名乘客座位和1名飞行员座位，尽管在某些配置下还可以增加一个副驾驶座位。具体的座位数和内部布局可能会根据客户的需求而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hawker 800XP机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800XP\";",
+        "actual_answer": "Hawker 800XP是一款中型商务喷气式飞机，通常配置为8到9个座位。具体配置可能会根据运营商的需求有所不同。例如，飞机内部座位安排可以根据乘客舒适度要求进行调整，因此可能会在8到9个座位的基础上稍有变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Airbus A319机型的座位数是多少？",
+        "A": 144,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus A319\";",
+        "actual_answer": "Airbus A319的座位数量因航空公司和配置的不同而有所变化。通常，该机型的座位数大约在120到156座之间。具体的座位布局取决于航空公司的需求和客舱配置方案，包括经济舱和商务舱的比例。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Gulfstream GIV机型的座位数是多少？",
+        "A": 13,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GIV\";",
+        "actual_answer": "Gulfstream GIV是一款远程商务喷气式飞机，通常可以容纳大约14到19名乘客，这取决于机舱的布局和配置。由于该飞机主要用于商务和私人用途，座位的具体数量可能会根据客户的需求和内部定制进行调整。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dassault Falcon 2000LX机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000LX\";",
+        "actual_answer": "Dassault Falcon 2000LX是一款商务喷气机，通常配置为8到10个座位。具体的座位数可能会根据机主的定制需求而有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna Citation CJ4机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ4\";",
+        "actual_answer": "Cessna Citation CJ4是一款轻型公务喷气机，通常配置为6到8个乘客座位，具体取决于内部的布局和设计选择。一般而言，CJ4会提供舒适的座椅安排，以满足商务旅行的需求。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Boeing BBJ2机型的座位数是多少？",
+        "A": 22,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Boeing BBJ2\";",
+        "actual_answer": "Boeing BBJ2（波音公务机2型）是基于波音737-800改装的公务机。由于这是一种用于公务用途的飞机，其座位数可以根据客户的具体需求进行定制，因此并没有固定的座位数。通常而言，BBJ2可以容纳25到50名乘客，但最终的布局取决于客户的配置选择和内部设计需求。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Airbus A330机型的座位数是多少？",
+        "A": 264,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus A330\";",
+        "actual_answer": "Airbus A330是一款广泛使用的中远程双引擎宽体客机，其座位数根据不同的型号和配置会有所不同。通常，A330家族的几个主要型号及其典型座位配置如下：\n\n1. A330-200：通常座位数在210至250之间。\n2. A330-300：通常座位数在250至300之间，具体数量取决于航空公司的座位布局和级别配置。\n3. A330-900neo：作为A330neo系列的一部分，通常可以容纳260至300名乘客。\n\n航空公司可以根据自己的需求调整座位配置，因此准确的座位数可能会有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gulfstream G200机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G200\";",
+        "actual_answer": "Gulfstream G200飞机通常设计为容纳8到10名乘客。具体的座位配置可以根据客户的需求进行定制，因此不同的飞机可能会有稍微不同的座位布局。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation Bravo机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Bravo\";",
+        "actual_answer": "Cessna Citation Bravo是一款轻型商务喷气式飞机，通常设有6到7个乘客座位，具体座位配置可能根据运营商或客户的需求而有所不同。此外，飞机还设有飞行员座位，通常为两个。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Airbus ACJ机型的座位数是多少？",
+        "A": 15,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ\";",
+        "actual_answer": "Airbus ACJ（Airbus Corporate Jets）系列飞机主要是为满足高端私人和企业市场的需求而设计的，因此其布局和座位数量可以根据客户的具体要求进行广泛的定制。通常，ACJ飞机的座位数比普通商用客机型少很多，以提供更豪华宽敞的空间。一般而言，这类飞机可容纳从10几到50人不等，具体取决于机舱的配置和客户定制的内饰方案。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation CJ3+机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ3+\";",
+        "actual_answer": "Cessna Citation CJ3+ 是一种轻型商务喷气式飞机，通常配置有6到7个乘客座位，不包括驾驶舱的飞行员座位。具体座位布局可能会根据运营商的需求有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechcraft King Air 300机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 300\";",
+        "actual_answer": "Beechcraft King Air 300是一款双引擎涡轮螺旋桨飞机，通常配置为乘客提供6到9个座位。这一座位数可以根据具体的内饰配置和客户需求而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation Encore+机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Encore+\";",
+        "actual_answer": "Cessna Citation Encore+公务机的座位配置通常可以容纳8名乘客。不过，具体的座位布局可能会根据客户需求和飞机内部配置的不同而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gulfstream G600机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G600\";",
+        "actual_answer": "Gulfstream G600是一款豪华公务机，根据其内部配置的不同，通常可以容纳15到19名乘客。这种飞机的座位数是灵活可定制的，具体数量可能会因内部布局的差异而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dassault Falcon 900LX机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900LX\";",
+        "actual_answer": "Dassault Falcon 900LX是一款三引擎公务机，通常配置为能够容纳大约12到19名乘客。具体的座位数可能会根据客户的个性化内饰设计有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bombardier Learjet 45机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 45\";",
+        "actual_answer": "Bombardier Learjet 45是一款中型公务机，其典型的座位布局通常可以容纳8位乘客。然而，具体的座位数可能会根据客户的具体配置要求有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 8X机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 8X\";",
+        "actual_answer": "Dassault Falcon 8X是一款大型商务喷气飞机，通常配置为提供8到16个座位，具体座位数可以根据客户的具体需求和内部配置进行定制。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gulfstream G150机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G150\";",
+        "actual_answer": "Gulfstream G150是一款中型商务喷气式飞机，通常配置为可容纳6到8名乘客。具体的座位数可能会根据机舱的内部配置和运营商的要求有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Global 5000机型的座位数是多少？",
+        "A": 13,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 5000\";",
+        "actual_answer": "Bombardier Global 5000是一款大型远程公务机，根据配置的不同，该机型通常可以容纳大约12到16名乘客。具体座位数可能会因客户的个性化需求和内部装潢而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Airbus ACJ A319机型的座位数是多少？",
+        "A": 19,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ A319\";",
+        "actual_answer": "Airbus ACJ A319是空中客车专为商务用途设计的私人飞机版本，因此其座位数量可以根据客户的个性化定制进行调整。这种飞机通常配置豪华座位和设施，座位数可能从十几个到几十个不等，而不是传统商业航班的座位安排。如果需要具体信息，建议联系相关飞机管理公司或制造商获取定制配置的详情。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Diamond DA62机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Diamond DA62\";",
+        "actual_answer": "Diamond DA62 是一款轻型双引擎螺旋桨飞机，通常可容纳 5 到 7 人，包括飞行员和乘客。座位配置可以根据具体需求和飞机内饰选择而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Airbus A340机型的座位数是多少？",
+        "A": 100,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus A340\";",
+        "actual_answer": "Airbus A340 是一种四引擎远程宽体客机，其座位数因具体型号和航空公司的座舱布局而有所不同。通常来说，A340-200、A340-300、A340-500 和 A340-600 这几种型号的座位数大致范围如下：\n\n- A340-200: 通常可搭载210到250名乘客。\n- A340-300: 座位数一般在250到300名乘客左右。\n- A340-500: 通常可以搭载270到310名乘客。\n- A340-600: 座位数一般在320到370名乘客之间。\n\n需要注意的是，具体的座位数可能会因航空公司选择的座舱布局（如经济舱、商务舱与头等舱的比例）而变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dassault Falcon 7X机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 7X\";",
+        "actual_answer": "Dassault Falcon 7X是一款由达索航空制造的远程商务喷气式飞机。通常情况下，Falcon 7X的座位数可以容纳12到16位乘客，具体配置可能根据机主的需求有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna 207机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 207\";",
+        "actual_answer": "Cessna 207 是一种单发涡轮螺旋桨飞机，通常用于短途客运或货运。它的座位配置通常包括 1 个飞行员加上 6 到 7 个乘客座位，因此总的座位数可以达到 7 到 8 个，包括飞行员。具体配置可能会因机型变体或运营者的需要而有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Piper PA-34机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-34\";",
+        "actual_answer": "Piper PA-34是一款双引擎轻型飞机，通常也被称为Piper Seneca。该机型一般配置有6个座位，包括飞行员在内。不过，不同型号和具体配置可能会有所不同，因此座位数也可能会因特定的内部布局而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna Citation CJ2+机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ2+\";",
+        "actual_answer": "Cessna Citation CJ2+是一款小型商务喷气机，通常配置为提供六个乘客座位。此外，驾驶舱内还有两个座位，分别供飞行员和副驾驶使用。根据客户的具体需求和配置选择，乘客座位数可能略有不同，但通常是六个座位。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechjet 400机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 400\";",
+        "actual_answer": "Beechjet 400是一种轻型商务喷气机，通常配置为六到八个座位。这些座位的具体数目可能因机舱内部配置而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechcraft King Air 200机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 200\";",
+        "actual_answer": "Beechcraft King Air 200是一款轻型双引擎涡桨飞机，通常设计用于公务和私人用途。其座位配置通常可以容纳6到9名乘客，具体取决于内部布局和客户定制选项。通常情况下，加上飞行员和副驾驶席位，总座位数可以达到11人。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Challenger 604机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 604\";",
+        "actual_answer": "Bombardier Challenger 604是一款双发喷气式公务机，通常配置为提供8到12个座位，具体座位数可能会根据客户的不同需求和内部配置而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bombardier Challenger 601机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 601\";",
+        "actual_answer": "Bombardier Challenger 601是一款商务喷气式飞机，其座位数通常在10到19个之间。这一数目可以根据具体客户的配置和内部布局要求有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna Citation Sovereign机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Sovereign\";",
+        "actual_answer": "Cessna Citation Sovereign是一款中型公务喷气机，通常设计可以容纳8到12名乘客，这具体取决于内部配置和布局选项。标准布局通常是为9名乘客提供舒适的座位。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna 303机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 303\";",
+        "actual_answer": "Cessna 303是一个轻型双引擎飞机，通常配置为6个座位。这些包括飞行员和副驾驶的位置，以及后排座位，适合载客或用于其他用途。不同的配置可能导致座位数量有所变化，但一般情况下，这款机型设计为6个座位。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Beechcraft King Air 350iER机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350iER\";",
+        "actual_answer": "Beechcraft King Air 350iER机型通常配置座位数为8到11个乘客座位，具体取决于客舱配置和运营商的选择。该飞机提供灵活的内部布局，以满足不同的需求。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Embraer Legacy 500机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 500\";",
+        "actual_answer": "Embraer Legacy 500是一款中型商务喷气机，通常配置为可搭载8到12名乘客。具体的座位数可能会根据机舱布局和客户的个性化需求有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hawker 400A机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 400A\";",
+        "actual_answer": "Hawker 400A是一款轻型公务喷气机，通常配置为最多可搭载7到8名乘客。这一配置可能会因客户的特定需求或座位布置的不同而略有变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pilatus PC-12机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Pilatus PC-12\";",
+        "actual_answer": "Pilatus PC-12是一款单引擎涡桨飞机，根据不同的配置，通常可以搭载6到9名乘客。这个座位数可能会因运营商的具体需求和内部配置的不同而有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Gulfstream G450机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G450\";",
+        "actual_answer": "Gulfstream G450是一款豪华商务喷气机，通常配置提供12至16个座位，具体的座位数和内部布局可以根据客户的需求进行定制。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation I机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation I\";",
+        "actual_answer": "Cessna Citation I是一款小型喷气式公务机，通常设计为最多可容纳8名乘客。然而，实际配置可能会根据具体的内饰设计和客户需求有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hawker 400XP机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 400XP\";",
+        "actual_answer": "Hawker 400XP是一款轻型喷气公务机，通常配置提供大约6到8个座位，根据具体内饰布局和客户需求可能略有不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 6X机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 6X\";",
+        "actual_answer": "Dassault Falcon 6X是一款豪华公务机，通常配置有8到16个座位，具体座位数可以根据客户的个性化需求进行调整。设计上注重舒适性和灵活性，以满足不同的商务和个人飞行需求。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna 210机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 210\";",
+        "actual_answer": "Cessna 210是一种单引擎活塞式飞机，通常配置有六个座位。这包括飞行员和副驾驶座位，以及后排的四个乘客座位。具体的座位布局可能会根据改装或特定型号略有不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna 335机型的座位数是多少？",
+        "A": 4,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 335\";",
+        "actual_answer": "Cessna 335是一款轻型双引擎飞机，通常可容纳包括飞行员在内的6个座位。设计上可以舒适地安排两名飞行员和四名乘客。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hawker 850XP机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 850XP\";",
+        "actual_answer": "Hawker 850XP是一款中型公务机，通常配置可以容纳8到9名乘客的座位。同时，根据客户需求和内饰的不同配置，座位数可能会有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Embraer Phenom 100机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Phenom 100\";",
+        "actual_answer": "Embraer Phenom 100是一种小型轻型公务机，通常配置为4到6个乘客座位。座位的具体数量可能会根据内部布局的不同而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gulfstream G650机型的座位数是多少？",
+        "A": 17,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G650\";",
+        "actual_answer": "Gulfstream G650是一款大型喷气式公务机，通常配置为可以搭载11到18名乘客，具体座位数取决于飞机的内饰配置和航空公司的选择。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Learjet 31ER机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 31ER\";",
+        "actual_answer": "Bombardier Learjet 31ER是一款轻型商务喷气机，其典型的座位布局通常可以容纳6到8名乘客，不包括飞行员座位。当然，具体的座位配置可能会因为不同的客户需求进行定制。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna 421机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 421\";",
+        "actual_answer": "Cessna 421通常是一个8座位的双引擎轻型飞机，包括机组人员的座位。配置会根据飞机的用途及改装情况而有所不同。有些配置可能减少或增加座位数量以满足特定需求。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Boeing BBJ3机型的座位数是多少？",
+        "A": 19,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Boeing BBJ3\";",
+        "actual_answer": "波音BBJ3（Boeing Business Jet 3）是基于波音737-900ER的公务机版本，主要设计用于高端商务或VIP出行。BBJ机型的座位布局可以根据客户的个性化需求进行定制，因此座位数可能会有很大的不同。\n\n通常情况下，BBJ3会配置较少的座位以提供更多的空间和奢侈设施。一般来说，BBJ机型可能会提供20至50个座位，而不是商用航空配置下的单通道客机所能容纳的数量。具体的座位数会根据机舱的设计和客户的需求进行调整。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hawker 800机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800\";",
+        "actual_answer": "Hawker 800是一款中型商务喷气式飞机，其典型的座位容量通常在8到9个乘客座位之间，具体配置可能会因飞机内部的布局和定制选项而有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna 208机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 208\";",
+        "actual_answer": "Cessna 208，又名Cessna 208 Caravan，根据配置的不同，通常可容纳9到14名乘客。最常见的配置是可容纳9到12名乘客，加上一至两名飞行员。具体座位数可能因航空公司的配置或客户的定制需求而有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna 340机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 340\";",
+        "actual_answer": "Cessna 340 是一种轻型双引擎飞机。通常，这款飞机的座位配置为 6 个座位：2 个在驾驶舱（飞行员和副驾驶）和 4 个在乘客舱。然而，具体的座位配置可能会根据运营需求和内部设计的改变而有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hawker 700A机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 700A\";",
+        "actual_answer": "Hawker 700A是一款中型公务机，通常配置可以容纳6到8名乘客。这取决于具体的机舱布局和配置方案。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechcraft Travel Air机型的座位数是多少？",
+        "A": 3,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft Travel Air\";",
+        "actual_answer": "Beechcraft Travel Air是一种轻型双引擎活塞式飞机，最常见的配置通常是4到6个座位。这包括飞行员座位和乘客座位。具体的座位数量可能会根据配置和客户定制的不同而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna Citation CJ1+机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ1+\";",
+        "actual_answer": "Cessna Citation CJ1+是一款小型公务机，通常配置为5到6个乘客座位。如果需要详细的信息或特定配置，建议参考制造商的资料或联系飞机运营商以获得准确数据。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna 425机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 425\";",
+        "actual_answer": "Cessna 425是一种双引擎涡轮螺旋桨飞机，通常配置为6至8个座位，具体取决于配置和内饰选择。这款飞机常用于商务或私人飞行，提供灵活的座位安排以满足不同需求。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Embraer E190机型的座位数是多少？",
+        "A": 97,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer E190\";",
+        "actual_answer": "Embraer E190是一款由巴西航空工业公司生产的中型客机，其座位数根据航空公司的配置和具体型号会有所不同。通常情况下，Embraer E190的座位数大约在96到114座之间。具体的座位数可能取决于航空公司的座舱布局、座位间距以及商务舱和经济舱的配置比例。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechcraft Premier I机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft Premier I\";",
+        "actual_answer": "Beechcraft Premier I机型是一款轻型喷气式商务飞机，通常配置为6到7个座位。这取决于具体的内部布局和客户需求，座位数量可能会有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Gulfstream G650ER机型的座位数是多少？",
+        "A": 16,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G650ER\";",
+        "actual_answer": "Gulfstream G650ER是一款豪华的远程公务机，通常配置的座位数量在13到19个之间，具体数字会根据客户的内饰和布局选择而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Learjet 31A机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 31A\";",
+        "actual_answer": "Bombardier Learjet 31A是一款轻型公务机，通常可以容纳6到8名乘客，不过这个座位数量可能会根据客户需求和内部配置略有不同。如果需要更多具体信息，建议查看飞机的详细配置或咨询运营商。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechcraft 1900C机型的座位数是多少？",
+        "A": 19,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft 1900C\";",
+        "actual_answer": "Beechcraft 1900C是一款由比奇飞机公司制造的双引擎涡轮螺旋桨支线客机。该机型通常配置19个座位，适用于短途客运和通勤航班。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Embraer Legacy 650机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 650\";",
+        "actual_answer": "Embraer Legacy 650是一款商务喷气机，通常配置为13到14个座位，具体座位数可能会根据客舱内配置的不同而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bombardier Global Express机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global Express\";",
+        "actual_answer": "Bombardier Global Express是一款大型远程商务喷气机，其座位配置可以根据客户需求有所不同。通常来说，这架飞机的座位数一般在12到18个座位之间。具体的座位数量和布局可以根据运营商或业主的要求进行定制。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechcraft King Air 360机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 360\";",
+        "actual_answer": "Beechcraft King Air 360是一款常见的双引擎涡轮螺旋桨商务飞机。通常情况下，这款飞机可以配置为容纳大约8到9名乘客，但具体的座位数量可能会根据用户的定制需求和内部布局设计而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation Encore机型的座位数是多少？",
+        "A": 11,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Encore\";",
+        "actual_answer": "Cessna Citation Encore是一款轻型商务喷气机，其典型座位配置为8到9个乘客座位。此外，该机型还有两个驾驶舱座位供飞行员使用。具体的座位数可能会因机舱内饰和配置的不同而略有变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Learjet 55机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 55\";",
+        "actual_answer": "Bombardier Learjet 55是一款中型公务机，通常可以容纳7到10名乘客，具体取决于座椅配置。座位布局可能会因为机舱配置的不同而有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation Longitude机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Longitude\";",
+        "actual_answer": "Cessna Citation Longitude是一款中型公务机，通常配置为8到12个乘客座位，具体座位数可能会根据客户的具体配置和需求有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dassault Falcon 2000EX EASy机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000EX EASy\";",
+        "actual_answer": "Dassault Falcon 2000EX EASy是一款商务喷气式飞机，通常可以容纳8到12名乘客，具体座位数可能会根据客户的客舱配置调整。不同的航空公司或私人拥有者可能会根据需要进行不同的内部布局设计，以满足更高的舒适性或其他特定需求。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna 182机型的座位数是多少？",
+        "A": 3,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 182\";",
+        "actual_answer": "Cessna 182是一种单引擎轻型飞机，通常设计有四个座位，包括飞行员和三个乘客。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gulfstream G500机型的座位数是多少？",
+        "A": 13,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G500\";",
+        "actual_answer": "Gulfstream G500是一款豪华商务喷气机，通常配置为提供12至19个座位。这一配置可以根据客户的具体需求和内部布局的不同进行调整。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dassault Falcon 900机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900\";",
+        "actual_answer": "Dassault Falcon 900是一款私人喷气式飞机，通常配置为12至19个座位，具体座位数取决于客户的定制和配置需求。这架飞机提供宽敞的客舱，适合商务旅行或个人娱乐使用。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna 150机型的座位数是多少？",
+        "A": 3,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 150\";",
+        "actual_answer": "Cessna 150 是一款轻型飞机，其设计的座位数为两座。它通常用于私人飞行训练和个人休闲飞行。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Airbus A321机型的座位数是多少？",
+        "A": 236,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus A321\";",
+        "actual_answer": "Airbus A321的座位数取决于所选的内部配置和航空公司设置。通常情况下，A321的座位数大约在185到240之间。具体布局如全经济舱配置可能容纳更多乘客，而两舱或三舱布局（其中包括商务舱或头等舱）则可能容纳较少的乘客。不同的航空公司可能会根据其需求和舒适性标准进行不同的座位配置。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechcraft King Air 260机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 260\";",
+        "actual_answer": "Beechcraft King Air 260是一款双引擎涡桨飞机，通常配置提供7到9个乘客座位。这一型号在公务和私人航空中非常受欢迎，因其结合了高效的性能和较高的舒适度。具体的座位配置可以根据用户的特定需求进行定制。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Airbus A320机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus A320\";",
+        "actual_answer": "Airbus A320机型的座位数根据航空公司的配置和具体型号可能有所不同。一般来说，A320通常可容纳约140至180名乘客。具体的座位配置取决于航空公司选择的舱位布局，例如经济舱和商务舱的比例。标准的全经济舱布局通常会有接近180个座位，而包含商务舱的混合布局则可能减少总座位数以提供更大的座位空间。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Boeing 767机型的座位数是多少？",
+        "A": 96,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Boeing 767\";",
+        "actual_answer": "波音767是一款双通道宽体客机，其座位数取决于具体型号和航司的座椅布局。一般而言：\n\n- **波音767-200**：通常可容纳约181至224名乘客。\n- **波音767-300**：通常可容纳约210至269名乘客。\n- **波音767-300ER**：与767-300类似，但由于航程更长，常见配置约为218至269个座位。\n- **波音767-400ER**：通常可容纳约245至304名乘客。\n\n具体座位数会根据航空公司的内部配置（如舱位划分、座位间距等）有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gulfstream G280机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G280\";",
+        "actual_answer": "Gulfstream G280是一款双引擎公务喷气机，通常配置为可容纳8到10名乘客。根据客户的具体需求和配置，座位数量可能略有不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Learjet 60机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 60\";",
+        "actual_answer": "Bombardier Learjet 60是一款中型商务喷气式飞机，通常配置有6到8个座位。这取决于具体的内部布局和定制配置选项。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechcraft King Air 350机型的座位数是多少？",
+        "A": 16,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350\";",
+        "actual_answer": "Beechcraft King Air 350是一款双引擎涡轮螺旋桨飞机，通常配置为8到11个乘客座位。这些座位配置可以根据具体的内部设计和用户需求进行一定程度的定制。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dassault Falcon 2000EX机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000EX\";",
+        "actual_answer": "Dassault Falcon 2000EX公务机通常配置有8到12个座位，具体座位数可能会根据客户定制的内部布局有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Beechcraft King Air B200机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air B200\";",
+        "actual_answer": "Beechcraft King Air B200通常配置为6到9个座位，具体座位数可以根据运营商或客户的需求进行调整。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation CJ2机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ2\";",
+        "actual_answer": "Cessna Citation CJ2通常配置为有6个乘客座位，加上2名机组人员（飞行员和副驾驶员）的座位，因此总共可以容纳8人。不过，根据具体的内饰配置，乘客座位数量可能会有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 900C机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900C\";",
+        "actual_answer": "Dassault Falcon 900C是一架典型的商务喷气机，通常可容纳8到12名乘客，具体座位数可能会根据客户的定制要求而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation Sovereign+机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Sovereign+\";",
+        "actual_answer": "Cessna Citation Sovereign+是中型公务机，通常配置为8到12个乘客座位。具体座位数可能根据客户的内饰选择和布局不同而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bombardier Learjet 35A机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 35A\";",
+        "actual_answer": "Bombardier Learjet 35A通常被配置为最多容纳8名乘客。然而，具体的座位配置可能会根据运营商或客户的具体要求有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna Citation V机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation V\";",
+        "actual_answer": "Cessna Citation V是一款中型公务机，其典型座位布局通常能够容纳7到8名乘客。不同行配置略有不同，因此具体座位数可能会有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna 441 Conquest II机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 441 Conquest II\";",
+        "actual_answer": "Cessna 441 Conquest II是一款双引擎涡桨飞机，通常配置有6到9个座位，具体座位数可能会根据不同的内部布局和客户需求有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna 402机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 402\";",
+        "actual_answer": "Cessna 402是一款小型双引擎轻型飞机，通常用于短途客运和货运任务。它的座位数通常为6到10个座位，具体配置取决于航空公司的需求和机舱的布局。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 2000S机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000S\";",
+        "actual_answer": "Dassault Falcon 2000S是一款双引擎公务机，通常配置为8至10个座位，但具体座位数可以根据客户的需求和内部布局进行定制。不同的布局可能提供不同数量的座位和舒适度设置。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Boeing 737机型的座位数是多少？",
+        "A": 68,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Boeing 737\";",
+        "actual_answer": "Boeing 737机型的座位数根据不同的具体型号和内部配置而有所不同。一般来说，Boeing 737-700、737-800、737-900等不同型号可以容纳的乘客人数有所差异：\n\n- **Boeing 737-700**：通常可容纳约126至149名乘客。\n- **Boeing 737-800**：通常可容纳约162至189名乘客。\n- **Boeing 737-900**：通常可容纳约178至220名乘客。\n\n具体的座位数还会根据航空公司配置的差异而有所变化，一些航空公司可能会选择增加经济舱的座位以增加总载客量，或者增加商务舱座位以提高舒适度。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna 404机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 404\";",
+        "actual_answer": "Cessna 404是一种轻型双引擎飞机，一般来说，它的座位配置可以容纳最多10名乘客，具体布局可能会因运营商的需求或私人改装而有所不同。通常情况下，这包括飞行员和副驾驶员座位以及乘客座位。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Piper PA-32机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-32\";",
+        "actual_answer": "Piper PA-32是一款由派珀飞机公司制造的单引擎轻型飞机。根据具体型号的不同，PA-32通常可以容纳6到7个座位，包括飞行员的位置。具体的座位数可能会因内部布局和配置的变化而有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bombardier Challenger 300机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 300\";",
+        "actual_answer": "Bombardier Challenger 300是一款中型公务喷气机，通常配置可以容纳8到10名乘客，具体取决于内部布局和配置。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Beechcraft King Air 100机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 100\";",
+        "actual_answer": "Beechcraft King Air 100是一款双涡轮螺旋桨商用飞机。根据内部布局的不同，其通常可以容纳6到9名乘客。这一配置可能因具体的航空公司或运营商的机内布局而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna 152机型的座位数是多少？",
+        "A": 1,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 152\";",
+        "actual_answer": "Cessna 152 是一款经典的小型双座单引擎教练机，通常设计为包含两个座位，也就是说，它能容纳一名飞行员和一名乘客。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Beechcraft Baron机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft Baron\";",
+        "actual_answer": "Beechcraft Baron是一种轻型双引擎活塞式飞机，具体的座位数取决于具体的型号。一般来说，Beechcraft Baron的座位数通常为4至6个。常见型号如Baron 58通常可以搭载6名乘客（包括飞行员），而较早的型号如Baron 55可能有4到5个座位。具体的座位配置可能会因客户定制或内饰布局而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 900DX机型的座位数是多少？",
+        "A": 17,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900DX\";",
+        "actual_answer": "Dassault Falcon 900DX是一款豪华商务喷气式飞机，通常配置为可搭载8到12名乘客。这一具体座位数量可以根据用户的需求和内饰配置而有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna Citation II机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation II\";",
+        "actual_answer": "Cessna Citation II 是一款双引擎喷气公务机，通常配置有6到8个乘客座位，具体座位数可能因内部布局和客户的特定要求而有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Embraer Phenom 300机型的座位数是多少？",
+        "A": 11,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Phenom 300\";",
+        "actual_answer": "Embraer Phenom 300是一款轻型公务机，通常配置有6到10个座位，具体座位数可能根据客户的定制需求有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hawker 800SP机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800SP\";",
+        "actual_answer": "Hawker 800SP是一种中型公务机，其典型座位配置通常为8到9个乘客座位。不过，具体的座位安排可能会因改装和配置选项的不同而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Beechcraft King Air 350i机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350i\";",
+        "actual_answer": "Beechcraft King Air 350i是一款双引擎涡桨飞机，主要用于公务和通勤航空。该机型通常配置为客舱提供8到11个座位，具体座位数可能会根据不同的内部布局和客户需求有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechcraft King Air 90机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 90\";",
+        "actual_answer": "Beechcraft King Air 90机型是一款轻型双引擎涡轮螺旋桨飞机，通常配置可以容纳6到7名乘客，加上2名机组人员（飞行员和副驾驶）。具体的座位布局可能会因不同的内部配置而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna 172机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 172\";",
+        "actual_answer": "Cessna 172是一款常见的小型四座轻型飞机。因此，它通常有四个座位，包括飞行员座位和三个乘客座位。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dassault Falcon 20F机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 20F\";",
+        "actual_answer": "Dassault Falcon 20F是一款商务喷气式飞机，根据其内部布局的不同，通常可以容纳8到10名乘客。这种机型可以根据客户需求进行定制，因此座位数可能会有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dassault Falcon 900EX机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900EX\";",
+        "actual_answer": "Dassault Falcon 900EX是一款商务飞机，通常由运营商根据需求进行配置。一般来说，这种飞机的座位数可以在8至19个之间，根据内饰和布局的不同而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna Citation Mustang机型的座位数是多少？",
+        "A": 4,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Mustang\";",
+        "actual_answer": "Cessna Citation Mustang是一款轻型喷气式公务机，通常设计为最多可容纳6个人，包括2名飞行员和4名乘客。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Airbus ACJ A320机型的座位数是多少？",
+        "A": 31,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ A320\";",
+        "actual_answer": "Airbus ACJ A320（Airbus Corporate Jet）是一种专为公务机市场设计的客机。与商用版不同，ACJ A320的客舱布置通常是定制化的，因此座位数可以有很大差异。一般来说，在公务机配置中，ACJ A320可能设置为少于20个座位，以提供奢华和舒适的旅客体验。不过具体的座位数会根据客户的需求和内饰设计方案而不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gulfstream GIV-SP机型的座位数是多少？",
+        "A": 13,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GIV-SP\";",
+        "actual_answer": "Gulfstream GIV-SP是一款豪华商务喷气机，通常配置为12到16个座位。具体座位数量可能会根据飞机的内部布局和客户的具体要求而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation M2机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation M2\";",
+        "actual_answer": "Cessna Citation M2是一种轻型商务喷气式飞机，该机型通常配置有6个乘客座位。在标准布局下，客舱内可以容纳6名乘客，加上1名或2名飞行员（根据是否需要副驾驶），这使得总座位数可以变为7到8个。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Challenger 650机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 650\";",
+        "actual_answer": "Bombardier Challenger 650机型通常配置有11个座位。具体的座位配置可能因应运营商的不同需求和内部布局方案而有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna Citation Ultra机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Ultra\";",
+        "actual_answer": "Cessna Citation Ultra是一款双引擎喷气公务机，属于Cessna Citation V系列。该机型通常以两名驾驶员为标准配置，并可容纳大约7到8名乘客。不过，座位安排可能会根据具体的内饰设计和运营商的需求有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Global Express XRS机型的座位数是多少？",
+        "A": 13,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global Express XRS\";",
+        "actual_answer": "Bombardier Global Express XRS是一款长程商务喷气机，通常配置提供8到19个座位。具体座位数可以根据客户的需求和内部布局的不同而有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation X机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation X\";",
+        "actual_answer": "Cessna Citation X是一款中型商务喷气机，通常配置为8到12个座位视其内部配置的具体情况而有所不同。标准布局通常是8个乘客座位，具体数量可以根据客户需求进行定制。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Boeing BBJ机型的座位数是多少？",
+        "A": 15,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Boeing BBJ\";",
+        "actual_answer": "Boeing BBJ（Boeing Business Jet）的座位数会根据买家的具体定制需求而有所不同。通常情况下，BBJ是为私人、企业或政府用途设计的豪华商务飞机，座位配置通常比商业航班更少，以提供更大的舒适度和便利设施。\n\n具体座位数可以根据机内布局的不同而变化，通常在20到50个座位之间，具体取决于买方的配置选择。BBJ机型的内部空间可以配置会议室、卧室、浴室和休闲娱乐区等。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gulfstream G300机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G300\";",
+        "actual_answer": "Gulfstream G300是一种中型商务喷气机，通常配置为乘坐8到13名乘客，具体取决于机舱的布局和客户的定制要求。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation CJ3机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ3\";",
+        "actual_answer": "Cessna Citation CJ3是一款小型喷气商务飞机，通常配置有6到8个乘客座位，具体座位数可能根据舱内布局和客户定制有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Piper PA-28机型的座位数是多少？",
+        "A": 3,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-28\";",
+        "actual_answer": "Piper PA-28是一款小型单引擎飞机，通常用于飞行训练和个人用途。根据具体的机型和配置，PA-28通常可以容纳4个座位，包括飞行员座位。如果您计划使用或购买这类飞机，建议查看具体型号的详细规格，以确认座位数以及其他相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bombardier Global 6500机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 6500\";",
+        "actual_answer": "Bombardier Global 6500是一款远程商务喷气机，通常配置为13至17个座位，具体数量取决于内部布局和客户的定制要求。不同的运营商可能会根据特定需求调整座位数和配置。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cessna 185机型的座位数是多少？",
+        "A": 3,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 185\";",
+        "actual_answer": "Cessna 185 Skywagon 是一种轻型固定翼飞机，通常可以容纳6个座位，包括飞行员座位。座位布局通常是两个前排座位（飞行员和副驾驶/乘客）和后排最多四个乘客座位。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dassault Falcon 10机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 10\";",
+        "actual_answer": "Dassault Falcon 10 是一种用于商务旅行的小型喷气式飞机，其典型座位配置通常可以容纳 4 到 8 名乘客，具体座位数可能根据机主的内饰选择和配置而有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Embraer Legacy 600机型的座位数是多少？",
+        "A": 13,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 600\";",
+        "actual_answer": "Embraer Legacy 600是一款公务喷气机，通常根据内部配置的不同，可以容纳13至14名乘客。不同的航空公司或私人用户可能会根据自己的需求对座位配置进行调整。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechjet 65机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 65\";",
+        "actual_answer": "Beechjet 65，即比奇喷气机 Model 65，一般指的是比奇飞机公司生产的小型公务机系列。这类飞机的典型座位配置通常为6到8个乘客座位，外加两名飞行员的位置。不过，具体的座位数量可能会因具体的飞机配置和客户的要求而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation III机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation III\";",
+        "actual_answer": "Cessna Citation III是一款中型商务喷气机，通常配置为6到9个座位，具体座位数量可能会根据内部配置的选择而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Learjet 70机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 70\";",
+        "actual_answer": "Bombardier Learjet 70是一款轻型喷气式商务飞机，通常配置有6个座位。这些座位通常是为乘客提供的，机组人员的座位不包括在内。具体的座位配置可能会根据客户的需求和内饰设计有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "BAe 125-700机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"BAe 125-700\";",
+        "actual_answer": "BAe 125-700是一款中型商务喷气机，典型的座位布局通常可以容纳6到8名乘客，具体座位数可能因飞机的内饰配置和客户的需求而有所不同。在某些情况下，飞机可能会进行定制，以适应特定的座位安排或奢华配置。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Challenger 605机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 605\";",
+        "actual_answer": "Bombardier Challenger 605是一款双发公务机，通常配置为10至12个座位。具体的座位数可能会根据客户的特殊配置需求有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation Latitude机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Latitude\";",
+        "actual_answer": "Cessna Citation Latitude是一款中型商务喷气机，通常配置为9个乘客座位。其内部布局可以根据客户需求进行一定程度的定制，但标准配置一般为9个座位。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Piper PA机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Piper PA\";",
+        "actual_answer": "Piper PA系列飞机包括多个不同的型号，每种型号的座位数可能会有所不同。以下是一些常见的Piper PA机型及其典型座位数：\n\n1. **Piper PA-28 Cherokee**：通常有4个座位。\n2. **Piper PA-32 Cherokee Six/Saratoga**：通常有6个座位。\n3. **Piper PA-34 Seneca**：通常有6个座位。\n4. **Piper PA-44 Seminole**：通常有4个座位。\n5. **Piper PA-46 Malibu/Mirage/Meridian**：通常有6个座位。\n\n具体的座位数可能因机型修改或配置不同而有所变化。在确定特定飞机的座位数时，建议参考该机型的具体型号和配置。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Beechcraft King Air 250机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 250\";",
+        "actual_answer": "Beechcraft King Air 250 是一种双引擎涡桨公务机。根据其内部配置的不同，通常可以容纳6到9名乘客。具体座位数可能会因为内饰的定制化选择而有所变化。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hawker 400机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 400\";",
+        "actual_answer": "Hawker 400是一款轻型商务喷气式飞机，通常配备两名机组人员，座位数一般为7到9个乘客座位。这一数量可能会根据具体的机舱配置和客户的定制需求有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "BAe 125-400机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"BAe 125-400\";",
+        "actual_answer": "BAe 125-400是一种中型公务机，通常设计用于搭载6到8名乘客。具体的座位配置可能会根据运营商的需求有所调整。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation I/SP机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation I/SP\";",
+        "actual_answer": "Cessna Citation I/SP是一款公务喷气机，它最多可以容纳5至6名乘客。这种机型是在Cessna Citation I的基础上进行了简化设计，以便由单个飞行员操作，因此通常称为“SP”（Single Pilot）。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 100机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 100\";",
+        "actual_answer": "Dassault Falcon 100是一款轻型公务机，通常配置可容纳4到6名乘客，具体座位数可能会根据定制配置有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bombardier Learjet 55C机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 55C\";",
+        "actual_answer": "Bombardier Learjet 55C是一个私人商务喷气机，通常配置为7到10个座位。这一具体座位数可能会因客户的个性化配置而有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hawker 850XPi机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 850XPi\";",
+        "actual_answer": "Hawker 850XPi是一种中型商务喷射机，通常配置为能够容纳8到9名乘客。不过，具体的座位数可能会根据内部配置进行一些调整。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Nextant 400XT机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Nextant 400XT\";",
+        "actual_answer": "Nextant 400XT是一架重制和升级的公务飞机，其原型是比奇喷气400A。通常，Nextant 400XT可以配置为6到8个座位，具体取决于内部布局的选择和客户的需求。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Learjet 31机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 31\";",
+        "actual_answer": "Bombardier Learjet 31是一款轻型商务喷气机，通常设计为容纳8位乘客。具体的座位配置可能会因为客户的定制需求而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Gulfstream G100机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G100\";",
+        "actual_answer": "Gulfstream G100是一款中型公务机，通常可以容纳6到8名乘客，具体的座位数可能会因机舱布局和客户定制而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hawker 800B机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800B\";",
+        "actual_answer": "Hawker 800B 是一款中型商务喷气式飞机，通常配置为 8 到 9 个座位。座位数可以根据客户的具体需求和内部布局有所变化。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "BAe 125-800机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"BAe 125-800\";",
+        "actual_answer": "BAe 125-800是一款由英国航空航天公司生产的中型双引擎公务机。该机型通常设计用于商务包机，其座位数根据机舱内部配置的不同可以有所变化。一般来说，BAe 125-800的座位数在6到9个之间，不过具体的布局可能根据客户需求而定。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Embraer Praetor 600机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Praetor 600\";",
+        "actual_answer": "Embraer Praetor 600是一款中型喷气公务机，通常配置为座位在8到12个之间，具体座位数量可能根据客户的具体配置需求而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Embraer Phenom 300E机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Phenom 300E\";",
+        "actual_answer": "Embraer Phenom 300E是一款轻型喷气飞机，通常配置有6到9个座位，具体取决于内部布局和客户的定制需求。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Global 7500机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 7500\";",
+        "actual_answer": "Bombardier Global 7500是一款长途公务喷气机，通常情况下，它的座位配置可以容纳最多19名乘客。然而，具体的座位数可能会根据客户的配置和内饰选择而有所不同。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Embraer Legacy 450机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 450\";",
+        "actual_answer": "Embraer Legacy 450是一款中型公务机，通常可容纳8到9名乘客。其座椅配置可以根据客户需求进行一定程度的定制，但标准配置下通常为8个座位。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Challenger 600机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 600\";",
+        "actual_answer": "Bombardier Challenger 600系列飞机是一种中型公务机，座位配置可以根据不同的内部布局和客户需求有所变化。通常情况下，这种飞机可以容纳9到19名乘客。具体座位数可能因改装或具体配置而异。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Airbus ACJ A318 Elite机型的座位数是多少？",
+        "A": 18,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ A318 Elite\";",
+        "actual_answer": "Airbus ACJ A318 Elite是专为公务用途设计的飞机，因此与传统商用喷气式飞机不同，它的座位安排具有高度的灵活性，通常不会固定为某一特定数量。这类公务机可以根据客户的需求定制配置，通常座位数在14到18个之间，但具体数量和布局可能会因客户的偏好而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Gulfstream G550机型的座位数是多少？",
+        "A": 16,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G550\";",
+        "actual_answer": "Gulfstream G550是一款长途公务机，根据内部配置的不同，其座位数通常在14到19个之间。这种飞机通常用于商务旅行，其内部布局可以根据客户需求进行定制，因此具体座位数量可能会有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation XLS+机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation XLS+\";",
+        "actual_answer": "Cessna Citation XLS+是一款中型商务喷气机，通常配置有8到9个乘客座位。这些座位包括机舱内的标准座椅，具体配置可能根据机主的要求或航空公司的安排有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hawker 700机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 700\";",
+        "actual_answer": "Hawker 700是一款中型商务喷气机，一般可以容纳大约8到9名乘客。这一座位数会根据具体的机舱布局和内饰配置而有所不同。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "correct_rate": 35.0,
+        "sample_size": 300,
+        "correct_count": 105
+    }
+]

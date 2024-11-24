@@ -1,0 +1,2107 @@
+[
+    {
+        "Q": "Vernal Regional Airport机场的四字码是什么？",
+        "A": "KVEL",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Vernal Regional Airport\";",
+        "actual_answer": "Vernal Regional Airport 机场的四字代码是 KVEL。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Mancelona Municipal机场的四字码是什么？",
+        "A": "D90",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Mancelona Municipal\";",
+        "actual_answer": "Mancelona Municipal机场的四字码是没有公开提供的。实际上，并不是所有的小型或地方机场都有国际航空运输协会（IATA）或国际民用航空组织（ICAO）分配的四字码。在某些情况下，您可能需要查找该机场的具体名称，以找到其相关的代码或其他联系信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bunbury机场的四字码是什么？",
+        "A": "YBUN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Bunbury\";",
+        "actual_answer": "Bunbury机场的四字码是YBUN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Wings-N-Wheels机场的四字码是什么？",
+        "A": "FA50",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Wings-N-Wheels\";",
+        "actual_answer": "抱歉，我无法提供 Wings-N-Wheels 机场的四字码信息。如果您有其他问题，我会很乐意帮助您。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kona International Airport机场的四字码是什么？",
+        "A": "PHKO",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Kona International Airport\";",
+        "actual_answer": "Kona International Airport（科纳国际机场）的四字码是PHKO。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Sand Creek Wildlife Station机场的四字码是什么？",
+        "A": "MT79",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Sand Creek Wildlife Station\";",
+        "actual_answer": "Sand Creek Wildlife Station机场的四字码是Y23。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Zilina机场的四字码是什么？",
+        "A": "LZZI",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Zilina\";",
+        "actual_answer": "Zilina机场的四字码是LZZI。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Sendai Airport机场的四字码是什么？",
+        "A": "RJSS",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Sendai Airport\";",
+        "actual_answer": "Sendai Airport（仙台机场）的四字国际航空运输协会（IATA）的代码是RJSS。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Landmark US Forest Service机场的四字码是什么？",
+        "A": "0U0",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Landmark US Forest Service\";",
+        "actual_answer": "US Forest Service 机场的四字码是KFLG，代表Flagstaff Pulliam Airport。虽然严格来说它不是一个专门的US Forest Service机场，但它是用于US Forest Service的一些活动的机场之一。通常特定的USFS机场会与当地的商业或公共机场合作运行，使用同样的代码。如果你指的是一个特定的USFS机场，可以提供更具体的地点，以便确认相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Wildwood机场的四字码是什么？",
+        "A": "XA91",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Wildwood\";",
+        "actual_answer": "Wildwood机场的四字码是KWWD。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Rohnerville机场的四字码是什么？",
+        "A": "KFOT",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Rohnerville\";",
+        "actual_answer": "Rohnerville 机场的四字码是 KFOT。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Tutow机场的四字码是什么？",
+        "A": "EDUW",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Tutow\";",
+        "actual_answer": "Tutow机场的四字码是 EDBT。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Madrid Air Base机场的四字码是什么？",
+        "A": "SKMA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Madrid Air Base\";",
+        "actual_answer": "Madrid Air Base的四字码是LEMD。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gum Creek机场的四字码是什么？",
+        "A": "8GA1",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Gum Creek\";",
+        "actual_answer": "Gum Creek机场的四字码是YGCR。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Holly Springs-Marshall County机场的四字码是什么？",
+        "A": "M41",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Holly Springs-Marshall County\";",
+        "actual_answer": "Holly Springs-Marshall County 机场的四字代码（ICAO代码）是 【M41】。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beers Farm机场的四字码是什么？",
+        "A": "PN73",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Beers Farm\";",
+        "actual_answer": "Beers Farm机场的四字码是FJ62。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "White Sulphur Springs机场的四字码是什么？",
+        "A": "7S6",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"White Sulphur Springs\";",
+        "actual_answer": "White Sulphur Springs 机场的四字码是KLWS。不过需要注意的是，White Sulphur Springs 位于西弗吉尼亚州的Greenbrier Valley机场常被误认为是White Sulphur Springs机场，其实际代码为KLWB。如果你问的是这个机场，请确认一下具体的请求。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Nelson Lagoon Airport机场的四字码是什么？",
+        "A": "PAOU",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Nelson Lagoon Airport\";",
+        "actual_answer": "Nelson Lagoon Airport 机场的四字码是 PAOU。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Mather Field机场的四字码是什么？",
+        "A": "1OH3",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Mather Field\";",
+        "actual_answer": "Mather Field机场的四字码是KMHR。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Jeju International Airport机场的四字码是什么？",
+        "A": "RKPC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Jeju International Airport\";",
+        "actual_answer": "Jeju International Airport机场的四字码是RKPC。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Queen Tamar机场的四字码是什么？",
+        "A": "UGMS",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Queen Tamar\";",
+        "actual_answer": "Queen Tamar机场的四字码是UGMS。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Branham Mill Airpark机场的四字码是什么？",
+        "A": "VG29",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Branham Mill Airpark\";",
+        "actual_answer": "Branham Mill Airpark机场的四字码是NC17。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lackorn机场的四字码是什么？",
+        "A": "TE51",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Lackorn\";",
+        "actual_answer": "Lackorn机场的四字代码是VTPI。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Eagle River Union机场的四字码是什么？",
+        "A": "KEGV",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Eagle River Union\";",
+        "actual_answer": "Eagle River Union机场的四字码是KEGV。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "B & D Flyers International机场的四字码是什么？",
+        "A": "MN74",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"B & D Flyers International\";",
+        "actual_answer": "B & D Flyers International机场的四字国际航空运输协会（IATA）机场代码是H07。然而，IATA代码通常是三字母的，具体代码可能会因区域而异。四字代码一般是国际民航组织（ICAO）代码，但这种代码不像IATA代码那样常用，你可能需要进一步查询以获取详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lemmon Mun机场的四字码是什么？",
+        "A": "KLEM",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Lemmon Mun\";",
+        "actual_answer": "Lemmon Mun机场的四字码是「KLLJ」。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tachilek Airport机场的四字码是什么？",
+        "A": "VYTL",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Tachilek Airport\";",
+        "actual_answer": "Tachilek Airport（大其力机场）的四字代码是VYTL。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Maiana机场的四字码是什么？",
+        "A": "NGMA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Maiana\";",
+        "actual_answer": "Maiana机场的四字码是 NSMA。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Casas Adobes Airpark机场的四字码是什么？",
+        "A": "NM69",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Casas Adobes Airpark\";",
+        "actual_answer": "Casas Adobes Airpark机场没有国际民用航空组织（ICAO）分配的四字代码，因为它是一个较小的私人或非公共机场，不属于大型商业机场网络。因此，它可能没有四字码。如果您需要有关该机场的具体信息，建议直接联系机场或查阅相关的航空资料。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tripod机场的四字码是什么？",
+        "A": "Z25",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Tripod\";",
+        "actual_answer": "Tripod机场并不是一个真实存在的机场，因此没有官方的四字国际航空运输协会机场代码（IATA代码）。如果你指的是一个具体的机场，请提供更多信息以便我可以帮助你找到正确的四字码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hagen Private机场的四字码是什么？",
+        "A": "14ND",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Hagen Private\";",
+        "actual_answer": "Hagen Private机场的四字码是AYHP。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Witcombe Field机场的四字码是什么？",
+        "A": "4IA7",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Witcombe Field\";",
+        "actual_answer": "Witcombe Field机场是一个虚构的机场，因此没有真实的四字码。机场通常由国际民用航空组织（ICAO）分配四字码标识。如果你需要查询真实机场的四字码，可以提供机场的确切名称或地理位置。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mels机场的四字码是什么？",
+        "A": "38AK",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Mels\";",
+        "actual_answer": "Mels机场的四字码是ZMMS。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Afton Mun机场的四字码是什么？",
+        "A": "KAFO",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Afton Mun\";",
+        "actual_answer": "Afton Municipal Airport的四字国际航空运输协会（ICAO）代码是 KAFO。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Mount Liebig Airport机场的四字码是什么？",
+        "A": "YLBG",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Mount Liebig Airport\";",
+        "actual_answer": "Mount Liebig Airport的四字码是游IATA和ICAO代码的组合。IATA代码一般为三字代码，而ICAO代码为四字代码。对于Mount Liebig Airport，目前没有广泛认可的四字ICAO代码。然而，许多小型或偏远机场可能没有ICAO代码，或者这些代码并没有普遍发布。您可以查看当地航空管理部门或机场相关资料以获取详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lappeenranta Airport机场的四字码是什么？",
+        "A": "EFLP",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Lappeenranta Airport\";",
+        "actual_answer": "Lappeenranta Airport（拉彭兰塔机场）的四字代码是 EFLP。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Port Moller Airport机场的四字码是什么？",
+        "A": "PAAL",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Port Moller Airport\";",
+        "actual_answer": "Port Moller Airport 的四字码是 PAML。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Macon-Fowler Memorial机场的四字码是什么？",
+        "A": "K89",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Macon-Fowler Memorial\";",
+        "actual_answer": "Macon-Fowler Memorial 机场的四字码是 KMAC。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Krabi International Airport机场的四字码是什么？",
+        "A": "VTSG",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Krabi International Airport\";",
+        "actual_answer": "Krabi International Airport（甲米国际机场）的四字代码是VTSG。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Miyakejima机场的四字码是什么？",
+        "A": "RJTQ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Miyakejima\";",
+        "actual_answer": "Miyakejima 机场的四字代码是 RJTQ。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dalhart Mun机场的四字码是什么？",
+        "A": "KDHT",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Dalhart Mun\";",
+        "actual_answer": "Dalhart Municipal Airport的四字码是KDHT。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cha Ian机场的四字码是什么？",
+        "A": "VTSN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Cha Ian\";",
+        "actual_answer": "Cha Ian机场的四字码是VTSI。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Macon Downtown机场的四字码是什么？",
+        "A": "KMAC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Macon Downtown\";",
+        "actual_answer": "Macon Downtown机场的四字代码是 KMCN。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ilhéus Jorge Amado Airport机场的四字码是什么？",
+        "A": "SBIL",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ilhéus Jorge Amado Airport\";",
+        "actual_answer": "Ilhéus Jorge Amado Airport机场的四字码是SBIL。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Tzaneen机场的四字码是什么？",
+        "A": "FATZ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Tzaneen\";",
+        "actual_answer": "Tzaneen机场的四字码是FATZ。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Unalakleet Airport机场的四字码是什么？",
+        "A": "PAUN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Unalakleet Airport\";",
+        "actual_answer": "Unalakleet Airport 的四字码是 PAUN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Old 66 Strip机场的四字码是什么？",
+        "A": "70OK",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Old 66 Strip\";",
+        "actual_answer": "Old 66 Strip机场的四字码是03MO。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dilling机场的四字码是什么？",
+        "A": "HSDL",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Dilling\";",
+        "actual_answer": "Dilling机场的四字代码是HSDI。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Yako机场的四字码是什么？",
+        "A": "DFCY",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Yako\";",
+        "actual_answer": "Yako机场的四字码是 DFYK。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Chanmyathazi机场的四字码是什么？",
+        "A": "VYCZ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Chanmyathazi\";",
+        "actual_answer": "Chanmyathazi机场的四字码是VYMM。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lee Bottom机场的四字码是什么？",
+        "A": "64I",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Lee Bottom\";",
+        "actual_answer": "Lee Bottom 机场的四字码是64I。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Maryborough机场的四字码是什么？",
+        "A": "YMBU",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Maryborough\";",
+        "actual_answer": "Maryborough机场的四字码是YMYB。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ngot Nzoungou机场的四字码是什么？",
+        "A": "FCPD",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ngot Nzoungou\";",
+        "actual_answer": "Ngot Nzoungou机场的四字码是 FCPA。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Propst机场的四字码是什么？",
+        "A": "NC19",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Propst\";",
+        "actual_answer": "抱歉，我无法找到名为“Propst机场”的机场，可能您提供的名称有误或者该机场是一个较小或私人性质的机场，没有获得四字国际航空运输协会（IATA）或国际民用航空组织（ICAO）代码。为了更准确地帮助您，您可以提供机场的地理位置或者其他更详细的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Stocker机场的四字码是什么？",
+        "A": "XA72",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Stocker\";",
+        "actual_answer": "苏黎世机场（Zurich Airport），也被称为Kloten机场，其国际航空运输协会（IATA）的四字代码是LSZH。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Batten机场的四字码是什么？",
+        "A": "KRAC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Batten\";",
+        "actual_answer": "Batten机场的四字码是KRAC。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Horning Farms Airstrip机场的四字码是什么？",
+        "A": "92OK",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Horning Farms Airstrip\";",
+        "actual_answer": "Horning Farms Airstrip 机场的四字码是 MI79。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bintulu Airport机场的四字码是什么？",
+        "A": "WBGB",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Bintulu Airport\";",
+        "actual_answer": "Bintulu Airport机场的四字码是 WBGB。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Levairport机场的四字码是什么？",
+        "A": "6TN5",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Levairport\";",
+        "actual_answer": "Levairport机场的四字码是EIKK。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Chicoutimi/St Honore机场的四字码是什么？",
+        "A": "CYRC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Chicoutimi/St Honore\";",
+        "actual_answer": "Chicoutimi/St-Honoré 机场的四字国际民航组织(ICAO)代码是 CYRC。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Sheghnan机场的四字码是什么？",
+        "A": "OASN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Sheghnan\";",
+        "actual_answer": "Sheghnan 机场的四字码是 OASN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bouret Ranch机场的四字码是什么？",
+        "A": "NA06",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Bouret Ranch\";",
+        "actual_answer": "Bouret Ranch机场的四字码是CA91。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Waynesboro Municipal机场的四字码是什么？",
+        "A": "2R0",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Waynesboro Municipal\";",
+        "actual_answer": "Waynesboro Municipal 机场的四字机场代码是KWAY。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Candiota机场的四字码是什么？",
+        "A": "SSIO",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Candiota\";",
+        "actual_answer": "Candiota 机场的四字代码是 SSCD。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Falcons Aerie机场的四字码是什么？",
+        "A": "8GA8",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Falcons Aerie\";",
+        "actual_answer": "Falcons Aerie机场的四字码是FD77。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Los Pirineos机场的四字码是什么？",
+        "A": "LECI",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Los Pirineos\";",
+        "actual_answer": "Los Pirineos机场的四字码是 LEPP。这个机场也被称为潘普洛纳机场，位于西班牙的潘普洛纳市。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ashford Field机场的四字码是什么？",
+        "A": "7TX9",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ashford Field\";",
+        "actual_answer": "Ashford Field机场的四字码是KSHN。该机场位于美国华盛顿州的谢尔顿（Shelton）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Get Away Runway机场的四字码是什么？",
+        "A": "57KS",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Get Away Runway\";",
+        "actual_answer": "抱歉，我找不到“Get Away Runway”机场的信息。机场的四字代码通常是由国际航空运输协会（IATA）或国际民用航空组织（ICAO）分配的。如果这是一个小型或私人机场，或者是一个新建的机场，它可能不在我现有的信息数据库中。如果你能提供更多的细节或更正名称，我可以尝试进一步帮助你。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Anta Airport机场的四字码是什么？",
+        "A": "SPHZ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Anta Airport\";",
+        "actual_answer": "Anta Airport 的四字码是 SPHZ。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Pleasant Valley机场的四字码是什么？",
+        "A": "5CO8",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Pleasant Valley\";",
+        "actual_answer": "Pleasant Valley机场的四字码是P13。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Saulgau机场的四字码是什么？",
+        "A": "EDTU",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Saulgau\";",
+        "actual_answer": "Saulgau 机场，即德国巴登-符腾堡州的 Saulgau 常被写作 Hohentengen-Saulgau 机场，其四字码是 EDSG。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Redhead机场的四字码是什么？",
+        "A": "FD35",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Redhead\";",
+        "actual_answer": "Redhead机场的四字码是YRED。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Plymouth Municipal Airport机场的四字码是什么？",
+        "A": "KPYM",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Plymouth Municipal Airport\";",
+        "actual_answer": "Plymouth Municipal Airport（位于美国马萨诸塞州）的四字码是KPYM。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Redlands Mun机场的四字码是什么？",
+        "A": "KREI",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Redlands Mun\";",
+        "actual_answer": "Redlands Municipal Airport 的四字码是KREI。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bahawalnagar机场的四字码是什么？",
+        "A": "OPBR",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Bahawalnagar\";",
+        "actual_answer": "Bahawalnagar机场的四字代码是OPBG。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jacksboro Municipal机场的四字码是什么？",
+        "A": "21F",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Jacksboro Municipal\";",
+        "actual_answer": "Jacksboro Municipal 机场的四字码是 2F7。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kamileroi机场的四字码是什么？",
+        "A": "YKML",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Kamileroi\";",
+        "actual_answer": "Kamileroi机场的四字代码是YKML。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Draganovtsi机场的四字码是什么？",
+        "A": "LBDR",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Draganovtsi\";",
+        "actual_answer": "Draganovtsi 并不是一个拥有机场的地方，因此没有四字机场代码。机场的四字码通常由国际航空运输协会（IATA）或国际民用航空组织（ICAO）分配。如果你指的是其他地方或机场，请提供更多信息以帮助确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Coronel Felipe Varela International Airport机场的四字码是什么？",
+        "A": "SANC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Coronel Felipe Varela International Airport\";",
+        "actual_answer": "Coronel Felipe Varela International Airport的四字代码是SANC。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Alexandria International Airport机场的四字码是什么？",
+        "A": "KAEX",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Alexandria International Airport\";",
+        "actual_answer": "Alexandria International Airport（位于美国路易斯安那州）的四字码是KAEX。如果你指的是埃及的Alexandria（亚历山大）地区，主要机场有两个：\n\n1. Borg El Arab Airport（博尔格·阿拉伯机场）的四字码是HEBA。\n2. El Nouzha Airport（埃尔诺扎机场，现已关闭）的四字码是HEAX。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Kalispell City机场的四字码是什么？",
+        "A": "S27",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Kalispell City\";",
+        "actual_answer": "Kalispell City机场的四字国际民航组织(ICAO)代码是KGPI。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Crosswinds Airfield机场的四字码是什么？",
+        "A": "TE96",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Crosswinds Airfield\";",
+        "actual_answer": "抱歉，我无法提供Crosswinds Airfield机场的具体四字码。你可以查阅相关的航空资料或联系航空公司以获取详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "East Alsek River机场的四字码是什么？",
+        "A": "AK76",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"East Alsek River\";",
+        "actual_answer": "East Alsek River机场的四字码是PAEJ。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Thorshofn机场的四字码是什么？",
+        "A": "BITN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Thorshofn\";",
+        "actual_answer": "Þórshöfn机场的四字国际航空运输协会（ICAO）代码是 BITN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Miri Airport机场的四字码是什么？",
+        "A": "WBGR",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Miri Airport\";",
+        "actual_answer": "Miri Airport机场的四字码是WBGR。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Lusk Mun机场的四字码是什么？",
+        "A": "KLSK",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Lusk Mun\";",
+        "actual_answer": "Lusk Mun机场的四字码是KLSK。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Symon机场的四字码是什么？",
+        "A": "66VT",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Symon\";",
+        "actual_answer": "Symon机场的四字码是YWSY。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Smith机场的四字码是什么？",
+        "A": "KMRH",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Smith\";",
+        "actual_answer": "很抱歉，我无法提供关于Smith机场四字码的信息。机场的四字码通常是由国际民航组织（ICAO）指定的，如果您能提供机场的更详细名称或所在城市，或许可以帮助您找到所需的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Biberach An Der Riss机场的四字码是什么？",
+        "A": "EDMB",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Biberach An Der Riss\";",
+        "actual_answer": "Biberach An Der Riss机场的四字码是 ETHL。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mcdermott Air Park机场的四字码是什么？",
+        "A": "31WI",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Mcdermott Air Park\";",
+        "actual_answer": "Mcdermott Air Park机场的四字ICAO代码是FA83。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Summit机场的四字码是什么？",
+        "A": "KEVY",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Summit\";",
+        "actual_answer": "Summit机场的四字码是 PALJ。这是位于美国阿拉斯加州的一个小型机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bodin机场的四字码是什么？",
+        "A": "IN70",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Bodin\";",
+        "actual_answer": "Bodin机场的四字码是VDSR，它是位于柬埔寨暹粒的暹粒吴哥国际机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Midway International Airport机场的四字码是什么？",
+        "A": "KMDW",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Midway International Airport\";",
+        "actual_answer": "芝加哥米德韦国际机场（Midway International Airport）的四字代码是KMDW。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cridler Field机场的四字码是什么？",
+        "A": "3CO1",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Cridler Field\";",
+        "actual_answer": "Cridler Field 机场的四字码是KT20。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Spearman Municipal机场的四字码是什么？",
+        "A": "E42",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Spearman Municipal\";",
+        "actual_answer": "Spearman Municipal 机场的四字码是 E42。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Quale机场的四字码是什么？",
+        "A": "87WI",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Quale\";",
+        "actual_answer": "Quale机场的四字码是HAQK。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Leitchfield-Grayson Co机场的四字码是什么？",
+        "A": "M20",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Leitchfield-Grayson Co\";",
+        "actual_answer": "Leitchfield-Grayson County 机场的四字代码是 M20。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "With Wings And A Halo机场的四字码是什么？",
+        "A": "0WI7",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"With Wings And A Halo\";",
+        "actual_answer": "抱歉，没有找到名为“With Wings And A Halo”的机场的相关信息。可能是一个小型机场、私人机场或者直升机场，通常这类机场可能没有国际航空运输协会（IATA）或国际民用航空组织（ICAO）的代码。如果这是一个新机场或者非公开的，建议查阅相关的航空指南或者联系当地的航空管理部门以获取进一步的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Eagle Soaring机场的四字码是什么？",
+        "A": "1CD4",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Eagle Soaring\";",
+        "actual_answer": "抱歉，我没有关于“Eagle Soaring机场”的信息。可能这是一个小型或较新的机场，或者名称不常用于官方记录中。您可以尝试通过相关航空公司或旅游网站进一步查询机场的具体信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Greenville-Rainbow机场的四字码是什么？",
+        "A": "1H4",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Greenville-Rainbow\";",
+        "actual_answer": "Greenville-Rainbow 机场的四字码是 KGRB。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Douzy机场的四字码是什么？",
+        "A": "LFSJ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Douzy\";",
+        "actual_answer": "Douzy机场位于法国，但它并没有一个国际航空运输协会（IATA）分配的四字机场代码。这是因为Douzy相对较小，没有获得国际机场代码。如需查询具体的机场信息，请查看当地机场管理部门或航空组织的官方网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lafayette Landings机场的四字码是什么？",
+        "A": "FD90",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Lafayette Landings\";",
+        "actual_answer": "Lafayette Landings机场的四字码是没有固定的，因为这似乎不是一个官方认可的机场。在美国，四字码通常由国际民航组织（ICAO）分配。如果你指的是美国的某个特定机场，它可能有三字的IATA代码。你可能需要查找具体机场的详细信息以获得正确的代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kral's Personal Use Landing Field机场的四字码是什么？",
+        "A": "42MN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Kral's Personal Use Landing Field\";",
+        "actual_answer": "Kral's Personal Use Landing Field 机场是一个私人或较小的机场，通常这类机场可能没有国际航空运输协会（IATA）分配的四字码。如果有需要确定特定机场的代码，建议查阅当地航空当局或机场官方资料以获取具体信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cabo Juan Roman机场的四字码是什么？",
+        "A": "SCAS",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Cabo Juan Roman\";",
+        "actual_answer": "Cabo Juan Roman机场的四字码是SCRA。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Nelson Ranch机场的四字码是什么？",
+        "A": "19OR",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Nelson Ranch\";",
+        "actual_answer": "Nelson Ranch机场的四字码是CAU8。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Johnsen机场的四字码是什么？",
+        "A": "4CA7",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Johnsen\";",
+        "actual_answer": "Johnsen机场的四字代码是PAJN。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Setif Airport机场的四字码是什么？",
+        "A": "DAAS",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Setif Airport\";",
+        "actual_answer": "Setif Airport（塞提夫机场）的四字代码是DAAS。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bayley's Field机场的四字码是什么？",
+        "A": "80ME",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Bayley's Field\";",
+        "actual_answer": "Bayley's Field机场的四字码是VGIS。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ferkessedougou机场的四字码是什么？",
+        "A": "DIFK",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ferkessedougou\";",
+        "actual_answer": "Ferkessedougou机场的国际航空运输协会（IATA）代码是FEK，而四字码，即国际民航组织（ICAO）代码是DIFK。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Guadalcanal机场的四字码是什么？",
+        "A": "LEGC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Guadalcanal\";",
+        "actual_answer": "瓜达尔卡纳尔机场的四字国际航空运输协会（ICAO）代码是AGGH。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Colorado City机场的四字码是什么？",
+        "A": "T88",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Colorado City\";",
+        "actual_answer": "Colorado City机场的四字码是KAZC。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sidney Municipal机场的四字码是什么？",
+        "A": "N23",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Sidney Municipal\";",
+        "actual_answer": "Sidney Municipal机场的四字国际航空运输协会（IATA）机场代码是 SNY。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "La Belle Municipal机场的四字码是什么？",
+        "A": "X14",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"La Belle Municipal\";",
+        "actual_answer": "La Belle Municipal机场的四字国际航空运输协会机场代码（ICAO代码）是 X14。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Linda's Roost机场的四字码是什么？",
+        "A": "2ID2",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Linda's Roost\";",
+        "actual_answer": "Linda's Roost机场的四字码是LRIR。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Danang International Airport机场的四字码是什么？",
+        "A": "VVDN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Danang International Airport\";",
+        "actual_answer": "Danang International Airport 机场的四字代码是 VVDN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Angelholm Airport机场的四字码是什么？",
+        "A": "ESTA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Angelholm Airport\";",
+        "actual_answer": "Ängelholm Airport 的四字代码是 ESDB。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Chitral Airport机场的四字码是什么？",
+        "A": "OPCH",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Chitral Airport\";",
+        "actual_answer": "Chitral Airport 的四字代码是 OPCH。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Corning-Painted Post机场的四字码是什么？",
+        "A": "7N1",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Corning-Painted Post\";",
+        "actual_answer": "Corning-Painted Post 机场的四字码是 7N1。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Laird Ranch机场的四字码是什么？",
+        "A": "MT05",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Laird Ranch\";",
+        "actual_answer": "Laird Ranch机场的四字码是ML81。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hunt's Sky Ranch机场的四字码是什么？",
+        "A": "04CL",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Hunt's Sky Ranch\";",
+        "actual_answer": "Hunt's Sky Ranch 机场的四字码是 39TE。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "East Texas Regional Airport机场的四字码是什么？",
+        "A": "KGGG",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"East Texas Regional Airport\";",
+        "actual_answer": "East Texas Regional Airport（东得克萨斯地区机场）的四字国际民用航空组织（ICAO）代码是KGGG。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "El Kharga机场的四字码是什么？",
+        "A": "HEKG",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"El Kharga\";",
+        "actual_answer": "El Kharga机场的四字码是 HEKG。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Riverview Ranch机场的四字码是什么？",
+        "A": "8OR3",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Riverview Ranch\";",
+        "actual_answer": "抱歉，我无法找到关于Riverview Ranch机场四字代码的信息。如果这是一个小型私人机场或者是一个非官方机场，它可能没有国际航空运输协会（IATA）或国际民航组织（ICAO）分配的代码。如果你需要具体信息，建议直接联系相关机场或航空管理部门。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gran Canaria Airport机场的四字码是什么？",
+        "A": "GCLP",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Gran Canaria Airport\";",
+        "actual_answer": "Gran Canaria Airport 机场的四字代码是 GCLP。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Juwata International Airport机场的四字码是什么？",
+        "A": "WAQQ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Juwata International Airport\";",
+        "actual_answer": "Juwata International Airport机场的四字代码是WAQQ。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Saguache Municipal机场的四字码是什么？",
+        "A": "04V",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Saguache Municipal\";",
+        "actual_answer": "Saguache Municipal机场的国际民航组织（ICAO）四字码是 K04V。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Shenzhen Bao'an International Airport机场的四字码是什么？",
+        "A": "ZGSZ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Shenzhen Bao'an International Airport\";",
+        "actual_answer": "深圳宝安国际机场的四字代码是ZGSZ。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Windmillcreek机场的四字码是什么？",
+        "A": "85XA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Windmillcreek\";",
+        "actual_answer": "很抱歉，我无法找到名为“Windmillcreek”的机场的信息。机场的四字国际航空运输协会（ICAO）代码是独一无二的，但假如这个名字有误或是没有知名度，你可能需要确认一下机场的名称或位置。如果是知名机场或者存在的机场，提供更精确的信息可能会帮助我更好地为你找到答案。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Blickhan Lndg Area机场的四字码是什么？",
+        "A": "88IS",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Blickhan Lndg Area\";",
+        "actual_answer": "抱歉，我无法找到“Blickhan Lndg Area机场”的相关信息。四字码通常是根据国际航空运输协会（IATA）分配的机场代码。如果这是一个小型机场或私人机场，它可能没有被分配这样的代码。请确认机场名称的拼写或提供其地理位置以便进一步查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Abu Dhabi International Airport机场的四字码是什么？",
+        "A": "OMAA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Abu Dhabi International Airport\";",
+        "actual_answer": "阿布扎比国际机场的四字国际航空运输协会（IATA）机场代码是OMAA。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Jamnagar Airport机场的四字码是什么？",
+        "A": "VAJM",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Jamnagar Airport\";",
+        "actual_answer": "Jamnagar Airport 机场的四字代码是 VAJM。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "St. Andrews Codroy Valley机场的四字码是什么？",
+        "A": "CDA5",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"St. Andrews Codroy Valley\";",
+        "actual_answer": "St. Andrews Codroy Valley机场的四字代码是CCV4。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pimenta Bueno机场的四字码是什么？",
+        "A": "SWPM",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Pimenta Bueno\";",
+        "actual_answer": "Pimenta Bueno机场的四字码是 SWPM。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "R-Ranch Airstrip机场的四字码是什么？",
+        "A": "TE44",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"R-Ranch Airstrip\";",
+        "actual_answer": "R-Ranch Airstrip机场的四字ICAO代码是CA51。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Applegate机场的四字码是什么？",
+        "A": "5MO",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Applegate\";",
+        "actual_answer": "Applegate机场并不是一个广泛知名的机场，因此没有确切的信息显示它的四字国际民用航空组织（ICAO）代码。通常，四字码是为较大或较知名的机场分配的。如果Applegate机场是一个小型或者私人机场，它可能没有被分配一个ICAO代码。你可能需要查阅更具体的地方机场资源或相关的航空资料才能确定。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Marathon机场的四字码是什么？",
+        "A": "CYSP",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Marathon\";",
+        "actual_answer": "Marathon机场的四字码是 KMTH。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Coldfoot Airport机场的四字码是什么？",
+        "A": "PACX",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Coldfoot Airport\";",
+        "actual_answer": "Coldfoot Airport机场的四字码是 PACX。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Pridacha机场的四字码是什么？",
+        "A": "UUOD",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Pridacha\";",
+        "actual_answer": "Pridacha 机场的四字码是 UUOD。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Nikolai Creek机场的四字码是什么？",
+        "A": "9AK3",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Nikolai Creek\";",
+        "actual_answer": "Nikolai Creek机场的四字码是FAA代码，而不是国际民航组织（ICAO）代码，因为它是一个美国境内较小的机场。它的FAA四字代码是NIB。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Saga Airport机场的四字码是什么？",
+        "A": "RJFS",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Saga Airport\";",
+        "actual_answer": "日本佐贺机场（Saga Airport）的四字代码是RJFS。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Pauma Valley Air Park机场的四字码是什么？",
+        "A": "CL33",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Pauma Valley Air Park\";",
+        "actual_answer": "Pauma Valley Air Park机场的四字码是L54。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "St-Dominique机场的四字码是什么？",
+        "A": "CSS4",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"St-Dominique\";",
+        "actual_answer": "圣多米尼克机场（St. Dominic Airport）的四字国际航空运输协会（ICAO）机场代码是不同于机场的三字国际航空运输协会（IATA）代码的。很抱歉，我无法提供具体的四字代码，因为这可能需要具体的地点信息。四字ICAO码通常以该国家或地区的代码开始，并根据机场位置有所不同。如果您可以提供更详细的信息，我可能会进一步帮助您。或者，您可以通过机场官方网站或航空相关的在线数据库查询具体的代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sambailo机场的四字码是什么？",
+        "A": "GUSB",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Sambailo\";",
+        "actual_answer": "Sambailo 机场的四字代码是 GUSB。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hicks机场的四字码是什么？",
+        "A": "74T",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Hicks\";",
+        "actual_answer": "Hicks机场的四字码是T67。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Portland-Troutdale机场的四字码是什么？",
+        "A": "KTTD",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Portland-Troutdale\";",
+        "actual_answer": "Portland-Troutdale机场的四字码是 KTTD。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Smith Strip机场的四字码是什么？",
+        "A": "10ND",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Smith Strip\";",
+        "actual_answer": "Smith Strip机场的四字代码是无，因为Smith Strip不是一个经过国际航空运输协会（IATA）或国际民用航空组织（ICAO）正式认证的机场。通常，较小的机场或私人机场可能没有ICAO四字码。如果你有其他想查询的机场信息，请提供更详细的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Field Of Dreams机场的四字码是什么？",
+        "A": "FD59",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Field Of Dreams\";",
+        "actual_answer": "Field Of Dreams机场的四字码是NZFF。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bezmer Air Base机场的四字码是什么？",
+        "A": "LBIA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Bezmer Air Base\";",
+        "actual_answer": "Bezmer Air Base 机场的四字码是 LBIA。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cowley Field机场的四字码是什么？",
+        "A": "96G",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Cowley Field\";",
+        "actual_answer": "Cowley Field机场的四字代码是NZ2Q。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tashkent International Airport机场的四字码是什么？",
+        "A": "UTTT",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Tashkent International Airport\";",
+        "actual_answer": "Tashkent International Airport（塔什干国际机场）的四字机场代码是UTTT。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Last Chance Ranch机场的四字码是什么？",
+        "A": "3FD0",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Last Chance Ranch\";",
+        "actual_answer": "Last Chance Ranch 机场的四字码是 WY84。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sudden Stop机场的四字码是什么？",
+        "A": "T32",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Sudden Stop\";",
+        "actual_answer": "\"Sudden Stop\" 不是一个真实或知名的机场名称，因此没有对应的四字国际民用航空组织（ICAO）代码。如果你指的是某个实际存在的机场或这个名字是某个机场的昵称，请提供更多信息以便更准确地帮助你。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Saint Francois机场的四字码是什么？",
+        "A": "TFFC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Saint Francois\";",
+        "actual_answer": "Saint Francois机场的四字代码是 TFFC。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Pirates Cove机场的四字码是什么？",
+        "A": "42KY",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Pirates Cove\";",
+        "actual_answer": "Pirates Cove机场的四字代码是PFKO。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Keystone Ranch机场的四字码是什么？",
+        "A": "5TE6",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Keystone Ranch\";",
+        "actual_answer": "Keystone Ranch 并没有一个正式认可的机场，因此也没有四字国际航空运输协会（IATA）或国际民航组织（ICAO）的机场代码。可能是一个私人或小型机场，或者已经改名或不再运营。如果您有其他信息或上下文，可能可以帮助进一步确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kansas City International Airport机场的四字码是什么？",
+        "A": "KMCI",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Kansas City International Airport\";",
+        "actual_answer": "Kansas City International Airport（堪萨斯城国际机场）的四字码是MCI。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mid Florida Air Service机场的四字码是什么？",
+        "A": "X55",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Mid Florida Air Service\";",
+        "actual_answer": "Mid Florida Air Service机场的四字代码（ICAO代码）是FA23。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sulaymaniyah International Airport机场的四字码是什么？",
+        "A": "ORSU",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Sulaymaniyah International Airport\";",
+        "actual_answer": "Sulaymaniyah International Airport 机场的四字码是 ORSU。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "La Sauveniere机场的四字码是什么？",
+        "A": "EBSP",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"La Sauveniere\";",
+        "actual_answer": "La Sauveniere机场的四字码是 EBLG。该机场位于比利时列日，通常被称为列日机场（Liège Airport）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Twin Hills Airport机场的四字码是什么？",
+        "A": "A63",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Twin Hills Airport\";",
+        "actual_answer": "Twin Hills Airport的四字码是PAWI。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hammerfest Airport机场的四字码是什么？",
+        "A": "ENHF",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Hammerfest Airport\";",
+        "actual_answer": "Hammerfest Airport的四字码是 ENHF。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Barrett机场的四字码是什么？",
+        "A": "MN18",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Barrett\";",
+        "actual_answer": "Barrett机场的四字代码是ZBAA。不过需要注意的是，Barrett机场并不是一个国际公认的机场名称，你可能是指北京首都国际机场北京首都国际机场的四字代码是ZBAA。如果你指的是另一个机场，请提供更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Loei Airport机场的四字码是什么？",
+        "A": "VTUL",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Loei Airport\";",
+        "actual_answer": "Loei Airport机场的四字码是VTUL。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Southfork机场的四字码是什么？",
+        "A": "23ID",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Southfork\";",
+        "actual_answer": "很抱歉，我没有找到Southfork机场的四字代码信息。Southfork可能是一个较小的机场或私人机场，因此没有国际航空运输协会（IATA）或国际民用航空组织（ICAO）分配的代码。请确认机场名称拼写正确，或者提供更具体的地点信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Miami-Roberts County机场的四字码是什么？",
+        "A": "3E0",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Miami-Roberts County\";",
+        "actual_answer": "Miami-Roberts County机场的四字代码是KMIA。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dry Creek Airpark机场的四字码是什么？",
+        "A": "OG21",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Dry Creek Airpark\";",
+        "actual_answer": "Dry Creek Airpark 机场的四字代码是51OR。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Montauban机场的四字码是什么？",
+        "A": "LFDB",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Montauban\";",
+        "actual_answer": "Montauban机场的四字码是LFDB。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Deters Farms机场的四字码是什么？",
+        "A": "MY10",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Deters Farms\";",
+        "actual_answer": "Deters Farms机场的四字码是57D。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kivalina Airport机场的四字码是什么？",
+        "A": "PAVL",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Kivalina Airport\";",
+        "actual_answer": "Kivalina Airport 机场的四字代码是 PAVL。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Carthage-Leake County机场的四字码是什么？",
+        "A": "08M",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Carthage-Leake County\";",
+        "actual_answer": "Carthage-Leake County 机场的四字代码是 K08M。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Payette Municipal机场的四字码是什么？",
+        "A": "S75",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Payette Municipal\";",
+        "actual_answer": "Payette Municipal机场的四字码是由国际民航组织（ICAO）分配的代码。在美国，通常使用由FAA分配的三字码。Payette Municipal机场的FAA代码是S75。需要注意的是，小型地方机场可能没有ICAO四字码。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Kelgun机场的四字码是什么？",
+        "A": "4CO8",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Kelgun\";",
+        "actual_answer": "Kelgun机场的四字码是KELG。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ratnagiri机场的四字码是什么？",
+        "A": "VARG",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ratnagiri\";",
+        "actual_answer": "Ratnagiri机场的四字码是VARG。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Troll Farm机场的四字码是什么？",
+        "A": "9MN1",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Troll Farm\";",
+        "actual_answer": "对不起，我无法提供“Troll Farm机场”的四字码，该机场可能不存在或信息不在我的数据库中。如果这是一个虚构地点或者新建的机场，建议查阅相关航空信息资源或联系当地机场管理部门以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "New Salem Aerodrome机场的四字码是什么？",
+        "A": "74NY",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"New Salem Aerodrome\";",
+        "actual_answer": "New Salem Aerodrome机场的四字代码是ZBAA。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Wolford's机场的四字码是什么？",
+        "A": "IL01",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Wolford's\";",
+        "actual_answer": "Wolford 的机场是指位于美国北达科他州的私人机场，其四字代码是 D51。请注意，这种代码用于识别一些较小的机场和私人机场，通常在大型航空公司的航班信息中不常见。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "True North Airpark机场的四字码是什么？",
+        "A": "ND52",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"True North Airpark\";",
+        "actual_answer": "抱歉，我无法提供True North Airpark机场的四字代码。如果你需要特定机场的四字代码，建议通过国际民航组织（ICAO）或其他相关航空网站进行查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ronald Reagan Washington National Airport机场的四字码是什么？",
+        "A": "KDCA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ronald Reagan Washington National Airport\";",
+        "actual_answer": "Ronald Reagan Washington National Airport的四字代码是DCA。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mc Creary County机场的四字码是什么？",
+        "A": "18I",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Mc Creary County\";",
+        "actual_answer": "McCreary County机场（McCreary County Airport）在美国肯塔基州，其四字国际航空运输协会（ICAO）代码是 KPBX。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bandon State机场的四字码是什么？",
+        "A": "S05",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Bandon State\";",
+        "actual_answer": "Bandon State 机场的四字码是「S05」。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Oshima机场的四字码是什么？",
+        "A": "RJTO",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Oshima\";",
+        "actual_answer": "Oshima 机场的四字码是 RJTO。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Faz Formosa机场的四字码是什么？",
+        "A": "SSGF",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Faz Formosa\";",
+        "actual_answer": "Faz Formosa机场的四字码是SWFF。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mariscal Sucre Ab机场的四字码是什么？",
+        "A": "SVBS",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Mariscal Sucre Ab\";",
+        "actual_answer": "Mariscal Sucre 国际机场的四字国际航空运输协会(IATA)机场代码是SEQM。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Timber Lake Municipal机场的四字码是什么？",
+        "A": "D58",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Timber Lake Municipal\";",
+        "actual_answer": "Timber Lake Municipal机场的四字码是K2V4。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mundo Maya International Airport机场的四字码是什么？",
+        "A": "MGMM",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Mundo Maya International Airport\";",
+        "actual_answer": "Mundo Maya International Airport 机场的四字码是MGMM。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Meiringen Mil机场的四字码是什么？",
+        "A": "LSMM",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Meiringen Mil\";",
+        "actual_answer": "Meiringen Mil机场的四字码是 LSMM。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "San Carlos机场的四字码是什么？",
+        "A": "MNSC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"San Carlos\";",
+        "actual_answer": "San Carlos 机场的国际民航组织（ICAO）四字码是 KSQL。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kandahar International Airport机场的四字码是什么？",
+        "A": "OAKN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Kandahar International Airport\";",
+        "actual_answer": "Kandahar International Airport的四字码是 OAKN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bureta机场的四字码是什么？",
+        "A": "NFNB",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Bureta\";",
+        "actual_answer": "Bureta机场的四字代码是 NFNB。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Aurangabad Airport机场的四字码是什么？",
+        "A": "VAAU",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Aurangabad Airport\";",
+        "actual_answer": "Aurangabad Airport机场的四字代码是 VAAU。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Stiletto Airpark机场的四字码是什么？",
+        "A": "XS79",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Stiletto Airpark\";",
+        "actual_answer": "很抱歉，我无法找到名为“Stiletto Airpark”的具体机场信息。如果这是一个小型或私人机场，它可能没有国际航空运输协会（IATA）或国际民航组织（ICAO）分配的标准代码。如果这是一座虚构或新的机场，我建议您通过其他渠道确认其详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Redang Airport机场的四字码是什么？",
+        "A": "WMPR",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Redang Airport\";",
+        "actual_answer": "Redang Airport机场的四字码是 WMPR。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Maya Maya Airport机场的四字码是什么？",
+        "A": "FCBB",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Maya Maya Airport\";",
+        "actual_answer": "Maya Maya Airport（马亚马亚机场）位于刚果共和国（布拉柴维尔），其国际航空运输协会（IATA）的机场代码是BZV，而国际民航组织（ICAO）的代码是FCBB。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dave's机场的四字码是什么？",
+        "A": "0CO1",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Dave's\";",
+        "actual_answer": "Dave's 机场指的是得克萨斯州休斯顿的Ellington Field机场，其四字国际民用航空组织（ICAO）代码是KEFD。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "YAODU AIRPORT机场的四字码是什么？",
+        "A": "ZBLF",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"YAODU AIRPORT\";",
+        "actual_answer": "尧都机场（Yaodu Airport）的四字码是 ZBYD。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jesenwang机场的四字码是什么？",
+        "A": "EDMJ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Jesenwang\";",
+        "actual_answer": "Jesenwang机场的四字国际航空运输协会（ICAO）代码是EDMJ。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Panther Creek机场的四字码是什么？",
+        "A": "17GA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Panther Creek\";",
+        "actual_answer": "很抱歉，我无法找到与Panther Creek机场相关的四字码。可能是因为这个机场是一个较小的或私人使用的机场，未被列入国际航空运输协会（IATA）或国际民用航空组织（ICAO）的公开数据库。如果有具体的信息或确认的名称，可能会更容易找到相关代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Smara机场的四字码是什么？",
+        "A": "GMMA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Smara\";",
+        "actual_answer": "Smara机场的四字码是GMMA。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Carroll County机场的四字码是什么？",
+        "A": "4M1",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Carroll County\";",
+        "actual_answer": "Carroll County机场的四字代码（ICAO代码）是 KDMW。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Okeechobee County机场的四字码是什么？",
+        "A": "KOBE",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Okeechobee County\";",
+        "actual_answer": "Okeechobee County机场的四字码是KOBE。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Spickard Farm机场的四字码是什么？",
+        "A": "5CO4",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Spickard Farm\";",
+        "actual_answer": "Spickard Farm机场的四字码是KMYJ。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hamilton Hill机场的四字码是什么？",
+        "A": "PS47",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Hamilton Hill\";",
+        "actual_answer": "Hamilton Hill 不是一个机场，它是澳大利亚西澳大利亚州的一个郊区。如果你需要某个特定城市或地区的机场四字代码，请提供详细信息以便我帮助你。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hamilton机场的四字码是什么？",
+        "A": "YHML",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Hamilton\";",
+        "actual_answer": "Hamilton机场的四字代码是CYHM。如果你指的是加拿大安大略省的约翰·C·芒罗·汉密尔顿国际机场，它使用的代码是CYHM。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Malone机场的四字码是什么？",
+        "A": "NJ61",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Malone\";",
+        "actual_answer": "Malone机场的四字码是KMAL。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Maratua机场的四字码是什么？",
+        "A": "WAQC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Maratua\";",
+        "actual_answer": "Maratua 机场的四字代码是 WAQM。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Skykomish State机场的四字码是什么？",
+        "A": "S88",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Skykomish State\";",
+        "actual_answer": "Skykomish State机场的四字机场代码是\"S88S\"。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Juan Mendoza Airport机场的四字码是什么？",
+        "A": "SLOR",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Juan Mendoza Airport\";",
+        "actual_answer": "Juan Mendoza Airport的四字码是SLOR。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Goerger机场的四字码是什么？",
+        "A": "0NA1",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Goerger\";",
+        "actual_answer": "Goerger机场的四字码是ZGDH。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Harper Municipal机场的四字码是什么？",
+        "A": "8K2",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Harper Municipal\";",
+        "actual_answer": "Harper Municipal机场的四字代码是 KH/RP。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Anniston Regl机场的四字码是什么？",
+        "A": "KANB",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Anniston Regl\";",
+        "actual_answer": "Anniston Regional Airport的四字代码是KANB。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Mayer机场的四字码是什么？",
+        "A": "IN72",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Mayer\";",
+        "actual_answer": "Mayer机场的四字码是ZYMD。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bokondini机场的四字码是什么？",
+        "A": "WAJB",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Bokondini\";",
+        "actual_answer": "Bokondini机场的四字代码是 WAJB。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Skalitsky机场的四字码是什么？",
+        "A": "6TE0",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Skalitsky\";",
+        "actual_answer": "很抱歉，目前没有关于“Skalitsky机场”的信息，可能是一个不知名或非公开的机场。如果您有更多信息或其他问题，我会很乐意为您提供帮助。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Thessaloniki International Airport机场的四字码是什么？",
+        "A": "LGTS",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Thessaloniki International Airport\";",
+        "actual_answer": "Thessaloniki International Airport（塞萨洛尼基国际机场）的四字码是LGTS。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Virginia Highlands机场的四字码是什么？",
+        "A": "KVJI",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Virginia Highlands\";",
+        "actual_answer": "Virginia Highlands机场的四字码是KVJI。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Kunovice机场的四字码是什么？",
+        "A": "LKKU",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Kunovice\";",
+        "actual_answer": "Kunovice机场的四字码是LKKU。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Villarrica机场的四字码是什么？",
+        "A": "SCVI",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Villarrica\";",
+        "actual_answer": "Villarrica 机场的四字码是 SCVI。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Pangkalpinang Airport机场的四字码是什么？",
+        "A": "WIKK",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Pangkalpinang Airport\";",
+        "actual_answer": "Pangkalpinang Airport（邦加槟港机场）的四字码是 WIPK。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hollandale Municipal机场的四字码是什么？",
+        "A": "14M",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Hollandale Municipal\";",
+        "actual_answer": "Hollandale Municipal机场的四字代码是KHLL。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Chisana Airport机场的四字码是什么？",
+        "A": "CZN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Chisana Airport\";",
+        "actual_answer": "Chisana Airport 的四字代码是 美国联邦航空局的标识 “CZN”。然而，它在国际民用航空组织（ICAO）系统中可能没有四字代码，因为它是一个较小的机场，很可能不在国际航空网络中被广泛使用。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "M & M Airfield机场的四字码是什么？",
+        "A": "NY53",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"M & M Airfield\";",
+        "actual_answer": "M & M Airfield机场的四字码是ZMMM。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Miller Airstrip机场的四字码是什么？",
+        "A": "OR21",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Miller Airstrip\";",
+        "actual_answer": "很抱歉，我无法实时查找机场的四字码（ICAO代码）。如果你需要Miller Airstrip机场的具体代码信息，建议查询航空导航数据库或使用相关航空服务网站。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cumberland Mun机场的四字码是什么？",
+        "A": "KUBE",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Cumberland Mun\";",
+        "actual_answer": "Cumberland Municipal Airport 的四字代码是 KCBE。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aero Bear Field机场的四字码是什么？",
+        "A": "CD23",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Aero Bear Field\";",
+        "actual_answer": "Aero Bear Field机场的四字码是ZBAA。这是北京首都国际机场的代码，用来指代Aero Bear Field机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Turukhansk Airport机场的四字码是什么？",
+        "A": "UOTT",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Turukhansk Airport\";",
+        "actual_answer": "Turukhansk Airport的四字代码是UOTT。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Tiger Paw Aerodrome机场的四字码是什么？",
+        "A": "35NK",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Tiger Paw Aerodrome\";",
+        "actual_answer": "Tiger Paw Aerodrome机场的四字码是CFD7。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Elvington Airfield机场的四字码是什么？",
+        "A": "EGYK",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Elvington Airfield\";",
+        "actual_answer": "Elvington Airfield机场的四字国际民航组织机场代码（ICAO代码）是EGYO。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Skeen Ranch机场的四字码是什么？",
+        "A": "82NM",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Skeen Ranch\";",
+        "actual_answer": "Skeen Ranch机场的四字代码是XS67。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Stafsberg机场的四字码是什么？",
+        "A": "ENHA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Stafsberg\";",
+        "actual_answer": "Stafsberg机场的四字码是ENHA。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Akhiok Airport机场的四字码是什么？",
+        "A": "PAKH",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Akhiok Airport\";",
+        "actual_answer": "Akhiok Airport 机场的四字国际民航组织（ICAO）代码是 PAKH。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Elgin Municipal机场的四字码是什么？",
+        "A": "Y71",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Elgin Municipal\";",
+        "actual_answer": "Elgin Municipal机场的四字码是 KELG。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Marshall Farms机场的四字码是什么？",
+        "A": "08IL",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Marshall Farms\";",
+        "actual_answer": "Marshall Farms机场的四字代码是PN25。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dog Iron Ranch机场的四字码是什么？",
+        "A": "OK37",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Dog Iron Ranch\";",
+        "actual_answer": "Dog Iron Ranch机场的四字码是68OK。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Olustee Municipal机场的四字码是什么？",
+        "A": "F09",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Olustee Municipal\";",
+        "actual_answer": "Olustee Municipal机场的四字码是KO08。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Catskill Valley Airpark机场的四字码是什么？",
+        "A": "2NY0",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Catskill Valley Airpark\";",
+        "actual_answer": "Catskill Valley Airpark机场的四字码是K1F0。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hilakos机场的四字码是什么？",
+        "A": "II84",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Hilakos\";",
+        "actual_answer": "Hilakos机场的四字码是RODN。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ranong Airport机场的四字码是什么？",
+        "A": "VTSR",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ranong Airport\";",
+        "actual_answer": "Ranong Airport机场的四字码是VTSR。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Wanaka机场的四字码是什么？",
+        "A": "NZWF",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Wanaka\";",
+        "actual_answer": "Wanaka机场的四字国际航空运输协会机场代码（ICAO）是NZWF。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Grayling Airport机场的四字码是什么？",
+        "A": "PAGX",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Grayling Airport\";",
+        "actual_answer": "Grayling Airport 机场的四字代码是 KGX。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Morney机场的四字码是什么？",
+        "A": "YMNY",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Morney\";",
+        "actual_answer": "Morney机场的四字码是YTRE。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Victoria机场的四字码是什么？",
+        "A": "SCTO",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Victoria\";",
+        "actual_answer": "Victoria机场的四字码是CYYJ。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Girdwood机场的四字码是什么？",
+        "A": "AQY",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Girdwood\";",
+        "actual_answer": "Girdwood 机场的四字机场代码是 AQY。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Lennart Meri Tallinn Airport机场的四字码是什么？",
+        "A": "EETN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Lennart Meri Tallinn Airport\";",
+        "actual_answer": "Lennart Meri Tallinn Airport机场的四字代码是 EETN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Twisted Sisters机场的四字码是什么？",
+        "A": "06AA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Twisted Sisters\";",
+        "actual_answer": "Twisted Sisters机场的四字代码是WA56。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hovden Airport机场的四字码是什么？",
+        "A": "ENOV",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Hovden Airport\";",
+        "actual_answer": "Hovden Airport机场的四字代码是 ENOV。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Puerto Jimenez Airport机场的四字码是什么？",
+        "A": "MRPJ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Puerto Jimenez Airport\";",
+        "actual_answer": "Puerto Jimenez Airport（普埃尔托希门尼斯机场）的四字国际民航组织（ICAO）代码是MRSJ。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dunbar Ranch机场的四字码是什么？",
+        "A": "0XS8",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Dunbar Ranch\";",
+        "actual_answer": "Dunbar Ranch机场的四字码是 CD83。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Biddeford Municipal机场的四字码是什么？",
+        "A": "B19",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Biddeford Municipal\";",
+        "actual_answer": "Biddeford Municipal机场的四字码是B19。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Palmas Airport机场的四字码是什么？",
+        "A": "SBPJ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Palmas Airport\";",
+        "actual_answer": "Palmas Airport（帕尔马斯机场）的四字国际航空运输协会（ICAO）代码是 SBPJ。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Carajas Airport机场的四字码是什么？",
+        "A": "SBCJ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Carajas Airport\";",
+        "actual_answer": "Carajas Airport（卡拉加斯机场）的四字代码是 SBCJ。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Savusavu Airport机场的四字码是什么？",
+        "A": "NFNS",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Savusavu Airport\";",
+        "actual_answer": "Savusavu Airport 的四字码是 NFNS。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dayton-Wright Brothers机场的四字码是什么？",
+        "A": "KMGY",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Dayton-Wright Brothers\";",
+        "actual_answer": "Dayton-Wright Brothers 机场的四字国际民航组织（ICAO）代码是 KMGY。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Olson机场的四字码是什么？",
+        "A": "LL53",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Olson\";",
+        "actual_answer": "Olson机场的四字码是KTTF。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Huron County Memorial机场的四字码是什么？",
+        "A": "KBAX",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Huron County Memorial\";",
+        "actual_answer": "Huron County Memorial 机场的四字代码是 KBAX。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Kōchi Airport机场的四字码是什么？",
+        "A": "RJOK",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Kōchi Airport\";",
+        "actual_answer": "Kōchi Airport（高知机场）的四字码是 RJOK。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Whyalla Airport机场的四字码是什么？",
+        "A": "YWHA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Whyalla Airport\";",
+        "actual_answer": "Whyalla Airport的四字国际航空运输协会（ICAO）代码是 YWHA。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Rockcliffe机场的四字码是什么？",
+        "A": "CYRO",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Rockcliffe\";",
+        "actual_answer": "Rockcliffe 机场的四字码是 CYRO。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Ball机场的四字码是什么？",
+        "A": "79NC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ball\";",
+        "actual_answer": "根据国际航空运输协会（IATA）的规定，机场的四字代码是由国际民用航空组织（ICAO）分配的。与IATA代码（通常是三字码）不同，ICAO的四字码通常用于航空管理和航空公司操作。\n\n然而，没有一个名为\"Ball机场\"的全球知名机场，因此没有办法直接给出该机场的ICAO四字码。假如“Ball机场”是一个小型或者私人机场，您可能需要查阅当地航空管理机构的记录或有关资源以找到具体的四字码信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Takapoto Airport机场的四字码是什么？",
+        "A": "NTGT",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Takapoto Airport\";",
+        "actual_answer": "Takapoto Airport 机场的四字码是 NTGT。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Krause Private机场的四字码是什么？",
+        "A": "ND49",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Krause Private\";",
+        "actual_answer": "Krause Private 机场的四字代码是0TX4。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bird Dog Airfield机场的四字码是什么？",
+        "A": "E58",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Bird Dog Airfield\";",
+        "actual_answer": "Bird Dog Airfield 的四字码是 ZBDR。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pangandaran机场的四字码是什么？",
+        "A": "WICN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Pangandaran\";",
+        "actual_answer": "Pangandaran机场的四字码是WICN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Warren /US Forest Service/机场的四字码是什么？",
+        "A": "3U1",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Warren /US Forest Service/\";",
+        "actual_answer": "Warren, US Forest Service机场的四字代码是U55。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Grand Canyon National Park机场的四字码是什么？",
+        "A": "KGCN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Grand Canyon National Park\";",
+        "actual_answer": "Grand Canyon National Park机场的四字码是 \"KGCN\"。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Stangland机场的四字码是什么？",
+        "A": "5IN9",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Stangland\";",
+        "actual_answer": "抱歉，我无法找到名为“Stangland”的机场相关信息。如果这是一个小机场或私人机场，可能没有四字码。四字码通常用于国际或较大的机场。请确认机场名称的拼写或者提供更多信息以便进一步查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Beica机场的四字码是什么？",
+        "A": "HABE",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Beica\";",
+        "actual_answer": "Beica机场的四字码是 HABC。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Nyiregyhaza机场的四字码是什么？",
+        "A": "LHNY",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Nyiregyhaza\";",
+        "actual_answer": "Nyiregyhaza机场的四字国际民用航空组织(ICAO)代码是LHNY。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Thigpen Field机场的四字码是什么？",
+        "A": "00M",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Thigpen Field\";",
+        "actual_answer": "Thigpen Field机场的四字代码是「KBDH」。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Birchip机场的四字码是什么？",
+        "A": "YBIR",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Birchip\";",
+        "actual_answer": "Birchip 机场是一个位于澳大利亚维多利亚州的小型机场。根据现有信息，Birchip 机场没有分配到一个国际民航组织（ICAO）四字机场代码。这些小型机场通常不会有四字码，四字码通常用于较大或更忙碌的机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pilot Country机场的四字码是什么？",
+        "A": "X05",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Pilot Country\";",
+        "actual_answer": "很抱歉，我找不到有关Pilot Country机场的具体信息。如果这是一个较小或不太知名的机场，可能其信息未被广泛记录。如果您有航班信息或更多细节，可以尝试联系航空公司或查看机场的官方网站以获取更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Fulton County机场的四字码是什么？",
+        "A": "NY0",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Fulton County\";",
+        "actual_answer": "Fulton County 机场的四字码是 KFTY。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Highlander机场的四字码是什么？",
+        "A": "2FD6",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Highlander\";",
+        "actual_answer": "Highlander机场没有被广泛认知为一个商业或公共机场，因此没有一个国际航空运输协会（IATA）或国际民航组织（ICAO）分配的四字码。如果这是一个私人机场或直升机停机坪，可能并未在公开的航空代码列表中。如果您有该机场所在地的更多信息，我可以帮助您进一步查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Paiute Meadows机场的四字码是什么？",
+        "A": "02NV",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Paiute Meadows\";",
+        "actual_answer": "Paiute Meadows机场的四字码是美国联邦航空管理局（FAA）分配的机场代码，而不是国际民航组织（ICAO）分配的四字码。通常，较小的机场可能只有FAA的三字码而没有ICAO的四字码。如果您需要特定机场的ICAO代码，请确认机场名称及其位置以便进一步查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Luzamba机场的四字码是什么？",
+        "A": "FNLZ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Luzamba\";",
+        "actual_answer": "Luzamba机场的四字机场代码是FNLZ。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hawthorne Municipal Airport机场的四字码是什么？",
+        "A": "KHHR",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Hawthorne Municipal Airport\";",
+        "actual_answer": "Hawthorne Municipal Airport 的四字代码（ICAO代码）是 KHHR。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Flying X Ranch机场的四字码是什么？",
+        "A": "5AL3",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Flying X Ranch\";",
+        "actual_answer": "Flying X Ranch 机场的四字码是 WT18。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Vasile Field机场的四字码是什么？",
+        "A": "NY60",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Vasile Field\";",
+        "actual_answer": "Vasile Field机场的四字码是KBYH。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Chalgrove机场的四字码是什么？",
+        "A": "EGLJ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Chalgrove\";",
+        "actual_answer": "Chalgrove机场的四字码是EGVG。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ed-Air机场的四字码是什么？",
+        "A": "I20",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ed-Air\";",
+        "actual_answer": "Ed-Air机场没有一个官方的四字ICAO代码。ICAO代码一般用于识别各国的机场，通常是为大型或商业机场分配的。如果Ed-Air是一个非正式或较小的机场，可能没有被分配这样一个代码。如果你有更多关于Ed-Air机场的具体位置或其它信息，我可以帮助你进一步查找。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gager Field机场的四字码是什么？",
+        "A": "CT36",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Gager Field\";",
+        "actual_answer": "Gager Field机场的四字码是Y38。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cat Cay机场的四字码是什么？",
+        "A": "MYCC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Cat Cay\";",
+        "actual_answer": "Cat Cay机场的四字代码是MYCC。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Pondok Cabe机场的四字码是什么？",
+        "A": "WIHP",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Pondok Cabe\";",
+        "actual_answer": "Pondok Cabe机场的四字码是WIHP。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Victoria International Airport机场的四字码是什么？",
+        "A": "CYYJ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Victoria International Airport\";",
+        "actual_answer": "Victoria International Airport机场的四字码是CYYJ。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Manakara机场的四字码是什么？",
+        "A": "FMSK",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Manakara\";",
+        "actual_answer": "Manakara机场的四字代码是 FMSC。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lensk Airport机场的四字码是什么？",
+        "A": "UERL",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Lensk Airport\";",
+        "actual_answer": "Lensk Airport（莲斯克机场）的四字码是UERT。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Whippet Field机场的四字码是什么？",
+        "A": "OR34",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Whippet Field\";",
+        "actual_answer": "Whippet Field机场的四字码为WA75。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Graywood Ranch机场的四字码是什么？",
+        "A": "CA39",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Graywood Ranch\";",
+        "actual_answer": "抱歉，我不能直接提供 Graywood Ranch 机场的四字码。在寻找特定机场的信息时，可以参考国际航空运输协会（IATA）或国际民用航空组织（ICAO）的官方网站，或者通过信任的航空信息资源获取。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "H & S Airfield机场的四字码是什么？",
+        "A": "XS21",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"H & S Airfield\";",
+        "actual_answer": "H & S Airfield机场的四字码是ZJZY。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Collarenebri机场的四字码是什么？",
+        "A": "YCBR",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Collarenebri\";",
+        "actual_answer": "Collarenebri机场的四字码是 YCNE。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Telefomin机场的四字码是什么？",
+        "A": "AYTE",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Telefomin\";",
+        "actual_answer": "Telefomin机场的四字码是 TEOF。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "El Refugio机场的四字码是什么？",
+        "A": "SKNA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"El Refugio\";",
+        "actual_answer": "很抱歉，我找不到与“El Refugio”机场相关的信息。可能是因为该机场规模较小，或者在我的数据库更新之后才被命名。建议你查阅最新的航空资料或联系相关航空管理机构以获取准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Freetown International Airport机场的四字码是什么？",
+        "A": "GFLL",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Freetown International Airport\";",
+        "actual_answer": "Freetown International Airport，通常也被称为隆吉国际机场，其四字代码是 GFLL。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Tappahannock Essex County机场的四字码是什么？",
+        "A": "KXSA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Tappahannock Essex County\";",
+        "actual_answer": "Tappahannock Essex County机场的四字码是KXSA。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Sher Wood机场的四字码是什么？",
+        "A": "KPWD",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Sher Wood\";",
+        "actual_answer": "Sher Wood机场的四字代码是ZSWF。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Troy Airpark机场的四字码是什么？",
+        "A": "02MO",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Troy Airpark\";",
+        "actual_answer": "Troy Airpark 机场的四字码是 K03。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Magan Airport机场的四字码是什么？",
+        "A": "UEMM",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Magan Airport\";",
+        "actual_answer": "Magan Airport的四字代码是UHMM。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gable Branch机场的四字码是什么？",
+        "A": "5GA0",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Gable Branch\";",
+        "actual_answer": "Gable Branch机场的四字码是ZGBH。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Agner机场的四字码是什么？",
+        "A": "51OH",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Agner\";",
+        "actual_answer": "Agner机场的四字代码是ZBAN。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ellendale Municipal机场的四字码是什么？",
+        "A": "4E7",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ellendale Municipal\";",
+        "actual_answer": "Ellendale Municipal机场的四字码是 4E6。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Syracuse-Hamilton County Municipal机场的四字码是什么？",
+        "A": "3K3",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Syracuse-Hamilton County Municipal\";",
+        "actual_answer": "Syracuse-Hamilton County Municipal 机场的国际航空运输协会（IATA）机场代码是「3K3」。四字码，通常指的是国际民航组织（ICAO）机场代码，但对于一些较小的机场，可能没有特定的四字ICAO代码。您可以确认使用3K3作为识别该机场的代码。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "correct_rate": 37.67,
+        "sample_size": 300,
+        "correct_count": 113
+    }
+]

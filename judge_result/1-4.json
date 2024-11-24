@@ -1,0 +1,2819 @@
+[
+    {
+        "Q": "Los Alamos有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Los Alamos, 四字码：KLAM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Los Alamos\";",
+        "actual_answer": "洛斯阿拉莫斯（Los Alamos）有一个主要的机场，名为洛斯阿拉莫斯机场。它的四字码是KLAM。这个机场主要用于通勤和通用航空。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Olean有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cattaraugus Co Olean, 四字码：KOLE",
+            "机场名称：Giermek Executive, 四字码：8G3",
+            "机场名称：Reiss Game Farm, 四字码：75NY"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Olean\";",
+        "actual_answer": "奥利安（Olean）是美国纽约州的一个城市。在奥利安附近，没有大型的商业机场，但有一些小型地方机场。在美国，较小的机场通常不会有四字国际民航组织（ICAO）代码，但它们可能有联邦航空管理局（FAA）分配的三字母代码。\n\n以下是奥利安附近的一些机场及其代码：\n\n1. **Cattaraugus County-Olean Airport**：\n   - FAA代码：OLE\n\n这类小型机场主要用于通用航空。如果需要使用商业航班服务，最近的大型机场可能是布法罗尼亚加拉国际机场（Buffalo Niagara International Airport，ICAO代码：KBUF），或者稍远一些的罗切斯特国际机场（Greater Rochester International Airport，ICAO代码：KROC）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Patos De Minas有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Patos De Minas, 四字码：SNPD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Patos De Minas\";",
+        "actual_answer": "Patos de Minas是一座位于巴西米纳斯吉拉斯州的城市。该城市的主要机场是Patos de Minas Airport，其四字国际民航组织机场代码（ICAO代码）是SBPT。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tehachapi有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Tehachapi Mun, 四字码：KTSP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tehachapi\";",
+        "actual_answer": "Tehachapi 有一个主要机场，名为 Tehachapi Municipal Airport，四字码为 KTSP。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "CAPRIVI有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Lianshulu, 四字码：FYLS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"CAPRIVI\";",
+        "actual_answer": "Caprivi 是纳米比亚的一个地区，较为偏远。该地区及其周边的机场主要有：\n\n1. Katima Mulilo Airport (四字码：FYKM)\n2. Mpacha Airport (四字码：FYMP)\n\n这些机场是比较小的地区机场，主要用于国内航班。如果需要进一步的信息，建议查看相关航空公司或机场的官方网站以获取最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Damme有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Damme, 四字码：EDWC"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Damme\";",
+        "actual_answer": "Damme是比利时的一座小镇，并没有自己的机场。通常情况下，前往Damme的旅客可以从比利时附近的大城市机场转乘交通工具前往。比利时主要的国际机场包括：\n\n1. 布鲁塞尔机场（Brussels Airport），四字码：EBBR\n2. 安特卫普国际机场（Antwerp International Airport），四字码：EBAW\n3. 沙勒罗瓦布鲁塞尔南机场（Brussels South Charleroi Airport），四字码：EBCI\n4. 列日机场（Liège Airport），四字码：EBLG\n\n这些机场距离Damme都相对较近，可以选择其中一个作为到达机场，然后通过其他交通工具前往Damme。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lahore有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Allama Iqbal International Airport, 四字码：OPLA",
+            "机场名称：Walton, 四字码：OPLH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Lahore\";",
+        "actual_answer": "拉合尔有一个主要的机场，名称和对应的四字代码是：\n\n1. 阿拉马·伊克巴尔国际机场（Allama Iqbal International Airport） - OPLA",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Falfurrias有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Brooks County, 四字码：KBKS",
+            "机场名称：Cage Ranch, 四字码：7TE2"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Falfurrias\";",
+        "actual_answer": "Falfurrias, Texas, 只有一个机场：Falfurrias 市政机场。它的四字代码是 T63。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hato Corozal有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Hato Corozal, 四字码：SKHC"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hato Corozal\";",
+        "actual_answer": "Hato Corozal位于哥伦比亚的卡萨纳雷省。这个地区及其附近并没有大型的商用机场，因此很少有专门的四字国际航空运输协会(IATA)机场代码。如果你正在寻找当地或小型机场的信息，我推荐具体查找临近城市或咨询当地交通服务以获得更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aracuai有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Aracuai, 四字码：SNUI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Aracuai\";",
+        "actual_answer": "Aracuai 是位于巴西米纳斯吉拉斯州的一个城市。这个城市没有大型商业机场，但有一个小型机场：\n\n1. Aracuai Airport - SNAR\n\n请注意，该机场可能只适合小型航空活动，商业航班服务可能有限。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Faisalabad有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Faisalabad International Airport, 四字码：OPFA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Faisalabad\";",
+        "actual_answer": "Faisalabad拥有一个主要机场，名称和对应的四字码如下：\n\n- Faisalabad International Airport (OPFA)",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Postville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Dale Delight, 四字码：IA45"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Postville\";",
+        "actual_answer": "Postville是加拿大纽芬兰与拉布拉多省的一个小镇。那里有一个小型机场，名为Postville Airport，对应的四字国际民航组织（ICAO）代码是CCD4。不过由于这些信息可能会随时间更新或改变，在出行前确认最新的机场信息是个好主意。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aktobe有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Aktobe Airport, 四字码：UATT"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Aktobe\";",
+        "actual_answer": "Aktobe有一个主要的机场，名称是Aktobe International Airport。它的四字码是UATT。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Budjala有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Gwaka, 四字码：FZFW"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Budjala\";",
+        "actual_answer": "Budjala是位于刚果民主共和国的一个地方。在 Budjala 附近并没有大型的国际或国内机场，因此它没有专属的四字国际航空运输协会（IATA）机场代码。在刚果民主共和国，一些主要机场包括金沙萨的恩吉利国际机场（四字码：FZAA）和卢本巴希的卢安诺国际机场（四字码：FZQA），但这些机场距离 Budjala 相对较远。\n\n如果你计划前往 Budjala，通常需要先飞往较大的城市，然后通过当地交通方式前往 Budjala。根据不同的航线和选择，可能需要在附近的大型城市之间进行交通转换。请确认具体的旅行计划以获取详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Condoto有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Condoto Airport, 四字码：SKCD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Condoto\";",
+        "actual_answer": "Condoto 是哥伦比亚乔科省的一座小镇。该地区的主要机场是曼德萨机场 (Mandesa Airport)，其对应的四字国际航空运输协会(ICAO)代码是 SKCD。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Willoughby有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Willoughby Lost Nation Mun, 四字码：KLNN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Willoughby\";",
+        "actual_answer": "Willoughby 是一个常见地名，可能在多个国家或地区存在。不过，若您指的是美国俄亥俄州的 Willoughby，那么这附近并没有主要机场在该市内。通常，靠近 Willoughby 的人可能会使用克利夫兰地区的机场。以下是克利夫兰周边的机场及其代码：\n\n1. **克利夫兰霍普金斯国际机场 (Cleveland Hopkins International Airport)**\n   - 四字码（ICAO）：KCLE\n\n2. **克利夫兰柏克湖滨机场 (Cleveland Burke Lakefront Airport)**\n   - 四字码（ICAO）：KBKL\n\n这些机场相对较靠近 Willoughby，适合规划前往该地区的航班旅行。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Oakham有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：RAF Cottesmore, 四字码：EGXJ"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Oakham\";",
+        "actual_answer": "Oakham 是英国的一座小镇，位于英格兰的拉特兰地区。Oakham 本身并没有机场。最近的主要机场包括：\n\n1. East Midlands Airport（东米德兰机场），四字码为 EGNX。\n2. Birmingham Airport（伯明翰机场），四字码为 EGBB。\n3. London Luton Airport（伦敦卢顿机场），四字码为 EGGW。\n\n这些机场都是从 Oakham 出发相对较近的选择。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Swanton有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Las Trancas, 四字码：17CL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Swanton\";",
+        "actual_answer": "Swanton 是美国佛蒙特州的一个小镇，附近的主要机场是伯灵顿国际机场（Burlington International Airport），其四字码是KBTV。Swanton 本身没有大型商业机场，主要依赖伯灵顿的机场提供服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Homalin有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Homalin Airport, 四字码：VYHL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Homalin\";",
+        "actual_answer": "Homalin有一个机场，其名称为Homalin Airport，对应的四字码是VIHM。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Takume有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Takume Airport, 四字码：NTKM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Takume\";",
+        "actual_answer": "Takume 是法属波利尼西亚的一座岛屿，但它并没有一个商业机场。法属波利尼西亚的主要机场是在大一些的岛屿上，比如大溪地的法阿国际机场，四字码是NTAA。如果你有其他岛屿或城市的机场信息需求，请告诉我。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sao Vicente有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cesária Évora Airport, 四字码：GVSV"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Sao Vicente\";",
+        "actual_answer": "Sao Vicente 有一个主要机场，机场名称是 Cesária Évora Airport，其四字码是 GVSV。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Lafayette Parish有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Sievers Field, 四字码：LS21"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Lafayette Parish\";",
+        "actual_answer": "Lafayette Parish 位于美国路易斯安那州，主要的机场是拉法叶地区机场（Lafayette Regional Airport），其四字码是KLFT。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Readington Township有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Peters, 四字码：4NJ8",
+            "机场名称：Reading Regl Spaatz, 四字码：KRDG",
+            "机场名称：Solberg/Hunterdon, 四字码：N51"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Readington Township\";",
+        "actual_answer": "Readington Township 位于美国新泽西州。在Readington Township附 近，有以下两个主要的机场：\n\n1. 索拉博格-亨特登机场（Solberg-Hunterdon Airport），四字码为 N51。\n2. 天空庄园机场（Sky Manor Airport），四字码为 N40。\n\n这两个机场主要用于通用航空，不提供商业航空服务。如果您有其他问题或需要进一步的信息，请告诉我！",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Loja有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Loja Airport, 四字码：SECA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Loja\";",
+        "actual_answer": "Loja 位于厄瓜多尔，该地区有一个主要机场：\n\n1. 卡塔马约机场（Camilo Ponce Enríquez Airport），四字码：SECU\n\n卡塔马约机场位于 Loja 的附近城市 Catamayo，为 Loja 提供航空服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "West Siang有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Along, 四字码：VEAN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"West Siang\";",
+        "actual_answer": "West Siang 是印度阿鲁纳恰尔邦的一个地区。根据我截至2023年10月的信息，West Siang 区本身没有主要的商用机场。该地区较为偏远，交通可能主要依赖于陆路。如果您要访问 West Siang，可以考虑从较近的有机场的城市出发，比如距离较近的邦外机场或其他北阿坎德邦的城市。最接近的商用机场之一是位于阿萨姆邦的列城机场（Lilabari Airport），其四字码为 VELR。\n\n请注意具体的航空资讯可能会有更新，建议在旅行前核实最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tachikawa有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Tachikawa, 四字码：RJTC"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tachikawa\";",
+        "actual_answer": "Tachikawa（立川）位于日本东京都，其附近没有大型的商业机场。不过，立川附近有一些军用机场，例如：\n\n1. **横田空军基地（Yokota Air Base）** - 这是一个主要的美国空军基地，位于立川市西侧，主要用于军事用途，而非商业航班。其四字ICAO代码是 **RJTY**。\n\n如果你需要使用商业航班，通常会选择从东京的主要机场出发，例如成田国际机场（Narita International Airport，ICAO代码：RJAA）或者东京羽田机场（Tokyo Haneda Airport，ICAO代码：RJTT）。这两个机场都离立川市有一定的距离，但提供国内和国际航班服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Southeast Fairbanks有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Horsfeld, 四字码：4Z5"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Southeast Fairbanks\";",
+        "actual_answer": "Southeast Fairbanks Census Area位于美国阿拉斯加州，该地区拥有几个机场。以下是一些主要机场及其对应的四字国际民航组织（ICAO）代码：\n\n1. **Tok Junction Airport** - PFTO\n2. **Delta Junction Airport** - D66\n\n请注意，机场代码可能会有所更新或变化，建议在旅行之前核实具体信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jacks Reef有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Anthonson, 四字码：NY28"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Jacks Reef\";",
+        "actual_answer": "Jacks Reef 是美国纽约州的一个小社区，不是一个有机场的城市。通常，小社区不具备自己的机场，但离它最近的大型机场是锡拉丘兹汉考克国际机场（Syracuse Hancock International Airport），其机场四字国际民航组织代码（ICAO代码）是KSYR。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "King Salmon有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：King Salmon Airport, 四字码：PAKN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"King Salmon\";",
+        "actual_answer": "King Salmon 有一个主要机场，名称为 King Salmon Airport，其四字国际航空运输协会（IATA）代码是 PAKN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Big Mountain有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Big Mountain, 四字码：PABM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Big Mountain\";",
+        "actual_answer": "\"Big Mountain\"通常指的是美国阿拉斯加州的一个机场。Big Mountain的机场名称和对应的四字国际民航组织代码（ICAO）是：\n\n- Big Mountain Airport (PABM)\n\n如果你指的是其他地方或者国家的Big Mountain，请提供更多上下文以便更准确地回答。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Kagau有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Kagau Airport, 四字码：AGKG"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Kagau\";",
+        "actual_answer": "Kagau是所罗门群岛的一个小岛屿，位于所罗门群岛的西部地区。Kagau只有一个机场，即Kagau Airport。它的四字机场代码是AGKG。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Halifax有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Halifax Stanfield International Airport, 四字码：CYHZ",
+            "机场名称：Johnston Farm, 四字码：10NC",
+            "机场名称：Shearwater, 四字码：CYAW"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Halifax\";",
+        "actual_answer": "Halifax有一个主要机场，名称是哈利法克斯斯坦菲尔德国际机场，其四字码是CYHZ。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Saint Ignatius有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：St Ignatius, 四字码：52S"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Saint Ignatius\";",
+        "actual_answer": "圣伊格内修斯（Saint Ignatius）位于美国蒙大拿州，附近没有大型商业机场。最近的商业机场是密苏拉国际机场（Missoula International Airport），其四字国际航空运输协会（IATA）代码是 MSO。对于小型私人航班，可能会使用较小的地区机场，但这些通常没有四字国际代码，而是由地方当局管理的小机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Coondewanna有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Coondewanna Airport, 四字码：YCWA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Coondewanna\";",
+        "actual_answer": "Coondewanna的机场是Coondewanna机场，其对应的四字码是 YCWA。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Camooweal有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Camooweal, 四字码：YCMW"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Camooweal\";",
+        "actual_answer": "Camooweal 是澳大利亚昆士兰州的一个小镇。这个地方没有大型的商业机场，最近的主要机场是Mount Isa Airport，用于较大的商业航班。Mount Isa Airport 的四字码是 YBMA。如果您需要关于更小型的或本地机场的信息，可能需要查阅地方航空服务或飞行手册，以获取最新的本地机场详情。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Nuku Hiva有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Nuku Hiva Airport, 四字码：NTMD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Nuku Hiva\";",
+        "actual_answer": "Nuku Hiva是位于法属波利尼西亚马克萨斯群岛的一个岛屿。在Nuku Hiva，有一个主要的机场：\n\n- Nuku Hiva Airport（努库希瓦机场），其国际航空运输协会（IATA）机场代码是NHV，对应的国际民用航空组织（ICAO）四字码是NTMD。\n\n这是该岛的主要机场，提供与法属波利尼西亚其他地方之间的航空交通服务。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Berner有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Broken Ranch, 四字码：GA76"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Berner\";",
+        "actual_answer": "伯尔尼（Bern）位于瑞士，主要的机场是伯尔尼贝尔普机场。其名称和四字代码如下：\n\n- 伯尔尼贝尔普机场 (Bern-Belp Airport) - LSZB\n\n这是伯尔尼地区主要的民用机场，用于区域航班和私人航空。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Rangeley有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Stephen A Bean Municipal, 四字码：8B0"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Rangeley\";",
+        "actual_answer": "Rangeley是美国缅因州的一个小镇。在Rangeley及其周边地区有一个主要的机场：\n\n1. **Rangeley Lake Seaplane Base** - 这个是水上飞机基地，没有标准的四字ICAO代码，但它在FAA中的三字码是M57。\n   \n请注意，水上飞机基地通常没有国际航空运输协会（IATA）代码或标准的国际民航组织（ICAO）四字码，因为它们主要用于一般航空而非商业航空运输。如果你需要前往Rangeley，最近的主要城市和机场是班戈（Bangor），缅因州或波特兰（Portland），缅因州。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bridgeville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Huey, 四字码：DE14"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bridgeville\";",
+        "actual_answer": "Bridgeville位于美国特拉华州，但它本身没有主要的商业机场。不过，靠近Bridgeville的几个主要机场及其四字码包括：\n\n1. 费城国际机场 (Philadelphia International Airport) - KPHL\n2. 巴尔的摩/华盛顿国际瑟古德·马歇尔机场 (Baltimore/Washington International Thurgood Marshall Airport) - KBWI\n3. 华盛顿杜勒斯国际机场 (Washington Dulles International Airport) - KIAD\n\n这些机场可以为Bridgeville及其周边地区提供商业航班服务。此外，Bridgeville及周边地区可能还有一些小型地方机场或私人机场，但这些通常没有四字国际民航组织（ICAO）代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Grass Creek有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Dague Strip, 四字码：II12"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Grass Creek\";",
+        "actual_answer": "Grass Creek 并不是一个很明确的地点名称，所以可能会涉及到多个地方。为了更准确地回答您的问题，您需要明确是哪一个具体地区的 Grass Creek。如果指的是加拿大、美国，或者其他国家的某个特定区域，请提供更多详细信息以便我准确提供相关的机场信息。通常，小型地区可能没有大型商业机场，通常情况下可能离得较近的大城市才会有机场。请提供更多细节以便我能更好地帮助您！",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Iligan City有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Iligan, 四字码：RPMI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Iligan City\";",
+        "actual_answer": "Iligan City 本身没有主要的商业机场。最接近 Iligan City 的主要机场是位于 Cagayan de Oro 的拉古宁丁安国际机场（Laguindingan Airport），其四字国际民航组织代码是 RPMY。Ililigan City 的旅客通常会使用这个机场来进行航空旅行。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cadillac有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Wexford County, 四字码：KCAD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Cadillac\";",
+        "actual_answer": "Cadillac是美国密歇根州的一个城市，与Cadillac相关的机场是Wexford County Airport。以下是机场名称和对应的四字码：\n\n- Wexford County Airport (四字码：KCAD)\n\n请注意，这个机场是一个小型地方机场，主要用于通用航空。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "San Pedro有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：San Pedro Airport, 四字码：MZSP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"San Pedro\";",
+        "actual_answer": "San Pedro 是一个常见的地名，可以指多个地方，所以在回答这个问题之前，需要明确一下具体指的是哪个 San Pedro。以下是两个较为常见的地方及其相应的机场：\n\n1. **San Pedro, California, USA**：\n   - San Pedro 本身是洛杉矶的一部分，最近的主要机场是洛杉矶国际机场（Los Angeles International Airport）：\n     - 名称：Los Angeles International Airport\n     - 四字码（ICAO）：KLAX\n\n2. **San Pedro, Belize**：\n   - 主要的机场：\n     - 名称：John Greif II Airport\n     - 四字码（ICAO）：MZSP\n\n如果您指的是其他的 San Pedro，请提供更多信息，以便我为您提供更准确的答案。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hattfjelldal有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Hattfjelldal, 四字码：ENHT"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hattfjelldal\";",
+        "actual_answer": "Hattfjelldal 是位于挪威的一座小镇。根据现有信息，Hattfjelldal 本身并没有大的商业机场。最近的商业机场通常是附近大城市的机场，例如 Mo i Rana 的 Røssvoll Airport，机场代码为 ENRA。如果你需要前往 Hattfjelldal，通常会从更大的城市乘车或其他交通工具到达。请确认最新的交通信息，以便为旅程做好准备。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Arvidsjaur有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Arvidsjaur Airport, 四字码：ESNX"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Arvidsjaur\";",
+        "actual_answer": "Arvidsjaur 有一个主要机场，名称和对应的四字码是：\n\n- Arvidsjaur Airport（Arvidsjaur flygplats），四字码是 ESNX。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Karenga有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Kidepo National, 四字码：HUKD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Karenga\";",
+        "actual_answer": "Karenga是指乌干达的一个地区。乌干达的主要机场有：\n\n1. 恩德培国际机场（Entebbe International Airport） - 四字码：HUEN\n2. 卡塞塞机场（Kasese Airport） - 四字码：HUKS\n3. 阿鲁阿机场（Arua Airport） - 四字码：HUAR\n4. 索罗蒂机场（Soroti Airport） - 四字码：HUSO\n\n请注意，Karenga作为一个地方可能没有自己的机场，以上列出的是乌干达的一些主要机场。如果Karenga附近有小型机场或简易机场，可能不在国际航空代码列表中。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Laneville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：2C Ranch, 四字码：10TS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Laneville\";",
+        "actual_answer": "抱歉，我找不到任何关于Laneville的机场信息。可能是因为这个地方没有商业机场或大型公共机场。如果Laneville是个小镇或较小的社区，最近的机场可能位于邻近的大城市或大机场。建议您核实具体地点名称，并查询附近主要城市的机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Brive-la-gaillarde有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Brive-La-Gaillarde Airport, 四字码：LFSL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Brive-la-gaillarde\";",
+        "actual_answer": "Brive-la-Gaillarde的主要机场是Brive–Souillac Airport，其对应的四字码是LFSL。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Mueang Chiang Rai District有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Chiang Rai Mae Fah Luang International Airport, 四字码：VTCT",
+            "机场名称：Old Chiang Rai Airport, 四字码：VTCR"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Mueang Chiang Rai District\";",
+        "actual_answer": "截至我所知，Mueang Chiang Rai District 主要有一个商业机场：\n\n1. 清莱国际机场（Mae Fah Luang - Chiang Rai International Airport），其四字码是 VTCT。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Moxos有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：SAN IGNACIO DE MOXOS, 四字码：SLSM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Moxos\";",
+        "actual_answer": "Moxos 是玻利维亚贝尼省的一个地区，圣伊格纳西奥·德·莫霍斯（San Ignacio de Moxos）是该地区的一个城镇。附近的机场主要有：\n\n1. 圣伊格纳西奥·德·莫霍斯机场（San Ignacio de Moxos Airport），四字码为 SLIX。\n\n请注意，信息可能会有所变化，建议在出行前核实最新的机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Djambala有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Djambala, 四字码：FCBD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Djambala\";",
+        "actual_answer": "Djambala 是刚果共和国的一座城市，但根据我目前的信息，Djambala 并没有商业运营的机场。因此，没有机场名称和四字代码可以提供。对于前往 Djambala 的旅行，你可能需要飞往附近的主要城市，然后通过陆路交通前往该地。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dijon有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Darois, 四字码：LFGI",
+            "机场名称：Longvic Ab, 四字码：LFSD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Dijon\";",
+        "actual_answer": "Dijon, 法国有一个主要的机场：\n\n1. **Dijon Bourgogne Airport** (Dijon-Longvic) - 四字码为 LFSD\n\n请注意，该机场的商业航班服务较少，以军事和轻型航空为主。因此，从第戎出发的商业旅行者通常可能会使用邻近城市的机场，例如里昂的 Saint-Exupéry 机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Challis有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Challis, 四字码：KLLJ",
+            "机场名称：Cougar Ranch, 四字码：D47",
+            "机场名称：Lower Loon Creek, 四字码：C53",
+            "机场名称：Marble Creek, 四字码：ID8",
+            "机场名称：Upper Loon Creek US Forest Service, 四字码：U72"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Challis\";",
+        "actual_answer": "Challis是美国爱达荷州的一个小镇。Challis本身没有大型商业机场。最近的相关机场包括：\n\n1. **Challis Airport**（地方机场，不提供四字码，只用FAA位置识别码：CHL）\n\n如果需要前往更大的机场，可以考虑以下较大城市的机场：\n\n2. **Boise Airport**（博伊西机场，四字码：KBOI）\n\n3. **Idaho Falls Regional Airport**（爱达荷福尔斯区域机场，四字码：KIDA）\n\n这些机场提供了更多的国内航班选择，且距离Challis相对较近。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gjogur有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Gjogur, 四字码：BIGJ"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Gjogur\";",
+        "actual_answer": "Gjogur 是冰岛的一个小镇，那里有一个机场，名称是 Gjögur Airport。它的四字国际民用航空组织代码（ICAO代码）是BIGJ。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Virginia Beach有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Virginia Beach, 四字码：42VA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Virginia Beach\";",
+        "actual_answer": "Virginia Beach本身没有主要的商业机场，但附近有一些机场可供使用：\n\n1. 诺福克国际机场（Norfolk International Airport）- 四字码：KORF\n2. 纽波特纽斯/威廉斯堡国际机场（Newport News/Williamsburg International Airport）- 四字码：KPHF\n\n此外，Virginia Beach还拥有一些小型和军用机场，例如：\n\n1. 大西洋航空公园（Atlantic Park Airport）- 四字码：未分配商业ICAO代码\n2. 舰队作战基地诺福克（Naval Air Station Oceana）- 四字码：KNTU\n\n这些机场提供不同的服务，具体取决于您的需求。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gallipolis有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Gallia Meigs Regl, 四字码：KGAS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Gallipolis\";",
+        "actual_answer": "Gallipolis位于美国俄亥俄州。在Gallipolis附近有一个主要的机场：\n\n- Gallia-Meigs Regional Airport，四字码为KGAS。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Windorah有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Windorah Airport, 四字码：YWDH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Windorah\";",
+        "actual_answer": "Windorah 有一个机场，机场名称是 Windorah Airport，其对应的四字代码是 YWDH。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Balranald有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Balranald, 四字码：YBRN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Balranald\";",
+        "actual_answer": "Balranald是位于澳大利亚新南威尔士州的一个小镇。该地区没有大型的商业机场。通常，小型城镇可能有私人或地区性机场，但这些机场不一定有国际民航组织（ICAO）分配的四字码。如果你寻找的是主要的机场信息，通常情况下，需考虑附近较大城市的机场。例如，Griffith机场（ICAO代码：YGTH）或Mildura机场（ICAO代码：YMIA），这些机场距离Balranald相对较近，并提供区域航班服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Azul有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Azul, 四字码：SAZA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Azul\";",
+        "actual_answer": "Azul是巴西的一家航空公司，并不拥有机场。但是，我可以告诉你Azul航空常用的几个巴西主要机场及其四字代码：\n\n1. 圣保罗/瓜鲁柳斯国际机场 (São Paulo/Guarulhos International Airport) - SBGR\n2. 里约热内卢/加利昂-安东尼奥·卡洛斯·若比姆国际机场 (Rio de Janeiro/Galeão–Antonio Carlos Jobim International Airport) - SBGL\n3. 贝洛奥里藏特/塔纳克雷多·内维斯国际机场 (Belo Horizonte/Tancredo Neves International Airport) - SBCF\n4. 库里提巴/阿方索·佩纳国际机场 (Curitiba/Afonso Pena International Airport) - SBCT\n5. 维多利亚/尤里科·萨莱斯机场 (Vitória/Eurico de Aguiar Salles Airport) - SBVT\n\n这些机场是Azul航空在巴西运营的主要枢纽和目的地之一。请注意，四字代码通常用于飞行业务和空中交通管制，航空公司则根据航线计划使用这些机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Springtown有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Eugene's Dream, 四字码：6XS7",
+            "机场名称：Rnw, 四字码：0XA0",
+            "机场名称：Underline Ok, 四字码：93XS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Springtown\";",
+        "actual_answer": "在美国，Springtown 通常指的是德克萨斯州的一个小镇。由于它是一个相对较小的城镇，Springtown 本身并没有商业机场。然而，它离一些大城市比较近，可以利用这些城市的机场。\n\n最近的大型商业机场是位于达拉斯-沃斯堡地区（DFW）的达拉斯-沃斯堡国际机场，四字码为 KDFW。此外，还有达拉斯的达拉斯爱田机场，四字码为 KDAL。\n\n如果你专指其他国家或地区的 Springtown，需要提供更多的地理信息以获得更准确的答案。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Stoelmanseiland有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Stoelmanseiland, 四字码：SMST"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Stoelmanseiland\";",
+        "actual_answer": "Stoelmanseiland 是位于南美洲苏里南的一个小岛。该地区没有大型商业机场，因此可能没有四字码的机场。较小的区域可能使用简易的着陆带或直升机降落设施。如果您需要前往该地，通常是通过查阅邻近的大型机场，并利用当地的交通方式前往。最近的主要机场是帕拉马里博的约翰·阿道夫·彭赫机场 (Johan Adolf Pengel International Airport)，四字码为 SMJP。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Masbate City有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Masbate Airport, 四字码：RPVJ"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Masbate City\";",
+        "actual_answer": "Masbate City 拥有一个机场，名为 Masbate Airport。该机场的四字代码是 RPVJ。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Tiakur有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Jos Orno Imsula Airport, 四字码：WAPM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tiakur\";",
+        "actual_answer": "Tiakur是印度尼西亚马鲁古省的一个小镇。由于其规模较小，Tiakur本身没有大型的国际机场。然而，最近的主要机场是位于马鲁古省的机场。请核实最新的资料，以确保准确性，如有更新的机场信息和四字码，建议查阅相关资源或航空公司网站获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Atauro有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Atauro, 四字码：WPAT"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Atauro\";",
+        "actual_answer": "截至目前，阿陶罗岛（Atauro）没有商业机场，因此也没有四字国际民航组织（ICAO）机场代码。阿陶罗岛是东帝汶的一部分，距离其首都帝力（Dili）较近。前往阿陶罗岛通常需要从帝力搭乘船只前往，而帝力的主要机场是总统尼古劳·洛巴托国际机场（Presidente Nicolau Lobato International Airport），其对应的ICAO四字码是WPDL。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Valton有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Northwood Airstrip, 四字码：WI54"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Valton\";",
+        "actual_answer": "抱歉，Valton 不是一个公认的地名或者机场名称。如果您指的是一个特定地区或城市，能否提供更多信息以便我更好地帮助您？",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tiskilwa有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cloverleaf Ranch, 四字码：15LL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tiskilwa\";",
+        "actual_answer": "Tiskilwa是美国伊利诺伊州的一个小镇。小镇本身没有机场。通常，较小的城镇不具备大型机场设施，最近的主要机场通常位于较大的城市。对于Tiskilwa来说，最近的大型机场是芝加哥的奥黑尔国际机场（O'Hare International Airport，四字码为KORD）和中途国际机场（Midway International Airport，四字码为KMDW）。如果你寻找的是通用航空或私人飞机使用的小型机场，则可能需要查看当地的飞行俱乐部或小型市政机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tamana有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Tamana Island Airport, 四字码：NGTM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tamana\";",
+        "actual_answer": "目前，Tamana 并没有商业机场。Tamana 是日本熊本县的一个城市，附近主要的机场是熊本机场。熊本机场的四字国际民航组织代码是 RJFT。如果你需要从Tamana出发乘坐航班，大多数情况下会使用熊本机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Valdivia Province有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Las Marias, 四字码：SCVL",
+            "机场名称：Molco, 四字码：SCCM",
+            "机场名称：Pichoy Airport, 四字码：SCVD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Valdivia Province\";",
+        "actual_answer": "Valdivia Province 位于智利，根据已知的数据，该地区有一个主要的机场：\n\n1. **Pichoy Airport** (Aeropuerto Pichoy)\n   - 四字码：SCVD\n\n请注意，机场信息可能会发生变化，所以在旅行前建议核实最新的机场及其代码信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Shoemakersville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Skyline Airstrip, 四字码：PN50"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Shoemakersville\";",
+        "actual_answer": "Shoemakersville是位于美国宾夕法尼亚州的一个小镇。该镇本身没有主要机场，但附近区域有一些机场。如果你指的是大型商业机场，最接近Shoemakersville的主要机场是：\n\n1. 费城国际机场（Philadelphia International Airport） - 代码：KPHL\n2. 哈里斯堡国际机场（Harrisburg International Airport） - 代码：KMDT\n3. 刘易斯顿油轮机场 (Lehigh Valley International Airport) - 代码：KABE\n\n如果你需要更小的机场或私人飞行场所的信息，建议查阅当地的航空地图或机场目录。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jarvisburg有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cotton Gin, 四字码：NC36"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Jarvisburg\";",
+        "actual_answer": "Jarvisburg是位于美国北卡罗来纳州的小镇，本身并没有商业机场或大型机场。一般情况下，较小的城镇可能只有小型的私人机场或简易降落跑道，这些通常没有正式的四字国际航空运输协会（IATA）机场代码或国际民航组织（ICAO）代码。\n\n如果你需要飞往Jarvisburg附近的机场，通常可以考虑使用更大城市附近的机场。例如，诺福克国际机场（Norfolk International Airport），其IATA代码是ORF，位于弗吉尼亚州，离Jarvisburg较近。\n\n如果你是针对私人机场感兴趣，建议查阅当地的航空地图或者联系当地政府以获取更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Krems An Der Donau有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Langenlois, 四字码：LOAG"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Krems An Der Donau\";",
+        "actual_answer": "Krems an der Donau是奥地利的一座城市，本身没有机场。但是，附近有一些机场可以为去往Krems an der Donau的旅客提供服务。以下是距离Krems an der Donau较近的主要机场及其四字码：\n\n1. **Vienna International Airport (Flughafen Wien-Schwechat)**\n   - 四字码：LOWW\n\n2. **Linz Airport (Blue Danube Airport Linz)**\n   - 四字码：LOWL\n\n这两个机场是前往Krems an der Donau较为便利的选择，尤其是维也纳国际机场，它是奥地利最大的机场，提供多条国际航线。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Morse Bluff有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Musiel, 四字码：NE43"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Morse Bluff\";",
+        "actual_answer": "Morse Bluff是美国内布拉斯加州的一个小镇，小镇本身没有大型商业机场。最近的主要机场位于内布拉斯加州的大城市，例如：\n\n1. 埃普利机场（Eppley Airfield），位于奥马哈，四字码为KOMA。\n2. 林肯机场（Lincoln Airport），位于林肯，四字码为KLNK。\n\n小型机场或私人机场可能不具有四字国际民航组织（ICAO）代码。如果您在寻找特定的小型机场或私人机场，可能需要查阅当地的航空指南或联系航空相关服务以获取更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Santa Rosa De Copan有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Santa Rosa, 四字码：MHRS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Santa Rosa De Copan\";",
+        "actual_answer": "Santa Rosa de Copán是洪都拉斯的一个城市，附近没有大型的国际机场。然而，该地区可以通过以下机场来访问：\n\n1. **Ruinas de Copán Airport (Sauce)**\n   - 四字码：没有公认的ICAO码\n\n2. **Ramón Villeda Morales International Airport**\n   - 四字码：MHLM\n   - 位置：位于San Pedro Sula，是最近的主要国际机场，距离Santa Rosa de Copán有约三到四小时的车程。\n\n这两个机场中，Ramón Villeda Morales International Airport是更为便利的选择，因为它提供更多的国际和国内航班服务。前往Santa Rosa de Copán的旅客通常通过这个机场抵达，然后通过陆路交通继续前往目的地。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Middleburg有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Hickory Tree Farm, 四字码：VA79",
+            "机场名称：Spencer's Airpark, 四字码：FL13",
+            "机场名称：Williams Field, 四字码：11FL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Middleburg\";",
+        "actual_answer": "Middleburg 不是一个以拥有大型机场而著名的地方，因为这个名字可能指的是多个地区，包括美国弗吉尼亚州的一个小镇或南非的一个小镇等。在这些地方通常没有大型的商业机场。\n\n如果你指的是某个特定国家或地区中的 Middleburg，并希望知道附近的主要机场，请提供更多的位置信息以便我提供具体的帮助。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Raul Leoni有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Ciudad Piar, 四字码：SVDW"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Raul Leoni\";",
+        "actual_answer": "Raúl Leoni是委内瑞拉的一座城市，但它本身并没有专属机场。不过，与Raúl Leoni相关的主要机场是拉乌尔·莱尼国际机场（Raúl Leoni International Airport），其位于委内瑞拉的波多马德林。这座机场的三字码是CBL，而不是四字码。对于航空公司的调度和一些国际航班信息，可能会使用ICAO四字码SVCL。\n\n如果你需要关于这座机场的更多信息，或者在其他城市寻找特定机场，请提供进一步的细节或名称。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pas-de-calais有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Calais Dunkerque, 四字码：LFAC",
+            "机场名称：Les Deux Caps, 四字码：LFIS",
+            "机场名称：Wizernes, 四字码：LFQN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Pas-de-calais\";",
+        "actual_answer": "Pas-de-Calais是法国的一个省份，在这个地区并没有大型的商业机场。不过，比较靠近Pas-de-Calais的主要机场有：\n\n1. **Lille Airport (Lille-Lesquin Airport)** - 四字码：LFQQ\n\n在Pas-de-Calais省内，可能还有一些小型的私人或地区性机场，但这些通常不用于商业航空服务。临近的大型商业航空服务通常通过里尔机场进行。如果需要飞往该地区，可以考虑从其他附近的主要机场如巴黎的戴高乐机场（CDG）或布鲁塞尔机场（BRU）转乘其他交通工具前往。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cobija有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Capitan Anibal Arab Airport, 四字码：SLCO"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Cobija\";",
+        "actual_answer": "Cobija位于玻利维亚，是亚马逊雨林地区的一座城市。Cobija的主要机场是Capitán Aníbal Arab Airport，其四字码是SLCO。这个机场主要服务于该市及其周边地区。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Flores有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Mundo Maya International Airport, 四字码：MGMM",
+            "机场名称：Santa Cruz Airport, 四字码：LPFL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Flores\";",
+        "actual_answer": "Flores 是一个位于印度尼西亚的岛屿，该岛上有几个主要机场。以下是一些主要机场及其对应的四字码：\n\n1. **Komodo Airport (Labuan Bajo Airport)** - WATO\n2. **H. Hasan Aroeboesman Airport (Ende Airport)** - WATE\n3. **Frans Sales Lega Airport (Ruteng Airport)** - WATG\n4. **H. Hasan Aroeboesman Airport (Maumere Airport)** - WATC\n\n请注意，机场的代码和名称可能会有更改，因此建议在旅行计划前确认最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Myerstown有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Deck, 四字码：9D4"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Myerstown\";",
+        "actual_answer": "Myerstown是美国宾夕法尼亚州的一个小镇。其附近并没有大型机场，也没有专门为Myerstown设置的四字码机场。不过，附近的一些主要机场包括：\n\n1. 哈里斯堡国际机场（Harrisburg International Airport），其四字码为KMDT。\n2. 里丁地区机场（Reading Regional Airport），其四字码为KRDG。\n3. 兰卡斯特机场（Lancaster Airport），其四字码为KLNS。\n\n这些机场离Myerstown相对较近，是该地区常用的机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Millersview有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：M Sansom Ranch, 四字码：06TS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Millersview\";",
+        "actual_answer": "Millersview是美国得克萨斯州的一个小社区，它本身并没有机场。通常情况下，小社区依赖于附近城市的机场提供服务。请提供附近大城市的名称，我可以帮助查找这些城市的机场信息和四字码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Zanzibar有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Abeid Amani Karume International Airport, 四字码：HTZA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Zanzibar\";",
+        "actual_answer": "Zanzibar有两个主要机场：\n\n1. 阿贝德·阿马尼·卡鲁姆国际机场（Abeid Amani Karume International Airport），四字码为 HTZA。\n\n2. 彭巴机场（Pemba Airport），位于桑给巴尔群岛的彭巴岛上，四字码为 HTPE。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Vahitahi有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Vahitahi Airport, 四字码：NTUV"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Vahitahi\";",
+        "actual_answer": "Vahitahi 是法属波利尼西亚的一座小岛，根据我的知识，该岛上并没有机场。因此，也没有对应的四字机场代码。如果您打算前往 Vahitahi，通常需要飞往邻近较大的岛屿或机场，再通过船只或其他方式转机抵达。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sudlersville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Flying Acres, 四字码：MD70",
+            "机场名称：Roseland, 四字码：32MD",
+            "机场名称：Taylor Field, 四字码：0MD1",
+            "机场名称：Whalen Field, 四字码：25MD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Sudlersville\";",
+        "actual_answer": "Sudlersville是一座位于美国马里兰州的小镇。不过，Sudlersville本身并没有机场。最近的主要机场之一是巴尔的摩/华盛顿国际瑟古德·马歇尔机场（Baltimore/Washington International Thurgood Marshall Airport，四字码：KBWI）。对于小镇而言，通常需要前往周边城市的大型机场搭乘航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kasenga有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Kasenga, 四字码：FZQG",
+            "机场名称：Katwe, 四字码：FZQH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Kasenga\";",
+        "actual_answer": "Kasenga 是位于刚果民主共和国的一座城市。然而，Kasenga 并没有大型的商业机场，因此没有专门的四字国际机场代码（ICAO代码）。在刚果民主共和国，每个城市不一定都有商用机场，通常主要的国际航班是通过一些主要城市如金沙萨或卢本巴希等地的机场进出。如果你需要前往Kasenga，通常需要先飞往就近的主要城市机场，然后再通过地面交通工具到达。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sahabat有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Sahabat, 四字码：WBKH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Sahabat\";",
+        "actual_answer": "\"Sahabat\" 这个名称并不明确具体指的是哪个地点。可能是您的问题中有某种地方或者公司名叫\"Sahabat\"，不太确定到底指的是哪个地方。如果您指的是特定的区域或者城市，请提供更多的信息，我才能帮助您找到该地区的机场及其对应的四字代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Valinhos有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Associacao Recreativa Fazenda, 四字码：SDBN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Valinhos\";",
+        "actual_answer": "Valinhos是巴西圣保罗州的一个城市。Valinhos本身没有商业机场，但靠近几个主要城市，最接近的大型机场是位于坎皮纳斯的维拉科波斯国际机场。以下是相关的机场及其四字码：\n\n1. 维拉科波斯国际机场（Viracopos International Airport） – SBKP\n\n如果你需要前往更多的国际或国内航线，你也可以考虑圣保罗市的其他两个主要机场：\n\n2. 瓜鲁柳斯国际机场（São Paulo/Guarulhos–Governador André Franco Montoro International Airport） – SBGR\n3. 孔戈尼亚斯机场（Congonhas-São Paulo Airport） – SBSP\n\n这些机场可以通过公路交通便捷地从Valinhos到达。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Baalbek有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Rayak Ab, 四字码：OLRA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Baalbek\";",
+        "actual_answer": "Baalbek位于黎巴嫩，但该地区本身没有主要的民用机场。黎巴嫩的主要国际机场是贝鲁特-拉菲克·哈里里国际机场，其四字码是OLBA。对于前往Baalbek的旅客，通常建议首先飞往贝鲁特，然后通过地面交通工具前往Baalbek。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Guilin有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Guilin Liangjiang International Airport, 四字码：ZGKL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Guilin\";",
+        "actual_answer": "Guilin有一个主要的机场，名为桂林两江国际机场，其对应的四字码是ZGKL。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Connor有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Lazy 8 Flying Ranch, 四字码：TT20"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Connor\";",
+        "actual_answer": "\"Connor\" 可能不是一个具体的地点，更可能是人名。如果您指的是某个具体的城市或地区名称，请重新确认拼写是否正确。如果您指的是某个特定国家或地区，请提供更多详细信息，我会尽力为您提供相关信息。如果您指的是错误拼写的某一实际城市名，请提供正确拼写以便协助查询机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Al Bahah Province有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Al-Aqiq Airport, 四字码：OEBA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Al Bahah Province\";",
+        "actual_answer": "Al Bahah Province 位于沙特阿拉伯，该省有一个主要机场：\n\n- Al-Baha Domestic Airport，四字码为 OEBA。\n\n这个机场主要提供国内航班服务。如需更多信息或国际航班服务，可能需要前往邻近省份的大型国际机场。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Fada有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Fada, 四字码：FTTF"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Fada\";",
+        "actual_answer": "\"Fada\"可能指的是多个地方，如乍得的Fada镇或纳米比亚的Fada村。如果是指乍得的Fada镇，根据我截至2023年10月的数据，该镇的机场信息如下：\n\n- 乍得Fada镇的机场名称为Fada Airport，四字码为FTTD。\n\n如果你指的是其他地方或者有更新的信息需求，建议确认具体位置或查阅最新资料。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Allamuchy Township有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Weiss Farm, 四字码：JY24"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Allamuchy Township\";",
+        "actual_answer": "Allamuchy Township 位于美国新泽西州。根据我所掌握的信息，该地区没有主要的公共或商业机场，也没有以四字码（ICAO代码）为标识的机场。通常，较小的城镇可能附近只会有一些小型私人飞机场或直升机停机坪，这些设施通常不具备ICAO代码。\n\n如果您在寻找商业飞行的选项，可能需要查看邻近主要城市或地区的机场，例如纽瓦克自由国际机场（EWR）或莫里斯敦市机场（MMU）。这些机场位于较大的城市区域，并提供更多航班选择。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Punta Cana有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Punta Cana International Airport, 四字码：MDPC"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Punta Cana\";",
+        "actual_answer": "Punta Cana 的主要机场是 Punta Cana International Airport，其四字代码为 MDPC。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Wallville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Grimes, 四字码：1OK7"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Wallville\";",
+        "actual_answer": "很抱歉，但我无法找到关于“Wallville”是否有机场的信息。可能是因为这个地点不够知名或没有国际认可的机场。如果您指的是一个具体国家或地区的城市，请您确认名称是否正确，或者提供更多信息以便我更好地帮助您。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Robinhood有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Robinhood, 四字码：YROB"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Robinhood\";",
+        "actual_answer": "Robinhood是一家提供股票和金融投资服务的平台，与机场无关。因此，它没有任何机场或相关四字码。可能存在误解或混淆，请确认您想了解的信息是否与其他企业或品牌相关，例如航空公司或机场服务公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Shady Cove有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Shady Cove Airpark, 四字码：OG31"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Shady Cove\";",
+        "actual_answer": "Shady Cove是位于美国俄勒冈州的一个小镇。这个小镇附近没有大型的商业机场，最近的主要机场是罗格谷-梅德福国际机场（Rogue Valley International-Medford Airport），其四字码是KMFR。Shady Cove本身可能有小型私人机场或飞行场，但这些通常不会有国际航空运输协会（IATA）或国际民用航空组织（ICAO）指定的四字码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pitalito有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Pitalito Airport, 四字码：SKPI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Pitalito\";",
+        "actual_answer": "Pitalito 是哥伦比亚的一个城市。这个城市有一个机场，名为 Pitalito Airport，其对应的四字国际民用航空组织（ICAO）代码是 SKPI。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Pawhuska有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Pawhuska Municipal, 四字码：H76",
+            "机场名称：Trophy Ridge, 四字码：OL36"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Pawhuska\";",
+        "actual_answer": "Pawhuska位于美国俄克拉荷马州，主要的小型地方机场是Woolaroc Airport，但是通常这些小型机场可能没有标准的四字ICAO代码，而使用三字FAA代码。Woolaroc Airport的FAA代码是“WWR”。\n\n请注意，较大的商业机场通常位于较远的城市，因此如果你要安排长途旅行，可能需要从附近更大的城市的机场出发，如塔尔萨国际机场（ICAO: KTUL, IATA: TUL）等。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hailey有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Friedman Memorial Airport, 四字码：KSUN",
+            "机场名称：Magic Reservoir, 四字码：U93"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hailey\";",
+        "actual_answer": "海莉（Hailey）是美国爱达荷州的一个城市，主要的机场是佛里曼大太阳谷机场。以下是该机场的名称和对应的四字码：\n\n- 佛里曼大太阳谷机场（Friedman Memorial Airport） - KSUN",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kikwit有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Kikwit, 四字码：FZCA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Kikwit\";",
+        "actual_answer": "Kikwit 是位于刚果民主共和国的一个城市。该城市有一个主要机场，名称和四字代码如下：\n\n- Kikwit Airport (KIH)\n\n请注意，四字代码通常用于国际航班通信中，而Kikwit的这个机场用的是IATA三字代码“KKW”。如果需要四字ICAO代码，通常小型机场可能没有分配ICAO代码。你可能需要确认具体情况，或者查看官方资料以获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Poptun有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Poptún, 四字码：MGPP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Poptun\";",
+        "actual_answer": "Poptun 是危地马拉的一座城镇，靠近这里的一个主要机场是 Poptún Airport。这个机场的四字国际民航组织(ICAO)代码是 MGPP。不过，请注意，信息可能会随着时间有所变化，建议在旅行前核实最新的机场信息。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Eagle Lake有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Eagle Lake, 四字码：KELA",
+            "机场名称：Eagles Nest Aerodrome, 四字码：MN08",
+            "机场名称：Renz Ranch, 四字码：5TE7"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Eagle Lake\";",
+        "actual_answer": "Eagle Lake 是一个在多个国家可能存在的小镇或地区名，因此需要明确是哪个国家的 Eagle Lake。如果你指的是加拿大安大略省的 Eagle Lake，这里没有大的商业机场，最近的主要机场是 Sudbury 的 Greater Sudbury Airport，代码为 CYSB。\n\n如果你指的是美国得克萨斯州的 Eagle Lake，最近的主要机场之一是位于休斯顿的乔治布什洲际机场，代码为 KIAH。\n\n由于地名可能在不同地区多次出现，建议根据具体的国家或地区来提供更为准确的信息。如有其他具体地点，请提供更多细节，以便我能帮助你找到最相关的机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Logan Center有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Morten, 四字码：62ND",
+            "机场名称：Ricketyback Field, 四字码：ND02"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Logan Center\";",
+        "actual_answer": "Logan Center 是一个地区名称，不是一个具体的城市或地点，因此我需要确认您指的是哪个范围。如果您指的是“Logan”这个名称相关的地方，可能是指美国波士顿的洛根国际机场（Logan International Airport）。如果是其他地方或者机场名称不同，请提供更多信息。\n\n1. **Logan International Airport** - 波士顿的主要机场\n   - 四字码：KBOS\n\n如果您指的是其他与“Logan”相关的地点或机场，请提供更多详细信息，以便我能为您提供正确的答案。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cameron有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cameron Meml, 四字码：KEZZ",
+            "机场名称：Cameron Municipal Airpark, 四字码：T35",
+            "机场名称：Ccc, 四字码：MO27",
+            "机场名称：Mc Neil, 四字码：SC03",
+            "机场名称：Randall's Roost, 四字码：NY34"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Cameron\";",
+        "actual_answer": "Cameron 是一个普遍使用的地名，并且在多个国家都有可能存在。为了提供准确信息，假设你指的是非洲的国家喀麦隆（Cameroon）。以下是喀麦隆的一些主要机场及其对应的四字国际民航组织（ICAO）代码：\n\n1. 雅温得国际机场 (Yaoundé Nsimalen International Airport) - FKYS\n2. 杜阿拉国际机场 (Douala International Airport) - FKKD\n3. 加鲁阿国际机场 (Garoua International Airport) - FKKR\n4. 喀麦隆 (Yaoundé Ville Airport) - FKKY\n\n以上是喀麦隆的一些主要的机场。如果你提到的是其他地方的 Cameron，请提供更多信息以获取更准确的答案。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kirwin有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Wyrill Farming, 四字码：25KS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Kirwin\";",
+        "actual_answer": "Kirwin 是美国堪萨斯州的一个小镇，该镇没有商业机场。通常，小型城镇可能会依赖于附近较大城市的机场。如果你在寻找堪萨斯州附近的主要机场，这里有几个例子：\n\n1. 威奇托德怀特·D·艾森豪威尔国家机场（Wichita Dwight D. Eisenhower National Airport） - 代码：KICT\n2. 堪萨斯城国际机场（Kansas City International Airport） - 代码：KMCI\n\n如果你是指其他国家或地区的 Kirwin，请提供更多信息以帮助确定准确的地点及其机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kalaleh有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Kalaleh Airport, 四字码：OINE"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Kalaleh\";",
+        "actual_answer": "Kalaleh有一个机场，名称是Kalaleh Airport，其对应的四字码是OINE。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Camp Wood有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Fossil Creek Ranch, 四字码：TE78",
+            "机场名称：Yolo Ranch, 四字码：33AZ"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Camp Wood\";",
+        "actual_answer": "Camp Wood 是位于美国德克萨斯州的一个小城镇。由于其规模较小，Camp Wood 本身没有商业机场。不过，周边地区有一些机场可以供旅客使用。以下是离 Camp Wood 较近的一些机场及其对应的四字码：\n\n1. 德尔里奥国际机场 (Del Rio International Airport) - KDRT\n2. 圣安东尼奥国际机场 (San Antonio International Airport) - KSAT\n\n如果需要前往 Camp Wood，您可能需要通过上述较大城市的机场，然后再通过陆路交通到达。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Fair Play有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Stol-It Farm, 四字码：1SC3"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Fair Play\";",
+        "actual_answer": "Fair Play 是一个很常见的地名，出现在多个国家，例如美国。为了帮助您准确找到信息，可能需要更具体的位置信息。如果您指的是位于某个具体国家或州的 Fair Play，请提供更多细节。\n\n如果没有明确的具体地点，您可以使用在线工具或航空数据库查询 Fair Play 地区的机场代码。一般情况下，名为 Fair Play 的地点不会有大型的商业机场，需要查看附近城市的大型机场。\n\n如果有其他问题或需要具体地点的帮助，请告知我。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Roi Et有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Roi Et Airport, 四字码：VTUV"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Roi Et\";",
+        "actual_answer": "Roi Et是泰国的一个府，在这里有一个主要的机场：Roi Et Airport。它的国际航空运输协会（IATA）四字码是 VTUV。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Tonpheung有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bokeo International Airport, 四字码：0"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tonpheung\";",
+        "actual_answer": "Tonpheung是老挝的一个地区。根据公开可获取的信息，Tonpheung并没有大型商业机场。最近的主要机场位于其他城市，如琅南塔省的琅南塔机场（ICAO四字码为VLLB）或琅勃拉邦省的琅勃拉邦国际机场（ICAO四字码为VLLB）。在访问Tonpheung地区时，可以考虑从这些较大的机场进行地面交通转移。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bay Minette有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bay Minette Municipal, 四字码：1R8"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bay Minette\";",
+        "actual_answer": "Bay Minette 是美国阿拉巴马州的一个城市，不过在 Bay Minette 本身并没有主要的公共机场。最近的几个机场及其四字代码包括：\n\n1. **Mobile Regional Airport（莫比尔区域机场）** - KMOB\n2. **Pensacola International Airport（彭萨科拉国际机场）** - KPNS\n\n请注意，四字代码是国际民航组织（ICAO）的代码，而常用的三字代码是国际航空运输协会（IATA）的代码。如果你在寻找小型或私人机场的信息，可能没有广泛的编码可用。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mariscal Nieto Province有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Moquegua, 四字码：SPEQ"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Mariscal Nieto Province\";",
+        "actual_answer": "Mariscal Nieto Province 位于秘鲁。这里有一个主要机场：\n\n1. **Coronel FAP Carlos Ciriani Santa Rosa International Airport (Aeropuerto Internacional Coronel FAP Carlos Ciriani Santa Rosa)**\n   - 四字码 (ICAO): SPDR\n\n请注意，这个机场也曾与周边地区的交通连接。除此之外，该地区没有其他主要机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Webster有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Connor'S Lake Landing, 四字码：2WS2",
+            "机场名称：Elf Run, 四字码：IA76",
+            "机场名称：Rostraver, 四字码：KFWQ",
+            "机场名称：Sigurd Anderson, 四字码：1D7"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Webster\";",
+        "actual_answer": "Webster 是一个常见的地名，在不同的国家和地区可能有多个地方名为 Webster。如果您指的是美国的某个特定城市或地区，可能有对应的机场信息。如果您指的是美国德克萨斯州的 Webster，该地区没有大型商业机场。最近的大型机场是休斯顿的 William P. Hobby Airport (ICAO 代码: KHOU) 和乔治·布什洲际机场 (ICAO 代码: KIAH)。\n\n如果您指的是其他地方的 Webster，请提供更多详情以便我能给出相关的机场信息。对于一个小的当地机场，可能不会有四字国际民航组织（ICAO）代码，因为小机场通常没有定期的国际航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bale有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Poura, 四字码：DFCR"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bale\";",
+        "actual_answer": "Bale 指的可能是巴勒，但两个地方可能有翻译成“巴勒”的情况：一个是瑞士的巴塞尔，而另一个是印尼一个小地方。如果你指的是瑞士的巴塞尔，那它的主要机场是：\n\n- 巴塞尔-米卢斯-弗赖堡欧洲机场（EuroAirport Basel-Mulhouse-Freiburg），四字码是 LFSB。\n\n如果是印尼的地方，这里通常没有特别大的国际机场。如果你指的是其他地方或有更多细节，请提供更多信息以便确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "St. Tammany Parish有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Covington-Vincent, 四字码：LA87",
+            "机场名称：Fokker Field, 四字码：2LA8",
+            "机场名称：Hickham Field, 四字码：LS76",
+            "机场名称：Slidell, 四字码：KASD",
+            "机场名称：St. Tammany Regional, 四字码：L31",
+            "机场名称：The Place, 四字码：3LS8",
+            "机场名称：Unicorn, 四字码：LA26",
+            "机场名称：Warner-Thunder Hill, 四字码：23LA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"St. Tammany Parish\";",
+        "actual_answer": "St. Tammany Parish位于美国路易斯安那州。在St. Tammany Parish内，主要有以下几个机场：\n\n1. Slidell Municipal Airport - KASD\n2. St. Tammany Regional Airport - L31\n\n这两个机场为当地提供航空服务。其中，Slidell Municipal Airport是较大的一个，提供较多的通用航空设施和服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "San Augustine有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：San Augustine County, 四字码：78R"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"San Augustine\";",
+        "actual_answer": "San Augustine 并没有大型商业机场。不过，San Augustine 存在一些小型机场和空域设施。如果你指的是圣奥古斯丁 (St. Augustine)，那么这是佛罗里达州的一个城市，附近的机场包括：\n\n1. Northeast Florida Regional Airport，四字码为 KSGJ。\n\n如果你指的San Augustine在其他地方，请提供更多信息，以便我能更准确地帮助你。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mount Horeb有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Docken Field, 四字码：37WI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Mount Horeb\";",
+        "actual_answer": "Mount Horeb位于美国威斯康星州，周围没有大型商业机场。不过，距离Mount Horeb最近的主要机场是威斯康星州麦迪逊的戴恩县地区机场（Dane County Regional Airport），其国际航空运输协会（IATA）机场代码是MSN。一般来说，小镇附近的机场通常没有四字码，四字码主要用于较大机场的国际民航组织（ICAO）代码。如果你需要前往Mount Horeb，可以通过麦迪逊的机场转乘其他交通工具。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Casper有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：American Falconry, 四字码：45WY",
+            "机场名称：Casper Airport, 四字码：KCPR",
+            "机场名称：Harford Field, 四字码：KHAD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Casper\";",
+        "actual_answer": "Casper, Wyoming, 有一个主要的机场叫做卡斯珀-纳特罗纳县国际机场。它的四字国际航空运输协会（IATA）代码是 CPR，而国际民用航空组织（ICAO）代码是 KCPR。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Churchland有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Morrison Field, 四字码：48NC"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Churchland\";",
+        "actual_answer": "Churchland不是一个广为人知的城市或者地点名称，可能是某个特定地区或者小镇的名字。在航空领域中，四字机场代码通常是针对较大和较知名的机场指定的。\n\n如果您指的是美国维吉尼亚州的Churchland地区，它没有自己的机场，因为那里是一个较小的社区。通常，较小的地区没有自己的机场，而是依赖邻近大城市的机场。\n\n如果您指的是离某个具体地点较近的大型机场，可能需要更多的信息来提供帮助。或者，如果\"Churchland\"指的是其他国家或地区的某个位置，请提供更多细节以便更准确地回答您的问题。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Davison有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：John's, 四字码：12MI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Davison\";",
+        "actual_answer": "达维森（Davison）可能指代多个地点，但如果你指的是美国密歇根州的达维森市（Davison, Michigan），那么这个城市本身并没有主要的机场。通常情况下，针对小城市或地区，人们会使用周边较大城市的机场。\n\n密歇根州主要的大型机场包括：\n\n1. 底特律都会韦恩县机场（Detroit Metropolitan Wayne County Airport），四字码：KDTW\n2. 杰拉尔德·R·福特国际机场（Gerald R. Ford International Airport），四字码：KGRR\n\n如果你指的不是密歇根州的达维森或有其他具体信息，请提供更多细节以便于准确回答。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Selby有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Beaman, 四字码：9SD7"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Selby\";",
+        "actual_answer": "截至我获取信息的时间，Selby是位于英国北约克郡的一个小镇。通常情况下，这样的小镇不太可能有自己的商业机场。最近的主要机场可能位于更大的城市。\n\n如果你指的是临近Selby的大城市如利兹或约克，那么以下是一些相对靠近的主要机场及其四字国际民航组织(ICAO)代码：\n1. 利兹布拉德福德机场（Leeds Bradford Airport）：EGNM\n2. 唐卡斯特谢菲尔德罗宾汉机场（Doncaster Sheffield Airport）：EGCN\n\n请确认你的需求或者查阅更新的资料以获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Usolsky District有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Belaya, 四字码：UIIB"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Usolsky District\";",
+        "actual_answer": "Usolsky District 位于俄罗斯伊尔库茨克州。根据公开的资料，截至目前在Usolsky District内并没有大型的国际或区域机场。因此，没有机场名称和对应的四字码可以提供。如果需要前往该地区，通常最近的主要机场是位于伊尔库茨克市的伊尔库茨克国际机场，它的四字码是UIII。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Afutara有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Afutara Aerodrome, 四字码：AGAF"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Afutara\";",
+        "actual_answer": "Afutara位于所罗门群岛，不过那里并没有大型商业机场。因此，没有特定的四字码与Afutara直接相关。如果您需要访问Afutara，通常是通过所罗门群岛的其他重要机场前往，然后通过其他手段继续您的旅程。所罗门群岛主要的国际机场是霍尼亚拉国际机场，其四字码是AGGH。如果您有其他关于所罗门群岛航空运输的问题或需要进一步的信息，请告诉我。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Saldanha Bay有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Saldanaha Vredenburg, 四字码：FASD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Saldanha Bay\";",
+        "actual_answer": "Saldanha Bay附近有一个机场，主要用于军事和有限的民航用途：\n\n1. 兰格巴恩机场（Langebaanweg Airport），四字码为FALW。\n\n请注意，该机场的可用性和航班信息可能有限，建议提前查询。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sheakleyville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Fletcher, 四字码：0PN0"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Sheakleyville\";",
+        "actual_answer": "Sheakleyville是美国宾夕法尼亚州的一个小镇。在这样的地方通常不会有大型商业机场或拥有四字国际航空运输协会（IATA）机场代码的机场。最近的主要机场可能会在邻近的大城市里，比如匹兹堡国际机场（Pittsburgh International Airport），其IATA代码是PIT。如果你在找的是小型私人机场或简易机场，它们通常没有IATA的四字码。如果你需要去Sheakleyville，可以考虑飞往附近城市的主要机场然后转乘其他交通工具前往。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Heide Buesum有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Buesum, 四字码：EDXB"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Heide Buesum\";",
+        "actual_answer": "Heide-Büsum附近的主要机场是Heide-Büsum 机场，其对应的四字代码是 EDXB。另一个较大的机场是汉堡机场（Hamburg Airport），位于稍远的地方，其四字代码是 EDDH。这两个机场是靠近 Heide-Büsum 的交通枢纽。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Serui有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Stevanus Rumbewas, 四字码：WABO"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Serui\";",
+        "actual_answer": "Serui 是印度尼西亚巴布亚省亚彭群岛的一座城市。Serui有一个主要的机场：Marauw Airport，四字码是WABO。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bejaia有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bejaia Airport, 四字码：DAAE"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bejaia\";",
+        "actual_answer": "Bejaia有一个主要的机场，名称和对应的四字码是：\n\n- Bejaia Airport （Soummam – Abane Ramdane Airport）\n  - 四字码：DAAE",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Green River有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Green River, 四字码：AYGV",
+            "机场名称：Green River Municipal, 四字码：KU34",
+            "机场名称：Green River Municipal, 四字码：U34",
+            "机场名称：Gtr Green River Intergalactic Spaceport, 四字码：48U"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Green River\";",
+        "actual_answer": "Green River没有大型商业机场，但在美国，不同州有多个地方被称为Green River。在犹他州的Green River附近，有一个较小的机场，叫做Green River Municipal Airport，四字代码为U34。如果你指的是其它地方的Green River，例如在怀俄明州或肯塔基州，请具体说明，因为这些地方可能没有专属的机场和四字码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bigfork有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bigfork Mun, 四字码：KFOZ",
+            "机场名称：Masonry Field, 四字码：93MT",
+            "机场名称：Taylor Homestead, 四字码：MT61"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bigfork\";",
+        "actual_answer": "Bigfork 位于美国蒙大拿州。这个小镇本身没有主要的商业机场，但它靠近一些较小的机场。以下是 Bigfork 及其周边地区的一些机场：\n\n1. **KALISPELL CITY AIRPORT (Kalispell City Airport)** - 四字码: S27\n2. **GLACIER PARK INTERNATIONAL AIRPORT (Glacier Park International Airport)** - 四字码: KGPI\n\n请注意，这些机场中，Glacier Park International Airport 是较大的商业机场，提供更多的航班选择。对于更具体的私人机场信息，需要查阅当地资源或航空数据库。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ahmedabad有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Sardar Vallabhbhai Patel International Airport, 四字码：VAAH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Ahmedabad\";",
+        "actual_answer": "截至我最后更新的信息，印度阿赫姆达巴德（Ahmedabad）主要有一个机场：\n\n1. 萨达尔·瓦拉巴伊·帕特尔国际机场（Sardar Vallabhbhai Patel International Airport），四字码为VAAH。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Marston有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：County Meml, 四字码：KEIW"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Marston\";",
+        "actual_answer": "Marston 并不是一个众所周知的地名，因此在全球范围内可能不太容易查找。但是，如果你指的是某个特定国家或地区的 Marston，并且该地有机场，请提供更多信息以便更准确地解答。\n\n如果没有更具体的信息，这里是一个通用的建议：你可以查看所在国家的民航或机场管理机构的网站，获取有关某个城市或地区机场的信息，并确认其四字代码（通常是 ICAO 代码）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Grimari有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Grimari, 四字码：FEGI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Grimari\";",
+        "actual_answer": "Grimari是一个位于中非共和国的城市。根据目前的信息，Grimari本身没有大型商业机场。最近的主要国际机场是位于班吉的班吉姆波科国际机场，其四字码是 FEFF。\n\n如果您需要前往Grimari市，通常会通过飞往班吉，然后从班吉通过陆路或其他方式转乘到达Grimari。对于更准确和详细的信息，建议联系当地的旅行服务提供商或查询最新的航空交通资源。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Darrington有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Darrington Municipal, 四字码：1S2"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Darrington\";",
+        "actual_answer": "Darrington 是位于美国华盛顿州的一个小镇。据目前的信息，Darrington 本身没有大型机场。最近的民用机场是斯诺霍米什县机场（埃弗里特佩恩机场），其四字国际航空运输协会（ICAO）代码是KPAE。如果你需要其他区域的机场信息，请提供更多的细节。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Svolvaer有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Svolvaer Airport, Helle, 四字码：ENSH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Svolvaer\";",
+        "actual_answer": "Svolvær有一个主要的机场，名叫Svolvær机场。其对应的四字国际航空运输协会（ICAO）代码是 ENSV。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Orchard City有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cridler Field, 四字码：3CO1",
+            "机场名称：Eden Ranch, 四字码：CO76",
+            "机场名称：Flying W Ranch, 四字码：CO20",
+            "机场名称：Gunnison River Farms, 四字码：2CO5",
+            "机场名称：Shipman Ranch, 四字码：5CO1",
+            "机场名称：Widner, 四字码：8CO5"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Orchard City\";",
+        "actual_answer": "Orchard City一般指的是库比蒂诺（Cupertino），它位于美国加利福尼亚州。然而，库比蒂诺本身没有机场。最近的主要机场是：\n\n1. Norman Y. Mineta San Jose International Airport（圣荷西国际机场），四字码：KSJC\n2. San Francisco International Airport（旧金山国际机场），四字码：KSFO\n3. Oakland International Airport（奥克兰国际机场），四字码：KOAK\n\n这些机场都是服务于库比蒂诺及周边地区的主要机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sanbornton有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Gile Pond, 四字码：12NH",
+            "机场名称：Ward Field, 四字码：NH20"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Sanbornton\";",
+        "actual_answer": "Sanbornton是美国新罕布什尔州的一个小镇，但该镇本身没有机场。对于这一地区，乘客通常会使用附近更大的城市或者地区的机场。新罕布什尔州没有在Sanbornton镇上的机场信息。如果你需要前往Sanbornton，可能会考虑使用以下周边地区的机场：\n\n1. Manchester-Boston Regional Airport (MHT) - 位于新罕布什尔州曼彻斯特.\n2. Portsmouth International Airport at Pease (PSM) - 位于朴茨茅斯.\n3. Lebanon Municipal Airport (LEB) - 位于Lebanon.\n\n四字国际民航组织机场代码（ICAO）一般用于航空交通管理，通常不会以四字代码的形式列出这种规模较小的地区。希望这些信息对你有帮助！如果你需要进一步的信息，可以查询机场网站或者当地的旅游信息资源。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Stegall有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Williams Field, 四字码：TX99"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Stegall\";",
+        "actual_answer": "抱歉，我没有找到名为“Stegall”的城市或地区的信息，因此无法提供相关机场的名称和四字码。可能是拼写有误，或者该地区没有大型商业机场。如果你指的是其他较大的城市或地区，请提供更详细的信息，我将乐意帮助你查找。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Doomadgee有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Doomadgee Airport, 四字码：YDMG"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Doomadgee\";",
+        "actual_answer": "Doomadgee 有一个机场，名称是 Doomadgee Airport，对应的四字码是 YDMG。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bearskin Lake有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bearskin Lake Airport, 四字码：CNE3"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bearskin Lake\";",
+        "actual_answer": "Bearskin Lake位于加拿大安大略省。附近的机场是Bearskin Lake Airport，它的四字国际民用航空组织(ICAO)代码是CNE3。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Gusau有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Gusau, 四字码：DNGU"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Gusau\";",
+        "actual_answer": "Gusau 是尼日利亚的一个城市，不过它没有大型的商业机场。尼日利亚的一些城市有小型机场或简易机场供当地航班和私人飞机使用，但这些机场可能没有国际航空运输协会（IATA）或国际民航组织（ICAO）的四字码。如果 Gusau 附近有符合条件的小型机场，信息通常也很有限。在尼日利亚境内，较大且知名度高的机场主要集中在一些大城市，如拉各斯、阿布贾和卡诺。如果您需要前往Gusau，建议您可以飞往相对较近的城市，如卡杜纳或索科托，然后转乘地面交通工具。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mwadui有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Mwadui, 四字码：HTMD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Mwadui\";",
+        "actual_answer": "Mwadui 是坦桑尼亚的一个地区，那里有一个主要的机场：\n\n- **Mwadui Airport**，四字代码是 HTMD。\n\n如果你有其他相关问题或需要进一步的信息，请随时告诉我！",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Goldthwaite有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cabrito, 四字码：98TS",
+            "机场名称：Flying 7h Ranch, 四字码：TA76",
+            "机场名称：Goldthwaite Municipal, 四字码：T37"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Goldthwaite\";",
+        "actual_answer": "Goldthwaite 是美国德克萨斯州的一个小城市，没有大型商用机场。通常，像 Goldthwaite 这样的小城市可能只有小型的私用或市政机场，因此它们通常没有像大型商用机场那样的标准四字国际航空运输协会（IATA）或国际民航组织（ICAO）代码。如果您需要访问主要商用机场，可能需要查看附近更大城市的机场，比如奥斯汀的奥斯汀-博格斯特龙国际机场（ICAO：KAUS）。对于具体的 Goldthwaite 区域的小型机场信息，可能需要查询地方政府或航空俱乐部提供的资源。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Belle Valley有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Noble County, 四字码：I10"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Belle Valley\";",
+        "actual_answer": "Belle Valley并没有知名的大型机场。如果你指的是美国俄亥俄州附近的Belle Valley，最近的大型商业机场是克利夫兰霍普金斯国际机场（KCLE）和哥伦布港国际机场（KCMH）。对于小型机场或地区性机场，建议查看具体的地区航空图或资源以获取详细信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Nyala有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Nyala Airport, 四字码：HSNN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Nyala\";",
+        "actual_answer": "Nyala是苏丹的一个城市。Nyala的主要机场是Nyala Airport，对应的四字机场代码是 HSNN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Wairoa有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Wairoa, 四字码：NZWO"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Wairoa\";",
+        "actual_answer": "Wairoa是新西兰霍克斯湾地区的一个小镇。Wairoa有一个小型机场，名为Wairoa Aerodrome，其对应的四字ICAO代码是 NZWO。这个机场主要用于小型航空活动和地区航班。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Yeehaw Junction有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Rlm Farms, 四字码：FD09"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Yeehaw Junction\";",
+        "actual_answer": "Yeehaw Junction是位于美国佛罗里达州的一个小镇。由于其相对较小的规模，Yeehaw Junction本身没有主要的商业机场。然而，附近的城市提供了一些机场选择。以下是离Yeehaw Junction较近的一些主要机场及其四字ICAO代码：\n\n1. 奥兰多国际机场（Orlando International Airport） - KMCO\n2. 奥兰多桑福德国际机场（Orlando Sanford International Airport） - KSFB\n3. 墨尔本奥兰多国际机场（Melbourne Orlando International Airport） - KMLB\n4. 棕榈滩国际机场（Palm Beach International Airport） - KPBI\n\n这些机场提供商业客运服务，并且位于Yeehaw Junction的可驾驶距离内。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Riihimaki Sub-region有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Rayskala, 四字码：EFRY"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Riihimaki Sub-region\";",
+        "actual_answer": "Riihimaki Sub-region 位于芬兰，然而它本身并没有大型的商业机场。最靠近该区域的主要机场是赫尔辛基万塔机场（Helsinki-Vantaa Airport），其四字国际航空运输协会（ICAO）代码是EFHK。\n\n如果你在寻找Riihimaki Sub-region内或其周边的小型机场或飞行俱乐部，可以查看当地的飞行员社区或航空地图，但是这些地方通常不会有国际认可的四字码，因为它们不是商用航空服务的主要枢纽。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jember Regency有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Jember Airport, 四字码：WARE"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Jember Regency\";",
+        "actual_answer": "Jember Regency 位于印度尼西亚东爪哇省。在 Jember Regency，有一个主要的机场：\n\n- Notohadinegoro Airport（四字码：WARI）\n\n如果你需要有关此机场的更多信息或其他机场的相关信息，请告诉我。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pembroke有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Pembroke, 四字码：CYTA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Pembroke\";",
+        "actual_answer": "Pembroke位于加拿大安大略省。该地区的主要机场是Pembroke Airport，其对应的四字码是CYTA。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Zouerat有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Tazadit Airport, 四字码：GQPZ"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Zouerat\";",
+        "actual_answer": "Zouérat有一个机场，名称是Tazadit Airport，对应的四字码是GQNZ。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Napa有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Napa County, 四字码：KAPC",
+            "机场名称：Parrett Field - Angwin, 四字码：2O3",
+            "机场名称：Pope Valley, 四字码：05CL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Napa\";",
+        "actual_answer": "Napa地区主要有以下几个机场：\n\n1. Napa County Airport - 四字码为 KAPC\n2. Angwin-Parrett Field - 四字码为 2O3\n\n请注意，Napa本身没有大型的商业国际机场，最近的主要商业机场是位于旧金山湾区的旧金山国际机场（SFO）、奥克兰国际机场（OAK）和萨克拉门托国际机场（SMF）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bellview有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Saufley Nolf, 四字码：KNUN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bellview\";",
+        "actual_answer": "Bellevue是美国华盛顿州的一座城市，不过它本身并没有大型的商业机场。通常情况下，旅客会使用邻近西雅图的机场。西雅图附近有主要的国际机场：\n\n1. 西雅图-塔科马国际机场（Seattle-Tacoma International Airport） - 四字码是 KSEA。\n\n如果您指的是其他国家或地区的Bellevue，请提供更多信息以便我能更准确地帮助您。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hamlet有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Singleton's Landing Strip, 四字码：IN87"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hamlet\";",
+        "actual_answer": "美国Hamlet是北卡罗来纳州的一个小城市，通常小城市不会有大型商用机场。较大的城市或地区可能会有小型或私人机场，但这些机场通常不在具有国际机场代码（四字码ICAO）的列表中。对于国际或国内旅行，一般会选择距离相对较近的大城市的机场。\n\n如果您指的是其他国家的某个名为Hamlet的地方，请提供更多详细信息，以便我为您查询更相关的机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Needy有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Lenhardt Airpark, 四字码：7S9"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Needy\";",
+        "actual_answer": "“Needy”似乎不是一个地名或常见词汇。如果您指的是一个具体的位置或城市的名称，请确认拼写的正确性或提供更多信息，以便我能更好地为您提供相关机场的信息。如果您指的是另一个城市或地区，请告知，以便我为您查找相关的机场名称和对应的四字代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hiroshima有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Hiroshima Airport, 四字码：RJOA",
+            "机场名称：Hiroshimanshi, 四字码：RJBH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hiroshima\";",
+        "actual_answer": "广岛有两个主要机场：\n\n1. 广岛机场（Hiroshima Airport），四字码为 RJFF。\n2. 广岛西机场（Hiroshima-Nishi Airport），四字码为 RJBH。\n\n请注意，广岛西机场主要用于小型飞机和通用航空，不再有商业定期航班。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lipscomb有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Duke Ranch, 四字码：TX38",
+            "机场名称：Follett/Lipscomb County, 四字码：T93",
+            "机场名称：Fourth Creek Ranch, 四字码：TS79",
+            "机场名称：Higgins/Lipscomb County, 四字码：1X1"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Lipscomb\";",
+        "actual_answer": "Lipscomb 位于美国德克萨斯州。尽管Lipscomb本身是一个较小的地区，并没有大型商业机场，但在德克萨斯州有许多重要的机场。如果你在寻找离Lipscomb较近的机场，可能需要考虑较大的城市如达拉斯或休斯顿的机场。不过，Lipscomb附近没有主要的民用机场，因此没有对应的四字国际航空运输协会(IATA)或国际民航组织(ICAO)代码。\n\n如果你需要访问大型机场，以下是德克萨斯州一些主要机场的名字和代码：\n\n1. 达拉斯/沃斯堡国际机场（Dallas/Fort Worth International Airport） - ICAO: KDFW\n2. 乔治·布什洲际机场（George Bush Intercontinental Airport，位于休斯顿） - ICAO: KIAH\n3. 达拉斯爱田机场（Dallas Love Field） - ICAO: KDAL\n4. 奥斯汀-伯格斯特罗姆国际机场（Austin-Bergstrom International Airport） - ICAO: KAUS\n\n对于小型私人飞机，附近可能有较小的区域机场或空域设施供使用，不过这些通常没有广为人知的国际四字码。如果有更多具体需求，请提供更详细的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lleida有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Lleida-Alguaire Airport, 四字码：LEDA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Lleida\";",
+        "actual_answer": "Lleida有一个主要的机场，名称和对应的四字码如下：\n\n1. Lleida-Alguaire Airport - LLEU\n\n这是Lleida地区的主要机场，用于商业航空和其他航空活动。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Holly Pond有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：New Horizon, 四字码：AL29"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Holly Pond\";",
+        "actual_answer": "Holly Pond是美国阿拉巴马州的一个小镇，本身没有大型的机场或商业机场。通常，小镇附近的机场可能是较大城市的区域机场或较小的地方机场。在霍利庞德附近相对较有名的机场有：\n\n1. **伯明翰-沙特尔斯沃思国际机场（Birmingham-Shuttlesworth International Airport）**，四字码为BHM。\n2. **亨茨维尔国际机场（Huntsville International Airport）**，四字码为HSV。\n\n请注意，四字码是国际航空运输协会（IATA）使用的三字码，而国际民用航空组织（ICAO）使用的是四字码。在美国，通常只是提供IATA的三字码。如果您需要小型地方机场的信息，建议通过网络服务查询相关的通航机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Penneshaw有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Penneshaw, 四字码：YPSH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Penneshaw\";",
+        "actual_answer": "Penneshaw 是位于澳大利亚南澳大利亚州袋鼠岛上的一个小镇。这个镇本身并没有机场。袋鼠岛的主要机场是 Kingscote Airport，它服务于整个袋鼠岛。Kingscote Airport 的四字国际民航组织机场代码是 YKSC。如果你需要前往 Penneshaw，可以从 Kingscote 机场乘车或乘坐其他交通工具到达。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mercer有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Beech Hill, 四字码：04ME",
+            "机场名称：Blair Lake, 四字码：2WI5",
+            "机场名称：Nelson's Run, 四字码：39PN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Mercer\";",
+        "actual_answer": "“Mercer” 可以指不同的地方，因此需要明确您指的是哪个具体位置的机场。不过，通常与 \"Mercer\" 相关的主要机场是美国新泽西州的美塞县机场（Mercer County Airport），也被称为特伦顿-美塞尔机场（Trenton-Mercer Airport）。以下是该机场的详细信息：\n\n- 特伦顿-美塞尔机场（Trenton-Mercer Airport）：四字码是 KTTN。\n\n如果您指的是其他地方或国家的 \"Mercer\"，请提供更多信息以便我能更准确地帮助您。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Biarritz有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Biarritz Pays Basque Airport, 四字码：LFBZ"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Biarritz\";",
+        "actual_answer": "Biarritz拥有一个主要机场，名称是比亚里茨机场（Biarritz Airport），对应的四字国际民航组织（ICAO）代码是 LFBZ。这个机场也常叫做比亚里茨巴约讷昂格莱机场（Biarritz Pays Basque Airport），位于法国比亚里茨市附近。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Indiana有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Davis, 四字码：PN08",
+            "机场名称：Downes, 四字码：PS39",
+            "机场名称：Indiana Co Stewart, 四字码：KIDI",
+            "机场名称：Marion Center Speedway, 四字码：PN57",
+            "机场名称：Rayne, 四字码：PN36"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Indiana\";",
+        "actual_answer": "印第安纳州有多个机场，包括商业机场和地区性机场。以下是一些主要的机场及其对应的四字国际民航组织(ICAO)代码：\n\n1. 印第安纳波利斯国际机场（Indianapolis International Airport） - KIND\n2. 福特韦恩国际机场（Fort Wayne International Airport） - KFWA\n3. 南本德国际机场（South Bend International Airport） - KSBN\n4. 埃文斯维尔地区机场（Evansville Regional Airport） - KEVV\n5. 盖瑞/芝加哥国际机场（Gary/Chicago International Airport） - KGYY\n6. 美国堡机场（Purdue University Airport） - KLAF\n7. 特雷霍特地区机场（Terre Haute Regional Airport） - KHUF\n8. 布卢明顿市人类学机场（Monroe County Airport） - KBMG\n\n这些机场为不同类型的旅行和运输需求提供服务。请确保在计划旅行时查看机场的当前信息或状态。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gates有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Davis, 四字码：6S4"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Gates\";",
+        "actual_answer": "\"Gates\" 并不是特定机场的名称。它可能是指某个地区或个人的姓氏。若您指的是某个具体国家或地区中的机场，或者指Bill Gates与某个机场的关联，请您提供更多具体信息，以便更好地回答您的问题。\n\n如果您是想询问某个特定城市或地区的机场，请具体告知，我将竭诚为您提供帮助。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Chapel Hill有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Racecar, 四字码：TN27",
+            "机场名称：Womble Field, 四字码：3NC9"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Chapel Hill\";",
+        "actual_answer": "Chapel Hill 本身没有大型商业机场，但周围有一些主要机场可以使用。以下是与 Chapel Hill 相对较近的主要机场以及它们的识别码：\n\n1. 罗利—达勒姆国际机场（Raleigh-Durham International Airport） - 识别码：KRDU\n2. 格林斯伯勒皮德蒙特三角国际机场（Piedmont Triad International Airport） - 识别码：KGSO\n\n这些机场都是 Chapel Hill 附近区域常用的机场，提供国内和国际航班服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Charleston有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Charleston Municipal, 四字码：09M",
+            "机场名称：Heartstone Farm, 四字码：2ME3",
+            "机场名称：Mallory, 四字码：WV12",
+            "机场名称：Yeager Airport, 四字码：KCRW"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Charleston\";",
+        "actual_answer": "查尔斯顿有两个主要机场：\n\n1. 查尔斯顿国际机场（Charleston International Airport），四字码为KCHS。\n2. 查尔斯顿行政机场/泽尔伍德（Charleston Executive Airport/JZI），四字码为KJZI。\n\n前者是主要的商业机场，而后者主要用于通用航空。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Simeulue Regency有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Lasikin, 四字码：WIML"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Simeulue Regency\";",
+        "actual_answer": "Simeulue Regency有一个机场，名为Lasikin Airport，四字码是WITL。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Charleston Four Corners有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：The Ranch, 四字码：3NY0"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Charleston Four Corners\";",
+        "actual_answer": "Charleston Four Corners 并不是一个标准的地理名称，但如果你指的是美国南部的查尔斯顿区域，可能是指南卡罗来纳州或西弗吉尼亚州的城市。这两个地区主要的机场如下：\n\n1. 查尔斯顿国际机场（Charleston International Airport） - 四字码：KCHS（位于南卡罗来纳州）\n2. 而在西弗吉尼亚州的查尔斯顿，主要的机场是：\n    - 雅格机场（Yeager Airport） - 四字码：KCRW\n\n如果你指的地方不同或有特定说明，请提供更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bigfoot有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Ranch-Aero, 四字码：78TA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bigfoot\";",
+        "actual_answer": "大脚怪（Bigfoot）并不是一个真实存在的地点或者城市，因此并没有与之对应的机场或四字机场代码。如果你提到的“Bigfoot”是指另一个特别的地点或者城市名称，请提供更多信息以便我能帮助你找到相关的机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Mbambanakira有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Babanakira, 四字码：AGGI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Mbambanakira\";",
+        "actual_answer": "Mbambanakira位于所罗门群岛，但它本身并没有商业机场。所罗门群岛的机场通常不是特别多，较主要的机场之一是位于首都霍尼亚拉（Honiara）附近的亨德森国际机场（Henderson International Airport），其四字码为AGGH。如果您需要前往Mbambanakira，可以考虑飞往霍尼亚拉，然后通过其它方式交通（如小型飞机、船只或陆路交通）到达目的地。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Levuka有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bureta, 四字码：NFNB"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Levuka\";",
+        "actual_answer": "Levuka 位于斐济的Ovalau岛上，但它本身没有机场。最接近Levuka的主要机场是Nausori International Airport，也被称为苏瓦机场。它的四字国际民航组织（ICAO）代码是NFNA。Nausori机场位于维提岛，是前往Levuka的旅客的一个常用入口，从那里可以通过陆路和水路继续前往Levuka。请注意，此信息可能会随时间更新，建议在旅行前核实最新情况。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Shepherd Crossing有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Peterson Ranch, 四字码：MT77"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Shepherd Crossing\";",
+        "actual_answer": "很抱歉，我无法找到具体名为 \"Shepherd Crossing\" 的地点。如果您指的是某个特定城市或区域，请提供更多信息，以便我能够更准确地回答您的问题。通常，机场都会有一个特定的IATA三字码和ICAO四字码，这些代码用于标识机场。如果您能提供更多细节，我可能会更好地帮助您。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Karonga有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Karonga, 四字码：FWKA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Karonga\";",
+        "actual_answer": "Karonga有一个主要机场，名称是Karonga Airport，其对应的四字码是 FWKA。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Mcdaniel有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Asplundh, 四字码：MD64"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Mcdaniel\";",
+        "actual_answer": "麦克丹尼尔（McDaniel）并没有直接关联的机场。如果你指的是一个特定的城市或者地区，可能需要更具体的信息才能提供详细的机场列表。通常机场信息是按照城市或地区进行分类的。如果有更多的详细信息或其他相关城市名，我可以帮助查询相关机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bolivar Partido有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bolivar, 四字码：SAZI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bolivar Partido\";",
+        "actual_answer": "Bolívar Partido 位于阿根廷布宜诺斯艾利斯省。根据现有的信息，Bolívar Partido 并没有主要的商用机场。通常情况下，小型城镇或地区可能有小型的私人或飞行俱乐部机场，但这些机场不一定有国际航空运输协会（IATA）或国际民用航空组织（ICAO）的四字码。\n\n如需前往Bolívar，您可能需要通过更大的城市（例如布宜诺斯艾利斯）旅行，然后选择陆路交通工具前往该地。如果您有特定的飞行或旅行需求，建议进一步查找当地相关的信息或咨询旅游公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Grimesland有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Boyd Field, 四字码：NC49"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Grimesland\";",
+        "actual_answer": "Grimesland是美国北卡罗来纳州的一个小镇。在Grimesland及其附近并没有大型的商业机场。但是，你可以找到距离Grimesland较近的一些机场：\n\n1. **皮特-格林维尔机场（Pitt-Greenville Airport）** - 四字码：KPGV。这个机场位于格林维尔市，是距离Grimesland最近的一座区域性机场。\n\n2. **阿尔伯马尔地区机场（Coastal Carolina Regional Airport）** - 四字码：KEWN。位于新伯尔尼，是另一个靠近Grimesland的区域性机场。\n\n3. **罗利-达勒姆国际机场（Raleigh-Durham International Airport）** - 四字码：KRDU。大约在Grimesland的西北方向，提供更多的国内和国际航线选择。\n\n这些机场提供不同类型的航班服务，旅客可以根据需要选择合适的机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Province Of Sondrio有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Caiolo, 四字码：LILO"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Province Of Sondrio\";",
+        "actual_answer": "Sondrio 是意大利的一个省份，位于伦巴第大区。Sondrio省本身并没有大型的商业机场。最接近它的主要机场通常是周边大城市的机场，比如：\n\n1. Orio al Serio International Airport (位于贝加莫) - 四字码：LIME\n2. Milan Malpensa Airport (位于米兰) - 四字码：LIMC\n3. Milan Linate Airport (位于米兰) - 四字码：LIML\n\n这些机场为前往Sondrio提供便利的航空交通连接。如果您寻找的是小型机场或直升机场的信息，可能需要查阅本地资源或航图，因为这些设施通常没有国际四字码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Whiteriver有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Whiteriver, 四字码：E24"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Whiteriver\";",
+        "actual_answer": "Whiteriver 是一个常见的地名，需要明确具体的位置以提供准确的信息。假设你指的是美国亚利桑那州的 Whiteriver，它并没有大型商业机场。最近的公共机场是位于 Show Low 的 Show Low Regional Airport（四字码：KSOW）。\n\n如果你指的是其他地方的 Whiteriver，请提供更多信息以获得更准确的回答。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Chatham有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Chatham Mun, 四字码：KCQX",
+            "机场名称：Soaring Horse, 四字码：33OI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Chatham\";",
+        "actual_answer": "Chatham是一个地名，在不同国家可能会有不同的机场。如果你指的是位于加拿大安大略省的Chatham，主要是Chatham-Kent Municipal Airport，其四字码是CNZ3。如果你指的是位于英国的Chatham，那么比较近的主要机场是伦敦的各大机场，比如希思罗机场（EGLL）和盖特威克机场（EGKK），Chatham本身并没有大型的商业机场。请确认具体的地理位置以便获得更准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Gum Fork有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：New Quarter Farm, 四字码：92VA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Gum Fork\";",
+        "actual_answer": "抱歉，我无法找到与“Gum Fork”相关的机场信息。Gum Fork可能是一个小地方或不太知名的地点，没有机场或没有被广泛记录的信息。如果您指的是某个特定的国家或地区，请提供更多详细信息以便我可以更好地帮助您。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Villanova D'albenga有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Riviera, 四字码：LIMG"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Villanova D'albenga\";",
+        "actual_answer": "Villanova d'Albenga有一个机场，其名称是Riviera Airport，四字码是LIMG。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Pala有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Pala, 四字码：FTTP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Pala\";",
+        "actual_answer": "\"Pala\" 可能不是一个很常见的地名，因此可能不太明确需要的是哪个地区的机场信息。在全球范围内，有若干地名可能包含“Pala”或类似名称，比如在意大利、日本或其他国家的一些城市。\n\n为了更准确地获取信息，请确认具体是哪个国家或地区的 Pala。如果你指的是某个具体国家或地点，请提供更多背景信息，以便于更好地回答你的问题。\n\n如果是在寻找某个具体地区的机场信息，通常可以通过查询相关国家或城市的航空服务网站或数据库来获得详细的机场名称和对应的国际航空运输协会（IATA）或者国际民用航空组织（ICAO，四字码）代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Norden有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Norden Norddeich, 四字码：EDWS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Norden\";",
+        "actual_answer": "Norden是一个广义的地理概念，通常指北欧国家。北欧包括丹麦、芬兰、冰岛、挪威和瑞典。在这些国家中，有许多机场。以下是一些主要机场及其对应的四字国际民航组织（ICAO）代码：\n\n**丹麦**\n1. 哥本哈根机场 - EKCH\n2. 比隆机场 - EKBI\n3. 奥胡斯机场 - EKAH\n\n**芬兰**\n1. 赫尔辛基-万塔机场 - EFHK\n2. 图尔库机场 - EFTU\n3. 罗瓦涅米机场 - EFRO\n\n**冰岛**\n1. 凯夫拉维克国际机场 - BIKF\n2. 雷克雅未克国内机场 - BIRK\n3. 阿克雷里机场 - BIAR\n\n**挪威**\n1. 奥斯陆机场 - ENGM\n2. 卑尔根机场 - ENBR\n3. 特隆赫姆机场 - ENVA\n\n**瑞典**\n1. 斯德哥尔摩阿兰达机场 - ESSA\n2. 哥德堡兰德维特机场 - ESGG\n3. 马尔默机场 - ESMS\n\n这些是北欧国家的一些主要机场及其四字ICAO代码。请注意，各个国家还有其它许多中小型机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kittila有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Kittila Airport, 四字码：EFKT"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Kittila\";",
+        "actual_answer": "Kittila 有一个机场，名称是 Kittilä Airport，对应的四字国际民航组织机场代码（ICAO）是 EFKT。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Frenchville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Northern Aroostook Regl, 四字码：KFVE"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Frenchville\";",
+        "actual_answer": "Frenchville位于昆士兰州的一个小镇，该地区的主要机场是Rockhampton Airport。以下是该机场的名称和四字代码：\n\n- Rockhampton Airport (YBRK)\n\nFrenchville本身没有独立的机场，因此主要通过Rockhampton Airport服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aruba有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Queen Beatrix International Airport, 四字码：TNCA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Aruba\";",
+        "actual_answer": "阿鲁巴的主要机场是皇后贝娅特丽克丝国际机场（Queen Beatrix International Airport），其对应的四字码是TNCA。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Teanaway有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：De Vere Field, 四字码：2W1"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Teanaway\";",
+        "actual_answer": "Teanaway位于美国华盛顿州，主要是一个小型社区，并不拥有自己的商业机场。因此，Teanaway附近没有四字ICAO代码的机场。如果您要寻找距离Teanaway较近的主要机场，可以查看华盛顿州的几个主要商业机场，比如：\n\n1. 西雅图-塔科马国际机场（Seattle-Tacoma International Airport） - 四字码：KSEA\n2. 亚基马机场（Yakima Air Terminal/McAllister Field） - 四字码：KYKM\n\n这些机场是距离Teanaway较近的主要航空交通枢纽。您可以使用这些机场进行地区内的航空旅行。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Folkston有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Davis Field, 四字码：3J6"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Folkston\";",
+        "actual_answer": "在Folkston，最主要的机场是Folkston机场，其对应的四字代码是3J6。不过请注意，3J6是FAA代码，而不是ICAO四字码，因为Folkston这样的小型机场通常没有ICAO代码。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Pohnpei有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Pohnpei International Airport, 四字码：PTPN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Pohnpei\";",
+        "actual_answer": "Pohnpei有一个主要机场，名为波纳佩国际机场（Pohnpei International Airport）。其对应的四字国际民航组织机场代码为PTPN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Napakiak有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Napakiak Airport, 四字码：PANA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Napakiak\";",
+        "actual_answer": "Napakiak是美国阿拉斯加州的一个小镇。该镇附近有一个小型公共机场，称为Napakiak Airport。其对应的四字国际民航组织（ICAO）代码是 PANA。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bielefeld有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bielefeld, 四字码：EDLI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bielefeld\";",
+        "actual_answer": "Bielefeld 本身没有大型的国际或区域机场。在其周边，有若干个机场可以使用：\n\n1. **Paderborn Lippstadt Airport (EDLP)** - 位于Bielefeld以南约50公里，是最近的中型国际机场。\n2. **Hannover Airport (EDDV)** - 位于 Bielefeld 以北约100公里，是一个较大的国际机场。\n3. **Düsseldorf Airport (EDDL)** - 位于 Bielefeld以西南约150公里，是德国第三大机场，也是一个主要的国际机场。\n\nBielefeld 及其周边的机场并不多，因此旅客通常需要选择这些邻近城市的机场进行国际或长途旅行。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Norsup有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Norsup Airport, 四字码：NVSP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Norsup\";",
+        "actual_answer": "Norsup 有一个机场，称为 Norsup Airport。其对应的四字国际民用航空组织（ICAO）代码是 NVSP。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Green有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Canal Fulton, 四字码：7OH2"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Green\";",
+        "actual_answer": "在世界各地，名称中包含“Green”的机场相对较少。不过，这里有一些可能符合条件的机场：\n\n1. **Greenville-Spartanburg International Airport** - 四字码为 KGSP\n2. **Greenville Downtown Airport** - 四字码为 KGMU\n3. **Greene County Regional Airport** - 四字码为 I19\n4. **Green Bay Austin Straubel International Airport** - 四字码为 KGRB\n\n请注意，以上列表并不详尽，实际还可能有其他名称中包含“Green”的机场。如果您有特定国家或地区的要求，请提供更多信息以获取更精确的答案。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lubudi有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Lubudi, 四字码：FZQU"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Lubudi\";",
+        "actual_answer": "Lubudi 是位于刚果民主共和国的一个地方。关于 Lubudi 的机场信息较为有限，目前没有公开记录显示该地有大型的商业机场。刚果民主共和国的主要机场通常位于较大的城市或地区中心。如果您需要前往 Lubudi，可能需要先飞往刚果民主共和国的主要机场之一，然后通过地面交通等方式到达 Lubudi。有关具体旅行路线的建议，请咨询旅行社或查看最新的航班信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Taft有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Deck, 四字码：5ND9",
+            "机场名称：Flying Bk Ranch, 四字码：AL32",
+            "机场名称：Taft-Kern County, 四字码：L17"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Taft\";",
+        "actual_answer": "Taft通常指的是美国加利福尼亚州的塔夫脱市。如果特指这个城市的话，它本身没有主要的商业机场，仅有一些小型机场或私人机场。通常，这些小型机场没有IATA或ICAO指定的四字码。\n\n通常情况下，前往塔夫脱的旅客会使用附近城市的商业机场，例如贝克斯菲尔德的梅多斯菲尔德机场（Meadows Field Airport），其IATA代码为BFL，ICAO代码为KBFL。\n\n如果您指的是其他地点，或需要其他具体信息，请提供更多的上下文以便更准确地回答。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Chino有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Chino, 四字码：KCNO"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Chino\";",
+        "actual_answer": "Chino位于加利福尼亚州，美国。Chino的主要机场是Chino Airport。其对应的四字国际民航组织(ICAO)代码是KCNO。这个机场主要用于通用航空，并且没有定期的商业航班服务。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Mexico City有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Benito Juárez International Airport, 四字码：MMMX",
+            "机场名称：Felipe Ángeles International Airport, 四字码：MMSM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Mexico City\";",
+        "actual_answer": "墨西哥城有以下主要机场：\n\n1. 墨西哥城贝尼托·胡亚雷斯国际机场（Mexico City International Airport），四字码为 MMMX。\n2. 菲利佩·安吉利斯国际机场（Felipe Ángeles International Airport），四字码为 MMSM。\n\n这两个机场为墨西哥城及其周边地区提供航空服务。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Garcia有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Melby Ranch Airstrip, 四字码：33CO"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Garcia\";",
+        "actual_answer": "\"Garcia\" 可能是指许多地方中的一个，因此请您澄清一下具体指的是哪个地区。如果您指的是某个特定城市或者区域，请提供更多信息，以便我可以为您提供相关的机场信息及其四字代码。如果是指一个具体地点的某种误写或特定称谓，请更正或详细描述。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Flagler有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Flagler Aerial Spraying Inc, 四字码：CO00"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Flagler\";",
+        "actual_answer": "Flagler 位于美国佛罗里达州，但如果你指的是 Flagler County，该地区并没有主要的商业机场。不过，邻近地区有几个机场，你可能会感兴趣：\n\n1. **Daytona Beach International Airport (DAB/KDAB)** - 位于邻近的沃卢西亚县，这是一个主要的商业机场，提供多家航空公司的航班服务。\n\n2. **Orlando International Airport (MCO/KMCO)** - 位于奥兰多，是佛罗里达州最大的机场之一，提供广泛的国内和国际航班。\n\n3. **Jacksonville International Airport (JAX/KJAX)** - 位于杰克逊维尔，提供多条国内和国际航线。\n\n如果你是指小型或私人机场，Flagler County 自己有一个较小的公共机场：\n\n- **Flagler Executive Airport (FIN/KFIN)** - 主要用于私人和小型航空活动。\n\n请根据你的具体需求选择最合适的机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Reynolds有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Z X Ranch, 四字码：0ID7"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Reynolds\";",
+        "actual_answer": "在全球范围内，许多机场可能包含“Reynolds”这个词。要列出其中的一些机场及其相应的代码，我们需要关注具体的机场名称或地理位置，因为机场四字码是唯一识别机场的依据。遗憾的是，没有立即可用的公开列表精确地展示所有涵盖“Reynolds”的机场及其四字码。如果你有特定的国家或地区信息，我可以帮助更准确地查找相关信息。通用的机场代码查询工具或数据库也可以用作进一步核实的来源。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Kone有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Kone Airport, 四字码：NWWD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Kone\";",
+        "actual_answer": "Kone 位于新喀里多尼亚。Kone 的主要机场是 Kone Airport。其对应的四字国际航空运输协会（ICAO）机场代码是 NWWD。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Osorno有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Canal Bajo Airport, 四字码：SCJO"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Osorno\";",
+        "actual_answer": "Osorno 位于智利，该地区的主要机场是卡尼亚尔·巴霍机场（Cañal Bajo Carlos Hott Siebert Airport），其对应的四字国际航空运输协会（ICAO）代码是 SCJO。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Campo Alegre De Lourdes有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Campo Alegre De Lourdes, 四字码：SSRK"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Campo Alegre De Lourdes\";",
+        "actual_answer": "Campo Alegre de Lourdes 是巴西的一个小城市，通常情况下没有国际机场或大型商业机场。小城市可能只会有一些小型或私人机场，它们通常没有国际航空运输协会（IATA）分配的四字国际机场代码。如果需要前往Campo Alegre de Lourdes，可以先飞往较大城市的机场，然后通过其他方式抵达目的地。\n\n对于具体的信息，建议查看飞往巴西主要城市的机场，然后计划前往Campo Alegre de Lourdes的后续旅行方式。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Interlachen有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Oak Ridge, 四字码：FL82"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Interlachen\";",
+        "actual_answer": "Interlachen是位于美国佛罗里达州的一个小镇，并没有主要机场。但在不远处有一些比较大的机场。以下是几个较接近的主要机场及其四字码：\n\n1. **Gainesville Regional Airport** (盖恩斯维尔区域机场) - KGNV\n2. **Jacksonville International Airport** (杰克逊维尔国际机场) - KJAX\n3. **Daytona Beach International Airport** (代托纳比奇国际机场) - KDAB\n\n这些机场都是距离Interlachen较近并提供商业航班服务的机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Izmir有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Adnan Menderes Airport, 四字码：LTBJ",
+            "机场名称：Selcuk Efes, 四字码：LTFB"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Izmir\";",
+        "actual_answer": "伊兹密尔（Izmir）有两个主要机场：\n\n1. 阿德南·曼德列斯机场（Adnan Menderes Airport），四字码为LTBJ。这是伊兹密尔的主要国际和国内机场。\n\n2. 昌卡亚机场（Cigli Airport），四字码为LTBL。这是一个军用机场，主要用于军事目的，通常不用于商业航班。\n\n阿德南·曼德列斯机场是大多数旅客进出伊兹密尔时所经常使用的机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "New Paltz有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Stanton, 四字码：NY35"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"New Paltz\";",
+        "actual_answer": "New Paltz 是位于美国纽约州的一个小镇。附近没有大型商业机场直接位于New Paltz内，但以下是一些相对较近的主要机场及其四字代码：\n\n1. 斯图尔特国际机场（Stewart International Airport） - KSWF\n2. 威彻斯特县机场（Westchester County Airport） - KHPN\n3. 奥尔巴尼国际机场（Albany International Airport） - KALB\n4. 纽瓦克自由国际机场（Newark Liberty International Airport） - KEWR\n5. 拉瓜迪亚机场（LaGuardia Airport） - KLGA\n6. 约翰·肯尼迪国际机场（John F. Kennedy International Airport） - KJFK\n\n这些机场都是New Paltz附近的主要机场，提供商业航班服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Clanton有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Chilton County / Gragg-Wade Field, 四字码：02A",
+            "机场名称：Ware Island, 四字码：01AL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Clanton\";",
+        "actual_answer": "Clanton是美国阿拉巴马州的一个城市。根据我掌握的资料，Clanton本身并没有主要的商业机场。最近的主要机场是位于其他城市的大型机场。如果你需要的是Clanton附近的机场信息，伯明翰-沙特尔斯沃思国际机场（Birmingham-Shuttlesworth International Airport）是最近的商业机场之一，其四字国际民航组织（ICAO）机场代码是KBHM。如果你要的是小型的或地方机场的信息，这种机场通常没有国际四字码，但可能会有FAA位置标识符。建议查看当地的航空图表或联系当地政府以获取进一步的细节。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aek Godang有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Aek Godang Airport, 四字码：WIME"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Aek Godang\";",
+        "actual_answer": "Aek Godang 的机场是 Aek Godang Airport，其对应的四字码是 WIME。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Blackwells Corner有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Paramount Farms, 四字码：2CN4"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Blackwells Corner\";",
+        "actual_answer": "Blackwells Corner 是加利福尼亚州的一小部分，并不直接拥有自己的机场。相对较近的机场可能会在周边较大的城市中。以下是附近一些主要城市的机场：\n\n1. **Meadows Field Airport** (位于贝克斯菲尔德)\n   - 四字码：KBFL\n\n2. **San Luis Obispo County Regional Airport** (位于圣路易斯-奥比斯波)\n   - 四字码：KSBP\n\n3. **Fresno Yosemite International Airport** (位于弗雷斯诺)\n   - 四字码：KFAT\n\n这些机场是 Blackwells Corner 附近较大的民用机场，适合商业和私人使用。具体选择哪个机场要根据您的最终目的地和需求来决定。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Londonderry有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Eglinton Airport, 四字码：EGAE"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Londonderry\";",
+        "actual_answer": "Londonderry，也称为Derry，位于英国北爱尔兰。该地区有一个主要机场：\n\n- 城市机场名称：City of Derry Airport\n- 对应的四字码：EGAE\n\n这个机场为该地区提供定期的国内和国际航班服务。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Saratoga Springs有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Russell Field, 四字码：0NY1"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Saratoga Springs\";",
+        "actual_answer": "Saratoga Springs位于美国纽约州。虽然Saratoga Springs本身没有大型商用机场，但周边地区有几个机场可供选择：\n\n1. Albany International Airport (ALB) - 位于奥尔巴尼，是距离Saratoga Springs最近的主要机场。\n2. Saratoga County Airport (5B2) - 这是一个较小的地方机场，主要用于通用航空。\n\n这两个机场分别服务于商业航班和通用航空需求。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Subic Bay Freeport Zone有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Subic Bay International Airport, 四字码：RPLB"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Subic Bay Freeport Zone\";",
+        "actual_answer": "Subic Bay Freeport Zone 主要有一个机场：Subic Bay International Airport。它的四字码是 RPLB。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Syringa有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Hummel Field, 四字码：W75"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Syringa\";",
+        "actual_answer": "Syringa 可能指代多个地方，但如果你指的是中国的四平市（Siping），那么四平市没有自己的国际或国内机场。最近的主要机场是长春龙嘉国际机场，其四字码是 ZYCC。如果你指的是其他地方，请提供更多信息以便更具体地解答。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Liverpool有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Liverpool John Lennon Airport, 四字码：EGGP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Liverpool\";",
+        "actual_answer": "利物浦有一个主要的机场，叫做利物浦约翰·列侬机场。它的四字国际民航组织（ICAO）代码是EGGP。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Lake Summerset有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Ellis, 四字码：IL23",
+            "机场名称：Flying Z Ranch, 四字码：47IS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Lake Summerset\";",
+        "actual_answer": "Lake Summerset位于美国伊利诺伊州和威斯康星州的交界处，附近的主要机场有：\n\n1. **芝加哥洛克福德国际机场**（Chicago Rockford International Airport），四字码：KRFD\n2. **芝加哥奥黑尔国际机场**（Chicago O'Hare International Airport），四字码：KORD\n3. **麦迪逊地区机场**（Dane County Regional Airport），四字码：KMSN\n\n由于Lake Summerset地区本身没有大型机场，上述机场是该地区主要的航空交通枢纽。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Province Of Frosinone有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Aquino, 四字码：LIAQ",
+            "机场名称：Frosinone Air Base, 四字码：LIRH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Province Of Frosinone\";",
+        "actual_answer": "Frosinone省位于意大利，目前该省内没有商业机场。最近的主要机场是罗马的机场，如罗马-菲乌米奇诺机场（Leonardo da Vinci-Fiumicino Airport，四字码：LIRF）和罗马-钱皮诺机场（Ciampino-G. B. Pastine International Airport，四字码：LIRA）。Frosinone省内有一个小型军事机场，名为Frosinone Airport，但没有民航四字码。对于商业航班，通常需要前往罗马的机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sao Felix Do Araguaia有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Sao Felix Do Araguaia, 四字码：SWFX"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Sao Felix Do Araguaia\";",
+        "actual_answer": "Sao Felix Do Araguaia 的主要机场是 Sao Felix do Araguaia Airport，其对应的四字码是 SWFX。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Vera Cruz有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Vera Cruz, 四字码：SDVE"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Vera Cruz\";",
+        "actual_answer": "Vera Cruz 是墨西哥的一个州。该州主要的机场有：\n\n1. **赫拉多·格拉亚国际机场**（General Heriberto Jara International Airport） - 四字码：MMVR\n\n除此之外，Vera Cruz 还有一些较小的机场和简易机场，但赫拉多·格拉亚国际机场是该地区主要的商业机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sunshine有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Clute's Hilltop, 四字码：69NC"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Sunshine\";",
+        "actual_answer": "“Sunshine”可能指的是不同的地方或机场，具体取决于上下文。然而，如果你指的是澳大利亚的Sunshine Coast，以下是一些相关的信息：\n\n1. **Sunshine Coast Airport** - 四字码：YBSU\n\n如果你指的是其他地方或者有特定的要求，请提供更多的细节以便我更好地帮助你。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Northern Satakunta有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Jamijarvi, 四字码：EFJM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Northern Satakunta\";",
+        "actual_answer": "Northern Satakunta 是芬兰的一个区域，在该地区及其周边没有大型的国际机场。不过，在更广泛的 Satakunta 区域，最近的主要机场是 Pori Airport，其四字码是 EFPO。此区域内可能还有一些小型机场或者飞行俱乐部用的机场，但通常没有国际民航组织（ICAO）分配的四字码。如果你需要访问这个区域，一般机场交通会通过赫尔辛基或其他国际机场进行衔接。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Meno有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Decker Field, 四字码：4O7",
+            "机场名称：Johnson Field, 四字码：6OK3"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Meno\";",
+        "actual_answer": "\"Meno\" 并不是一个明确的机场或城市名称，可能是某个小地方或者是某个地区的缩写。能否提供更多的地理信息或澄清名称以便更好地帮助您？ 如果您说的是某个特定的地方，我可以根据具体的位置为您提供机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Estancia有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Estancia Municipal, 四字码：E92"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Estancia\";",
+        "actual_answer": "“Estancia”在多个国家可能有同名的城市或地区，所以需要具体国家来提供准确的信息。不过，如果你指的是菲律宾的Estancia，那么该地区主要依赖附近较大的城市如伊洛伊洛（Iloilo）或宿务（Cebu）的机场。以下是几个相对较近的主要机场：\n\n1. 伊洛伊洛国际机场（Iloilo International Airport） - RPVI\n2. 马克坦-宿务国际机场（Mactan-Cebu International Airport） - RPVM\n\nEstancia 本身并没有大型商业机场。旅客通常需要通过这些主要机场，然后通过陆路或水路交通到达Estancia。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Eudora有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bland, 四字码：52KS",
+            "机场名称：Wards, 四字码：7AR1"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Eudora\";",
+        "actual_answer": "Eudora并不是一个特别知名的地点，因此没有特定的信息来确定其机场。如果“Eudora”指的是某个特定国家或地区中的小地方，它可能没有自己的机场。通常机场代码是针对于比较大的城市或者交通枢纽。\n\n如果你指的是美国堪萨斯州的Eudora，它没有商业机场。最近的大型机场是**堪萨斯城国际机场（Kansas City International Airport）**，其四字国际航空运输协会代码（IATA代码）是MCI。\n\n如果您有特定的Eudora地区，请提供更多信息，我会非常愿意帮您查找相关区域的机场信息。如果有其他问题或者需要其他帮助，请随时告诉我！",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Concordia有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Blosser Mun, 四字码：KCNK",
+            "机场名称：Comodoro Pierrestegui, 四字码：SAAC",
+            "机场名称：Olavo Cecco Rigon, 四字码：SSCK"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Concordia\";",
+        "actual_answer": "Concordia在不同国家有多个城市同名，因此有多个机场。以下是两座主要的Concordia城市及其机场：\n\n1. 在阿根廷的Concordia：\n   - 空军上校阿图罗·门德斯·卡雷拉机场（Aeropuerto Comodoro Pierrestegui）\n   - 四字码：SAAC\n\n2. 在巴西的Concordia：\n   - 奥列斯特斯·内诺空军上尉机场（Aeroporto de Concórdia - Capitão Aviador Orestes de Britto Pessoa）\n   - 四字码：SSCK\n\n请确认您所指的Concordia城市，以便获得更准确的机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tachov District有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Krizenec, 四字码：LKKC"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tachov District\";",
+        "actual_answer": "Tachov District位于捷克，该地区没有大型国际机场，但可能有一些小型的地方机场或飞行俱乐部。这类机场通常没有国际航空运输协会（IATA）和国际民航组织（ICAO）分配的四字码。如果你需要前往Tachov District，可以考虑利用附近的大型国际机场，如布拉格机场（ICAO代码：LKPR）进行中转旅行。小型地方机场的信息通常需要直接联系地方航空俱乐部或者当地政府部门获取。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Clearwater有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Battle Ridge Butte, 四字码：ID51",
+            "机场名称：Clearwater, 四字码：KCLW",
+            "机场名称：Kooskia (Clear Creek Int), 四字码：79ID",
+            "机场名称：Rucker, 四字码：SN34",
+            "机场名称：Toketee State, 四字码：3S6"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Clearwater\";",
+        "actual_answer": "Clearwater位于美国佛罗里达州，附近的主要机场包括：\n\n1. 圣彼得堡-清水湾国际机场（St. Pete–Clearwater International Airport），四字码是 KPIE。\n2. 坦帕国际机场（Tampa International Airport），四字码是 KTPA。\n\n这两个机场都是前往Clearwater的常用选择。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Utley有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Utley, 四字码：68XA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Utley\";",
+        "actual_answer": "截至我所知，Utley 并不是一个通常关联有机场的城市或地点。在美国或其他国家的主要机场列表中，并没有标示以\"Utley\"命名的机场。可能是缺乏进一步的信息或拼写错误。若您指的是某个特定地区，建议您提供更多细节以便我为您提供更准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Aershan有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Arxan Yi'ershi Airport, 四字码：ZBES"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Aershan\";",
+        "actual_answer": "阿尔山有一个机场，名字是阿尔山伊尔施机场，其对应的四字码是 ZBAL。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Jodhpur有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Jodhpur Airport, 四字码：VIJO"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Jodhpur\";",
+        "actual_answer": "Jodhpur只有一个主要的机场，名字叫做焦特布尔机场（Jodhpur Airport），其对应的四字码是VIJO。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hurst有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Dury Estates, 四字码：IL71"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hurst\";",
+        "actual_answer": "Hurst是美国德克萨斯州的一座城市，但它本身没有机场。通常提及Hurst周边的机场时，人们会想到邻近的大型城市机场。以下是靠近Hurst的一些主要机场及其四字码：\n\n1. 达拉斯-沃思堡国际机场（Dallas/Fort Worth International Airport）- KDFW\n2. 达拉斯爱田机场（Dallas Love Field）- KDAL\n3. 沃思堡米查姆国际机场（Fort Worth Meacham International Airport）- KFTW\n\n这些机场都是Hurst附近的主要航空交通枢纽。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Algoma有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Carnot Field, 四字码：3WI0",
+            "机场名称：Jorgensen - Stoller, 四字码：1WI8"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Algoma\";",
+        "actual_answer": "Algoma 指的是哪个具体的地区或国家？「Algoma」可能是加拿大安大略省的Algoma区，也可能是其他地方的名称。请确认具体位置以便提供准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Pamol有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Pamol, 四字码：WBKP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Pamol\";",
+        "actual_answer": "Pamol 是位于马来西亚的一个小镇，并没有机场。若你想了解马来西亚其他主要城市和地区的机场信息或四字代码，请提供具体的城市名称，我可以帮您查询相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tanjung Pinang City有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Kijang Airport, 四字码：WIDN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tanjung Pinang City\";",
+        "actual_answer": "Tanjung Pinang City 有一个主要机场，名为 Raja Haji Fisabilillah International Airport，其对应的四字码是 WIDN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Ellisras有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Ellisras Matimba, 四字码：FAER"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Ellisras\";",
+        "actual_answer": "Ellisras, 现称为 Lephalale，位于南非。该地区主要有一个小型机场，名称为 Ellisras Aerodrome，其国际航空运输协会（IATA）的三字码是ELL，但没有国际民航组织（ICAO）的四字码。如果你需要更多关于机场的信息或者其它附近的机场，请告诉我。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Rosario Department有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Rosario - Islas Malvinas International Airport, 四字码：SAAR"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Rosario Department\";",
+        "actual_answer": "Rosario Department位于阿根廷圣菲省，根据我的信息，这个地区的主要机场是罗萨里奥国际机场。它的四字码是SAAR。如果有新的或其他较小的机场，它们可能未被广泛记录。建议查阅最新的航图或当地相关资源以获取更多信息。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Chacabuco有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Peldehue, 四字码：SCPD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Chacabuco\";",
+        "actual_answer": "Chacabuco 是阿根廷的一个小城市，并没有大型的公共机场。通常情况下，小城市可能只有小型的私人机场或飞行俱乐部，可能没有公开的四字国际民用航空组织(ICAO)机场代码。\n\n如果你需要前往 Chacabuco，通常建议先飞往较大城市如布宜诺斯艾利斯（Buenos Aires），然后通过其他形式的交通工具如汽车或巴士前往目的地。\n\n如果你要找的是其他地方的具体机场，请提供更多详细信息以便更准确地回答。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cradock有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cradock, 四字码：FACD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Cradock\";",
+        "actual_answer": "Cradock 是南非的一个小镇，没有大型的商业机场，因此没有民用的四字国际民航组织（ICAO）机场代码。通常，小镇可能会有供私人飞机或小型航空器使用的简易机场或空域，但这些通常没有正式的四字代码。如果您需要前往 Cradock，通常需要通过较大的邻近城市的机场入境，然后通过其它交通方式抵达。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Dickinson有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Dickinson Municipal Airport, 四字码：KDIK",
+            "机场名称：Kadrmas, 四字码：ND10",
+            "机场名称：Wolberg's Private, 四字码：7ND1"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Dickinson\";",
+        "actual_answer": "Dickinson位于美国北达科他州。如果你指的是Dickinson市，那么主要的机场是Dickinson-Theodore Roosevelt Regional Airport。这个机场的四字国际航空运输协会（ICAO）代码是 KDIK。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Paynesville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Paynesville Mun, 四字码：KPEX"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Paynesville\";",
+        "actual_answer": "Paynesville是利比里亚的一座城市，离首都蒙罗维亚很近。蒙罗维亚有两个主要的机场：\n\n1. 罗伯茨国际机场（Roberts International Airport），四字码是GLRB。\n2. 斯普里格斯·佩恩机场（Spriggs Payne Airport），四字码是GLMR。\n\nPaynesville本身并没有主要的机场，最近的就是蒙罗维亚的这两个机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Alma Lake有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Reinoehl Field, 四字码：49II"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Alma Lake\";",
+        "actual_answer": "Alma Lake 并不是一个广为人知的地名，因此我不确定具体指的是哪个地点。如果“Alma Lake”指的是某个具体的地区，可能需要更多的地理细节来确定那里的机场信息。\n\n如果是加拿大安大略省的阿尔玛湖（Alma Lake）或者其他地区，请提供更多信息或确认具体位置，以便我能提供更准确的机场信息。如果你指的是其他地区或有其他名称相似的地方，也请详细说明。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Bishop's Falls有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Exploits Valley Botwood, 四字码：CCP2"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bishop's Falls\";",
+        "actual_answer": "Bishop's Falls 是加拿大纽芬兰与拉布拉多省的一个小镇。这个小镇本身没有机场。最近的主要机场是位于甘德的甘德国际机场（Gander International Airport），其四字代码是CYQX。另外，在较远处还有圣约翰斯国际机场（St. John's International Airport），其四字代码是CYYT。如果你计划前往Bishop's Falls，通常需要飞往这些机场之一，然后通过陆路交通继续前往目的地。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Carta Valley有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Mafrige Ranch Inc, 四字码：2TA9",
+            "机场名称：Martin Ranch, 四字码：65TS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Carta Valley\";",
+        "actual_answer": "Carta Valley 是位于美国德克萨斯州的一个小社区，并没有大型的商业机场。通常，这类小社区可能会有私人或小型机场，但这些机场通常没有国际航空运输协会（IATA）或国际民用航空组织（ICAO）的四字机场代码。如果需要到达 Carta Valley，最近的主要商业机场可能是德克萨斯州的一些大城市的机场，例如圣安东尼奥国际机场（SAT）或德尔里奥国际机场（DRT）。建议根据具体的旅行需求进一步查找相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Brigham City有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Brigham City, 四字码：KBMC",
+            "机场名称：Fort Ranch, 四字码：2UT3"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Brigham City\";",
+        "actual_answer": "Brigham City位于美国犹他州。在Brigham City附近有一个公共机场，名为Brigham City Airport。它的四字码是KBMC。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Leakey有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Lewis Ranch, 四字码：XA31",
+            "机场名称：Prade Ranch, 四字码：57TE",
+            "机场名称：Real County, 四字码：49R"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Leakey\";",
+        "actual_answer": "Leakey 是位于美国德克萨斯州的一个小镇，本身没有大型的商业机场。通常情况下，小镇级别的地方可能只有小型私人或公共用途的简易机场，且这些机场可能没有国际航空运输协会（IATA）的机场代码或国际民用航空组织（ICAO）的四字码。\n\n如果你是要查找距离 Leakey 最近的大型商业机场，可能需要考虑位于较大城市的机场，例如圣安东尼奥国际机场（San Antonio International Airport, IATA代码：SAT），这是距离 Leakey 较近的国际机场之一。\n\n如果需要精确的信息，我建议查看最新的航空航图或联系当地航空管理部门以获取更详细的机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Palangka Raya City有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Tjilik Riwut Airport, 四字码：WAGG"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Palangka Raya City\";",
+        "actual_answer": "Palangka Raya市有一个主要的机场， 名称是Tjilik Riwut Airport，对应的四字码是WAOP。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Niort有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Niort Marais Poitevin, 四字码：LFBN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Niort\";",
+        "actual_answer": "Niort是法国的一个城市，其附近的机场主要有：\n\n1. Niort-Souché Airport，四字码为 LFBN。\n\n请注意，Niort-Souché Airport 是一个小型机场，其航班较为有限。如果需要使用较大的国际机场，可以考虑距Niort较远的其他城市的机场，例如：\n\n- 鲁瓦扬－迈耶机场（La Rochelle - Île de Ré Airport），四字码为 LFBH，距离较近，提供更多的国内和国际航班选择。\n\n可以根据您的具体行程需求选择合适的机场。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bangui有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bangui Airport, 四字码：FEFF"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bangui\";",
+        "actual_answer": "Bangui, 中非共和国的首都，主要有一个机场：\n\n1. Bangui M'Poko International Airport - FEFF",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Schellville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Sonoma Skypark, 四字码：0Q9"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Schellville\";",
+        "actual_answer": "Schellville是一个位于美国加利福尼亚州的小镇。Schellville本身没有机场。不过，附近有一个小型机场叫做Schellville Airport或Sonoma Valley Airport。因为这是一个小型私人机场，它通常没有ICAO四字码，只有FAA地点指示码（Ident Code），为0Q3。如果你需要前往较大的商业机场，你可能需要考虑去附近的其他城市，如Santa Rosa的查尔斯·M·舒尔茨-索诺玛县机场（四字码为KSTS）。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Huahine有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Huahine Fare Airport, 四字码：NTTH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Huahine\";",
+        "actual_answer": "Huahine是法属波利尼西亚的一座岛屿，岛上有一个主要的机场：Huahine – Fare Airport。该机场的四字码是 NTTH。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Lizard Island有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Lizard Island, 四字码：YLZI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Lizard Island\";",
+        "actual_answer": "Lizard Island有一个机场，名称是Lizard Island Airport。它的四字码是YLZI。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Central High有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Horning Farms Airstrip, 四字码：92OK",
+            "机场名称：Jim Pettijohn Memorial, 四字码：7OK8",
+            "机场名称：Malcom Farm, 四字码：OK91",
+            "机场名称：Pettijohn Acres Landing, 四字码：84OK",
+            "机场名称：Ramey 1, 四字码：0OK8"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Central High\";",
+        "actual_answer": "“Central High” 可能是指多个地方的名称。如果你指的是某个国家、州或城市中的“Central High”，请提供更详细的信息以帮助确定具体位置。\n\n如果你特别指的是美国或其他国家的某个名叫“Central High”的地方，我可以帮助查找该地区有哪些机场。请提供更多具体信息，以便更好地回答你的问题。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hackensack有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Webb Lake, 四字码：MN00"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hackensack\";",
+        "actual_answer": "Hackensack位于新泽西州，附近没有大型商业机场，但是在不远处有一些主要机场。以下是附近的一些重要机场及其四字代码：\n\n1. **纽瓦克自由国际机场 (Newark Liberty International Airport)** - EWR\n2. **拉瓜迪亚机场 (LaGuardia Airport)** - LGA\n3. **约翰·F·肯尼迪国际机场 (John F. Kennedy International Airport)** - JFK\n4. **泰特伯勒机场 (Teterboro Airport)** - TEB\n\n这些机场都相对靠近Hackensack，尤其是泰特伯勒机场，它主要用于私人和公务航空。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Santo Domingo有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：La Isabela International Airport, 四字码：MDJB",
+            "机场名称：Las Américas International Airport, 四字码：MDSD",
+            "机场名称：Santo Domingo Airport, 四字码：SVSO"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Santo Domingo\";",
+        "actual_answer": "Santo Domingo 有两个主要的机场：\n\n1. 拉斯美洲国际机场（Las Américas International Airport），四字码是 MDSD。\n2. 拉伊莎·阿尔博托利·迈尔国际机场（La Isabela International Airport），四字码是 MDJB。\n\n这两个机场为 Santo Domingo 提供国内和国际航班服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Coro有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Jose L Chirinos Intl, 四字码：SVCR"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Coro\";",
+        "actual_answer": "Coro位于委内瑞拉，Coro的机场是José Leonardo Chirino Airport，其对应的四字国际民航组织（ICAO）代码是SVCR。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Stevens Point有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Stevens Point Mun, 四字码：KSTE"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Stevens Point\";",
+        "actual_answer": "Stevens Point位于美国威斯康星州，但它本身并没有大型商业机场。最近的机场是Central Wisconsin Airport，它位于莫瑟尼（Mosinee），为Stevens Point及周边地区提供服务。Central Wisconsin Airport的四字国际民航组织（ICAO）代码是KCWA。直接在Stevens Point的机场主要用于通用航空，通常没有ICAO代码；一个此类机场是Stevens Point Municipal Airport，通常其代码为KSTE。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Sainte Marie有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Sainte Marie Airport, 四字码：FMMS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Sainte Marie\";",
+        "actual_answer": "Sainte Marie 有一个主要的机场，名称是 Sainte-Marie Airport，对应的四字码是 FMMS。这座机场位于马达加斯加的 Sainte Marie 岛上。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Swimley有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：High View Farm, 四字码：61VA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Swimley\";",
+        "actual_answer": "很抱歉，我无法找到名为“Swimley”的地方。如果您指的是特定地区或城市，请提供更多详细信息，以便我更好地为您提供帮助。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Belview有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Donner, 四字码：MN98"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Belview\";",
+        "actual_answer": "贝尔维尤（Bellevue）是美国华盛顿州西雅图东部的一座城市，不过它本身没有主要的公共机场。通常，贝尔维尤的航空交通需求由附近的几个主要机场服务：\n\n1. **西雅图-塔科马国际机场**（Seattle-Tacoma International Airport）\n   - 四字码：KSEA\n\n2. **金县国际机场**，也称波音机场（King County International Airport/Boeing Field）\n   - 四字码：KBFI\n\n3. **佩恩菲尔德**（Paine Field）\n   - 四字码：KPAE\n\n这些机场位于贝尔维尤附近，并为该地区提供服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Iron River有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bayfield County, 四字码：Y77",
+            "机场名称：Cedar Island, 四字码：WI10",
+            "机场名称：Minnesuing, 四字码：WI31",
+            "机场名称：Stambaugh, 四字码：Y73"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Iron River\";",
+        "actual_answer": "Iron River位于美国密歇根州。在其附近有一个主要的机场，即Iron County Airport。这个机场的四字国际民航组织（ICAO）代码是Y73。请注意，这个代码是当地的FAA位置标识符，而不是典型的ICAO四字代码，因为许多小型机场没有ICAO代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Patos有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Patos, 四字码：SNTS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Patos\";",
+        "actual_answer": "截至我所知，巴西的帕图斯（Patos）没有大型商业机场。帕图斯是巴西的一座城市，位于帕莱巴州（Paraíba）。如果该地区有较小的机场或飞行场，它们通常可能没有国际航空运输协会（IATA）或国际民航组织（ICAO）分配的四字代码。\n\n如果你指的是其他有同样名称的地区或需要更新的信息，建议查阅最新的航空资料或联系相关地方航空公司。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Reeds有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Nimsick, 四字码：3MO5"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Reeds\";",
+        "actual_answer": "在全球范围内，\"Reeds\" 这个名称可能并不直接对应任何知名大型机场的官方名称。机场通常以城市或机场位置命名。为了提供帮助，您可能需要提供更加具体的地理位置或上下文。如果有名为 \"Reeds\" 的小型机场或私人机场，它们可能没有国际航空运输协会（IATA）或国际民航组织（ICAO）代码，或者仅在区域范围内被识别。\n\n如果您是在寻找位于某个城市的机场的详细信息，请提供进一步的细节以便进行更准确的查找。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Innamincka有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Innamincka, 四字码：YINN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Innamincka\";",
+        "actual_answer": "Innamincka是澳大利亚南澳大利亚州的一个小镇。该地区没有商用机场，通常较小的地区和乡镇可能会有简易的机场或飞机跑道用于小型飞机。Innamincka本身并没有一个国际或大型商用机场，因此也没有分配的四字IATA或ICAO代码。如果你计划飞往Innamincka或其附近，通常需要通过较大的城市如阿德莱德或其他地区的机场，接着进行地面交通或乘坐小型飞机到达。建议核查当地的交通信息和可用的旅行选项。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Shire Of Merredin有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Merredin Airport, 四字码：YMDN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Shire Of Merredin\";",
+        "actual_answer": "Shire of Merredin 位于澳大利亚西澳大利亚州。在该地区的机场中，其中一个主要的机场是 Merredin Aerodrome，对应的四字码是 YMEE。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Salton有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Salton Sea, 四字码：KSAS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Salton\";",
+        "actual_answer": "Salton地区主要指的是美国加利福尼亚州的Salton Sea附近。目前这一地区并没有大型商业机场。最近的大型机场位于较远的城市，比如Palm Springs有Palm Springs International Airport（PSP/KPSP）。\n\n若是私人或小型飞机，则可能会使用一些较小的机场或航空设施，比如私人简易机场等，但这些通常没有四字机场码。如果需要访问Salton Sea地区的运输服务，通常需从周边的大型机场出发，再通过地面交通工具前往。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Harvest有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Epps Airpark, 四字码：00AL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Harvest\";",
+        "actual_answer": "抱歉，根据目前的信息，\"Harvest\" 似乎不是一个拥有机场的城市或地区名称。如果您指的是其他地名或者机场名称，请提供更多信息以便我能更好地帮助您。如果有其他问题或需要帮助的信息，也请随时告诉我。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Alotau District有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Gurney Airport, 四字码：AYGN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Alotau District\";",
+        "actual_answer": "Alotau District位于巴布亚新几内亚，主要的机场是Gurney Airport（古尼机场）。它的四字代码是AYGN。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Arters Mill有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Mayberry Run, 四字码：1MD8"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Arters Mill\";",
+        "actual_answer": "Arters Mill 不是一个为人熟知的城市或地名，可能是一个很小的地区或地点名称错误。此外，四字码指的是国际航空运输协会（IATA）没有使用的机场代码，通常是提到国际民航组织（ICAO）的代码，而三个字母代码是IATA使用的。如果您指的是特定国家或不同拼写的地点，请提供更多信息以便更好地帮助您。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Zhangjiajie有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Zhangjiajie Hehua Airport, 四字码：ZGDY"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Zhangjiajie\";",
+        "actual_answer": "张家界有一个机场，名为张家界荷花机场，其对应的四字码是 ZGDY。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Ehlanzeni District Municipality有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Pilgrims Rest, 四字码：FAPO"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Ehlanzeni District Municipality\";",
+        "actual_answer": "Ehlanzeni District Municipality 位于南非的姆普马兰加省。在这一地区有几个重要的机场：\n\n1. 克鲁格姆普马兰加国际机场（Kruger Mpumalanga International Airport） - 四字码：FAKN\n2.  内尔斯普雷特机场 （Nelspruit Airport，也称为Mbombela Airport） - 四字码：FANS\n\n这些机场为前往克鲁格国家公园及周边地区的旅客提供服务。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Carauari有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Carauari, 四字码：SWCA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Carauari\";",
+        "actual_answer": "Carauari 有一个机场，名称是 Carauari Airport，对应的四字码是 SWCA。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Drift River有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Drift River, 四字码：3AK5"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Drift River\";",
+        "actual_answer": "Drift River 是位于美国阿拉斯加州的一个小地区，主要以其石油码头而闻名。在该地区附近并没有主要的公共机场，通常较小的设施可能不会有国际航空运输协会（IATA）或国际民用航空组织（ICAO）分配的四字代码。\n\n若需前往该地区，通常需使用临近较大的机场，然后通过其他交通方式（如直升机或小型飞机）进行更深入的旅行。就附近而言，较为主要的机场包括阿拉斯加州的安克雷奇泰德国际机场（Anchorage Ted Stevens International Airport，IATA代码：ANC，ICAO代码：PANC），由此可以进行进一步的转运。\n\n如果您提问的目的是关于具体的机场设施或具体的航空服务，建议直接联系当地航运或交通公司以获取更多的细节。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Almyra有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Almyra Municipal, 四字码：M73"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Almyra\";",
+        "actual_answer": "阿拉米拉（Almyra）作为一个具体的地名可能不太常见，可能是指某个具体地点的误拼或小型机场。如果你指的是一个小城市或地区，那里可能没有主要机场。请提供更多信息或确认地名。如果你指的是其他知名地点或城市，请重新检查地名的拼写。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cowles有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Schutte, 四字码：NE01"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Cowles\";",
+        "actual_answer": "Cowles没有商业机场或大型机场，因此也没有国际航空运输协会（IATA）和国际民航组织（ICAO）的四字码。Cowles可能是指一个小地方或社区，这种地方通常仅有小型私人机场或起降点。这类机场通常没有公开注册的四字码。如果您指的是其他地方或城市，请提供更多信息，以便我为您提供更准确的帮助。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Billund有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Billund Airport, 四字码：EKBI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Billund\";",
+        "actual_answer": "Billund主要有一个机场，名称和四字码如下：\n\n- 比隆机场（Billund Airport），四字码为 EKBI。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cuthbert有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Lower Chattahoochee Regional, 四字码：25J"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Cuthbert\";",
+        "actual_answer": "Cuthbert 是一个位于美国乔治亚州的小城镇。根据我的知识，Cuthbert 没有自己的机场，最接近的商业机场是哥伦布都会机场（Columbus Metropolitan Airport），其四字代码是KCSG。对于小型飞机或通用航空，可能会使用附近的小型机场，但这些机场通常没有四字国际民航组织（ICAO）代码。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Ponta Grossa有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Ponta Grossa Airport, 四字码：SBPG"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Ponta Grossa\";",
+        "actual_answer": "Ponta Grossa，位于巴西巴拉那州，拥有以下机场：\n\n1. Sant'Ana Airport（桑塔安娜机场）\n   四字码：SSZW",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Cap Skirring有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cap Skirring Airport, 四字码：GOGS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Cap Skirring\";",
+        "actual_answer": "Cap Skirring位于塞内加尔，是一个受欢迎的旅游目的地。Cap Skirring的主要机场是Cap Skirring Airport，其对应的四字码（ICAO码）是GOGS。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Yamoussoukro有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Yamoussoukro, 四字码：DIYO"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Yamoussoukro\";",
+        "actual_answer": "Yamoussoukro 是科特迪瓦（象牙海岸）的政治首都。它有一个主要机场，叫做 Yamoussoukro Airport。这个机场的四字国际民航组织（ICAO）代码是 DIYO。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Constanza有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Constanza, 四字码：MDCZ"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Constanza\";",
+        "actual_answer": "截至我了解的最新信息，位于多米尼加共和国的康斯坦萨（Constanza）有一个主要的机场：\n\n1. 康斯坦萨机场（Constanza Airport） - 四字代码为MDCR。\n\n请注意，机场的信息可能会发生变化，建议在出行前确认最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Manzanita有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Nehalem Bay State, 四字码：3S7"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Manzanita\";",
+        "actual_answer": "Manzanita 是美国俄勒冈州的一个小城市，通常不会有自己的机场。然而，附近的一些区域可能有较小的机场或飞行场。通常情况下，小城市和社区并不具备商业机场，而是依靠邻近大城市的机场提供服务。如果你指的是美国的 Manzanita 城市，那么没有商业机场和相应的四字码。\n\n但如果你需要前往 Manzanita，你可以考虑飞往波特兰国际机场（Portland International Airport），其四字码为 KPDX，这是距离 Manzanita 较近的主要商业机场之一。\n\n如果你指的是其他地方的 Manzanita，请提供更具体的位置以便更准确地回答。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Tarama有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Tarama, 四字码：RORT"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tarama\";",
+        "actual_answer": "Tarama 是位于日本琉球群岛的一部分，具体来说是在宫古群岛。Tarama 村拥有一个主要机场：\n\n- Tarama 机场，四字代码是 RORT。\n\n这是其位于 Tarama 的主要机场的信息。如果你有其他关于该地区的信息需求，请随时告知！",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Greenview有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Scott Valley, 四字码：A30"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Greenview\";",
+        "actual_answer": "“Greenview”不是一个众所周知的地名或大型城市名称，因此没有已知的机场与其关联。如果这是一个较小的地方或者局部地区，可能并没有大型的商业机场。如果您指的是某个特定地区，请提供更多详细信息，以帮助您找到相关的机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Lacombe County有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Lacombe, 四字码：CEG3"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Lacombe County\";",
+        "actual_answer": "Lacombe County 在加拿大阿尔伯塔省，不是一个拥有众多机场的大区域。事实上，它可能没有主要的商业机场。就比较小的机场或私人飞行场而言，Lacombe County 可能有一些私人或市政机场，但这些通常不在国际航空运输协会 (IATA) 或国际民航组织 (ICAO) 的正式四字码列表中。可以查看 Lacombe 附近的主要机场，例如雷德迪尔地区机场（Red Deer Regional Airport），其 ICAO 代码为 CYQF。对于更多详细信息或小型机场，您可能需要查看当地的航空地图或相关资源。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "La Fria有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：La Fria Airport, 四字码：SVLF"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"La Fria\";",
+        "actual_answer": "La Fría 是位于委内瑞拉的一个城市。La Fría 的机场是 La Fría 机场，其对应的四字国际民航组织（ICAO）代码是 SVLF。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Galway有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Galway, 四字码：EICM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Galway\";",
+        "actual_answer": "在爱尔兰，Galway有一个主要的机场，它是：\n\n- Galway Airport（戈尔韦机场），其对应的四字码是 EICM。\n\n请注意，这个机场的定期商业航班服务自2011年起已经停止，因此目前没有定期的商业航班运营。对于飞往Galway的旅客，通常可以选择从都柏林机场（Dublin Airport，四字码：EIDW）或香农机场（Shannon Airport，四字码：EINN）入境，然后通过陆路或其他方式前往Galway。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Qurghonteppa有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Qurghonteppa International Airport, 四字码：UTDT"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Qurghonteppa\";",
+        "actual_answer": "Qurghonteppa（库尔干秋别）是塔吉克斯坦的一个城市，该城市的主要机场是库尔干秋别国际机场。其四字国际民航组织（ICAO）代码是UTDT。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Groote Eylandt有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Groote Eylandt Airport, 四字码：YGTE"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Groote Eylandt\";",
+        "actual_answer": "Groote Eylandt有一个机场，名称是Groote Eylandt Airport，其四字码为YGTE。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cloncurry有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cloncurry Airport, 四字码：YCCY",
+            "机场名称：Dajarra, 四字码：YDAJ"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Cloncurry\";",
+        "actual_answer": "Cloncurry 有一个主要机场，名称和四字代码如下：\n\n- Cloncurry Airport (四字代码：YCCY)",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Hindmarsh Shire有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Nhill, 四字码：YNHL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hindmarsh Shire\";",
+        "actual_answer": "Hindmarsh Shire位于澳大利亚维多利亚州。该地区可能有一些小型机场或飞行场，但通常这些地方没有国际航空运输协会（IATA）分配的四字码，因为这样的代码通常分配给较大的商业机场。如果Hindmarsh Shire内有某些私人或小型机场，如农场机场，它们通常不会在公开信息中列出和编码。为了获取最准确的信息，您可能需要查看当地政府的资源或者联系专门的航空咨询机构。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Goodman有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Peterson, 四字码：1MS2"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Goodman\";",
+        "actual_answer": "Goodman 是澳大利亚的一个小镇，但它本身并没有机场。有可能您指的是其他地方或者需要确认地名准确。如果您指的是不同的地点或者需要其他城市的信息，请提供更多细节，我会乐意帮您查询其他地方的机场信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Wilhelmshaven有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Jadeweser Airport, 四字码：EDWI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Wilhelmshaven\";",
+        "actual_answer": "威廉港（Wilhelmshaven）是德国下萨克森州的一座城市。威廉港本身没有商业机场。然而，通常情况下，人们可以使用附近城市的机场。一般来说，在威廉港附近的几个主要机场包括：\n\n1. 不来梅机场（Bremen Airport） - 代码：EDDW\n2. 汉诺威机场（Hanover Airport） - 代码：EDDV\n3. 汉堡机场（Hamburg Airport） - 代码：EDDH\n\n这些机场相对较大，提供国内和国际航班服务。具体选择哪个机场根据您的旅行需要和交通便利性而定。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Logan Township有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bridgeport-Cahill Field, 四字码：6NJ9"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Logan Township\";",
+        "actual_answer": "Logan Township位于美国新泽西州。虽然其附近有一些机场，但Logan Township本身并没有大型商业机场。离Logan Township最近的主要商业机场是费城国际机场（Philadelphia International Airport），其四字国际民用航空组织机场代码是KPHL。\n\n如果你对附近的其他机场信息感兴趣，请提供更具体的信息，我将尽力帮助。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Whalsay有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Whalsay, 四字码：EGEH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Whalsay\";",
+        "actual_answer": "Whalsay是苏格兰设得兰群岛的一部分，但它没有自己的机场。最近的机场是设得兰群岛的桑伯勒机场（Sumburgh Airport），其国际航空运输协会（IATA）代码是LSI，国际民航组织（ICAO）代码是EGPB。因此，Whalsay本身没有机场代码。旅行者通常需要通过渡轮或其他交通方式从设得兰群岛的其他地点进入Whalsay。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Zilina District有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Zilina, 四字码：LZZI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Zilina District\";",
+        "actual_answer": "Zilina District位于斯洛伐克，该地区主要的机场是Žilina Airport。其对应的四字国际航空运输协会（ICAO）代码是LZZI。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cossayuna有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Tracy Field, 四字码：4NK2"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Cossayuna\";",
+        "actual_answer": "Cossayuna是位于美国纽约州的一座小村庄，因此没有大型商业机场。由于它的小规模，通常会依赖邻近地区的机场服务。附近区域较大的商业机场包括：\n\n1. Albany International Airport (ALB) - 位于纽约州奥尔巴尼。\n2. Bradley International Airport (BDL) - 位于康涅狄格州。\n\nCossayuna本身没有商业机场，因此也没有四字机场代码。如需乘坐航班，通常建议前往上述提到的较大机场。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Sixaola有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Sixaola, 四字码：MRSX"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Sixaola\";",
+        "actual_answer": "Sixaola 是哥斯达黎加的一个小镇，该镇本身没有大型的商业机场。最近的主要机场在哥斯达黎加是Juan Santamaría International Airport（IATA: SJO, ICAO: MROC），位于首都圣何塞附近。Sixaola 附近可能有小型的地方机场或简易机场供包机和私人飞机使用，但这些通常没有国际四字码。如果您需要前往 Sixaola，通常会通过圣何塞的机场再转陆路交通。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Culpeper有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Berryvale, 四字码：VA30"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Culpeper\";",
+        "actual_answer": "Culpeper, Virginia, 有一个主要的通用航空机场，叫做 Culpeper Regional Airport。它的四字机场代码（ICAO代码）是 KCJR。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "Munda有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Munda Airport, 四字码：AGGM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Munda\";",
+        "actual_answer": "Munda 是所罗门群岛的一个城镇。Munda 的主要机场是穆达机场，其相应的四字码（ICAO代码）是 AGGM。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Daugavpils有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Daugavpils, 四字码：EVDA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Daugavpils\";",
+        "actual_answer": "Daugavpils, 拉脱维亚并没有大型的国际机场。最接近的主要国际机场是里加国际机场（Riga International Airport），四字代码是 EVRA，而Daugavpils本地有一个较小的机场，名字是 Daugavpils International Airport，它的四字代码是 EVDA。不过，这个机场的航班和服务可能是有限的，主要用于私人和小型商业航班。",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hammond Crossroads有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Alan's, 四字码：SC07",
+            "机场名称：Do-Little Field, 四字码：SC90"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hammond Crossroads\";",
+        "actual_answer": "Hammond Crossroads 是位于美国南卡罗来纳州的一个小社区。如果你指的是该地区附近的机场，通常较近的是以下几个：\n\n1. **哥伦比亚大都会机场（Columbia Metropolitan Airport）** - 四字码：KCAE\n2. **佛罗伦萨地区机场（Florence Regional Airport）** - 四字码：KFLO\n\n这些是较为靠近的主要公共机场。如果你指的是更小的私人机场，可能需要更具体的信息来确认。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "correct_rate": 26.33,
+        "sample_size": 300,
+        "correct_count": 79
+    }
+]
