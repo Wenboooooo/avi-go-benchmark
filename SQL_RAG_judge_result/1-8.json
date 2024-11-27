@@ -1,0 +1,657 @@
+[
+    {
+        "Q": "Seletar Jet Charter航司的总部位于哪个城市？",
+        "A": "Singapore",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Seletar Jet Charter\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Seletar Jet Charter\";",
+        "actual_answer": [
+            [
+                "Singapore"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Airjade航司的总部位于哪个城市？",
+        "A": "Beijing",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Airjade\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Airjade\";",
+        "actual_answer": [
+            [
+                "Beijing"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Flightexec航司的总部位于哪个城市？",
+        "A": "Montreal",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Flightexec\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Flightexec\";",
+        "actual_answer": [
+            [
+                "Montreal"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Jet Access Aviation Inc.航司的总部位于哪个城市？",
+        "A": "West Palm Beach",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Access Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Access Aviation Inc.\";",
+        "actual_answer": [
+            [
+                "West Palm Beach"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Aviation Advisor Inc.航司的总部位于哪个城市？",
+        "A": "Lake County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aviation Advisor Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aviation Advisor Inc.\";",
+        "actual_answer": [
+            [
+                "Lake County"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Executive Air Taxi Corporation航司的总部位于哪个城市？",
+        "A": "Bismarck",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Executive Air Taxi Corporation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Executive Air Taxi Corporation\";",
+        "actual_answer": [
+            [
+                "Bismarck"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Shenzhen Funian Business Aviation Co., Ltd航司的总部位于哪个城市？",
+        "A": "Shenzhen",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Shenzhen Funian Business Aviation Co., Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Shenzhen Funian Business Aviation Co., Ltd\";",
+        "actual_answer": [
+            [
+                "Shenzhen"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "SD Aviation航司的总部位于哪个城市？",
+        "A": "La Roche-sur-Yon",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"SD Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"SD Aviation\";",
+        "actual_answer": [
+            [
+                "La Roche-sur-Yon"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Bridger Aerospace航司的总部位于哪个城市？",
+        "A": "Belgrade",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bridger Aerospace\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bridger Aerospace\";",
+        "actual_answer": [
+            [
+                "Belgrade"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Southern Air Charter航司的总部位于哪个城市？",
+        "A": "Nassau",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Southern Air Charter\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Southern Air Charter\";",
+        "actual_answer": [
+            [
+                "Nassau"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Rvr Aviation LLC航司的总部位于哪个城市？",
+        "A": "Fort Worth",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Rvr Aviation LLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Rvr Aviation LLC\";",
+        "actual_answer": [
+            [
+                "Fort Worth"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Spot Air航司的总部位于哪个城市？",
+        "A": "Cairo",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Spot Air\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Spot Air\";",
+        "actual_answer": [
+            [
+                "Cairo"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Air Reldan Inc.航司的总部位于哪个城市？",
+        "A": "St. Tammany Parish",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air Reldan Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air Reldan Inc.\";",
+        "actual_answer": [
+            [
+                "St. Tammany Parish"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Fly-coop Legiszolgaltato Ltd航司的总部位于哪个城市？",
+        "A": "Općina Gola",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fly-coop Legiszolgaltato Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fly-coop Legiszolgaltato Ltd\";",
+        "actual_answer": [
+            [
+                "Općina Gola"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Ortac Limited航司的总部位于哪个城市？",
+        "A": "Jersey",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Ortac Limited\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Ortac Limited\";",
+        "actual_answer": [
+            [
+                "Jersey"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Proav Charters航司的总部位于哪个城市？",
+        "A": "Ocala",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Proav Charters\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Proav Charters\";",
+        "actual_answer": [
+            [
+                "Ocala"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Fly Business Aviation航司的总部位于哪个城市？",
+        "A": "Atizapan",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fly Business Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fly Business Aviation\";",
+        "actual_answer": [
+            [
+                "Atizapan"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Sinojet (Beijing) Company Ltd航司的总部位于哪个城市？",
+        "A": "Beijing",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sinojet (Beijing) Company Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sinojet (Beijing) Company Ltd\";",
+        "actual_answer": [
+            [
+                "Beijing"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Sacramento Air Charter航司的总部位于哪个城市？",
+        "A": "Lincoln",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sacramento Air Charter\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sacramento Air Charter\";",
+        "actual_answer": [
+            [
+                "Lincoln"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Berjaya Air航司的总部位于哪个城市？",
+        "A": "Selangor",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Berjaya Air\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Berjaya Air\";",
+        "actual_answer": [
+            [
+                "Selangor"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Executive Jet Charter Ltd航司的总部位于哪个城市？",
+        "A": "Farnborough",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Executive Jet Charter Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Executive Jet Charter Ltd\";",
+        "actual_answer": [
+            [
+                "Farnborough"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Acropolis Aviation Ltd航司的总部位于哪个城市？",
+        "A": "Farnborough",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Acropolis Aviation Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Acropolis Aviation Ltd\";",
+        "actual_answer": [
+            [
+                "Farnborough"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Aeroeste航司的总部位于哪个城市？",
+        "A": "Andres Ibanez Province",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aeroeste\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aeroeste\";",
+        "actual_answer": [
+            [
+                "Andres Ibanez Province"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "XCEL Jet航司的总部位于哪个城市？",
+        "A": "Ventura County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"XCEL Jet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"XCEL Jet\";",
+        "actual_answer": [
+            [
+                "Ventura County"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Corporate Aircraft Charter Pty航司的总部位于哪个城市？",
+        "A": "Adelaide",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Corporate Aircraft Charter Pty\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Corporate Aircraft Charter Pty\";",
+        "actual_answer": [
+            [
+                "Adelaide"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "AstonJet航司的总部位于哪个城市？",
+        "A": "Paris",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"AstonJet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"AstonJet\";",
+        "actual_answer": [
+            [
+                "Paris"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Clay Lacy Aviation航司的总部位于哪个城市？",
+        "A": "Los Angeles",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Clay Lacy Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Clay Lacy Aviation\";",
+        "actual_answer": [
+            [
+                "Los Angeles"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Business Jet Access航司的总部位于哪个城市？",
+        "A": "Dallas",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Business Jet Access\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Business Jet Access\";",
+        "actual_answer": [
+            [
+                "Dallas"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Airco Aircraft Charters Ltd航司的总部位于哪个城市？",
+        "A": "Edmonton",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Airco Aircraft Charters Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Airco Aircraft Charters Ltd\";",
+        "actual_answer": [
+            [
+                "Edmonton"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Caribbean Support & Flight Services航司的总部位于哪个城市？",
+        "A": "Cartagena",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Caribbean Support & Flight Services\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Caribbean Support & Flight Services\";",
+        "actual_answer": [
+            [
+                "Cartagena"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Performance Air S.A.航司的总部位于哪个城市？",
+        "A": "Ciudad de Mexico",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Performance Air S.A.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Performance Air S.A.\";",
+        "actual_answer": [
+            [
+                "Ciudad de Mexico"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Aspen Air Charter Co.航司的总部位于哪个城市？",
+        "A": "Aspen",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aspen Air Charter Co.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aspen Air Charter Co.\";",
+        "actual_answer": [
+            [
+                "Aspen"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Bighorn Airways Inc.航司的总部位于哪个城市？",
+        "A": "Sheridan",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bighorn Airways Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bighorn Airways Inc.\";",
+        "actual_answer": [
+            [
+                "Sheridan"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Wilderness Aircraft Company LLC航司的总部位于哪个城市？",
+        "A": "Fort Lauderdale",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Wilderness Aircraft Company LLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Wilderness Aircraft Company LLC\";",
+        "actual_answer": [
+            [
+                "Fort Lauderdale"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Bohlke International Airways航司的总部位于哪个城市？",
+        "A": "Kingshill",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bohlke International Airways\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bohlke International Airways\";",
+        "actual_answer": [
+            [
+                "Kingshill"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Jet Netherlands航司的总部位于哪个城市？",
+        "A": "Amsterdam",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Netherlands\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Netherlands\";",
+        "actual_answer": [
+            [
+                "Amsterdam"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "FlyXcite航司的总部位于哪个城市？",
+        "A": "Mississauga",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"FlyXcite\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"FlyXcite\";",
+        "actual_answer": [
+            [
+                "Mississauga"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Execaire航司的总部位于哪个城市？",
+        "A": "Montreal",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Execaire\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Execaire\";",
+        "actual_answer": [
+            [
+                "Montreal"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Hi Fly - Transportes Aereos S.A.航司的总部位于哪个城市？",
+        "A": "Lisbon",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Hi Fly - Transportes Aereos S.A.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Hi Fly - Transportes Aereos S.A.\";",
+        "actual_answer": [
+            [
+                "Lisbon"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Skyjets Europe航司的总部位于哪个城市？",
+        "A": "Brno",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Skyjets Europe\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Skyjets Europe\";",
+        "actual_answer": [
+            [
+                "Brno"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Heron Aviation航司的总部位于哪个城市？",
+        "A": "Lauchringen",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Heron Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Heron Aviation\";",
+        "actual_answer": [
+            [
+                "Lauchringen"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "East Coast Jets Inc.航司的总部位于哪个城市？",
+        "A": "Allentown",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"East Coast Jets Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"East Coast Jets Inc.\";",
+        "actual_answer": [
+            [
+                "Allentown"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Priority Jet航司的总部位于哪个城市？",
+        "A": "Cobb County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Priority Jet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Priority Jet\";",
+        "actual_answer": [
+            [
+                "Cobb County"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Execujet Australia Pty Ltd航司的总部位于哪个城市？",
+        "A": "Sydney",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Execujet Australia Pty Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Execujet Australia Pty Ltd\";",
+        "actual_answer": [
+            [
+                "Sydney"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Beijing Red Cross Emergency Med. Center航司的总部位于哪个城市？",
+        "A": "Beijing",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Beijing Red Cross Emergency Med. Center\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Beijing Red Cross Emergency Med. Center\";",
+        "actual_answer": [
+            [
+                "Beijing"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Fast Air航司的总部位于哪个城市？",
+        "A": "Winnipeg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fast Air\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fast Air\";",
+        "actual_answer": [
+            [
+                "Winnipeg"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "ESP Aviation航司的总部位于哪个城市？",
+        "A": "Veracruz",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"ESP Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"ESP Aviation\";",
+        "actual_answer": [
+            [
+                "Veracruz"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Vista Jet航司的总部位于哪个城市？",
+        "A": "Luqa",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Vista Jet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Vista Jet\";",
+        "actual_answer": [
+            [
+                "Luqa"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Jet Air Inc.航司的总部位于哪个城市？",
+        "A": "Galesburg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Air Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Air Inc.\";",
+        "actual_answer": [
+            [
+                "Galesburg"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Venture Aviation Group LLC航司的总部位于哪个城市？",
+        "A": "Greenville",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Venture Aviation Group LLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Venture Aviation Group LLC\";",
+        "actual_answer": [
+            [
+                "Greenville"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 50,
+        "correct_count": 50
+    }
+]

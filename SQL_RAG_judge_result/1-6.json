@@ -1,0 +1,929 @@
+[
+    {
+        "Q": "Pocatello的航空公司有哪些？",
+        "A": [
+            "Avcenter Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Pocatello\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Pocatello\";",
+        "actual_answer": [
+            [
+                "Avcenter Inc."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Senningerberg的航空公司有哪些？",
+        "A": [
+            "Luxaviation Luxembourg"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Senningerberg\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Senningerberg\";",
+        "actual_answer": [
+            [
+                "Luxaviation Luxembourg"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Marcoola的航空公司有哪些？",
+        "A": [
+            "Machjet International Pty Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Marcoola\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Marcoola\";",
+        "actual_answer": [
+            [
+                "Machjet International Pty Ltd"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Zapopan的航空公司有哪些？",
+        "A": [
+            "Vuela International"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Zapopan\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Zapopan\";",
+        "actual_answer": [
+            [
+                "Vuela International"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Bristol的航空公司有哪些？",
+        "A": [
+            "Capital Air Ambulance",
+            "Centreline AV Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bristol\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bristol\";",
+        "actual_answer": [
+            [
+                "Capital Air Ambulance"
+            ],
+            [
+                "Centreline AV Ltd"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Santa Ana的航空公司有哪些？",
+        "A": [
+            "AAC Jet",
+            "Paragon Airways",
+            "Regency Air LLC",
+            "STA Jets",
+            "West Coast Aviation Services"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Santa Ana\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Santa Ana\";",
+        "actual_answer": [
+            [
+                "AAC Jet"
+            ],
+            [
+                "Paragon Airways"
+            ],
+            [
+                "Regency Air LLC"
+            ],
+            [
+                "STA Jets"
+            ],
+            [
+                "West Coast Aviation Services"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Salzburg的航空公司有哪些？",
+        "A": [
+            "Airlink Luftverkehrs GmbH",
+            "Bairline",
+            "Porsche Air Service GmbH",
+            "Salzburg Jetaviation GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Salzburg\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Salzburg\";",
+        "actual_answer": [
+            [
+                "Airlink Luftverkehrs GmbH"
+            ],
+            [
+                "Bairline"
+            ],
+            [
+                "Porsche Air Service GmbH"
+            ],
+            [
+                "Salzburg Jetaviation GmbH"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Santa Barbara的航空公司有哪些？",
+        "A": [
+            "Silver Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Santa Barbara\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Santa Barbara\";",
+        "actual_answer": [
+            [
+                "Silver Air"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Marshfield的航空公司有哪些？",
+        "A": [
+            "Shoreline Aviation Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Marshfield\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Marshfield\";",
+        "actual_answer": [
+            [
+                "Shoreline Aviation Inc."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "San Jose的航空公司有哪些？",
+        "A": [
+            "QuikCharter"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"San Jose\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"San Jose\";",
+        "actual_answer": [
+            [
+                "QuikCharter"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Kazan的航空公司有哪些？",
+        "A": [
+            "Tulpar Aero Group Ltd."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Kazan\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Kazan\";",
+        "actual_answer": [
+            [
+                "Tulpar Aero Group Ltd."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Nuremberg的航空公司有哪些？",
+        "A": [
+            "Fai Aviation Group",
+            "Fly Away Boutique Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Nuremberg\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Nuremberg\";",
+        "actual_answer": [
+            [
+                "Fai Aviation Group"
+            ],
+            [
+                "Fly Away Boutique Aviation"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Upper Franconia的航空公司有哪些？",
+        "A": [
+            "Fair Air GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Upper Franconia\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Upper Franconia\";",
+        "actual_answer": [
+            [
+                "Fair Air GmbH"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Las Vegas的航空公司有哪些？",
+        "A": [
+            "Charter Airlines LLC",
+            "Cirrus Aviation Services",
+            "Prestige Air Group"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Las Vegas\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Las Vegas\";",
+        "actual_answer": [
+            [
+                "Charter Airlines LLC"
+            ],
+            [
+                "Cirrus Aviation Services"
+            ],
+            [
+                "Prestige Air Group"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Cartagena的航空公司有哪些？",
+        "A": [
+            "Caribbean Support & Flight Services"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Cartagena\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Cartagena\";",
+        "actual_answer": [
+            [
+                "Caribbean Support & Flight Services"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Memphis的航空公司有哪些？",
+        "A": [
+            "AB Jets",
+            "Mid South Jets Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Memphis\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Memphis\";",
+        "actual_answer": [
+            [
+                "AB Jets"
+            ],
+            [
+                "Mid South Jets Inc."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Charlottesville的航空公司有哪些？",
+        "A": [
+            "Meridian Air Group"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Charlottesville\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Charlottesville\";",
+        "actual_answer": [
+            [
+                "Meridian Air Group"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Columbus的航空公司有哪些？",
+        "A": [
+            "Lane Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Columbus\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Columbus\";",
+        "actual_answer": [
+            [
+                "Lane Aviation"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "San Luis Obispo County的航空公司有哪些？",
+        "A": [
+            "ACI Jet",
+            "Marc Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"San Luis Obispo County\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"San Luis Obispo County\";",
+        "actual_answer": [
+            [
+                "ACI Jet"
+            ],
+            [
+                "Marc Air"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Monterrey的航空公司有哪些？",
+        "A": [
+            "Execujet Caribbean"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Monterrey\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Monterrey\";",
+        "actual_answer": [
+            [
+                "Execujet Caribbean"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Beijing的航空公司有哪些？",
+        "A": [
+            "Beijing Red Cross Emergency Med. Center",
+            "Deer Jet (Beijing)  Co., Ltd.",
+            "Sinojet (Beijing) Company Ltd",
+            "Yasheng Medical Ambulance Flight (Beijing) Co., Ltd.",
+            "Beijing Airlines",
+            "Future Air Co.Ltd",
+            "AIR TOJOY",
+            "Aladdin Jet Co., Ltd",
+            "Airjade",
+            "Global Wings Aviation",
+            "OHFLYER Aviation Technology Co., Ltd."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Beijing\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Beijing\";",
+        "actual_answer": [
+            [
+                "Beijing Red Cross Emergency Med. Center"
+            ],
+            [
+                "Deer Jet (Beijing)  Co., Ltd."
+            ],
+            [
+                "Sinojet (Beijing) Company Ltd"
+            ],
+            [
+                "Yasheng Medical Ambulance Flight (Beijing) Co., Ltd."
+            ],
+            [
+                "Beijing Airlines"
+            ],
+            [
+                "Future Air Co.Ltd"
+            ],
+            [
+                "AIR TOJOY"
+            ],
+            [
+                "Aladdin Jet Co., Ltd"
+            ],
+            [
+                "Airjade"
+            ],
+            [
+                "Global Wings Aviation"
+            ],
+            [
+                "OHFLYER Aviation Technology Co., Ltd."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Adelaide的航空公司有哪些？",
+        "A": [
+            "Corporate Aircraft Charter Pty"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Adelaide\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Adelaide\";",
+        "actual_answer": [
+            [
+                "Corporate Aircraft Charter Pty"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Lexington County的航空公司有哪些？",
+        "A": [
+            "Eagle Aviation Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lexington County\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lexington County\";",
+        "actual_answer": [
+            [
+                "Eagle Aviation Inc."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Farnborough的航空公司有哪些？",
+        "A": [
+            "Acropolis Aviation Ltd",
+            "Executive Jet Charter Ltd",
+            "Gama Aviation Ltd(UK)",
+            "Voluxis"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Farnborough\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Farnborough\";",
+        "actual_answer": [
+            [
+                "Acropolis Aviation Ltd"
+            ],
+            [
+                "Executive Jet Charter Ltd"
+            ],
+            [
+                "Gama Aviation Ltd(UK)"
+            ],
+            [
+                "Voluxis"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Gironde的航空公司有哪些？",
+        "A": [
+            "Airlec Air Espace"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Gironde\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Gironde\";",
+        "actual_answer": [
+            [
+                "Airlec Air Espace"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Milan的航空公司有哪些？",
+        "A": [
+            "Avionord S.R.L."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Milan\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Milan\";",
+        "actual_answer": [
+            [
+                "Avionord S.R.L."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Oklahoma County的航空公司有哪些？",
+        "A": [
+            "American Jet Charter Inc.",
+            "Meta Special Aerospace Transportation, Llc",
+            "Oklahoma Aviation LLC",
+            "Soulbird Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Oklahoma County\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Oklahoma County\";",
+        "actual_answer": [
+            [
+                "American Jet Charter Inc."
+            ],
+            [
+                "Meta Special Aerospace Transportation, Llc"
+            ],
+            [
+                "Oklahoma Aviation LLC"
+            ],
+            [
+                "Soulbird Aviation LLC"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Casablanca的航空公司有哪些？",
+        "A": [
+            "Sarah Airways"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Casablanca\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Casablanca\";",
+        "actual_answer": [
+            [
+                "Sarah Airways"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Shanxi的航空公司有哪些？",
+        "A": [
+            "Shanxi Victory General Aviation Co., Ltd."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Shanxi\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Shanxi\";",
+        "actual_answer": [
+            [
+                "Shanxi Victory General Aviation Co., Ltd."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "South Lanarkshire的航空公司有哪些？",
+        "A": [
+            "Air Charter Scotland"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"South Lanarkshire\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"South Lanarkshire\";",
+        "actual_answer": [
+            [
+                "Air Charter Scotland"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Calgary的航空公司有哪些？",
+        "A": [
+            "Kenn Borek Air Ltd",
+            "North Cariboo Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Calgary\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Calgary\";",
+        "actual_answer": [
+            [
+                "Kenn Borek Air Ltd"
+            ],
+            [
+                "North Cariboo Air"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Baton Rouge的航空公司有哪些？",
+        "A": [
+            "Baton Rouge Air Charter And Management Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Baton Rouge\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Baton Rouge\";",
+        "actual_answer": [
+            [
+                "Baton Rouge Air Charter And Management Inc."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Naples的航空公司有哪些？",
+        "A": [
+            "Jet 1 Charter Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Naples\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Naples\";",
+        "actual_answer": [
+            [
+                "Jet 1 Charter Inc."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Sedgwick County的航空公司有哪些？",
+        "A": [
+            "Clemens Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sedgwick County\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sedgwick County\";",
+        "actual_answer": [
+            [
+                "Clemens Aviation LLC"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Kalkara的航空公司有哪些？",
+        "A": [
+            "Air X Charter Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Kalkara\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Kalkara\";",
+        "actual_answer": [
+            [
+                "Air X Charter Ltd"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Liberal的航空公司有哪些？",
+        "A": [
+            "Lyddon Aero Center"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Liberal\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Liberal\";",
+        "actual_answer": [
+            [
+                "Lyddon Aero Center"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Mobile的航空公司有哪些？",
+        "A": [
+            "Jet Services Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Mobile\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Mobile\";",
+        "actual_answer": [
+            [
+                "Jet Services Inc."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Miramar的航空公司有哪些？",
+        "A": [
+            "Aeromas"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Miramar\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Miramar\";",
+        "actual_answer": [
+            [
+                "Aeromas"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Austin的航空公司有哪些？",
+        "A": [
+            "Eviair LLC",
+            "Saturn Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Austin\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Austin\";",
+        "actual_answer": [
+            [
+                "Eviair LLC"
+            ],
+            [
+                "Saturn Aviation LLC"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Hennepin County的航空公司有哪些？",
+        "A": [
+            "Aviation Charter Inc.",
+            "Club Jet Charter LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Hennepin County\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Hennepin County\";",
+        "actual_answer": [
+            [
+                "Aviation Charter Inc."
+            ],
+            [
+                "Club Jet Charter LLC"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Sofia的航空公司有哪些？",
+        "A": [
+            "EGT Jet Ltd",
+            "Heli Air Services"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sofia\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sofia\";",
+        "actual_answer": [
+            [
+                "EGT Jet Ltd"
+            ],
+            [
+                "Heli Air Services"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Roskilde的航空公司有哪些？",
+        "A": [
+            "Copenhagen Airtaxi A/s",
+            "Flexflight Group"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Roskilde\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Roskilde\";",
+        "actual_answer": [
+            [
+                "Copenhagen Airtaxi A/s"
+            ],
+            [
+                "Flexflight Group"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Sioux County的航空公司有哪些？",
+        "A": [
+            "Airflair Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sioux County\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sioux County\";",
+        "actual_answer": [
+            [
+                "Airflair Inc."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "West Palm Beach的航空公司有哪些？",
+        "A": [
+            "Custom Jet Charters LLC",
+            "Executive Airlink Inc.",
+            "Executive Aviation Corporation",
+            "Gama Aviation LLC",
+            "Jet Access Aviation Inc.",
+            "Phenix Jet",
+            "Turnkey Jet Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"West Palm Beach\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"West Palm Beach\";",
+        "actual_answer": [
+            [
+                "Custom Jet Charters LLC"
+            ],
+            [
+                "Executive Airlink Inc."
+            ],
+            [
+                "Executive Aviation Corporation"
+            ],
+            [
+                "Gama Aviation LLC"
+            ],
+            [
+                "Jet Access Aviation Inc."
+            ],
+            [
+                "Phenix Jet"
+            ],
+            [
+                "Turnkey Jet Inc."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Lake County的航空公司有哪些？",
+        "A": [
+            "Aviation Advisor Inc.",
+            "B. Coleman Aviation",
+            "Coleman Jet LLC",
+            "Gary Jet Center"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lake County\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lake County\";",
+        "actual_answer": [
+            [
+                "Aviation Advisor Inc."
+            ],
+            [
+                "B. Coleman Aviation"
+            ],
+            [
+                "Coleman Jet LLC"
+            ],
+            [
+                "Gary Jet Center"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Monroe的航空公司有哪些？",
+        "A": [
+            "Charter Jet Transport Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Monroe\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Monroe\";",
+        "actual_answer": [
+            [
+                "Charter Jet Transport Inc."
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Medicine Hat的航空公司有哪些？",
+        "A": [
+            "Super T Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Medicine Hat\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Medicine Hat\";",
+        "actual_answer": [
+            [
+                "Super T Aviation"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Oberursel的航空公司有哪些？",
+        "A": [
+            "Hype Private Jets GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Oberursel\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Oberursel\";",
+        "actual_answer": [
+            [
+                "Hype Private Jets GmbH"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Plymouth的航空公司有哪些？",
+        "A": [
+            "Pro Airways LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Plymouth\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Plymouth\";",
+        "actual_answer": [
+            [
+                "Pro Airways LLC"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "Q": "Sellersburg的航空公司有哪些？",
+        "A": [
+            "Private Flite Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sellersburg\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sellersburg\";",
+        "actual_answer": [
+            [
+                "Private Flite Aviation"
+            ]
+        ],
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 50,
+        "correct_count": 50
+    }
+]
