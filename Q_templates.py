@@ -101,7 +101,7 @@ Q_templates_easy = {
         "id": "1-20",
         "Q_template": "{aircraft_model_name}机型的翼展是多少米？",
         "SQL_template": '''SELECT aircraft_width FROM dc_aircraft_model WHERE name = "{aircraft_model_name}" AND aircraft_width IS NOT NULL;''',
-        "query_database": "ai_database_dev",
+        "query_database": "data_center_dev",
         "category": "easy"
     },
     "{aircraft_model_name}机型的起飞重量是多少吨？": {
@@ -129,7 +129,7 @@ Q_templates_easy = {
         "id": "1-24",
         "Q_template": "{aircraft_model_name}机型的飞行高度范围是多少？",
         "SQL_template": '''SELECT certified_ceiling FROM dc_aircraft_model WHERE name = "{aircraft_model_name}" AND certified_ceiling IS NOT NULL LIMIT 1;''',
-        "query_database": "ai_database_dev",
+        "query_database": "data_center_release",
         "category": "easy"
     },
     "Fleet information of {supplier_name}?": {
