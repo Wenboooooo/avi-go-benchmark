@@ -65,6 +65,20 @@ claude_HEADERS = {
     "Authorization": f"Bearer {claude_API_KEY}"
 }
 
+# TODO: 将后面所有的generate函数重构整合到一个函数中，根据llm_name选择调用哪个模型。llm_name是具体的模型名称，而不是模型种类。比如gpt-4o, 而不是gpt。下面的gpt4o_generate、kimi_generate、qwen_generate、claude_generate等之后都要删掉。
+def LLM_generate(text, image_paths=[], temp=None, presence_penalty=None, is_print=False, llm_name='gpt4o'):
+    if llm_name == 'gpt4o':
+        return gpt4o_generate(text, image_paths, temp, presence_penalty, is_print)
+    elif llm_name == 'kimi':
+        return kimi_generate(text, image_paths, temp, presence_penalty, is_print)
+    elif llm_name == 'qwen':
+        return qwen_generate(text, image_paths, temp, presence_penalty, is_print)
+    elif llm_name == 'claude':
+        return claude_generate(text, image_paths, temp, presence_penalty, is_print)
+    else:
+        return gpt4o_generate(text, image_paths, temp, presence_penalty, is_print)
+
+
 def gpt4o_generate(text, image_paths=[], temp=None, presence_penalty=None, is_print=False):
     # if is_print:
     #     print(colored(text, 'green'))
@@ -177,17 +191,29 @@ def LLM_judge(question, ref_answer, actual_response, is_print=False, llm_type='g
         print(colored(result, 'red'))
     return result
 
-def sql_judge(question, ref_answer, ref_sql, actual_sql, connection, is_print=False):
+def SQL_judge(ref_sql, actual_sql, connection, actual_result=None, is_print=False):
+    if (not actual_sql) and (not actual_result):
+        return 'no'
     num = 10
     cursor = connection.cursor()
+    ref_sql,  actual_sql = ref_sql.strip(), actual_sql.strip()
     if ref_sql == actual_sql:
+        if is_print:
+            print(colored("same sql", 'red'))
         return 'yes'
     else:
-        cursor.execute(ref_sql)
-        result = cursor.fetchall()
-        cursor.execute(actual_sql)
-        result1 = cursor.fetchall()
-        if result == result1:
+        if is_print:
+            print(colored(ref_sql, 'green'))
+            print(colored(actual_sql, 'yellow'))
+        ref_result = cursor.fetchall()
+        if not actual_result:
+            cursor.execute(actual_sql)
+            actual_result = cursor.fetchall()
+        if is_print:
+            print(colored(ref_result, 'green'))
+            print(colored(actual_result, 'yellow'))
+            print(colored(ref_result == actual_result, 'red'))
+        if ref_result == actual_result:
             return 'yes'
         else:
             return 'no'
