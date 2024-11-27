@@ -1,0 +1,328 @@
+[
+    {
+        "Q": "Airbus ACJ A318 Elite的最大载客量是多少？",
+        "A": [
+            19
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ A318 Elite\";",
+        "actual_answer": [
+            [
+                19
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 20的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 20\";",
+        "actual_answer": [
+            [
+                9
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna 441 Conquest II的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna 441 Conquest II\";",
+        "actual_answer": [
+            [
+                9
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Boeing BBJ2的最大载客量是多少？",
+        "A": [
+            22
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Boeing BBJ2\";",
+        "actual_answer": [
+            [
+                22
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechcraft King Air 90的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 90\";",
+        "actual_answer": [
+            [
+                8
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Global Express XRS的最大载客量是多少？",
+        "A": [
+            15
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global Express XRS\";",
+        "actual_answer": [
+            [
+                15
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Airbus A320的最大载客量是多少？",
+        "A": [
+            180
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Airbus A320\";",
+        "actual_answer": [
+            [
+                180
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna 182的最大载客量是多少？",
+        "A": [
+            4
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna 182\";",
+        "actual_answer": [
+            [
+                4
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Embraer Praetor 600的最大载客量是多少？",
+        "A": [
+            10
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Embraer Praetor 600\";",
+        "actual_answer": [
+            [
+                10
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Piper PA-28的最大载客量是多少？",
+        "A": [
+            3
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-28\";",
+        "actual_answer": [
+            [
+                3
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Gulfstream G100的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G100\";",
+        "actual_answer": [
+            [
+                8
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 2000的最大载客量是多少？",
+        "A": [
+            10
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000\";",
+        "actual_answer": [
+            [
+                10
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation Ultra的最大载客量是多少？",
+        "A": [
+            11
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Ultra\";",
+        "actual_answer": [
+            [
+                11
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Learjet 35A的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 35A\";",
+        "actual_answer": [
+            [
+                8
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna Citation CJ2+的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ2+\";",
+        "actual_answer": [
+            [
+                8
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Pilatus PC-24的最大载客量是多少？",
+        "A": [
+            11
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Pilatus PC-24\";",
+        "actual_answer": [
+            [
+                11
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 2000S的最大载客量是多少？",
+        "A": [
+            10
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000S\";",
+        "actual_answer": [
+            [
+                10
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Embraer Legacy 650的最大载客量是多少？",
+        "A": [
+            13
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 650\";",
+        "actual_answer": [
+            [
+                13
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Cessna 340的最大载客量是多少？",
+        "A": [
+            5
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna 340\";",
+        "actual_answer": [
+            [
+                5
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 900C的最大载客量是多少？",
+        "A": [
+            14
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900C\";",
+        "actual_answer": [
+            [
+                14
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dassault Falcon 50的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 50\";",
+        "actual_answer": [
+            [
+                9
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Airbus A319的最大载客量是多少？",
+        "A": [
+            144
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Airbus A319\";",
+        "actual_answer": [
+            [
+                144
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hawker 750的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Hawker 750\";",
+        "actual_answer": [
+            [
+                8
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Beechjet 400的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 400\";",
+        "actual_answer": [
+            [
+                8
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Bombardier Learjet 55的最大载客量是多少？",
+        "A": [
+            7
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 55\";",
+        "actual_answer": "",
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 25,
+        "correct_count": 25
+    }
+]

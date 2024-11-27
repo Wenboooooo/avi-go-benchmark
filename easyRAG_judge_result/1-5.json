@@ -1,0 +1,278 @@
+[
+    {
+        "Q": "飞机注册号为N404TC的飞机是哪一家公司的？",
+        "A": "Airsf Flight Service",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N404TC\";",
+        "actual_answer": [
+            [
+                "Airsf Flight Service"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为C-FJFW的飞机是哪一家公司的？",
+        "A": "Chartright Air Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FJFW\";",
+        "actual_answer": [
+            [
+                "Chartright Air Inc."
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N787CH的飞机是哪一家公司的？",
+        "A": "Cirrus Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N787CH\";",
+        "actual_answer": [
+            [
+                "Cirrus Aviation Services"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N97FT的飞机是哪一家公司的？",
+        "A": "Vistajet Us Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N97FT\";",
+        "actual_answer": [
+            [
+                "Vistajet Us Inc."
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为C-FPCP的飞机是哪一家公司的？",
+        "A": "Airco Aircraft Charters Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FPCP\";",
+        "actual_answer": [
+            [
+                "Airco Aircraft Charters Ltd"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N631AD的飞机是哪一家公司的？",
+        "A": "Priester Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N631AD\";",
+        "actual_answer": [
+            [
+                "Priester Aviation"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为C-GVFX的飞机是哪一家公司的？",
+        "A": "Execaire",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-GVFX\";",
+        "actual_answer": [
+            [
+                "Execaire"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N1VR的飞机是哪一家公司的？",
+        "A": "West Coast Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N1VR\";",
+        "actual_answer": [
+            [
+                "West Coast Aviation Services"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为EC-MNH的飞机是哪一家公司的？",
+        "A": "Gestair",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"EC-MNH\";",
+        "actual_answer": [
+            [
+                "Gestair"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N82EM的飞机是哪一家公司的？",
+        "A": "Skystream Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N82EM\";",
+        "actual_answer": [
+            [
+                "Skystream Jet"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N631JS的飞机是哪一家公司的？",
+        "A": "Gold Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N631JS\";",
+        "actual_answer": [
+            [
+                "Gold Aviation"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为D-CSCB的飞机是哪一家公司的？",
+        "A": "Silver Cloud Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-CSCB\";",
+        "actual_answer": [
+            [
+                "Silver Cloud Air"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N698RS的飞机是哪一家公司的？",
+        "A": "Pinnacle Air Charter LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N698RS\";",
+        "actual_answer": [
+            [
+                "Pinnacle Air Charter LLC"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N224CX的飞机是哪一家公司的？",
+        "A": "Mira Vista Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N224CX\";",
+        "actual_answer": [
+            [
+                "Mira Vista Aviation"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N645AT的飞机是哪一家公司的？",
+        "A": "Alaska Air Transit",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N645AT\";",
+        "actual_answer": "",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "Q": "飞机注册号为C-FSEP的飞机是哪一家公司的？",
+        "A": "Image Air Charter",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FSEP\";",
+        "actual_answer": [
+            [
+                "Image Air Charter"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为CN-SRA的飞机是哪一家公司的？",
+        "A": "Sarah Airways",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"CN-SRA\";",
+        "actual_answer": [
+            [
+                "Sarah Airways"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为CX-SCA的飞机是哪一家公司的？",
+        "A": "Aeromas",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"CX-SCA\";",
+        "actual_answer": [
+            [
+                "Aeromas"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N510AN的飞机是哪一家公司的？",
+        "A": "Solairus Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N510AN\";",
+        "actual_answer": [
+            [
+                "Solairus Aviation"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N228SS的飞机是哪一家公司的？",
+        "A": "Vistajet Us Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N228SS\";",
+        "actual_answer": [
+            [
+                "Vistajet Us Inc."
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N178WF的飞机是哪一家公司的？",
+        "A": "Skytech Travel LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N178WF\";",
+        "actual_answer": [
+            [
+                "Skytech Travel LLC"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为ZS-TSW的飞机是哪一家公司的？",
+        "A": "Comair Flight Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"ZS-TSW\";",
+        "actual_answer": [
+            [
+                "Comair Flight Services"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N790Z的飞机是哪一家公司的？",
+        "A": "Hangar 7 Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N790Z\";",
+        "actual_answer": [
+            [
+                "Hangar 7 Aviation"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N605BX的飞机是哪一家公司的？",
+        "A": "XCEL Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N605BX\";",
+        "actual_answer": [
+            [
+                "XCEL Jet"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "飞机注册号为N30GT的飞机是哪一家公司的？",
+        "A": "CSM Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N30GT\";",
+        "actual_answer": [
+            [
+                "CSM Aviation"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "correct_rate": 96.0,
+        "sample_size": 25,
+        "correct_count": 24
+    }
+]

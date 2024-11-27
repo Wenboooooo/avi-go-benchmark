@@ -1,0 +1,319 @@
+[
+    {
+        "Q": "Gary Johnson Field机场在哪个国家哪个城市？",
+        "A": "Fountain, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Gary Johnson Field\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Fountain"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Sofia West机场在哪个国家哪个城市？",
+        "A": "Kondofrey, Bulgaria",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Sofia West\";",
+        "actual_answer": [
+            [
+                "Bulgaria",
+                "Kondofrey"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Lometa Air Strip机场在哪个国家哪个城市？",
+        "A": "Lometa, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Lometa Air Strip\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Lometa"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Huntington Mun机场在哪个国家哪个城市？",
+        "A": "Huntington, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Huntington Mun\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Huntington"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Tibooburra机场在哪个国家哪个城市？",
+        "A": "Tibooburra, Australia",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Tibooburra\";",
+        "actual_answer": [
+            [
+                "Australia",
+                "Tibooburra"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Hidden River机场在哪个国家哪个城市？",
+        "A": "Edinburg, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Hidden River\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Edinburg"
+            ],
+            [
+                "United States",
+                "Sarasota"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Maran机场在哪个国家哪个城市？",
+        "A": "Fountain, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Maran\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Fountain"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Erwinna Private机场在哪个国家哪个城市？",
+        "A": "Erwinna, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Erwinna Private\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Erwinna"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "King's机场在哪个国家哪个城市？",
+        "A": "Milton-freewater, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"King's\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Milton-freewater"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Al Ain Airport机场在哪个国家哪个城市？",
+        "A": "Al Ain, United Arab Emirates",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Al Ain Airport\";",
+        "actual_answer": [
+            [
+                "United Arab Emirates",
+                "Al Ain"
+            ],
+            [
+                "United Arab Emirates",
+                "Al Ain"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Arnold Palmer Regional Airport机场在哪个国家哪个城市？",
+        "A": "Latrobe, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Arnold Palmer Regional Airport\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Latrobe"
+            ],
+            [
+                "United States",
+                "Latrobe"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Tri-Modal Air Park机场在哪个国家哪个城市？",
+        "A": "Georgetown, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Tri-Modal Air Park\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Georgetown"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Casper Airport机场在哪个国家哪个城市？",
+        "A": "Casper, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Casper Airport\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Casper"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Pokemouche机场在哪个国家哪个城市？",
+        "A": "Caraquet, Canada",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Pokemouche\";",
+        "actual_answer": [
+            [
+                "Canada",
+                "Caraquet"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Sembawang机场在哪个国家哪个城市？",
+        "A": "Singapore, Singapore",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Sembawang\";",
+        "actual_answer": [
+            [
+                "Singapore",
+                "Singapore"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Walnut Grove机场在哪个国家哪个城市？",
+        "A": "Lancaster, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Walnut Grove\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Lancaster"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Ian Fleming Intl机场在哪个国家哪个城市？",
+        "A": "Ocho Rios, Jamaica",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Ian Fleming Intl\";",
+        "actual_answer": [
+            [
+                "Jamaica",
+                "Ocho Rios"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Honokaa Airstrip机场在哪个国家哪个城市？",
+        "A": "Hawaii, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Honokaa Airstrip\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Hawaii"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Topsail Airpark机场在哪个国家哪个城市？",
+        "A": "Holly Ridge, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Topsail Airpark\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Holly Ridge"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Great Barrier机场在哪个国家哪个城市？",
+        "A": "Great Barrier Island / Aotea, New Zealand",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Great Barrier\";",
+        "actual_answer": [
+            [
+                "New Zealand",
+                "Great Barrier Island / Aotea"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Sky Ranch Ii机场在哪个国家哪个城市？",
+        "A": "Belleview, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Sky Ranch Ii\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Belleview"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Leona Ranch机场在哪个国家哪个城市？",
+        "A": "Kinney, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Leona Ranch\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Kinney"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Whalen Field机场在哪个国家哪个城市？",
+        "A": "Sudlersville, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Whalen Field\";",
+        "actual_answer": [
+            [
+                "United States",
+                "Sudlersville"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Manono机场在哪个国家哪个城市？",
+        "A": "Manono, Democratic Republic of the Congo",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Manono\";",
+        "actual_answer": [
+            [
+                "Democratic Republic of the Congo",
+                "Manono"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "Q": "Dutse机场在哪个国家哪个城市？",
+        "A": "Dutse, Nigeria",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Dutse\";",
+        "actual_answer": [
+            [
+                "Nigeria",
+                "Dutse"
+            ]
+        ],
+        "is_correct(LLM_judge)": "yes"
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 25,
+        "correct_count": 25
+    }
+]
