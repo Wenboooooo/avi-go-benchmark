@@ -1,0 +1,1339 @@
+[
+    {
+        "Q": "Embraer Phenom 300属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Phenom 300\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Global 6000属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Global 6000\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Challenger 850属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Challenger 850\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G450属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G450\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Challenger 605属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Challenger 605\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Global Express属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Global Express\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 7X属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 7X\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 8X属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 8X\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G550属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G550\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 2000LX属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 2000LX\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 45属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 45\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation Encore+属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Encore+\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 800XPi属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 800XPi\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation Mustang属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Mustang\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Pilatus PC-12属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Pilatus PC-12\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G200属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G200\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation Latitude属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Latitude\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream GIV属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream GIV\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Challenger 300属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Challenger 300\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Global Express XRS属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Global Express XRS\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation Bravo属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Bravo\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 50属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 50\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation Sovereign属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Sovereign\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation X属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation X\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 35A属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 35A\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation XLS属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation XLS\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 800XP属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 800XP\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream GV属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream GV\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Embraer Praetor 600属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Praetor 600\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 60属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 60\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft King Air B200属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air B200\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation XLS+属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation XLS+\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 75属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 75\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 900EX属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 900EX\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 2000属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 2000\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 850XP属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 850XP\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft King Air 200属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 200\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation CJ1+属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation CJ1+\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 900B属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 900B\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft Baron属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft Baron\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft Premier I属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft Premier I\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Global 5000属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Global 5000\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation III属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation III\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Challenger 604属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Challenger 604\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft King Air 350属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 350\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 50EX属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 50EX\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Nextant 400XT属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Nextant 400XT\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation VII属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation VII\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation II属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation II\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 800B属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 800B\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G650属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G650\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation Encore属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Encore\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation CJ3+属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation CJ3+\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation Ultra属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Ultra\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft King Air 90属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 90\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Challenger 350属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Challenger 350\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation CJ3属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation CJ3\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 208属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 208\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 31A属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 31A\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Embraer Legacy 650属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Legacy 650\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Embraer Legacy 600属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Legacy 600\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 900XP属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 900XP\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft 1900D属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft 1900D\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 400XP属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 400XP\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G150属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G150\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation CJ2+属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation CJ2+\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation CJ1属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation CJ1\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Global 7500属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Global 7500\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Challenger 650属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Challenger 650\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cirrus SR22属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cirrus SR22\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Pilatus PC-24属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Pilatus PC-24\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 2000S属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 2000S\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 2000EX属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 2000EX\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Embraer Phenom 100属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Phenom 100\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 40属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 40\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Boeing BBJ属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "VIP Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Boeing BBJ\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G600属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G600\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation V属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation V\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G650ER属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G650ER\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Embraer Phenom 300E属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Phenom 300E\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 10属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 10\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Diamond DA62属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Diamond DA62\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 4000属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 4000\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft King Air 300属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 300\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Boeing 737属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Boeing 737\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 900属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 900\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Embraer Legacy 500属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Legacy 500\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 900C属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 900C\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Honda HondaJet属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Honda HondaJet\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Boeing BBJ3属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "VIP Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Boeing BBJ3\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 1000属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 1000\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation M2属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation M2\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 900DX属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 900DX\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation VI属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation VI\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Challenger 601属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Challenger 601\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation CJ2属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation CJ2\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 400属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 400\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 182属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 182\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Embraer ERJ 135属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer ERJ 135\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G280属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G280\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Piper PA属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Piper PA\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation CJ4属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation CJ4\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream GIV-SP属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream GIV-SP\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G500属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G500\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 800属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 800\" LIMIT 1;\n"
+    },
+    {
+        "Q": "BAe 125-800属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"BAe 125-800\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G350属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G350\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation Longitude属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Longitude\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation I/SP属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation I/SP\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation Sovereign+属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Sovereign+\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft King Air 350i属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 350i\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Embraer E190属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer E190\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 2000EX EASy属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 2000EX EASy\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Airbus A340属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Airbus A340\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 421属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 421\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft King Air 260属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 260\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Piper PA-32属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Piper PA-32\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier CRJ-200属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier CRJ-200\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Embraer ERJ 145属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer ERJ 145\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 402属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 402\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft 1900C属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft 1900C\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 35属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 35\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Global 6500属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Global 6500\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Airbus ACJ A318 Elite属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "VIP Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Airbus ACJ A318 Elite\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft King Air 100属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 100\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 70属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 70\" LIMIT 1;\n"
+    },
+    {
+        "Q": "BAe 125-700属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"BAe 125-700\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Embraer Lineage 1000属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Lineage 1000\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 100属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 100\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft King Air 250属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 250\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 750属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 750\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Piper PA-34属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Piper PA-34\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Global 5500属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Global 5500\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 441 Conquest II属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 441 Conquest II\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G100属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G100\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Airbus ACJ A319属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "VIP Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Airbus ACJ A319\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Airbus A320属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Airbus A320\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 340属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 340\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 20F属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 20F\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 414属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 414\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 55属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 55\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation X+属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation X+\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 303属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 303\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 404属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 404\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Piper PA-46属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Piper PA-46\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 800SP属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 800SP\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Embraer Legacy 450属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Legacy 450\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Challenger 600属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Challenger 600\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 36属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 36\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Airbus A330属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Airbus A330\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 900LX属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 900LX\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 20属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 20\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G300属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G300\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 210属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 210\" LIMIT 1;\n"
+    },
+    {
+        "Q": "BAe 125-400属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"BAe 125-400\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream GIII属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream GIII\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Gulfstream G700属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G700\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation Jet属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Jet\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Airbus A319属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Airbus A319\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Boeing 767属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Boeing 767\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation I属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation I\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cirrus SR20属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cirrus SR20\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 172属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 172\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 400A属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 400A\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 152属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 152\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Piper PA-28属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Piper PA-28\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 425属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 425\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft King Air 360属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 360\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 150属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 150\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna Citation Excel属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Excel\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Airbus ACJ A320属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "VIP Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Airbus ACJ A320\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Dassault Falcon 6X属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 6X\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Boeing BBJ2属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "VIP Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Boeing BBJ2\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Boeing 787属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Boeing 787\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Airbus ACJ属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "VIP Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Airbus ACJ\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft Travel Air属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft Travel Air\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 207属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 207\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 55C属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 55C\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 850XPi属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 850XPi\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Embraer Praetor 500属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Praetor 500\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Airbus A321属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Airbus A321\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 31属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 31\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechjet 65属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechjet 65\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechjet 400属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechjet 400\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 700属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 700\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Hawker 700A属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 700A\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 206属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 206\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 185属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 185\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Bombardier Learjet 31ER属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 31ER\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Beechcraft King Air 350iER属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 350iER\" LIMIT 1;\n"
+    },
+    {
+        "Q": "Cessna 335属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 335\" LIMIT 1;\n"
+    }
+]
