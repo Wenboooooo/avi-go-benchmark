@@ -4,18 +4,41 @@ import random
 import numpy as np
 from os import path as osp
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from utils import gpt4o_generate, LLM_judge, kimi_generate, qwen_generate, claude_generate
+import utils
+from utils import gpt4o_generate, LLM_judge, SQL_judge, kimi_generate, qwen_generate, claude_generate
 import easy_search
+from sentence_transformers import SentenceTransformer
+from Q_templates import *
+import re
 
 random_seed = 44
-sample_size = 25
+sample_size = 50
 random.seed(random_seed)
 
 data_dir = "synthetic_data"
-output_dir = "easyRAG_judge_result"
+output_dir = "SQL_RAG_judge_result"
 
 test_files = os.listdir(data_dir)
+test_files = ["1-8.json", "1-9.json", "1-14.json", "1-20.json", "1-22.json", "1-25.json"]
+# test_files = ['1-10.json', '1-17.json', '1-4.json', '1-8.json', '1-21.json', '1-20.json']
+print(test_files)
 
+
+llm_name = 'gpt4o'
+retrieval_model = SentenceTransformer('all-MiniLM-L6-v2')
+Q_files = os.listdir(data_dir)
+Q_files = [json.load(open(osp.join(data_dir, file)[:30], 'r')) for file in Q_files]
+Q_templates = {item['Q']: item for sublist in Q_files for item in sublist}
+
+# Q_templates = Q_templates_easy | Q_templates_complex
+# benchmark_questions = [re.sub(r'\{[^}]*\}', '', _) for _ in list(Q_templates.keys())]
+benchmark_questions = list(Q_templates.keys())
+if osp.exists('benchmark_question_embeddings.npy'):
+    benchmark_question_embeddings = np.load('benchmark_question_embeddings.npy')
+else:
+    benchmark_question_embeddings = easy_search.preprocess_passages(retrieval_model, benchmark_questions, save_path='benchmark_question_embeddings.npy')
+databases = ["ai_database_dev", "data_center_dev", "data_center_release"]
+connections = {database: utils.connect_to_database(database) for database in databases}
 
 def process_file(file):
     try:
@@ -45,21 +68,20 @@ def process_file(file):
         print(f"Error processing file {file}: {e}")
 
 
-def process_file_by_easyRAG(file):
-    passages, origin_data = easy_search.get_easy_question_passages()
-    passage_embeddings = np.load('passage_embeddings.npy')
+def process_file_by_SQL_RAG(file):
+    connections = {database: utils.connect_to_database(database) for database in databases}
     try:
         data = json.load(open(osp.join(data_dir, file), 'r', encoding='utf-8'))
 
         sampled_data = random.sample(data, min(sample_size, len(data)))
         correct_count = 0
         for line in sampled_data:
-            # actual_answer = gpt4o_generate(line['Q'], is_print=False)
-            # actual_answer = kimi_generate(line['Q'], is_print=False)
-            actual_answer = easy_search.easy_RAG_LLM(line['Q'], passages, passage_embeddings, origin_data)
-            is_correct = LLM_judge(line['Q'], line['A'], actual_answer, is_print=True, llm_type='gpt4o')
-            line['actual_answer'] = actual_answer
-            line['is_correct(LLM_judge)'] = is_correct
+            print(line['Q'])
+            sql, query_database, result = easy_search.SQL_RAG(line['Q'], Q_templates, benchmark_question_embeddings, retrieval_model, llm_name, connections, only_need_sql=False)
+            is_correct = SQL_judge(line['SQL'], sql, connections[line['DB']], actual_result=result, is_print=True)
+            line['actual_SQL'] = sql
+            line['actual_answer'] = result
+            line['is_correct(SQL_judge)'] = is_correct
             if is_correct == 'yes':
                 correct_count += 1
 
@@ -75,11 +97,10 @@ def process_file_by_easyRAG(file):
     except Exception as e:
         print(f"Error processing file {file}: {e}")
 
-
 os.makedirs(output_dir, exist_ok=True)
 
 with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
-    futures = [executor.submit(process_file_by_easyRAG, file) for file in test_files]
+    futures = [executor.submit(process_file_by_SQL_RAG, file) for file in test_files]
     
     for future in as_completed(futures):
         future.result()

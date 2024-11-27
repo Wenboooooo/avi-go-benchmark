@@ -191,21 +191,28 @@ def LLM_judge(question, ref_answer, actual_response, is_print=False, llm_type='g
         print(colored(result, 'red'))
     return result
 
-def SQL_judge(ref_sql, actual_sql, connection, is_print=False):
+def SQL_judge(ref_sql, actual_sql, connection, actual_result=None, is_print=False):
+    if (not actual_sql) and (not actual_result):
+        return 'no'
     num = 10
     cursor = connection.cursor()
+    ref_sql,  actual_sql = ref_sql.strip(), actual_sql.strip()
     if ref_sql == actual_sql:
         if is_print:
             print(colored("same sql", 'red'))
         return 'yes'
     else:
-        cursor.execute(ref_sql)
+        if is_print:
+            print(colored(ref_sql, 'green'))
+            print(colored(actual_sql, 'yellow'))
         ref_result = cursor.fetchall()
-        cursor.execute(actual_sql)
-        actual_result = cursor.fetchall()
+        if not actual_result:
+            cursor.execute(actual_sql)
+            actual_result = cursor.fetchall()
         if is_print:
             print(colored(ref_result, 'green'))
             print(colored(actual_result, 'yellow'))
+            print(colored(ref_result == actual_result, 'red'))
         if ref_result == actual_result:
             return 'yes'
         else:

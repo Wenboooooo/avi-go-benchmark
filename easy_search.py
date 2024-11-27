@@ -9,6 +9,7 @@ import utils
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 from Q_templates import *
+import re
 
 
 def preprocess_passages(model, passages, save_path=''):
@@ -29,30 +30,51 @@ def generate_prompt(query, few_shot_data):
     prompt = "以下是一些示例问题及其对应的SQL查询：\n"
 
     for example in few_shot_data:
-        prompt += f"Q_template: {example['Q_template']}\nSQL_template: {example['SQL_template']}\n\n"
+        # prompt += f"Q_template: {example['Q_template']}\nSQL_template: {example['SQL_template']}\n\n"
+        prompt += f"Q: {example['Q']}\nDB: {example['DB']}\nSQL: ```sql\n{example['SQL']}\n```\n\n"
 
-    prompt += "请根据以上示例的格式，为以下问题生成SQL查询(直接输出语句本身，不需要任何其他内容)：\n"
-    prompt += f"Q: {query}\nSQL:"
+    prompt += f"Q: {query}\n"
+    prompt += '''你应该严格遵守以下的输出格式:"DB: [The database you used in your SQL query]\nSQL: ```sql\nYour SQL query here]\n```"'''
 
     return prompt
 
 
 def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, llm_name, connections, only_need_sql=False):
-    benchmark_questions = list(Q_templates.keys())
-    topk_similar_questions = find_topk_similar(retrieval_model, query, benchmark_questions, benchmark_question_embeddings, k=1)
-    few_shot_data = [Q_templates[question] for question in topk_similar_questions]
-    query_database = few_shot_data[0]["query_database"]
-    
-    prompt = generate_prompt(query, few_shot_data)
-    sql = utils.LLM_generate(prompt, llm_name=llm_name, is_print=True)
-    
-    if not only_need_sql:
-        connection = connections[query_database]
-        cursor = connection.cursor()
-        cursor.execute(sql)
-        result = cursor.fetchall()
-    
-    return sql, query_database, result if not only_need_sql else None
+    num = 5
+    while num > 0:
+        try:
+            benchmark_questions = list(Q_templates.keys())
+            topk_similar_questions = find_topk_similar(retrieval_model, query, benchmark_questions, benchmark_question_embeddings, k=3)
+            few_shot_data = [Q_templates[question] for question in topk_similar_questions]
+            # query_database = few_shot_data[0]["query_database"]
+            
+            prompt = generate_prompt(query, few_shot_data)
+            # print(prompt)
+            response = utils.LLM_generate(prompt, llm_name=llm_name, is_print=False)
+            # print(response)
+            try:
+                sql = re.search(r'```sql\n(.*?)\n```', response).group(1).strip()
+            except:
+                sql = response.strip()
+            try:
+                query_database = re.search(r'DB: (.*?)\n', response).group(1).strip()
+            except:
+                query_database = few_shot_data[0]["DB"]
+
+            print(query_database, sql)
+            
+            if not only_need_sql:
+                connection = connections[query_database]
+                cursor = connection.cursor()
+                cursor.execute(sql)
+                result = cursor.fetchall()
+            
+            return sql, query_database, result if not only_need_sql else None
+        except:
+            num -= 1
+            if num > 0:
+                continue
+            return None, None, None
 
 
 # 测试代码
