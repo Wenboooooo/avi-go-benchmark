@@ -5,7 +5,7 @@ import os
 # os.environ['http_proxy'] = 'http://127.0.0.1:7890'
 os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 
-import utils
+from utils import *
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 from Q_templates import *
@@ -39,7 +39,36 @@ def generate_prompt(query, few_shot_data):
     return prompt
 
 
-def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, llm_name, connections, only_need_sql=False):
+def query_revise(retrieval_model, query, convertion_dict, macth_dict):
+    slots = "aircraft_model_name: {}\naircraft_registration: {}\nairport_name: {}\ncity_name: {}"
+    slot_filling_prompt = f'''Given the following text, please fill in the slots with the correct values:\n\nText: {query}\n\nSlots:\n{slots}\n\nYour should output a json with slot as key and value as value. For example:\n```json\n{{\n    "aircraft_model_name": "Boeing 737",\n    "aircraft_registration": "",\n    "airport_name": "",\n    "city_name": ""\n}}\n```\nIf you don't know the answer, please leave the value empty.\n\n'''
+
+
+    response = LLM_generate(slot_filling_prompt, is_print=True)
+    json_str = re.search(r'```json\n(.*?)\n```', response, re.DOTALL).group(1)
+    json_obj = json.loads(json_str)
+
+    for k, v in list(json_obj.items()):
+        if not v:
+            json_obj.pop(k)
+            continue
+        revise_v =  find_topk_similar(retrieval_model, v, macth_dict[k]['names'], macth_dict[k]['embeddings'], k=1)[0]
+        print(f'{k}: {v} --> {revise_v}')
+        json_obj[k] = revise_v
+        identifier = 'id' if k != 'airport_name' else 'icao'
+        match_value = convertion_dict[k + f'2{identifier}'][revise_v]
+        json_obj[k.replace('_name', f'_{identifier}')] = match_value
+        query.replace(v, revise_v)
+        tmp = f'''{revise_v}对应的的{k.replace('_name', f'_{identifier}')}为"{match_value}"'''
+        print(colored(tmp, 'red'))
+        query += '\n' + tmp
+
+    # print(colored(query, 'red'))
+
+    return query
+
+
+def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, llm_name, connections, convertion_dict, macth_dict, only_need_sql=False):
     num = 5
     while num > 0:
         try:
@@ -47,13 +76,15 @@ def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, 
             topk_similar_questions = find_topk_similar(retrieval_model, query, benchmark_questions, benchmark_question_embeddings, k=3)
             few_shot_data = [Q_templates[question] for question in topk_similar_questions]
             # query_database = few_shot_data[0]["query_database"]
-            
+            few_shot_data
+            query = query_revise(retrieval_model, query, convertion_dict, macth_dict)
+
             prompt = generate_prompt(query, few_shot_data)
             # print(prompt)
-            response = utils.LLM_generate(prompt, llm_name=llm_name, is_print=False)
+            response = LLM_generate(prompt, llm_name=llm_name, is_print=False)
             # print(response)
             try:
-                sql = re.search(r'```sql\n(.*?)\n```', response).group(1).strip()
+                sql = re.search(r'```sql\n(.*?)\n```', response, re.DOTALL).group(1).strip()
             except:
                 sql = response.strip()
             try:
@@ -61,7 +92,8 @@ def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, 
             except:
                 query_database = few_shot_data[0]["DB"]
 
-            print(query_database, sql)
+            print(query_database)
+            print(colored(sql, 'yellow'))
             
             if not only_need_sql:
                 connection = connections[query_database]
@@ -70,7 +102,8 @@ def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, 
                 result = cursor.fetchall()
             
             return sql, query_database, result if not only_need_sql else None
-        except:
+        except Exception as e:
+            print(e)
             num -= 1
             if num > 0:
                 continue
@@ -86,7 +119,7 @@ if __name__ == '__main__':
     benchmark_questions = list(Q_templates.keys())
     benchmark_question_embeddings = preprocess_passages(model, benchmark_questions)
     databases = ["ai_database_dev", "data_center_dev", "data_center_release"]
-    connections = {database: utils.connect_to_database(database) for database in databases}
+    connections = {database: connect_to_database(database) for database in databases}
 
 
     query = "Los Angeles的航空公司有哪些？"
@@ -96,7 +129,7 @@ if __name__ == '__main__':
     
     sql, query_database, result = SQL_RAG(query, Q_templates, benchmark_question_embeddings, model, "gpt4o", connections, only_need_sql=True)
     
-    is_correct = utils.SQL_judge(ref_sql, sql, connections[query_database], True)
+    is_correct = SQL_judge(ref_sql, sql, connections[query_database], True)
     print(is_correct)
 
 
