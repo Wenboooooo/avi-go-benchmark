@@ -16,7 +16,7 @@ def connect_to_database(database_name: str):
         case "data_center_dev":
             host , user, password = 'rm-uf6k55f9394p93af8.rwlb.rds.aliyuncs.com', 'ai_data', '5a@12ujdaldj8s'
         case "ai_database_dev":
-            host , user, password = 'rm-t4nao9vgc59g20e48.mysql.singapore.rds.aliyuncs.com', 'nlp_dev', 'nlp*12345'
+            host , user, password = 'rm-t4n3p0r28isdqdgvx.mysql.singapore.rds.aliyuncs.com', 'nlp_dev_read', 'nlp*12345'
         case "data_center_release":
             host , user, password = 'rm-uf6k55f9394p93af8.rwlb.rds.aliyuncs.com', 'ai_data', '5a@12ujdaldj8s'
     connection = pymysql.connect(
@@ -30,8 +30,8 @@ def connect_to_database(database_name: str):
     return connection
 
 
-API_KEY = 'sk-proj-Rl41N05dYzhdjkHneWI2T3BlbkFJXf1SmQ7Nth4wHBCgzHjO'
-API_URL = "https://api.openai.com/v1/chat/completions"
+GPT4O_API_KEY = 'sk-proj-Rl41N05dYzhdjkHneWI2T3BlbkFJXf1SmQ7Nth4wHBCgzHjO'
+GPT4O_API_URL = "https://api.openai.com/v1/chat/completions"
 
 # KIMI
 KIMI_API_KEY = 'sk-PlAAAH2Jwx7E3m9Rb8DCAx3tIZ2fqLutOytxlu0zy4aB6F7Y'
@@ -45,9 +45,9 @@ claude_API_URL = "https://api.aiproxy.io/v1/messages"
 QWEN_API_KEY = 'your-kimi-api-key'
 QWEN_API_URL = "https://api.qwen.com/v1/chat/completions"
 
-HEADERS = {
+GPT4O_HEADERS = {
     "Content-Type": "application/json",
-    "Authorization": f"Bearer {API_KEY}"
+    "Authorization": f"Bearer {GPT4O_API_KEY}"
 }
 
 KIMI_HEADERS = {
@@ -67,33 +67,42 @@ claude_HEADERS = {
 
 # TODO: 将后面所有的generate函数重构整合到一个函数中，根据llm_name选择调用哪个模型。llm_name是具体的模型名称，而不是模型种类。比如gpt-4o, 而不是gpt。下面的gpt4o_generate、kimi_generate、qwen_generate、claude_generate等之后都要删掉。
 def LLM_generate(text, image_paths=[], temp=None, presence_penalty=None, is_print=False, llm_name='gpt4o'):
+    API_KEY = ""
+    API_URL = ""
+    HEADERS = {}
+    selected_model = ''
     if llm_name == 'gpt4o':
-        return gpt4o_generate(text, image_paths, temp, presence_penalty, is_print)
+        API_URL = GPT4O_API_URL
+        HEADERS = GPT4O_HEADERS
+        selected_model = 'gpt-4o'
     elif llm_name == 'kimi':
-        return kimi_generate(text, image_paths, temp, presence_penalty, is_print)
+        API_URL = KIMI_API_URL
+        HEADERS = KIMI_HEADERS
+        selected_model = 'kimi'
     elif llm_name == 'qwen':
-        return qwen_generate(text, image_paths, temp, presence_penalty, is_print)
+        API_URL = QWEN_API_URL
+        HEADERS = QWEN_HEADERS
+        selected_model = 'qwen'
     elif llm_name == 'claude':
-        return claude_generate(text, image_paths, temp, presence_penalty, is_print)
+        API_URL = claude_API_URL
+        HEADERS = claude_HEADERS
+        selected_model = 'claude'
     else:
-        return gpt4o_generate(text, image_paths, temp, presence_penalty, is_print)
-
-
-def gpt4o_generate(text, image_paths=[], temp=None, presence_penalty=None, is_print=False):
-    # if is_print:
-    #     print(colored(text, 'green'))
+        API_URL = GPT4O_API_URL
+        HEADERS = GPT4O_HEADERS
+        selected_model = 'gpt-4o'
     num = 10
     res = ""
     messages = [{"role": "user", "content": text}]
-    while num > 0 and len(res)==0:
+    while num > 0 and len(res) == 0:
         try:
             content = [{"type": "text", "text": text}]
             for image_path in image_paths:
                 with open(image_path, "rb") as image_file:
                     base64_image = base64.b64encode(image_file.read()).decode('utf-8')
                 content.append({"type": "image_url", "image_url": {"url": f"data:image/png;base64,{base64_image}"}})
-            
-            data = {"model": "gpt-4o", "messages": [{"role": "user", "content": content}]}
+
+            data = {"model": selected_model, "messages": [{"role": "user", "content": content}]}
             data = json.dumps(data)
             response = requests.post(API_URL, headers=HEADERS, data=data)
             response_json = response.json()
@@ -104,92 +113,129 @@ def gpt4o_generate(text, image_paths=[], temp=None, presence_penalty=None, is_pr
     if is_print:
         print(colored(res, 'yellow'))
     return res
+    # if llm_name == 'gpt4o':
+    #     return gpt4o_generate(text, image_paths, temp, presence_penalty, is_print)
+    # elif llm_name == 'kimi':
+    #     return kimi_generate(text, image_paths, temp, presence_penalty, is_print)
+    # elif llm_name == 'qwen':
+    #     return qwen_generate(text, image_paths, temp, presence_penalty, is_print)
+    # elif llm_name == 'claude':
+    #     return claude_generate(text, image_paths, temp, presence_penalty, is_print)
+    # else:
+    #     return gpt4o_generate(text, image_paths, temp, presence_penalty, is_print)
 
 
-def kimi_generate(text, image_paths=[], temp=None, presence_penalty=None, is_print=False):
-    if is_print:
-        print(colored(text, 'green'))
-    num = 10
-    res = ""
-    messages = [{"role": "user", "content": text}]
-    while num > 0 and len(res) == 0:
-        try:
-            content = [{"type": "text", "text": text}]
-            for image_path in image_paths:
-                with open(image_path, "rb") as image_file:
-                    base64_image = base64.b64encode(image_file.read()).decode('utf-8')
-                content.append({"type": "image_url", "image_url": {"url": f"data:image/png;base64,{base64_image}"}})
+# def gpt4o_generate(text, image_paths=[], temp=None, presence_penalty=None, is_print=False):
+#     # if is_print:
+#     #     print(colored(text, 'green'))
+#     num = 10
+#     res = ""
+#     messages = [{"role": "user", "content": text}]
+#     while num > 0 and len(res)==0:
+#         try:
+#             content = [{"type": "text", "text": text}]
+#             for image_path in image_paths:
+#                 with open(image_path, "rb") as image_file:
+#                     base64_image = base64.b64encode(image_file.read()).decode('utf-8')
+#                 content.append({"type": "image_url", "image_url": {"url": f"data:image/png;base64,{base64_image}"}})
+#
+#             data = {"model": "gpt-4o", "messages": [{"role": "user", "content": content}]}
+#             data = json.dumps(data)
+#             response = requests.post(GPT4O_API_URL, headers=GPT4O_HEADERS, data=data)
+#             response_json = response.json()
+#             res = response_json['choices'][0]['message']['content']
+#         except Exception as e:
+#             print(e)
+#             num -= 1
+#     if is_print:
+#         print(colored(res, 'yellow'))
+#     return res
+#
+#
+# def kimi_generate(text, image_paths=[], temp=None, presence_penalty=None, is_print=False):
+#     if is_print:
+#         print(colored(text, 'green'))
+#     num = 10
+#     res = ""
+#     messages = [{"role": "user", "content": text}]
+#     while num > 0 and len(res) == 0:
+#         try:
+#             content = [{"type": "text", "text": text}]
+#             for image_path in image_paths:
+#                 with open(image_path, "rb") as image_file:
+#                     base64_image = base64.b64encode(image_file.read()).decode('utf-8')
+#                 content.append({"type": "image_url", "image_url": {"url": f"data:image/png;base64,{base64_image}"}})
+#
+#             data = {"model": "kimi-model", "messages": [{"role": "user", "content": content}]}
+#             data = json.dumps(data)
+#             response = requests.post(KIMI_API_URL, headers=KIMI_HEADERS, data=data)
+#             response_json = response.json()
+#             res = response_json['choices'][0]['message']['content']
+#         except Exception as e:
+#             print(e)
+#             num -= 1
+#     if is_print:
+#         print(colored(res, 'yellow'))
+#     return res
+#
+#
+# def qwen_generate(text, image_paths=[], temp=None, presence_penalty=None, is_print=False):
+#     if is_print:
+#         print(colored(text, 'green'))
+#
+#     # 尝试次数
+#     num = 10
+#     res = ""
+#     messages = [{"role": "user", "content": text}]
+#
+#     while num > 0 and len(res) == 0:
+#         try:
+#             content = text
+#             if image_paths:  # 如果有图片路径，则处理图片并添加到content中
+#                 content = {"text": text, "images": []}
+#                 for image_path in image_paths:
+#                     with open(image_path, "rb") as image_file:
+#                         base64_image = base64.b64encode(image_file.read()).decode('utf-8')
+#                     content["images"].append({"url": f"data:image/png;base64,{base64_image}"})
+#
+#             data = {"model": "qwen", "messages": [content]}
+#             data = json.dumps(data)
+#             response = requests.post(QWEN_API_URL, headers=QWEN_HEADERS, data=data)
+#             response.raise_for_status()  # 检查请求是否成功
+#             response_json = response.json()
+#             res = response_json['choices'][0]['message']['content']
+#         except Exception as e:
+#             print(f"Error occurred: {e}")
+#             num -= 1
+#     if is_print:
+#         print(colored(res, 'yellow'))
+#     return res
 
-            data = {"model": "kimi-model", "messages": [{"role": "user", "content": content}]}
-            data = json.dumps(data)
-            response = requests.post(KIMI_API_URL, headers=KIMI_HEADERS, data=data)
-            response_json = response.json()
-            res = response_json['choices'][0]['message']['content']
-        except Exception as e:
-            print(e)
-            num -= 1
-    if is_print:
-        print(colored(res, 'yellow'))
-    return res
-
-
-def qwen_generate(text, image_paths=[], temp=None, presence_penalty=None, is_print=False):
-    if is_print:
-        print(colored(text, 'green'))
-
-    # 尝试次数
-    num = 10
-    res = ""
-    messages = [{"role": "user", "content": text}]
-
-    while num > 0 and len(res) == 0:
-        try:
-            content = text
-            if image_paths:  # 如果有图片路径，则处理图片并添加到content中
-                content = {"text": text, "images": []}
-                for image_path in image_paths:
-                    with open(image_path, "rb") as image_file:
-                        base64_image = base64.b64encode(image_file.read()).decode('utf-8')
-                    content["images"].append({"url": f"data:image/png;base64,{base64_image}"})
-
-            data = {"model": "qwen", "messages": [content]}
-            data = json.dumps(data)
-            response = requests.post(QWEN_API_URL, headers=QWEN_HEADERS, data=data)
-            response.raise_for_status()  # 检查请求是否成功
-            response_json = response.json()
-            res = response_json['choices'][0]['message']['content']
-        except Exception as e:
-            print(f"Error occurred: {e}")
-            num -= 1
-    if is_print:
-        print(colored(res, 'yellow'))
-    return res
-
-def LLM_judge(question, ref_answer, actual_response, is_print=False, llm_type='gpt4o'):
-    num = 10
-    prompt = f"Question: {question}\nGround Truth: {ref_answer}\nAnswer to be checked:\n{actual_response}\n\nPlease determine if this answer is correct or not based on Ground Truth.\nIn numerical measurements such as length, a certain degree of error is permissible.\nYour output should strictly follow the format: \"Thought: [Your Thought]\nJudgement: [Yes/No]\"."
-    while num > 0:
-        if llm_type == 'gpt4o':
-            response = gpt4o_generate(prompt)
-        elif llm_type == 'kimi':
-            response = kimi_generate(prompt)
-        elif llm_type == 'qwen':
-            response = qwen_generate(prompt)
-        elif llm_type == 'claude':
-            response = claude_generate(prompt)
-        else:
-            response = gpt4o_generate(prompt)
-        result = response.split("Judgement: ")[-1].lower().strip()
-        if result in ('yes', 'no'):
-            break
-        num -= 1
-    else:
-        result = "Judgement failed"
-    if is_print:
-        print(colored(prompt, 'green'))
-        print(colored(response, 'yellow'))
-        print(colored(result, 'red'))
-    return result
+# def LLM_judge(question, ref_answer, actual_response, is_print=False, llm_type='gpt4o'):
+#     num = 10
+#     prompt = f"Question: {question}\nGround Truth: {ref_answer}\nAnswer to be checked:\n{actual_response}\n\nPlease determine if this answer is correct or not based on Ground Truth.\nIn numerical measurements such as length, a certain degree of error is permissible.\nYour output should strictly follow the format: \"Thought: [Your Thought]\nJudgement: [Yes/No]\"."
+#     while num > 0:
+#         if llm_type == 'gpt4o':
+#             response = gpt4o_generate(prompt)
+#         elif llm_type == 'kimi':
+#             response = kimi_generate(prompt)
+#         elif llm_type == 'qwen':
+#             response = qwen_generate(prompt)
+#         elif llm_type == 'claude':
+#             response = claude_generate(prompt)
+#         else:
+#             response = gpt4o_generate(prompt)
+#         result = response.split("Judgement: ")[-1].lower().strip()
+#         if result in ('yes', 'no'):
+#             break
+#         num -= 1
+#     else:
+#         result = "Judgement failed"
+#     if is_print:
+#         print(colored(prompt, 'green'))
+#         print(colored(response, 'yellow'))
+#         print(colored(result, 'red'))
+#     return result
 
 def SQL_judge(ref_sql, actual_sql, connection, actual_result=None, is_print=False):
     try:
@@ -223,49 +269,11 @@ def SQL_judge(ref_sql, actual_sql, connection, actual_result=None, is_print=Fals
         return 'no'
 
 
-
-def claude_generate(text, image_paths=[], temp=None, max_tokens_to_sample=None, is_print=False):
-    if is_print:
-        print(colored(text, 'green'))
-
-    # 尝试次数
-    num = 10
-    res = ""
-    messages = [
-        {"role": "human", "content": text}
-    ]
-
-    while num > 0 and len(res) == 0:
-        try:
-            data = {
-                "prompt": "\n".join([msg["content"] for msg in messages]),
-                "model": "claude-2",
-                "max_tokens_to_sample": max_tokens_to_sample or 300,
-                "temperature": temp or 0.7
-            }
-
-            if image_paths:  # 如果有图片路径，Claude API当前版本不支持直接发送图片，这里仅保留逻辑
-                print("Warning: Claude API does not support sending images directly.")
-
-            data = json.dumps(data)
-            response = requests.post(claude_API_URL, headers=claude_HEADERS, data=data)
-            response.raise_for_status()  # 检查请求是否成功
-            response_json = response.json()
-            res = response_json['completion']
-        except Exception as e:
-            print(f"Error occurred: {e}")
-            num -= 1
-
-    if is_print:
-        print(colored(res, 'yellow'))
-
-    return res
-
 def LLM_score(question, ref_answer, actual_response, is_print=False):
     num = 10
     prompt = f"Question: {question}\nGround Truth: {ref_answer}\nAnswer to be checked:\n{actual_response}\n\nPlease score this answer from 0 to 10 based on Ground Truth. You should answer only with a number."
     while num > 0:
-        result = gpt4o_generate(prompt).lower()
+        result = LLM_generate(prompt).lower()
         if result.isdigit():
             break
         num -= 1
