@@ -1,0 +1,963 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n970rg的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n970rg\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为2shot的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"2shot\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n829dl的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-03",
+                45
+            ],
+            [
+                "2024-04",
+                151
+            ],
+            [
+                "2024-05",
+                47
+            ],
+            [
+                "2024-06",
+                158
+            ],
+            [
+                "2024-07",
+                49
+            ],
+            [
+                "2024-08",
+                79
+            ],
+            [
+                "2024-09",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n829dl\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为9hxoa的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                665
+            ],
+            [
+                "2024-02",
+                22
+            ],
+            [
+                "2024-03",
+                367
+            ],
+            [
+                "2024-04",
+                499
+            ],
+            [
+                "2024-05",
+                544
+            ],
+            [
+                "2024-06",
+                967
+            ],
+            [
+                "2024-07",
+                875
+            ],
+            [
+                "2024-08",
+                488
+            ],
+            [
+                "2024-09",
+                527
+            ],
+            [
+                "2024-10",
+                807
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"9hxoa\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n350vj的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                591
+            ],
+            [
+                "2024-02",
+                425
+            ],
+            [
+                "2024-03",
+                160
+            ],
+            [
+                "2024-04",
+                421
+            ],
+            [
+                "2024-05",
+                258
+            ],
+            [
+                "2024-06",
+                180
+            ],
+            [
+                "2024-07",
+                10
+            ],
+            [
+                "2024-08",
+                186
+            ],
+            [
+                "2024-09",
+                338
+            ],
+            [
+                "2024-10",
+                219
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n350vj\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为cfftr的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                182
+            ],
+            [
+                "2024-02",
+                102
+            ],
+            [
+                "2024-03",
+                192
+            ],
+            [
+                "2024-04",
+                148
+            ],
+            [
+                "2024-05",
+                67
+            ],
+            [
+                "2024-06",
+                246
+            ],
+            [
+                "2024-07",
+                27
+            ],
+            [
+                "2024-08",
+                47
+            ],
+            [
+                "2024-09",
+                208
+            ],
+            [
+                "2024-10",
+                124
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"cfftr\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n535xj的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                180
+            ],
+            [
+                "2024-02",
+                231
+            ],
+            [
+                "2024-03",
+                190
+            ],
+            [
+                "2024-04",
+                175
+            ],
+            [
+                "2024-05",
+                193
+            ],
+            [
+                "2024-06",
+                233
+            ],
+            [
+                "2024-07",
+                265
+            ],
+            [
+                "2024-08",
+                276
+            ],
+            [
+                "2024-09",
+                428
+            ],
+            [
+                "2024-10",
+                194
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n535xj\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n704da的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                37
+            ],
+            [
+                "2024-03",
+                34
+            ],
+            [
+                "2024-04",
+                56
+            ],
+            [
+                "2024-05",
+                47
+            ],
+            [
+                "2024-06",
+                117
+            ],
+            [
+                "2024-07",
+                109
+            ],
+            [
+                "2024-08",
+                115
+            ],
+            [
+                "2024-09",
+                119
+            ],
+            [
+                "2024-10",
+                43
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n704da\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为cffbe的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                265
+            ],
+            [
+                "2024-02",
+                132
+            ],
+            [
+                "2024-03",
+                159
+            ],
+            [
+                "2024-04",
+                156
+            ],
+            [
+                "2024-05",
+                283
+            ],
+            [
+                "2024-06",
+                28
+            ],
+            [
+                "2024-07",
+                83
+            ],
+            [
+                "2024-09",
+                75
+            ],
+            [
+                "2024-10",
+                103
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"cffbe\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n412ab的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                3
+            ],
+            [
+                "2024-02",
+                35
+            ],
+            [
+                "2024-03",
+                43
+            ],
+            [
+                "2024-04",
+                22
+            ],
+            [
+                "2024-05",
+                9
+            ],
+            [
+                "2024-06",
+                19
+            ],
+            [
+                "2024-07",
+                26
+            ],
+            [
+                "2024-08",
+                29
+            ],
+            [
+                "2024-09",
+                20
+            ],
+            [
+                "2024-10",
+                8
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n412ab\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为cfjic的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                77
+            ],
+            [
+                "2024-02",
+                43
+            ],
+            [
+                "2024-03",
+                95
+            ],
+            [
+                "2024-04",
+                21
+            ],
+            [
+                "2024-05",
+                110
+            ],
+            [
+                "2024-06",
+                6
+            ],
+            [
+                "2024-07",
+                94
+            ],
+            [
+                "2024-08",
+                24
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"cfjic\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为ohmip的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                29
+            ],
+            [
+                "2024-02",
+                114
+            ],
+            [
+                "2024-03",
+                82
+            ],
+            [
+                "2024-04",
+                24
+            ],
+            [
+                "2024-05",
+                5
+            ],
+            [
+                "2024-06",
+                15
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"ohmip\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为c6eac的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                56
+            ],
+            [
+                "2024-02",
+                116
+            ],
+            [
+                "2024-03",
+                124
+            ],
+            [
+                "2024-06",
+                14
+            ],
+            [
+                "2024-07",
+                73
+            ],
+            [
+                "2024-08",
+                22
+            ],
+            [
+                "2024-09",
+                97
+            ],
+            [
+                "2024-10",
+                54
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"c6eac\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n6878c的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-02",
+                4
+            ],
+            [
+                "2024-04",
+                1
+            ],
+            [
+                "2024-06",
+                1
+            ],
+            [
+                "2024-07",
+                8
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n6878c\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n101pk的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                95
+            ],
+            [
+                "2024-02",
+                58
+            ],
+            [
+                "2024-03",
+                83
+            ],
+            [
+                "2024-04",
+                43
+            ],
+            [
+                "2024-05",
+                109
+            ],
+            [
+                "2024-06",
+                159
+            ],
+            [
+                "2024-07",
+                83
+            ],
+            [
+                "2024-08",
+                88
+            ],
+            [
+                "2024-09",
+                105
+            ],
+            [
+                "2024-10",
+                66
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n101pk\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n596hp的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                41
+            ],
+            [
+                "2024-02",
+                32
+            ],
+            [
+                "2024-03",
+                16
+            ],
+            [
+                "2024-04",
+                28
+            ],
+            [
+                "2024-05",
+                27
+            ],
+            [
+                "2024-06",
+                49
+            ],
+            [
+                "2024-08",
+                12
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n596hp\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为oksts的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                185
+            ],
+            [
+                "2024-02",
+                218
+            ],
+            [
+                "2024-03",
+                399
+            ],
+            [
+                "2024-04",
+                400
+            ],
+            [
+                "2024-05",
+                224
+            ],
+            [
+                "2024-06",
+                315
+            ],
+            [
+                "2024-07",
+                539
+            ],
+            [
+                "2024-08",
+                345
+            ],
+            [
+                "2024-09",
+                537
+            ],
+            [
+                "2024-10",
+                236
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"oksts\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n432rj的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                6
+            ],
+            [
+                "2024-02",
+                104
+            ],
+            [
+                "2024-03",
+                115
+            ],
+            [
+                "2024-05",
+                111
+            ],
+            [
+                "2024-06",
+                126
+            ],
+            [
+                "2024-07",
+                92
+            ],
+            [
+                "2024-08",
+                53
+            ],
+            [
+                "2024-09",
+                64
+            ],
+            [
+                "2024-10",
+                36
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n432rj\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为ohwiw的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                118
+            ],
+            [
+                "2024-02",
+                200
+            ],
+            [
+                "2024-03",
+                163
+            ],
+            [
+                "2024-04",
+                8
+            ],
+            [
+                "2024-05",
+                4
+            ],
+            [
+                "2024-06",
+                253
+            ],
+            [
+                "2024-07",
+                384
+            ],
+            [
+                "2024-08",
+                418
+            ],
+            [
+                "2024-09",
+                405
+            ],
+            [
+                "2024-10",
+                172
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"ohwiw\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n925af的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                70
+            ],
+            [
+                "2024-02",
+                29
+            ],
+            [
+                "2024-03",
+                32
+            ],
+            [
+                "2024-04",
+                42
+            ],
+            [
+                "2024-05",
+                115
+            ],
+            [
+                "2024-06",
+                24
+            ],
+            [
+                "2024-07",
+                20
+            ],
+            [
+                "2024-08",
+                57
+            ],
+            [
+                "2024-09",
+                139
+            ],
+            [
+                "2024-10",
+                45
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n925af\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n290mx的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                130
+            ],
+            [
+                "2024-02",
+                300
+            ],
+            [
+                "2024-03",
+                171
+            ],
+            [
+                "2024-04",
+                141
+            ],
+            [
+                "2024-05",
+                164
+            ],
+            [
+                "2024-06",
+                146
+            ],
+            [
+                "2024-07",
+                220
+            ],
+            [
+                "2024-08",
+                71
+            ],
+            [
+                "2024-09",
+                176
+            ],
+            [
+                "2024-10",
+                189
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n290mx\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n253xs的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                91
+            ],
+            [
+                "2024-02",
+                49
+            ],
+            [
+                "2024-03",
+                57
+            ],
+            [
+                "2024-04",
+                35
+            ],
+            [
+                "2024-05",
+                8
+            ],
+            [
+                "2024-06",
+                149
+            ],
+            [
+                "2024-07",
+                142
+            ],
+            [
+                "2024-08",
+                93
+            ],
+            [
+                "2024-09",
+                81
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n253xs\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n202ff的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                196
+            ],
+            [
+                "2024-02",
+                64
+            ],
+            [
+                "2024-03",
+                151
+            ],
+            [
+                "2024-04",
+                80
+            ],
+            [
+                "2024-07",
+                6
+            ],
+            [
+                "2024-08",
+                123
+            ],
+            [
+                "2024-09",
+                142
+            ],
+            [
+                "2024-10",
+                137
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n202ff\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为ylare的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-01",
+                125
+            ],
+            [
+                "2024-02",
+                63
+            ],
+            [
+                "2024-03",
+                114
+            ],
+            [
+                "2024-04",
+                204
+            ],
+            [
+                "2024-05",
+                199
+            ],
+            [
+                "2024-06",
+                535
+            ],
+            [
+                "2024-07",
+                392
+            ],
+            [
+                "2024-08",
+                329
+            ],
+            [
+                "2024-09",
+                116
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"ylare\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "请提供注册号为n335wh的飞机在2024年每个月的飞行量是多少？按月份排序。",
+        "A": [
+            [
+                "2024-02",
+                12
+            ],
+            [
+                "2024-03",
+                3
+            ],
+            [
+                "2024-06",
+                9
+            ],
+            [
+                "2024-08",
+                3
+            ]
+        ],
+        "SQL": "SELECT\n        date_month,\n        count(*) AS num\nFROM\n        zts_plane_flight_1\nWHERE\n        pure_reg COLLATE utf8mb4_0900_ai_ci= \"n335wh\" COLLATE utf8mb4_0900_ai_ci\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        date_month\nORDER BY\n        date_month ASC;"
+    }
+]
