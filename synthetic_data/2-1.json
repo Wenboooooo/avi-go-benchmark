@@ -1,0 +1,233 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "24/7 Jet Inc.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-07",
+                256
+            ],
+            [
+                "2024-08",
+                240
+            ],
+            [
+                "2024-01",
+                240
+            ],
+            [
+                "2024-04",
+                160
+            ],
+            [
+                "2024-05",
+                151
+            ],
+            [
+                "2024-09",
+                139
+            ],
+            [
+                "2024-10",
+                122
+            ],
+            [
+                "2024-06",
+                104
+            ],
+            [
+                "2024-02",
+                84
+            ],
+            [
+                "2024-03",
+                48
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1001\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "247 Aviation Ltd在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-06",
+                1029
+            ],
+            [
+                "2024-04",
+                1009
+            ],
+            [
+                "2024-08",
+                974
+            ],
+            [
+                "2024-02",
+                875
+            ],
+            [
+                "2024-07",
+                831
+            ],
+            [
+                "2024-05",
+                793
+            ],
+            [
+                "2024-03",
+                702
+            ],
+            [
+                "2024-09",
+                685
+            ],
+            [
+                "2024-01",
+                673
+            ],
+            [
+                "2024-10",
+                592
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1002\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "45 North Aviation在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-04",
+                194
+            ],
+            [
+                "2024-07",
+                181
+            ],
+            [
+                "2024-08",
+                134
+            ],
+            [
+                "2024-09",
+                104
+            ],
+            [
+                "2024-02",
+                94
+            ],
+            [
+                "2024-03",
+                83
+            ],
+            [
+                "2024-06",
+                72
+            ],
+            [
+                "2024-10",
+                58
+            ],
+            [
+                "2024-05",
+                57
+            ],
+            [
+                "2024-01",
+                38
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1004\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "A-OK Jets在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-05",
+                498
+            ],
+            [
+                "2024-04",
+                454
+            ],
+            [
+                "2024-01",
+                435
+            ],
+            [
+                "2024-02",
+                435
+            ],
+            [
+                "2024-08",
+                376
+            ],
+            [
+                "2024-07",
+                364
+            ],
+            [
+                "2024-06",
+                326
+            ],
+            [
+                "2024-03",
+                296
+            ],
+            [
+                "2024-09",
+                259
+            ],
+            [
+                "2024-10",
+                54
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1005\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AAC Jet在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-06",
+                127
+            ],
+            [
+                "2024-01",
+                97
+            ],
+            [
+                "2024-03",
+                61
+            ],
+            [
+                "2024-08",
+                57
+            ],
+            [
+                "2024-09",
+                57
+            ],
+            [
+                "2024-04",
+                54
+            ],
+            [
+                "2024-05",
+                36
+            ],
+            [
+                "2024-07",
+                32
+            ],
+            [
+                "2024-02",
+                14
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1007\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;"
+    }
+]
