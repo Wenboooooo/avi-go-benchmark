@@ -1,0 +1,278 @@
+[
+    {
+        "Q": "Krueger机场的四字码是什么？",
+        "A": "OR72",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Krueger\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT icao_code\nFROM airport_fbo_details\nWHERE airport_name = 'Krueger'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "icao_code": "OR72"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 18.67
+    },
+    {
+        "Q": "Eulogio Sanchez机场的四字码是什么？",
+        "A": "SCTB",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Eulogio Sanchez\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT icao_code\nFROM airport_fbo_details\nWHERE airport_name = 'Eulogio Sanchez'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "icao_code": "SCTB"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.97
+    },
+    {
+        "Q": "Cordoba机场的四字码是什么？",
+        "A": "LEBA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Cordoba\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Ezhou Huahu Airport",
+                "icao_code": "ZHEC"
+            },
+            {
+                "airport_name": "Kugel-Strong",
+                "icao_code": "03CO"
+            },
+            {
+                "airport_name": "Cuddihy Field",
+                "icao_code": "07TE"
+            },
+            {
+                "airport_name": "Crawford",
+                "icao_code": "0CA3"
+            },
+            {
+                "airport_name": "Hanel Field",
+                "icao_code": "0OR9"
+            },
+            {
+                "airport_name": "Ogle Airport",
+                "icao_code": "SYEC"
+            },
+            {
+                "airport_name": "Nanded Airport",
+                "icao_code": "VOND"
+            },
+            {
+                "airport_name": "Allahabad Airport / Bamrauli Airport",
+                "icao_code": "VEAB"
+            },
+            {
+                "airport_name": "Tee Brad's",
+                "icao_code": "13LS"
+            },
+            {
+                "airport_name": "Luang Namtha Airport",
+                "icao_code": "VLLN"
+            },
+            {
+                "airport_name": "Xieng Khouang Airport",
+                "icao_code": "VLXK"
+            },
+            {
+                "airport_name": "Ixtepec Airport",
+                "icao_code": "MMIT"
+            },
+            {
+                "airport_name": "Legazpi Airport",
+                "icao_code": "RPLP"
+            },
+            {
+                "airport_name": "Beloyarsky Airport",
+                "icao_code": "USHQ"
+            },
+            {
+                "airport_name": "Igarka Airport",
+                "icao_code": "UOII"
+            },
+            {
+                "airport_name": "Iturup Airport",
+                "icao_code": "UHSI"
+            },
+            {
+                "airport_name": "Kurgan Airport",
+                "icao_code": "USUU"
+            },
+            {
+                "airport_name": "Kyzyl Airport",
+                "icao_code": "UNKY"
+            },
+            {
+                "airport_name": "Magas Airport",
+                "icao_code": "URMS"
+            },
+            {
+                "airport_name": "Naryan-Mar Airport",
+                "icao_code": "ULAM"
+            },
+            {
+                "airport_name": "Nikolayevsk Na Amure",
+                "icao_code": "UHNN"
+            },
+            {
+                "airport_name": "Nyagan Airport",
+                "icao_code": "USHN"
+            },
+            {
+                "airport_name": "Sovetsky Airport",
+                "icao_code": "USHS"
+            },
+            {
+                "airport_name": "Yuzhny",
+                "icao_code": "URRT"
+            },
+            {
+                "airport_name": "Talakan Airport",
+                "icao_code": "UECT"
+            },
+            {
+                "airport_name": "Tambov Donskoye Airport",
+                "icao_code": "UUOT"
+            },
+            {
+                "airport_name": "Tynda Airport",
+                "icao_code": "UHBW"
+            },
+            {
+                "airport_name": "Uraj Airport",
+                "icao_code": "USHU"
+            },
+            {
+                "airport_name": "Melon Field",
+                "icao_code": "1CO5"
+            },
+            {
+                "airport_name": "Waynoka Municipal",
+                "icao_code": "1K5"
+            },
+            {
+                "airport_name": "Spadaro Airport",
+                "icao_code": "1N2"
+            },
+            {
+                "airport_name": "Joshkar-Ola Airport",
+                "icao_code": "UWKJ"
+            },
+            {
+                "airport_name": "Joshkar-Ola Airport",
+                "icao_code": "UWKJ"
+            },
+            {
+                "airport_name": "Yuzhno-Kurilsk Mendeleyevo Airport",
+                "icao_code": "UHSM"
+            },
+            {
+                "airport_name": "Seaberg Ranch Airport",
+                "icao_code": "21TE"
+            },
+            {
+                "airport_name": "Kinloss",
+                "icao_code": "EGQK"
+            },
+            {
+                "airport_name": "Waterville",
+                "icao_code": "2S5"
+            },
+            {
+                "airport_name": "Airlie",
+                "icao_code": "2VA9"
+            },
+            {
+                "airport_name": "Upperville",
+                "icao_code": "2VG2"
+            },
+            {
+                "airport_name": "Foard County",
+                "icao_code": "2XA0"
+            },
+            {
+                "airport_name": "Mcdermott Air Park",
+                "icao_code": "31WI"
+            },
+            {
+                "airport_name": "Flying M Ranch Airport",
+                "icao_code": "39CO"
+            },
+            {
+                "airport_name": "Seminole Spraying Service",
+                "icao_code": "39TE"
+            },
+            {
+                "airport_name": "North Omaha",
+                "icao_code": "3NO"
+            },
+            {
+                "airport_name": "Picosa Ranch",
+                "icao_code": "3TA8"
+            },
+            {
+                "airport_name": "Hanes",
+                "icao_code": "3WA2"
+            },
+            {
+                "airport_name": "Todd Field",
+                "icao_code": "46IA"
+            },
+            {
+                "airport_name": "Circle Bar Ranch",
+                "icao_code": "46MS"
+            },
+            {
+                "airport_name": "Erik Nielsen International Airport",
+                "icao_code": "CYXY"
+            },
+            {
+                "airport_name": "Owl Canyon Gliderport",
+                "icao_code": "4CO2"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 18.64
+    },
+    {
+        "Q": "Superior Municipal机场的四字码是什么？",
+        "A": "12K",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Superior Municipal\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT icao_code\nFROM airport_fbo_details\nWHERE airport_name = 'Superior Municipal'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "icao_code": "12K"
+            },
+            {
+                "icao_code": "E81"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 22.3
+    },
+    {
+        "Q": "Buck Knob机场的四字码是什么？",
+        "A": "WI74",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Buck Knob\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT icao_code\nFROM airport_fbo_details\nWHERE airport_name = 'Buck Knob'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "icao_code": "WI74"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.17
+    },
+    {
+        "correct_rate": 80.0,
+        "sample_size": 5,
+        "correct_count": 4,
+        "average_time": 17.15
+    }
+]

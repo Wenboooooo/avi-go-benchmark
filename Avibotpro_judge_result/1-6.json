@@ -1,0 +1,594 @@
+[
+    {
+        "Q": "Braga的航空公司有哪些？",
+        "A": [
+            "PHS Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Braga\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在布拉加（Braga），主要的航空公司包括：\n\n1. **Hi Fly** - 这是一家葡萄牙航空公司，专注于包机服务，主要在欧洲、非洲和西亚运营，拥有多种型号的飞机，如空客A321、A330和A340。\n\n2. **TAP 葡萄牙航空** - 作为葡萄牙的国家航空公司，TAP提供国内和国际航班，连接布拉加与多个目的地。\n\n3. **其他航空公司** - 还可以通过一些低成本航空公司和区域航空公司找到飞往布拉加的航班，尽管具体的航空公司可能会根据季节和需求而变化。\n\n布拉加的机场代码为BGZ（ICAO代码为LPBR），虽然布拉加的机场规模较小，但仍然提供一定的航空服务。如果您需要更详细的航班信息或特定航空公司的服务，建议查看相关航空公司的官方网站或使用航班搜索引擎。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.57
+    },
+    {
+        "Q": "Fort Lauderdale的航空公司有哪些？",
+        "A": [
+            "A-OK Jets",
+            "Discovery Jets",
+            "Execuflight Inc.",
+            "Florida Jet Service Inc.",
+            "Gold Aviation",
+            "Hop-a-jet Worldwide Jet Charter",
+            "Pioneer Jets",
+            "Presidential Aviation Inc.",
+            "Reva Inc.",
+            "Tropic Ocean Airways",
+            "Wilderness Aircraft Company LLC",
+            "Velox Jets"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Fort Lauderdale\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在劳德代尔堡（Fort Lauderdale），主要的航空公司包括：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **西南航空（Southwest Airlines）**\n4. **喷气蓝航空（JetBlue Airways）**\n5. **阿拉斯加航空（Alaska Airlines）**\n6. **精神航空（Spirit Airlines）**\n7. **联合航空（United Airlines）**\n\n此外，还有一些包机和私人航空公司在该地区运营，如：\n\n- **Tropic Ocean Airways**\n- **Banyan Air Service**\n- **Jetscape Services**\n\n这些航空公司提供从劳德代尔堡国际机场（FLL）出发的国内和国际航班，覆盖多个目的地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.7
+    },
+    {
+        "Q": "Greenfield的航空公司有哪些？",
+        "A": [
+            "Solutions Air Charter LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Greenfield\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Greenfield地区，有几家航空公司和机场提供服务。以下是一些主要的航空公司和机场信息：\n\n1. **Woodfield Airpark Inc** - 这是位于Greenfield的一个机场，提供私人飞行服务。\n   - 机场代码：MU27\n   - 地理位置：纬度37.468334， 经度-93.93\n\n2. **Frost Field** - 另一个位于Greenfield的机场，主要用于小型飞机和私人飞行。\n   - 机场代码：0II7\n   - 地理位置：纬度39.795， 经度-85.78667\n\n3. **Ross Field** - 该机场也位于Greenfield，提供类似的服务。\n   - 机场代码：OI25\n   - 地理位置：纬度39.843334， 经度-83.355\n\n4. **Keller Airfield** - 这是Greenfield Township的一个机场，适合小型飞机。\n   - 机场代码：5AR7\n   - 地理位置：纬度35.68667， 经度-90.793335\n\n5. **Soulbird Aviation LLC** - 提供私人包机服务，拥有多种高效和豪华的飞机，包括Cirrus SR22和Gulfstream G280。\n   - 地址：3879 N Aviation Way, Greenfield, United States\n   - 联系电话：+1 317 769 2538\n\n这些航空公司和机场为Greenfield及周边地区的航空旅行提供了多种选择。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 15.91
+    },
+    {
+        "Q": "Rye Brook的航空公司有哪些？",
+        "A": [
+            "Tailwind Air LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Rye Brook\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Rye Brook，纽约，主要的航空公司包括：\n\n1. **Tailwind Air** - 这是一家提供私人包机服务的公司，专注于舒适和高科技的飞行体验。其总部位于Rye Brook，地址为800 Westchester Ave, Suite 320, Rye Brook, United States。您可以通过他们的网站 [flytailwind.com](http://www.flytailwind.com) 联系他们。\n\n2. **Talon Air LLC** - 这是一家知名的私人飞机包机公司，主要在北美、中美和欧洲提供服务。虽然具体的地址未列出，但它在Rye Brook地区运营。\n\n3. **Rvr Aviation LLC** - 这是一家专注于北美和中美地区的私人包机航空公司，提供灵活的飞行选项。\n\n这些公司提供的服务主要是私人包机，适合需要灵活和高端飞行体验的客户。如果您需要更多信息或具体的服务细节，可以直接访问他们的官方网站或联系他们的客服。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 18.18
+    },
+    {
+        "Q": "Mississauga的航空公司有哪些？",
+        "A": [
+            "FlyXcite"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Mississauga\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在米西索加（Mississauga），有多家航空公司提供服务，主要集中在私人航空和包机服务。以下是一些主要的航空公司：\n\n1. **Chartright Air** - 提供个性化和灵活的私人航空解决方案，服务范围包括北美、中央美洲和欧洲。\n\n2. **Flightline First LLC** - 主要在北美和中央美洲运营，专注于高端私人航空服务。\n\n3. **Execuflight Inc.** - 提供多种豪华和高效的私人飞行选择，拥有多种类型的飞机。\n\n4. **Private Flite Aviation** - 专注于北美和中央美洲市场的私人包机服务。\n\n5. **FlyXcite** - 运营现代化的机队，提供灵活的私人飞行服务。\n\n6. **Air Smart** - 主要服务于北美和南美的私人包机需求。\n\n这些航空公司为米西索加的旅客提供了多样化的飞行选择，尤其是在私人和包机服务方面。如果您需要更多具体的信息或服务细节，请告知我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 18.67
+    },
+    {
+        "Q": "Bloomington的航空公司有哪些？",
+        "A": [
+            "Synergy Flight Center"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bloomington\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Bloomington，提供航班服务的航空公司包括：\n\n1. **Southern Sky Aviation, LLC** - 提供前往亚特兰大的航班。\n2. **Synergy Flight Center** - 提供多条航线，包括亚特兰大、芝加哥和底特律等地。\n3. **Moser Aviation, LLC** - 主要服务于芝加哥航线。\n4. **Grandview Aviation, LLC** - 也提供芝加哥航班。\n5. **International Group LLC** - 提供底特律航班。\n6. **Wisconsin Aviation** - 提供前往格林贝的航班。\n7. **Ab Jets** - 提供前往纳什维尔的航班。\n8. **Liberty Jet** - 提供前往匹兹堡的航班。\n\n此外，还有其他一些航空公司和包机服务，提供多条航线，包括迈阿密、印第安纳波利斯和拉斯维加斯等地的航班。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.06
+    },
+    {
+        "Q": "Cairo的航空公司有哪些？",
+        "A": [
+            "Smart Aviation",
+            "Spot Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Cairo\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在开罗，主要的航空公司包括：\n\n1. **埃及航空（EgyptAir）** - 作为埃及的国家航空公司，提供国内和国际航班。\n2. **开罗航空（Air Cairo）** - 这是一家廉价航空公司，主要提供国内航班及部分国际航班。\n3. **阿尔阿赫利航空（Al Ahly Airlines）** - 提供国内和区域航班。\n4. **Smart Aviation** - 提供包机服务和商务航空服务。\n\n此外，开罗国际机场还接待多家国际航空公司，包括土耳其航空、阿联酋航空、卡塔尔航空等，提供广泛的国际航班选择。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.3
+    },
+    {
+        "Q": "Lincoln的航空公司有哪些？",
+        "A": [
+            "Sacramento Air Charter"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Lincoln\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在林肯（Lincoln）出发的航空公司主要包括以下几家：\n\n1. **美国航空（American Airlines）**\n2. **联合航空（United Airlines）**\n3. **边疆航空（Frontier Airlines）**\n4. **Breeze Airways**\n\n此外，林肯机场（LNK）还提供多种私人包机服务，涉及多家航空公司和不同类型的飞机，包括：\n- **Bombardier Learjet系列**\n- **Cessna Citation系列**\n- **Hawker系列**\n\n这些航空公司和服务提供了从林肯出发到多个目的地的航班选择，适合不同的旅行需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.35
+    },
+    {
+        "Q": "Heraklion的航空公司有哪些？",
+        "A": [
+            "Panellenic S.A."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Heraklion\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "赫拉克利翁（Heraklion）主要的航空公司包括：\n\n1. **Aegean Airlines** - 希腊的主要航空公司，提供国内和国际航班。\n2. **Sky Express** - 另一家希腊航空公司，专注于国内航班。\n3. **Volotea** - 提供从赫拉克利翁出发的多条航线，主要是欧洲目的地。\n\n此外，还有一些私人包机公司和其他国际航空公司也在赫拉克利翁运营，提供多样化的航班选择。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.62
+    },
+    {
+        "Q": "Bolzano的航空公司有哪些？",
+        "A": [
+            "Skyalps"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Bolzano\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在博尔扎诺（Bolzano），主要的航空公司包括：\n\n1. **Skyalps** - 提供个性化和高质量的私人包机服务，专注于快速、便捷和奢华的旅行选项。\n2. **FlexFlight** - 也是博尔扎诺的航空公司之一，提供多种航班选择。\n3. **Air Dolomiti** - 作为意大利的一部分，提供从博尔扎诺出发的航班。\n\n此外，博尔扎诺机场还与多家国际航空公司合作，提供前往多个目的地的航班，包括米兰、慕尼黑和维也纳等城市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 16.17
+    },
+    {
+        "Q": "Miramar的航空公司有哪些？",
+        "A": [
+            "Aeromas"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Miramar\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Miramar地区，有几家航空公司提供服务，主要集中在私人包机和高端航空旅行。以下是一些主要的航空公司：\n\n1. **Mira Vista Aviation** - 这是一家专注于北美、欧洲和中美洲的私人包机运营商，提供高端的航空服务。\n\n2. **Mach Point Aviation** - 这是一家精品航空公司，主要在北美、中美洲和西亚运营，提供个性化服务和优质的私人包机体验。\n\n3. **Skyways Charter LLC** - 这是一家知名的私人包机公司，专注于提供高质量的航空服务，主要在北美和中美洲。\n\n4. **Fly the Whale** - 这是一家独特的私人包机航空公司，专门提供中美洲和北美之间的专属航班。\n\n这些航空公司都致力于为客户提供高效、豪华的飞行体验，适合需要高端旅行解决方案的客户。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.85
+    },
+    {
+        "Q": "Corpus Christi的航空公司有哪些？",
+        "A": [
+            "Sterling Air Service"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Corpus Christi\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在科珀斯克里斯蒂（Corpus Christi），主要的航空公司包括：\n\n1. **美国航空（American Airlines）**\n2. **联合航空（United Airlines）**\n3. **西南航空（Southwest Airlines）**\n4. **达美航空（Delta Air Lines）**\n\n此外，还有一些私人航空公司提供包机服务，例如：\n- **Merlin One**\n- **Sterling Air Service**\n- **Grandview Aviation, LLC**\n- **Nicholas Air**\n\n这些航空公司提供多条航线，连接科珀斯克里斯蒂与其他主要城市，如奥斯汀、达拉斯、休斯顿和圣安东尼奥等。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.92
+    },
+    {
+        "Q": "Upper Bavaria的航空公司有哪些？",
+        "A": [
+            "Air Independence",
+            "Voyage Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Upper Bavaria\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在上巴伐利亚地区，主要的航空公司和航班服务包括：\n\n1. **慕尼黑机场（Munich Airport）** - 这是上巴伐利亚的主要国际机场，提供多家航空公司的航班服务，包括：\n   - **德国汉莎航空（Lufthansa）**\n   - **瑞安航空（Ryanair）**\n   - **易捷航空（easyJet）**\n   - **国泰航空（Cathay Pacific）**\n   - **英国航空（British Airways）**\n\n2. **梅明根机场（Memmingen Airport）** - 这个机场主要服务于低成本航空公司，提供前往多个欧洲城市的航班：\n   - **乐桃航空（Peach Aviation）**\n   - **瑞安航空（Ryanair）**\n   - **易捷航空（easyJet）**\n\n3. **私人航空公司** - 上巴伐利亚还有一些私人航空公司，提供包机服务和商务航班，例如：\n   - **Air Independence**\n   - **Silver Cloud Air**\n   - **Das Private Jets Gmbh**\n\n这些航空公司和机场为上巴伐利亚的居民和游客提供了多样化的航空服务，涵盖了从低成本航班到高端私人包机的需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.77
+    },
+    {
+        "Q": "Quincy的航空公司有哪些？",
+        "A": [
+            "Sentient Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Quincy\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在昆西（Quincy），主要的航空公司包括：\n\n1. **Jet The World Management**\n   - 主要航线：昆西到丹佛\n   - 机型：Hawker 1000, Hawker 800XP, Embraer Phenom 300\n\n2. **Contour Aviation**\n   - 主要航线：昆西到芝加哥\n   - 机型：Cessna Citation Bravo, Hawker 900XP, Hawker 800XP\n\n3. **Ozair Charter Service**\n   - 主要航线：昆西到堪萨斯城、拉斯维加斯、春田等\n   - 机型：Embraer Phenom 300, Beechcraft King Air 350, Cessna Citation CJ2+\n\n4. **Triton Airways, LLC**\n   - 主要航线：昆西到迈阿密\n   - 机型：Cessna Citation XLS, Bombardier Learjet 60\n\n5. **Sky Quest, LLC**\n   - 主要航线：昆西到春田\n   - 机型：Bombardier Challenger 350, Cessna Citation CJ3+\n\n这些航空公司提供私人包机服务，连接昆西与多个主要城市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.65
+    },
+    {
+        "Q": "Sencur的航空公司有哪些？",
+        "A": [
+            "United Eagle Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Sencur\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Sencur，您可以找到以下航空公司：\n\n1. **United Eagle** - 这是一家专注于私人航空服务的航空公司，主要运营于北美、欧洲和中美洲。它的机队包括Gulfstream G500和G550等高性能豪华飞机。\n\n如果您需要更多关于这些航空公司的具体信息或服务，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.19
+    },
+    {
+        "Q": "Cambridge的航空公司有哪些？",
+        "A": [
+            "Execujet (UK) Limited"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Cambridge\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在剑桥，主要的航空公司包括：\n\n1. **Skylife Elite**\n   - 提供从剑桥到巴尔的摩的航班。\n\n2. **Aero-tech Services Inc**\n   - 也提供从剑桥到巴尔的摩的航班。\n\n3. **Grandview Aviation, LLC**\n   - 同样提供从剑桥到巴尔的摩的航班。\n\n4. **Cobalt Air, LLC**\n   - 提供从剑桥到Teterboro的航班。\n\n5. **Jet Linx Aviation, LLC**\n   - 也提供从剑桥到Teterboro的航班。\n\n6. **Luxaviation**\n   - 提供多条航线，包括剑桥到布鲁塞尔、伦敦等地的航班。\n\n7. **Vistajet Ltd.**\n   - 提供从剑桥到多个目的地的航班，包括巴黎和伦敦。\n\n此外，剑桥机场（Cambridge Airport）也有多个私人航空公司和包机服务，提供灵活的航班选择，适合不同的旅行需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.11
+    },
+    {
+        "Q": "Mosta的航空公司有哪些？",
+        "A": [
+            "Sparfell Malta Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Mosta\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Mosta，主要的航空公司包括：\n\n1. **马耳他航空（Air Malta）** - 这是马耳他的国家航空公司，提供前往欧洲和北非的航班。\n\n2. **Sparfell** - 这是一家提供包机服务的公司，位于Mosta，专注于私人和商务飞行。\n\n3. **Special Services Corporation** - 虽然这是一家美国的私人包机服务提供商，但它在北美和中美洲地区有一定的影响力。\n\n这些航空公司提供多种服务，包括定期航班和包机服务，满足不同旅客的需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 19.84
+    },
+    {
+        "Q": "Washington的航空公司有哪些？",
+        "A": [
+            "Skyward Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Washington\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在华盛顿特区，主要的航空公司包括：\n\n1. **美联航（United Airlines）** - 作为美国最大的航空公司之一，美联航在华盛顿的杜勒斯国际机场（IAD）提供广泛的国内和国际航班。\n\n2. **美国航空（American Airlines）** - 另一家主要航空公司，提供多条航线连接华盛顿与其他城市。\n\n3. **达美航空（Delta Air Lines）** - 提供多条航线，连接华盛顿与美国各大城市及国际目的地。\n\n4. **西南航空（Southwest Airlines）** - 以低票价著称，提供多条国内航线。\n\n5. **阿拉斯加航空（Alaska Airlines）** - 提供从华盛顿出发的航班，主要连接西海岸城市。\n\n此外，华盛顿地区还有一些地方航空公司和包机服务，例如Skyward Aviation和Grandview Aviation等，提供私人和商务航班服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.96
+    },
+    {
+        "Q": "El Dorado County的航空公司有哪些？",
+        "A": [
+            "Sky Partners Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"El Dorado County\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在El Dorado County，主要的航空公司和机场包括：\n\n1. **Cameron Airpark Airport (O61)** - 這是一個公共機場，位於Cameron Park，提供小型飛機的起降服務。\n\n2. **Placerville Airport (KPVF)** - 這也是一個公共機場，主要服務小型飛機和私人飛行。\n\n3. **Sacramento Air Charter** - 提供包機服務，主要使用Beechcraft King Air和Pilatus PC-12等飛機。\n\n4. **Grandview Aviation** - 提供私人飛行服務，使用多種型號的飛機，包括Embraer Phenom 300和Bombardier Learjet 60。\n\n5. **Asi Charter, Inc.** - 提供包機服務，使用多種型號的飛機，包括Cessna Citation系列。\n\n這些航空公司和機場主要服務於私人飛行和小型商業航班，並不提供大型商業航空服務。如果您需要更多具體的航班信息或服務，建議直接聯繫相關的航空公司或機場。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.2
+    },
+    {
+        "Q": "Telangana State的航空公司有哪些？",
+        "A": [
+            "Flybywire International Private Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Telangana State\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在特伦甘纳州（Telangana State），主要的航空公司包括：\n\n1. **IndiGo Airlines** - 作为印度最大的低成本航空公司，IndiGo在特伦甘纳州的海德拉巴（Hyderabad）运营多个国内和国际航班。\n\n2. **Air India** - 作为国家航空公司，Air India提供从海德拉巴出发的多条航线，连接国内外多个城市。\n\n3. **SpiceJet** - 另一家低成本航空公司，SpiceJet在特伦甘纳州提供多条航线，主要集中在国内航班。\n\n4. **Vistara** - 这是一家全服务航空公司，提供从海德拉巴出发的航班，连接主要城市。\n\n5. **GoAir** - 也是一家低成本航空公司，提供多条国内航线。\n\n此外，还有一些私人包机和小型航空公司，如**Flybywire International Private Ltd**和**Vsr Ventures Pvt Ltd**，它们提供定制的航空服务，主要用于商务和私人旅行。\n\n如果您需要更详细的信息或特定航空公司的航班安排，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.87
+    },
+    {
+        "Q": "Regional Municipality of Peel的航空公司有哪些？",
+        "A": [
+            "Chartright Air Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Regional Municipality of Peel\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在皮尔地区（Regional Municipality of Peel），主要的航空公司包括：\n\n1. **Chartright Air, Inc.** - 提供私人航空服务，主要覆盖北美、中央美洲和欧洲，知名于其个性化的服务和高安全标准。\n2. **Private Air, Inc.** - 主要提供私人飞机包机服务。\n3. **Cameron Air Service, Ltd.** - 也提供私人航空服务，涵盖多种航线。\n\n这些航空公司通常使用的飞机型号包括：\n- **Pilatus PC-12**\n- **Cessna 206**\n- **Cessna Citation XLS**。\n\n如果您需要更详细的信息或特定航班的查询，请告知！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.14
+    },
+    {
+        "Q": "Ronkonkoma的航空公司有哪些？",
+        "A": [
+            "Executive Fliteways"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Ronkonkoma\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Ronkonkoma，主要的航空公司和服务包括：\n\n1. **Hawthorne Global Aviation Services**  \n   - 地址：2221 Smithtown Ave, Ronkonkoma, NY 11779  \n   - 电话：+1 631 913 7102  \n   - 电子邮件：kisp@hawthorne.aero  \n\n2. **Modern Aviation Long Island**  \n   - 地址：90 Arrival Ave. Suite 18, Ronkonkoma, NY 11779  \n   - 电话：+1 631 588 0303 / +1 631 379 5064  \n   - 电子邮件：isp@modern-aviation.com  \n\n3. **Swissport Executive Islip**  \n   - 地址：Long Island MacArthur Airport, 90 Arrival Avenue, Suite 911, Ronkonkoma, NY 11779  \n   - 电话：+1 631 467 2345  \n   - 电子邮件：Paul.Flores@Swissport.com  \n\n4. **Sheltair Ronkonkoma-Islip**  \n   - 地址：90 Arrival Ave. Suite 18, Ronkonkoma, NY 11779  \n   - 电话：+1 631 588 0303  \n   - 电子邮件：info-isp@sheltairaviation.com  \n\n这些公司提供各种航空服务，包括包机和私人飞行选项，适合不同的客户需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 15.82
+    },
+    {
+        "Q": "Vienna的航空公司有哪些？",
+        "A": [
+            "Avcon Jet AG",
+            "Sparfell Luftfahrt GmbH",
+            "Sidus Aviation GmbH",
+            "Oysterjets GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Vienna\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在维也纳，主要的航空公司包括：\n\n1. **奥地利航空（Austrian Airlines）** - 作为维也纳的主要航空公司，提供广泛的国内和国际航班。\n2. **维也纳航空（Vienna Airlines）** - 主要运营区域航班。\n3. **捷蓝航空（JetBlue Airways）** - 提供从维也纳出发的航班。\n4. **边疆航空（Frontier Airlines）** - 也有航班从维也纳出发。\n5. **私人航空公司** - 如Jetfly Airline GmbH、Sparfell Luftfahrt GmbH等，专注于私人和商务航空服务。\n\n此外，维也纳国际机场还接待多家国际航空公司，提供连接欧洲及其他地区的航班。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.31
+    },
+    {
+        "Q": "Memmingerberg的航空公司有哪些？",
+        "A": [
+            "Excellent Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Memmingerberg\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Memmingerberg，主要的航空公司包括：\n\n1. **Bairline Fluggesellschaft Mbh & Co Kg**\n2. **Voyage Air**\n3. **Euro Link**\n4. **Excellent Air**\n5. **Mhs Aviation GmbH**\n6. **Silver Cloud Air**\n7. **Das Private Jets GmbH**\n\n这些航空公司提供多种航班服务，涵盖了从Memmingerberg出发的多个目的地，包括慕尼黑、法兰克福、杜塞尔多夫等地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.79
+    },
+    {
+        "Q": "Fort Worth的航空公司有哪些？",
+        "A": [
+            "Baker Aviation LLC",
+            "Rvr Aviation LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Fort Worth\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Fort Worth，主要的航空公司包括：\n\n1. **美国航空（American Airlines）** - 作为总部位于Fort Worth的主要航空公司，美国航空提供广泛的国内和国际航班服务。\n2. **达美航空（Delta Air Lines）** - 提供多条航线，连接Fort Worth与多个主要城市。\n3. **西南航空（Southwest Airlines）** - 以其低票价和灵活的航班安排而闻名，西南航空在Fort Worth也有重要的航线。\n4. **联合航空（United Airlines）** - 提供多条航线，连接Fort Worth与全国各地及国际目的地。\n\n此外，还有一些地方性和包机服务的航空公司，例如：\n\n- **Jet Linx Aviation**\n- **Airshare**\n- **Baker Aviation**\n\n这些公司提供私人和包机服务，满足特定的旅行需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.58
+    },
+    {
+        "Q": "West Palm Beach的航空公司有哪些？",
+        "A": [
+            "Custom Jet Charters LLC",
+            "Executive Airlink Inc.",
+            "Executive Aviation Corporation",
+            "Gama Aviation LLC",
+            "Jet Access Aviation Inc.",
+            "Phenix Jet",
+            "Turnkey Jet Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"West Palm Beach\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在西棕榈滩（West Palm Beach），有多家航空公司提供航班服务。以下是一些主要的航空公司：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **联合航空（United Airlines）**\n4. **捷蓝航空（JetBlue Airways）**\n5. **边疆航空（Frontier Airlines）**\n6. **Breeze Airways**\n7. **银航空（Silver Airways）**\n8. **加拿大航空（Air Canada）**\n9. **巴西蓝航空（Azul Brazilian Airlines）**\n\n这些航空公司提供从西棕榈滩国际机场（Palm Beach International Airport）出发的国内和国际航班，连接多个主要城市和目的地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 18.05
+    },
+    {
+        "Q": "Toronto的航空公司有哪些？",
+        "A": [
+            "Cameron Air Service Ltd",
+            "Skyservice Business Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Toronto\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在多伦多，主要的航空公司包括：\n\n1. **加拿大航空（Air Canada）** - 加拿大的国家航空公司，提供国内和国际航班。\n2. **西捷航空（WestJet）** - 提供广泛的国内和国际航班。\n3. **美国航空（American Airlines）** - 提供从多伦多到美国各大城市的航班。\n4. **达美航空（Delta Air Lines）** - 提供多伦多与美国之间的航班。\n5. **联合航空（United Airlines）** - 连接多伦多与美国多个城市。\n6. **波特航空（Porter Airlines）** - 主要提供短途航班，连接多伦多市中心与周边地区。\n\n此外，还有一些私人航空公司和包机服务，如Chartright Air和Cameron Air Service，提供定制的飞行服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.75
+    },
+    {
+        "Q": "Moscow的航空公司有哪些？",
+        "A": [
+            "Aircompany North-west",
+            "Weltall-Avia Airlines"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Moscow\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在莫斯科，有多家航空公司提供服务。以下是一些主要的航空公司：\n\n1. **俄罗斯国际航空（Aeroflot）** - 作为俄罗斯的国家航空公司，Aeroflot 提供国内和国际航班，是莫斯科最主要的航空公司之一。\n\n2. **S7航空（Siberia Airlines）** - 这是一家主要的国内航空公司，提供多条国内航线以及一些国际航班。\n\n3. **艾菲航空（UTair）** - 主要提供国内航班，也有一些国际航线。\n\n4. **Weltall-avia Airlines** - 提供多条航线，主要集中在国内航班。\n\n5. **Aircompany North-west** - 这是一家较小的航空公司，提供一些国内航班。\n\n6. **Euro-asia Air Air Company Jsc** - 主要提供商务航班和一些国际航线。\n\n此外，莫斯科的多个机场（如谢列梅捷沃国际机场和多莫杰多沃国际机场）也为这些航空公司提供服务，连接国内外多个目的地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 15.97
+    },
+    {
+        "Q": "Turin的航空公司有哪些？",
+        "A": [
+            "Flight Solutions S.R.L."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Turin\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在都灵，主要的航空公司包括：\n\n1. **易捷航空 (easyJet)** - 提供多条国内和国际航线。\n2. **意大利航空 (ITA Airways)** - 作为意大利的国家航空公司，提供多条航线。\n3. **汉莎航空 (Lufthansa)** - 提供连接德国及其他欧洲城市的航班。\n4. **英国航空 (British Airways)** - 提供从都灵到伦敦的航班。\n5. **西班牙国家航空 (Iberia)** - 提供到西班牙的航班。\n6. **维罗提航空 (Vueling)** - 提供多条欧洲航线。\n\n此外，还有一些包机和私人航空公司，如：\n- **Air X Charter Ltd**\n- **Valljet Airline**\n- **Jet Solution**\n\n这些航空公司提供从都灵出发到多个目的地的航班，包括伦敦、巴黎、马德里等城市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.31
+    },
+    {
+        "Q": "Oberbayern的航空公司有哪些？",
+        "A": [
+            "Aeroways GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Oberbayern\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Oberbayern地区，有几家航空公司提供服务，主要集中在包机和私人航空领域。以下是一些主要的航空公司：\n\n1. **Air Independence** - 这是一家德国的精品包机航空公司，提供个性化的服务，主要覆盖欧洲和西亚地区。\n\n2. **Aerowest GmbH** - 这家公司专注于私人航空，提供高效的包机服务，拥有包括Cessna Citation XLS+在内的机队。\n\n3. **Augsburg Airways** - 成立于1980年，专注于欧洲和东欧的私人包机航班。\n\n4. **Franconia Air Service GmbH** - 这是一家知名的私人包机服务公司，主要在欧洲和东欧运营。\n\n5. **Mhs Aviation GmbH** - 成立于1977年，提供私人包机服务，享有良好的声誉 。\n\n这些航空公司提供多种类型的飞机，包括小型喷气机和涡轮螺旋桨飞机，适合不同的旅行需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.02
+    },
+    {
+        "Q": "Oakland的航空公司有哪些？",
+        "A": [
+            "GoodJet",
+            "Pacific Coast Jet"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Oakland\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在奥克兰国际机场（Oakland International Airport），有多家航空公司提供航班服务。以下是一些主要的航空公司及其目的地：\n\n1. **美国西南航空（Southwest Airlines）** - 提供多条国内航线，包括到达丹佛等城市的直达航班。\n2. **达美航空（Delta Air Lines）** - 提供到亚特兰大的直达航班。\n3. **阿拉斯加航空（Alaska Airlines）** - 提供多条航线，连接西海岸及其他地区。\n4. **联合航空（United Airlines）** - 提供多条国内和国际航线。\n\n此外，还有一些私人航空公司和包机服务，如：\n- **Xojet**\n- **Vistajet**\n- **Pacific Coast Jet**\n\n这些公司提供的航班包括到达多个目的地的包机服务，适合需要灵活出行的旅客。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.7
+    },
+    {
+        "Q": "Dolce的航空公司有哪些？",
+        "A": [
+            "Fast Private Jet S.R.L."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Dolce\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Dolce地区，有几家航空公司提供私人航空服务。以下是一些相关的航空公司：\n\n1. **Fast Private Jet** - 这是一家专注于欧洲和西亚航线的精品私人航空服务公司，提供个性化的旅行体验，拥有包括Hawker 400XP在内的机队。\n\n2. **Amelia** - 总部位于法国，主要服务于欧洲、非洲和大洋洲的航线，是航空行业中的知名品牌。\n\n3. **DCT Air** - 这是一家美国的私人航空公司，主要在北美地区运营，提供高端的飞行体验，机队包括Beechcraft King Air B200和Cessna Citation XLS。\n\n4. **Skyalps** - 意大利航空公司，主要专注于欧洲的区域航班，使用包括Beechcraft King Air 200在内的专用机队。\n\n这些航空公司都致力于提供个性化和高端的飞行服务，适合寻求独特旅行体验的客户。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.5
+    },
+    {
+        "Q": "Rzeszow的航空公司有哪些？",
+        "A": [
+            "Royal-star Sp. Z O.O."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Rzeszow\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在热舒夫（Rzeszów），主要的航空公司包括：\n\n1. **波兰航空（LOT Polish Airlines）** - 提供国内和国际航班。\n2. **维兹航空（Wizz Air）** - 主要运营低成本航班，连接多个欧洲城市。\n3. **汉莎航空（Lufthansa）** - 提供前往德国及其他国际目的地的航班。\n\n此外，还有一些私人航空公司和包机服务，例如：\n\n- **Air Bohemia S.r.o.**\n- **Amc Aviation**\n- **Jet Solution**\n\n这些航空公司提供从热舒夫出发到多个目的地的航班，包括伦敦、布拉格、伊斯坦布尔、米兰等城市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.89
+    },
+    {
+        "Q": "Belfast的航空公司有哪些？",
+        "A": [
+            "247 Aviation Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Belfast\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在贝尔法斯特，主要的航空公司包括：\n\n1. **Ryanair**\n2. **easyJet**\n3. **British Airways**\n4. **Aer Lingus**\n5. **Flybe**\n6. **Loganair**\n7. **United Airlines**\n8. **American Airlines**\n9. **Delta Air Lines**\n10. **Breeze Airways**\n\n这些航空公司提供从贝尔法斯特国际机场和贝尔法斯特城市机场出发的多条航线，连接到多个国内和国际目的地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.49
+    },
+    {
+        "Q": "Detmold的航空公司有哪些？",
+        "A": [
+            "PAD Aviation Service"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Detmold\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Detmold，主要的航空公司包括：\n\n1. **荷兰皇家航空 (KLM)**\n2. **汉莎航空 (Lufthansa)**\n3. **法国航空 (Air France)**\n4. **瑞士航空 (Swiss International Air Lines)**\n5. **奥地利航空 (Austrian Airlines)**\n\n这些航空公司提供前往Detmold的航班，通常通过主要的枢纽机场进行中转。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.72
+    },
+    {
+        "Q": "Cincinnati的航空公司有哪些？",
+        "A": [
+            "Executive Jet Management Inc.",
+            "Reynolds Jet Management"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Cincinnati\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在辛辛那提，主要的航空公司包括：\n\n1. **达美航空 (Delta Air Lines)** - 提供多条国内和国际航线。\n2. **美国联合航空 (United Airlines)** - 连接多个主要城市。\n3. **美国航空 (American Airlines)** - 提供广泛的航班选择。\n4. **西南航空 (Southwest Airlines)** - 以低票价和灵活的航班著称。\n5. **阿拉斯加航空 (Alaska Airlines)** - 提供部分航线，尤其是西海岸的连接。\n6. **捷蓝航空 (JetBlue Airways)** - 提供舒适的服务和竞争力的票价。\n\n此外，还有一些地方航空公司和包机服务，例如**Reynolds Jet Management**和**Jet Linx Aviation**，它们提供私人和商务航班服务。\n\n如果你需要更具体的航班信息或航空公司服务，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.36
+    },
+    {
+        "Q": "Napa County的航空公司有哪些？",
+        "A": [
+            "Airsf Flight Service",
+            "Napa Jet Center Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Napa County\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Napa County，主要的航空公司和服务提供商包括：\n\n1. **Napa Jet Center, Inc.** - 提供多种航班服务，包括私人包机。\n2. **Thrive Aviation** - 提供私人航空服务，涵盖多个目的地。\n3. **Airsf Flight Service (McLean Aviation Services, Inc.)** - 提供包机和其他航空服务。\n4. **Diamond Aviation** - 主要提供私人飞行服务。\n5. **Modesto Jet Center** - 提供多种航空服务，包括包机。\n\n这些公司提供的航班覆盖多个目的地，包括旧金山、洛杉矶、拉斯维加斯等地，使用的飞机型号包括Cessna Citation系列、Pilatus PC-12、Beechcraft King Air等。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.74
+    },
+    {
+        "Q": "Osijek的航空公司有哪些？",
+        "A": [
+            "Air Pannonia D.O.O."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Osijek\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在奥西耶克（Osijek），主要的航空公司包括：\n\n1. **克罗地亚航空公司（Croatia Airlines）** - 这是克罗地亚的国家航空公司，提供国内和国际航班。\n2. **瑞安航空（Ryanair）** - 这是一家低成本航空公司，提供多条欧洲航线。\n3. **贸易航空（Trade Air）** - 这是一家克罗地亚的航空公司，专注于短途和中途航班，提供个性化服务和独特航线。\n\n此外，还有一些小型包机和私人航空公司，如**Air Pannonia**和**Air Pink**，它们提供定制的航班服务。\n\n如果您需要更多关于特定航班或航空公司的信息，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 15.3
+    },
+    {
+        "Q": "DuPage County的航空公司有哪些？",
+        "A": [
+            "Dupage Aerospace",
+            "Integrated Flight Resources Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"DuPage County\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在DuPage County，主要的航空公司和航空服务提供商包括：\n\n1. **Dupage Aerospace** - 这是一家专注于提供豪华空中旅行的私人包机公司，服务范围覆盖北美、欧洲和中美洲。\n\n2. **Jet Linx Aviation** - 提供个性化的包机服务，专注于客户的特定需求。\n\n3. **Moser Aviation** - 提供多种航空服务，包括包机和航空管理。\n\n4. **Ventura Air Services** - 提供包机服务，涵盖多个目的地。\n\n这些公司通常提供从DuPage County出发的私人包机服务，适合商务和休闲旅行。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.64
+    },
+    {
+        "Q": "Red Bluff的航空公司有哪些？",
+        "A": [
+            "PJ Air"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Red Bluff\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在雷德布拉夫（Red Bluff），主要的航空公司和包机服务包括：\n\n1. **Clay Lacy Aviation**\n   - 提供从雷德布拉夫到洛杉矶的航班。\n\n2. **Baker Aviation, LLC**\n   - 也提供从雷德布拉夫到洛杉矶的航班。\n\n3. **Csm Aviation**\n   - 提供多条航线，包括雷德布拉夫到洛杉矶。\n\n4. **Axis Jet**\n   - 提供雷德布拉夫到奇科（Chico）和萨克拉门托（Sacramento）的航班。\n\n5. **PJ Air**\n   - 提供雷德布拉夫到奇科、萨克拉门托和弗雷斯诺（Fresno）的航班。\n\n6. **Cessna Citation系列**\n   - 多种机型可供选择，如Cessna Citation X和Cessna Citation Bravo等。\n\n这些航空公司主要提供包机服务，适合需要灵活航班安排的旅客。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.85
+    },
+    {
+        "Q": "Cagliari的航空公司有哪些？",
+        "A": [
+            "Sardinian Sky Service"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Cagliari\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在卡利亚里（Cagliari）机场，主要的航空公司包括：\n\n1. **Ryanair**\n2. **British Airways**\n3. **Lufthansa**\n4. **Luxair**\n5. **EasyJet**\n6. **Valljet Airline**\n7. **Proair Charter Transport Gmbh**\n8. **Heron Aviation**\n9. **Jetbee Czech S.r.o.**\n10. **Air X Charter Ltd**\n\n这些航空公司提供多条国内和国际航线，连接卡利亚里与多个目的地，如米兰、罗马、巴塞罗那、马德里等。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.58
+    },
+    {
+        "Q": "Tubingen的航空公司有哪些？",
+        "A": [
+            "Das Private Jets GmbH"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Tubingen\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在图宾根（Tubingen），主要的航空公司和航班服务包括：\n\n1. **Silver Cloud Air** - 提供多条航线，包括前往米兰（Milan）和弗里德里希港（Friedrichshafen）。\n2. **Das Private Jets Gmbh** - 也提供前往米兰和弗里德里希港的航班。\n3. **E-aviation/eisele Flugdienst Gmbh** - 提供私人飞行服务。\n\n此外，图宾根的航班主要连接到附近的城市和目的地，如弗里德里希港和米兰，通常使用小型喷气式飞机，如Cessna Citation系列和Embraer Phenom系列。\n\n如果您需要更多具体的航班信息或预订服务，建议访问相关航空公司的官方网站或使用航班搜索引擎。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.06
+    },
+    {
+        "Q": "Wheeling的航空公司有哪些？",
+        "A": [
+            "N-Jet",
+            "Northwest Flyers",
+            "Priester Aviation",
+            "Ventis Aviation Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Wheeling\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Wheeling，主要的航空公司和服务提供者包括：\n\n1. **Hawthorne Global Aviation Services** - 提供全面的航空服务，位于Wheeling, IL。\n   - 电话: +1 847 325 0566\n   - 邮箱: kpwk@hawthorne.aero\n\n2. **Signature Flight Support** - 另一家提供飞行支持服务的公司。\n   - 电话: +1 847 537 1200\n   - 邮箱: PWK@signatureflight.com\n\n3. **Trego Dugan Aviation** - 提供航空服务的公司，位于Wheeling。\n   - 电话: +1 877 359 8356\n   - 邮箱: customerservice@trego-dugan.com\n\n4. **Northwest Flyers** - 提供飞行服务的公司，位于附近的Schaumburg。\n   - 电话: +1 847 985 9778\n   - 邮箱: FBO@northwestflyers.com\n\n此外，Wheeling的主要机场是**Wheeling Ohio County Airport**（IATA代码：HLG），提供区域性航班服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.84
+    },
+    {
+        "Q": "Greensboro的航空公司有哪些？",
+        "A": [
+            "Direct Jet Charter LLC",
+            "Koury Aviation Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Greensboro\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在格林斯伯勒（Greensboro），主要的航空公司包括：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **联合航空（United Airlines）**\n4. **西南航空（Southwest Airlines）**\n5. **阿拉斯加航空（Alaska Airlines）**\n6. **捷蓝航空（JetBlue Airways）**\n\n此外，还有一些包机和私人航空公司提供服务，例如：\n- **Direct Jet Charter, LLC**\n- **Koury Aviation, Inc.**\n- **Bellair**。\n\n这些航空公司提供从格林斯伯勒国际机场（GBO）出发的国内和国际航班。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 40.77
+    },
+    {
+        "Q": "Budapest的航空公司有哪些？",
+        "A": [
+            "Jet Solution",
+            "Trust Air Aviation Ltd"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Budapest\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在布达佩斯，有多家航空公司提供航班服务。以下是一些主要的航空公司：\n\n1. **维兹航空（Wizz Air）** - 作为匈牙利最大的低成本航空公司，维兹航空提供前往多个欧洲和非洲目的地的航班。\n2. **汉莎航空（Lufthansa）** - 德国的主要航空公司，提供从布达佩斯出发的国际航班。\n3. **瑞士国际航空（Swiss International Air Lines）** - 提供前往瑞士及其他国际目的地的航班。\n4. **奥地利航空（Austrian Airlines）** - 主要提供前往维也纳及其他欧洲城市的航班。\n5. **土耳其航空（Turkish Airlines）** - 提供前往伊斯坦布尔及其他国际目的地的航班。\n6. **英国航空（British Airways）** - 提供前往伦敦及其他目的地的航班。\n\n此外，还有一些其他航空公司，如**塞尔维亚航空（Air Serbia）**和**布鲁塞尔航空（Brussels Airlines）**等，也在布达佩斯运营航班。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.36
+    },
+    {
+        "Q": "Alpena的航空公司有哪些？",
+        "A": [
+            "North Country Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Alpena\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在阿尔皮纳（Alpena），主要的航空公司是达美航空（Delta Air Lines），它提供从阿尔皮纳县区域机场（Alpena County Regional Airport, IATA代码：APN）的航班。此外，还有一些私人航空公司和包机服务，例如：\n\n1. **North Country Aviation** - 提供个性化的飞行体验，主要使用Beechcraft Baron和Cessna 421飞机。\n2. **Thunder Airlines** - 专注于北美和中美洲的个性化服务，使用Beechcraft King Air和Cessna 208等飞机。\n3. **Aira Aviation** - 提供定制的包机服务，使用Cessna Citation XLS等飞机。\n\n这些航空公司为阿尔皮纳地区的旅客提供了多样化的飞行选择。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.38
+    },
+    {
+        "Q": "Saxonburg的航空公司有哪些？",
+        "A": [
+            "Alpha Three Aviation"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Saxonburg\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "In Saxonburg, there are several aviation companies that provide various services, primarily focusing on private and charter flights. Here are some notable ones:\n\n1. **Alpha Three Aviation**: This company specializes in personalized air travel solutions and operates a fleet that includes versatile aircraft like the Beechcraft Baron and Beechcraft King Air 90. They emphasize flexibility and high customer satisfaction.\n\n2. **Fort Aero**: Known for its specialized fleet, Fort Aero operates three aircraft, including the Cessna Citation X and the Dassault Falcon 7X, catering to clients seeking efficient and comfortable travel.\n\n3. **Skybird Aviation**: This company offers luxury private jet travel with a focus on high-end services, operating a Gulfstream G650 among other aircraft.\n\nThese companies provide a range of services from luxury private jet charters to more personalized air travel options, making Saxonburg a hub for specialized aviation services. If you need more specific information about their services or contact details, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.13
+    },
+    {
+        "Q": "Pensacola的航空公司有哪些？",
+        "A": [
+            "Aero Air Charter LLC",
+            "Speed Aviation Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Pensacola\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在彭萨科拉（Pensacola），主要的航空公司包括：\n\n1. **Spirit Airlines**\n2. **United Airlines**\n3. **Silver Airways**\n4. **American Airlines**\n5. **Delta Air Lines**\n6. **Alaska Airlines**\n7. **Southwest Airlines**\n\n这些航空公司提供多条航线，连接彭萨科拉与多个国内和国际目的地。彭萨科拉国际机场（Pensacola International Airport）是这些航空公司的主要运营基地，提供直飞航班和中转航班服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.29
+    },
+    {
+        "Q": "Springdale的航空公司有哪些？",
+        "A": [
+            "Airresource Charter LLC",
+            "Executive Aviation Services"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Springdale\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在斯普林代尔（Springdale），主要的航空公司和航班服务包括：\n\n1. **Executive Aviation Services** - 提供多条航线，包括飞往亚特兰大、巴尔的摩、丹佛、达拉斯、休斯顿、杰克逊维尔、拉斯维加斯、纳什维尔等地的航班。其主要使用的飞机型号包括Beechcraft King Air B200、Hawker 800XP和Embraer Phenom 300。\n\n2. **Talon Air** - 该公司也提供多条航线，主要服务于达拉斯、休斯顿、杰克逊维尔等城市，使用的飞机型号包括Cessna Citation XLS和Hawker 800XP。\n\n3. **Nicholas Air** - 提供从斯普林代尔出发的航班，主要飞往达拉斯，使用的飞机型号包括Cessna Citation XLS和Beechcraft King Air B200。\n\n4. **Volato** - 该公司提供从斯普林代尔到亚特兰大的航班，使用的飞机型号包括Honda HondaJet。\n\n这些航空公司主要提供私人包机服务，适合需要灵活航班安排的旅客。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 23.52
+    },
+    {
+        "Q": "Albuquerque的航空公司有哪些？",
+        "A": [
+            "CSI Aviation Inc."
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Albuquerque\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在阿尔伯克基国际机场（Albuquerque International Sunport，ABQ），提供航班服务的航空公司包括：\n\n1. **达美航空（Delta Air Lines）**\n2. **美国航空（American Airlines）**\n3. **联合航空（United Airlines）**\n4. **阿拉斯加航空（Alaska Airlines）**\n5. **精灵航空（Spirit Airlines）**\n6. **捷蓝航空（JetBlue Airways）**\n\n这些航空公司提供多条国内和部分国际航线，连接阿尔伯克基与多个主要城市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.93
+    },
+    {
+        "correct_rate": 2.0,
+        "sample_size": 50,
+        "correct_count": 1,
+        "average_time": 13.31
+    }
+]

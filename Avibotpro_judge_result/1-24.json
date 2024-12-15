@@ -1,0 +1,558 @@
+[
+    {
+        "Q": "Beechcraft King Air B200的飞行高度范围是多少？",
+        "A": [
+            10668.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft King Air B200\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft King Air B200的飞行高度范围（即最大巡航高度）为35,000英尺（约10,668米）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.03
+    },
+    {
+        "Q": "Cessna Citation Jet的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation Jet\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation Jet的飞行高度范围（即认证高度）通常在13,000到14,000英尺之间。具体来说，Cessna Citation Excel的认证高度为13,716英尺，而其他型号如Cessna Citation CJ3的认证高度也在相似的范围内。这使得Cessna Citation系列飞机在中小型喷气机中具有良好的飞行性能和灵活性。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.68
+    },
+    {
+        "Q": "Boeing BBJ3的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Boeing BBJ3\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Boeing BBJ3的飞行高度范围（即认证高度）为约12,497米（约41,000英尺）。这使得BBJ3能够在高空飞行，提供更好的燃油效率和更平稳的飞行体验。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.15
+    },
+    {
+        "Q": "Bombardier Learjet 70的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 70\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Learjet 70的飞行高度范围（即认证高度）为15,545英尺（约4,750米）。这使得Learjet 70能够在高空飞行，适合长途商务旅行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.88
+    },
+    {
+        "Q": "Beechcraft 1900D的飞行高度范围是多少？",
+        "A": [
+            7620.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft 1900D\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft 1900D的飞行高度范围（即认证升限）为14,000英尺（约4,267米）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.59
+    },
+    {
+        "Q": "Gulfstream GIII的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream GIII\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Gulfstream GIII的最大飞行高度为43,000英尺（约13,106米）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.33
+    },
+    {
+        "Q": "Dassault Falcon 20F的飞行高度范围是多少？",
+        "A": [
+            12802.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 20F\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Dassault Falcon 20F的飞行高度范围（即认证高度）为12,802米（约42,000英尺）。这使得该飞机在执行长途飞行时能够有效地利用高空的气流，提升燃油效率和飞行性能。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.17
+    },
+    {
+        "Q": "Dassault Falcon 8X的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 8X\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Dassault Falcon 8X的飞行高度范围为45,000英尺（约13,716米）。这一高度使得该飞机能够在高空飞行，享受更好的燃油效率和更少的空气阻力，从而提高飞行性能和舒适度。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.25
+    },
+    {
+        "Q": "Cessna Citation Encore+的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation Encore+\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation Encore+的飞行高度范围（即认证高度）为13,716英尺（约4,175米）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.79
+    },
+    {
+        "Q": "Bombardier Challenger 850的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 850\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Challenger 850的飞行高度范围通常在35,000到45,000英尺（约10,668到13,716米）之间。这一高度范围使得该飞机能够在高空中飞行，享受更好的燃油效率和更少的空气阻力，从而提高飞行性能和乘客舒适度。\n\n如果您需要更详细的技术规格或其他相关信息，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.91
+    },
+    {
+        "Q": "Gulfstream G350的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G350\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Gulfstream G350的飞行高度范围为最大巡航高度13,716米（约45,000英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 17.72
+    },
+    {
+        "Q": "Bombardier Challenger 605的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 605\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Challenger 605的飞行高度范围通常为41,000英尺（约12,497米）。这款飞机以其出色的性能和舒适的客舱而闻名，能够在较高的飞行高度上有效地执行长途飞行任务。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.69
+    },
+    {
+        "Q": "Hawker 400A的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 400A\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Hawker 400A的飞行高度范围（即认证升限）为13,716米（约45,000英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.21
+    },
+    {
+        "Q": "Bombardier Learjet 35A的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 35A\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Learjet 35A的最大飞行高度为51,000英尺（约15,545米）。这款飞机以其高效的性能和较大的航程（约1,911海里或2632公里）而闻名，适合于商务和军事运输用途。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.8
+    },
+    {
+        "Q": "Beechcraft King Air 350iER的飞行高度范围是多少？",
+        "A": [
+            10668.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 350iER\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft King Air 350iER的飞行高度范围（即认证高度）为10,668米（约为35,000英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.56
+    },
+    {
+        "Q": "Embraer Legacy 600的飞行高度范围是多少？",
+        "A": [
+            12479.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Embraer Legacy 600\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Embraer Legacy 600的最大巡航高度为41,000英尺（约12,496米）。这种公务机的设计使其能够在较高的飞行高度上操作，从而提高了飞行效率和舒适度。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.89
+    },
+    {
+        "Q": "Cirrus SR20的飞行高度范围是多少？",
+        "A": [
+            5300.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cirrus SR20\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cirrus SR20的飞行高度范围（即最大飞行高度）为17,500英尺（约5,334米）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.06
+    },
+    {
+        "Q": "Bombardier Global 6500的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Global 6500\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Global 6500的飞行高度范围（即最大飞行高度）为15,545米（约51,000英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.89
+    },
+    {
+        "Q": "Airbus ACJ的飞行高度范围是多少？",
+        "A": [
+            12500.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Airbus ACJ\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Airbus ACJ系列飞机的飞行高度范围通常在39,000英尺（约11,887米）到41,000英尺（约12,497米）之间。具体的飞行高度可能会根据不同的机型和配置有所不同。例如，某些型号的巡航高度可以达到41,000英尺。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.52
+    },
+    {
+        "Q": "Cessna Citation Mustang的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation Mustang\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation Mustang的飞行高度范围（即认证高度）为9144米（30,000英尺）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.01
+    },
+    {
+        "Q": "BAe 125-800的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"BAe 125-800\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "BAe 125-800的飞行高度范围（认证高度）为12,497米（约40,000英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.02
+    },
+    {
+        "Q": "Airbus ACJ A319的飞行高度范围是多少？",
+        "A": [
+            12500.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Airbus ACJ A319\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Airbus ACJ A319的飞行高度范围为12,000米（39,000英尺）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.98
+    },
+    {
+        "Q": "Dassault Falcon 900LX的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 900LX\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Dassault Falcon 900LX的飞行高度范围（即认证高度）为15,545米（约51,000英尺）。这使得该飞机在长途飞行中能够有效避开大部分天气和空中交通，提供更为顺畅的飞行体验。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.96
+    },
+    {
+        "Q": "Bombardier Learjet 31A的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 31A\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Learjet 31A的最大飞行高度为51,000英尺（约15,545米），在这个高度范围内，它能够轻松达到45,000英尺（约13,716米）的飞行高度。这使得Learjet 31A在轻型喷气机中具有良好的高空飞行能力。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.08
+    },
+    {
+        "Q": "Bombardier Global Express XRS的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Global Express XRS\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Global Express XRS的最大飞行高度为51,000英尺（约15,500米）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.57
+    },
+    {
+        "Q": "Beechjet 65的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechjet 65\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechjet 65的飞行高度范围（即认证高度）为7620米（约25000英尺）。这使得Beechjet 65能够在大多数商业航班的飞行高度范围内操作，适合中短途航线的公务飞行。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.4
+    },
+    {
+        "Q": "Gulfstream G500的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G500\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Gulfstream G500的飞行高度范围为41,000英尺（约12,497米），其最大巡航高度为51,000英尺（约15,545米）。这种高度范围使得G500能够在高空飞行，减少空气阻力，从而提高燃油效率和飞行速度。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.77
+    },
+    {
+        "Q": "Boeing BBJ2的飞行高度范围是多少？",
+        "A": [
+            12496.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Boeing BBJ2\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Boeing BBJ2的飞行高度范围（即认证高度）为12,496米（约40,000英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.16
+    },
+    {
+        "Q": "Dassault Falcon 20的飞行高度范围是多少？",
+        "A": [
+            12800.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 20\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Dassault Falcon 20的飞行高度范围（认证高度）为12,800米（约42,000英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.85
+    },
+    {
+        "Q": "Beechcraft King Air 200的飞行高度范围是多少？",
+        "A": [
+            10668.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 200\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft King Air 200的最大飞行高度范围为35,000英尺（约10,668米）。这款飞机的设计使其能够在这一高度进行高效飞行，适合多种用途，包括商务和医疗运输等。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.98
+    },
+    {
+        "Q": "Cessna Citation CJ3的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation CJ3\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation CJ3的飞行高度范围通常在FL450（即45,000英尺）左右。这一高度使得CJ3能够在高空飞行，享受更好的燃油效率和更少的空气阻力，从而提高飞行性能和舒适度。具体的飞行高度可能会根据航线、天气条件和航空管制的要求有所不同。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.08
+    },
+    {
+        "Q": "Cessna Citation XLS的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation XLS\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation XLS的飞行高度范围通常在35,000到45,000英尺之间（约10,668到13,716米）。这种高度范围使得该飞机能够在大多数商业航班的飞行高度之上，提供更快的飞行速度和更少的空气阻力，从而提高燃油效率和航程。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.34
+    },
+    {
+        "Q": "Cirrus SR22的飞行高度范围是多少？",
+        "A": [
+            5300.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cirrus SR22\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cirrus SR22的最大飞行高度（认证高度）为5300米（约17,400英尺）。这一高度使得飞行员能够在较高的空域中飞行，从而避开天气和地形的影响，提升飞行的安全性和效率。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.99
+    },
+    {
+        "Q": "Bombardier Learjet 40的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 40\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Learjet 40的飞行高度范围通常在35,000到45,000英尺之间。这种高度使得飞机能够在较少的空气阻力和更高的燃油效率下飞行，同时也能避开大部分商业航班的飞行高度，从而提供更顺畅的飞行体验。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.3
+    },
+    {
+        "Q": "Boeing BBJ的飞行高度范围是多少？",
+        "A": [
+            12500.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Boeing BBJ\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Boeing BBJ（商务喷气机）的飞行高度范围如下：\n\n- **Boeing BBJ**: 最高飞行高度为 12,500 英尺（约 3,810 米）。\n- **Boeing BBJ MAX**: 最高飞行高度为 12,496 英尺（约 3,810 米）。\n\n这些高度使得BBJ系列飞机能够在高空飞行，提供更好的燃油效率和乘客舒适度。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.05
+    },
+    {
+        "Q": "Hawker 400XP的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 400XP\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Hawker 400XP的飞行高度范围（即认证高度）为9144米（30,000英尺）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.44
+    },
+    {
+        "Q": "Beechcraft King Air 350i的飞行高度范围是多少？",
+        "A": [
+            10668.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 350i\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft King Air 350i的飞行高度范围（即认证高度）为10,668米（35,000英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.14
+    },
+    {
+        "Q": "Cessna Citation X+的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation X+\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation X+的飞行高度范围通常在35,000到51,000英尺之间。这种飞机的设计使其能够在高空飞行，从而提高燃油效率并减少飞行时间。具体的飞行高度可能会根据航线、气象条件和航空管制的要求而有所不同。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.76
+    },
+    {
+        "Q": "Beechcraft King Air 250的飞行高度范围是多少？",
+        "A": [
+            10668.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 250\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft King Air 250的飞行高度范围通常在18,000到35,000英尺之间。这一高度范围使得该飞机能够进行跨国和区域飞行，通常在大多数天气条件之上飞行，从而提高了飞行的安全性和舒适性。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.3
+    },
+    {
+        "Q": "Dassault Falcon 2000EX的飞行高度范围是多少？",
+        "A": [
+            14326.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 2000EX\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Dassault Falcon 2000EX的飞行高度范围（即最大巡航高度）通常为45,000英尺（约13,716米）。这款飞机的设计使其能够在高空飞行，从而提高燃油效率和航程。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.77
+    },
+    {
+        "Q": "Nextant 400XT的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Nextant 400XT\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Nextant 400XT的最大飞行高度为43,000英尺（约13,106米）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.54
+    },
+    {
+        "Q": "Bombardier Learjet 45的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 45\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "根据现有的信息，Bombardier Learjet 45的最大飞行高度为51,000英尺（约15,545米）。这款飞机在该高度范围内能够有效地执行飞行任务，适合于长途飞行和高空飞行的需求。如果您需要更详细的技术规格或其他相关信息，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.87
+    },
+    {
+        "Q": "Boeing 737的飞行高度范围是多少？",
+        "A": [
+            10700.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Boeing 737\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "波音737的飞行高度范围（实用升限）通常在10,668米（35,000英尺）到11,277米（37,000英尺）之间。具体的飞行高度可能会根据不同的机型和飞行条件有所变化，但一般来说，波音737系列飞机的巡航高度通常在这个范围内。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.27
+    },
+    {
+        "Q": "Bombardier Challenger 600的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 600\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Challenger 600的最大飞行高度（即认证高度）为41,000英尺（约12,497米）。这款飞机的设计使其能够在这一高度进行高效飞行，适合长途商务旅行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.16
+    },
+    {
+        "Q": "Cessna Citation Encore的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation Encore\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation Encore的飞行高度范围（即认证高度）为13,716英尺（约4,175米）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.6
+    },
+    {
+        "Q": "Bombardier Challenger 601的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 601\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Challenger 601的飞行高度范围通常在35,000到41,000英尺之间。这种飞机的设计使其能够在高空飞行，从而提高燃油效率和航程。具体的飞行高度可能会根据航线、天气条件和其他操作因素而有所不同。\n\n如果您需要更详细的技术规格或其他相关信息，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.71
+    },
+    {
+        "Q": "Embraer Legacy 450的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Embraer Legacy 450\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Embraer Legacy 450的最大巡航高度为45,000英尺（约13,716米）。在这个高度，增压系统能够将客舱压力保持在相当于6,000英尺的舒适水平。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.35
+    },
+    {
+        "Q": "Gulfstream G450的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G450\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Gulfstream G450的飞行高度范围为最大巡航高度13,716米（约45,000英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.07
+    },
+    {
+        "Q": "Dassault Falcon 50EX的飞行高度范围是多少？",
+        "A": [
+            14935.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 50EX\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Dassault Falcon 50EX的飞行高度范围（即最大飞行高度）为12,496米（约40,000英尺）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.45
+    },
+    {
+        "Q": "Hawker 800XP的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 800XP\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Hawker 800XP的飞行高度范围（即认证高度）为13,716英尺（约4,175米）。这使得它在中型商务喷气机中具有良好的飞行性能，适合多种飞行任务。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.24
+    },
+    {
+        "correct_rate": 76.0,
+        "sample_size": 50,
+        "correct_count": 38,
+        "average_time": 8.69
+    }
+]

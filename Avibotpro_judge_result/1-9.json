@@ -1,0 +1,458 @@
+[
+    {
+        "Q": "Connemara机场的三字码是什么？",
+        "A": "NNR",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Connemara\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Connemara Airport的三字码是**NNR**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.51
+    },
+    {
+        "Q": "Wells Municipal Airport/Harriet Field机场的三字码是什么？",
+        "A": "LWL",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Wells Municipal Airport/Harriet Field\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Wells Municipal Airport, also known as Harriet Field, has the following airport codes:\n\n- **IATA Code**: LWL\n- **ICAO Code**: KLWL.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.33
+    },
+    {
+        "Q": "Katanning机场的三字码是什么？",
+        "A": "KNI",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Katanning\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Katanning机场的三字码（IATA代码）是 **KNI**，而其四字码（ICAO代码）是 **YKNG**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.65
+    },
+    {
+        "Q": "Kawthaung Airport机场的三字码是什么？",
+        "A": "KAW",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Kawthaung Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Kawthaung Airport的三字码（IATA代码）是KAW，四字码（ICAO代码）是VYKT。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 14.16
+    },
+    {
+        "Q": "Gelephu Airport机场的三字码是什么？",
+        "A": "GLU",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Gelephu Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gelephu Airport的三字码是 **GLU**，而其四字码是 **VQGP**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.07
+    },
+    {
+        "Q": "Con Dao Airport机场的三字码是什么？",
+        "A": "VCS",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Con Dao Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Con Dao Airport的三字码是 **VCS**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.9
+    },
+    {
+        "Q": "Eastland Mun机场的三字码是什么？",
+        "A": "ETN",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Eastland Mun\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Eastland Municipal Airport的三字码是**ETN**，而其ICAO代码是**KETN**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.04
+    },
+    {
+        "Q": "Gen Bernardo O Higgins机场的三字码是什么？",
+        "A": "YAI",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Gen Bernardo O Higgins\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gen Bernardo O'Higgins 机场的三字码是 **YAI**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.89
+    },
+    {
+        "Q": "Sultan Haji Ahmad Shah Airport机场的三字码是什么？",
+        "A": "KUA",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Sultan Haji Ahmad Shah Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Sultan Haji Ahmad Shah Airport的三字码（IATA代码）是 **KUA**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.83
+    },
+    {
+        "Q": "Angelina County机场的三字码是什么？",
+        "A": "LFK",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Angelina County\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Angelina County Airport的三字码是 **LFK**，而其四字码是 **KLFK**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.58
+    },
+    {
+        "Q": "Mandelieu机场的三字码是什么？",
+        "A": "CEQ",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Mandelieu\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Mandelieu Airport的三字码是**CEQ**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.94
+    },
+    {
+        "Q": "Afutara Aerodrome机场的三字码是什么？",
+        "A": "AFT",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Afutara Aerodrome\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Afutara Aerodrome的三字码是 **AFT**，而其四字码是 **AGAF**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.28
+    },
+    {
+        "Q": "Letterkenny机场的三字码是什么？",
+        "A": "LTR",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Letterkenny\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Letterkenny机场的三字码是LTR。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 35.22
+    },
+    {
+        "Q": "Necocli机场的三字码是什么？",
+        "A": "NCI",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Necocli\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Necocli机场的三字码是 **NCI**，而其四字码是 **SKNC**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.37
+    },
+    {
+        "Q": "Keng Tung Airport机场的三字码是什么？",
+        "A": "KET",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Keng Tung Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Keng Tung Airport的三字码是KET。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 17.91
+    },
+    {
+        "Q": "Warwick机场的三字码是什么？",
+        "A": "WAZ",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Warwick\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Warwick机场的三字码是WAZ，四字码是YWCK。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.15
+    },
+    {
+        "Q": "Portland International Airport机场的三字码是什么？",
+        "A": "PDX",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Portland International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Portland International Airport的三字码是**PDX**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.64
+    },
+    {
+        "Q": "Beslan Airport机场的三字码是什么？",
+        "A": "OGZ",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Beslan Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beslan Airport的三字码是OGZ，四字码是URMO。该机场位于俄罗斯的弗拉季高加斯（Vladikavkaz）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.69
+    },
+    {
+        "Q": "Nuuk Airport机场的三字码是什么？",
+        "A": "GOH",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Nuuk Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "努克机场（Nuuk Airport）的三字码是 **GOH**，而其国际民航组织（ICAO）代码是 **BGGH**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.01
+    },
+    {
+        "Q": "Yanji Chaoyangchuan Airport机场的三字码是什么？",
+        "A": "YNJ",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Yanji Chaoyangchuan Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "延吉朝阳川机场的三字码是 **YNJ**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.85
+    },
+    {
+        "Q": "Heraklion International Airport, “Nikos Kazantzakis”机场的三字码是什么？",
+        "A": "HER",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Heraklion International Airport, “Nikos Kazantzakis”\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Heraklion International Airport, also known as \"Nikos Kazantzakis\" Airport, has the three-letter IATA code **HER**.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.53
+    },
+    {
+        "Q": "Haverfordwest机场的三字码是什么？",
+        "A": "HAW",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Haverfordwest\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Haverfordwest Airport的三字码是HAW。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.97
+    },
+    {
+        "Q": "Rochefort Charente Maritime机场的三字码是什么？",
+        "A": "RCO",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Rochefort Charente Maritime\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Rochefort Charente Maritime 机场的三字码是 **RCO**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.35
+    },
+    {
+        "Q": "Noi Bai International Airport机场的三字码是什么？",
+        "A": "HAN",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Noi Bai International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Noi Bai International Airport的三字码是**HAN**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.07
+    },
+    {
+        "Q": "Chippewa Valley Regional Airport机场的三字码是什么？",
+        "A": "EAU",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Chippewa Valley Regional Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Chippewa Valley Regional Airport的三字码（IATA代码）是EAU。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.28
+    },
+    {
+        "Q": "Osmani International Airport机场的三字码是什么？",
+        "A": "ZYL",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Osmani International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Osmani International Airport的三字码是 **ZYL**，而其国际民航组织（ICAO）代码是 **VGSY**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.89
+    },
+    {
+        "Q": "Qaanaaq Airport机场的三字码是什么？",
+        "A": "NAQ",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Qaanaaq Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Qaanaaq Airport的三字码是 **NAQ**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.46
+    },
+    {
+        "Q": "Marina Mun机场的三字码是什么？",
+        "A": "OAR",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Marina Mun\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Marina Municipal Airport, also known as Marina Mun, has the IATA code **OAR** and the ICAO code **KOAR**.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.11
+    },
+    {
+        "Q": "Keperveyem Airport机场的三字码是什么？",
+        "A": "KPW",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Keperveyem Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Keperveyem Airport的三字码是 **KPW**，而其四字码是 **UHMK**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.57
+    },
+    {
+        "Q": "Gorom-Gorom机场的三字码是什么？",
+        "A": "XGG",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Gorom-Gorom\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gorom-Gorom机场的三字码是XGG。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.8
+    },
+    {
+        "Q": "St Clair County机场的三字码是什么？",
+        "A": "PLR",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"St Clair County\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "St. Clair County International Airport的三字代码是PHN，ICAO代码是KPHN。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.85
+    },
+    {
+        "Q": "Columbia County机场的三字码是什么？",
+        "A": "HCC",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Columbia County\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Columbia County Airport has the three-letter IATA code **HCC**.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.61
+    },
+    {
+        "Q": "Udine-Campoformido Air Base机场的三字码是什么？",
+        "A": "UDN",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Udine-Campoformido Air Base\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Udine-Campoformido Air Base的三字码是 **UDN**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.66
+    },
+    {
+        "Q": "Gorakhpur Airport机场的三字码是什么？",
+        "A": "GOP",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Gorakhpur Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "戈勒克布尔机场（Gorakhpur Airport）的三字码是 **GOP**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.68
+    },
+    {
+        "Q": "Magdeburg Cochstedt机场的三字码是什么？",
+        "A": "CSO",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Magdeburg Cochstedt\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Magdeburg Cochstedt 机场的三字码是 **CSO**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.7
+    },
+    {
+        "Q": "Shirdi Airport机场的三字码是什么？",
+        "A": "SAG",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Shirdi Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Shirdi Airport的三字码是 **SAG**，而其国际民航组织（ICAO）代码是 **VASD**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.77
+    },
+    {
+        "Q": "Botopasi机场的三字码是什么？",
+        "A": "BTO",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Botopasi\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Botopasi机场的三字码是BTO。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.75
+    },
+    {
+        "Q": "Husavik机场的三字码是什么？",
+        "A": "HZK",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Husavik\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Husavik机场的三字码是 **HZK**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.21
+    },
+    {
+        "Q": "Portage Creek机场的三字码是什么？",
+        "A": "PCA",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Portage Creek\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Portage Creek 机场的三字码是 PCA。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.75
+    },
+    {
+        "Q": "Porto Nacional机场的三字码是什么？",
+        "A": "PNB",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Porto Nacional\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Porto Nacional机场的三字码（IATA代码）是PNB。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.72
+    },
+    {
+        "Q": "Agartala Airport机场的三字码是什么？",
+        "A": "IXA",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Agartala Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Agartala Airport的三字码是 **IXA**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.25
+    },
+    {
+        "Q": "Platinum Airport机场的三字码是什么？",
+        "A": "PTU",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Platinum Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Platinum Airport的三字码（IATA代码）是PTU。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.0
+    },
+    {
+        "Q": "Batagay Airport机场的三字码是什么？",
+        "A": "BQJ",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Batagay Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Batagay Airport的三字码是BQJ。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.31
+    },
+    {
+        "Q": "Swansea机场的三字码是什么？",
+        "A": "SWS",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Swansea\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Swansea机场的三字码是 **SWS**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.64
+    },
+    {
+        "Q": "Denis Sassou Nguesso机场的三字码是什么？",
+        "A": "OLL",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Denis Sassou Nguesso\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Denis Sassou Nguesso Airport的三字码是 **OLL**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.55
+    },
+    {
+        "Q": "Roscoe Turner机场的三字码是什么？",
+        "A": "CRX",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Roscoe Turner\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Roscoe Turner Airport的三字码是CRX。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.34
+    },
+    {
+        "Q": "Taipei Songshan Airport机场的三字码是什么？",
+        "A": "TSA",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Taipei Songshan Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "台北松山机场的三字码是 **TSA**，而其国际民航组织（ICAO）代码是 **RCSS**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.06
+    },
+    {
+        "Q": "Craiova International Airport机场的三字码是什么？",
+        "A": "CRA",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Craiova International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Craiova International Airport的三字码是CRA。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.16
+    },
+    {
+        "Q": "John Murtha Johnstown–Cambria County Airport机场的三字码是什么？",
+        "A": "JST",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"John Murtha Johnstown–Cambria County Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "约翰·默撒约翰斯敦-坎布里亚郡机场（John Murtha Johnstown–Cambria County Airport）的三字码是 **JST**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 20.04
+    },
+    {
+        "Q": "Ainsworth Regl机场的三字码是什么？",
+        "A": "ANW",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Ainsworth Regl\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Ainsworth Regional Airport的三字码是ANW。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.86
+    },
+    {
+        "correct_rate": 98.0,
+        "sample_size": 50,
+        "correct_count": 49,
+        "average_time": 9.26
+    }
+]

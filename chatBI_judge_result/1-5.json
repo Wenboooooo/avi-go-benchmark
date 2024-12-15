@@ -1,0 +1,708 @@
+[
+    {
+        "Q": "飞机注册号为N790Z的飞机是哪一家公司的？",
+        "A": "Hangar 7 Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N790Z\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name\nFROM supplier_details\nWHERE supplier_id IN\n    (SELECT supplier_id\n     FROM aircraft_details\n     WHERE pure_reg = 'n790z')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Hangar 7 Aviation"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.65
+    },
+    {
+        "Q": "飞机注册号为N605BX的飞机是哪一家公司的？",
+        "A": "XCEL Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N605BX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n605bx'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "XCEL Jet"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 16.1
+    },
+    {
+        "Q": "飞机注册号为N30GT的飞机是哪一家公司的？",
+        "A": "CSM Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N30GT\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'n30gt'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "CSM Aviation"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.61
+    },
+    {
+        "Q": "飞机注册号为G-REXA的飞机是哪一家公司的？",
+        "A": "Rvl Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"G-REXA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name\nFROM supplier_details\nWHERE supplier_id IN\n    (SELECT supplier_id\n     FROM aircraft_details\n     WHERE pure_reg = 'grexa')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Rvl Aviation"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.4
+    },
+    {
+        "Q": "飞机注册号为N9442C的飞机是哪一家公司的？",
+        "A": "Odyssey Airways LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N9442C\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n9442c'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Odyssey Airways LLC"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 14.19
+    },
+    {
+        "Q": "飞机注册号为9H-NYC的飞机是哪一家公司的？",
+        "A": "Air X Charter Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-NYC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = '9hnyc'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Air X Charter Ltd"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.95
+    },
+    {
+        "Q": "飞机注册号为N347WS的飞机是哪一家公司的？",
+        "A": "Discovery Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N347WS\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'n347ws'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Discovery Jets"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.59
+    },
+    {
+        "Q": "飞机注册号为D-ISJA的飞机是哪一家公司的？",
+        "A": "Excellent Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-ISJA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'disja'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Excellent Air"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.19
+    },
+    {
+        "Q": "飞机注册号为SE-RLP的飞机是哪一家公司的？",
+        "A": "Mirair B.V.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"SE-RLP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'serlp'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Mirair B.V."
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 14.38
+    },
+    {
+        "Q": "飞机注册号为N311EW的飞机是哪一家公司的？",
+        "A": "Pegasus Elite Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N311EW\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n311ew'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Pegasus Elite Aviation"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.73
+    },
+    {
+        "Q": "飞机注册号为N900EM的飞机是哪一家公司的？",
+        "A": "Clay Lacy Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N900EM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n900em'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Clay Lacy Aviation"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.2
+    },
+    {
+        "Q": "飞机注册号为N286JR的飞机是哪一家公司的？",
+        "A": "Advanced Air LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N286JR\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n286jr'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Advanced Air LLC"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.2
+    },
+    {
+        "Q": "飞机注册号为N969RE的飞机是哪一家公司的？",
+        "A": "Prestige Air Group",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N969RE\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n969re'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Prestige Air Group"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.54
+    },
+    {
+        "Q": "飞机注册号为A7-CGQ的飞机是哪一家公司的？",
+        "A": "Qatar Executive",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"A7-CGQ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'a7cgq'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Qatar Executive"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.23
+    },
+    {
+        "Q": "飞机注册号为HS-CPH的飞机是哪一家公司的？",
+        "A": "Executive Wings",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"HS-CPH\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'hscph'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Executive Wings"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.12
+    },
+    {
+        "Q": "飞机注册号为VH-PNI的飞机是哪一家公司的？",
+        "A": "Aergo International Pty Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"VH-PNI\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'vhpni'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Aergo International Pty Ltd"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.69
+    },
+    {
+        "Q": "飞机注册号为A7-CHC的飞机是哪一家公司的？",
+        "A": "Qatar Executive",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"A7-CHC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'a7chc'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Qatar Executive"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.12
+    },
+    {
+        "Q": "飞机注册号为N204CF的飞机是哪一家公司的？",
+        "A": "Corporate Flight Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N204CF\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM supplier_details sd\nWHERE sd.supplier_id IN\n    (SELECT ad.supplier_id\n     FROM aircraft_details ad\n     WHERE ad.pure_reg = 'n204cf')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Corporate Flight Inc."
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.93
+    },
+    {
+        "Q": "飞机注册号为ZS-DIP的飞机是哪一家公司的？",
+        "A": "Comair Flight Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"ZS-DIP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'zsdip'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Comair Flight Services"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.16
+    },
+    {
+        "Q": "飞机注册号为C-GEMB的飞机是哪一家公司的？",
+        "A": "Aurora Jet Partners",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-GEMB\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'cgemb'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Aurora Jet Partners"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.72
+    },
+    {
+        "Q": "飞机注册号为N458RM的飞机是哪一家公司的？",
+        "A": "Heartland Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N458RM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n458rm'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Heartland Aviation"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.58
+    },
+    {
+        "Q": "飞机注册号为VT-VRA的飞机是哪一家公司的？",
+        "A": "VSR Ventures Pvt Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"VT-VRA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'vtvra'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "VSR Ventures Pvt Ltd"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.18
+    },
+    {
+        "Q": "飞机注册号为9H-VIJ的飞机是哪一家公司的？",
+        "A": "Vista Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-VIJ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = '9hvij'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Vista Jet"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.06
+    },
+    {
+        "Q": "飞机注册号为N323RR的飞机是哪一家公司的？",
+        "A": "SAI Flight Service Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N323RR\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n323rr'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "SAI Flight Service Inc."
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.36
+    },
+    {
+        "Q": "飞机注册号为N571FX的飞机是哪一家公司的？",
+        "A": "Flex Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N571FX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'n571fx'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Flex Jet"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.74
+    },
+    {
+        "Q": "飞机注册号为N188TH的飞机是哪一家公司的？",
+        "A": "Monument Airworks LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N188TH\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n188th'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Monument Airworks LLC"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.04
+    },
+    {
+        "Q": "飞机注册号为N707BM的飞机是哪一家公司的？",
+        "A": "Sky Quest LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N707BM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'n707bm'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Sky Quest LLC"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.68
+    },
+    {
+        "Q": "飞机注册号为N586GA的飞机是哪一家公司的？",
+        "A": "Executive Jet Management Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N586GA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n586ga'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Executive Jet Management Inc."
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.75
+    },
+    {
+        "Q": "飞机注册号为N120FT的飞机是哪一家公司的？",
+        "A": "Oklahoma Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N120FT\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n120ft'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Oklahoma Aviation LLC"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.81
+    },
+    {
+        "Q": "飞机注册号为9H-DINA的飞机是哪一家公司的？",
+        "A": "Albinati Aeronautics",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-DINA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = '9hdina'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Albinati Aeronautics"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.49
+    },
+    {
+        "Q": "飞机注册号为N300EE的飞机是哪一家公司的？",
+        "A": "Summit Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N300EE\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n300ee'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Summit Aviation Inc."
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.59
+    },
+    {
+        "Q": "飞机注册号为N60HJ的飞机是哪一家公司的？",
+        "A": "Hop-a-jet Worldwide Jet Charter",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N60HJ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n60hj'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Hop-a-jet Worldwide Jet Charter"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.92
+    },
+    {
+        "Q": "飞机注册号为SP-ZEN的飞机是哪一家公司的？",
+        "A": "Jet Story",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"SP-ZEN\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'spzen'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Jet Story"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.26
+    },
+    {
+        "Q": "飞机注册号为N650SF的飞机是哪一家公司的？",
+        "A": "Starflite Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N650SF\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n650sf'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Starflite Aviation"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.1
+    },
+    {
+        "Q": "飞机注册号为OE-HWM的飞机是哪一家公司的？",
+        "A": "Alpine Sky Jets Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OE-HWM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'oehwm'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Alpine Sky Jets Ltd"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.37
+    },
+    {
+        "Q": "飞机注册号为F-HELA的飞机是哪一家公司的？",
+        "A": "Valljet Airline",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"F-HELA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'fhela'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Valljet Airline"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.88
+    },
+    {
+        "Q": "飞机注册号为ZS-ATM的飞机是哪一家公司的？",
+        "A": "Comair Flight Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"ZS-ATM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'zsatm'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Comair Flight Services"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.16
+    },
+    {
+        "Q": "飞机注册号为N100GX的飞机是哪一家公司的？",
+        "A": "Elevate Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N100GX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n100gx'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Elevate Jet"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.22
+    },
+    {
+        "Q": "飞机注册号为N302CJ的飞机是哪一家公司的？",
+        "A": "Ozair Charter Service",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N302CJ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n302cj'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Ozair Charter Service"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.74
+    },
+    {
+        "Q": "飞机注册号为EC-LQF的飞机是哪一家公司的？",
+        "A": "Clipper National Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"EC-LQF\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'eclqf'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Clipper National Air"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.07
+    },
+    {
+        "Q": "飞机注册号为N226CV的飞机是哪一家公司的？",
+        "A": "Shoreline Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N226CV\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'n226cv'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Shoreline Aviation Inc."
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.63
+    },
+    {
+        "Q": "飞机注册号为N850EP的飞机是哪一家公司的？",
+        "A": "Club Jet Charter LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N850EP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nINNER JOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n850ep'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Club Jet Charter LLC"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.38
+    },
+    {
+        "Q": "飞机注册号为D-ILIA的飞机是哪一家公司的？",
+        "A": "Augsburg Airways",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-ILIA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'dilia'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Augsburg Airways"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.11
+    },
+    {
+        "Q": "飞机注册号为N918EG的飞机是哪一家公司的？",
+        "A": "Air Unlimited",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N918EG\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n918eg'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Air Unlimited"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.55
+    },
+    {
+        "Q": "飞机注册号为N489VR的飞机是哪一家公司的？",
+        "A": "Pegasus Elite Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N489VR\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n489vr'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Pegasus Elite Aviation"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.83
+    },
+    {
+        "Q": "飞机注册号为D-ITAN的飞机是哪一家公司的？",
+        "A": "Transavia",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-ITAN\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'ditan'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Transavia"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.68
+    },
+    {
+        "Q": "飞机注册号为9H-III的飞机是哪一家公司的？",
+        "A": "SkyFirst",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-III\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = '9hiii'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "SkyFirst"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.47
+    },
+    {
+        "Q": "飞机注册号为9H-UEC的飞机是哪一家公司的？",
+        "A": "Comlux Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-UEC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = '9huec'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Comlux Aviation"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.42
+    },
+    {
+        "Q": "飞机注册号为D-IJLJ的飞机是哪一家公司的？",
+        "A": "Proair Charter Transport GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-IJLJ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'dijlj'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Proair Charter Transport GmbH"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.57
+    },
+    {
+        "Q": "飞机注册号为OE-GLC的飞机是哪一家公司的？",
+        "A": "Avcon Jet AG",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OE-GLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'oeglc'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Avcon Jet AG"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.88
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 50,
+        "correct_count": 50,
+        "average_time": 10.0
+    }
+]

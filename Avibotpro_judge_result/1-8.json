@@ -1,0 +1,458 @@
+[
+    {
+        "Q": "Initium Aviation航司的总部位于哪个城市？",
+        "A": "Madrid",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Initium Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Initium Aviation的总部位于西班牙的马德里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 17.93
+    },
+    {
+        "Q": "OIA Air Corp.航司的总部位于哪个城市？",
+        "A": "Nashua",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"OIA Air Corp.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "OIA Air Corp.的总部位于美国新罕布什尔州的纳舒厄（Nashua）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.41
+    },
+    {
+        "Q": "Million Air Richmond航司的总部位于哪个城市？",
+        "A": "Richmond",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Million Air Richmond\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Million Air Richmond的总部位于美国弗吉尼亚州的里士满市（Richmond, VA）。具体地址是400 Portugee Rd, Richmond, VA 23250-2417。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.99
+    },
+    {
+        "Q": "Air Business LLC航司的总部位于哪个城市？",
+        "A": "Lexington",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air Business LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Air Business LLC is a boutique private jet company based in the United States. However, the specific city where its headquarters is located is not mentioned in the available information. If you have any additional documents or details that might specify the location, please share them, and I can assist further!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.92
+    },
+    {
+        "Q": "Seletar Jet Charter航司的总部位于哪个城市？",
+        "A": "Singapore",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Seletar Jet Charter\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Seletar Jet Charter的总部位于新加坡。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.14
+    },
+    {
+        "Q": "Airjade航司的总部位于哪个城市？",
+        "A": "Beijing",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Airjade\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airjade航司的总部位于中国北京。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.48
+    },
+    {
+        "Q": "Flightexec航司的总部位于哪个城市？",
+        "A": "Montreal",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Flightexec\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Flightexec的总部位于加拿大安大略省的密西沙加市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.11
+    },
+    {
+        "Q": "Jet Access Aviation Inc.航司的总部位于哪个城市？",
+        "A": "West Palm Beach",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Access Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Jet Access Aviation Inc.的总部位于印第安纳波利斯（Indianapolis），印第安纳州。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 25.16
+    },
+    {
+        "Q": "Aviation Advisor Inc.航司的总部位于哪个城市？",
+        "A": "Lake County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aviation Advisor Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Aviation Advisor Inc.的总部位于威斯康星州的基诺沙（Kenosha）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.5
+    },
+    {
+        "Q": "Executive Air Taxi Corporation航司的总部位于哪个城市？",
+        "A": "Bismarck",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Executive Air Taxi Corporation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Executive Air Taxi Corporation的总部位于美国北达科他州的比斯马克（Bismarck）。具体地址是2301 University Drive, Bismarck, United States。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.34
+    },
+    {
+        "Q": "Shenzhen Funian Business Aviation Co., Ltd航司的总部位于哪个城市？",
+        "A": "Shenzhen",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Shenzhen Funian Business Aviation Co., Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Shenzhen Funian Business Aviation Co., Ltd. 的总部位于中国深圳市，具体地址是深圳市宝安区西乡街道前海科技园1栋407。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.91
+    },
+    {
+        "Q": "SD Aviation航司的总部位于哪个城市？",
+        "A": "La Roche-sur-Yon",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"SD Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "SD Aviation的总部位于法国的洛里昂（Lorient）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.3
+    },
+    {
+        "Q": "Bridger Aerospace航司的总部位于哪个城市？",
+        "A": "Belgrade",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bridger Aerospace\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bridger Aerospace的总部位于美国蒙大拿州的博兹曼（Bozeman）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.75
+    },
+    {
+        "Q": "Southern Air Charter航司的总部位于哪个城市？",
+        "A": "Nassau",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Southern Air Charter\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Southern Air Charter的总部位于巴哈马的拿骚（Nassau）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.72
+    },
+    {
+        "Q": "Rvr Aviation LLC航司的总部位于哪个城市？",
+        "A": "Fort Worth",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Rvr Aviation LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "RVR Aviation LLC的总部位于德克萨斯州的沃斯堡（Fort Worth）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.95
+    },
+    {
+        "Q": "Spot Air航司的总部位于哪个城市？",
+        "A": "Cairo",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Spot Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Spot Air的总部位于埃及的开罗。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.66
+    },
+    {
+        "Q": "Air Reldan Inc.航司的总部位于哪个城市？",
+        "A": "St. Tammany Parish",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air Reldan Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Air Reldan Inc.的总部位于美国路易斯安那州的阿比塔斯普林斯（Abita Springs）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.87
+    },
+    {
+        "Q": "Fly-coop Legiszolgaltato Ltd航司的总部位于哪个城市？",
+        "A": "Općina Gola",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fly-coop Legiszolgaltato Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Fly-Coop Legiszolgaltato Ltd的总部位于匈牙利的布达佩斯。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.15
+    },
+    {
+        "Q": "Ortac Limited航司的总部位于哪个城市？",
+        "A": "Jersey",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Ortac Limited\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Ortac Limited的总部位于英国。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.96
+    },
+    {
+        "Q": "Proav Charters航司的总部位于哪个城市？",
+        "A": "Ocala",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Proav Charters\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Proav Charters的总部位于美国佛罗里达州的奥兰多市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.87
+    },
+    {
+        "Q": "Fly Business Aviation航司的总部位于哪个城市？",
+        "A": "Atizapan",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fly Business Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Fly Business Aviation的总部位于墨西哥，主要服务于北美、中美和南美地区。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.35
+    },
+    {
+        "Q": "Sinojet (Beijing) Company Ltd航司的总部位于哪个城市？",
+        "A": "Beijing",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sinojet (Beijing) Company Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Sinojet (Beijing) Company Ltd.的总部位于北京。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.85
+    },
+    {
+        "Q": "Sacramento Air Charter航司的总部位于哪个城市？",
+        "A": "Lincoln",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sacramento Air Charter\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Sacramento Air Charter的总部位于加利福尼亚州的林肯市（Lincoln, California）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.53
+    },
+    {
+        "Q": "Berjaya Air航司的总部位于哪个城市？",
+        "A": "Selangor",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Berjaya Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Berjaya Air的总部位于马来西亚的雪兰莪州，具体地址是苏丹阿都阿兹沙机场（Sultan Abdul Aziz Shah Airport），位于沙邦再也（Subang Jaya）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.79
+    },
+    {
+        "Q": "Executive Jet Charter Ltd航司的总部位于哪个城市？",
+        "A": "Farnborough",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Executive Jet Charter Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Executive Jet Charter Ltd的总部位于英国的法恩伯勒（Farnborough）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.19
+    },
+    {
+        "Q": "Acropolis Aviation Ltd航司的总部位于哪个城市？",
+        "A": "Farnborough",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Acropolis Aviation Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Acropolis Aviation Ltd的总部位于英国汉普郡的法恩伯勒（Farnborough）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.69
+    },
+    {
+        "Q": "Aeroeste航司的总部位于哪个城市？",
+        "A": "Andres Ibanez Province",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aeroeste\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Aeroeste是一家总部位于玻利维亚的包机航空公司，其总部位于圣克鲁斯市（Santa Cruz de la Sierra）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.44
+    },
+    {
+        "Q": "XCEL Jet航司的总部位于哪个城市？",
+        "A": "Ventura County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"XCEL Jet\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "XCEL Jet的总部位于加利福尼亚州的卡马里奥（Camarillo）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.6
+    },
+    {
+        "Q": "Corporate Aircraft Charter Pty航司的总部位于哪个城市？",
+        "A": "Adelaide",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Corporate Aircraft Charter Pty\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Corporate Aircraft Charter Pty Ltd is headquartered in Adelaide, South Australia. The specific address is General Aviation Terminal, 10 Sir Richard Williams Ave, Adelaide Airport, SA, Australia.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.74
+    },
+    {
+        "Q": "AstonJet航司的总部位于哪个城市？",
+        "A": "Paris",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"AstonJet\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "AstonJet的总部位于法国巴黎。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.94
+    },
+    {
+        "Q": "Clay Lacy Aviation航司的总部位于哪个城市？",
+        "A": "Los Angeles",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Clay Lacy Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Clay Lacy Aviation的总部位于美国加利福尼亚州洛杉矶。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.07
+    },
+    {
+        "Q": "Business Jet Access航司的总部位于哪个城市？",
+        "A": "Dallas",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Business Jet Access\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Business Jet Access的总部位于美国印第安纳波利斯。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.92
+    },
+    {
+        "Q": "Airco Aircraft Charters Ltd航司的总部位于哪个城市？",
+        "A": "Edmonton",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Airco Aircraft Charters Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airco Aircraft Charters Ltd的总部位于加拿大的埃德蒙顿（Edmonton）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.02
+    },
+    {
+        "Q": "Caribbean Support & Flight Services航司的总部位于哪个城市？",
+        "A": "Cartagena",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Caribbean Support & Flight Services\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Caribbean Support & Flight Services的总部位于哥伦比亚的卡塔赫纳（Cartagena）。具体地址是：Carrera 2 #67-143, Oficina 101, Cartagena, Bolívar, Colombia。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.29
+    },
+    {
+        "Q": "Performance Air S.A.航司的总部位于哪个城市？",
+        "A": "Ciudad de Mexico",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Performance Air S.A.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Performance Air S.A.的总部位于墨西哥。该航空公司主要在北美、中美和南美地区运营，提供私人航空服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.44
+    },
+    {
+        "Q": "Aspen Air Charter Co.航司的总部位于哪个城市？",
+        "A": "Aspen",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aspen Air Charter Co.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Aspen Air Charter Company的总部位于科罗拉多州的阿斯彭市（Aspen, Colorado）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.46
+    },
+    {
+        "Q": "Bighorn Airways Inc.航司的总部位于哪个城市？",
+        "A": "Sheridan",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bighorn Airways Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bighorn Airways Inc.的总部位于美国怀俄明州的谢里登市（Sheridan, Wyoming）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.48
+    },
+    {
+        "Q": "Wilderness Aircraft Company LLC航司的总部位于哪个城市？",
+        "A": "Fort Lauderdale",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Wilderness Aircraft Company LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Wilderness Aircraft Company LLC的总部位于美国佛罗里达州的劳德代尔堡（Fort Lauderdale）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.88
+    },
+    {
+        "Q": "Bohlke International Airways航司的总部位于哪个城市？",
+        "A": "Kingshill",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bohlke International Airways\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bohlke International Airways的总部位于美国维尔京群岛的圣克罗伊岛（St. Croix）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 25.84
+    },
+    {
+        "Q": "Jet Netherlands航司的总部位于哪个城市？",
+        "A": "Amsterdam",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Netherlands\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Jet Netherlands的总部位于阿姆斯特丹，具体地址是Thermiekstraat 22, Schiphol, Amsterdam, Netherlands。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.39
+    },
+    {
+        "Q": "FlyXcite航司的总部位于哪个城市？",
+        "A": "Mississauga",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"FlyXcite\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "FlyXcite的总部位于加拿大，专注于北美和中美洲的私人飞机运营，提供个性化的服务和高效的旅行解决方案。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.98
+    },
+    {
+        "Q": "Execaire航司的总部位于哪个城市？",
+        "A": "Montreal",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Execaire\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Execaire的总部位于加拿大的多伦多，具体地址是安大略省密西沙加市的2450 Derry Road East, Hangar 7。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.95
+    },
+    {
+        "Q": "Hi Fly - Transportes Aereos S.A.航司的总部位于哪个城市？",
+        "A": "Lisbon",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Hi Fly - Transportes Aereos S.A.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hi Fly - Transportes Aereos S.A.的总部位于葡萄牙的里斯本。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.63
+    },
+    {
+        "Q": "Skyjets Europe航司的总部位于哪个城市？",
+        "A": "Brno",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Skyjets Europe\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Skyjets Europe的总部位于布拉迪斯拉发（Bratislava），斯洛伐克。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.03
+    },
+    {
+        "Q": "Heron Aviation航司的总部位于哪个城市？",
+        "A": "Lauchringen",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Heron Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Heron Aviation的总部位于德国的Lauchringen市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.39
+    },
+    {
+        "Q": "East Coast Jets Inc.航司的总部位于哪个城市？",
+        "A": "Allentown",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"East Coast Jets Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "East Coast Jets Inc.的总部位于美国宾夕法尼亚州的阿伦敦（Allentown）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.58
+    },
+    {
+        "Q": "Priority Jet航司的总部位于哪个城市？",
+        "A": "Cobb County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Priority Jet\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Priority Jet的总部位于美国乔治亚州的肯尼索（Kennesaw, Georgia）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.01
+    },
+    {
+        "Q": "Execujet Australia Pty Ltd航司的总部位于哪个城市？",
+        "A": "Sydney",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Execujet Australia Pty Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Execujet Australia Pty Ltd的总部位于澳大利亚新南威尔士州的马斯科特（Mascot），具体地址是Hangar 394, Ross Smith Avenue, Mascot, NSW 2020, Australia。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.78
+    },
+    {
+        "Q": "Beijing Red Cross Emergency Med. Center航司的总部位于哪个城市？",
+        "A": "Beijing",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Beijing Red Cross Emergency Med. Center\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "北京红十字会急救中心的总部位于中国北京市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.57
+    },
+    {
+        "Q": "Fast Air航司的总部位于哪个城市？",
+        "A": "Winnipeg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fast Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Fast Air的总部位于加拿大的基洛纳（Kelowna）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.82
+    },
+    {
+        "correct_rate": 68.0,
+        "sample_size": 50,
+        "correct_count": 34,
+        "average_time": 9.28
+    }
+]

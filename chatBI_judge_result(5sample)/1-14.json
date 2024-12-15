@@ -1,0 +1,88 @@
+[
+    {
+        "Q": "N224CX的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N224CX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n224cx'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.42
+    },
+    {
+        "Q": "N604LS的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N604LS\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n604ls'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.98
+    },
+    {
+        "Q": "C-FSEP的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"C-FSEP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'cfsep'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Image Air Charter"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.19
+    },
+    {
+        "Q": "CN-SRA的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"CN-SRA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'cnsra'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.3
+    },
+    {
+        "Q": "CX-SCA的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"CX-SCA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'cxsca'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.07
+    },
+    {
+        "correct_rate": 80.0,
+        "sample_size": 5,
+        "correct_count": 4,
+        "average_time": 7.39
+    }
+]

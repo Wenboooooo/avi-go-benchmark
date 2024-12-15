@@ -47,10 +47,13 @@ def query_revise(retrieval_model, query, convertion_dict, macth_dict):
     response = LLM_generate(slot_filling_prompt, is_print=True)
     json_str = re.search(r'```json\n(.*?)\n```', response, re.DOTALL).group(1)
     json_obj = json.loads(json_str)
+    append_strs = []
 
     for k, v in list(json_obj.items()):
         if not v:
             json_obj.pop(k)
+            continue
+        if 'registration' in k:
             continue
         revise_v =  find_topk_similar(retrieval_model, v, macth_dict[k]['names'], macth_dict[k]['embeddings'], k=1)[0]
         print(f'{k}: {v} --> {revise_v}')
@@ -60,8 +63,9 @@ def query_revise(retrieval_model, query, convertion_dict, macth_dict):
         json_obj[k.replace('_name', f'_{identifier}')] = match_value
         query.replace(v, revise_v)
         tmp = f'''{revise_v}对应的的{k.replace('_name', f'_{identifier}')}为"{match_value}"'''
-        print(colored(tmp, 'red'))
-        query += '\n' + tmp
+        append_strs.append(tmp)
+        # print(colored(tmp, 'red'))
+        # query += '\n' + tmp
 
     # print(colored(query, 'red'))
 
@@ -83,17 +87,13 @@ def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, 
             # print(prompt)
             response = LLM_generate(prompt, llm_name=llm_name, is_print=False)
             # print(response)
-            try:
-                sql = re.search(r'```sql\n(.*?)\n```', response, re.DOTALL).group(1).strip()
-            except:
-                sql = response.strip()
-            try:
-                query_database = re.search(r'DB: (.*?)\n', response).group(1).strip()
-            except:
-                query_database = few_shot_data[0]["DB"]
-
-            print(query_database)
-            print(colored(sql, 'yellow'))
+            sql = re.search(r'```sql\n(.*?)\n```', response, re.DOTALL).group(1).strip()
+            if not sql.startswith('SELECT'):
+                raise Exception("Not a SELECT query")
+            query_database = re.search(r'DB: (.*?)\n', response).group(1).strip()
+                
+            # print(query_database)
+            # print(colored(sql, 'yellow'))
             
             if not only_need_sql:
                 connection = connections[query_database]

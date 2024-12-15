@@ -1,0 +1,558 @@
+[
+    {
+        "Q": "N412AB的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N412AB\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N412AB的制造商是Cessna，具体型号为Cessna Citation XLS，制造年份为2007。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.62
+    },
+    {
+        "Q": "9H-HFH的制造商是谁？",
+        "A": [
+            "空客"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"9H-HFH\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "The aircraft with the registration number **9H-HFH** is operated by **Hi Fly - Transportes Aereos S.A.** This company is known for its charter services and operates a fleet that includes various aircraft models, including the Airbus A330.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.59
+    },
+    {
+        "Q": "ZK-NXJ的制造商是谁？",
+        "A": [
+            "莱斯顿"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"ZK-NXJ\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "ZK-NXJ的制造商是Nextant Aerospace，具体型号为Nextant 400XT。这架飞机的注册信息显示它由Jet Charters NZ运营，制造年份为1998年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.59
+    },
+    {
+        "Q": "G-VUYK的制造商是谁？",
+        "A": [
+            "巴航工业"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"G-VUYK\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "The manufacturer of the aircraft registered as G-VUYK is Saxonair. This aircraft is an Embraer Phenom 300, which was made in the year 2022.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.64
+    },
+    {
+        "Q": "N112FJ的制造商是谁？",
+        "A": [
+            "达索"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N112FJ\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N112FJ的制造商是达索（Dassault），该飞机型号为Falcon 2000。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.13
+    },
+    {
+        "Q": "N511CT的制造商是谁？",
+        "A": [
+            "西锐"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N511CT\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N511CT的制造商是Cirrus Design Corporation，具体型号为Cirrus SR22。这架飞机的制造年份为2007年，属于轻型飞机类型。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 14.79
+    },
+    {
+        "Q": "N868CB的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N868CB\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N868CB的制造商是Cessna，具体型号为Cessna Citation CJ2。这架飞机的制造年份为2005年，座位数为6个，最大航程为3193公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.12
+    },
+    {
+        "Q": "N874TX的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N874TX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N874TX是一架由雷西昂（Raytheon）制造的Hawker 800XP型飞机，制造年份为2005年。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.22
+    },
+    {
+        "Q": "9H-CLD的制造商是谁？",
+        "A": [
+            "达索"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"9H-CLD\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "The manufacturer associated with the aircraft registration 9H-CLD is **Harmony Jets**. This aircraft is a Dassault Falcon 100, which was manufactured in 1986 and has a seating capacity of 8.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.43
+    },
+    {
+        "Q": "VP-CAY的制造商是谁？",
+        "A": [
+            "波音"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"VP-CAY\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "VP-CAY is a Boeing 737 aircraft, and its manufacturer is Phenix Jet. The aircraft was manufactured in 1998 and has a seating capacity of 12.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.94
+    },
+    {
+        "Q": "OY-RAD的制造商是谁？",
+        "A": [
+            "达索"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"OY-RAD\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "OY-RAD is a Dassault Falcon 8X aircraft, and it is supplied by Air Alsie. The aircraft was manufactured in 2020 and has a seating capacity of 14.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.41
+    },
+    {
+        "Q": "N513BE的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N513BE\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N513BE的制造商是**Hawker Beechcraft**，该飞机型号为**Hawker 800XP**，制造年份为2000年。它的供应商是**Premier Private Jets**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.15
+    },
+    {
+        "Q": "ZS-NEX的制造商是谁？",
+        "A": [
+            "波音"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"ZS-NEX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "ZS-NEX是一架由波音公司（Boeing）制造的飞机，具体型号为Boeing 767-35DER。该飞机的注册公司是Aeronexus Corporate Pty Ltd，制造年份为1990年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.95
+    },
+    {
+        "Q": "C-FWYN的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"C-FWYN\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "C-FWYN is a Beechcraft King Air 100 aircraft, and its manufacturer is Airco Aircraft Charters Ltd. The aircraft was manufactured in 1970 and has a seating capacity of 9.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.69
+    },
+    {
+        "Q": "OY-CBK的制造商是谁？",
+        "A": [
+            "皮拉图斯"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"OY-CBK\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "OY-CBK is a Pilatus PC-12 aircraft, and its manufacturer is Flexflight Group. The aircraft was manufactured in 2017 and has a seating capacity of 8.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.31
+    },
+    {
+        "Q": "N217PT的制造商是谁？",
+        "A": [
+            "达索"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N217PT\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N217PT的制造商是达索（Dassault），具体型号为Falcon 50。这架飞机的注册信息显示它由Lyon Aviation Inc.运营，制造年份为1986年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.01
+    },
+    {
+        "Q": "N416RJ的制造商是谁？",
+        "A": [
+            "湾流"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N416RJ\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N416RJ is a Gulfstream GV aircraft, and its manufacturer is Alerion Aviation. This aircraft was manufactured in 1999 and has a seating capacity of 16.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.09
+    },
+    {
+        "Q": "N575RD的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N575RD\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N575RD的制造商是**Beechcraft**，具体型号为**King Air 350**。该飞机的注册商是**Advanced Air LLC**，制造年份为2000年，座位数为9个，最大航程为2758公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.04
+    },
+    {
+        "Q": "LZ-CVA的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"LZ-CVA\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "LZ-CVA的制造商是Cessna，具体型号为Cessna Citation XLS。这架飞机的供应商是Heli Air Services，制造年份为2007年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.36
+    },
+    {
+        "Q": "F-HLTT的制造商是谁？",
+        "A": [
+            "本田"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"F-HLTT\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "The aircraft registered as F-HLTT is a Honda HondaJet, and its manufacturer is Eatis. This aircraft was made in 2016 and has a seating capacity of 5 with a maximum range of approximately 2661 kilometers.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 15.17
+    },
+    {
+        "Q": "N644AT的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N644AT\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N644AT的制造商是Cessna，具体型号为Cessna Citation III。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.46
+    },
+    {
+        "Q": "XB-NXR的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"XB-NXR\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "The aircraft with the registration XB-NXR is a Cessna Citation I, and it is supplied by Aeronaves Tsm S.A..",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 25.62
+    },
+    {
+        "Q": "N1776C的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N1776C\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N1776C的制造商是Hawker Beechcraft Corporation，具体型号为Hawker 900XP，制造年份为2007年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.71
+    },
+    {
+        "Q": "N651SF的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N651SF\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N651SF的制造商是Cessna，具体型号为Cessna Citation III。该飞机由Starflite Aviation提供，制造年份为1984年，座位数为9个，最大航程为3740公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.37
+    },
+    {
+        "Q": "ZS-EXG的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"ZS-EXG\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "ZS-EXG的制造商是Execujet South Africa Pty Ltd。这是一家位于南非的航空公司，专注于私人飞机的运营和管理。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.21
+    },
+    {
+        "Q": "N605JE的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N605JE\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N605JE是一架由Talon Air LLC运营的Bombardier Challenger 604型飞机。该飞机的制造年份为1999年，能够容纳10名乘客，最大航程为7519公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.62
+    },
+    {
+        "Q": "D-ILCG的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"D-ILCG\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "The manufacturer of the aircraft registered as D-ILCG is FSH Luftfahrtunternehmen GmbH. This aircraft is a Cessna Citation CJ2, which was manufactured in 2006 and has a seating capacity of 6.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.01
+    },
+    {
+        "Q": "OE-IGG的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"OE-IGG\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "OE-IGG is an aircraft registered under the supplier name Glock Aviation GmbH. It is a Bombardier Global 6000 model, manufactured in 2010.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.73
+    },
+    {
+        "Q": "N923JL的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N923JL\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N923JL的制造商是**Bombardier**，具体型号为**Challenger 350**。该飞机的注册由**Pinnacle Air Charter LLC**提供，制造年份为2021年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 16.98
+    },
+    {
+        "Q": "VH-ZIY的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"VH-ZIY\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "VH-ZIY is a Cessna Citation CJ2, and its manufacturer is Machjet International Pty Ltd. The aircraft was manufactured in 2003 and has a seating capacity of 7.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.39
+    },
+    {
+        "Q": "C-FGGF的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"C-FGGF\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "C-FGGF is a Bombardier Challenger 300, and it is operated by Chartright Air Inc..",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.05
+    },
+    {
+        "Q": "VH-PNI的制造商是谁？",
+        "A": [
+            "波音"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"VH-PNI\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "VH-PNI的制造商是Aergo International Pty Ltd。这架飞机是波音737型号，注册于1997年。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.51
+    },
+    {
+        "Q": "D-ICBA的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"D-ICBA\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "The aircraft registered as D-ICBA is a Cessna Citation CJ2, which is supplied by Luxaviation Luxembourg. This aircraft was manufactured in 2004 and has a seating capacity of six, with a maximum range of approximately 3193 kilometers.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.4
+    },
+    {
+        "Q": "N200WP的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N200WP\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N200WP是一架Beechcraft King Air B200型飞机，其制造商是Jetstream Aviation Inc.。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.69
+    },
+    {
+        "Q": "N880LT的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N880LT\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N880LT的制造商是Hawker，具体型号为Hawker 1000。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.47
+    },
+    {
+        "Q": "SE-RLX的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"SE-RLX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "The aircraft registered as SE-RLX is a Hawker 800XP, and it is managed by Grafair Flight Management. This aircraft was manufactured in the year 2000 and has a seating capacity of 8 with a maximum range of 4800 kilometers.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.07
+    },
+    {
+        "Q": "N600CA的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N600CA\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N600CA的制造商是**Beechcraft**，具体型号为**King Air 350**。该飞机的注册年份为2002，供应商为**Meta Special Aerospace Transportation, LLC**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.76
+    },
+    {
+        "Q": "LY-KDT的制造商是谁？",
+        "A": [
+            "波音"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"LY-KDT\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "LY-KDT是由KlasJet公司制造的。这是一架波音737飞机，制造年份为1992年，座位数为56，最大航程为3700公里。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.02
+    },
+    {
+        "Q": "OO-RKS的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"OO-RKS\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "OO-RKS is a Cessna Citation Mustang aircraft, and its manufacturer is ASL Group. The aircraft was manufactured in 2009 and has a seating capacity of 5.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.01
+    },
+    {
+        "Q": "N238LM的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N238LM\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N238LM的制造商是**Integrated Flight Resources Inc.**，这架飞机的型号是**Bombardier Learjet 45**，制造年份为1999年。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.28
+    },
+    {
+        "Q": "N30JE的制造商是谁？",
+        "A": [
+            "湾流"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N30JE\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N30JE是一架由Vistajet Us Inc.运营的湾流GIV（Gulfstream GIV）飞机。这架飞机的制造年份为2003年，能够容纳13名乘客，最大航程为7778公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.21
+    },
+    {
+        "Q": "N511DB的制造商是谁？",
+        "A": [
+            "湾流"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N511DB\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N511DB的制造商是Gulfstream Aerospace Corporation，具体型号为Gulfstream G650，制造年份为2013年。该飞机由Skybird Aviation, Inc.拥有。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.38
+    },
+    {
+        "Q": "N357VJ的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N357VJ\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N357VJ is a Bombardier Challenger 350 aircraft, and its manufacturer is Bombardier Inc. The aircraft is registered to Vistajet Us Inc. and was manufactured in 2015.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.9
+    },
+    {
+        "Q": "N504WG的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N504WG\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N504WG是一架Cessna Citation XLS+型飞机，其制造商是Cessna Aircraft Company。该飞机的注册信息显示其由Fly Alliance Aviation管理。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.95
+    },
+    {
+        "Q": "N26ME的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N26ME\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N26ME的制造商是StarJet Inc.，该飞机的型号为BAe 125-700，制造年份为1983年。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.75
+    },
+    {
+        "Q": "ZS-PZU的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"ZS-PZU\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "ZS-PZU是一架Beechcraft King Air 200型飞机，其制造商是Execujet South Africa Pty Ltd。这架飞机的制造年份为1978年，能够容纳8名乘客，最大航程为2156公里。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.9
+    },
+    {
+        "Q": "N134FM的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N134FM\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N134FM是一架由Cessna制造的飞机，具体型号为Cessna Citation XLS，制造年份为2005年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.27
+    },
+    {
+        "Q": "9H-IGH的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"9H-IGH\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "The registration \"9H-IGH\" refers to a Bombardier Global 6000 aircraft, which is operated by Vista Jet. This aircraft was manufactured in 2014 and is part of a fleet known for its long-range capabilities and spacious cabin. \n\nIf you need more specific information about the manufacturer or details regarding the aircraft, feel free to ask!",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.85
+    },
+    {
+        "Q": "N489BM的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N489BM\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "N489BM的制造商是Hawker，具体型号为Hawker 800。这架飞机的注册年份为1995，座位数为8个，最大航程为4830公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.93
+    },
+    {
+        "Q": "XA-AAL的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"XA-AAL\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "XA-AAL是一架BAe 125-800型飞机，其制造商是Fly Business Aviation。这架飞机的注册年份为1993年，座位数为8，最大航程为4830公里。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.69
+    },
+    {
+        "correct_rate": 60.0,
+        "sample_size": 50,
+        "correct_count": 30,
+        "average_time": 8.67
+    }
+]

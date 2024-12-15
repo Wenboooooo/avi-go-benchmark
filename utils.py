@@ -5,6 +5,8 @@ import json
 import os
 from termcolor import colored
 import base64
+import re
+import datetime
 
 # os.environ['https_proxy'] = '127.0.0.1:7890'
 # os.environ['http_proxy'] = '127.0.0.1:7890'
@@ -17,6 +19,7 @@ def connect_to_database(database_name: str):
             host , user, password = 'rm-uf6k55f9394p93af8.rwlb.rds.aliyuncs.com', 'ai_data', '5a@12ujdaldj8s'
         case "ai_database_dev":
             host , user, password = 'rm-t4n3p0r28isdqdgvx.mysql.singapore.rds.aliyuncs.com', 'nlp_dev_read', 'nlp*12345'
+            # host , user, password = 'rm-t4nao9vgc59g20e48.mysql.singapore.rds.aliyuncs.com', 'nlp_dev', 'nlp*12345'
         case "data_center_release":
             host , user, password = 'rm-uf6k55f9394p93af8.rwlb.rds.aliyuncs.com', 'ai_data', '5a@12ujdaldj8s'
     connection = pymysql.connect(
@@ -211,31 +214,22 @@ def LLM_generate(text, image_paths=[], temp=None, presence_penalty=None, is_prin
 #         print(colored(res, 'yellow'))
 #     return res
 
-# def LLM_judge(question, ref_answer, actual_response, is_print=False, llm_type='gpt4o'):
-#     num = 10
-#     prompt = f"Question: {question}\nGround Truth: {ref_answer}\nAnswer to be checked:\n{actual_response}\n\nPlease determine if this answer is correct or not based on Ground Truth.\nIn numerical measurements such as length, a certain degree of error is permissible.\nYour output should strictly follow the format: \"Thought: [Your Thought]\nJudgement: [Yes/No]\"."
-#     while num > 0:
-#         if llm_type == 'gpt4o':
-#             response = gpt4o_generate(prompt)
-#         elif llm_type == 'kimi':
-#             response = kimi_generate(prompt)
-#         elif llm_type == 'qwen':
-#             response = qwen_generate(prompt)
-#         elif llm_type == 'claude':
-#             response = claude_generate(prompt)
-#         else:
-#             response = gpt4o_generate(prompt)
-#         result = response.split("Judgement: ")[-1].lower().strip()
-#         if result in ('yes', 'no'):
-#             break
-#         num -= 1
-#     else:
-#         result = "Judgement failed"
-#     if is_print:
-#         print(colored(prompt, 'green'))
-#         print(colored(response, 'yellow'))
-#         print(colored(result, 'red'))
-#     return result
+def LLM_judge(question, ref_answer, actual_response, is_print=False, llm_type='gpt4o'):
+    num = 10
+    prompt = f"Question: {question}\nGround Truth: {ref_answer}\nAnswer to be checked:\n{actual_response}\n\nPlease determine if this answer is correct or not based on Ground Truth.\nIn numerical measurements such as length, a certain degree of error is permissible.\nYour output should strictly follow the format: \"Thought: [Your Thought]\nJudgement: [Yes/No]\"."
+    while num > 0:
+        response = LLM_generate(prompt, llm_name=llm_type)
+        result = response.split("Judgement: ")[-1].lower().strip()
+        if result in ('yes', 'no'):
+            break
+        num -= 1
+    else:
+        result = "Judgement failed"
+    if is_print:
+        print(colored(prompt, 'green'))
+        print(colored(response, 'yellow'))
+        print(colored(result, 'red'))
+    return result
 
 def SQL_judge(ref_sql, actual_sql, connection, actual_result=None, is_print=False):
     try:
@@ -252,6 +246,7 @@ def SQL_judge(ref_sql, actual_sql, connection, actual_result=None, is_print=Fals
             if is_print:
                 print(colored(ref_sql, 'green'))
                 print(colored(actual_sql, 'yellow'))
+            cursor.execute(ref_sql)
             ref_result = cursor.fetchall()
             if not actual_result:
                 cursor.execute(actual_sql)
@@ -264,6 +259,7 @@ def SQL_judge(ref_sql, actual_sql, connection, actual_result=None, is_print=Fals
                 return 'yes'
             else:
                 return 'no'
+                # return LLM_judge("请检查Answer中是否包含Ground Truth中的所有信息", str(ref_result), str(actual_result), is_print=is_print)
     except Exception as e:
         print(e)
         return 'no'
@@ -284,4 +280,97 @@ def LLM_score(question, ref_answer, actual_response, is_print=False):
         print(colored(result, 'red'))
     return result
 
-# actual_answer = gpt4o_generate("Waht's OpenAI?", is_print=True)
+
+
+def chatbi_generate(prompt):
+    def get_ri_response(prompt):
+        url = f'http://127.0.0.1:9000/chatbi/ir/prompt={prompt}'
+        response = requests.get(url)
+        data = response.text
+        return data
+    
+    num = 5
+    while num > 0:
+        try:
+            response = get_ri_response(prompt)
+            response = json.loads(response)
+            prompt = (response['prompt'])
+            url = f'http://127.0.0.1:9000/chatbi/response/prompt={prompt}'
+            response = requests.get(url)
+            data = response.text
+            print(data)
+            data = json.loads(data)
+            sql =  data['markdown_sql']
+            sql = re.search(r'```sql\n(.*?)\n```', sql, re.DOTALL).group(1).strip()
+            return sql, data['data']
+        except Exception as e:
+            print(e)
+            num -= 1
+            continue
+       
+if __name__ == '__main__':
+    prompt = 'Lublin Airport机场的三字码是什么？'
+    sql, result = chatbi_generate(prompt)
+    print(sql)
+    print(result)
+
+
+
+
+import json
+import requests
+from termcolor import colored
+
+def avibot_pro_generate(text, image_paths=None, temp=None, presence_penalty=None, is_print=False):
+    
+    
+    url = 'http://47.237.119.79:8300/avi-go-chatbotpro/benchmark_test'
+    
+   
+    if is_print:
+        print(colored(text, 'green'))
+
+   
+    num = 10
+    res = ""
+
+   
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    # 数据
+    data = {
+        "question": text
+    }
+
+ 
+    while num > 0 and len(res) == 0:
+        try:
+           
+            data_json = json.dumps(data)
+
+        
+            response = requests.post(url, headers=headers, data=data_json)
+
+            # 如果请求成功
+            if response.status_code == 200:
+                response_json = response.json()
+                res = response_json.get("result", "")
+            else:
+                num -= 1
+        except Exception as e:
+            num -= 1
+
+    # 打印响应结果
+    if is_print and res:
+        print(colored(res, 'yellow'))
+
+    # 返回响应结果
+    return res
+
+# # 示例调用
+# if __name__ == "__main__":
+#     text = "你好"
+#     result = avibot_pro_generate(text, is_print=True)
+#     print("Final result:", result)

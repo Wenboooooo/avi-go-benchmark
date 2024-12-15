@@ -1,0 +1,458 @@
+[
+    {
+        "Q": "Cessna 206机型的座位数是多少？",
+        "A": 3,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 206\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 206机型的座位数通常为5到8个座位，具体取决于不同的配置和型号。例如，有些版本的Cessna 206可以容纳3个座位，而其他版本则可以容纳多达8个座位。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.33
+    },
+    {
+        "Q": "Piper PA-28机型的座位数是多少？",
+        "A": 3,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-28\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Piper PA-28系列飞机的座位数通常为4个座位。这些飞机设计用于飞行训练和私人飞行，适合小型团体出行。具体的座位数可能会因不同的型号而有所变化，但大多数PA-28型号都提供4个座位的配置。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.37
+    },
+    {
+        "Q": "Gulfstream G350机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G350\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G350的座位数通常为12至16个，具体取决于座椅布局和配置。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.75
+    },
+    {
+        "Q": "Gulfstream G550机型的座位数是多少？",
+        "A": 16,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G550\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G550的座位数通常在8到16个之间，具体取决于机型的配置和设计。根据不同的版本，以下是一些具体的座位数信息：\n\n- 一些G550机型可容纳最多16名乘客。\n- 其他版本的座位数为14个或12个。\n\n因此，Gulfstream G550的座位数可以根据具体的配置而有所不同。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.49
+    },
+    {
+        "Q": "Bombardier Global 7500机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 7500\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Global 7500的座位数为14个。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.64
+    },
+    {
+        "Q": "Cessna 414机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 414\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 414机型的座位数为6个。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.07
+    },
+    {
+        "Q": "Gulfstream GIV机型的座位数是多少？",
+        "A": 13,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GIV\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream GIV的座位数通常为12到13个座位，具体取决于机型的配置和内部布局。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.58
+    },
+    {
+        "Q": "Embraer Phenom 300机型的座位数是多少？",
+        "A": 11,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Phenom 300\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer Phenom 300的座位数为8个。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.56
+    },
+    {
+        "Q": "Dassault Falcon 10机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 10\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 10的座位数为6个。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 21.91
+    },
+    {
+        "Q": "Gulfstream G280机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G280\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G280的座位数通常为8到10个座位，具体取决于机型的配置和设计。根据不同的航空公司和机型，可能会有一些变化。例如，有些配置可以容纳10名乘客，而其他配置则可能限制在8名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 15.05
+    },
+    {
+        "Q": "Cessna 152机型的座位数是多少？",
+        "A": 1,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 152\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 152机型的座位数为3个，包括1个飞行员座位和2个乘客座位。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.41
+    },
+    {
+        "Q": "Embraer Praetor 500机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Praetor 500\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer Praetor 500的座位数为8个。这款商务喷气机设计用于提供舒适的乘坐体验，适合私人和企业使用。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.27
+    },
+    {
+        "Q": "Cessna Citation CJ1机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ1\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation CJ1的座位数通常为5到6个座位，具体取决于不同的配置和型号。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.44
+    },
+    {
+        "Q": "Bombardier Challenger 850机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 850\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Challenger 850的座位数通常在8到14个之间，具体配置可以根据客户的需求进行定制，最多可设定为17个座位。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.55
+    },
+    {
+        "Q": "Cessna Citation VII机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation VII\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation VII的座位数通常为7个座位。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.39
+    },
+    {
+        "Q": "Hawker 800XP机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800XP\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 800XP机型的座位数通常为7到8个座位，具体取决于不同的配置和版本。例如，有些Hawker 800XP的配置为7个座位，而其他版本则可以容纳8个座位。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.49
+    },
+    {
+        "Q": "Airbus A321机型的座位数是多少？",
+        "A": 236,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus A321\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airbus A321机型的座位数因具体配置而异。一般来说，A321的座位数可以在153到236之间。例如：\n\n- 一些配置的座位数为153。\n- 另一种配置的最大座位数为236。\n\n因此，A321的座位数可以根据航空公司的具体需求和机型配置有所不同。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.49
+    },
+    {
+        "Q": "Bombardier CRJ-200机型的座位数是多少？",
+        "A": 48,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier CRJ-200\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier CRJ-200机型的座位数通常为50个座位。不过，根据不同的航空公司和配置，座位数可能会有所不同，例如有些配置可能为48个座位。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.08
+    },
+    {
+        "Q": "Cessna Citation I机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation I\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation I的座位数通常为4到6个乘客，具体取决于机舱的配置和设计。该机型以其舒适性和适合短途飞行的能力而受到欢迎。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.48
+    },
+    {
+        "Q": "Cessna Citation CJ2+机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ2+\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation CJ2+机型的座位数为8个。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.98
+    },
+    {
+        "Q": "Cessna Citation II机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation II\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation II的座位数通常为8个乘客。这款轻型喷气式飞机设计用于提供舒适的飞行体验，适合商务和私人飞行需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 18.15
+    },
+    {
+        "Q": "Gulfstream G650ER机型的座位数是多少？",
+        "A": 16,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G650ER\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G650ER的座位数通常为10到16个座位，具体取决于机型的配置和布局。例如，有些配置为10个座位，而其他配置则可以容纳多达16个座位。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.49
+    },
+    {
+        "Q": "Dassault Falcon 8X机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 8X\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 8X的座位数通常为12到14个座位，具体取决于机舱的布局和配置选项。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.76
+    },
+    {
+        "Q": "Cessna 185机型的座位数是多少？",
+        "A": 3,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 185\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 185机型的座位数为6个座位。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.82
+    },
+    {
+        "Q": "Dassault Falcon 50EX机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 50EX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 50EX机型的座位数为8个乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.61
+    },
+    {
+        "Q": "Boeing BBJ3机型的座位数是多少？",
+        "A": 19,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Boeing BBJ3\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Boeing BBJ3机型的座位数为19个。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.07
+    },
+    {
+        "Q": "Beechcraft King Air 350i机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350i\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air 350i的座位数通常为8到9个座位，具体取决于机型的配置和布局。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.47
+    },
+    {
+        "Q": "Cessna Citation I/SP机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation I/SP\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation I/SP机型的座位数为6个。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.13
+    },
+    {
+        "Q": "Dassault Falcon 2000EX机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000EX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 2000EX的座位数通常为10个座位。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.06
+    },
+    {
+        "Q": "Airbus ACJ机型的座位数是多少？",
+        "A": 15,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airbus ACJ机型的座位数通常为19个座位。这一配置适用于如ACJ A319等型号，适合用于政府或公司包机服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.53
+    },
+    {
+        "Q": "Gulfstream G100机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G100\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G100机型的座位数为8个。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.32
+    },
+    {
+        "Q": "Dassault Falcon 50机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 50\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 50的座位数为9个。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.85
+    },
+    {
+        "Q": "Gulfstream G600机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G600\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G600机型的座位数为13个。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.26
+    },
+    {
+        "Q": "Gulfstream G450机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G450\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G450的座位数通常为13到16座，具体取决于飞机的配置。例如，一些G450的配置为13座，而其他配置则可容纳14或16座。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.07
+    },
+    {
+        "Q": "BAe 125-800机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"BAe 125-800\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "BAe 125-800机型的座位数通常为7到8个座位，具体取决于机型的配置和内部布局。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.32
+    },
+    {
+        "Q": "Gulfstream G650机型的座位数是多少？",
+        "A": 17,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G650\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G650的座位数通常为12至18座，具体取决于机型的布局和配置。例如，某些G650ER机型可以配置为10座或13座。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.25
+    },
+    {
+        "Q": "Bombardier Learjet 60机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 60\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Learjet 60的座位数通常为6到8个座位，具体取决于飞机的配置和内部布局。例如，有些配置可以容纳8名乘客，而其他配置则可能为7或6名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.72
+    },
+    {
+        "Q": "Cessna 402机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 402\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 402的座位数通常为6到10座，具体取决于飞机的配置和用途。在某些情况下，Cessna 402可以配置为全货运型，但标准的乘客配置通常为7座。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.08
+    },
+    {
+        "Q": "Cessna 182机型的座位数是多少？",
+        "A": 3,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 182\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 182机型的座位数通常为4个座位。不过，某些版本的Cessna 182可能会有3个座位的配置。因此，具体的座位数可能会因飞机的具体型号和配置而有所不同。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.85
+    },
+    {
+        "Q": "Cessna 421机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 421\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 421机型的座位数通常为5到7个座位，具体取决于不同的配置和年份。例如，有些型号的Cessna 421可以容纳6名乘客，而其他型号则可以容纳7名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.86
+    },
+    {
+        "Q": "Hawker 750机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 750\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 750机型的座位数为8个。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.49
+    },
+    {
+        "Q": "Beechcraft 1900D机型的座位数是多少？",
+        "A": 19,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft 1900D\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft 1900D的座位数通常为18到19个，具体取决于不同的配置和航空公司。例如，一些配置为18个座位，而其他配置可能达到19个座位。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.27
+    },
+    {
+        "Q": "Hawker 800B机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800B\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 800B机型的座位数通常为7到8个乘客，具体取决于机型的配置和布局。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.18
+    },
+    {
+        "Q": "Diamond DA62机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Diamond DA62\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Diamond DA62机型的座位数为6个。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.46
+    },
+    {
+        "Q": "Bombardier Challenger 601机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 601\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Challenger 601的座位数通常为10到12个乘客，具体取决于机型的配置和内部布局。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.55
+    },
+    {
+        "Q": "Bombardier Learjet 31机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 31\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Learjet 31的座位数通常为6名乘客。在某些配置中，它可以容纳最多7名乘客。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.96
+    },
+    {
+        "Q": "Bombardier Global Express机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global Express\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Global Express的座位数通常为13个座位。这一配置适合商务旅行，提供了舒适的乘坐体验。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.05
+    },
+    {
+        "Q": "Beechcraft Baron机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft Baron\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft Baron机型的座位数通常为6个座位。这款飞机以其舒适性和性能而闻名，适合短途飞行和小型包机服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.68
+    },
+    {
+        "Q": "Beechjet 65机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 65\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechjet 65的座位数为7座。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.29
+    },
+    {
+        "Q": "Bombardier Global 5500机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT DISTINCT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 5500\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Global 5500的座位数通常为12个座位。不过，根据不同的配置，某些机型可能会有多达16个座位。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.67
+    },
+    {
+        "correct_rate": 60.0,
+        "sample_size": 50,
+        "correct_count": 30,
+        "average_time": 8.91
+    }
+]

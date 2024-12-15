@@ -1,0 +1,558 @@
+[
+    {
+        "Q": "Bombardier Challenger 605的起飞重量是多少？",
+        "A": [
+            21863.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 605\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Challenger 605的最大起飞重量为48,200磅（约21,863公斤）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.88
+    },
+    {
+        "Q": "Beechcraft King Air 350的起飞重量是多少？",
+        "A": [
+            6800.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 350\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Beechcraft King Air 350的最大起飞重量为6800公斤（约14991磅）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.22
+    },
+    {
+        "Q": "Beechcraft King Air 260的起飞重量是多少？",
+        "A": [
+            4005.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 260\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Beechcraft King Air 260的最大起飞重量为12,500磅（约5,670千克）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.69
+    },
+    {
+        "Q": "Airbus A330的起飞重量是多少？",
+        "A": [
+            230024.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Airbus A330\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "空中客车A330的最大起飞重量（MTOW）根据不同型号有所不同。一般来说，A330的最大起飞重量范围在242吨到460吨之间。例如，A330-300的最大起飞重量为242吨，而A330-900的最大起飞重量可达到460吨。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.29
+    },
+    {
+        "Q": "Dassault Falcon 2000的起飞重量是多少？",
+        "A": [
+            19414.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Dassault Falcon 2000\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Dassault Falcon 2000的最大起飞重量为44,452磅（约20,200千克）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.16
+    },
+    {
+        "Q": "Airbus A340的起飞重量是多少？",
+        "A": [
+            141500.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Airbus A340\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "空中客车A340的最大起飞重量（MTOW）因不同型号而异。以下是一些主要型号的最大起飞重量：\n\n- **A340-200**: 最大起飞重量为 142,880 公斤（315,000 磅）。\n- **A340-300**: 最大起飞重量为 275,000 公斤（605,000 磅）。\n- **A340-500**: 最大起飞重量为 380,000 公斤（840,000 磅）。\n- **A340-600**: 最大起飞重量为 380,000 公斤（840,000 磅）。\n\n这些数据表明，A340系列飞机的起飞重量范围从约 142,880 公斤到 380,000 公斤不等，具体取决于飞机的型号和配置。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.38
+    },
+    {
+        "Q": "Airbus ACJ A320的起飞重量是多少？",
+        "A": [
+            63100.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Airbus ACJ A320\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Airbus ACJ A320的最大起飞重量为79,000千克。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.61
+    },
+    {
+        "Q": "Embraer Legacy 500的起飞重量是多少？",
+        "A": [
+            19051.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer Legacy 500\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer Legacy 500的最大起飞重量（MTOW）为20,865千克（约45,962磅）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.28
+    },
+    {
+        "Q": "Hawker 800XP的起飞重量是多少？",
+        "A": [
+            12712.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Hawker 800XP\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Hawker 800XP的最大起飞重量为12,712公斤（约28,000磅）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.21
+    },
+    {
+        "Q": "Cessna Citation Jet的起飞重量是多少？",
+        "A": [
+            4853.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation Jet\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation Jet（C525）的最大起飞重量为9,163磅（约4,150公斤）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.02
+    },
+    {
+        "Q": "Bombardier Challenger 604的起飞重量是多少？",
+        "A": [
+            21863.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 604\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Challenger 604的最大起飞重量为54,500磅（约24,877公斤）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.71
+    },
+    {
+        "Q": "Gulfstream G450的起飞重量是多少？",
+        "A": [
+            33838.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G450\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Gulfstream G450的最大起飞重量为45,000磅（约20,411千克）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.22
+    },
+    {
+        "Q": "Boeing 737的起飞重量是多少？",
+        "A": [
+            49190.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Boeing 737\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "波音737的最大起飞重量因具体型号而异。以下是一些常见型号的最大起飞重量：\n\n1. **波音737-700**：最大起飞重量为70,000磅（约31,750公斤）。\n2. **波音737-800**：最大起飞重量为174,200磅（约79,000公斤）。\n3. **波音737-900**：最大起飞重量为194,700磅（约88,300公斤）。\n\n这些数据可能会因不同的配置和运营要求而有所变化。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.6
+    },
+    {
+        "Q": "Bombardier Global 6000的起飞重量是多少？",
+        "A": [
+            45132.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global 6000\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Global 6000的最大起飞重量为45,132千克（约99,500磅）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.11
+    },
+    {
+        "Q": "Gulfstream G650ER的起飞重量是多少？",
+        "A": [
+            46992.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G650ER\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Gulfstream G650ER的最大起飞重量（MTOW）为104,000磅（约47,173千克）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.16
+    },
+    {
+        "Q": "Gulfstream GV的起飞重量是多少？",
+        "A": [
+            41050.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream GV\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Gulfstream GV的最大起飞重量为90,500磅（约合41,000公斤）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.6
+    },
+    {
+        "Q": "Pilatus PC-24的起飞重量是多少？",
+        "A": [
+            8300.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Pilatus PC-24\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Pilatus PC-24的最大起飞重量为18,300磅（约8,300公斤）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.09
+    },
+    {
+        "Q": "Hawker 800XPi的起飞重量是多少？",
+        "A": [
+            12712.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Hawker 800XPi\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Hawker 800XPi的最大起飞重量为12,712公斤（约28,000磅）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.47
+    },
+    {
+        "Q": "Boeing 767的起飞重量是多少？",
+        "A": [
+            142880.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Boeing 767\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "波音767的最大起飞重量（MTOW）因具体型号而异。以下是一些主要型号的最大起飞重量：\n\n1. **波音767-200**：最大起飞重量约为 142,882 千克（315,000 磅）。\n2. **波音767-200ER**（延程型）：最大起飞重量约为 179,000 千克（395,000 磅）。\n3. **波音767-300**：最大起飞重量约为 186,880 千克（412,000 磅）。\n4. **波音767-300ER**（延程型）：最大起飞重量约为 204,170 千克（450,000 磅）。\n5. **波音767-400ER**（延程型）：最大起飞重量约为 226,800 千克（500,000 磅）。\n\n这些数据表明，波音767系列飞机的起飞重量范围广泛，适应不同的航线和载客需求。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.74
+    },
+    {
+        "Q": "Cessna Citation CJ2的起飞重量是多少？",
+        "A": [
+            5670.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation CJ2\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation CJ2的最大起飞重量为23,550磅（约10,668公斤）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.11
+    },
+    {
+        "Q": "Gulfstream G150的起飞重量是多少？",
+        "A": [
+            11839.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G150\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Gulfstream G150的最大起飞重量为41,957磅（约19,000千克）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.72
+    },
+    {
+        "Q": "Hawker 900XP的起飞重量是多少？",
+        "A": [
+            12701.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Hawker 900XP\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Hawker 900XP的最大起飞重量（MTOW）为13,608千克（约29,999磅）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.66
+    },
+    {
+        "Q": "Gulfstream G700的起飞重量是多少？",
+        "A": [
+            48800.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G700\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Gulfstream G700的最大起飞重量为48,800公斤（约107,600磅）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.51
+    },
+    {
+        "Q": "Gulfstream GIV-SP的起飞重量是多少？",
+        "A": [
+            33203.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream GIV-SP\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Gulfstream GIV-SP的最大起飞重量（MTOW）为45,962磅（约20,900公斤）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.9
+    },
+    {
+        "Q": "Embraer Phenom 300的起飞重量是多少？",
+        "A": [
+            8150.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer Phenom 300\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer Phenom 300的最大起飞重量（MTOW）为21,863磅（约9,900千克）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.91
+    },
+    {
+        "Q": "Gulfstream G550的起飞重量是多少？",
+        "A": [
+            41277.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G550\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Gulfstream G550的最大起飞重量为54,500磅（约24,700公斤）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.74
+    },
+    {
+        "Q": "Cessna Citation VII的起飞重量是多少？",
+        "A": [
+            10183.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation VII\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation VII的最大起飞重量为23,000磅（约10,433千克）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.56
+    },
+    {
+        "Q": "Beechcraft Premier I的起飞重量是多少？",
+        "A": [
+            5670.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Beechcraft Premier I\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Beechcraft Premier I的最大起飞重量为12,500磅（约5,670千克）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.78
+    },
+    {
+        "Q": "Bombardier Global 5500的起飞重量是多少？",
+        "A": [
+            41957.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global 5500\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Global 5500的最大起飞重量为45,962磅（约20,900千克）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.18
+    },
+    {
+        "Q": "Piper PA-28的起飞重量是多少？",
+        "A": [
+            975.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Piper PA-28\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Piper PA-28的最大起飞重量为1969公斤（约4340磅）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.08
+    },
+    {
+        "Q": "Beechcraft King Air 350i的起飞重量是多少？",
+        "A": [
+            6800.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 350i\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Beechcraft King Air 350i的最大起飞重量为6800公斤。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.63
+    },
+    {
+        "Q": "Embraer ERJ 145的起飞重量是多少？",
+        "A": [
+            24100.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer ERJ 145\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer ERJ 145的最大起飞重量为24,100公斤（约53,000磅）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.04
+    },
+    {
+        "Q": "Cessna Citation II的起飞重量是多少？",
+        "A": [
+            6849.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation II\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation II的最大起飞重量为5,670公斤（12,500磅）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.67
+    },
+    {
+        "Q": "Embraer Phenom 100的起飞重量是多少？",
+        "A": [
+            4750.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer Phenom 100\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer Phenom 100的最大起飞重量为36,106磅（约16,400公斤）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.11
+    },
+    {
+        "Q": "Gulfstream G280的起飞重量是多少？",
+        "A": [
+            17962.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G280\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Gulfstream G280的最大起飞重量（MTOW）为17,962千克（39,600磅）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.97
+    },
+    {
+        "Q": "Embraer Legacy 650的起飞重量是多少？",
+        "A": [
+            24300.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer Legacy 650\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer Legacy 650的最大起飞重量为45,962磅（约20,900千克）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.6
+    },
+    {
+        "Q": "Cessna Citation CJ3的起飞重量是多少？",
+        "A": [
+            6382.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation CJ3\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation CJ3的最大起飞重量为6,291公斤（13,870磅）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.51
+    },
+    {
+        "Q": "Embraer E190的起飞重量是多少？",
+        "A": [
+            51800.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer E190\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer E190的最大起飞重量为约23,000公斤（51,000磅）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.81
+    },
+    {
+        "Q": "Cessna Citation VI的起飞重量是多少？",
+        "A": [
+            9980.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation VI\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation VI的最大起飞重量为9,980千克（约22,000磅）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.53
+    },
+    {
+        "Q": "Cessna Citation III的起飞重量是多少？",
+        "A": [
+            9980.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation III\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation III的最大起飞重量为21,100磅（约9,525千克）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.71
+    },
+    {
+        "Q": "Hawker 850XP的起飞重量是多少？",
+        "A": [
+            12700.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Hawker 850XP\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Hawker 850XP的最大起飞重量为12,712公斤。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.37
+    },
+    {
+        "Q": "Gulfstream GIV的起飞重量是多少？",
+        "A": [
+            33203.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream GIV\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Gulfstream GIV的最大起飞重量为33,203磅（约15,000公斤）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.92
+    },
+    {
+        "Q": "Bombardier Challenger 350的起飞重量是多少？",
+        "A": [
+            18416.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 350\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Challenger 350的最大起飞重量为18,416千克（约40,600磅）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.03
+    },
+    {
+        "Q": "Bombardier Global 7500的起飞重量是多少？",
+        "A": [
+            48194.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global 7500\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Global 7500的最大起飞重量为42,071千克（92,750磅）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.22
+    },
+    {
+        "Q": "Dassault Falcon 7X的起飞重量是多少？",
+        "A": [
+            33113.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Dassault Falcon 7X\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "达索猎鹰7X的最大起飞重量为70,000磅（约31,751公斤）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.11
+    },
+    {
+        "Q": "Embraer ERJ 135的起飞重量是多少？",
+        "A": [
+            20000.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer ERJ 135\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer ERJ 135的最大起飞重量为24,300公斤（约53,600磅）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.72
+    },
+    {
+        "Q": "Cessna Citation X的起飞重量是多少？",
+        "A": [
+            16375.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation X\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation X的最大起飞重量为45,962磅（约20,900千克）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.83
+    },
+    {
+        "Q": "Bombardier Learjet 60的起飞重量是多少？",
+        "A": [
+            10659.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 60\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Learjet 60的最大起飞重量为23,500磅（约10,668千克）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 15.15
+    },
+    {
+        "Q": "Cessna Citation Excel的起飞重量是多少？",
+        "A": [
+            9163.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation Excel\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation Excel的最大起飞重量为9163千克（约20200磅）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.69
+    },
+    {
+        "Q": "Dassault Falcon 900的起飞重量是多少？",
+        "A": [
+            22225.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Dassault Falcon 900\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_answer": "Dassault Falcon 900的最大起飞重量为22,225千克（约49,000磅）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.73
+    },
+    {
+        "correct_rate": 46.0,
+        "sample_size": 50,
+        "correct_count": 23,
+        "average_time": 8.24
+    }
+]

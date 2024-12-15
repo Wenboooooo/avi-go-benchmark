@@ -1,0 +1,609 @@
+[
+    {
+        "Q": "Cessna Citation Sovereign+的翼展是多少？",
+        "A": [
+            "22.03"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation Sovereign+\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation Sovereign+\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.6
+    },
+    {
+        "Q": "Embraer Legacy 450的翼展是多少？",
+        "A": [
+            "20.3"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer Legacy 450\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer Legacy 450\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.56
+    },
+    {
+        "Q": "Dassault Falcon 20的翼展是多少？",
+        "A": [
+            "16.35"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 20\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 20\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.34
+    },
+    {
+        "Q": "Beechcraft King Air B200的翼展是多少？",
+        "A": [
+            "16.61"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Beechcraft King Air B200\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Beechcraft King Air B200\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.76
+    },
+    {
+        "Q": "Nextant 400XT的翼展是多少？",
+        "A": [
+            "13.4"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Nextant 400XT\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Nextant 400XT\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.83
+    },
+    {
+        "Q": "Cessna Citation CJ4的翼展是多少？",
+        "A": [
+            "15.49"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation CJ4\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation CJ4\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.07
+    },
+    {
+        "Q": "Embraer Legacy 650的翼展是多少？",
+        "A": [
+            "21.17"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer Legacy 650\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer Legacy 650\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.37
+    },
+    {
+        "Q": "Gulfstream G600的翼展是多少？",
+        "A": [
+            "28.7"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream G600\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream G600\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.63
+    },
+    {
+        "Q": "Dassault Falcon 8X的翼展是多少？",
+        "A": [
+            "26.29"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 8X\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 8X\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.71
+    },
+    {
+        "Q": "Bombardier Learjet 31的翼展是多少？",
+        "A": [
+            "12.15"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 31\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 31\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.45
+    },
+    {
+        "Q": "Hawker 700的翼展是多少？",
+        "A": [
+            "14.53"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 700\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 700\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.81
+    },
+    {
+        "Q": "Cirrus SR20的翼展是多少？",
+        "A": [
+            "11.68"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cirrus SR20\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cirrus SR20\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.82
+    },
+    {
+        "Q": "Bombardier Challenger 850的翼展是多少？",
+        "A": [
+            "21.21"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 850\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 850\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.45
+    },
+    {
+        "Q": "Hawker 800XP的翼展是多少？",
+        "A": [
+            "16.56"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 800XP\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 800XP\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.28
+    },
+    {
+        "Q": "Bombardier Global 5000的翼展是多少？",
+        "A": [
+            "28.7"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Global 5000\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Global 5000\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.66
+    },
+    {
+        "Q": "Piper PA-46的翼展是多少？",
+        "A": [
+            "13.11"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Piper PA-46\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Piper PA-46\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.88
+    },
+    {
+        "Q": "Dassault Falcon 10的翼展是多少？",
+        "A": [
+            "13.07"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 10\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 10\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.58
+    },
+    {
+        "Q": "Piper PA的翼展是多少？",
+        "A": [
+            "13.11"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Piper PA\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Piper PA\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.29
+    },
+    {
+        "Q": "Cessna Citation Longitude的翼展是多少？",
+        "A": [
+            "21.01"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation Longitude\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation Longitude\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.72
+    },
+    {
+        "Q": "Embraer Legacy 500的翼展是多少？",
+        "A": [
+            "20.25"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer Legacy 500\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer Legacy 500\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.52
+    },
+    {
+        "Q": "Bombardier Challenger 601的翼展是多少？",
+        "A": [
+            "19.61"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 601\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 601\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.97
+    },
+    {
+        "Q": "Bombardier Challenger 300的翼展是多少？",
+        "A": [
+            "19.61"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 300\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 300\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.66
+    },
+    {
+        "Q": "Boeing BBJ3的翼展是多少？",
+        "A": [
+            "35.79"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Boeing BBJ3\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Boeing BBJ3\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.41
+    },
+    {
+        "Q": "Bombardier Learjet 40的翼展是多少？",
+        "A": [
+            "14.54"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 40\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 40\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.53
+    },
+    {
+        "Q": "Boeing BBJ2的翼展是多少？",
+        "A": [
+            "35.8"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Boeing BBJ2\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Boeing BBJ2\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.01
+    },
+    {
+        "Q": "Bombardier Learjet 60的翼展是多少？",
+        "A": [
+            "13.34"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 60\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 60\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.19
+    },
+    {
+        "Q": "Cessna Citation X+的翼展是多少？",
+        "A": [
+            "19.48"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation X+\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation X+\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.44
+    },
+    {
+        "Q": "Gulfstream GIV的翼展是多少？",
+        "A": [
+            "26.31",
+            "23.7"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream GIV\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream GIV\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.39
+    },
+    {
+        "Q": "Cessna Citation XLS的翼展是多少？",
+        "A": [
+            "17.17"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation XLS\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation XLS\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.11
+    },
+    {
+        "Q": "Dassault Falcon 2000S的翼展是多少？",
+        "A": [
+            "21.38"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 2000S\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 2000S\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.16
+    },
+    {
+        "Q": "Beechcraft King Air 300的翼展是多少？",
+        "A": [
+            "16.61"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 300\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 300\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.29
+    },
+    {
+        "Q": "Embraer Praetor 600的翼展是多少？",
+        "A": [
+            "21.5"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer Praetor 600\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer Praetor 600\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.8
+    },
+    {
+        "Q": "Airbus A321的翼展是多少？",
+        "A": [
+            "35.8"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Airbus A321\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Airbus A321\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.47
+    },
+    {
+        "Q": "Gulfstream G550的翼展是多少？",
+        "A": [
+            "28.5"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream G550\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream G550\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.93
+    },
+    {
+        "Q": "Cessna Citation M2的翼展是多少？",
+        "A": [
+            "14.4"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation M2\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation M2\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.42
+    },
+    {
+        "Q": "Gulfstream GIV-SP的翼展是多少？",
+        "A": [
+            "23.7"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream GIV-SP\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream GIV-SP\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.29
+    },
+    {
+        "Q": "Hawker 700A的翼展是多少？",
+        "A": [
+            "14.32"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 700A\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 700A\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.69
+    },
+    {
+        "Q": "Beechcraft King Air 250的翼展是多少？",
+        "A": [
+            "16.61"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 250\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 250\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.05
+    },
+    {
+        "Q": "Dassault Falcon 100的翼展是多少？",
+        "A": [
+            "15.13"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 100\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 100\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.33
+    },
+    {
+        "Q": "Hawker 800B的翼展是多少？",
+        "A": [
+            "16.61"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 800B\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 800B\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.63
+    },
+    {
+        "Q": "Gulfstream GIII的翼展是多少？",
+        "A": [
+            "23.72"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream GIII\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream GIII\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.4
+    },
+    {
+        "Q": "Cessna Citation Latitude的翼展是多少？",
+        "A": [
+            "22.05"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation Latitude\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation Latitude\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.29
+    },
+    {
+        "Q": "Dassault Falcon 2000的翼展是多少？",
+        "A": [
+            "21.38"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 2000\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 2000\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.43
+    },
+    {
+        "Q": "Gulfstream G280的翼展是多少？",
+        "A": [
+            "19.2"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream G280\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream G280\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.44
+    },
+    {
+        "Q": "Bombardier Learjet 75的翼展是多少？",
+        "A": [
+            "14.54"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 75\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 75\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.2
+    },
+    {
+        "Q": "Gulfstream G500的翼展是多少？",
+        "A": [
+            "26.3"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream G500\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream G500\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.47
+    },
+    {
+        "Q": "Dassault Falcon 7X的翼展是多少？",
+        "A": [
+            "26.21"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 7X\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 7X\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.3
+    },
+    {
+        "Q": "Bombardier Global Express的翼展是多少？",
+        "A": [
+            "28.65"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Global Express\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Global Express\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.36
+    },
+    {
+        "Q": "Boeing 767的翼展是多少？",
+        "A": [
+            "47.57"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Boeing 767\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Boeing 767\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.66
+    },
+    {
+        "Q": "Beechcraft King Air 350iER的翼展是多少？",
+        "A": [
+            "17.64"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 350iER\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 350iER\" AND aircraft_width IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.28
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 50,
+        "correct_count": 50,
+        "average_time": 3.66
+    }
+]

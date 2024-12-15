@@ -1,0 +1,508 @@
+[
+    {
+        "Q": "Cessna 425机型的最大飞行距离是多少？",
+        "A": "2000公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 425\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 425\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.3
+    },
+    {
+        "Q": "Honda HondaJet机型的最大飞行距离是多少？",
+        "A": "2661公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Honda HondaJet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Honda HondaJet\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.92
+    },
+    {
+        "Q": "Airbus A340机型的最大飞行距离是多少？",
+        "A": "11000公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus A340\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus A340\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.86
+    },
+    {
+        "Q": "Dassault Falcon 50机型的最大飞行距离是多少？",
+        "A": "5695公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 50\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 50\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.4
+    },
+    {
+        "Q": "Pilatus PC-24机型的最大飞行距离是多少？",
+        "A": "3704公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Pilatus PC-24\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Pilatus PC-24\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.41
+    },
+    {
+        "Q": "Bombardier Challenger 600机型的最大飞行距离是多少？",
+        "A": "6356公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 600\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 600\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.1
+    },
+    {
+        "Q": "Dassault Falcon 2000机型的最大飞行距离是多少？",
+        "A": "7410公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.29
+    },
+    {
+        "Q": "Dassault Falcon 2000S机型的最大飞行距离是多少？",
+        "A": "6485公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000S\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000S\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.58
+    },
+    {
+        "Q": "Airbus A320机型的最大飞行距离是多少？",
+        "A": "6400公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus A320\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus A320\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.42
+    },
+    {
+        "Q": "Dassault Falcon 100机型的最大飞行距离是多少？",
+        "A": "3000公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 100\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 100\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.59
+    },
+    {
+        "Q": "Dassault Falcon 900DX机型的最大飞行距离是多少？",
+        "A": "8334公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900DX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900DX\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.81
+    },
+    {
+        "Q": "Beechcraft 1900D机型的最大飞行距离是多少？",
+        "A": "1700公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft 1900D\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft 1900D\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.18
+    },
+    {
+        "Q": "Gulfstream G550机型的最大飞行距离是多少？",
+        "A": "12501公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G550\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G550\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.19
+    },
+    {
+        "Q": "Embraer Legacy 650机型的最大飞行距离是多少？",
+        "A": "7000公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 650\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 650\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.58
+    },
+    {
+        "Q": "Cessna 404机型的最大飞行距离是多少？",
+        "A": "1400公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 404\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 404\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.63
+    },
+    {
+        "Q": "Beechcraft King Air 100机型的最大飞行距离是多少？",
+        "A": "2483公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 100\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 100\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.35
+    },
+    {
+        "Q": "Bombardier Challenger 300机型的最大飞行距离是多少？",
+        "A": "5676公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 300\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 300\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.28
+    },
+    {
+        "Q": "Beechcraft King Air 250机型的最大飞行距离是多少？",
+        "A": "3185公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 250\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 250\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.2
+    },
+    {
+        "Q": "Cirrus SR22机型的最大飞行距离是多少？",
+        "A": "1943公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cirrus SR22\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cirrus SR22\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.52
+    },
+    {
+        "Q": "BAe 125-800机型的最大飞行距离是多少？",
+        "A": "4830公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"BAe 125-800\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"BAe 125-800\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.64
+    },
+    {
+        "Q": "Hawker 850XP机型的最大飞行距离是多少？",
+        "A": "4890公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Hawker 850XP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Hawker 850XP\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.36
+    },
+    {
+        "Q": "Beechcraft King Air 260机型的最大飞行距离是多少？",
+        "A": "3185公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 260\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 260\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.08
+    },
+    {
+        "Q": "Gulfstream G150机型的最大飞行距离是多少？",
+        "A": "5556公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G150\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G150\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.61
+    },
+    {
+        "Q": "Dassault Falcon 900EX机型的最大飞行距离是多少？",
+        "A": "8203公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900EX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900EX\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.65
+    },
+    {
+        "Q": "Bombardier Learjet 55C机型的最大飞行距离是多少？",
+        "A": "2632公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 55C\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 55C\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.6
+    },
+    {
+        "Q": "Gulfstream G300机型的最大飞行距离是多少？",
+        "A": "7800公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G300\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G300\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.8
+    },
+    {
+        "Q": "Cessna Citation VI机型的最大飞行距离是多少？",
+        "A": "4348公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation VI\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation VI\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.3
+    },
+    {
+        "Q": "Airbus ACJ A319机型的最大飞行距离是多少？",
+        "A": "11112公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ A319\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ A319\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.81
+    },
+    {
+        "Q": "Embraer Praetor 600机型的最大飞行距离是多少？",
+        "A": "7441公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Praetor 600\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Praetor 600\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.64
+    },
+    {
+        "Q": "Diamond DA62机型的最大飞行距离是多少？",
+        "A": "2380公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Diamond DA62\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Diamond DA62\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.27
+    },
+    {
+        "Q": "Beechcraft King Air 300机型的最大飞行距离是多少？",
+        "A": "2527公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 300\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 300\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.83
+    },
+    {
+        "Q": "Embraer Lineage 1000机型的最大飞行距离是多少？",
+        "A": "8519公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Lineage 1000\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Lineage 1000\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.61
+    },
+    {
+        "Q": "Cessna Citation CJ1+机型的最大飞行距离是多少？",
+        "A": "3111公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ1+\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ1+\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.5
+    },
+    {
+        "Q": "Bombardier Global 6000机型的最大飞行距离是多少？",
+        "A": "11112公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 6000\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 6000\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.21
+    },
+    {
+        "Q": "Cessna Citation Bravo机型的最大飞行距离是多少？",
+        "A": "3000公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Bravo\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Bravo\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.19
+    },
+    {
+        "Q": "Gulfstream G500机型的最大飞行距离是多少？",
+        "A": "9816公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G500\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G500\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.5
+    },
+    {
+        "Q": "Gulfstream GIII机型的最大飞行距离是多少？",
+        "A": "6667公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GIII\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GIII\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.34
+    },
+    {
+        "Q": "Cessna 182机型的最大飞行距离是多少？",
+        "A": "1100公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 182\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 182\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.38
+    },
+    {
+        "Q": "Hawker 700A机型的最大飞行距离是多少？",
+        "A": "3797公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Hawker 700A\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Hawker 700A\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.3
+    },
+    {
+        "Q": "Boeing 787机型的最大飞行距离是多少？",
+        "A": "13620公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Boeing 787\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Boeing 787\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.6
+    },
+    {
+        "Q": "Cessna 421机型的最大飞行距离是多少？",
+        "A": "2000公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 421\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 421\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.19
+    },
+    {
+        "Q": "Cessna Citation CJ3机型的最大飞行距离是多少？",
+        "A": "3778公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ3\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ3\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.35
+    },
+    {
+        "Q": "Airbus A330机型的最大飞行距离是多少？",
+        "A": "13400公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus A330\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus A330\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.37
+    },
+    {
+        "Q": "Beechcraft Premier I机型的最大飞行距离是多少？",
+        "A": "2095公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft Premier I\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft Premier I\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.36
+    },
+    {
+        "Q": "Airbus A319机型的最大飞行距离是多少？",
+        "A": "6400公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus A319\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus A319\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.46
+    },
+    {
+        "Q": "Cessna Citation Jet机型的最大飞行距离是多少？",
+        "A": "2871公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Jet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Jet\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.39
+    },
+    {
+        "Q": "Dassault Falcon 900机型的最大飞行距离是多少？",
+        "A": "6741公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.07
+    },
+    {
+        "Q": "Embraer Phenom 300E机型的最大飞行距离是多少？",
+        "A": "3723公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Phenom 300E\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Phenom 300E\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.1
+    },
+    {
+        "Q": "Gulfstream G450机型的最大飞行距离是多少？",
+        "A": "8061公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G450\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G450\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.87
+    },
+    {
+        "Q": "Cessna 340机型的最大飞行距离是多少？",
+        "A": "1400公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 340\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 340\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.51
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 50,
+        "correct_count": 50,
+        "average_time": 3.75
+    }
+]

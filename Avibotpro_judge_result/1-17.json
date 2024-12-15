@@ -1,0 +1,458 @@
+[
+    {
+        "Q": "Cessna Citation V机型的最大飞行距离是多少？",
+        "A": "3000公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation V\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation V的最大飞行距离为3000海里（约5556公里）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.33
+    },
+    {
+        "Q": "Bombardier Challenger 605机型的最大飞行距离是多少？",
+        "A": "7038公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 605\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Challenger 605的最大飞行距离为7038公里（约4370英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.35
+    },
+    {
+        "Q": "Beechcraft King Air 350机型的最大飞行距离是多少？",
+        "A": "2758公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air 350的最大飞行距离为2758公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.69
+    },
+    {
+        "Q": "Hawker 400A机型的最大飞行距离是多少？",
+        "A": "2130公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Hawker 400A\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 400A机型的最大飞行距离为2130公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.25
+    },
+    {
+        "Q": "Cessna Citation Ultra机型的最大飞行距离是多少？",
+        "A": "3630公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Ultra\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation Ultra的最大飞行距离为3630海里（约6730公里）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.36
+    },
+    {
+        "Q": "Airbus ACJ A320机型的最大飞行距离是多少？",
+        "A": "10456公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ A320\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airbus ACJ A320机型的最大飞行距离为约11,100公里（约6,600海里）。这一航程使得ACJ A320能够执行长途飞行，适合公务航空和长途商务旅行。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.62
+    },
+    {
+        "Q": "Boeing 787机型的最大飞行距离是多少？",
+        "A": "13620公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Boeing 787\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "波音787机型的最大飞行距离（航程）因具体型号而异。以下是不同型号的最大飞行距离：\n\n- **Boeing 787-8**：最大飞行距离约为7,650至8,200海里（约14,200至15,200公里）。\n- **Boeing 787-9**：最大飞行距离约为7,530海里（约13,950公里）。\n- **Boeing 787-10**：最大飞行距离约为6,430海里（约11,910公里）。\n\n因此，波音787系列的最大飞行距离在6,430海里到8,200海里之间，具体取决于机型。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 28.81
+    },
+    {
+        "Q": "Beechcraft King Air 300机型的最大飞行距离是多少？",
+        "A": "2527公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 300\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air 300的最大飞行距离为668公里。这款飞机以其出色的性能和可靠性而闻名，适合多种飞行任务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 20.24
+    },
+    {
+        "Q": "Cessna 150机型的最大飞行距离是多少？",
+        "A": "1100公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 150\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 150的最大飞行距离（航程）为约3982公里（约2475英里）。这使得Cessna 150成为一种适合短途飞行和飞行训练的轻型飞机。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.52
+    },
+    {
+        "Q": "Bombardier Learjet 31机型的最大飞行距离是多少？",
+        "A": "2632公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 31\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Learjet 31A的最大飞行距离为2632公里（约1630英里）。这个机型适合中短途飞行，能够容纳多达8名乘客，提供舒适的公务旅行体验。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.92
+    },
+    {
+        "Q": "Cessna 172机型的最大飞行距离是多少？",
+        "A": "1100公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 172\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 172的最大飞行距离（航程）大约为1100公里（约680英里）。这个机型因其可靠性和易于驾驶的特性，广泛用于飞行训练和私人飞行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 13.24
+    },
+    {
+        "Q": "Embraer Legacy 500机型的最大飞行距离是多少？",
+        "A": "5556公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 500\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer Legacy 500的最大飞行距离为5556公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.38
+    },
+    {
+        "Q": "Airbus A340机型的最大飞行距离是多少？",
+        "A": "11000公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus A340\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airbus A340机型的最大飞行距离为11,000公里（约6,835海里）。这一航程使得A340能够执行长途国际航班，适合于跨洲际的航空运输需求。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.46
+    },
+    {
+        "Q": "Embraer Lineage 1000机型的最大飞行距离是多少？",
+        "A": "8519公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Lineage 1000\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer Lineage 1000的最大飞行距离为8519公里（约4600海里）。这一航程使得Lineage 1000能够在不加油的情况下完成长途飞行，适合商务和VIP运输需求。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.59
+    },
+    {
+        "Q": "Bombardier Global 6000机型的最大飞行距离是多少？",
+        "A": "11112公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 6000\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Global 6000的最大飞行距离为11,112公里（约6,905海里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.96
+    },
+    {
+        "Q": "Embraer Legacy 450机型的最大飞行距离是多少？",
+        "A": "4674公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 450\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer Legacy 450的最大飞行距离为4674公里（约2500海里）。这使得该机型非常适合进行长途飞行，能够满足多种商务和私人航空需求。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.85
+    },
+    {
+        "Q": "Dassault Falcon 20机型的最大飞行距离是多少？",
+        "A": "4352公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 20\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 20的最大飞行距离为4352公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 31.57
+    },
+    {
+        "Q": "Hawker 800XPi机型的最大飞行距离是多少？",
+        "A": "4800公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800XPi\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 800XPi的最大飞行距离为4800公里（约合2600海里）。这个机型适合进行国内和国际旅行，提供了良好的航程和舒适性。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.11
+    },
+    {
+        "Q": "Bombardier Learjet 40机型的最大飞行距离是多少？",
+        "A": "2632公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 40\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Learjet 40的最大飞行距离为2632公里（约1630英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.18
+    },
+    {
+        "Q": "Bombardier Challenger 604机型的最大飞行距离是多少？",
+        "A": "7519公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 604\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Challenger 604的最大飞行距离为7519公里（约4660英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.03
+    },
+    {
+        "Q": "Beechcraft King Air 360机型的最大飞行距离是多少？",
+        "A": "4260公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 360\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air 360的最大飞行距离为4260公里（约2635英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.33
+    },
+    {
+        "Q": "Cessna Citation CJ3机型的最大飞行距离是多少？",
+        "A": "3778公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ3\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation CJ3的最大飞行距离为3778公里（约2030海里）。这个航程使得CJ3能够直飞许多目的地，同时其卓越的短场能力也允许它在短跑道机场起降。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.59
+    },
+    {
+        "Q": "Piper PA-46机型的最大飞行距离是多少？",
+        "A": "2487公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-46\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Piper PA-46机型的最大飞行距离为2487公里（约1340海里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.51
+    },
+    {
+        "Q": "Dassault Falcon 900C机型的最大飞行距离是多少？",
+        "A": "7408公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900C\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 900C的最大飞行距离为7408公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.8
+    },
+    {
+        "Q": "Bombardier Challenger 850机型的最大飞行距离是多少？",
+        "A": "5430公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 850\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Challenger 850的最大飞行距离为5430公里（约3342英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.87
+    },
+    {
+        "Q": "Boeing BBJ3机型的最大飞行距离是多少？",
+        "A": "7708公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Boeing BBJ3\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Boeing BBJ3机型的最大飞行距离为7708海里（约14100公里）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.63
+    },
+    {
+        "Q": "Dassault Falcon 6X机型的最大飞行距离是多少？",
+        "A": "10186公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 6X\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 6X的最大飞行距离为10,186公里（约5,500海里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.59
+    },
+    {
+        "Q": "Gulfstream G200机型的最大飞行距离是多少？",
+        "A": "6300公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G200\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G200的最大飞行距离为6300公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.17
+    },
+    {
+        "Q": "Bombardier Global 6500机型的最大飞行距离是多少？",
+        "A": "12223公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 6500\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Global 6500的最大飞行距离为12,223公里（约7,580英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.24
+    },
+    {
+        "Q": "Hawker 700机型的最大飞行距离是多少？",
+        "A": "3797公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Hawker 700\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 700机型的最大飞行距离为3797公里（约2350英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.46
+    },
+    {
+        "Q": "Bombardier Challenger 300机型的最大飞行距离是多少？",
+        "A": "5676公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 300\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Challenger 300的最大飞行距离为5676公里（约合3050海里）。这个航程使其成为适合区域和国际旅行的理想选择。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.2
+    },
+    {
+        "Q": "Embraer Phenom 300E机型的最大飞行距离是多少？",
+        "A": "3723公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Phenom 300E\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer Phenom 300E的最大飞行距离为3723公里（约2000海里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.74
+    },
+    {
+        "Q": "Embraer ERJ 135机型的最大飞行距离是多少？",
+        "A": "3243公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer ERJ 135\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer ERJ 135的最大飞行距离为3243公里（约2000英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.69
+    },
+    {
+        "Q": "Beechcraft King Air B200机型的最大飞行距离是多少？",
+        "A": "2156公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air B200\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air B200的最大飞行距离为2156公里（约1340英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.86
+    },
+    {
+        "Q": "Bombardier Global 5000机型的最大飞行距离是多少？",
+        "A": "9630公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 5000\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Global 5000的最大飞行距离为9630公里（约5200海里）。这使得该机型能够执行长途飞行任务，例如从洛杉矶直飞澳大利亚悉尼或从纽约直飞迪拜，而无需中途加油。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.05
+    },
+    {
+        "Q": "Dassault Falcon 2000EX EASy机型的最大飞行距离是多少？",
+        "A": "7094公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000EX EASy\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 2000EX EASy的最大飞行距离为7094公里（约为4400海里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.08
+    },
+    {
+        "Q": "Cessna Citation CJ1机型的最大飞行距离是多少？",
+        "A": "3111公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ1\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation CJ1的最大飞行距离为3111公里（约1930英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.24
+    },
+    {
+        "Q": "Cessna 185机型的最大飞行距离是多少？",
+        "A": "1100公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 185\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 185的最大飞行距离（航程）为约4010公里（约2490英里）。这使得Cessna 185在轻型飞机中具有相对较长的航程，适合进行较长距离的飞行任务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.4
+    },
+    {
+        "Q": "Embraer Legacy 650机型的最大飞行距离是多少？",
+        "A": "7000公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 650\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer Legacy 650的最大飞行距离为7000公里（约合3800海里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.49
+    },
+    {
+        "Q": "Airbus ACJ A319机型的最大飞行距离是多少？",
+        "A": "11112公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ A319\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airbus ACJ A319的最大飞行距离为11,112公里（约6,000海里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.84
+    },
+    {
+        "Q": "Dassault Falcon 7X机型的最大飞行距离是多少？",
+        "A": "11019公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 7X\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "达索猎鹰7X（Dassault Falcon 7X）的最大飞行距离为11,019公里（约6,000海里）。这一飞行范围使其能够执行长途商务飞行，适合于跨洲际的航线。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.99
+    },
+    {
+        "Q": "Cessna Citation M2机型的最大飞行距离是多少？",
+        "A": "2871公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation M2\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation M2的最大飞行距离为2871公里（约1784英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.99
+    },
+    {
+        "Q": "Bombardier Global Express XRS机型的最大飞行距离是多少？",
+        "A": "11390公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global Express XRS\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Global Express XRS的最大飞行距离为11,390公里（约6,150海里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.17
+    },
+    {
+        "Q": "Cessna Citation Mustang机型的最大飞行距离是多少？",
+        "A": "2235公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Mustang\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation Mustang的最大飞行距离为2235公里（约1390英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.66
+    },
+    {
+        "Q": "Bombardier Challenger 600机型的最大飞行距离是多少？",
+        "A": "6356公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 600\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Challenger 600机型的最大飞行距离为6356公里（约3940英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.43
+    },
+    {
+        "Q": "Beechcraft King Air 350iER机型的最大飞行距离是多少？",
+        "A": "4260公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350iER\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air 350iER的最大飞行距离为4260公里（约2640英里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.09
+    },
+    {
+        "Q": "Cessna Citation X+机型的最大飞行距离是多少？",
+        "A": "6004公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation X+\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation X+的最大飞行距离为6004公里（约3230海里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.6
+    },
+    {
+        "Q": "Cessna 303机型的最大飞行距离是多少？",
+        "A": "1400公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna 303\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 303的最大飞行距离为1400海里（约2592公里）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.6
+    },
+    {
+        "Q": "Embraer Praetor 500机型的最大飞行距离是多少？",
+        "A": "6186公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Embraer Praetor 500\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer Praetor 500的最大飞行距离为6186公里（约合3330海里）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.15
+    },
+    {
+        "Q": "Bombardier Learjet 55C机型的最大飞行距离是多少？",
+        "A": "2632公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 55C\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Learjet 55C的最大飞行距离为2632海里（约4890公里）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.45
+    },
+    {
+        "correct_rate": 82.0,
+        "sample_size": 50,
+        "correct_count": 41,
+        "average_time": 9.29
+    }
+]

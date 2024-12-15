@@ -1,0 +1,3999 @@
+[
+    {
+        "Q": "Embraer Praetor 500机型的机身长度是多少？",
+        "A": "19.68 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Embraer Praetor 500\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Embraer Praetor 500'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "19.68"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.73
+    },
+    {
+        "Q": "Gulfstream G650ER机型的机身长度是多少？",
+        "A": "30.4 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G650ER\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Gulfstream G650ER'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.4
+    },
+    {
+        "Q": "Cessna Citation Latitude机型的机身长度是多少？",
+        "A": "18.97 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Latitude\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Cessna Citation X',\n                              'Cessna Citation Latitude',\n                              'Cessna Citation I',\n                              'Cessna Citation V',\n                              'Cessna Citation X+')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Latitude",
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Latitude",
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Latitude",
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation I",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Latitude",
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Latitude",
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Latitude",
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Latitude",
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Latitude",
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Latitude",
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Latitude",
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Latitude",
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Latitude",
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.05
+    },
+    {
+        "Q": "Dassault Falcon 2000S机型的机身长度是多少？",
+        "A": "20.23 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000S\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 2000S'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.7
+    },
+    {
+        "Q": "Bombardier Global Express XRS机型的机身长度是多少？",
+        "A": "30.3 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global Express XRS\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Bombardier Global Express',\n                              'Bombardier Global Express XRS')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express XRS",
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            },
+            {
+                "aircraft_model_name": "Bombardier Global Express",
+                "aircraft_length": "30.27"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 14.92
+    },
+    {
+        "Q": "Bombardier Global 6000机型的机身长度是多少？",
+        "A": "30.3 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 6000\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier Global 6000'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.97
+    },
+    {
+        "Q": "Bombardier CRJ-200机型的机身长度是多少？",
+        "A": "26.77 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Bombardier CRJ-200\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier CRJ-200'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "26.77"
+            },
+            {
+                "aircraft_length": "26.77"
+            },
+            {
+                "aircraft_length": "26.77"
+            },
+            {
+                "aircraft_length": "26.77"
+            },
+            {
+                "aircraft_length": "26.77"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.27
+    },
+    {
+        "Q": "Dassault Falcon 2000EX机型的机身长度是多少？",
+        "A": "20.23 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000EX\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Dassault Falcon 2000EX',\n                              'Dassault Falcon 2000EX EASy')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX EASy",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "aircraft_length": "20.23"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.84
+    },
+    {
+        "Q": "Nextant 400XT机型的机身长度是多少？",
+        "A": "14.12 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Nextant 400XT\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Nextant 400XT'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "14.12"
+            },
+            {
+                "aircraft_length": "14.12"
+            },
+            {
+                "aircraft_length": "14.12"
+            },
+            {
+                "aircraft_length": "14.12"
+            },
+            {
+                "aircraft_length": "14.12"
+            },
+            {
+                "aircraft_length": "14.12"
+            },
+            {
+                "aircraft_length": "14.12"
+            },
+            {
+                "aircraft_length": "14.12"
+            },
+            {
+                "aircraft_length": "14.12"
+            },
+            {
+                "aircraft_length": "14.12"
+            },
+            {
+                "aircraft_length": "14.12"
+            },
+            {
+                "aircraft_length": "14.12"
+            },
+            {
+                "aircraft_length": "14.12"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.87
+    },
+    {
+        "Q": "Bombardier Challenger 600机型的机身长度是多少？",
+        "A": "20.85 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 600\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier Challenger 600'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "20.85"
+            },
+            {
+                "aircraft_length": "20.85"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 12.18
+    },
+    {
+        "Q": "Gulfstream G650机型的机身长度是多少？",
+        "A": "30.4 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G650\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Gulfstream G650'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            },
+            {
+                "aircraft_length": "30.4"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.07
+    },
+    {
+        "Q": "Gulfstream G200机型的机身长度是多少？",
+        "A": "18.97 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G200\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Gulfstream G200'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            },
+            {
+                "aircraft_length": "18.97"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.53
+    },
+    {
+        "Q": "Embraer Phenom 100机型的机身长度是多少？",
+        "A": "12.82 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Embraer Phenom 100\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Embraer Phenom 100'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            },
+            {
+                "aircraft_length": "12.82"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.36
+    },
+    {
+        "Q": "Hawker 750机型的机身长度是多少？",
+        "A": "15.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Hawker 750\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Hawker 750'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.92
+    },
+    {
+        "Q": "Cirrus SR22机型的机身长度是多少？",
+        "A": "7.92 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cirrus SR22\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Cirrus SR22'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            },
+            {
+                "aircraft_length": "7.92"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.42
+    },
+    {
+        "Q": "Hawker 700A机型的机身长度是多少？",
+        "A": "15.48 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Hawker 700A\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Hawker 700A'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "15.48"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.6
+    },
+    {
+        "Q": "Piper PA-46机型的机身长度是多少？",
+        "A": "8.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-46\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Piper PA',\n                              'Piper PA-46')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA-46",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA-46",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA-46",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA-46",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA-46",
+                "aircraft_length": "8.6"
+            },
+            {
+                "aircraft_model_name": "Piper PA-46",
+                "aircraft_length": "8.6"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.71
+    },
+    {
+        "Q": "Dassault Falcon 900C机型的机身长度是多少？",
+        "A": "20.21 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900C\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 900C'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "20.21"
+            },
+            {
+                "aircraft_length": "20.21"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 13.77
+    },
+    {
+        "Q": "Gulfstream G300机型的机身长度是多少？",
+        "A": "26.92 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G300\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Gulfstream G300'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "26.92"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.29
+    },
+    {
+        "Q": "Piper PA-34机型的机身长度是多少？",
+        "A": "8.72 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-34\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Piper PA-34'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "8.72"
+            },
+            {
+                "aircraft_length": "8.72"
+            },
+            {
+                "aircraft_length": "8.72"
+            },
+            {
+                "aircraft_length": "8.72"
+            },
+            {
+                "aircraft_length": "8.72"
+            },
+            {
+                "aircraft_length": "8.72"
+            },
+            {
+                "aircraft_length": "8.72"
+            },
+            {
+                "aircraft_length": "8.72"
+            },
+            {
+                "aircraft_length": "8.72"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.36
+    },
+    {
+        "Q": "Dassault Falcon 6X机型的机身长度是多少？",
+        "A": "25.68 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 6X\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 6X'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "25.68"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.36
+    },
+    {
+        "Q": "Bombardier Learjet 40机型的机身长度是多少？",
+        "A": "17.78 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 40\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier Learjet 40'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            },
+            {
+                "aircraft_length": "17.78"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.0
+    },
+    {
+        "Q": "Bombardier Global 5500机型的机身长度是多少？",
+        "A": "29.5 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 5500\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier Global 5500'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "29.5"
+            },
+            {
+                "aircraft_length": "29.5"
+            },
+            {
+                "aircraft_length": "29.5"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.42
+    },
+    {
+        "Q": "Embraer Phenom 300E机型的机身长度是多少？",
+        "A": "15.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Embraer Phenom 300E\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Embraer Phenom 300E'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.54
+    },
+    {
+        "Q": "Gulfstream G350机型的机身长度是多少？",
+        "A": "27.23 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G350\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Gulfstream G350'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "27.23"
+            },
+            {
+                "aircraft_length": "27.23"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.79
+    },
+    {
+        "Q": "Cessna Citation Longitude机型的机身长度是多少？",
+        "A": "22.30 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Longitude\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Cessna Citation X',\n                              'Cessna Citation I',\n                              'Cessna Citation V',\n                              'Cessna Citation Longitude',\n                              'Cessna Citation X+')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation I",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Longitude",
+                "aircraft_length": "22.30"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Longitude",
+                "aircraft_length": "22.30"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Longitude",
+                "aircraft_length": "22.30"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.93
+    },
+    {
+        "Q": "Dassault Falcon 10机型的机身长度是多少？",
+        "A": "13.84 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 10\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 10'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "13.84"
+            },
+            {
+                "aircraft_length": "13.84"
+            },
+            {
+                "aircraft_length": "13.84"
+            },
+            {
+                "aircraft_length": "13.84"
+            },
+            {
+                "aircraft_length": "13.84"
+            },
+            {
+                "aircraft_length": "13.84"
+            },
+            {
+                "aircraft_length": "13.84"
+            },
+            {
+                "aircraft_length": "13.84"
+            },
+            {
+                "aircraft_length": "13.84"
+            },
+            {
+                "aircraft_length": "13.84"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.58
+    },
+    {
+        "Q": "Bombardier Global 6500机型的机身长度是多少？",
+        "A": "30.3 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 6500\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier Global 6500'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            },
+            {
+                "aircraft_length": "30.3"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.18
+    },
+    {
+        "Q": "Bombardier Challenger 300机型的机身长度是多少？",
+        "A": "20.9 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 300\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier Challenger 300'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            },
+            {
+                "aircraft_length": "20.9"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.95
+    },
+    {
+        "Q": "Boeing 737机型的机身长度是多少？",
+        "A": "28.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Boeing 737\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Boeing 737'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            },
+            {
+                "aircraft_length": "28.6"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.26
+    },
+    {
+        "Q": "Cessna Citation CJ1机型的机身长度是多少？",
+        "A": "13 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ1\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Cessna Citation X',\n                              'Cessna Citation CJ1',\n                              'Cessna Citation I',\n                              'Cessna Citation CJ1+',\n                              'Cessna Citation V',\n                              'Cessna Citation X+')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation I",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1+",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1+",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1+",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1+",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1+",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 12.07
+    },
+    {
+        "Q": "Dassault Falcon 2000机型的机身长度是多少？",
+        "A": "20.23 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 2000'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.08
+    },
+    {
+        "Q": "Bombardier Learjet 36机型的机身长度是多少？",
+        "A": "17.7 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 36\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier Learjet 36'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "17.7"
+            },
+            {
+                "aircraft_length": "17.7"
+            },
+            {
+                "aircraft_length": "17.7"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 12.74
+    },
+    {
+        "Q": "Hawker 850XPi机型的机身长度是多少？",
+        "A": "15.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Hawker 850XPi\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Hawker 850XPi'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.81
+    },
+    {
+        "Q": "Beechjet 400机型的机身长度是多少？",
+        "A": "14.77 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 400\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Beechjet 400'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "14.77"
+            },
+            {
+                "aircraft_length": "14.77"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.73
+    },
+    {
+        "Q": "Beechcraft 1900C机型的机身长度是多少？",
+        "A": "17.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft 1900C\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Beechcraft 1900C'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "17.6"
+            },
+            {
+                "aircraft_length": "17.6"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.46
+    },
+    {
+        "Q": "BAe 125-800机型的机身长度是多少？",
+        "A": "15.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"BAe 125-800\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'BAe 125-800'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            },
+            {
+                "aircraft_length": "15.6"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.58
+    },
+    {
+        "Q": "Cessna Citation M2机型的机身长度是多少？",
+        "A": "13 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation M2\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Cessna Citation X',\n                              'Cessna Citation M2',\n                              'Cessna Citation I',\n                              'Cessna Citation V',\n                              'Cessna Citation X+')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation M2",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation M2",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation I",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation M2",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation M2",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation M2",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation M2",
+                "aircraft_length": "13"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 12.69
+    },
+    {
+        "Q": "Airbus ACJ A320机型的机身长度是多少？",
+        "A": "35 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ A320\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Airbus A320',\n                              'Airbus ACJ A320',\n                              'Airbus ACJ')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Airbus A320",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Airbus A320",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Airbus A320",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Airbus A320",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Airbus ACJ A320",
+                "aircraft_length": "35"
+            },
+            {
+                "aircraft_model_name": "Airbus ACJ",
+                "aircraft_length": "33.84"
+            },
+            {
+                "aircraft_model_name": "Airbus A320",
+                "aircraft_length": null
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.55
+    },
+    {
+        "Q": "Cessna Citation Sovereign机型的机身长度是多少？",
+        "A": "19.3 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Sovereign\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Cessna Citation X',\n                              'Cessna Citation Sovereign',\n                              'Cessna Citation I',\n                              'Cessna Citation V',\n                              'Cessna Citation Sovereign+',\n                              'Cessna Citation X+')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation I",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "aircraft_length": "22.04"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Sovereign",
+                "aircraft_length": "19.3"
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "aircraft_length": null
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 13.57
+    },
+    {
+        "Q": "Beechcraft King Air 200机型的机身长度是多少？",
+        "A": "13.36 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 200\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Beechcraft King Air 200'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            },
+            {
+                "aircraft_length": "13.36"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.65
+    },
+    {
+        "Q": "Beechcraft King Air 360机型的机身长度是多少？",
+        "A": "14.23 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 360\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Beechcraft King Air 360'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "14.23"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.36
+    },
+    {
+        "Q": "Boeing BBJ机型的机身长度是多少？",
+        "A": "33.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Boeing BBJ\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Boeing BBJ'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "33.6"
+            },
+            {
+                "aircraft_length": "33.6"
+            },
+            {
+                "aircraft_length": "33.6"
+            },
+            {
+                "aircraft_length": "33.6"
+            },
+            {
+                "aircraft_length": "33.6"
+            },
+            {
+                "aircraft_length": "33.6"
+            },
+            {
+                "aircraft_length": "33.6"
+            },
+            {
+                "aircraft_length": "33.6"
+            },
+            {
+                "aircraft_length": "33.6"
+            },
+            {
+                "aircraft_length": "33.6"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.71
+    },
+    {
+        "Q": "Gulfstream GIV-SP机型的机身长度是多少？",
+        "A": "26.9 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GIV-SP\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Gulfstream GIV',\n                              'Gulfstream GIV-SP')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV-SP",
+                "aircraft_length": "26.9"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV-SP",
+                "aircraft_length": "26.9"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV-SP",
+                "aircraft_length": "26.9"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV-SP",
+                "aircraft_length": "26.9"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 13.22
+    },
+    {
+        "Q": "Gulfstream GIV机型的机身长度是多少？",
+        "A": "26.29 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GIV\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Gulfstream GIV',\n                              'Gulfstream GIV-SP')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV-SP",
+                "aircraft_length": "26.9"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV-SP",
+                "aircraft_length": "26.9"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV-SP",
+                "aircraft_length": "26.9"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV-SP",
+                "aircraft_length": "26.9"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "aircraft_length": "26.29"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.89
+    },
+    {
+        "Q": "Gulfstream G100机型的机身长度是多少？",
+        "A": "16.94 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G100\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Gulfstream G100'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "16.94"
+            },
+            {
+                "aircraft_length": "16.94"
+            },
+            {
+                "aircraft_length": "16.94"
+            },
+            {
+                "aircraft_length": "16.94"
+            },
+            {
+                "aircraft_length": "16.94"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.57
+    },
+    {
+        "Q": "Gulfstream G280机型的机身长度是多少？",
+        "A": "20.3 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G280\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Gulfstream G280'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            },
+            {
+                "aircraft_length": "20.3"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.71
+    },
+    {
+        "Q": "Pilatus PC-24机型的机身长度是多少？",
+        "A": "16.8 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Pilatus PC-24\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Pilatus PC-24'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            },
+            {
+                "aircraft_length": "16.8"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.71
+    },
+    {
+        "Q": "Airbus A330机型的机身长度是多少？",
+        "A": "58.82 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Airbus A330\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Airbus A330'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "58.82"
+            },
+            {
+                "aircraft_length": "58.82"
+            },
+            {
+                "aircraft_length": "58.82"
+            },
+            {
+                "aircraft_length": "58.82"
+            },
+            {
+                "aircraft_length": "58.82"
+            },
+            {
+                "aircraft_length": "58.82"
+            },
+            {
+                "aircraft_length": "58.82"
+            },
+            {
+                "aircraft_length": "58.82"
+            },
+            {
+                "aircraft_length": "58.82"
+            },
+            {
+                "aircraft_length": "58.82"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 13.29
+    },
+    {
+        "Q": "Beechcraft King Air 350i机型的机身长度是多少？",
+        "A": "14.2 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350i\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Beechcraft King Air 350i'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "14.2"
+            },
+            {
+                "aircraft_length": "14.2"
+            },
+            {
+                "aircraft_length": "14.2"
+            },
+            {
+                "aircraft_length": "14.2"
+            },
+            {
+                "aircraft_length": "14.2"
+            },
+            {
+                "aircraft_length": "14.2"
+            },
+            {
+                "aircraft_length": "14.2"
+            },
+            {
+                "aircraft_length": "14.2"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.82
+    },
+    {
+        "correct_rate": 10.0,
+        "sample_size": 50,
+        "correct_count": 5,
+        "average_time": 11.56
+    }
+]

@@ -1,0 +1,559 @@
+[
+    {
+        "Q": "Beechcraft King Air 250的翼展是多少？",
+        "A": [
+            "16.61"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 250\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Beechcraft King Air 250的翼展为57英尺11英寸（约17.65米）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.21
+    },
+    {
+        "Q": "Dassault Falcon 100的翼展是多少？",
+        "A": [
+            "15.13"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 100\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Dassault Falcon 100的翼展为15.13米（约49.5英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 19.99
+    },
+    {
+        "Q": "Hawker 800B的翼展是多少？",
+        "A": [
+            "16.61"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 800B\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Hawker 800B的翼展为16.61米（约54.5英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.31
+    },
+    {
+        "Q": "Hawker 700A的翼展是多少？",
+        "A": [
+            "14.32"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 700A\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Hawker 700A的翼展为16.28米。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.39
+    },
+    {
+        "Q": "Dassault Falcon 2000的翼展是多少？",
+        "A": [
+            "21.38"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 2000\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Dassault Falcon 2000的翼展为21.38米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 49.31
+    },
+    {
+        "Q": "Bombardier Challenger 650的翼展是多少？",
+        "A": [
+            "19.6"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 650\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Challenger 650的翼展为64英尺4英寸（约19.6米）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 14.81
+    },
+    {
+        "Q": "Cessna Citation CJ2+的翼展是多少？",
+        "A": [
+            "15.09"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation CJ2+\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation CJ2+的翼展为15.49米（50英尺）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.54
+    },
+    {
+        "Q": "Hawker 800XPi的翼展是多少？",
+        "A": [
+            "16.56"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 800XPi\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Hawker 800XPi的翼展为14.32米。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.97
+    },
+    {
+        "Q": "Cessna Citation Encore+的翼展是多少？",
+        "A": [
+            "15.91"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation Encore+\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation Encore+的翼展为15.49米。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.88
+    },
+    {
+        "Q": "Bombardier CRJ-200的翼展是多少？",
+        "A": [
+            "21.21"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier CRJ-200\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier CRJ-200的翼展为21.21米（约69英尺7英寸）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.91
+    },
+    {
+        "Q": "Dassault Falcon 2000LX的翼展是多少？",
+        "A": [
+            "21.38"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 2000LX\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Dassault Falcon 2000LX的翼展为21.4米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.91
+    },
+    {
+        "Q": "Dassault Falcon 900C的翼展是多少？",
+        "A": [
+            "21.38"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 900C\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Dassault Falcon 900C的翼展为21.38米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.3
+    },
+    {
+        "Q": "Embraer ERJ 135的翼展是多少？",
+        "A": [
+            "20.04"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer ERJ 135\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer ERJ 135的翼展为20.04米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.64
+    },
+    {
+        "Q": "Embraer Lineage 1000的翼展是多少？",
+        "A": [
+            "28.72"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer Lineage 1000\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer Lineage 1000的翼展为26.3米（约86英尺）。该飞机的设计旨在提供宽敞的客舱和优越的飞行性能，适合长途商务旅行。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.4
+    },
+    {
+        "Q": "Airbus ACJ A318 Elite的翼展是多少？",
+        "A": [
+            "28.72"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Airbus ACJ A318 Elite\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Airbus ACJ A318 Elite的翼展为35.8米（117英尺5英寸）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.23
+    },
+    {
+        "Q": "Dassault Falcon 6X的翼展是多少？",
+        "A": [
+            "25.94"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 6X\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Dassault Falcon 6X的翼展为26.21米（86.00英尺）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.28
+    },
+    {
+        "Q": "Dassault Falcon 20的翼展是多少？",
+        "A": [
+            "16.35"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 20\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Dassault Falcon 20的翼展为16.35米（约53英尺6英寸）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.9
+    },
+    {
+        "Q": "Beechcraft Baron的翼展是多少？",
+        "A": [
+            "13.36"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Beechcraft Baron\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Beechcraft Baron的翼展为11.53米。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.28
+    },
+    {
+        "Q": "Hawker 900XP的翼展是多少？",
+        "A": [
+            "16.56"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 900XP\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Hawker 900XP的翼展为51.17英尺（约15.6米）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.52
+    },
+    {
+        "Q": "Hawker 750的翼展是多少？",
+        "A": [
+            "16.56"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 750\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Hawker 750的翼展为16.56米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.16
+    },
+    {
+        "Q": "Boeing BBJ2的翼展是多少？",
+        "A": [
+            "35.8"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Boeing BBJ2\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Boeing BBJ2的翼展为34.3米。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.66
+    },
+    {
+        "Q": "Cessna Citation M2的翼展是多少？",
+        "A": [
+            "14.4"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation M2\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation M2的翼展为14.4米（约47英尺）。如果您需要更多关于该飞机的详细规格或其他信息，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.92
+    },
+    {
+        "Q": "Embraer Praetor 500的翼展是多少？",
+        "A": [
+            "21.5"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer Praetor 500\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer Praetor 500的翼展为21.5米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.09
+    },
+    {
+        "Q": "Embraer Phenom 100的翼展是多少？",
+        "A": [
+            "12.3"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer Phenom 100\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer Phenom 100的翼展为12.3米（约40英尺4英寸）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.01
+    },
+    {
+        "Q": "Bombardier Global 5000的翼展是多少？",
+        "A": [
+            "28.7"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Global 5000\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Global 5000的翼展为28.7米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.5
+    },
+    {
+        "Q": "Bombardier Challenger 850的翼展是多少？",
+        "A": [
+            "21.21"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 850\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Challenger 850的翼展为69.58英尺（约21.21米）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.98
+    },
+    {
+        "Q": "Embraer Legacy 650的翼展是多少？",
+        "A": [
+            "21.17"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer Legacy 650\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer Legacy 650的翼展为21.17米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.16
+    },
+    {
+        "Q": "Gulfstream G450的翼展是多少？",
+        "A": [
+            "23.7"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream G450\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Gulfstream G450的翼展为23.72米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.83
+    },
+    {
+        "Q": "Bombardier Learjet 40的翼展是多少？",
+        "A": [
+            "14.54"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 40\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Learjet 40的翼展为14.54米（约47.8英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.67
+    },
+    {
+        "Q": "Bombardier Challenger 601的翼展是多少？",
+        "A": [
+            "19.61"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 601\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Challenger 601的翼展为64英尺4英寸（约19.6米）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.95
+    },
+    {
+        "Q": "Cessna Citation Encore的翼展是多少？",
+        "A": [
+            "15.91"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation Encore\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation Encore的翼展为50英尺10英寸（约15.49米）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.38
+    },
+    {
+        "Q": "Cessna Citation Longitude的翼展是多少？",
+        "A": [
+            "21.01"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation Longitude\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation Longitude的翼展为21.01米（68英尺11英寸）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.46
+    },
+    {
+        "Q": "Bombardier Learjet 60的翼展是多少？",
+        "A": [
+            "13.34"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 60\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Learjet 60的翼展为13.35米（约43英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.06
+    },
+    {
+        "Q": "Cessna Citation CJ2的翼展是多少？",
+        "A": [
+            "15.09"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation CJ2\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation CJ2的翼展为15.09米（49英尺）。这款飞机的设计使其非常适合商务飞行，提供了良好的性能和舒适性。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.45
+    },
+    {
+        "Q": "Hawker 1000的翼展是多少？",
+        "A": [
+            "16.56"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 1000\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Hawker 1000的翼展为14.8米（48英尺）。这是该机型的一个重要规格，影响其飞行性能和适用的机场设施。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.7
+    },
+    {
+        "Q": "Bombardier Challenger 600的翼展是多少？",
+        "A": [
+            "19.61"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 600\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Challenger 600的翼展为19.61米（约64英尺4英寸）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.2
+    },
+    {
+        "Q": "Gulfstream GIII的翼展是多少？",
+        "A": [
+            "23.72"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream GIII\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Gulfstream GIII的翼展是23.72米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.38
+    },
+    {
+        "Q": "Gulfstream G200的翼展是多少？",
+        "A": [
+            "17.7"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Gulfstream G200\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Gulfstream G200的翼展为17.5米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.29
+    },
+    {
+        "Q": "Piper PA-32的翼展是多少？",
+        "A": [
+            "10"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Piper PA-32\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Piper PA-32的翼展为10米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.63
+    },
+    {
+        "Q": "Airbus A321的翼展是多少？",
+        "A": [
+            "35.8"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Airbus A321\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Airbus A321的翼展为35.8米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.62
+    },
+    {
+        "Q": "Boeing BBJ3的翼展是多少？",
+        "A": [
+            "35.79"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Boeing BBJ3\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Boeing BBJ3的翼展为35.8米（117英尺10英寸）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.58
+    },
+    {
+        "Q": "Hawker 4000的翼展是多少？",
+        "A": [
+            "16.59",
+            "16.59"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Hawker 4000\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Hawker 4000的翼展为18.82米。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.91
+    },
+    {
+        "Q": "Beechcraft 1900D的翼展是多少？",
+        "A": [
+            "17.65"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Beechcraft 1900D\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Beechcraft 1900D的翼展为57英尺9英寸，约合17.60米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.52
+    },
+    {
+        "Q": "Bombardier Learjet 55的翼展是多少？",
+        "A": [
+            "13.4"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 55\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Learjet 55的翼展为21.21英尺（约6.46米）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.81
+    },
+    {
+        "Q": "Bombardier Challenger 300的翼展是多少？",
+        "A": [
+            "19.61"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 300\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Bombardier Challenger 300的翼展为21.0米（约69英尺）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.1
+    },
+    {
+        "Q": "Cessna Citation X的翼展是多少？",
+        "A": [
+            "19.48"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Cessna Citation X\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Cessna Citation X的翼展为63英尺7英寸（约19.38米）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.58
+    },
+    {
+        "Q": "BAe 125-700的翼展是多少？",
+        "A": [
+            "14.53"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"BAe 125-700\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "BAe 125-700的翼展为15.65米。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.62
+    },
+    {
+        "Q": "Dassault Falcon 900的翼展是多少？",
+        "A": [
+            "21.38"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Dassault Falcon 900\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Dassault Falcon 900的翼展为21.38米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.78
+    },
+    {
+        "Q": "Airbus ACJ的翼展是多少？",
+        "A": [
+            "35.8"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Airbus ACJ\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Airbus ACJ系列的翼展因具体型号而异。以Airbus ACJ319为例，其翼展为34.1米（约111英尺6英寸）。如果您需要其他型号的具体翼展信息，请告知我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.47
+    },
+    {
+        "Q": "Embraer E190的翼展是多少？",
+        "A": [
+            "28.73"
+        ],
+        "SQL": "SELECT aircraft_width FROM dc_aircraft_model WHERE name = \"Embraer E190\" AND aircraft_width IS NOT NULL;",
+        "DB": "data_center_dev",
+        "actual_answer": "Embraer E190的翼展为28.73米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 14.16
+    },
+    {
+        "correct_rate": 62.0,
+        "sample_size": 50,
+        "correct_count": 31,
+        "average_time": 9.85
+    }
+]

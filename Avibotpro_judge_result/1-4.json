@@ -1,0 +1,574 @@
+[
+    {
+        "Q": "Goodman有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Peterson, 四字码：1MS2"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Goodman\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "根据搜索结果，关于Goodman的机场信息如下：\n\n1. **Goodman Airport** - 四字码: **KGGN**\n\n如果您需要更多关于Goodman机场的信息或其他机场的详细资料，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.82
+    },
+    {
+        "Q": "Wilhelmshaven有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Jadeweser Airport, 四字码：EDWI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Wilhelmshaven\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在威廉敏娜港（Wilhelmshaven），主要的机场是：\n\n1. **Jadeweser Airport**\n   - 四字码（ICAO）：EDWI\n   - 三字码（IATA）：WVN\n\n这是威廉敏娜港的主要机场信息。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.46
+    },
+    {
+        "Q": "Logan Township有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bridgeport-Cahill Field, 四字码：6NJ9"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Logan Township\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Logan Township，以下是相关的机场名称及其对应的四字码：\n\n1. **Bridgeport-Cahill Field**\n   - 四字码：6NJ9\n\n2. **General Edward Lawrence Logan International Airport**\n   - 四字码：KBOS\n\n3. **Billings Logan International Airport**\n   - 四字码：KBIL\n\n这些机场为Logan Township及其周边地区提供航空服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.7
+    },
+    {
+        "Q": "Whalsay有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Whalsay, 四字码：EGEH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Whalsay\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Whalsay有一个主要的机场，具体信息如下：\n\n- **机场名称**：Whalsay Airport\n- **四字码**：EGEH\n\n此外，该机场的三字码为WHS。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.01
+    },
+    {
+        "Q": "Zilina District有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Zilina, 四字码：LZZI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Zilina District\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在斯洛伐克的日利纳区（Zilina District），主要的机场及其对应的四字码如下：\n\n1. **日利纳机场 (Zilina Airport)**\n   - 四字码：LZZI\n\n这是该地区的主要机场，提供国内和国际航班服务。如果您需要更多关于该机场的信息或其他机场的详细资料，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.18
+    },
+    {
+        "Q": "Cossayuna有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Tracy Field, 四字码：4NK2"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Cossayuna\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Cossayuna地区，有一个机场，具体信息如下：\n\n- **机场名称**: Tracy Field\n- **四字码**: 4NK2\n\n这个机场位于美国Cossayuna。如果您需要更多信息或其他机场的详细资料，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.4
+    },
+    {
+        "Q": "Sixaola有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Sixaola, 四字码：MRSX"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Sixaola\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Sixaola地区，有一个主要的机场，具体信息如下：\n\n- **机场名称**：Sixaola\n- **四字码**：MRSX\n\n该机场位于哥斯达黎加，海拔约为26英尺，跑道长度为3094英尺。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.71
+    },
+    {
+        "Q": "Culpeper有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Berryvale, 四字码：VA30"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Culpeper\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Culpeper地区，有以下两个机场及其对应的四字码：\n\n1. **Culpeper Regional Airport** - ICAO代码：**KCJR**\n2. **Flying Circus Aerodrome** - ICAO代码：**3VA3**\n\n这两个机场分别位于Culpeper及其周边地区，提供不同类型的航空服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.71
+    },
+    {
+        "Q": "Munda有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Munda Airport, 四字码：AGGM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Munda\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Munda地区，主要的机场是：\n\n1. **Munda Airport**\n   - 四字码（ICAO Code）：AGGM\n\n这是所罗门群岛的一个机场，位于Munda市。如果您需要更多关于其他机场的信息，请告知！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 20.05
+    },
+    {
+        "Q": "Daugavpils有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Daugavpils, 四字码：EVDA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Daugavpils\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在陶格夫匹尔斯（Daugavpils），主要的机场及其对应的四字码如下：\n\n1. **陶格夫匹尔斯机场**（Daugavpils International Airport）\n   - 四字码（ICAO）：EVDA\n   - 三字码（IATA）：DGP\n\n这是陶格夫匹尔斯地区的主要机场，提供国内和国际航班服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.35
+    },
+    {
+        "Q": "Hammond Crossroads有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Alan's, 四字码：SC07",
+            "机场名称：Do-Little Field, 四字码：SC90"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hammond Crossroads\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Hammond Crossroads地区，有以下机场及其对应的四字码（ICAO代码）：\n\n1. **Do-Little Field** - ICAO代码: **SC90**\n2. **Alan's** - ICAO代码: **SC07**\n\n这些机场主要是小型机场，适合私人飞行和小型航空活动。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.38
+    },
+    {
+        "Q": "Merowe有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Merowe, 四字码：HSMN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Merowe\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Merowe，主要的机场是：\n\n- **机场名称**: Merowe Airport\n- **四字码**: HSMN\n\n该机场的三字代码为MWE，位于苏丹的Merowe市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.2
+    },
+    {
+        "Q": "Nanyuki有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Nanyuki Airport, 四字码：HKNL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Nanyuki\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在纳纽基（Nanyuki），主要的机场及其对应的四字码如下：\n\n1. **纳纽基机场 (Nanyuki Airport)**\n   - 四字码：HKNL\n\n这是纳纽基地区的主要机场，提供国内航班服务。如果您需要更多关于该机场的信息或其他机场的详细资料，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.5
+    },
+    {
+        "Q": "Mougulu有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Mougulu, 四字码：AYML"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Mougulu\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Mougulu地区有一个主要的机场，具体信息如下：\n\n- **机场名称**: Mougulu Airport\n- **ICAO代码**: AYML\n\n该机场位于巴布亚新几内亚，提供基本的航空服务。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.43
+    },
+    {
+        "Q": "Hallock有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Hallock Mun, 四字码：KHCO"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hallock\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Hallock地区，有一个主要的机场，具体信息如下：\n\n- **机场名称**: Hallock Municipal\n- **四字码**: KHCO\n\n该机场位于美国Hallock，提供基本的航空服务。如果您需要更多关于该机场的信息，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.44
+    },
+    {
+        "Q": "Yendi有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Yendi, 四字码：DGLY"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Yendi\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Yendi有一个机场，具体信息如下：\n\n- **机场名称**: Yendi\n- **四字码**: DGLY\n\n该机场位于加纳，海拔高度为735英尺。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.44
+    },
+    {
+        "Q": "Herzliya有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Herzeliya, 四字码：LLHZ"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Herzliya\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在赫兹利亚（Herzliya），主要的机场及其对应的四字代码如下：\n\n1. **赫兹利亚机场**（Herzliya Airport） - 四字代码：**LLHZ**。\n\n赫兹利亚机场是该地区的主要机场，适用于小型飞机和私人飞行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.49
+    },
+    {
+        "Q": "Swansea有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Gaston, 四字码：2SC8",
+            "机场名称：Swansea, 四字码：EGFH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Swansea\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在斯旺西（Swansea）地区，主要的机场及其对应的四字码如下：\n\n1. **斯旺西机场**（Swansea Airport）\n   - 四字码：EGFH\n\n此外，还有一个名为 **Swans Field** 的机场，其四字码为 **3S2**，但它的主要功能和服务可能与斯旺西机场不同。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.42
+    },
+    {
+        "Q": "Puerto Cabezas有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Puerto Cabezas, 四字码：MNPC"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Puerto Cabezas\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Puerto Cabezas，主要的机场及其对应的四字码如下：\n\n1. **卡贝萨斯港机场 (Puerto Cabezas Airport)**\n   - ICAO代码：MNPC\n\n目前在Puerto Cabezas地区没有其他主要的机场记录。如果您需要更多信息或其他地区的机场信息，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 14.13
+    },
+    {
+        "Q": "Mcrae-helena有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Telfair-Wheeler, 四字码：KMQW"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Mcrae-helena\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在McRae-Helena地区，有以下两个机场及其对应的四字码：\n\n1. **Helena Regional Airport**\n   - 四字码：KHLN\n\n2. **Thompson Robbins Airport**\n   - 四字码：KHEE\n\n这两个机场分别位于美国的海伦娜（Helena）和海伦娜-西海伦娜（Helena-West Helena）地区。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.03
+    },
+    {
+        "Q": "New Memphis有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Fischer's RLA Restricted Landing Area, 四字码：6LL6"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"New Memphis\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在新孟菲斯地区，有以下几个机场及其对应的四字码：\n\n1. **孟菲斯国际机场 (Memphis International Airport)**\n   - 四字码：**KMEM**\n\n2. **米林顿区域喷气机场 (Millington Regl Jetport)**\n   - 四字码：**KNQA**\n\n3. **费舍尔的RLA限制着陆区 (Fischer's RLA Restricted Landing Area)**\n   - 四字码：**6LL6**\n\n这些机场为新孟菲斯地区提供了多种航空服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.91
+    },
+    {
+        "Q": "Lacon有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Marshall County, 四字码：C75"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Lacon\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Lacon地区，有以下机场及其对应的四字码：\n\n1. **Lacon Airport** - 四字码：KLCN\n\n如果您需要更多信息或其他机场的详细资料，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.78
+    },
+    {
+        "Q": "Municipal District Of Greenview No. 16有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Fox Creek, 四字码：CED4",
+            "机场名称：Valleyview, 四字码：CEL5"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Municipal District Of Greenview No. 16\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Municipal District Of Greenview No. 16，主要有以下两个机场：\n\n1. **Valleyview Airport**\n   - ICAO代码：CEL5\n\n2. **Fox Creek Airport**\n   - ICAO代码：CED4\n\n这两个机场均位于加拿大的Greenview地区，提供地方性航空服务。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.5
+    },
+    {
+        "Q": "Minneapolis有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Airlake, 四字码：KLVN",
+            "机场名称：Anoka County - Blaine, 四字码：KANE",
+            "机场名称：Crystal, 四字码：KMIC",
+            "机场名称：Flying Cloud, 四字码：KFCM",
+            "机场名称：St Paul International Airport, 四字码：KMSP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Minneapolis\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在明尼阿波利斯，主要的机场及其对应的四字码如下：\n\n1. **明尼阿波利斯－圣保罗国际机场 (Minneapolis–Saint Paul International Airport)**\n   - 四字码：KMSP\n\n2. **飞云机场 (Flying Cloud Airport)**\n   - 四字码：KFCM\n\n3. **艾尔湖机场 (Airlake Airport)**\n   - 四字码：KLVN\n\n4. **明尼阿波利斯市机场 (Minneapolis City Airport)**\n   - 四字码：KMIC\n\n这些机场为明尼阿波利斯及其周边地区提供了航空服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 22.22
+    },
+    {
+        "Q": "Camp Springs有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：H & J Strip, 四字码：0NC1"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Camp Springs\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Camp Springs地区，有一个主要的机场，具体信息如下：\n\n- **机场名称**：Joint Base Andrews\n- **四字码**：KADW\n\n这个机场是美国空军的一部分，位于马里兰州的Camp Springs。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.84
+    },
+    {
+        "Q": "Ta'izz有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Taiz Intl, 四字码：OYTZ"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Ta'izz\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在塔伊兹（Ta'izz），目前有一个主要的机场：\n\n- **机场名称**：塔伊兹国际机场（Ta'izz International Airport）\n- **四字码**：OYTZ\n\n这是塔伊兹地区的公用机场，提供国内和国际航班服务。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.46
+    },
+    {
+        "Q": "Gum Fork有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：New Quarter Farm, 四字码：92VA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Gum Fork\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Gum Fork地区，主要的机场及其对应的四字码如下：\n\n1. **关岛国际机场 (Antonio B. Won Pat International Airport)**\n   - 四字码：PGUM\n\n这是Gum Fork地区的主要机场，位于关岛，服务于国际和国内航班。如果您需要更多信息或其他机场的详细资料，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.81
+    },
+    {
+        "Q": "Quepos有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Quepos Airport, 四字码：MRQP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Quepos\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Quepos，主要的机场及其对应的四字码如下：\n\n1. **Quepos Airport**\n   - 四字码：MRQP\n\n这是Quepos地区的主要机场，提供国内航班服务。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.39
+    },
+    {
+        "Q": "Douala有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Douala International Airport, 四字码：FKKD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Douala\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在杜阿拉（Douala），主要的机场及其对应的四字码如下：\n\n1. **杜阿拉国际机场**（Douala International Airport）\n   - 四字码：FKKD\n\n2. **巴门达机场**（Bamenda Airport）\n   - 四字码：FKKV\n\n3. **提科机场**（Tiko Airport）\n   - 四字码：FKKC\n\n这些机场为杜阿拉及其周边地区提供航空服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.16
+    },
+    {
+        "Q": "Gasmata有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Gasmata Island, 四字码：AYGT"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Gasmata\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Gasmata地区，有以下机场及其对应的四字码：\n\n1. **Gasmata Island Airport**\n   - 四字码（ICAO代码）：AYGM\n\n如果您需要更多关于这些机场的信息或其他相关内容，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.8
+    },
+    {
+        "Q": "Fakarava有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Fakarava Airport, 四字码：NTGF"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Fakarava\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Fakarava地区的机场及其对应的四字码如下：\n\n1. **Fakarava Airport** - NTGF\n\n这是Fakarava岛上主要的机场，服务于该地区的航班需求。如果您需要更多关于其他机场的信息，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.21
+    },
+    {
+        "Q": "Mundra有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Mundra, 四字码：VAMA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Mundra\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Mundra地区有一个主要的机场，具体信息如下：\n\n- **机场名称**：Mundra\n- **四字码**：VAMA\n\n这个机场位于印度的Mundra市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.67
+    },
+    {
+        "Q": "Segovia有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Fuentemilanos, 四字码：LEFM",
+            "机场名称：Marugan, 四字码：LEIR",
+            "机场名称：Santo Tome Del Puerto, 四字码：LETP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Segovia\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在塞哥维亚（Segovia）地区，有以下几个机场及其对应的四字码（ICAO代码）：\n\n1. **Fuentemilanos** - ICAO代码：LEFM\n2. **Marugan** - ICAO代码：LEIR\n3. **Santo Tome Del Puerto** - ICAO代码：LETP\n\n这些机场主要服务于塞哥维亚及其周边地区。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.59
+    },
+    {
+        "Q": "Willow Park有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Beggs Ranch/Aledo/, 四字码：TX15"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Willow Park\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Willow Park附近，有以下机场及其对应的四字码：\n\n1. **Beggs Ranch/Aledo** - 四字码：TX15。\n\n目前没有其他机场的四字码信息。如果需要更多关于其他机场的信息，请告知！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.3
+    },
+    {
+        "Q": "Da Nang有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Danang International Airport, 四字码：VVDN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Da Nang\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在岘港（Da Nang），主要的机场是：\n\n1. **岘港国际机场**（Danang International Airport）\n   - 四字码：**VVDN**\n\n这是岘港的主要机场，提供国内和国际航班服务。没有其他主要的机场在岘港地区。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.98
+    },
+    {
+        "Q": "Karlskoga有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Karlskoga, 四字码：ESKK"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Karlskoga\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在卡尔斯库加（Karlskoga）地区，主要的机场信息如下：\n\n- **机场名称**: Karlskoga Airport\n  - **四字码**: ESKK\n\n这是卡尔斯库加的主要机场，提供基本的航空服务。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.57
+    },
+    {
+        "Q": "Avallon At Moyers有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Moyer, 四字码：3PA9"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Avallon At Moyers\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Avallon At Moyers地区，有以下机场及其对应的四字码：\n\n1. **Moyer Airport** - ICAO代码：3PA9。\n\n如果您需要更多信息或其他机场的详细资料，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.1
+    },
+    {
+        "Q": "Kobuk有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bear Creek 1, 四字码：AK02",
+            "机场名称：Independence Creek, 四字码：2AK9",
+            "机场名称：Kobuk Airport, 四字码：PAOB",
+            "机场名称：Upper Hannum Creek, 四字码：AK74"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Kobuk\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Kobuk地区，有以下机场及其对应的四字码：\n\n1. **Kobuk Airport**\n   - 四字码（ICAO）：PAOB\n   - 三字码（IATA）：OBU\n\n此外，还有一些小型机场，虽然没有标准的三字码，但也在Kobuk地区运营。例如：\n\n2. **Upper Hannum Creek**\n   - 四字码（ICAO）：AK74\n\n这些机场主要服务于阿拉斯加州的Kobuk地区。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.13
+    },
+    {
+        "Q": "Manakara有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Manakara, 四字码：FMSK"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Manakara\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在马纳卡拉（Manakara），主要的机场是：\n\n1. **马纳卡拉机场**（Manakara Airport）\n   - 四字码（ICAO Code）：FMSK\n\n这是马达加斯加的一个中型机场，主要服务于当地的航班需求。如果您需要更多关于该机场的信息或其他机场的详细资料，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.28
+    },
+    {
+        "Q": "Maple Falls有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Kendall Airstrip, 四字码：WN08"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Maple Falls\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Maple Falls附近，有以下机场及其对应的四字码：\n\n1. **Kendall Airstrip** - 四字码：WN08。\n\n如果您需要更多信息或其他机场的详细资料，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 24.82
+    },
+    {
+        "Q": "Horsten有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Schachtholm, 四字码：EDXR"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Horsten\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Horsten地区，有一个主要的机场，具体信息如下：\n\n- **机场名称**: Schachtholm\n- **四字码**: EDXR\n\n这个机场位于德国Horsten地区，提供基本的航空服务。如果您需要更多关于该机场的信息或其他机场的详细资料，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.6
+    },
+    {
+        "Q": "Arkport有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Hornell Mun, 四字码：KHTF"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Arkport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Arkport地区，有以下机场及其对应的四字码：\n\n1. **Hornell Mun** - ICAO代码: KHTF\n2. **Harris Hill Gliderport** - ICAO代码: 4NY8\n\n这些机场主要服务于小型飞机和滑翔机，Hornell Mun是最接近Arkport的主要机场。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.49
+    },
+    {
+        "Q": "Greenvale有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Greenvale, 四字码：YGNV"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Greenvale\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Greenvale，澳大利亚，有一个主要的机场，具体信息如下：\n\n- **机场名称**: Greenvale\n- **四字码**: YGNV\n\n这个机场的IATA代码是GVP，位于澳大利亚的Greenvale地区。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 13.74
+    },
+    {
+        "Q": "Pardubice District有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Pardubice Airport, 四字码：LKPD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Pardubice District\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Pardubice District，主要的机场及其对应的四字代码如下：\n\n1. **Pardubice Airport**\n   - ICAO代码: **LKPD**\n   - IATA代码: **PED**\n\n这是该地区的主要机场，提供国内和国际航班服务。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.82
+    },
+    {
+        "Q": "Tekapo有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Takapoto Airport, 四字码：NTGT",
+            "机场名称：Tekapo, 四字码：NZTL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tekapo\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Tekapo地区，主要的机场及其对应的四字码如下：\n\n1. **Lake Tekapo Airport**\n   - ICAO代码：NZTL\n   - IATA代码：无\n\n2. **Takapoto Airport**\n   - ICAO代码：NTGT\n   - IATA代码：TKP\n\n这些机场为Tekapo地区提供了航空服务，尽管Lake Tekapo Airport是一个未经认证的机场，主要用于小型飞机和私人飞行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.65
+    },
+    {
+        "Q": "Massey有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Massey Aerodrome, 四字码：MD1"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Massey\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Massey地区有以下两个机场及其对应的四字码：\n\n1. **Massey Ranch Airpark**\n   - ICAO代码: **X50**\n\n2. **Massey Aerodrome**\n   - ICAO代码: **MD1**\n\n这两个机场均位于美国。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.21
+    },
+    {
+        "Q": "Broten有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Bird Nr 2, 四字码：ID19",
+            "机场名称：Timber Basin Airpark Inc, 四字码：ID24"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Broten\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Broten地区，有以下机场及其对应的四字码：\n\n1. **Brochet Airport**  \n   - 四字码（ICAO代码）：CYBT\n\n如果您需要更多信息或其他机场的详细资料，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 28.15
+    },
+    {
+        "Q": "Adrian有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Angle Bar M, 四字码：MU07",
+            "机场名称：Lenawee County, 四字码：KADG"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Adrian\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Adrian，以下是相关的机场及其对应的四字码：\n\n1. **Angle Bar M** - ICAO代码: MU07\n\n目前没有找到其他机场的信息。如果您需要更详细的机场列表或其他相关信息，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.17
+    },
+    {
+        "Q": "Fillmore有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Fillmore Mun, 四字码：KFOM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Fillmore\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Fillmore，有以下两个机场及其对应的四字码：\n\n1. **Fillmore Municipal Airport** - ICAO代码：**KFOM**\n2. **Fillmore County Airport** - ICAO代码：**KFKA**\n\n这两个机场分别服务于Fillmore地区，提供小型航空服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.18
+    },
+    {
+        "Q": "Paonia有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Boeing Field, 四字码：43CO",
+            "机场名称：North Fork Valley, 四字码：7V2"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Paonia\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "在Paonia地区，有两个主要的机场及其对应的四字码如下：\n\n1. **Boeing Field** - 四字码：**43CO**\n2. **North Fork Valley** - 四字码：**7V2**\n\n这两个机场均位于美国科罗拉多州的Paonia市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.64
+    },
+    {
+        "correct_rate": 62.0,
+        "sample_size": 50,
+        "correct_count": 31,
+        "average_time": 10.16
+    }
+]

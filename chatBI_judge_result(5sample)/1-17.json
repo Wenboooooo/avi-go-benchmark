@@ -1,0 +1,721 @@
+[
+    {
+        "Q": "Cessna Citation II机型的最大飞行距离是多少？",
+        "A": "3700公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation II\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       max_range\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Cessna Citation X',\n                              'Cessna Citation II',\n                              'Cessna Citation V',\n                              'Cessna Citation X+',\n                              'Cessna Citation I')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation I",
+                "max_range": 2200.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "max_range": 3700.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.1
+    },
+    {
+        "Q": "Dassault Falcon 900EX机型的最大飞行距离是多少？",
+        "A": "8203公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900EX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 900EX'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            },
+            {
+                "max_range": 8203.0
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.86
+    },
+    {
+        "Q": "Cessna Citation CJ1机型的最大飞行距离是多少？",
+        "A": "3111公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ1\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       max_range\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Cessna Citation X',\n                              'Cessna Citation CJ1+',\n                              'Cessna Citation CJ1',\n                              'Cessna Citation V',\n                              'Cessna Citation X+',\n                              'Cessna Citation I')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation I",
+                "max_range": 2200.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1+",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1+",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1+",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1+",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1+",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_range": 3000.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "max_range": 3111.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_range": 5741.0
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.55
+    },
+    {
+        "Q": "Hawker 400XP机型的最大飞行距离是多少？",
+        "A": "3020公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Hawker 400XP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range\nFROM aircraft_details\nWHERE aircraft_model_name = 'Hawker 400XP'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            },
+            {
+                "max_range": 3020.0
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.21
+    },
+    {
+        "Q": "Hawker 800XPi机型的最大飞行距离是多少？",
+        "A": "4800公里",
+        "SQL": "SELECT max_range FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800XPi\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT max_range\nFROM aircraft_details\nWHERE aircraft_model_name = 'Hawker 800XPi'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            },
+            {
+                "max_range": 4800.0
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.03
+    },
+    {
+        "correct_rate": 40.0,
+        "sample_size": 5,
+        "correct_count": 2,
+        "average_time": 8.35
+    }
+]

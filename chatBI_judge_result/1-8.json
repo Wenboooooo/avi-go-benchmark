@@ -1,0 +1,814 @@
+[
+    {
+        "Q": "Jet Charters Nz航司的总部位于哪个城市？",
+        "A": "Napier",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Charters Nz\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Jet Charters Nz'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Napier"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.22
+    },
+    {
+        "Q": "Nicholas Air航司的总部位于哪个城市？",
+        "A": "Oxford",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Nicholas Air\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Nicholas Air'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Oxford"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.44
+    },
+    {
+        "Q": "Ortac Limited航司的总部位于哪个城市？",
+        "A": "Jersey",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Ortac Limited\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Ortac Limited'\nLIMIT 1;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Jersey"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.45
+    },
+    {
+        "Q": "Summit Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Belgrade",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Summit Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Summit Aviation Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Belgrade"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.23
+    },
+    {
+        "Q": "Plures航司的总部位于哪个城市？",
+        "A": "Istanbul",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Plures\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Plures'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Istanbul"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.51
+    },
+    {
+        "Q": "AstonJet航司的总部位于哪个城市？",
+        "A": "Paris",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"AstonJet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'AstonJet'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Paris"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.91
+    },
+    {
+        "Q": "Cat Aviation AG航司的总部位于哪个城市？",
+        "A": "Zurich",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Cat Aviation AG\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Cat Aviation AG'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Zurich"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.55
+    },
+    {
+        "Q": "Hop-a-jet Worldwide Jet Charter航司的总部位于哪个城市？",
+        "A": "Fort Lauderdale",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Hop-a-jet Worldwide Jet Charter\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Hop-a-jet Worldwide Jet Charter'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Fort Lauderdale"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.5
+    },
+    {
+        "Q": "DC Aviation Group航司的总部位于哪个城市？",
+        "A": "Stuttgart",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"DC Aviation Group\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'DC Aviation Group'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Stuttgart"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.57
+    },
+    {
+        "Q": "Executive Jet Management Europe航司的总部位于哪个城市？",
+        "A": "London",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Executive Jet Management Europe\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name IN ('Executive Jet Management Europe',\n                        'Executive Jet Management Inc. Europe')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "London"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.35
+    },
+    {
+        "Q": "Aero JL S.A de C.V航司的总部位于哪个城市？",
+        "A": "Toluca",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aero JL S.A de C.V\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Aero JL S.A de C.V'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Toluca"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.34
+    },
+    {
+        "Q": "Planet Nine Private Air航司的总部位于哪个城市？",
+        "A": "Los Angeles",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Planet Nine Private Air\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Planet Nine Private Air'\nLIMIT 1;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Los Angeles"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.74
+    },
+    {
+        "Q": "AC Aviation Charter AG(Switzerland)航司的总部位于哪个城市？",
+        "A": "Zurich",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"AC Aviation Charter AG(Switzerland)\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'AC Aviation Charter AG'\n  AND supplier_country_name = 'Switzerland'\nLIMIT 50;",
+        "actual_answer": [],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.22
+    },
+    {
+        "Q": "Alpine Sky Jets Ltd航司的总部位于哪个城市？",
+        "A": "Berne",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Alpine Sky Jets Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Alpine Sky Jets Ltd'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Berne"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.79
+    },
+    {
+        "Q": "Blissair GmbH航司的总部位于哪个城市？",
+        "A": "Munster",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Blissair GmbH\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Blissair GmbH'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Munster"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.58
+    },
+    {
+        "Q": "Volare Aviation Ltd航司的总部位于哪个城市？",
+        "A": "Oxford",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Volare Aviation Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Volare Aviation Ltd'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Oxford"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.5
+    },
+    {
+        "Q": "NANSHAN JET CO., LTD航司的总部位于哪个城市？",
+        "A": "Qingdao",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"NANSHAN JET CO., LTD\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'NANSHAN JET CO., LTD'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Qingdao"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.0
+    },
+    {
+        "Q": "Spot Air航司的总部位于哪个城市？",
+        "A": "Cairo",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Spot Air\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Spot Air'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Cairo"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.77
+    },
+    {
+        "Q": "Flexflight Group航司的总部位于哪个城市？",
+        "A": "Roskilde",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Flexflight Group\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Flexflight Group'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Roskilde"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.27
+    },
+    {
+        "Q": "Starjet Aviation航司的总部位于哪个城市？",
+        "A": "Sion",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Starjet Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Starjet Aviation'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Sion"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.91
+    },
+    {
+        "Q": "Seattle Aircraft Charter航司的总部位于哪个城市？",
+        "A": "Renton",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Seattle Aircraft Charter\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Seattle Aircraft Charter'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Renton"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 15.7
+    },
+    {
+        "Q": "Hillsboro Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Washington County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Hillsboro Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name,\n       supplier_city_name\nFROM supplier_details\nWHERE supplier_name IN ('Hillsboro Aviation Inc.',\n                        'M&amp;n Aviation Inc.')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Hillsboro Aviation Inc.",
+                "supplier_city_name": "Washington County"
+            },
+            {
+                "supplier_name": "M&amp;n Aviation Inc.",
+                "supplier_city_name": "Boca Raton"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 8.58
+    },
+    {
+        "Q": "Pro Airways LLC航司的总部位于哪个城市？",
+        "A": "Plymouth",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Pro Airways LLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Pro Airways LLC'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Plymouth"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.21
+    },
+    {
+        "Q": "Jet Air Inc.航司的总部位于哪个城市？",
+        "A": "Galesburg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Air Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Jet Air Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Galesburg"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.58
+    },
+    {
+        "Q": "Ventis Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Wheeling",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Ventis Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Ventis Aviation Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Wheeling"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.63
+    },
+    {
+        "Q": "STA Jets航司的总部位于哪个城市？",
+        "A": "Santa Ana",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"STA Jets\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'STA Jets'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Santa Ana"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.15
+    },
+    {
+        "Q": "Smart Aviation航司的总部位于哪个城市？",
+        "A": "Cairo",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Smart Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Smart Aviation'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Cairo"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.73
+    },
+    {
+        "Q": "Flygr8航司的总部位于哪个城市？",
+        "A": "Thessaloniki",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Flygr8\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Flygr8'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Thessaloniki"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.42
+    },
+    {
+        "Q": "GoodJet航司的总部位于哪个城市？",
+        "A": "Oakland",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"GoodJet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'GoodJet'\nLIMIT 1;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Oakland"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.38
+    },
+    {
+        "Q": "Airailes航司的总部位于哪个城市？",
+        "A": "Entzheim",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Airailes\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Airailes'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Entzheim"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.02
+    },
+    {
+        "Q": "Gama Aviation Ltd(UK)航司的总部位于哪个城市？",
+        "A": "Farnborough",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Gama Aviation Ltd(UK)\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Gama Aviation Ltd(UK)'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Farnborough"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.66
+    },
+    {
+        "Q": "Tag - Transport Aerien Gatineau航司的总部位于哪个城市？",
+        "A": "Gatineau",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Tag - Transport Aerien Gatineau\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Transport Aerien Gatineau'\nLIMIT 50;",
+        "actual_answer": [],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.1
+    },
+    {
+        "Q": "Executive Aircraft Services Inc.航司的总部位于哪个城市？",
+        "A": "Maricopa County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Executive Aircraft Services Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Executive Aircraft Services Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Maricopa County"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.51
+    },
+    {
+        "Q": "Royal-star Sp. Z O.O.航司的总部位于哪个城市？",
+        "A": "Rzeszow",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Royal-star Sp. Z O.O.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Royal-star Sp. Z O.O.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Rzeszow"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.12
+    },
+    {
+        "Q": "Bonair航司的总部位于哪个城市？",
+        "A": "Istanbul",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Bonair\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Bonair'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Istanbul"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.41
+    },
+    {
+        "Q": "Arrow Aviation Ltd.航司的总部位于哪个城市？",
+        "A": "Rehovot",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Arrow Aviation Ltd.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Arrow Aviation Ltd.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Rehovot"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.94
+    },
+    {
+        "Q": "Myflug Hf航司的总部位于哪个城市？",
+        "A": "Mývatn",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Myflug Hf\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Myflug Hf'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Mývatn"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.55
+    },
+    {
+        "Q": "Air Whanganui航司的总部位于哪个城市？",
+        "A": "Whanganui",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Air Whanganui\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Air Whanganui'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Whanganui"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.06
+    },
+    {
+        "Q": "Private Flite Aviation航司的总部位于哪个城市？",
+        "A": "Sellersburg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Private Flite Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Private Flite Aviation'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Sellersburg"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.63
+    },
+    {
+        "Q": "Alerion Aviation航司的总部位于哪个城市？",
+        "A": "Long Beach",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Alerion Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Alerion Aviation'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Long Beach"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.09
+    },
+    {
+        "Q": "Exclusive Aviation航司的总部位于哪个城市？",
+        "A": "Nassau",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Exclusive Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Exclusive Aviation'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Nassau"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.96
+    },
+    {
+        "Q": "Fly 7 Executive Aviation航司的总部位于哪个城市？",
+        "A": "Ouest Lausannois District",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Fly 7 Executive Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Fly 7 Executive Aviation'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Ouest Lausannois District"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.53
+    },
+    {
+        "Q": "Aperta Aviation航司的总部位于哪个城市？",
+        "A": "London",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aperta Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Aperta Aviation'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "London"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.96
+    },
+    {
+        "Q": "Sardinian Sky Service航司的总部位于哪个城市？",
+        "A": "Cagliari",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Sardinian Sky Service\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Sardinian Sky Service'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Cagliari"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.18
+    },
+    {
+        "Q": "Hebei Avic General Aviation Co., Ltd.航司的总部位于哪个城市？",
+        "A": "Hebei",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Hebei Avic General Aviation Co., Ltd.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Hebei Avic General Aviation Co., Ltd.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Hebei"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.56
+    },
+    {
+        "Q": "Aeroeste航司的总部位于哪个城市？",
+        "A": "Andres Ibanez Province",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Aeroeste\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Aeroeste'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Andres Ibanez Province"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.76
+    },
+    {
+        "Q": "Get1 Jet航司的总部位于哪个城市？",
+        "A": "Var",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Get1 Jet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Get1 Jet'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Var"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.41
+    },
+    {
+        "Q": "Ifl Group Inc.航司的总部位于哪个城市？",
+        "A": "Waterford",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Ifl Group Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Ifl Group Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Waterford"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.28
+    },
+    {
+        "Q": "Alliance Executive Jets航司的总部位于哪个城市？",
+        "A": "St. Julian's",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Alliance Executive Jets\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Alliance Executive Jets'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "St. Julian's"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.64
+    },
+    {
+        "Q": "M&n Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Boca Raton",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"M&n Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name,\n       supplier_city_name\nFROM supplier_details\nWHERE supplier_name IN ('Aviation Advisor Inc.',\n                        'Aviation Charter Inc.',\n                        'Aviation Charters Inc.',\n                        'Aviation Starlink Inc.',\n                        'Axiom Aviation Inc.',\n                        'Basin Aviation Inc.',\n                        'Blatti Aviation, Inc.',\n                        'Castle Aviation Inc.',\n                        'Chrysler Aviation Inc',\n                        'CSI Aviation Inc.',\n                        'Eagle Aviation Inc.',\n                        'Exec 1 Aviation Inc.',\n                        'Global Aviation Inc.',\n                        'Hillsboro Aviation Inc.',\n                        'Koury Aviation Inc.',\n                        'Lyon Aviation Inc.',\n                        'M&amp;n Aviation Inc.',\n                        'Max Aviation Inc.',\n                        'Mccreery Aviation Inc',\n                        'Precision Aviation Inc.',\n                        'Presidential Aviation Inc.',\n                        'Ridgeline Aviation Inc.',\n                        'Shoreline Aviation Inc.',\n                        'Speed Aviation Inc.',\n                        'Summit Aviation Inc.',\n                        'Ventis Aviation Inc.',\n                        'Jetstream Aviation Inc.')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Aviation Advisor Inc.",
+                "supplier_city_name": "Lake County"
+            },
+            {
+                "supplier_name": "Aviation Charter Inc.",
+                "supplier_city_name": "Hennepin County"
+            },
+            {
+                "supplier_name": "Aviation Charters Inc.",
+                "supplier_city_name": "West Trenton"
+            },
+            {
+                "supplier_name": "Aviation Starlink Inc.",
+                "supplier_city_name": "Montreal"
+            },
+            {
+                "supplier_name": "Axiom Aviation Inc.",
+                "supplier_city_name": "Cleveland"
+            },
+            {
+                "supplier_name": "Basin Aviation Inc.",
+                "supplier_city_name": "Midland"
+            },
+            {
+                "supplier_name": "Blatti Aviation, Inc.",
+                "supplier_city_name": "Will County"
+            },
+            {
+                "supplier_name": "Castle Aviation Inc.",
+                "supplier_city_name": "Akron"
+            },
+            {
+                "supplier_name": "Chrysler Aviation Inc",
+                "supplier_city_name": "Los Angeles"
+            },
+            {
+                "supplier_name": "CSI Aviation Inc.",
+                "supplier_city_name": "Albuquerque"
+            },
+            {
+                "supplier_name": "Eagle Aviation Inc.",
+                "supplier_city_name": "Lexington County"
+            },
+            {
+                "supplier_name": "Exec 1 Aviation Inc.",
+                "supplier_city_name": "Polk County"
+            },
+            {
+                "supplier_name": "Global Aviation Inc.",
+                "supplier_city_name": "Washington County"
+            },
+            {
+                "supplier_name": "Hillsboro Aviation Inc.",
+                "supplier_city_name": "Washington County"
+            },
+            {
+                "supplier_name": "Koury Aviation Inc.",
+                "supplier_city_name": "Greensboro"
+            },
+            {
+                "supplier_name": "Lyon Aviation Inc.",
+                "supplier_city_name": "Pittsfield"
+            },
+            {
+                "supplier_name": "M&amp;n Aviation Inc.",
+                "supplier_city_name": "Boca Raton"
+            },
+            {
+                "supplier_name": "Max Aviation Inc.",
+                "supplier_city_name": "Montreal"
+            },
+            {
+                "supplier_name": "Mccreery Aviation Inc",
+                "supplier_city_name": "McAllen"
+            },
+            {
+                "supplier_name": "Precision Aviation Inc.",
+                "supplier_city_name": "Jerome County"
+            },
+            {
+                "supplier_name": "Presidential Aviation Inc.",
+                "supplier_city_name": "Fort Lauderdale"
+            },
+            {
+                "supplier_name": "Ridgeline Aviation Inc.",
+                "supplier_city_name": "Belgrade"
+            },
+            {
+                "supplier_name": "Shoreline Aviation Inc.",
+                "supplier_city_name": "Marshfield"
+            },
+            {
+                "supplier_name": "Speed Aviation Inc.",
+                "supplier_city_name": "Pensacola"
+            },
+            {
+                "supplier_name": "Summit Aviation Inc.",
+                "supplier_city_name": "Belgrade"
+            },
+            {
+                "supplier_name": "Ventis Aviation Inc.",
+                "supplier_city_name": "Wheeling"
+            },
+            {
+                "supplier_name": "Jetstream Aviation Inc.",
+                "supplier_city_name": "Boise"
+            },
+            {
+                "supplier_name": "Castle Aviation Inc.",
+                "supplier_city_name": "North Canton"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.73
+    },
+    {
+        "correct_rate": 92.0,
+        "sample_size": 50,
+        "correct_count": 46,
+        "average_time": 8.65
+    }
+]

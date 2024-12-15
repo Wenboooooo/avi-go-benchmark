@@ -1,0 +1,78 @@
+[
+    {
+        "Q": "注册号为OE-HWM的飞机的制造年份是什么？",
+        "A": "2017年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"OE-HWM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'oehwm'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2017
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.41
+    },
+    {
+        "Q": "注册号为N475CW的飞机的制造年份是什么？",
+        "A": "2000年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N475CW\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n475cw'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2000
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.3
+    },
+    {
+        "Q": "注册号为N450FX的飞机的制造年份是什么？",
+        "A": "2015年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N450FX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n450fx'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2015
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.82
+    },
+    {
+        "Q": "注册号为N777ZL的飞机的制造年份是什么？",
+        "A": "1981年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N777ZL\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n777zl'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1981
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.34
+    },
+    {
+        "Q": "注册号为N128AJ的飞机的制造年份是什么？",
+        "A": "2008年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N128AJ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n128aj'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2008
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.75
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 5,
+        "correct_count": 5,
+        "average_time": 7.32
+    }
+]

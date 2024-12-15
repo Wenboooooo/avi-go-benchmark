@@ -1,0 +1,719 @@
+[
+    {
+        "Q": "Fleet information of NANSHAN JET CO., LTD？",
+        "A": [
+            "Gulfstream G550",
+            "Gulfstream G450"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"NANSHAN JET CO., LTD\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"NANSHAN JET CO., LTD\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.48
+    },
+    {
+        "Q": "Fleet information of Kirkhope Aviation Pty Ltd？",
+        "A": [
+            "Beechcraft King Air B200",
+            "Cessna 208"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Kirkhope Aviation Pty Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Kirkhope Aviation Pty Ltd\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.73
+    },
+    {
+        "Q": "Fleet information of Tryp Air Charter？",
+        "A": [
+            "Pilatus PC-12"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Tryp Air Charter\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Tryp Air Charter\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.45
+    },
+    {
+        "Q": "Fleet information of Select Aero Inc.？",
+        "A": [
+            "Dassault Falcon 2000EX"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Select Aero Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Select Aero Inc.\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.78
+    },
+    {
+        "Q": "Fleet information of Starwings GmbH？",
+        "A": [
+            "Cessna Citation CJ2+"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Starwings GmbH\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Starwings GmbH\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.47
+    },
+    {
+        "Q": "Fleet information of Air-Dynamic？",
+        "A": [
+            "Pilatus PC-12",
+            "Pilatus PC-12"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Air-Dynamic\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Air-Dynamic\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.34
+    },
+    {
+        "Q": "Fleet information of Meregrass Inc.？",
+        "A": [
+            "Dassault Falcon 900B"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Meregrass Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Meregrass Inc.\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.79
+    },
+    {
+        "Q": "Fleet information of Aerovias DAP？",
+        "A": [
+            "Cessna 402",
+            "Cessna 404"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Aerovias DAP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Aerovias DAP\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.76
+    },
+    {
+        "Q": "Fleet information of Sacramento Air Charter？",
+        "A": [
+            "Beechcraft King Air 300",
+            "Beechcraft King Air 350",
+            "Hawker 900XP",
+            "Hawker 1000",
+            "Beechcraft King Air 90",
+            "Hawker 800XPi"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Sacramento Air Charter\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Sacramento Air Charter\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.54
+    },
+    {
+        "Q": "Fleet information of Myflug Hf？",
+        "A": [
+            "Beechcraft King Air B200"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Myflug Hf\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Myflug Hf\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.68
+    },
+    {
+        "Q": "Fleet information of Global Jet International？",
+        "A": [
+            "Gulfstream G650ER"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Global Jet International\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Global Jet International\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.15
+    },
+    {
+        "Q": "Fleet information of Winair Jet？",
+        "A": [
+            "Gulfstream G650ER",
+            "Gulfstream G550"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Winair Jet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Winair Jet\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.47
+    },
+    {
+        "Q": "Fleet information of MTJ Aviation LLC？",
+        "A": [
+            "Hawker 400XP",
+            "Beechjet 400",
+            "Hawker 400XP"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"MTJ Aviation LLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"MTJ Aviation LLC\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.36
+    },
+    {
+        "Q": "Fleet information of Augsburg Airways？",
+        "A": [
+            "Cessna Citation Jet"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Augsburg Airways\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Augsburg Airways\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.99
+    },
+    {
+        "Q": "Fleet information of Elilombarda S.R.L.？",
+        "A": [
+            "Cessna Citation Encore+"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Elilombarda S.R.L.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Elilombarda S.R.L.\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.65
+    },
+    {
+        "Q": "Fleet information of Phenix Aviation？",
+        "A": [
+            "Beechcraft King Air 350"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Phenix Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Phenix Aviation\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.53
+    },
+    {
+        "Q": "Fleet information of Mjets Inernational？",
+        "A": [
+            "Cessna Citation Bravo",
+            "Cessna Citation X",
+            "Cessna Citation Bravo",
+            "Gulfstream GV",
+            "Gulfstream G550"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Mjets Inernational\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Mjets Inernational\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.51
+    },
+    {
+        "Q": "Fleet information of Uniair Taxi Aereo Ltd？",
+        "A": [
+            "Beechcraft King Air 90",
+            "Beechcraft King Air 90",
+            "Beechcraft King Air 200"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Uniair Taxi Aereo Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Uniair Taxi Aereo Ltd\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.87
+    },
+    {
+        "Q": "Fleet information of Ifly S.A.？",
+        "A": [
+            "Pilatus PC-12",
+            "Cessna Citation Bravo"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Ifly S.A.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Ifly S.A.\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.6
+    },
+    {
+        "Q": "Fleet information of Premiair？",
+        "A": [
+            "Embraer Legacy 600",
+            "Embraer Legacy 650"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Premiair\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Premiair\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.62
+    },
+    {
+        "Q": "Fleet information of 247 Aviation Ltd？",
+        "A": [
+            "Pilatus PC-12",
+            "Pilatus PC-12"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"247 Aviation Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"247 Aviation Ltd\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.15
+    },
+    {
+        "Q": "Fleet information of Grafair Flight Management？",
+        "A": [
+            "Hawker 800XP",
+            "Cessna Citation Ultra",
+            "Cessna Citation Ultra",
+            "Hawker 900XP"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Grafair Flight Management\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Grafair Flight Management\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.34
+    },
+    {
+        "Q": "Fleet information of Mountain Lion Aviation？",
+        "A": [
+            "Pilatus PC-12"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Mountain Lion Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Mountain Lion Aviation\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.31
+    },
+    {
+        "Q": "Fleet information of Atmospherica Aviation？",
+        "A": [
+            "Embraer Phenom 300"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Atmospherica Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Atmospherica Aviation\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.29
+    },
+    {
+        "Q": "Fleet information of Airflair Inc.？",
+        "A": [
+            "Cessna 425"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Airflair Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Airflair Inc.\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.18
+    },
+    {
+        "Q": "Fleet information of Searca S.A.？",
+        "A": [
+            "Beechcraft 1900D",
+            "Gulfstream G200",
+            "Hawker 400"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Searca S.A.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Searca S.A.\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.52
+    },
+    {
+        "Q": "Fleet information of Air Intersalonika？",
+        "A": [
+            "Beechcraft King Air 90",
+            "Beechcraft King Air 200",
+            "Beechcraft Premier I"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Air Intersalonika\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Air Intersalonika\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.55
+    },
+    {
+        "Q": "Fleet information of Svenskt Industriflyg？",
+        "A": [
+            "Dassault Falcon 7X",
+            "Bombardier Challenger 300",
+            "Beechcraft King Air 350i",
+            "Bombardier Challenger 300",
+            "Pilatus PC-24"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Svenskt Industriflyg\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Svenskt Industriflyg\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.35
+    },
+    {
+        "Q": "Fleet information of Super Air？",
+        "A": [
+            "Dassault Falcon 2000S"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Super Air\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Super Air\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.15
+    },
+    {
+        "Q": "Fleet information of Chairman Aviation？",
+        "A": [
+            "Cessna Citation X",
+            "Cessna Citation CJ3+",
+            "Beechcraft King Air B200"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Chairman Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Chairman Aviation\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.46
+    },
+    {
+        "Q": "Fleet information of Regency Air LLC？",
+        "A": [
+            "Hawker 400XP"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Regency Air LLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Regency Air LLC\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.72
+    },
+    {
+        "Q": "Fleet information of Heartland Aviation？",
+        "A": [
+            "Bombardier Challenger 604",
+            "Cessna Citation VII",
+            "Cessna Citation VII",
+            "Cessna Citation VII"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Heartland Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Heartland Aviation\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.07
+    },
+    {
+        "Q": "Fleet information of BusinessAir A.S.？",
+        "A": [
+            "Cessna Citation II"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"BusinessAir A.S.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"BusinessAir A.S.\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.65
+    },
+    {
+        "Q": "Fleet information of Initium Aviation？",
+        "A": [
+            "Cessna Citation II",
+            "Cessna Citation V",
+            "Cessna Citation XLS",
+            "Cessna Citation Ultra"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Initium Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Initium Aviation\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.29
+    },
+    {
+        "Q": "Fleet information of Castle Aviation Inc.？",
+        "A": [
+            "Hawker 400XP",
+            "Piper PA",
+            "Piper PA",
+            "Piper PA"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Castle Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Castle Aviation Inc.\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.48
+    },
+    {
+        "Q": "Fleet information of Meajet GmbH？",
+        "A": [
+            "Dassault Falcon 2000LX",
+            "Embraer Legacy 500"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Meajet GmbH\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Meajet GmbH\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.63
+    },
+    {
+        "Q": "Fleet information of Vietstar Airlines？",
+        "A": [
+            "Embraer Legacy 600",
+            "Beechcraft King Air 350",
+            "Embraer Legacy 650"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Vietstar Airlines\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Vietstar Airlines\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.44
+    },
+    {
+        "Q": "Fleet information of Gestair？",
+        "A": [
+            "Cessna Citation Mustang",
+            "Pilatus PC-24",
+            "Bombardier Global Express",
+            "Cessna Citation XLS+",
+            "Cessna Citation Mustang",
+            "Bombardier Global Express"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Gestair\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Gestair\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.29
+    },
+    {
+        "Q": "Fleet information of Centreline AV Ltd？",
+        "A": [
+            "Embraer Phenom 300",
+            "Embraer Legacy 500",
+            "Embraer Legacy 500",
+            "Embraer Legacy 500",
+            "Embraer Praetor 600",
+            "Dassault Falcon 8X"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Centreline AV Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Centreline AV Ltd\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.56
+    },
+    {
+        "Q": "Fleet information of Mach Point Aviation？",
+        "A": [
+            "Cessna Citation XLS",
+            "Cessna Citation XLS"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Mach Point Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Mach Point Aviation\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.07
+    },
+    {
+        "Q": "Fleet information of Global Jet？",
+        "A": [
+            "Dassault Falcon 2000",
+            "Gulfstream G650ER",
+            "Gulfstream G650ER",
+            "Boeing BBJ3",
+            "Gulfstream G200",
+            "Airbus ACJ A319",
+            "Dassault Falcon 900DX",
+            "Dassault Falcon 2000S",
+            "Airbus ACJ A318 Elite",
+            "Pilatus PC-24",
+            "Dassault Falcon 2000EX",
+            "Bombardier Global 6000",
+            "Bombardier Global Express XRS",
+            "Bombardier Global 7500",
+            "Dassault Falcon 7X",
+            "Dassault Falcon 7X",
+            "Dassault Falcon 900LX",
+            "Embraer Phenom 300",
+            "Airbus ACJ A319",
+            "Airbus ACJ A320",
+            "Boeing BBJ",
+            "Airbus A330"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Global Jet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Global Jet\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.75
+    },
+    {
+        "Q": "Fleet information of Aitheras Aviation Group LLC？",
+        "A": [
+            "Cessna Citation Encore+"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Aitheras Aviation Group LLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Aitheras Aviation Group LLC\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.97
+    },
+    {
+        "Q": "Fleet information of Aergo International Pty Ltd？",
+        "A": [
+            "Boeing 737",
+            "Boeing 737"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Aergo International Pty Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Aergo International Pty Ltd\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.16
+    },
+    {
+        "Q": "Fleet information of Speed Aviation Inc.？",
+        "A": [
+            "Beechcraft King Air 90",
+            "Beechcraft Premier I",
+            "Bombardier Learjet 31A",
+            "Bombardier Learjet 31A"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Speed Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Speed Aviation Inc.\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.71
+    },
+    {
+        "Q": "Fleet information of Aircraft Transport Service？",
+        "A": [
+            "Gulfstream GIV",
+            "Gulfstream GV",
+            "Cessna Citation Bravo",
+            "Gulfstream GV",
+            "Cessna Citation Bravo",
+            "Gulfstream GV",
+            "Gulfstream GIV"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Aircraft Transport Service\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Aircraft Transport Service\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.67
+    },
+    {
+        "Q": "Fleet information of Cape Air Charter？",
+        "A": [
+            "Pilatus PC-12",
+            "Embraer Phenom 100",
+            "Cessna Citation CJ1",
+            "Pilatus PC-12"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Cape Air Charter\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Cape Air Charter\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.54
+    },
+    {
+        "Q": "Fleet information of Worldwide Jet Charter Inc.？",
+        "A": [
+            "Hawker 800XP",
+            "Hawker 800XP",
+            "Bombardier Challenger 601",
+            "Gulfstream G450",
+            "Gulfstream GIV",
+            "Bombardier Challenger 601",
+            "Gulfstream GIV-SP",
+            "Hawker 800XPi",
+            "Hawker 850XP",
+            "Bombardier Global 6000",
+            "Bombardier Challenger 601",
+            "Bombardier Challenger 601"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Worldwide Jet Charter Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Worldwide Jet Charter Inc.\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.24
+    },
+    {
+        "Q": "Fleet information of Air Smart？",
+        "A": [
+            "Pilatus PC-12",
+            "Pilatus PC-12",
+            "Pilatus PC-12",
+            "Pilatus PC-24",
+            "Pilatus PC-12"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Air Smart\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Air Smart\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.16
+    },
+    {
+        "Q": "Fleet information of Beijing Airlines？",
+        "A": [
+            "Boeing BBJ"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Beijing Airlines\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Beijing Airlines\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.15
+    },
+    {
+        "Q": "Fleet information of Executive Air Taxi Corporation？",
+        "A": [
+            "Hawker 4000",
+            "Hawker 800XP",
+            "Beechcraft King Air 90",
+            "Hawker 800XP",
+            "Beechcraft King Air 90",
+            "Beechcraft King Air 350"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Executive Air Taxi Corporation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Executive Air Taxi Corporation\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.74
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 50,
+        "correct_count": 50,
+        "average_time": 4.01
+    }
+]

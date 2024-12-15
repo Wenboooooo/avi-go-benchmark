@@ -1,0 +1,1506 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "24/7 Jet Inc.在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KVNY",
+                "KLAS",
+                9
+            ],
+            [
+                "KLAS",
+                "KVNY",
+                7
+            ],
+            [
+                "KAPC",
+                "KVNY",
+                3
+            ],
+            [
+                "KLAS",
+                "KSAC",
+                2
+            ],
+            [
+                "KVNY",
+                "KPDK",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1001\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "247 Aviation Ltd在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "EGNT",
+                "EGAA",
+                65
+            ],
+            [
+                "EGAA",
+                "EGNT",
+                45
+            ],
+            [
+                "EGPH",
+                "EGAA",
+                45
+            ],
+            [
+                "EGGW",
+                "EGAA",
+                41
+            ],
+            [
+                "EGAA",
+                "EGPH",
+                37
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1002\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "45 North Aviation在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KPTK",
+                "KTVC",
+                13
+            ],
+            [
+                "KTVC",
+                "KPTK",
+                12
+            ],
+            [
+                "KSCH",
+                "KVRB",
+                9
+            ],
+            [
+                "KVRB",
+                "KSCH",
+                8
+            ],
+            [
+                "KSCH",
+                "KCEU",
+                7
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1004\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "A-OK Jets在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KDFW",
+                "KMAF",
+                11
+            ],
+            [
+                "KMAF",
+                "KLAS",
+                8
+            ],
+            [
+                "KMAF",
+                "KDFW",
+                7
+            ],
+            [
+                "MYNN",
+                "KFXE",
+                5
+            ],
+            [
+                "KFXE",
+                "KTPA",
+                5
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1005\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AAC Jet在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "MMMY",
+                "MMUN",
+                7
+            ],
+            [
+                "MMPR",
+                "MMMY",
+                5
+            ],
+            [
+                "MMMY",
+                "MMPR",
+                5
+            ],
+            [
+                "MMUN",
+                "MMMY",
+                4
+            ],
+            [
+                "MMTO",
+                "MMMY",
+                3
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1007\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AB Jets在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KBNA",
+                "KMEM",
+                49
+            ],
+            [
+                "KMEM",
+                "KBNA",
+                38
+            ],
+            [
+                "KBNA",
+                "KBHM",
+                22
+            ],
+            [
+                "KBHM",
+                "KBNA",
+                18
+            ],
+            [
+                "KTYS",
+                "KBNA",
+                16
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1008\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Fly Tyrol在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "LFKF",
+                "LOWI",
+                11
+            ],
+            [
+                "LOWI",
+                "LFKF",
+                11
+            ],
+            [
+                "LOWI",
+                "LOWW",
+                6
+            ],
+            [
+                "LOWW",
+                "LOWI",
+                6
+            ],
+            [
+                "EDDK",
+                "LOWI",
+                6
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1009\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Abelag Aviation在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "EBLG",
+                "LIMC",
+                28
+            ],
+            [
+                "LIML",
+                "EBLG",
+                22
+            ],
+            [
+                "LIMC",
+                "EBLG",
+                19
+            ],
+            [
+                "ELLX",
+                "LIML",
+                14
+            ],
+            [
+                "LIMC",
+                "ELLX",
+                14
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1010\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ABS Jets在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "LDZD",
+                "LKHK",
+                6
+            ],
+            [
+                "LKHK",
+                "LDZD",
+                6
+            ],
+            [
+                "LKHK",
+                "EDDK",
+                4
+            ],
+            [
+                "EDDK",
+                "LKHK",
+                4
+            ],
+            [
+                "LKKB",
+                "EDDK",
+                3
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1012\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AC Aviation Charter AG(Switzerland)在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "LSGG",
+                "LBSF",
+                5
+            ],
+            [
+                "LBSF",
+                "LSGG",
+                4
+            ],
+            [
+                "LBSF",
+                "LGAV",
+                3
+            ],
+            [
+                "LHBP",
+                "LFPB",
+                2
+            ],
+            [
+                "LBSF",
+                "UBBB",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1013\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AC Aviation Charter(Austria)在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "ETNL",
+                "EDMO",
+                9
+            ],
+            [
+                "EDMO",
+                "EDDB",
+                9
+            ],
+            [
+                "EDMO",
+                "ETNL",
+                8
+            ],
+            [
+                "EDDB",
+                "EDMO",
+                8
+            ],
+            [
+                "EDMO",
+                "LFPB",
+                5
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1014\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACASS Canada Ltd在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "EGLF",
+                "EIDW",
+                10
+            ],
+            [
+                "EIDW",
+                "EGLF",
+                7
+            ],
+            [
+                "LEPA",
+                "EGLF",
+                4
+            ],
+            [
+                "EGLF",
+                "LEPA",
+                4
+            ],
+            [
+                "LFMN",
+                "EIDW",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1015\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACASS(Ireland)在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "EGLF",
+                "LFMN",
+                6
+            ],
+            [
+                "LFMN",
+                "EGLF",
+                6
+            ],
+            [
+                "EGLF",
+                "LSGG",
+                4
+            ],
+            [
+                "EGLF",
+                "LEMG",
+                3
+            ],
+            [
+                "KTEB",
+                "EGLF",
+                3
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1016\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Accent Airways LLC在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KOPF",
+                "MYEN",
+                150
+            ],
+            [
+                "MYEN",
+                "KOPF",
+                149
+            ],
+            [
+                "MYNN",
+                "KOPF",
+                19
+            ],
+            [
+                "KOPF",
+                "MYNN",
+                17
+            ],
+            [
+                "MYAW",
+                "KOPF",
+                7
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1017\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACI Jet在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KSBP",
+                "KNUQ",
+                25
+            ],
+            [
+                "KNUQ",
+                "KSBP",
+                25
+            ],
+            [
+                "KSBP",
+                "KOAK",
+                22
+            ],
+            [
+                "KOAK",
+                "KSBP",
+                20
+            ],
+            [
+                "KSJC",
+                "KSBP",
+                16
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1019\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACM Air Charter在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "LPPR",
+                "EDSB",
+                8
+            ],
+            [
+                "EDSB",
+                "LPPR",
+                7
+            ],
+            [
+                "EDDM",
+                "EDSB",
+                7
+            ],
+            [
+                "EDSB",
+                "LEIB",
+                7
+            ],
+            [
+                "EDSB",
+                "LDZA",
+                7
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1020\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Acropolis Aviation Ltd在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "EICK",
+                "EGLF",
+                18
+            ],
+            [
+                "EGLF",
+                "EICK",
+                15
+            ],
+            [
+                "EICK",
+                "LFRG",
+                3
+            ],
+            [
+                "EGNJ",
+                "EICK",
+                3
+            ],
+            [
+                "LFRG",
+                "EGLF",
+                3
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1021\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Action Air Express在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KSMO",
+                "KSBA",
+                6
+            ],
+            [
+                "KSMO",
+                "KOXR",
+                4
+            ],
+            [
+                "KSBA",
+                "KSMO",
+                4
+            ],
+            [
+                "KOXR",
+                "KSMO",
+                2
+            ],
+            [
+                "KVNY",
+                "KSBA",
+                1
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1022\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ADM Aviation Executive在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "LFTH",
+                "LFPB",
+                13
+            ],
+            [
+                "LFPB",
+                "LFTH",
+                11
+            ],
+            [
+                "LFPB",
+                "LFMN",
+                9
+            ],
+            [
+                "LFMT",
+                "LFPB",
+                9
+            ],
+            [
+                "LFPB",
+                "LFMD",
+                8
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1024\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Advanced Air LLC在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KSVC",
+                "KABQ",
+                460
+            ],
+            [
+                "KMCE",
+                "KLAS",
+                383
+            ],
+            [
+                "KLAS",
+                "KMCE",
+                376
+            ],
+            [
+                "KMCE",
+                "KHHR",
+                367
+            ],
+            [
+                "KHHR",
+                "KMCE",
+                365
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1025\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aelia S.R.L在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "LSZH",
+                "LOWI",
+                7
+            ],
+            [
+                "LIRQ",
+                "LFKF",
+                5
+            ],
+            [
+                "LIRA",
+                "LIPE",
+                5
+            ],
+            [
+                "LIML",
+                "LIPE",
+                5
+            ],
+            [
+                "LIPE",
+                "LIEO",
+                5
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1027\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AEM Aviation在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KBNA",
+                "KJVY",
+                3
+            ],
+            [
+                "KFMY",
+                "KJVY",
+                3
+            ],
+            [
+                "KTMB",
+                "KJVY",
+                2
+            ],
+            [
+                "KSRQ",
+                "KJVY",
+                2
+            ],
+            [
+                "KJVY",
+                "KTMB",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1028\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aergo International Pty Ltd在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "ANYN",
+                "YBBN",
+                33
+            ],
+            [
+                "YBBN",
+                "ANYN",
+                29
+            ],
+            [
+                "ANYN",
+                "YTEK",
+                11
+            ],
+            [
+                "YBMK",
+                "YBCG",
+                6
+            ],
+            [
+                "YBCG",
+                "YBMK",
+                6
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1029\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Air Charter LLC在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KBHM",
+                "KPNS",
+                9
+            ],
+            [
+                "KTLH",
+                "KPNS",
+                9
+            ],
+            [
+                "KPNS",
+                "KBHM",
+                8
+            ],
+            [
+                "KOPF",
+                "KPNS",
+                7
+            ],
+            [
+                "KPNS",
+                "KORL",
+                7
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1030\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Asahi Corporation在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "RJNA",
+                "RJFO",
+                36
+            ],
+            [
+                "RJFO",
+                "RJNA",
+                35
+            ],
+            [
+                "RJTT",
+                "RJNA",
+                24
+            ],
+            [
+                "RJNA",
+                "RJTT",
+                19
+            ],
+            [
+                "RJCB",
+                "RJNA",
+                12
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1032\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Centers在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KSSI",
+                "KPDK",
+                31
+            ],
+            [
+                "KPDK",
+                "KSSI",
+                30
+            ],
+            [
+                "KDTS",
+                "KPDK",
+                22
+            ],
+            [
+                "KPDK",
+                "KDTS",
+                22
+            ],
+            [
+                "KPDK",
+                "KSAV",
+                21
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1033\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Charter Inc.在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KSUS",
+                "KSGF",
+                48
+            ],
+            [
+                "KSGF",
+                "KSUS",
+                33
+            ],
+            [
+                "KMKC",
+                "KSUS",
+                24
+            ],
+            [
+                "KSUS",
+                "KMKC",
+                23
+            ],
+            [
+                "KPWA",
+                "KSUS",
+                21
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1034\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Dynamic Jets在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KSNA",
+                "KPVU",
+                16
+            ],
+            [
+                "KPVU",
+                "KAPA",
+                13
+            ],
+            [
+                "KPVU",
+                "KSNA",
+                13
+            ],
+            [
+                "KAPA",
+                "KPVU",
+                12
+            ],
+            [
+                "KCAK",
+                "KDPA",
+                10
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1035\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero JL S.A de C.V在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "MMTO",
+                "MMUN",
+                23
+            ],
+            [
+                "MMGL",
+                "MMTO",
+                11
+            ],
+            [
+                "MMTO",
+                "MMGL",
+                10
+            ],
+            [
+                "KHOU",
+                "MMTO",
+                8
+            ],
+            [
+                "MMTO",
+                "MMSD",
+                8
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1036\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Sotravia在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "LSZM",
+                "LFSB",
+                13
+            ],
+            [
+                "LFPM",
+                "EBAW",
+                7
+            ],
+            [
+                "EBAW",
+                "LFPM",
+                7
+            ],
+            [
+                "LFPM",
+                "LFAI",
+                5
+            ],
+            [
+                "LFMD",
+                "LFPM",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1038\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Transporte S.A.在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "SPIM",
+                "SPJC",
+                14
+            ],
+            [
+                "SPJC",
+                "SPHI",
+                13
+            ],
+            [
+                "SPQU",
+                "SPJC",
+                13
+            ],
+            [
+                "SPJC",
+                "SPQU",
+                11
+            ],
+            [
+                "SPHI",
+                "SPJC",
+                11
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1039\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero-Tech Services Inc.在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "KJZI",
+                "KLNS",
+                9
+            ],
+            [
+                "KLNS",
+                "KJZI",
+                9
+            ],
+            [
+                "KLNS",
+                "KTEB",
+                6
+            ],
+            [
+                "KBCT",
+                "KLNS",
+                5
+            ],
+            [
+                "KAGC",
+                "KMQS",
+                5
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1041\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerocardal在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "SCKP",
+                "SCEL",
+                40
+            ],
+            [
+                "SCEL",
+                "SCKP",
+                33
+            ],
+            [
+                "SCEL",
+                "SCVD",
+                18
+            ],
+            [
+                "SCEL",
+                "SCQP",
+                11
+            ],
+            [
+                "SCEL",
+                "SCPC",
+                10
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1042\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerodynamics Malaga在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "LEAS",
+                "LEGE",
+                5
+            ],
+            [
+                "LEMG",
+                "LEMD",
+                5
+            ],
+            [
+                "LEMD",
+                "LEMG",
+                4
+            ],
+            [
+                "LEMD",
+                "LEBL",
+                4
+            ],
+            [
+                "LPCS",
+                "LEMD",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1044\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeroeste在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "SSUO",
+                "SBDN",
+                2
+            ],
+            [
+                "SBGR",
+                "SBDN",
+                2
+            ],
+            [
+                "SADF",
+                "SARS",
+                1
+            ],
+            [
+                "YTBR",
+                "YPDN",
+                1
+            ],
+            [
+                "SDDR",
+                "SBGR",
+                1
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1045\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeromas在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "SUMU",
+                "SBPK",
+                3
+            ],
+            [
+                "SUMU",
+                "SABE",
+                2
+            ],
+            [
+                "SCEL",
+                "SUMU",
+                2
+            ],
+            [
+                "SAWD",
+                "SCEL",
+                2
+            ],
+            [
+                "SBPK",
+                "SUMU",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1048\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeronautical Charter Inc.在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "EGGW",
+                "EGNR",
+                6
+            ],
+            [
+                "EGNR",
+                "LEPA",
+                4
+            ],
+            [
+                "LEPA",
+                "EGNR",
+                3
+            ],
+            [
+                "EGNR",
+                "EGJB",
+                2
+            ],
+            [
+                "LEPA",
+                "EGCC",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1050\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeronaves Tsm S.A.在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "MMMY",
+                "MMQT",
+                16
+            ],
+            [
+                "MMCS",
+                "MMMY",
+                14
+            ],
+            [
+                "MMQT",
+                "MMMY",
+                13
+            ],
+            [
+                "MMMY",
+                "MMCS",
+                9
+            ],
+            [
+                "MMIO",
+                "MMTO",
+                5
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1051\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeropartner在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "LZIB",
+                "LKPR",
+                23
+            ],
+            [
+                "LKPR",
+                "LZIB",
+                21
+            ],
+            [
+                "LOWS",
+                "LKPR",
+                15
+            ],
+            [
+                "LKPR",
+                "LOWW",
+                14
+            ],
+            [
+                "LOWW",
+                "LKPR",
+                13
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1052\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerosafin S.A de C.V在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "MMGL",
+                "MMTO",
+                26
+            ],
+            [
+                "MMTO",
+                "MMGL",
+                20
+            ],
+            [
+                "MMGL",
+                "KDAL",
+                5
+            ],
+            [
+                "MMGL",
+                "MMLP",
+                5
+            ],
+            [
+                "MMSD",
+                "MMGL",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1055\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerovida S.A在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "SAZF",
+                "SADF",
+                10
+            ],
+            [
+                "SABE",
+                "SAZF",
+                4
+            ],
+            [
+                "SADF",
+                "BTA",
+                4
+            ],
+            [
+                "SADF",
+                "CZU",
+                3
+            ],
+            [
+                "SUCM",
+                "SADF",
+                3
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1058\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeroways GmbH在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "ETSI",
+                "EDDN",
+                8
+            ],
+            [
+                "EDDN",
+                "ETSI",
+                6
+            ],
+            [
+                "LFLS",
+                "EDDN",
+                4
+            ],
+            [
+                "EDDN",
+                "LFLS",
+                3
+            ],
+            [
+                "EDDN",
+                "EDTY",
+                3
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1059\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerowest GmbH在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "EDDV",
+                "EHAM",
+                6
+            ],
+            [
+                "EDDF",
+                "EDDV",
+                5
+            ],
+            [
+                "LEMD",
+                "LEIB",
+                4
+            ],
+            [
+                "LOWW",
+                "EDDV",
+                4
+            ],
+            [
+                "EDDV",
+                "EDDM",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1060\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air 7 LLC在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "WSSL",
+                "WIII",
+                22
+            ],
+            [
+                "WIII",
+                "WSSL",
+                21
+            ],
+            [
+                "WMSA",
+                "WSSL",
+                20
+            ],
+            [
+                "WIPP",
+                "WSSL",
+                13
+            ],
+            [
+                "WSSL",
+                "RPLC",
+                11
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1061\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Adriatic D.O.O.在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "LCLK",
+                "LGRP",
+                3
+            ],
+            [
+                "LTFM",
+                "LYTV",
+                3
+            ],
+            [
+                "LFMN",
+                "LTBA",
+                3
+            ],
+            [
+                "LTBA",
+                "LFMN",
+                3
+            ],
+            [
+                "UDYZ",
+                "UGSB",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1062\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Alliance Group GmbH在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "EDDK",
+                "LEBL",
+                4
+            ],
+            [
+                "ESSA",
+                "EDDK",
+                3
+            ],
+            [
+                "EGBB",
+                "EDDK",
+                3
+            ],
+            [
+                "EDDK",
+                "OMSJ",
+                3
+            ],
+            [
+                "EDDK",
+                "BIKF",
+                3
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1063\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Alsie在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？",
+        "A": [
+            [
+                "EDDN",
+                "EKSB",
+                37
+            ],
+            [
+                "EKSB",
+                "EDDN",
+                36
+            ],
+            [
+                "EKBI",
+                "LHBP",
+                15
+            ],
+            [
+                "EGKB",
+                "LSMP",
+                15
+            ],
+            [
+                "LSMP",
+                "EKSB",
+                13
+            ]
+        ],
+        "SQL": "SELECT\n        a.dep_icao,\n        a.arr_icao,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1064\"\n        AND a.date_month COLLATE utf8mb4_0900_ai_ci BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.dep_icao,\n        a.arr_icao\nORDER BY\n        num DESC\n        LIMIT 5;"
+    }
+]

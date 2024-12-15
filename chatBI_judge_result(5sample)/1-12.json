@@ -1,0 +1,274 @@
+[
+    {
+        "Q": "Zenata Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Tlemcen Province, Algeria",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Zenata Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT country_name,\n       city_name\nFROM airport_fbo_details\nWHERE airport_name = 'Zenata Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "country_name": "Algeria",
+                "city_name": "Tlemcen Province"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.5
+    },
+    {
+        "Q": "Chenega Bay机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Chenega, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Chenega Bay\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT country_name,\n       city_name\nFROM airport_fbo_details\nWHERE airport_name = 'Chenega Bay'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "country_name": "United States",
+                "city_name": "Chenega"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.49
+    },
+    {
+        "Q": "Kennedy Intranational机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Newborn, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Kennedy Intranational\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT country_name,\n       city_name\nFROM airport_fbo_details\nWHERE airport_name = 'Kennedy International'\nLIMIT 50;",
+        "actual_answer": [],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.52
+    },
+    {
+        "Q": "Lundin机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Revillo, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Lundin\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT DISTINCT country_name,\n                city_name\nFROM airport_fbo_details\nORDER BY country_name,\n         city_name\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Bagram"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Bamiyan"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Camp Bastion"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Chaghcharan"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Darwaz"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Faizabad"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Herat"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Jalalabad"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Kabul"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Kandahar"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Khost"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Khwahan"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Kunduz"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Lashkar Gah"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Maimanah"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Mazar-i-sharif"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Qalah-ye Now"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Sharan"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Sheghnan"
+            },
+            {
+                "country_name": "Afghanistan",
+                "city_name": "Zaranj"
+            },
+            {
+                "country_name": "Albania",
+                "city_name": "Kukes District"
+            },
+            {
+                "country_name": "Albania",
+                "city_name": "Tirana"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Adrar"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Ain El Ibel"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Algiers Province"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Annaba Province"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Batna Province"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Bejaia"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Biskra"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Bordj Badji Mokhtar"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Boufarik"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Boussaada"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Chlef"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Commune de Bechar"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Constantine"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Djanet"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "El Bayadh"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "El Golea"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "El Hamadna"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "El Oued Province"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Ghardaia Province"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Hassi Messaoud"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Hassi R'mel"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Illizi"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "In Amenas"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "In Guezzam"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "In Salah"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Jijel Province"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Laghouat"
+            },
+            {
+                "country_name": "Algeria",
+                "city_name": "Mascara Province"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 19.31
+    },
+    {
+        "Q": "Colorado Plains Regl机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Akron, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Colorado Plains Regl\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT country_name,\n       city_name\nFROM airport_fbo_details\nWHERE airport_name = 'Colorado Plains Regl'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "country_name": "United States",
+                "city_name": "Akron"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 15.4
+    },
+    {
+        "correct_rate": 60.0,
+        "sample_size": 5,
+        "correct_count": 3,
+        "average_time": 14.04
+    }
+]

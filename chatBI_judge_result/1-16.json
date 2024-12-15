@@ -1,0 +1,920 @@
+[
+    {
+        "Q": "Clipper National Air航司的官网链接是什么？",
+        "A": "http://www.clipperjet.es",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Clipper National Air\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Clipper National Air'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.clipperjet.es"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.94
+    },
+    {
+        "Q": "Acropolis Aviation Ltd航司的官网链接是什么？",
+        "A": "http://www.acropolis-aviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Acropolis Aviation Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Acropolis Aviation Ltd'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.acropolis-aviation.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.48
+    },
+    {
+        "Q": "Call & Fly航司的官网链接是什么？",
+        "A": "http://www.callandfly.eu",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Call & Fly\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Call &amp; Fly'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.callandfly.eu"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.14
+    },
+    {
+        "Q": "Aircompany North-west航司的官网链接是什么？",
+        "A": "https://northwest.aero/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Aircompany North-west\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name,\n       supplier_website\nFROM supplier_details\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "24/7 Jet Inc.",
+                "supplier_website": "http://www.247jet.com"
+            },
+            {
+                "supplier_name": "247 Aviation Ltd",
+                "supplier_website": "https://247aviation.co.uk/"
+            },
+            {
+                "supplier_name": "45 North Aviation",
+                "supplier_website": "http://www.45northaviation.com"
+            },
+            {
+                "supplier_name": "A-OK Jets",
+                "supplier_website": "http://www.aokjets.com"
+            },
+            {
+                "supplier_name": "AAC Jet",
+                "supplier_website": "http://www.aacjet.com"
+            },
+            {
+                "supplier_name": "AB Jets",
+                "supplier_website": "https://www.abjets.com"
+            },
+            {
+                "supplier_name": "Fly Tyrol",
+                "supplier_website": "https://www.flytyrol.com"
+            },
+            {
+                "supplier_name": "Abelag Aviation",
+                "supplier_website": "https://www.luxaviation.com"
+            },
+            {
+                "supplier_name": "ABS Jets",
+                "supplier_website": "https://www.absjets.com"
+            },
+            {
+                "supplier_name": "AC Aviation Charter AG(Switzerland)",
+                "supplier_website": "https://www.aviationcharter.ch"
+            },
+            {
+                "supplier_name": "AC Aviation Charter(Austria)",
+                "supplier_website": "http://www.aviationcharter.ch"
+            },
+            {
+                "supplier_name": "ACASS Canada Ltd",
+                "supplier_website": "https://acass.com/"
+            },
+            {
+                "supplier_name": "ACASS(Ireland)",
+                "supplier_website": "https://acass.com/"
+            },
+            {
+                "supplier_name": "Accent Airways LLC",
+                "supplier_website": "http://accentairways.com"
+            },
+            {
+                "supplier_name": "ACI Jet",
+                "supplier_website": "http://www.acijet.com"
+            },
+            {
+                "supplier_name": "ACM Air Charter",
+                "supplier_website": "http://www.acm-air-charter.de"
+            },
+            {
+                "supplier_name": "Acropolis Aviation Ltd",
+                "supplier_website": "http://www.acropolis-aviation.com"
+            },
+            {
+                "supplier_name": "Action Air Express",
+                "supplier_website": "http://www.actionairexpress.com"
+            },
+            {
+                "supplier_name": "Adirondack Flying Service",
+                "supplier_website": "http://www.flyanywhere.com"
+            },
+            {
+                "supplier_name": "ADM Aviation Executive",
+                "supplier_website": null
+            },
+            {
+                "supplier_name": "Advanced Air LLC",
+                "supplier_website": "http://flyadvancedair.com"
+            },
+            {
+                "supplier_name": "Aelia S.R.L",
+                "supplier_website": "https://www.AElia.it"
+            },
+            {
+                "supplier_name": "AEM Aviation",
+                "supplier_website": "http://www.aemaviation.com"
+            },
+            {
+                "supplier_name": "Aergo International Pty Ltd",
+                "supplier_website": "https://www.aergo.com.au/"
+            },
+            {
+                "supplier_name": "Aero Air Charter LLC",
+                "supplier_website": "http://www.flywithaero.com"
+            },
+            {
+                "supplier_name": "Aero Asahi Corporation",
+                "supplier_website": "http://www.aeroasahi.co.jp"
+            },
+            {
+                "supplier_name": "Aero Centers",
+                "supplier_website": "https://www.eppsaviation.com"
+            },
+            {
+                "supplier_name": "Aero Charter Inc.",
+                "supplier_website": "http://aerocharter.com"
+            },
+            {
+                "supplier_name": "Aero Dynamic Jets",
+                "supplier_website": "https://aerodynamicjets.com/"
+            },
+            {
+                "supplier_name": "Aero JL S.A de C.V",
+                "supplier_website": "https://www.aerojl.com"
+            },
+            {
+                "supplier_name": "Aero Sotravia",
+                "supplier_website": "https://www.aero-sotravia.com"
+            },
+            {
+                "supplier_name": "Aero Transporte S.A.",
+                "supplier_website": "http://www.atsaperu.com"
+            },
+            {
+                "supplier_name": "Aero-Tech Services Inc.",
+                "supplier_website": "http://www.aerotechservices.com"
+            },
+            {
+                "supplier_name": "Aerocardal",
+                "supplier_website": "https://www.aerocardal.com"
+            },
+            {
+                "supplier_name": "Aerodynamics Malaga",
+                "supplier_website": "https://www.aerodynamics.es"
+            },
+            {
+                "supplier_name": "Aeroeste",
+                "supplier_website": "http://aeroeste.com"
+            },
+            {
+                "supplier_name": "Aeromas",
+                "supplier_website": "http://www.aeromas.com/"
+            },
+            {
+                "supplier_name": "Aeronautical Charter Inc.",
+                "supplier_website": "https://www.goflyaci.com"
+            },
+            {
+                "supplier_name": "Aeronaves Tsm S.A.",
+                "supplier_website": "http://www.aeronavestsm.com"
+            },
+            {
+                "supplier_name": "Aeropartner",
+                "supplier_website": "http://www.aeropartner.com"
+            },
+            {
+                "supplier_name": "Aerorutas",
+                "supplier_website": "https://aerorutas.com.ar/"
+            },
+            {
+                "supplier_name": "Aerosafin S.A de C.V",
+                "supplier_website": "http://www.aerosafin.com"
+            },
+            {
+                "supplier_name": "Aerovias DAP",
+                "supplier_website": "https://dapairline.com/"
+            },
+            {
+                "supplier_name": "Aerovida S.A",
+                "supplier_website": "http://www.aerovida.com"
+            },
+            {
+                "supplier_name": "Aeroways GmbH",
+                "supplier_website": "https://www.aeroways.com"
+            },
+            {
+                "supplier_name": "Aerowest GmbH",
+                "supplier_website": "https://aerowest.net/"
+            },
+            {
+                "supplier_name": "Air 7 LLC",
+                "supplier_website": "http://www.flyair7.com"
+            },
+            {
+                "supplier_name": "Air Adriatic D.O.O.",
+                "supplier_website": "https://www.air-adriatic.com"
+            },
+            {
+                "supplier_name": "Air Alliance Group GmbH",
+                "supplier_website": "http://air-alliance.de"
+            },
+            {
+                "supplier_name": "Air Alsie",
+                "supplier_website": "http://www.alsie.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.43
+    },
+    {
+        "Q": "Castle Aviation Inc.航司的官网链接是什么？",
+        "A": "http://www.castleair.com/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Castle Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name,\n       supplier_website\nFROM supplier_details\nWHERE supplier_name IN ('Castle Aviation Inc.',\n                        'M&amp;n Aviation Inc.')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Castle Aviation Inc.",
+                "supplier_website": "http://www.castleair.com/"
+            },
+            {
+                "supplier_name": "M&amp;n Aviation Inc.",
+                "supplier_website": "https://www.mandn.aero/"
+            },
+            {
+                "supplier_name": "Castle Aviation Inc.",
+                "supplier_website": "https://www.castleair.com/"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 12.56
+    },
+    {
+        "Q": "Pinnacle Air Charter LLC航司的官网链接是什么？",
+        "A": "http://www.pinnacleaviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Pinnacle Air Charter LLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Pinnacle Air Charter LLC'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.pinnacleaviation.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.36
+    },
+    {
+        "Q": "ATI Jet Inc.航司的官网链接是什么？",
+        "A": "https://atijet.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"ATI Jet Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'ATI Jet Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://atijet.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.58
+    },
+    {
+        "Q": "Susiair航司的官网链接是什么？",
+        "A": "https://www.susiair.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Susiair\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Susiair'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://www.susiair.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.43
+    },
+    {
+        "Q": "Speedbird Jets航司的官网链接是什么？",
+        "A": "https://speedbirdjets.com/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Speedbird Jets\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Speedbird Jets'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://speedbirdjets.com/"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.03
+    },
+    {
+        "Q": "Boomerang Air Charter航司的官网链接是什么？",
+        "A": "http://flyboomerang.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Boomerang Air Charter\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Boomerang Air Charter'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://flyboomerang.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.43
+    },
+    {
+        "Q": "Jetport航司的官网链接是什么？",
+        "A": "http://www.jetport.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Jetport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Jetport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.jetport.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.69
+    },
+    {
+        "Q": "Thaden Charter航司的官网链接是什么？",
+        "A": "https://flyozcharter.squarespace.com/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Thaden Charter\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Thaden Charter'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://flyozcharter.squarespace.com/"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.07
+    },
+    {
+        "Q": "Execuflight Inc.航司的官网链接是什么？",
+        "A": "http://www.execuflight.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Execuflight Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Execuflight Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.execuflight.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.84
+    },
+    {
+        "Q": "Hillsboro Aviation Inc.航司的官网链接是什么？",
+        "A": "http://www.hillsboroaviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Hillsboro Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name,\n       supplier_website\nFROM supplier_details\nWHERE supplier_name IN ('Hillsboro Aviation Inc.',\n                        'M&amp;n Aviation Inc.')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Hillsboro Aviation Inc.",
+                "supplier_website": "http://www.hillsboroaviation.com"
+            },
+            {
+                "supplier_name": "M&amp;n Aviation Inc.",
+                "supplier_website": "https://www.mandn.aero/"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.24
+    },
+    {
+        "Q": "Millennium Jet S.R.L.航司的官网链接是什么？",
+        "A": "https://www.millenniumjet.it",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Millennium Jet S.R.L.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Millennium Jet S.R.L.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://www.millenniumjet.it"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 38.33
+    },
+    {
+        "Q": "Heron Luftfahrt GmbH航司的官网链接是什么？",
+        "A": "https://www.heronaviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Heron Luftfahrt GmbH\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Heron Luftfahrt GmbH'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://www.heronaviation.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.24
+    },
+    {
+        "Q": "Eastern Air Express航司的官网链接是什么？",
+        "A": "http://www.easternairexpress.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Eastern Air Express\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Eastern Air Express'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.easternairexpress.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.46
+    },
+    {
+        "Q": "Private Flite Aviation航司的官网链接是什么？",
+        "A": "https://pfajets.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Private Flite Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Private Flite Aviation'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://pfajets.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.59
+    },
+    {
+        "Q": "Execujet Caribbean航司的官网链接是什么？",
+        "A": "http://www.execujet.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Execujet Caribbean\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Execujet Caribbean'\nLIMIT 1;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.execujet.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.22
+    },
+    {
+        "Q": "Best Jets Int.航司的官网链接是什么？",
+        "A": "http://www.bestjetsinternational.comscheduling@bestjetsintl.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Best Jets Int.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Best Jets Int.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.bestjetsinternational.comscheduling@bestjetsintl.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.25
+    },
+    {
+        "Q": "Fiba Air航司的官网链接是什么？",
+        "A": "https://www.fibaair.com.tr",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Fiba Air\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Fiba Air'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://www.fibaair.com.tr"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.55
+    },
+    {
+        "Q": "Euro Link航司的官网链接是什么？",
+        "A": "http://www.flyeurolink.de",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Euro Link\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Euro Link'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.flyeurolink.de"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.4
+    },
+    {
+        "Q": "Volato航司的官网链接是什么？",
+        "A": "http://www.flyvolato.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Volato\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Volato'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.flyvolato.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.52
+    },
+    {
+        "Q": "Jet Aviation Business Jets AG航司的官网链接是什么？",
+        "A": "https://www.jetaviation.com/charter",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Jet Aviation Business Jets AG\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Jet Aviation Business Jets AG'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://www.jetaviation.com/charter"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 15.35
+    },
+    {
+        "Q": "Villers Air Services Ltd航司的官网链接是什么？",
+        "A": "http://www.villersair.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Villers Air Services Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Villers Air Services Ltd'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.villersair.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.63
+    },
+    {
+        "Q": "Zulu Air Charter航司的官网链接是什么？",
+        "A": "https://www.flyzuluair.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Zulu Air Charter\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Zulu Air Charter'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://www.flyzuluair.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.69
+    },
+    {
+        "Q": "Business Jet Access航司的官网链接是什么？",
+        "A": "https://www.businessjetservices.com/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Business Jet Access\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Business Jet Access'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://www.businessjetservices.com/"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.28
+    },
+    {
+        "Q": "Skynet LLC航司的官网链接是什么？",
+        "A": "https://www.skynetcharter.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Skynet LLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Skynet LLC'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://www.skynetcharter.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 31.05
+    },
+    {
+        "Q": "Carson Air Ltd航司的官网链接是什么？",
+        "A": "http://www.carsonair.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Carson Air Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Carson Air Ltd'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.carsonair.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.39
+    },
+    {
+        "Q": "Magna Aviation航司的官网链接是什么？",
+        "A": "https://www.magna-aviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Magna Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Magna Aviation'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://www.magna-aviation.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.12
+    },
+    {
+        "Q": "Central American Airways Inc.航司的官网链接是什么？",
+        "A": "https://jetcaa.com/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Central American Airways Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Central American Airways Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://jetcaa.com/"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.65
+    },
+    {
+        "Q": "Executive Aviation Services航司的官网链接是什么？",
+        "A": "http://executiveaviationservices.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Executive Aviation Services\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Executive Aviation Services'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://executiveaviationservices.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.88
+    },
+    {
+        "Q": "KlasJet航司的官网链接是什么？",
+        "A": "http://www.klasjet.aero",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"KlasJet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'KlasJet'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.klasjet.aero"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.21
+    },
+    {
+        "Q": "MC Havacilik航司的官网链接是什么？",
+        "A": "http://mchavacilik.com/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"MC Havacilik\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'MC Havacilik'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://mchavacilik.com/"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.89
+    },
+    {
+        "Q": "Lyddon Aero Center航司的官网链接是什么？",
+        "A": "http://www.lyddonaero.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Lyddon Aero Center\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Lyddon Aero Center'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.lyddonaero.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.93
+    },
+    {
+        "Q": "Executive Airlink Inc.航司的官网链接是什么？",
+        "A": "https://executiveairlink.com/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Executive Airlink Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Executive Airlink Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://executiveairlink.com/"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.88
+    },
+    {
+        "Q": "Wing Aviation Charter Services LLC航司的官网链接是什么？",
+        "A": "http://www.wingaviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Wing Aviation Charter Services LLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Wing Aviation Charter Services LLC'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.wingaviation.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.03
+    },
+    {
+        "Q": "Fas Finow Air Service GmbH航司的官网链接是什么？",
+        "A": "http://www.finow-air-service.de",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Fas Finow Air Service GmbH\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Fas Finow Air Service GmbH'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.finow-air-service.de"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.52
+    },
+    {
+        "Q": "Starflite Aviation航司的官网链接是什么？",
+        "A": "http://www.starfliteaviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Starflite Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Starflite Aviation'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.starfliteaviation.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.93
+    },
+    {
+        "Q": "Presidential Aviation Inc.航司的官网链接是什么？",
+        "A": "https://www.presidential-aviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Presidential Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name,\n       supplier_website\nFROM supplier_details\nWHERE supplier_name IN ('M&amp;n Aviation Inc.',\n                        'Presidential Aviation Inc.')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "M&amp;n Aviation Inc.",
+                "supplier_website": "https://www.mandn.aero/"
+            },
+            {
+                "supplier_name": "Presidential Aviation Inc.",
+                "supplier_website": "https://www.presidential-aviation.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.05
+    },
+    {
+        "Q": "Kenai Aviation Operations LLC航司的官网链接是什么？",
+        "A": "https://kenaiaviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Kenai Aviation Operations LLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Kenai Aviation Operations LLC'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://kenaiaviation.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.67
+    },
+    {
+        "Q": "Mid South Jets Inc.航司的官网链接是什么？",
+        "A": "https://midsouthjets.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Mid South Jets Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Mid South Jets Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://midsouthjets.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.09
+    },
+    {
+        "Q": "Maine Instrument Flight航司的官网链接是什么？",
+        "A": "https://www.maineinstrumentflight.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Maine Instrument Flight\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Maine Instrument Flight'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://www.maineinstrumentflight.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.67
+    },
+    {
+        "Q": "Let's Fly Helicopter And Jet航司的官网链接是什么？",
+        "A": "https://www.lfhj.fr",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Let's Fly Helicopter And Jet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "No answer",
+        "actual_answer": "No answer",
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 4.68
+    },
+    {
+        "Q": "ASI Charter Inc.航司的官网链接是什么？",
+        "A": "http://www.asicharters.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"ASI Charter Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'ASI Charter Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.asicharters.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.59
+    },
+    {
+        "Q": "Premiair航司的官网链接是什么？",
+        "A": "https://www.flypremiair.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Premiair\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Premiair'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://www.flypremiair.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.92
+    },
+    {
+        "Q": "Stargazer Aviation航司的官网链接是什么？",
+        "A": "http://www.stargazeraviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Stargazer Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Stargazer Aviation'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.stargazeraviation.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.57
+    },
+    {
+        "Q": "Executive Air Services航司的官网链接是什么？",
+        "A": "https://www.eascharter.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Executive Air Services\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Executive Air Services'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "https://www.eascharter.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.29
+    },
+    {
+        "Q": "Privaira航司的官网链接是什么？",
+        "A": "http://www.privaira.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Privaira\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Privaira'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.privaira.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.85
+    },
+    {
+        "Q": "Clay Lacy Aviation航司的官网链接是什么？",
+        "A": "http://claylacy.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Clay Lacy Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Clay Lacy Aviation'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://claylacy.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.22
+    },
+    {
+        "correct_rate": 88.0,
+        "sample_size": 50,
+        "correct_count": 44,
+        "average_time": 11.74
+    }
+]

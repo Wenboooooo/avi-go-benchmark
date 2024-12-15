@@ -1,0 +1,150 @@
+[
+    {
+        "Q": "Dassault Falcon 2000LX机型的机身长度是多少？",
+        "A": "20.23 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000LX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 2000LX'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            },
+            {
+                "aircraft_length": "20.23"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.27
+    },
+    {
+        "Q": "Dassault Falcon 900C机型的机身长度是多少？",
+        "A": "20.21 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900C\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 900C'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "20.21"
+            },
+            {
+                "aircraft_length": "20.21"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.02
+    },
+    {
+        "Q": "Embraer ERJ 135机型的机身长度是多少？",
+        "A": "26.34 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Embraer ERJ 135\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Embraer ERJ 135'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "26.34"
+            },
+            {
+                "aircraft_length": "26.34"
+            },
+            {
+                "aircraft_length": "26.34"
+            },
+            {
+                "aircraft_length": "26.34"
+            },
+            {
+                "aircraft_length": "26.34"
+            },
+            {
+                "aircraft_length": "26.34"
+            },
+            {
+                "aircraft_length": "26.34"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.16
+    },
+    {
+        "Q": "Embraer Lineage 1000机型的机身长度是多少？",
+        "A": "36.24 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Embraer Lineage 1000\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Embraer Lineage 1000'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "36.24"
+            },
+            {
+                "aircraft_length": "36.24"
+            },
+            {
+                "aircraft_length": "36.24"
+            },
+            {
+                "aircraft_length": "36.24"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.07
+    },
+    {
+        "Q": "Beechjet 65机型的机身长度是多少？",
+        "A": "14.77 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 65\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_length\nFROM aircraft_details\nWHERE aircraft_model_name = 'Beechjet 65'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_length": "14.77"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.17
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 5,
+        "correct_count": 5,
+        "average_time": 7.14
+    }
+]
