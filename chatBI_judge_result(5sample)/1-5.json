@@ -1,0 +1,78 @@
+[
+    {
+        "Q": "飞机注册号为N808CE的飞机是哪一家公司的？",
+        "A": "Shoreline Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N808CE\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n808ce'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Shoreline Aviation Inc."
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.48
+    },
+    {
+        "Q": "飞机注册号为N906TR的飞机是哪一家公司的？",
+        "A": "Sierra West Airlines",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N906TR\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'n906tr'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Sierra West Airlines"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.89
+    },
+    {
+        "Q": "飞机注册号为N571AW的飞机是哪一家公司的？",
+        "A": "CSI Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N571AW\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_details.supplier_name\nFROM aircraft_details\nJOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id\nWHERE aircraft_details.pure_reg = 'n571aw'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "CSI Aviation Inc."
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.21
+    },
+    {
+        "Q": "飞机注册号为C-FSEP的飞机是哪一家公司的？",
+        "A": "Image Air Charter",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FSEP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'cfsep'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Image Air Charter"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.18
+    },
+    {
+        "Q": "飞机注册号为CN-SRL的飞机是哪一家公司的？",
+        "A": "Sarah Airways",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"CN-SRL\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'cnsrl'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Sarah Airways"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.7
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 5,
+        "correct_count": 5,
+        "average_time": 7.69
+    }
+]

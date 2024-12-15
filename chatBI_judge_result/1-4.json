@@ -1,0 +1,926 @@
+[
+    {
+        "Q": "Los Alamos有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Los Alamos, 四字码：KLAM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Los Alamos\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Los Alamos'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Los Alamos",
+                "icao_code": "KLAM"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.36
+    },
+    {
+        "Q": "Olean有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cattaraugus Co Olean, 四字码：KOLE",
+            "机场名称：Giermek Executive, 四字码：8G3",
+            "机场名称：Reiss Game Farm, 四字码：75NY"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Olean\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Olean'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Cattaraugus Co Olean",
+                "icao_code": "KOLE"
+            },
+            {
+                "airport_name": "Giermek Executive",
+                "icao_code": "8G3"
+            },
+            {
+                "airport_name": "Reiss Game Farm",
+                "icao_code": "75NY"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 27.01
+    },
+    {
+        "Q": "Patos De Minas有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Patos De Minas, 四字码：SNPD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Patos De Minas\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Patos De Minas'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Patos De Minas",
+                "icao_code": "SNPD"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.74
+    },
+    {
+        "Q": "Tehachapi有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Tehachapi Mun, 四字码：KTSP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tehachapi\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Tehachapi'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Tehachapi Mun",
+                "icao_code": "KTSP"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.75
+    },
+    {
+        "Q": "CAPRIVI有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Lianshulu, 四字码：FYLS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"CAPRIVI\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'CAPRIVI'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Lianshulu",
+                "icao_code": "FYLS"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 18.11
+    },
+    {
+        "Q": "Damme有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Damme, 四字码：EDWC"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Damme\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Damme'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Damme",
+                "icao_code": "EDWC"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.58
+    },
+    {
+        "Q": "Lahore有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Allama Iqbal International Airport, 四字码：OPLA",
+            "机场名称：Walton, 四字码：OPLH"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Lahore\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Lahore'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Allama Iqbal International Airport",
+                "icao_code": "OPLA"
+            },
+            {
+                "airport_name": "Walton",
+                "icao_code": "OPLH"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.47
+    },
+    {
+        "Q": "Falfurrias有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Brooks County, 四字码：KBKS",
+            "机场名称：Cage Ranch, 四字码：7TE2"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Falfurrias\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Falfurrias'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Brooks County",
+                "icao_code": "KBKS"
+            },
+            {
+                "airport_name": "Cage Ranch",
+                "icao_code": "7TE2"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.42
+    },
+    {
+        "Q": "Hato Corozal有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Hato Corozal, 四字码：SKHC"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hato Corozal\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Hato Corozal'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Hato Corozal",
+                "icao_code": "SKHC"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.83
+    },
+    {
+        "Q": "Aracuai有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Aracuai, 四字码：SNUI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Aracuai\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Aracuai'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Aracuai",
+                "icao_code": "SNUI"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 16.69
+    },
+    {
+        "Q": "Faisalabad有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Faisalabad International Airport, 四字码：OPFA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Faisalabad\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Faisalabad'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Faisalabad International Airport",
+                "icao_code": "OPFA"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.58
+    },
+    {
+        "Q": "Postville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Dale Delight, 四字码：IA45"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Postville\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Postville'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Dale Delight",
+                "icao_code": "IA45"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 16.96
+    },
+    {
+        "Q": "Aktobe有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Aktobe Airport, 四字码：UATT"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Aktobe\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Aktobe'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Aktobe Airport",
+                "icao_code": "UATT"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.54
+    },
+    {
+        "Q": "Budjala有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Gwaka, 四字码：FZFW"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Budjala\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Budjala'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Gwaka",
+                "icao_code": "FZFW"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.94
+    },
+    {
+        "Q": "Condoto有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Condoto Airport, 四字码：SKCD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Condoto\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Condoto'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Condoto Airport",
+                "icao_code": "SKCD"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 18.53
+    },
+    {
+        "Q": "Willoughby有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Willoughby Lost Nation Mun, 四字码：KLNN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Willoughby\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Willoughby'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Willoughby Lost Nation Mun",
+                "icao_code": "KLNN"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.46
+    },
+    {
+        "Q": "Oakham有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：RAF Cottesmore, 四字码：EGXJ"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Oakham\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Oakham'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "RAF Cottesmore",
+                "icao_code": "EGXJ"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 18.04
+    },
+    {
+        "Q": "Swanton有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Las Trancas, 四字码：17CL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Swanton\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Swanton'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Las Trancas",
+                "icao_code": "17CL"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 16.47
+    },
+    {
+        "Q": "Homalin有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Homalin Airport, 四字码：VYHL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Homalin\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Homalin'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Homalin Airport",
+                "icao_code": "VYHL"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 18.83
+    },
+    {
+        "Q": "Takume有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Takume Airport, 四字码：NTKM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Takume\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Takume'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Takume Airport",
+                "icao_code": "NTKM"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.87
+    },
+    {
+        "Q": "Sao Vicente有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cesária Évora Airport, 四字码：GVSV"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Sao Vicente\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Sao Vicente'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Cesária Évora Airport",
+                "icao_code": "GVSV"
+            },
+            {
+                "airport_name": "Cesária Évora Airport",
+                "icao_code": "GVSV"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 17.44
+    },
+    {
+        "Q": "Lafayette Parish有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Sievers Field, 四字码：LS21"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Lafayette Parish\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Lafayette Parish'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Sievers Field",
+                "icao_code": "LS21"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.17
+    },
+    {
+        "Q": "Readington Township有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Peters, 四字码：4NJ8",
+            "机场名称：Reading Regl Spaatz, 四字码：KRDG",
+            "机场名称：Solberg/Hunterdon, 四字码：N51"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Readington Township\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Readington Township'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Peters",
+                "icao_code": "4NJ8"
+            },
+            {
+                "airport_name": "Reading Regl Spaatz",
+                "icao_code": "KRDG"
+            },
+            {
+                "airport_name": "Reading Regl Spaatz",
+                "icao_code": "KRDG"
+            },
+            {
+                "airport_name": "Solberg/Hunterdon",
+                "icao_code": "N51"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.39
+    },
+    {
+        "Q": "Loja有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Loja Airport, 四字码：SECA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Loja\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Loja'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Loja Airport",
+                "icao_code": "SECA"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 21.23
+    },
+    {
+        "Q": "West Siang有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Along, 四字码：VEAN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"West Siang\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'West Siang'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Along",
+                "icao_code": "VEAN"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.75
+    },
+    {
+        "Q": "Tachikawa有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Tachikawa, 四字码：RJTC"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tachikawa\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Tachikawa'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Tachikawa",
+                "icao_code": "RJTC"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.89
+    },
+    {
+        "Q": "Southeast Fairbanks有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Horsfeld, 四字码：4Z5"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Southeast Fairbanks\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Southeast Fairbanks'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Horsfeld",
+                "icao_code": "4Z5"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.61
+    },
+    {
+        "Q": "Jacks Reef有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Anthonson, 四字码：NY28"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Jacks Reef\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Jacks Reef'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Anthonson",
+                "icao_code": "NY28"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.11
+    },
+    {
+        "Q": "King Salmon有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：King Salmon Airport, 四字码：PAKN"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"King Salmon\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'King Salmon'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "King Salmon Airport",
+                "icao_code": "PAKN"
+            },
+            {
+                "airport_name": "King Salmon Airport",
+                "icao_code": "PAKN"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 16.89
+    },
+    {
+        "Q": "Big Mountain有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Big Mountain, 四字码：PABM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Big Mountain\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Big Mountain'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Big Mountain",
+                "icao_code": "PABM"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.25
+    },
+    {
+        "Q": "Kagau有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Kagau Airport, 四字码：AGKG"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Kagau\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Kagau'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Kagau Airport",
+                "icao_code": "AGKG"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.46
+    },
+    {
+        "Q": "Halifax有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Halifax Stanfield International Airport, 四字码：CYHZ",
+            "机场名称：Johnston Farm, 四字码：10NC",
+            "机场名称：Shearwater, 四字码：CYAW"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Halifax\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Halifax'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Shearwater",
+                "icao_code": "CYAW"
+            },
+            {
+                "airport_name": "Johnston Farm",
+                "icao_code": "10NC"
+            },
+            {
+                "airport_name": "Halifax Stanfield International Airport",
+                "icao_code": "CYHZ"
+            },
+            {
+                "airport_name": "Halifax Stanfield International Airport",
+                "icao_code": "CYHZ"
+            },
+            {
+                "airport_name": "Halifax Stanfield International Airport",
+                "icao_code": "CYHZ"
+            },
+            {
+                "airport_name": "Halifax Stanfield International Airport",
+                "icao_code": "CYHZ"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 16.45
+    },
+    {
+        "Q": "Saint Ignatius有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：St Ignatius, 四字码：52S"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Saint Ignatius\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Saint Ignatius'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "St Ignatius",
+                "icao_code": "52S"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.43
+    },
+    {
+        "Q": "Coondewanna有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Coondewanna Airport, 四字码：YCWA"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Coondewanna\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Coondewanna'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Coondewanna Airport",
+                "icao_code": "YCWA"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.33
+    },
+    {
+        "Q": "Camooweal有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Camooweal, 四字码：YCMW"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Camooweal\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Camooweal'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Camooweal",
+                "icao_code": "YCMW"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.51
+    },
+    {
+        "Q": "Nuku Hiva有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Nuku Hiva Airport, 四字码：NTMD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Nuku Hiva\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Nuku Hiva'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Nuku Hiva Airport",
+                "icao_code": "NTMD"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.68
+    },
+    {
+        "Q": "Berner有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Broken Ranch, 四字码：GA76"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Berner\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Berner'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Broken Ranch",
+                "icao_code": "GA76"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.97
+    },
+    {
+        "Q": "Rangeley有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Stephen A Bean Municipal, 四字码：8B0"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Rangeley\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Rangeley'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Stephen A Bean Municipal",
+                "icao_code": "8B0"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 21.01
+    },
+    {
+        "Q": "Bridgeville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Huey, 四字码：DE14"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Bridgeville\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Bridgeville'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Huey",
+                "icao_code": "DE14"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.24
+    },
+    {
+        "Q": "Grass Creek有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Dague Strip, 四字码：II12"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Grass Creek\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Grass Creek'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Dague Strip",
+                "icao_code": "II12"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.56
+    },
+    {
+        "Q": "Iligan City有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Iligan, 四字码：RPMI"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Iligan City\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Iligan City'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Iligan",
+                "icao_code": "RPMI"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.37
+    },
+    {
+        "Q": "Cadillac有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Wexford County, 四字码：KCAD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Cadillac\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Cadillac'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Wexford County",
+                "icao_code": "KCAD"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.55
+    },
+    {
+        "Q": "San Pedro有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：San Pedro Airport, 四字码：MZSP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"San Pedro\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name IN ('San Pedro',\n                    'San-pedro',\n                    'San Pedro Sula')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "San Pedro Airport",
+                "icao_code": "MZSP"
+            },
+            {
+                "airport_name": "San Pedro Airport",
+                "icao_code": "DISP"
+            },
+            {
+                "airport_name": "Ramon Villeda Morales Airport",
+                "icao_code": "MHLM"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 19.63
+    },
+    {
+        "Q": "Hattfjelldal有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Hattfjelldal, 四字码：ENHT"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Hattfjelldal\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Hattfjelldal'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Hattfjelldal",
+                "icao_code": "ENHT"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.56
+    },
+    {
+        "Q": "Arvidsjaur有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Arvidsjaur Airport, 四字码：ESNX"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Arvidsjaur\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Arvidsjaur'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Arvidsjaur Airport",
+                "icao_code": "ESNX"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.44
+    },
+    {
+        "Q": "Karenga有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Kidepo National, 四字码：HUKD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Karenga\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Karenga'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Kidepo National",
+                "icao_code": "HUKD"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.41
+    },
+    {
+        "Q": "Laneville有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：2C Ranch, 四字码：10TS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Laneville\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Laneville'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "2C Ranch",
+                "icao_code": "10TS"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 18.14
+    },
+    {
+        "Q": "Brive-la-gaillarde有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Brive-La-Gaillarde Airport, 四字码：LFSL"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Brive-la-gaillarde\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Brive-la-gaillarde'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Brive-La-Gaillarde Airport",
+                "icao_code": "LFSL"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 17.24
+    },
+    {
+        "Q": "Mueang Chiang Rai District有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Chiang Rai Mae Fah Luang International Airport, 四字码：VTCT",
+            "机场名称：Old Chiang Rai Airport, 四字码：VTCR"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Mueang Chiang Rai District\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Mueang District'\nLIMIT 50;",
+        "actual_answer": [],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 16.81
+    },
+    {
+        "Q": "Moxos有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：SAN IGNACIO DE MOXOS, 四字码：SLSM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Moxos\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Moxos'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "SAN IGNACIO DE MOXOS",
+                "icao_code": "SLSM"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.24
+    },
+    {
+        "correct_rate": 88.0,
+        "sample_size": 50,
+        "correct_count": 44,
+        "average_time": 16.0
+    }
+]

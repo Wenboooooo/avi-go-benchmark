@@ -1,0 +1,845 @@
+[
+    {
+        "Q": "停场在Manassas Regl Davis的所有航司有哪些？",
+        "A": [
+            "MRB Aviation",
+            "TRITON AIRWAYS"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KHEF\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KHEF\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.31
+    },
+    {
+        "Q": "停场在Teterboro Airport的所有航司有哪些？",
+        "A": [
+            "JET GEEKS AVIATION MAINTENANCE INC.",
+            "Baker Aviation, LLC",
+            "PREMIER PRIVATE JETS",
+            "Dreamline Aviation, Llc",
+            "CLAY LACY AVIATION INC.",
+            "Worldwide Jet Charter, Inc.",
+            "Pegasus Elite Aviation",
+            "SOLAIRUS AVIATION",
+            "ACI Jet",
+            "TRADEWIND AVIATION",
+            "Glock Aviation GmbH",
+            "ALBINATI AERONAUTICS S.A.",
+            "VistaJet US Inc.",
+            "Talon Air, Inc.",
+            "Prime Jet, LLC",
+            "Planet Nine Private Air",
+            "JETRIGHT AIR MANAGEMENT",
+            "JET EDGE",
+            "JET STORY",
+            "VISTAJET LTD. [MALTA]",
+            "Eastern Air Express, Inc.",
+            "Northeastern Aviation Corp.",
+            "STA Jets",
+            "Hera Enterprises, LLC",
+            "CHARTRIGHT AIR INC.",
+            "XOJET AVIATION",
+            "SPIRITJETS LLC",
+            "M & N Equipment",
+            "Leviate Air",
+            "JET LINX AVIATION",
+            "International Group, Llc"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KTEB\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KTEB\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.25
+    },
+    {
+        "Q": "停场在Sabiha Gokcen Airport的所有航司有哪些？",
+        "A": [
+            "EXXAERO B.V."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LTFJ\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LTFJ\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.77
+    },
+    {
+        "Q": "停场在Malta International Airport的所有航司有哪些？",
+        "A": [
+            "VISTAJET LTD. [MALTA]",
+            "VISTAJET AVIATION SERVICES",
+            "GAMA AVIATION [UK]",
+            "AIR BOHEMIA",
+            "SmallFly Co. Ltd",
+            "SILVER CLOUD AIR",
+            "BUSINESSAIR a.s."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LMML\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LMML\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.28
+    },
+    {
+        "Q": "停场在Witham的所有航司有哪些？",
+        "A": [
+            "JET EDGE",
+            "NXT JET INC.",
+            "NXT Jet (Wing Aviation Group)",
+            "Gary Jet Center",
+            "CSI AVIATION INC. [USA]"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KSUA\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EGWU\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 5.96
+    },
+    {
+        "Q": "停场在John Glenn Columbus International Airport的所有航司有哪些？",
+        "A": [
+            "NORTHERN JET MANAGEMENT INC.",
+            "GRANDVIEW AVIATION",
+            "Pittsburgh Jet Center"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KCMH\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KCMH\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.32
+    },
+    {
+        "Q": "停场在Farnborough的所有航司有哪些？",
+        "A": [
+            "Brenzil PTY. Ltd.",
+            "LONDON EXECUTIVE AVIATION",
+            "EXECUTIVE JET CHARTER [UK]",
+            "EXXAERO B.V.",
+            "TAG AVIATION MALTA",
+            "Ortac Operations Managment Ltd",
+            "AIR BOHEMIA",
+            "ACASS CANADA LTD.",
+            "GAMA AVIATION [UK]",
+            "Qatar Executive",
+            "Gama Aviation Llc",
+            "FLY WALES"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EGLF\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EGLF\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.24
+    },
+    {
+        "Q": "停场在Gary Chicago Intl的所有航司有哪些？",
+        "A": [
+            "DUMONT AIRCRAFT CHARTER",
+            "SOLAIRUS AVIATION"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KGYY\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KGYY\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.23
+    },
+    {
+        "Q": "停场在Clark Regl的所有航司有哪些？",
+        "A": [
+            "Aircraft Evaluation & Management Inc.",
+            "Crew Aviation LLC"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KJVY\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KJVY\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.01
+    },
+    {
+        "Q": "停场在Los Angeles International Airport的所有航司有哪些？",
+        "A": [
+            "Starjet, Inc.",
+            "SPIRITJETS LLC",
+            "Cirrus Aviation"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KLAX\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KLAX\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.05
+    },
+    {
+        "Q": "停场在Liege Airport的所有航司有哪些？",
+        "A": [
+            "VALAIR AVIACAO",
+            "ASL"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EBLG\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EBLG\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.12
+    },
+    {
+        "Q": "停场在Melbourne Airport的所有航司有哪些？",
+        "A": [
+            "AUSTRALIAN CORPORATE JET CENTRES P/L"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"YMML\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"YMML\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.4
+    },
+    {
+        "Q": "停场在Moenchengladbach的所有航司有哪些？",
+        "A": [
+            "OHL AIR CHARTERFLUG GMBH & CO. KG",
+            "MirAir",
+            "LUXAVIATION GERMANY",
+            "DAS PRIVATE JETS",
+            "JK JETKONTOR AG",
+            "Swiss Private Jet SA",
+            "AIR HAMBURG",
+            "JetClub Malta Ltd",
+            "STARWINGS DORTMUND LUFTFAHRT",
+            "SYLT AIR",
+            "FSH Luftfahrtunternehmen GmbH"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EDLN\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EDLN\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.43
+    },
+    {
+        "Q": "停场在Los Angeles Van Nuys Airport的所有航司有哪些？",
+        "A": [
+            "VistaJet US Inc.",
+            "CLAY LACY AVIATION INC.",
+            "Planet Nine Private Air",
+            "CHRYSLER AVIATION INC.",
+            "Dreamline Aviation, Llc",
+            "Silver Air",
+            "Pegasus Elite Aviation",
+            "TRANS-EXEC AIR SERVICE INC.",
+            "Shoreline Aviation Inc",
+            "Prime Jet, LLC",
+            "JOURNEY AVIATION LLC",
+            "Chicago Jet Group",
+            "Contour Aviation",
+            "JET79",
+            "XCEL JET MANAGEMENT INC.",
+            "Sun Air Jets",
+            "SOLAIRUS AVIATION",
+            "VEE NEAL AVIATION",
+            "STA Jets",
+            "Qatar Executive",
+            "24/7 Jet, Inc",
+            "Execuflight, Inc.",
+            "Keystone Aviation, LLC",
+            "Latitude 33 Aviation",
+            "VISTAJET AVIATION SERVICES",
+            "COVE PARTNERS LLC",
+            "XOJET AVIATION",
+            "Discovery Jets",
+            "JETNETHERLANDS",
+            "Polaris Aviation Solutions, Llc",
+            "Cirrus Aviation",
+            "LYON AVIATION INC.",
+            "Gama Aviation Llc"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KVNY\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KVNY\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.35
+    },
+    {
+        "Q": "停场在Chino的所有航司有哪些？",
+        "A": [
+            "Wilderness Aircraft",
+            "Worldwide Jet Charter, Inc."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KCNO\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KCNO\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.15
+    },
+    {
+        "Q": "停场在Nuremberg Airport的所有航司有哪些？",
+        "A": [
+            "VISTAJET LTD. [MALTA]",
+            "ALLIANCE EXECUTIVE JETS LTD.",
+            "FAIR AIR [GERMANY]",
+            "Fly Away Boutique Aviation",
+            "Novans Jets",
+            "Franconia Air Service GmbH"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EDDN\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EDDN\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.98
+    },
+    {
+        "Q": "停场在Orlando Sanford International Airport的所有航司有哪些？",
+        "A": [
+            "Sentient Jet",
+            "AIR UNLIMITED [FL-USA]",
+            "Elite Air, Inc.",
+            "Choice Aviation, LLC"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KSFB\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KSFB\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.61
+    },
+    {
+        "Q": "停场在St Louis Regl的所有航司有哪些？",
+        "A": [
+            "Modesto Jet Center",
+            "WING AVIATION CHARTER SERVICES LLC",
+            "Airshare",
+            "Alerion Aviation",
+            "Custom Jet Charters",
+            "Travel CBS",
+            "Liberty Jet Management"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KALN\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KALN\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.8
+    },
+    {
+        "Q": "停场在Corpus Christi International Airport的所有航司有哪些？",
+        "A": [
+            "ATI Jet Inc."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KCRP\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KCRP\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.92
+    },
+    {
+        "Q": "停场在Port Hawkesbury的所有航司有哪些？",
+        "A": [
+            "IMAGE AIR CHARTER"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"CYPD\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"CYPD\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.11
+    },
+    {
+        "Q": "停场在Drake Field的所有航司有哪些？",
+        "A": [
+            "PRIVATE JETS INC.",
+            "CREAMER PILOT SERVICES LLC"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KFYV\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KFYV\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.22
+    },
+    {
+        "Q": "停场在Executive的所有航司有哪些？",
+        "A": [
+            "CB SKYSHARE",
+            "LYON AVIATION INC."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KORL\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KORL\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.22
+    },
+    {
+        "Q": "停场在Samandira Ab的所有航司有哪些？",
+        "A": [
+            "PROAIR AVIATION"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LTBX\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LTBX\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.23
+    },
+    {
+        "Q": "停场在St Louis Downtown的所有航司有哪些？",
+        "A": [
+            "Executive Jet Management (Ejm)",
+            "Svenskt Industriflyg AB"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KCPS\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KCPS\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.27
+    },
+    {
+        "Q": "停场在Raleigh–Durham International Airport的所有航司有哪些？",
+        "A": [
+            "CAUSEY AVIATION SERVICE INC.",
+            "Koury Aviation, Inc.",
+            "CLAY LACY AVIATION INC."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KRDU\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KRDU\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.04
+    },
+    {
+        "Q": "停场在Kinston Regl Jetport At Stalli的所有航司有哪些？",
+        "A": [
+            "Aira Aviation",
+            "PACIFIC COAST JET CHARTER"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KISO\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = (\n        SELECT icao_code FROM ai_database_dev.airport_fbo_details WHERE airport_name = \"Kinston Regl Jetport At Stalli\"\n    ) COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 5.22
+    },
+    {
+        "Q": "停场在Trenton Mercer Airport的所有航司有哪些？",
+        "A": [
+            "Aviation Charters, Inc.",
+            "CAPITAL JET CHARTER CORPORATION",
+            "Four Corners Aviation"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KTTN\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KTTN\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.47
+    },
+    {
+        "Q": "停场在Bremen Airport的所有航司有哪些？",
+        "A": [
+            "ATLAS AIR SERVICE",
+            "CENTRELINE AV",
+            "SAXONAIR CHARTER",
+            "PROAIR AVIATION"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EDDW\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EDDW\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.99
+    },
+    {
+        "Q": "停场在Paine Field Airport的所有航司有哪些？",
+        "A": [
+            "GLOBAL AVIATION INC. [OR-USA]",
+            "KENMORE AIR"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KPAE\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KPAE\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.58
+    },
+    {
+        "Q": "停场在Ataturk的所有航司有哪些？",
+        "A": [
+            "VALLJET",
+            "Point Jet Aviation",
+            "GENEL HAVACILIK",
+            "Redstar Aviation(air ambulance)",
+            "Charter Jets",
+            "LUXAVIATION GERMANY",
+            "AlfaJet Aviation",
+            "JetPartner",
+            "WIND ROSE AVIATION",
+            "Silver Air",
+            "SOVEREIGN BUSINESS JETS",
+            "Atmospherica Aviation",
+            "BikiniJet",
+            "Momentum Aviation(AK Havacilik- Avinode)"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LTBA\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LTBA\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.2
+    },
+    {
+        "Q": "停场在Gallatin Field Airport的所有航司有哪些？",
+        "A": [
+            "CLAY LACY AVIATION INC.",
+            "VistaJet US Inc.",
+            "Plus One Air",
+            "Ridgeline Aviation, Inc.",
+            "SOLAIRUS AVIATION",
+            "flyADVANCED",
+            "XCEL JET MANAGEMENT INC."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KBZN\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KBZN\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.37
+    },
+    {
+        "Q": "停场在Missoula International Airport的所有航司有哪些？",
+        "A": [
+            "Jet Methods, Inc",
+            "VistaJet US Inc."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KMSO\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KMSO\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.25
+    },
+    {
+        "Q": "停场在Karlsruhe/Baden-Baden Airport的所有航司有哪些？",
+        "A": [
+            "AIR HAMBURG",
+            "PROAIR AVIATION",
+            "Executive Jet Management Europe"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EDSB\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EDSB\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.12
+    },
+    {
+        "Q": "停场在Berlin Brandenburg Airport的所有航司有哪些？",
+        "A": [
+            "ARROW AVIATION LTD. [ISRAEL]",
+            "WINDROSE AIR JETCHARTER",
+            "VISTAJET LTD. [MALTA]",
+            "Gestair",
+            "AIR INDEPENDENCE GMBH",
+            "JET STORY",
+            "Comlux Aviation",
+            "SPARFELL LUFTFAHRT GMBH",
+            "LUXAVIATION GERMANY"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EDDB\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EDDB\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.44
+    },
+    {
+        "Q": "停场在Nashville International Airport的所有航司有哪些？",
+        "A": [
+            "JETRIGHT AIR MANAGEMENT",
+            "Silver Air",
+            "Aero Charter, Inc",
+            "AB JETS",
+            "NICHOLAS AIR",
+            "Baker Aviation, LLC",
+            "CHRYSLER AVIATION INC."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KBNA\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KBNA\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.39
+    },
+    {
+        "Q": "停场在Tulsa International Airport的所有航司有哪些？",
+        "A": [
+            "CREAMER PILOT SERVICES LLC",
+            "AIR UNLIMITED [FL-USA]",
+            "M & N Equipment",
+            "JET LINX AVIATION"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KTUL\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KTUL\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.27
+    },
+    {
+        "Q": "停场在Southern Wisconsin Regl的所有航司有哪些？",
+        "A": [
+            "N-Jet"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KJVL\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KJVL\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.44
+    },
+    {
+        "Q": "停场在Plant City的所有航司有哪些？",
+        "A": [
+            "Sun Air Jets"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KPCM\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KPCM\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.51
+    },
+    {
+        "Q": "停场在Toledo Express Airport的所有航司有哪些？",
+        "A": [
+            "Seneca Flight Operations"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KTOL\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KTOL\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.23
+    },
+    {
+        "Q": "停场在Vaclav Havel Airport的所有航司有哪些？",
+        "A": [
+            "ECLAIR AVIATION",
+            "ELITE JET [SLOVAKIA]",
+            "FLY-COOP KFT",
+            "AEROPARTNER",
+            "Gemini Wings a.s.",
+            "SPARFELL LUFTFAHRT GMBH",
+            "JETBEE CZECH"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LKPR\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LKPR\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.99
+    },
+    {
+        "Q": "停场在Fort Lauderdale Executive Airport的所有航司有哪些？",
+        "A": [
+            "Executive Aviation Corporation",
+            "FLORIDA JET SERVICE INC.",
+            "HOP-A-JET",
+            "REVA AIR AMBULANCE INC.",
+            "JOURNEY AVIATION LLC",
+            "Discovery Jets",
+            "New World Aviation Inc.",
+            "Alerion Aviation",
+            "MV Jets",
+            "Execuflight, Inc.",
+            "Southern Air Charter",
+            "Skyways Charter LLC",
+            "JETRIGHT AIR MANAGEMENT",
+            "ARGENTINA JETS",
+            "Northeastern Aviation Corp.",
+            "ROYAL AIR FREIGHT INC.",
+            "Crew Aviation LLC",
+            "Plane Travel LLC",
+            "Craig Air Center, Inc.",
+            "FLIGHTPATH CHARTER AIRWAYS",
+            "Bighorn Airways, Inc.",
+            "PREMIER PRIVATE JETS",
+            "EMPYREAL JET",
+            "NOVAJET [CANADA]"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KFXE\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KFXE\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.71
+    },
+    {
+        "Q": "停场在Kiskunlachaza Airport的所有航司有哪些？",
+        "A": [
+            "JET SOLUTION"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LHKK\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LHKK\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.83
+    },
+    {
+        "Q": "停场在Olbia-Costa Smeralda Airport的所有航司有哪些？",
+        "A": [
+            "LUXAVIATION GERMANY",
+            "GLOBAL JET LUXEMBOURG",
+            "VISTAJET LTD. [MALTA]",
+            "Sun Air Jets",
+            "DC AVIATION GMBH",
+            "SILVER CLOUD AIR",
+            "FLYING SERVICE",
+            "OHL AIR CHARTERFLUG GMBH & CO. KG",
+            "K5-Aviation GmbH"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LIEO\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LIEO\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.23
+    },
+    {
+        "Q": "停场在St. Pete-Clearwater International Airport的所有航司有哪些？",
+        "A": [
+            "Dupage Aerospace Corporation",
+            "Elite Air, Inc.",
+            "Waltzing Matilda Aviation Llc",
+            "PRIVATE JETS INC."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KPIE\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KPIE\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.67
+    },
+    {
+        "Q": "停场在Dupage的所有航司有哪些？",
+        "A": [
+            "Dupage Aerospace Corporation",
+            "Integrated Flight Resources, Inc.",
+            "XOJET AVIATION",
+            "Executive Jet Management (Ejm)",
+            "Aero Dynamic Jets"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KDPA\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KDPA\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.5
+    },
+    {
+        "Q": "停场在Francisco Sarabia International Airport的所有航司有哪些？",
+        "A": [
+            "Jackson Jet Center"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"MMTC\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"MMTC\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.13
+    },
+    {
+        "Q": "停场在Midway International Airport的所有航司有哪些？",
+        "A": [
+            "JET EDGE",
+            "CLAY LACY AVIATION INC.",
+            "GLOBAL JET LUXEMBOURG"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KMDW\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KMDW\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.8
+    },
+    {
+        "Q": "停场在Le Bourget的所有航司有哪些？",
+        "A": [
+            "VALLJET",
+            "VISTAJET LTD. [MALTA]",
+            "Fly Rai Jets, LLC.",
+            "AVIATION STARLINK",
+            "IXAIR",
+            "HERON LUFTFAHRT",
+            "Salzburg Jet Aviation Gmbh",
+            "LUXAVIATION GERMANY",
+            "PONTAIR",
+            "TAG AVIATION (UK) LTD.",
+            "FLYING SERVICE",
+            "GET1JET",
+            "Airlec Air Espace",
+            "K5-Aviation GmbH",
+            "PROAIR AVIATION",
+            "GLOBAL JET LUXEMBOURG",
+            "Talon Air, Inc.",
+            "AIR INDEPENDENCE GMBH",
+            "Platoon Aviation",
+            "JET SOLUTION",
+            "JETKEY"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LFPB\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LFPB\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.5
+    },
+    {
+        "Q": "停场在Don Mueang International Airport的所有航司有哪些？",
+        "A": [
+            "VIP JETS",
+            "GLOBAL JET LUXEMBOURG"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"VTBD\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"VTBD\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.38
+    },
+    {
+        "Q": "停场在Newcastle Airport的所有航司有哪些？",
+        "A": [
+            "Travel CBS",
+            "VOLATO",
+            "Alerion Aviation",
+            "Bun Air Corporation"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KILG\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EGNT\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 5.24
+    },
+    {
+        "correct_rate": 94.0,
+        "sample_size": 50,
+        "correct_count": 47,
+        "average_time": 4.67
+    }
+]

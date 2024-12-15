@@ -1,0 +1,88 @@
+[
+    {
+        "Q": "Hillsboro Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Washington County",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Hillsboro Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name,\n       supplier_city_name\nFROM supplier_details\nWHERE supplier_name IN ('Hillsboro Aviation Inc.',\n                        'M&amp;n Aviation Inc.')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Hillsboro Aviation Inc.",
+                "supplier_city_name": "Washington County"
+            },
+            {
+                "supplier_name": "M&amp;n Aviation Inc.",
+                "supplier_city_name": "Boca Raton"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.34
+    },
+    {
+        "Q": "Pro Airways LLC航司的总部位于哪个城市？",
+        "A": "Plymouth",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Pro Airways LLC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Pro Airways LLC'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Plymouth"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.19
+    },
+    {
+        "Q": "Jet Air Inc.航司的总部位于哪个城市？",
+        "A": "Galesburg",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Jet Air Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'Jet Air Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Galesburg"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.18
+    },
+    {
+        "Q": "Ventis Aviation Inc.航司的总部位于哪个城市？",
+        "A": "Wheeling",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"Ventis Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name,\n       supplier_city_name\nFROM supplier_details\nWHERE supplier_name IN ('M&amp;n Aviation Inc.',\n                        'Ventis Aviation Inc.')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "M&amp;n Aviation Inc.",
+                "supplier_city_name": "Boca Raton"
+            },
+            {
+                "supplier_name": "Ventis Aviation Inc.",
+                "supplier_city_name": "Wheeling"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.3
+    },
+    {
+        "Q": "STA Jets航司的总部位于哪个城市？",
+        "A": "Santa Ana",
+        "SQL": "SELECT supplier_city_name FROM supplier_details WHERE supplier_name = \"STA Jets\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_city_name\nFROM supplier_details\nWHERE supplier_name = 'STA Jets'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_city_name": "Santa Ana"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.59
+    },
+    {
+        "correct_rate": 60.0,
+        "sample_size": 5,
+        "correct_count": 3,
+        "average_time": 7.92
+    }
+]

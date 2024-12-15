@@ -1,0 +1,103 @@
+[
+    {
+        "Q": "Los Alamos有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Los Alamos, 四字码：KLAM"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Los Alamos\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Los Alamos'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Los Alamos",
+                "icao_code": "KLAM"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 60.36
+    },
+    {
+        "Q": "Olean有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Cattaraugus Co Olean, 四字码：KOLE",
+            "机场名称：Giermek Executive, 四字码：8G3",
+            "机场名称：Reiss Game Farm, 四字码：75NY"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Olean\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Olean'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Cattaraugus Co Olean",
+                "icao_code": "KOLE"
+            },
+            {
+                "airport_name": "Giermek Executive",
+                "icao_code": "8G3"
+            },
+            {
+                "airport_name": "Reiss Game Farm",
+                "icao_code": "75NY"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 15.08
+    },
+    {
+        "Q": "Patos De Minas有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Patos De Minas, 四字码：SNPD"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Patos De Minas\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Patos De Minas'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Patos De Minas",
+                "icao_code": "SNPD"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.85
+    },
+    {
+        "Q": "Tehachapi有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Tehachapi Mun, 四字码：KTSP"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"Tehachapi\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Tehachapi'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Tehachapi Mun",
+                "icao_code": "KTSP"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.59
+    },
+    {
+        "Q": "CAPRIVI有哪些机场？请给出机场名称和对应的四字码。",
+        "A": [
+            "机场名称：Lianshulu, 四字码：FYLS"
+        ],
+        "SQL": "SELECT DISTINCT airport_name, icao_code FROM airport_fbo_details WHERE city_name = \"CAPRIVI\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT airport_name,\n       icao_code\nFROM airport_fbo_details\nWHERE city_name = 'Caprivi'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "airport_name": "Lianshulu",
+                "icao_code": "FYLS"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.61
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 5,
+        "correct_count": 5,
+        "average_time": 21.9
+    }
+]

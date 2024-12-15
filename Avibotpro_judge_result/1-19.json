@@ -1,0 +1,458 @@
+[
+    {
+        "Q": "Gulfstream G280机型的机身长度是多少？",
+        "A": "20.3 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G280\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G280的机身长度为20.3米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.13
+    },
+    {
+        "Q": "BAe 125-700机型的机身长度是多少？",
+        "A": "15.21 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"BAe 125-700\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "BAe 125-700机型的机身长度为24.36米（约79.9英尺）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.23
+    },
+    {
+        "Q": "Dassault Falcon 900LX机型的机身长度是多少？",
+        "A": "20.21 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900LX\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 900LX的机身长度为20.21米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.74
+    },
+    {
+        "Q": "Cessna Citation Ultra机型的机身长度是多少？",
+        "A": "14.9 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Ultra\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation Ultra的机身长度为16.3米。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.68
+    },
+    {
+        "Q": "Cessna Citation CJ2机型的机身长度是多少？",
+        "A": "14.3 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ2\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation CJ2的机身长度为14.3米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 18.0
+    },
+    {
+        "Q": "Beechcraft King Air 350iER机型的机身长度是多少？",
+        "A": "14.23 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350iER\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air 350iER的机身长度为14.23米（约46.7英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.58
+    },
+    {
+        "Q": "Dassault Falcon 2000机型的机身长度是多少？",
+        "A": "20.23 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 2000的机身长度为20.23米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.94
+    },
+    {
+        "Q": "Dassault Falcon 50机型的机身长度是多少？",
+        "A": "18.5 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 50\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 50的机身长度为18.5米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.87
+    },
+    {
+        "Q": "Gulfstream G100机型的机身长度是多少？",
+        "A": "16.94 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G100\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G100的机身长度为16.94米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.98
+    },
+    {
+        "Q": "Dassault Falcon 2000LX机型的机身长度是多少？",
+        "A": "20.23 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000LX\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 2000LX的机身长度为20.23米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.9
+    },
+    {
+        "Q": "Hawker 800XPi机型的机身长度是多少？",
+        "A": "15.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800XPi\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 800XPi 机型的机身长度为 15.6 米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.61
+    },
+    {
+        "Q": "Gulfstream G350机型的机身长度是多少？",
+        "A": "27.23 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G350\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G350的机身长度为27.23米（约89.4英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.1
+    },
+    {
+        "Q": "Hawker 400XP机型的机身长度是多少？",
+        "A": "14.83 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Hawker 400XP\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 400XP的机身长度为14.83米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.86
+    },
+    {
+        "Q": "Dassault Falcon 2000S机型的机身长度是多少？",
+        "A": "20.23 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000S\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 2000S的机身长度为20.23米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.23
+    },
+    {
+        "Q": "Hawker 400机型的机身长度是多少？",
+        "A": "14.12 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Hawker 400\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 400机型的机身长度为14.12米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 13.47
+    },
+    {
+        "Q": "Embraer E190机型的机身长度是多少？",
+        "A": "36.25 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Embraer E190\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer E190的机身长度为36.25米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.04
+    },
+    {
+        "Q": "Cessna Citation VI机型的机身长度是多少？",
+        "A": "16.9 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation VI\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation VI的机身长度为16.3米。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.32
+    },
+    {
+        "Q": "Beechcraft 1900C机型的机身长度是多少？",
+        "A": "17.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft 1900C\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft 1900C的机身长度为17.6英尺（约5.36米）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.31
+    },
+    {
+        "Q": "Gulfstream GIII机型的机身长度是多少？",
+        "A": "25.32 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GIII\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream GIII的机身长度为25.32米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.51
+    },
+    {
+        "Q": "Boeing BBJ机型的机身长度是多少？",
+        "A": "33.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Boeing BBJ\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Boeing BBJ机型的机身长度如下：\n\n1. **Boeing BBJ**: 33.6米\n2. **Boeing BBJ2**: 39.6米\n3. **Boeing BBJ3**: 38.2米\n4. **Boeing BBJ MAX**: 39.5米。\n\n如果您需要更多关于特定型号的信息，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.5
+    },
+    {
+        "Q": "Dassault Falcon 7X机型的机身长度是多少？",
+        "A": "23.38 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 7X\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 7X的机身长度为23.38米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.83
+    },
+    {
+        "Q": "Bombardier Learjet 31ER机型的机身长度是多少？",
+        "A": "14.84 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 31ER\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Learjet 31ER的机身长度为14.84英尺（约4.52米）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 25.71
+    },
+    {
+        "Q": "Beechcraft Baron机型的机身长度是多少？",
+        "A": "14.77 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft Baron\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft Baron机型的机身长度为13.36米。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.91
+    },
+    {
+        "Q": "Boeing BBJ2机型的机身长度是多少？",
+        "A": "39.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Boeing BBJ2\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "波音BBJ2的机身长度为39.6米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.57
+    },
+    {
+        "Q": "Beechcraft King Air 350机型的机身长度是多少？",
+        "A": "14.2 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air 350的机身长度为14.2米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.7
+    },
+    {
+        "Q": "Beechcraft King Air 300机型的机身长度是多少？",
+        "A": "14 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 300\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air 300的机身长度为14.2米（约46.5英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.24
+    },
+    {
+        "Q": "Cessna Citation CJ1+机型的机身长度是多少？",
+        "A": "13 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ1+\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation CJ1+的机身长度为13.4米（约44英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.67
+    },
+    {
+        "Q": "Boeing BBJ3机型的机身长度是多少？",
+        "A": "38.2 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Boeing BBJ3\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Boeing BBJ3的机身长度为38.2米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.63
+    },
+    {
+        "Q": "Pilatus PC-24机型的机身长度是多少？",
+        "A": "16.8 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Pilatus PC-24\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Pilatus PC-24机型的机身长度为24.36英尺（约7.42米）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.73
+    },
+    {
+        "Q": "Gulfstream G550机型的机身长度是多少？",
+        "A": "29.4 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G550\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G550的机身长度为29.4米（96英尺5英寸）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 13.48
+    },
+    {
+        "Q": "Beechcraft King Air 90机型的机身长度是多少？",
+        "A": "10.83 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 90\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air 90的机身长度为10.82米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.81
+    },
+    {
+        "Q": "Cessna Citation XLS机型的机身长度是多少？",
+        "A": "16 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation XLS\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation XLS的机身长度为16米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.25
+    },
+    {
+        "Q": "Hawker 400A机型的机身长度是多少？",
+        "A": "14.63 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Hawker 400A\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 400A的机身长度为14.63米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.77
+    },
+    {
+        "Q": "Piper PA-32机型的机身长度是多少？",
+        "A": "8.4 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-32\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Piper PA-32机型的机身长度为8.4米（27英尺8英寸）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.63
+    },
+    {
+        "Q": "Gulfstream G600机型的机身长度是多少？",
+        "A": "29.29 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G600\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G600的机身长度为29.29英尺（约8.9米）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.08
+    },
+    {
+        "Q": "Cessna Citation Sovereign+机型的机身长度是多少？",
+        "A": "19.35 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Sovereign+\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation Sovereign+的机身长度为19.35米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.86
+    },
+    {
+        "Q": "Bombardier CRJ-200机型的机身长度是多少？",
+        "A": "26.77 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Bombardier CRJ-200\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier CRJ-200机型的机身长度为26.77米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.5
+    },
+    {
+        "Q": "Hawker 850XPi机型的机身长度是多少？",
+        "A": "15.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Hawker 850XPi\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 850XPi的机身长度为15.46米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.25
+    },
+    {
+        "Q": "Hawker 800机型的机身长度是多少？",
+        "A": "15.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 800机型的机身长度为15.6米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.96
+    },
+    {
+        "Q": "Dassault Falcon 900EX机型的机身长度是多少？",
+        "A": "20.21 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900EX\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 900EX的机身长度为20.21米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.94
+    },
+    {
+        "Q": "Beechjet 65机型的机身长度是多少？",
+        "A": "14.77 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 65\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechjet 65机型的机身长度为14.77米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.43
+    },
+    {
+        "Q": "Cessna Citation Encore+机型的机身长度是多少？",
+        "A": "14.74 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Encore+\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation Encore+的机身长度为16.3米。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.49
+    },
+    {
+        "Q": "Cessna Citation Longitude机型的机身长度是多少？",
+        "A": "22.30 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Longitude\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation Longitude的机身长度为87英尺（约26.5米）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.51
+    },
+    {
+        "Q": "Bombardier Learjet 31A机型的机身长度是多少？",
+        "A": "14.84 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 31A\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Learjet 31A的机身长度为14.84米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.05
+    },
+    {
+        "Q": "Airbus A340机型的机身长度是多少？",
+        "A": "63.6 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Airbus A340\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "空中客车A340的机身长度因不同型号而异。以下是一些主要型号的机身长度：\n\n- **A340-200**：长度为 58.4 米\n- **A340-300**：长度为 63.6 米\n- **A340-500**：长度为 67.9 米\n- **A340-600**：长度为 75.3 米\n\n其中，A340-600是机身最长的型号，长度达到75.3米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.23
+    },
+    {
+        "Q": "Cirrus SR20机型的机身长度是多少？",
+        "A": "4.92 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Cirrus SR20\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cirrus SR20的机身长度为4.92米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.13
+    },
+    {
+        "Q": "Honda HondaJet机型的机身长度是多少？",
+        "A": "12.99 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Honda HondaJet\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "HondaJet的机身长度为12.99米（约42.62英尺）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.7
+    },
+    {
+        "Q": "Embraer Legacy 500机型的机身长度是多少？",
+        "A": "20.52 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 500\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer Legacy 500的机身长度为20.52米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.52
+    },
+    {
+        "Q": "Beechcraft King Air B200机型的机身长度是多少？",
+        "A": "13.34 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air B200\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air B200的机身长度为13.36米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.92
+    },
+    {
+        "Q": "Airbus ACJ A318 Elite机型的机身长度是多少？",
+        "A": "31.44 meters",
+        "SQL": "SELECT aircraft_length FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ A318 Elite\" LIMIT 1;",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airbus ACJ A318 Elite的机身长度为31.44米。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.91
+    },
+    {
+        "correct_rate": 80.0,
+        "sample_size": 50,
+        "correct_count": 40,
+        "average_time": 8.87
+    }
+]

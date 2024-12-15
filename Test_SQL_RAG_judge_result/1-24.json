@@ -1,0 +1,608 @@
+[
+    {
+        "Q": "Gulfstream GIV的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream GIV\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream GIV\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.52
+    },
+    {
+        "Q": "Gulfstream GIII的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream GIII\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream GIII\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.57
+    },
+    {
+        "Q": "Dassault Falcon 900LX的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 900LX\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 900LX\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.34
+    },
+    {
+        "Q": "Pilatus PC-24的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Pilatus PC-24\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Pilatus PC-24\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.87
+    },
+    {
+        "Q": "Gulfstream G450的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G450\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G450\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.86
+    },
+    {
+        "Q": "Cessna Citation XLS+的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation XLS+\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation XLS+\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.79
+    },
+    {
+        "Q": "Piper PA-32的飞行高度范围是多少？",
+        "A": [
+            4950.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Piper PA-32\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Piper PA-32\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.51
+    },
+    {
+        "Q": "Hawker 1000的飞行高度范围是多少？",
+        "A": [
+            13106.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 1000\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 1000\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.98
+    },
+    {
+        "Q": "Dassault Falcon 7X的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 7X\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 7X\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.5
+    },
+    {
+        "Q": "Gulfstream G700的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G700\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G700\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.42
+    },
+    {
+        "Q": "Dassault Falcon 2000S的飞行高度范围是多少？",
+        "A": [
+            14326.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 2000S\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 2000S\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.74
+    },
+    {
+        "Q": "Dassault Falcon 900B的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 900B\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 900B\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.36
+    },
+    {
+        "Q": "Beechcraft 1900C的飞行高度范围是多少？",
+        "A": [
+            7620.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft 1900C\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft 1900C\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.78
+    },
+    {
+        "Q": "Bombardier Challenger 605的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 605\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 605\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.6
+    },
+    {
+        "Q": "Dassault Falcon 20F的飞行高度范围是多少？",
+        "A": [
+            12802.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 20F\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 20F\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.68
+    },
+    {
+        "Q": "Airbus ACJ A319的飞行高度范围是多少？",
+        "A": [
+            12500.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Airbus ACJ A319\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Airbus ACJ A319\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.41
+    },
+    {
+        "Q": "Airbus A330的飞行高度范围是多少？",
+        "A": [
+            12634.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Airbus A330\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Airbus A330\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.6
+    },
+    {
+        "Q": "Beechcraft King Air 200的飞行高度范围是多少？",
+        "A": [
+            10668.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 200\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 200\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.58
+    },
+    {
+        "Q": "Gulfstream G280的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G280\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G280\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.76
+    },
+    {
+        "Q": "Dassault Falcon 900C的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 900C\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 900C\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.44
+    },
+    {
+        "Q": "Beechcraft King Air 90的飞行高度范围是多少？",
+        "A": [
+            9144.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 90\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 90\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.17
+    },
+    {
+        "Q": "Embraer Lineage 1000的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Embraer Lineage 1000\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Embraer Lineage 1000\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.38
+    },
+    {
+        "Q": "Dassault Falcon 50的飞行高度范围是多少？",
+        "A": [
+            9449.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 50\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 50\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.27
+    },
+    {
+        "Q": "Bombardier Learjet 31ER的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 31ER\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 31ER\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.29
+    },
+    {
+        "Q": "Bombardier Global 7500的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Global 7500\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Global 7500\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.72
+    },
+    {
+        "Q": "Embraer Phenom 300E的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Embraer Phenom 300E\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Embraer Phenom 300E\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.67
+    },
+    {
+        "Q": "Hawker 4000的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 4000\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 4000\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.19
+    },
+    {
+        "Q": "Bombardier Learjet 55的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 55\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 55\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.3
+    },
+    {
+        "Q": "Cessna Citation II的飞行高度范围是多少？",
+        "A": [
+            13000.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation II\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation II\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.52
+    },
+    {
+        "Q": "Cessna Citation Longitude的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation Longitude\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation Longitude\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.51
+    },
+    {
+        "Q": "Hawker 700A的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 700A\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 700A\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.25
+    },
+    {
+        "Q": "Boeing BBJ的飞行高度范围是多少？",
+        "A": [
+            12500.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Boeing BBJ\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Boeing BBJ\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.56
+    },
+    {
+        "Q": "Cessna Citation VII的飞行高度范围是多少？",
+        "A": [
+            16000.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation VII\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation VII\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.48
+    },
+    {
+        "Q": "Hawker 900XP的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 900XP\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 900XP\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.04
+    },
+    {
+        "Q": "Bombardier Learjet 36的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 36\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 36\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.64
+    },
+    {
+        "Q": "Dassault Falcon 8X的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 8X\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 8X\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.23
+    },
+    {
+        "Q": "Gulfstream G300的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G300\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G300\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.19
+    },
+    {
+        "Q": "Cessna Citation Jet的飞行高度范围是多少？",
+        "A": [
+            12497.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation Jet\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation Jet\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.11
+    },
+    {
+        "Q": "Embraer Phenom 300的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Embraer Phenom 300\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Embraer Phenom 300\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.84
+    },
+    {
+        "Q": "Beechcraft 1900D的飞行高度范围是多少？",
+        "A": [
+            7620.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft 1900D\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft 1900D\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.25
+    },
+    {
+        "Q": "Gulfstream G600的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G600\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Gulfstream G600\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.58
+    },
+    {
+        "Q": "Hawker 400A的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 400A\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Hawker 400A\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.52
+    },
+    {
+        "Q": "Bombardier Global 6500的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Global 6500\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Global 6500\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.58
+    },
+    {
+        "Q": "Honda HondaJet的飞行高度范围是多少？",
+        "A": [
+            13106.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Honda HondaJet\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Honda HondaJet\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.23
+    },
+    {
+        "Q": "Bombardier Learjet 45的飞行高度范围是多少？",
+        "A": [
+            15545.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 45\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Bombardier Learjet 45\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.94
+    },
+    {
+        "Q": "Dassault Falcon 10的飞行高度范围是多少？",
+        "A": [
+            13716.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 10\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Dassault Falcon 10\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.77
+    },
+    {
+        "Q": "BAe 125-700的飞行高度范围是多少？",
+        "A": [
+            13106.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"BAe 125-700\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"BAe 125-700\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.64
+    },
+    {
+        "Q": "Beechcraft King Air 350的飞行高度范围是多少？",
+        "A": [
+            10668.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 350\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 350\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.32
+    },
+    {
+        "Q": "Cirrus SR20的飞行高度范围是多少？",
+        "A": [
+            5300.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cirrus SR20\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cirrus SR20\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.56
+    },
+    {
+        "Q": "Cessna Citation VI的飞行高度范围是多少？",
+        "A": [
+            16000.0
+        ],
+        "SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation VI\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_SQL": "SELECT certified_ceiling FROM dc_aircraft_model WHERE name = \"Cessna Citation VI\" AND certified_ceiling IS NOT NULL LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.57
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 50,
+        "correct_count": 50,
+        "average_time": 3.73
+    }
+]

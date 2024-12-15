@@ -1,0 +1,704 @@
+[
+    {
+        "Q": "注册号为N700NA的飞机的制造年份是什么？",
+        "A": "1994年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N700NA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n700na'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1994
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.97
+    },
+    {
+        "Q": "注册号为N373AR的飞机的制造年份是什么？",
+        "A": "1979年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N373AR\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n373ar'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1979
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.65
+    },
+    {
+        "Q": "注册号为C-FXDB的飞机的制造年份是什么？",
+        "A": "2016年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"C-FXDB\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'cfxdb'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2016
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.86
+    },
+    {
+        "Q": "注册号为G-OSRL的飞机的制造年份是什么？",
+        "A": "2009年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"G-OSRL\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'gosrl'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2009
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.65
+    },
+    {
+        "Q": "注册号为OK-PCF的飞机的制造年份是什么？",
+        "A": "2014年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"OK-PCF\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'okpcf'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2014
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.57
+    },
+    {
+        "Q": "注册号为9H-VJL的飞机的制造年份是什么？",
+        "A": "2015年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"9H-VJL\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = '9hvjl'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2015
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.19
+    },
+    {
+        "Q": "注册号为N409MN的飞机的制造年份是什么？",
+        "A": "2000年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N409MN\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n409mn'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2000
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.74
+    },
+    {
+        "Q": "注册号为N78BQ的飞机的制造年份是什么？",
+        "A": "2004年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N78BQ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n78bq'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2004
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.6
+    },
+    {
+        "Q": "注册号为N716MD的飞机的制造年份是什么？",
+        "A": "2018年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N716MD\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n716md'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2018
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 14.13
+    },
+    {
+        "Q": "注册号为N220F的飞机的制造年份是什么？",
+        "A": "2000年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N220F\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n220f'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2000
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.17
+    },
+    {
+        "Q": "注册号为N402CT的飞机的制造年份是什么？",
+        "A": "2006年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N402CT\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'nct'\nLIMIT 50;",
+        "actual_answer": [],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.41
+    },
+    {
+        "Q": "注册号为F-HMSG的飞机的制造年份是什么？",
+        "A": "2001年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"F-HMSG\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'fhmsg'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2001
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.52
+    },
+    {
+        "Q": "注册号为N18RC的飞机的制造年份是什么？",
+        "A": "1996年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N18RC\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n18rc'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1996
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.52
+    },
+    {
+        "Q": "注册号为N3VJ的飞机的制造年份是什么？",
+        "A": "1991年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N3VJ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n3vj'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1991
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.31
+    },
+    {
+        "Q": "注册号为N652BA的飞机的制造年份是什么？",
+        "A": "2015年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N652BA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n652ba'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2015
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.61
+    },
+    {
+        "Q": "注册号为N970BG的飞机的制造年份是什么？",
+        "A": "1998年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N970BG\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n970bg'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1998
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.96
+    },
+    {
+        "Q": "注册号为N364SM的飞机的制造年份是什么？",
+        "A": "2001年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N364SM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n364sm'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2001
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.94
+    },
+    {
+        "Q": "注册号为TC-MZH的飞机的制造年份是什么？",
+        "A": "1994年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"TC-MZH\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'tcmzh'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1994
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.19
+    },
+    {
+        "Q": "注册号为9H-VJP的飞机的制造年份是什么？",
+        "A": "2015年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"9H-VJP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = '9hvjp'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2015
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.09
+    },
+    {
+        "Q": "注册号为ZK-MFT的飞机的制造年份是什么？",
+        "A": "1988年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"ZK-MFT\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'zkmft'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1988
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.05
+    },
+    {
+        "Q": "注册号为N430S的飞机的制造年份是什么？",
+        "A": "1982年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N430S\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n430s'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1982
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.34
+    },
+    {
+        "Q": "注册号为XA-HNY的飞机的制造年份是什么？",
+        "A": "1998年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"XA-HNY\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'xahny'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1998
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.97
+    },
+    {
+        "Q": "注册号为N535XJ的飞机的制造年份是什么？",
+        "A": "2006年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N535XJ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n535xj'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2006
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.11
+    },
+    {
+        "Q": "注册号为ZS-OKA的飞机的制造年份是什么？",
+        "A": "2017年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"ZS-OKA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'zsoka'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2017
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.59
+    },
+    {
+        "Q": "注册号为N155CG的飞机的制造年份是什么？",
+        "A": "1997年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N155CG\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n155cg'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1997
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.74
+    },
+    {
+        "Q": "注册号为F-HVLJ的飞机的制造年份是什么？",
+        "A": "2003年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"F-HVLJ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'fhvlj'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2003
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.11
+    },
+    {
+        "Q": "注册号为N96CE的飞机的制造年份是什么？",
+        "A": "1993年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N96CE\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n96ce'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1993
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.32
+    },
+    {
+        "Q": "注册号为N330AP的飞机的制造年份是什么？",
+        "A": "2004年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N330AP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n330ap'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2004
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.49
+    },
+    {
+        "Q": "注册号为N300RL的飞机的制造年份是什么？",
+        "A": "2006年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N300RL\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n300rl'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2006
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.71
+    },
+    {
+        "Q": "注册号为N655MM的飞机的制造年份是什么？",
+        "A": "2008年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N655MM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n655mm'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2008
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.14
+    },
+    {
+        "Q": "注册号为N2397T的飞机的制造年份是什么？",
+        "A": "2011年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N2397T\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n2397t'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2011
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.99
+    },
+    {
+        "Q": "注册号为N499GS的飞机的制造年份是什么？",
+        "A": "2004年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N499GS\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n499gs'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2004
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.97
+    },
+    {
+        "Q": "注册号为XA-ONE的飞机的制造年份是什么？",
+        "A": "1998年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"XA-ONE\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'xaone'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1998
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.74
+    },
+    {
+        "Q": "注册号为N451KR的飞机的制造年份是什么？",
+        "A": "2001年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N451KR\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n451kr'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2001
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.02
+    },
+    {
+        "Q": "注册号为N430E的飞机的制造年份是什么？",
+        "A": "2021年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N430E\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n430e'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2021
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.89
+    },
+    {
+        "Q": "注册号为N821CT的飞机的制造年份是什么？",
+        "A": "2006年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N821CT\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n821ct'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2006
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.97
+    },
+    {
+        "Q": "注册号为N290PS的飞机的制造年份是什么？",
+        "A": "2000年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N290PS\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n290ps'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2000
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.02
+    },
+    {
+        "Q": "注册号为PH-SFH的飞机的制造年份是什么？",
+        "A": "2021年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"PH-SFH\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'phsfh'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2021
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.85
+    },
+    {
+        "Q": "注册号为N367LJ的飞机的制造年份是什么？",
+        "A": "2010年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N367LJ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n367lj'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2010
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.83
+    },
+    {
+        "Q": "注册号为N317CQ的飞机的制造年份是什么？",
+        "A": "2001年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N317CQ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n317cq'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2001
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.01
+    },
+    {
+        "Q": "注册号为DC-TTT的飞机的制造年份是什么？",
+        "A": "2005年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"DC-TTT\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'dcttt'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2005
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.03
+    },
+    {
+        "Q": "注册号为N917JG的飞机的制造年份是什么？",
+        "A": "2017年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N917JG\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n917jg'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2017
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 18.73
+    },
+    {
+        "Q": "注册号为N33NE的飞机的制造年份是什么？",
+        "A": "1999年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N33NE\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n33ne'\nLIMIT 1;",
+        "actual_answer": [
+            {
+                "make_year": 1999
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 14.09
+    },
+    {
+        "Q": "注册号为N690VM的飞机的制造年份是什么？",
+        "A": "2021年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N690VM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n690vm'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2021
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.05
+    },
+    {
+        "Q": "注册号为SX-AQG的飞机的制造年份是什么？",
+        "A": "2004年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"SX-AQG\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'sxaqg'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2004
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.88
+    },
+    {
+        "Q": "注册号为N205MS的飞机的制造年份是什么？",
+        "A": "1981年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N205MS\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'n205ms'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1981
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.03
+    },
+    {
+        "Q": "注册号为C-FREQ的飞机的制造年份是什么？",
+        "A": "1997年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"C-FREQ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'cfreq'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 1997
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.93
+    },
+    {
+        "Q": "注册号为LX-LTI的飞机的制造年份是什么？",
+        "A": "2010年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"LX-LTI\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'lxlti'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2010
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 16.0
+    },
+    {
+        "Q": "注册号为SE-MOF的飞机的制造年份是什么？",
+        "A": "2013年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"SE-MOF\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = 'semof'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2013
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 14.49
+    },
+    {
+        "Q": "注册号为9H-AZZA的飞机的制造年份是什么？",
+        "A": "2014年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"9H-AZZA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT make_year\nFROM aircraft_details\nWHERE pure_reg = '9hazza'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "make_year": 2014
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.6
+    },
+    {
+        "correct_rate": 98.0,
+        "sample_size": 50,
+        "correct_count": 49,
+        "average_time": 10.36
+    }
+]

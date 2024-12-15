@@ -1,0 +1,680 @@
+[
+    {
+        "Q": "Fleet information of AEM Aviation？",
+        "A": [
+            "Hawker 800XP"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"AEM Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "AEM Aviation operates a diverse fleet of aircraft designed to meet various travel needs. The fleet includes:\n\n1. **Cessna Citation Series**:\n   - **Cessna Citation Bravo**\n   - **Cessna Citation XLS**\n   - **Cessna Citation Sovereign**\n   - **Cessna Citation III**\n   - **Cessna Citation VII**\n   - **Cessna Citation CJ2+**\n   - **Cessna Citation X**\n\n2. **Hawker Series**:\n   - **Hawker 800XP**\n   - **Hawker 400XP**\n   - **Hawker 850XP**\n\n3. **Embraer Models**:\n   - **Embraer Phenom 100**\n   - **Embraer Phenom 300**\n   - **Embraer Legacy 600**\n\n4. **Other Aircraft**:\n   - **Bombardier Learjet 60**\n   - **Bombardier Global Express XRS**\n   - **Dassault Falcon 20F**\n\nThis fleet allows AEM Aviation to provide a range of services, from short regional flights to longer international trips, ensuring comfort and efficiency for their clients.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 15.36
+    },
+    {
+        "Q": "Fleet information of Oklahoma Aviation LLC？",
+        "A": [
+            "Beechcraft King Air 350i",
+            "Cessna Citation M2",
+            "Cessna Citation Sovereign+",
+            "Cessna Citation CJ4",
+            "Cessna Citation Mustang",
+            "Cessna Citation CJ4",
+            "Honda HondaJet",
+            "Cessna Citation Mustang",
+            "Honda HondaJet"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Oklahoma Aviation LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Oklahoma Aviation LLC operates a diverse fleet of aircraft, which includes:\n\n1. **Cessna 402** - A versatile twin-engine aircraft suitable for various charter services.\n2. **Citation Bravo** - A light jet known for its efficiency and comfort, ideal for short to medium-haul flights.\n3. **Citation XLS** - A midsize jet that offers more space and range, making it suitable for longer trips.\n\nThis fleet allows Oklahoma Aviation to provide personalized and efficient flying experiences, catering to clients who prefer to bypass the hassles of commercial flying. \n\nIf you need more specific details about each aircraft or additional information about their services, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.77
+    },
+    {
+        "Q": "Fleet information of Airshare？",
+        "A": [
+            "Cessna Citation XLS",
+            "Cessna Citation XLS",
+            "Dassault Falcon 7X",
+            "Embraer Legacy 500",
+            "Bombardier Challenger 300",
+            "Cessna Citation XLS",
+            "Embraer Phenom 300",
+            "Dassault Falcon 900",
+            "Bombardier Global 5000",
+            "Bombardier Challenger 300"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Airshare\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airshare operates a well-maintained fleet that includes a variety of aircraft models, catering to different travel needs. Here are the key details about their fleet:\n\n1. **Aircraft Models**:\n   - **Bombardier Learjet 75**\n   - **Cessna Citation CJ4**\n   - **Dassault Falcon 7X**\n\n   This diverse selection allows Airshare to provide flexible options for both business and leisure travel.\n\n2. **Fleet Size**:\n   - Airshare has a small but efficient fleet, which is designed to ensure premium service and flexibility.\n\n3. **Performance and Comfort**:\n   - The aircraft in their fleet are known for their reliability and comfort, making them suitable for a range of clients.\n\nOverall, Airshare's fleet is tailored to meet the demands of its clientele, ensuring a high level of service and comfort during flights.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.09
+    },
+    {
+        "Q": "Fleet information of Jet It Flight Operations？",
+        "A": [
+            "Honda HondaJet",
+            "Gulfstream G150",
+            "Honda HondaJet",
+            "Honda HondaJet",
+            "Honda HondaJet",
+            "Cirrus SR22"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Jet It Flight Operations\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Jet It Flight Operations operates a fleet primarily consisting of Honda HondaJet aircraft. Here are the details of their fleet:\n\n1. **Aircraft Model**: Honda HondaJet\n   - **Registration**: N416JT\n   - **Make Year**: 2020\n   - **Number of Seats**: 5\n   - **Maximum Range**: 2,661 miles\n   - **Base**: KGSO (Piedmont Triad International Airport)\n   - ![Image](https://asserts.avi-go.com/plane_img_jt/aircraft/230706150256481.jpg)\n\n2. **Aircraft Model**: Honda HondaJet\n   - **Registration**: N103JT\n   - **Make Year**: 2018\n   - **Number of Seats**: 5\n   - **Maximum Range**: 2,661 miles\n   - **Base**: KGSO, KILM (Wilmington International Airport)\n   - ![Image](https://asserts.avi-go.com/plane_img_jt/aircraft/230706150256483.jpg)\n\nThe fleet is designed for efficiency and comfort, catering to various flight operations across different routes.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 46.08
+    },
+    {
+        "Q": "Fleet information of Luxaviation UK？",
+        "A": [
+            "Embraer Legacy 600",
+            "Cessna Citation XLS",
+            "Embraer Legacy 650",
+            "Cessna Citation XLS+",
+            "Cessna Citation XLS",
+            "Embraer Phenom 300",
+            "Embraer Legacy 600",
+            "Bombardier Global 6500"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Luxaviation UK\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Luxaviation UK operates a diverse fleet of aircraft, primarily focusing on business aviation. Here are some key details about their fleet:\n\n1. **Aircraft Models**: The fleet includes a variety of aircraft models, with a strong presence of Cessna Citation series and Embraer jets. Some of the notable models in their fleet are:\n   - Cessna Citation XLS\n   - Cessna Citation CJ2+\n   - Embraer Phenom 300\n   - Embraer Legacy 600\n   - Bombardier Learjet 75\n\n2. **Operational Focus**: Luxaviation UK is known for its charter services, catering to various destinations from major UK airports like Farnborough and London. They provide services for both domestic and international flights.\n\n3. **Safety Standards**: The company adheres to stringent safety standards, ensuring that all aircraft are compliant with the latest regulatory requirements.\n\n4. **Fleet Size**: While the exact number of aircraft in the Luxaviation UK fleet is not specified, they are part of a larger network that operates over 260 jets and helicopters globally.\n\n5. **Popular Routes**: Some of the common routes serviced by Luxaviation UK include flights from London to various destinations such as Edinburgh, Jersey, and international locations like Geneva and Frankfurt.\n\nThis information highlights Luxaviation UK's commitment to providing high-quality aviation services with a focus on safety and customer satisfaction. If you need more specific details or have further questions, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 18.94
+    },
+    {
+        "Q": "Fleet information of Paragon Airways？",
+        "A": [
+            "Cessna Citation XLS",
+            "Cessna Citation X",
+            "Cessna Citation XLS",
+            "Cessna Citation Bravo",
+            "Cessna Citation V",
+            "Cessna Citation XLS",
+            "Cessna Citation X",
+            "Cessna Citation Ultra",
+            "Gulfstream GIV",
+            "Cessna Citation XLS"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Paragon Airways\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Paragon Airways operates a small but efficient fleet of aircraft designed for personalized charter services. The fleet includes:\n\n1. **Embraer ERJ 135**\n2. **Embraer ERJ 145**\n3. **Embraer Phenom 300**\n\nThese aircraft are well-suited for various travel needs, particularly focusing on customer satisfaction and flexibility. \n\nIf you need more specific details about the aircraft or services offered, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.35
+    },
+    {
+        "Q": "Fleet information of Voyage Air？",
+        "A": [
+            "Cessna Citation Sovereign",
+            "Cessna Citation CJ1"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Voyage Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Voyage Air operates a diverse fleet primarily consisting of various models of Cessna Citation jets, which are well-regarded for their performance and comfort. Here are some details about their fleet:\n\n1. **Cessna Citation Models**:\n   - **Cessna Citation CJ1**\n   - **Cessna Citation CJ2**\n   - **Cessna Citation CJ3**\n   - **Cessna Citation XLS**\n   - **Cessna Citation Sovereign**\n   - **Cessna Citation Bravo**\n   - **Cessna Citation VII**\n\n2. **Other Aircraft**:\n   - **Bombardier Learjet Models**:\n     - Learjet 35A\n     - Learjet 55\n   - **Beechcraft Models**:\n     - Beechcraft King Air 200\n     - Beechcraft Premier I\n\n3. **Operational Focus**:\n   - The fleet is designed to cater to both business and leisure travelers, providing a range of options for private charters and executive travel.\n\nVoyage Air's fleet is characterized by its agility and efficiency, allowing for personalized service and flexibility in travel arrangements.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.23
+    },
+    {
+        "Q": "Fleet information of Reva Inc.？",
+        "A": [
+            "Bombardier Learjet 45",
+            "Bombardier Learjet 45"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Reva Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Reva Inc. operates a fleet of 16 fixed-wing aircraft, which are dedicated to air ambulance services. This fleet is designed for both short-range and long-range domestic and international flights, ensuring they can meet a variety of medical transport needs. \n\nIf you need more specific details about the types of aircraft or their capabilities, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.53
+    },
+    {
+        "Q": "Fleet information of DSA AS？",
+        "A": [
+            "Cessna Citation CJ1"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"DSA AS\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "DSA AS operates a fleet that includes the Cessna Citation CJ1, which is a model known for its efficiency and comfort. Here are the details of the aircraft in their fleet:\n\n- **Aircraft Model**: Cessna Citation CJ1\n- **Registration**: OK-DSJ\n- **Make Year**: 1999\n- **Seat Capacity**: 5\n- **Maximum Range**: 3,111 km\n- **Base**: LKPR (Prague Václav Havel Airport)\n\nThis aircraft is part of a strategic fleet that allows DSA AS to provide tailored charter services, focusing on personalized travel experiences.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.93
+    },
+    {
+        "Q": "Fleet information of Redstar Aviation？",
+        "A": [
+            "Bombardier Challenger 605",
+            "Bombardier Learjet 45"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Redstar Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Redstar Aviation operates a diverse fleet of aircraft, primarily focused on business and charter services. Here are some key details about their fleet:\n\n1. **Aircraft Models**:\n   - **Bombardier Learjet 45**: A popular choice for business travel, known for its speed and range.\n   - **Cessna Citation Bravo**: A light jet that offers comfort and efficiency for short to medium-haul flights.\n   - **Bombardier Challenger 300**: A mid-size jet that provides a spacious cabin and advanced technology.\n   - **Embraer Legacy 600**: A larger business jet that combines comfort with long-range capabilities.\n   - **Bombardier Global Express**: A long-range business jet known for its luxury and performance.\n\n2. **Fleet Characteristics**:\n   - The aircraft typically have seating capacities ranging from 6 to 9 passengers, depending on the model.\n   - The maximum range of the aircraft varies, with some models capable of flying over 2,600 miles.\n\n3. **Base of Operations**:\n   - Redstar Aviation is based at Istanbul Sabiha Gökçen International Airport (SAW).\n\n4. **Medical Capabilities**:\n   - Some aircraft are equipped with advanced medical equipment, allowing for air ambulance services.\n\n5. **Year of Manufacture**:\n   - The fleet includes aircraft manufactured as recently as 2011, ensuring modern amenities and compliance with current aviation standards.\n\nThis fleet allows Redstar Aviation to cater to a variety of client needs, from corporate travel to medical emergencies.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.94
+    },
+    {
+        "Q": "Fleet information of Millennium Jet S.R.L.？",
+        "A": [
+            "Cessna Citation II"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Millennium Jet S.R.L.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Millennium Jet S.R.L. operates a diverse fleet of aircraft designed to meet various travel needs. Here are some key details about their fleet:\n\n1. **Aircraft Models**:\n   - **Cessna Citation II**: This aircraft can accommodate up to 11 passengers and has a maximum range of approximately 3,700 kilometers. It is known for its reliability and efficiency in private jet travel.\n   - **Cessna Citation Bravo**: Another popular model in their fleet, known for its comfort and performance.\n   - **Beechcraft Premier I**: This aircraft is recognized for its speed and spacious cabin, making it suitable for business travel.\n\n2. **Fleet Size**: The company boasts a modern fleet that includes various models, ensuring they can cater to different customer preferences and travel requirements.\n\n3. **Operational Base**: The primary operational base for Millennium Jet S.R.L. is located at LIPE (Linate Airport, Milan), which facilitates access to numerous destinations across Europe and beyond.\n\n4. **Service Offerings**: Millennium Jet S.R.L. specializes in premium private charters, providing tailored services to meet the specific needs of their clients, whether for business or leisure travel.\n\nFor more detailed information about specific aircraft or services, you may want to visit their official website or contact them directly.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.25
+    },
+    {
+        "Q": "Fleet information of Direct Jet Charter LLC？",
+        "A": [
+            "Pilatus PC-12",
+            "Cessna Citation Latitude"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Direct Jet Charter LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Direct Jet Charter LLC operates a focused fleet that includes the following aircraft:\n\n1. **Cessna Citation Latitude**\n2. **Pilatus PC-12**\n3. **Cessna Citation XLS**\n4. **Cessna Citation CJ2+**\n\nThis strategic selection of aircraft allows Direct Jet Charter LLC to provide personalized and efficient charter services, catering to clients who prefer to bypass the hassles of commercial flying. \n\nIf you need more specific details about each aircraft or their operational capabilities, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.75
+    },
+    {
+        "Q": "Fleet information of Sunnyfield Aviation Associates LLC？",
+        "A": [
+            "Beechcraft King Air 90"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Sunnyfield Aviation Associates LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Sunnyfield Aviation Associates LLC operates a fleet that includes the following aircraft:\n\n1. **Beechcraft King Air 90**\n   - **Model Name:** Beechcraft King Air 90\n   - **Type:** BE9L\n   - **Registration:** N232BG\n   - **Year of Manufacture:** 2008\n   - **Seating Capacity:** 5 passengers\n   - **Maximum Range:** 2,483 miles\n   - **Base Location:** KMMU (Morristown Municipal Airport)\n   - **Image:** ![Beechcraft King Air 90](https://asserts.avi-go.com/plane_img_jt/aircraft/230706150347606.jpg)\n\nThis aircraft is known for its reliability and performance, making it suitable for various charter services. \n\nIf you need more specific details or additional aircraft information, feel free to ask!",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.59
+    },
+    {
+        "Q": "Fleet information of Novajet Aviation Group？",
+        "A": [
+            "Bombardier Challenger 605",
+            "Bombardier Challenger 604",
+            "Cessna 172"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Novajet Aviation Group\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Novajet Aviation Group operates a diverse fleet of aircraft designed to meet various business travel needs. Here are some key details about their fleet:\n\n1. **Aircraft Models**:\n   - **Bombardier Challenger 605**: \n     - Year: 2011\n     - Seats: 12\n     - Max Range: 7,038 km\n     - Base: Toronto Pearson International Airport (CYYZ)\n     - ![Challenger 605](https://asserts.avi-go.com/plane_img/1699601845322021437669819206306.jpg)\n   - **Cessna Citation XLS**:\n     - Year: 2008\n     - Seats: 9\n     - Max Range: 1,100 km\n     - Base: Kitchener/Waterloo Airport (CYKF)\n     - ![Citation XLS](https://asserts.avi-go.com/plane_img_jt/aircraft/230706150653110.png)\n   - **Gulfstream GV**:\n     - Year: 2011\n     - Seats: 14\n     - Max Range: 8,000 km\n     - Base: Toronto Pearson International Airport (CYYZ)\n     - ![Gulfstream GV](https://asserts.avi-go.com/plane_img/169883379512607443381184332379.jpg)\n\n2. **Fleet Characteristics**:\n   - The fleet includes a mix of light jets, mid-size jets, and heavy jets, allowing for flexibility in travel options.\n   - The aircraft are equipped with modern amenities to ensure passenger comfort during flights.\n\n3. **Operational Base**:\n   - Novajet primarily operates from major airports in Canada, including Toronto Pearson International Airport (CYYZ) and Kitchener/Waterloo Airport (CYKF).\n\nThis diverse fleet enables Novajet to cater to a wide range of client needs, from short regional flights to long-haul international travel.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.28
+    },
+    {
+        "Q": "Fleet information of Lhasa Saint Jet Business Aviation？",
+        "A": [
+            "Cessna Citation XLS",
+            "Cessna Citation XLS"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Lhasa Saint Jet Business Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Lhasa Saint Jet Business Aviation operates a fleet that includes the following aircraft:\n\n1. **Cessna Citation XLS**\n   - **Registration**: B-3266\n   - **Make Year**: 2014\n   - **Seat Capacity**: 8\n   - **Maximum Range**: 3,880 km\n   - **Base Locations**: ZSYA, ZUUU, ZUTF\n   - ![Cessna Citation XLS](https://asserts.avi-go.com/plane_img_jt/aircraft/230706142558034.jpg)\n\n2. **Cessna Citation XLS**\n   - **Registration**: B-3299\n   - **Make Year**: 2014\n   - **Seat Capacity**: 8\n   - **Maximum Range**: 3,880 km\n   - **Base Locations**: ZSYA, ZUUU, ZUTF\n   - ![Cessna Citation XLS](https://asserts.avi-go.com/plane_img_jt/aircraft/230706142557029.jpg)\n\nBoth aircraft are designed for business aviation, providing comfort and efficiency for various flight requirements. If you need more specific details or additional aircraft information, feel free to ask!",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.74
+    },
+    {
+        "Q": "Fleet information of Comlux Aviation？",
+        "A": [
+            "Embraer Praetor 600",
+            "Bombardier Challenger 850",
+            "Bombardier Challenger 604",
+            "Airbus ACJ A318 Elite",
+            "Bombardier Global 6500",
+            "Boeing 737",
+            "Airbus ACJ A319",
+            "Boeing 767",
+            "Boeing 787",
+            "Airbus ACJ",
+            "Embraer Legacy 650",
+            "Pilatus PC-24"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Comlux Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Comlux Aviation operates a diverse and luxurious fleet of aircraft, which includes:\n\n- **Total Fleet Size**: 13 aircraft\n- **Aircraft Models**:\n  - **Boeing BBJ 767-200ER** (2002)\n  - **Boeing 787-8** (2013)\n  - **Airbus ACJ319** (2012)\n  - **Airbus ACJ319** (2010)\n  - **Airbus ACJ318**\n\nComlux Aviation is known for providing high-end private jet services, catering to both corporate and leisure clients. Their fleet is designed to offer flexibility and comfort, ensuring a premium travel experience.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.92
+    },
+    {
+        "Q": "Fleet information of Mali Air？",
+        "A": [
+            "Cessna Citation I/SP"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Mali Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Mali Air operates a fleet that includes a variety of aircraft models, primarily focusing on business and private aviation. The fleet consists of:\n\n1. **Cessna Citation Series**:\n   - Cessna Citation CJ1+\n   - Cessna Citation CJ2\n   - Cessna Citation CJ3\n   - Cessna Citation XLS+\n   - Cessna Citation M2\n   - Cessna Citation I/SP\n\n2. **Bombardier Models**:\n   - Bombardier Challenger 350\n\n3. **Pilatus PC-12**: Known for its versatility and reliability.\n\nMali Air is recognized for providing tailored travel solutions, catering to both corporate and leisure clients, and emphasizes punctuality and safety with its well-maintained aircraft.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.09
+    },
+    {
+        "Q": "Fleet information of Fiba Air？",
+        "A": [
+            "Bombardier Challenger 650"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Fiba Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Fiba Air operates a fleet that includes a variety of aircraft types, catering to different travel needs. Here are the key details about their fleet:\n\n1. **Fleet Size**: Fiba Air has a total of **11 aircraft** in its fleet.\n2. **Aircraft Types**: The fleet includes a mix of medium to large jets, such as:\n   - **Bombardier Global series**\n   - **Dassault Falcon 7X**\n   - **Agile Cessna models**.\n\nThis diverse fleet allows Fiba Air to provide tailored and luxurious travel experiences, meeting the demands of both corporate and leisure clients.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.04
+    },
+    {
+        "Q": "Fleet information of Plane Travel Inc.？",
+        "A": [
+            "Cessna 340",
+            "Beechcraft Baron",
+            "Piper PA",
+            "Cessna Citation I/SP",
+            "Cessna 210",
+            "Cessna Citation I/SP"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Plane Travel Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Plane Travel Inc. operates a compact fleet of 6 aircraft, primarily serving North and Central America. The fleet includes the following models:\n\n1. **Beechcraft Baron**\n2. **Cessna 210**\n3. **Cessna Citation I/SP**\n\nThese aircraft are designed for short to medium-haul flights, providing versatile, reliable, and efficient services. The company emphasizes personalized service and flexibility, making it a suitable choice for clients seeking dedicated travel solutions on a smaller scale. \n\nIf you need more specific details about each aircraft or their capabilities, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.64
+    },
+    {
+        "Q": "Fleet information of Flycom D.O.O.？",
+        "A": [
+            "Cessna Citation Bravo"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Flycom D.O.O.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Flycom D.O.O. is a niche charter airline based in Slovenia, primarily serving various regions within Europe, Africa, and Eastern Europe. The company focuses on providing personalized services and operates a specialized fleet that includes primarily the **Cessna Citation Bravo**. This singular focus allows Flycom to tailor client experiences in private air travel.\n\nIf you need more specific details about their fleet or services, feel free to ask!",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 19.06
+    },
+    {
+        "Q": "Fleet information of Bairline？",
+        "A": [
+            "Cessna Citation CJ2",
+            "Cessna Citation X"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Bairline\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bairline operates a specialized fleet designed for efficient and luxurious travel. The fleet consists of two aircraft models:\n\n1. **Cessna Citation CJ2**\n2. **Cessna Citation X**\n\nThis selection allows Bairline to cater to clients seeking personalized itineraries, making it a popular choice among business travelers and tourists who prioritize comfort and efficiency.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 14.62
+    },
+    {
+        "Q": "Fleet information of International Group LLC？",
+        "A": [
+            "Hawker 800XP",
+            "Hawker 400XP",
+            "Hawker 800XPi",
+            "Hawker 400",
+            "Hawker 900XP"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"International Group LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "International Group LLC operates a substantial fleet of 21 aircraft, focusing on high-end, bespoke charter services primarily throughout North America, Europe, and Central America. Their fleet includes a variety of premium models, such as:\n\n- **Bombardier Challenger 604**\n- **Global 6000**\n- **Global Express**\n- **Global Express XRS**\n- **Gulfstream models** including G550, G650, GIV, and GIV-SP.\n\nThis diverse range of aircraft allows them to cater to various client needs, emphasizing luxury and performance.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.8
+    },
+    {
+        "Q": "Fleet information of Searca S.A.？",
+        "A": [
+            "Beechcraft 1900D",
+            "Gulfstream G200",
+            "Hawker 400"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Searca S.A.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Searca S.A. operates a diverse fleet of aircraft, which includes the following models:\n\n1. **Beechcraft 1900D**\n   - **Registration**: HK-4499\n   - **Year**: 1994\n   - **Seats**: 19\n   - **Max Range**: 1,700 km\n   - **Base**: SKBO\n   - ![Beechcraft 1900D](https://asserts.avi-go.com/plane_img_jt/aircraft/230706144213224.jpg)\n\n2. **Hawker 400 (BE40)**\n   - **Registration**: HK-4756\n   - **Year**: 1999\n   - **Seats**: 8\n   - **Max Range**: 2,130 km\n   - **Base**: SKBO\n   - ![Hawker 400](https://asserts.avi-go.com/plane_img_jt/aircraft/230706144215226.jpg)\n\n3. **Gulfstream G200**\n   - **Year**: 2001\n   - **Seats**: 11\n   - **Max Range**: 6,300 km\n   - **Base**: SKBO\n   - ![Gulfstream G200](https://asserts.avi-go.com/plane_img_jt/aircraft/230706144633091_1.jpg)\n\n4. **Beechcraft King Air 350**\n   - **Year**: Various\n   - **Seats**: 8\n   - **Max Range**: Approximately 3,300 km\n   - **Base**: SKBO\n\n5. **Embraer ERJ 145**\n   - **Year**: Various\n   - **Seats**: 50\n   - **Max Range**: 2,000 km\n   - **Base**: SKBO\n\nSearca S.A. has a total fleet count of 32 aircraft, which are utilized for various charter services, including medical flights and corporate travel.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 16.98
+    },
+    {
+        "Q": "Fleet information of Pacific Jet Charter？",
+        "A": [
+            "Cessna Citation XLS+"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Pacific Jet Charter\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Pacific Jet Charter operates a focused fleet that includes two aircraft models:\n\n1. **Cessna Citation Latitude** - A midsize jet known for its spacious cabin and advanced technology, suitable for both short and medium-range flights.\n2. **Pilatus PC-12** - A versatile single-engine turboprop aircraft, ideal for accessing smaller airports and providing efficient travel solutions.\n\nThis strategic selection allows Pacific Jet Charter to offer personalized and precision-oriented charter services, catering to clients seeking efficient travel options within their operating regions.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.1
+    },
+    {
+        "Q": "Fleet information of Royal Class？",
+        "A": [
+            "Cessna Citation CJ1"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Royal Class\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "The Royal Class is a series of cruise ships operated by Princess Cruises, known for their innovative design and luxurious amenities. Here’s a summary of the fleet information for the Royal Class:\n\n### Royal Class Ships\n1. **Royal Princess**\n   - **Launch Year**: 2013\n   - **Capacity**: Approximately 3,560 passengers\n   - **Features**: Includes the SeaWalk, a glass-bottomed walkway extending over the edge of the ship.\n\n2. **Regal Princess**\n   - **Launch Year**: 2014\n   - **Capacity**: Similar to Royal Princess\n   - **Features**: Offers a similar layout and amenities, including the Sky Suites.\n\n3. **Majestic Princess**\n   - **Launch Year**: 2017\n   - **Capacity**: Approximately 3,560 passengers\n   - **Features**: Tailored for the Chinese market with unique dining and entertainment options.\n\n4. **Sky Princess**\n   - **Launch Year**: 2019\n   - **Capacity**: Approximately 3,660 passengers\n   - **Features**: Enhanced dining options and the largest spa at sea.\n\n5. **Enchanted Princess**\n   - **Launch Year**: 2020\n   - **Capacity**: Approximately 3,660 passengers\n   - **Features**: Includes new dining venues and luxurious accommodations.\n\n6. **Discovery Princess**\n   - **Launch Year**: 2021\n   - **Capacity**: Approximately 3,660 passengers\n   - **Features**: Focuses on outdoor spaces and a variety of entertainment options.\n\n### Key Features of Royal Class\n- **Design**: The Royal Class ships are designed with a focus on maximizing outdoor space and enhancing the passenger experience with features like the Movies Under the Stars, multiple pools, and a variety of dining options.\n- **Technology**: Equipped with advanced technology for navigation and passenger services, including the MedallionClass experience, which allows for seamless service and personalization.\n- **Sustainability**: Incorporates eco-friendly technologies to reduce environmental impact.\n\nThese ships are characterized by their modern amenities, spacious accommodations, and a wide range of activities and entertainment options, making them popular choices for cruise travelers.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 17.08
+    },
+    {
+        "Q": "Fleet information of Ixair？",
+        "A": [
+            "Cessna Citation CJ3",
+            "Cessna Citation CJ2+",
+            "Cessna Citation Mustang",
+            "Dassault Falcon 2000EX",
+            "Bombardier Global Express"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Ixair\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Ixair operates a fleet of five diverse aircraft models, which include:\n\n1. **Bombardier Global Express**\n2. **Dassault Falcon 2000EX**\n3. **Cessna Citation CJ3**\n4. **Cessna Citation M2**\n5. **Pilatus PC-12**\n\nThis fleet allows Ixair to provide tailored travel solutions, focusing on luxurious and efficient air travel.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.39
+    },
+    {
+        "Q": "Fleet information of Heli Air Services？",
+        "A": [
+            "Cessna Citation XLS"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Heli Air Services\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Heli Air Services operates a diverse fleet of aircraft, primarily focusing on business aviation and charter services. Here are some key details about their fleet:\n\n1. **Aircraft Types**:\n   - **Cessna Citation Series**: This includes models like the Cessna Citation XLS and XLS+, which are popular for their reliability and comfort in business travel.\n   - **Embraer Phenom Series**: The Embraer Phenom 300E is also part of their fleet, known for its performance and spacious cabin.\n   - **Bombardier Challenger Series**: They operate models such as the Bombardier Challenger 605, which is favored for longer-range flights and larger passenger capacity.\n\n2. **Operational Focus**: Heli Air Services provides charter flights to various destinations, including popular routes from Sofia to cities like London, Paris, and various Mediterranean locations. They are known for their flexibility and customer service in the private aviation sector.\n\n3. **Fleet Size**: While specific numbers may vary, they maintain a fleet that includes multiple aircraft types to cater to different client needs, from short regional flights to longer international journeys.\n\n4. **Recent Operations**: They have been involved in flights to destinations such as Ibiza, Antalya, and Belgrade, showcasing their operational range across Europe and beyond.\n\nIf you need more specific details about individual aircraft or operational statistics, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 19.45
+    },
+    {
+        "Q": "Fleet information of Nexjet Corporation？",
+        "A": [
+            "Cessna Citation XLS"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Nexjet Corporation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Nexjet Corporation operates a diverse fleet of aircraft, which includes:\n\n1. **Cessna Citation Series**:\n   - Citation Bravo\n   - Citation XLS\n   - Citation CJ3+\n   - Citation V\n\n2. **Bombardier Models**:\n   - Bombardier Learjet 60\n   - Bombardier Challenger 300\n   - Bombardier CRJ-200\n\n3. **Hawker Series**:\n   - Hawker 700\n   - Hawker 800XP\n   - Hawker 850XP\n\n4. **Other Models**:\n   - Embraer Phenom 300\n   - Dassault Falcon 7X\n   - Pilatus PC-12\n\nThe fleet size is reported to be around 8 to 11 aircraft, allowing Nexjet to cater to a variety of travel needs, from business to leisure, across North America and beyond.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.8
+    },
+    {
+        "Q": "Fleet information of Aerovias DAP？",
+        "A": [
+            "Cessna 402",
+            "Cessna 404"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Aerovias DAP\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Aerovías DAP operates a diverse fleet primarily consisting of the following aircraft:\n\n1. **Boeing 737-200**: A well-known narrow-body aircraft suitable for short to medium-haul flights.\n2. **BAe 146 / Avro RJ**: This regional jet is recognized for its quiet operation and ability to operate from shorter runways.\n3. **Dash 8-400**: A turboprop aircraft known for its efficiency and capability to serve regional routes effectively.\n\nThe fleet is designed to cater to various passenger needs, ensuring flexibility and reliability in their operations.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.12
+    },
+    {
+        "Q": "Fleet information of HeliJet International Inc.？",
+        "A": [
+            "Bombardier Learjet 31A",
+            "Pilatus PC-12"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"HeliJet International Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Helijet International Inc. operates a diverse fleet of aircraft designed for various charter services. Here are the key details about their fleet:\n\n1. **Aircraft Types**:\n   - Helijet's fleet includes models such as the **Cessna 208**, **Pilatus PC-12**, and **Beechcraft King Air 100**. These aircraft are utilized for regional flights and charter services, providing flexibility and efficiency for short to medium-haul travel.\n\n2. **Fleet Size**:\n   - The company operates a total of **8 aircraft**, which allows them to cater to a variety of passenger needs and flight requirements.\n\n3. **Operational Base**:\n   - The primary operational base for Helijet is **Vancouver International Airport (CYVR)**, from where they conduct most of their flights.\n\n4. **Passenger Capacity**:\n   - The aircraft in their fleet typically accommodate around **6 passengers**, making them suitable for small group charters.\n\n5. **Range and Capabilities**:\n   - The aircraft have a maximum range of approximately **2632 kilometers**, allowing for a wide range of destinations within their service area.\n\nHelijet International focuses on providing personalized and efficient flying experiences, catering to clients who prefer to bypass the hassles of commercial flying.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 15.07
+    },
+    {
+        "Q": "Fleet information of Exec Air Montana, Inc.？",
+        "A": [
+            "Cessna 421"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Exec Air Montana, Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Exec Air Montana, Inc. operates a modest fleet of six aircraft. The fleet includes:\n\n- **Cessna Citation CJ3+**\n- **Cessna Citation M2**\n- **Citation Sovereign**\n- **Gulfstream G550**\n\nThis selection of aircraft is designed to provide tailored solutions for high-end clientele, emphasizing punctuality and safety with modern, well-maintained aircraft.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 23.01
+    },
+    {
+        "Q": "Fleet information of Aircraft Management Group？",
+        "A": [
+            "Hawker 400XP",
+            "Cessna Citation Latitude",
+            "Hawker 400XP",
+            "Hawker 900XP",
+            "Hawker 400XP",
+            "Hawker 400XP",
+            "Hawker 850XP",
+            "Hawker 400XP",
+            "Hawker 400XP",
+            "Cessna Citation Sovereign"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Aircraft Management Group\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "The Aircraft Management Group operates a diverse fleet of aircraft, primarily focused on providing private jet charter services. Here are some of the key aircraft models in their fleet:\n\n1. **Cessna Citation Series**:\n   - Cessna Citation XLS\n   - Cessna Citation CJ1\n   - Cessna Citation Bravo\n   - Cessna Citation Latitude\n   - Cessna Citation XLS+\n\n2. **Bombardier Learjet Series**:\n   - Bombardier Learjet 31A\n   - Bombardier Learjet 45\n   - Bombardier Learjet 60\n   - Bombardier Learjet 35A\n\n3. **Hawker Series**:\n   - Hawker 400XP\n   - Hawker 850XP\n   - Hawker 900XP\n\n4. **Embraer Phenom Series**:\n   - Embraer Phenom 300\n\n5. **Gulfstream Series**:\n   - Gulfstream G200\n   - Gulfstream GIV\n\n6. **Pilatus PC-12**:\n   - A versatile single-engine turboprop aircraft.\n\nThis fleet allows Aircraft Management Group to cater to a variety of travel needs, from short regional flights to longer international journeys.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.91
+    },
+    {
+        "Q": "Fleet information of Air 7 LLC？",
+        "A": [
+            "Embraer Phenom 100",
+            "Cessna Citation XLS",
+            "Gulfstream G100",
+            "Gulfstream G100",
+            "Gulfstream G200"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Air 7 LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Air 7 LLC operates a diverse fleet of private aircraft, which includes several models suited for various travel needs. Here are some details about their fleet:\n\n1. **Aircraft Types**:\n   - **Cessna Citation XLS**\n   - **Hawker 400XP**\n   - **Bombardier Learjet 40**\n   - **Embraer Phenom 100**\n   - **Gulfstream G650**\n   - **Gulfstream G200**\n   - **Dassault Falcon 50**\n   - **Bombardier Challenger 300**\n   - **Bombardier Learjet 75**\n   - **Embraer Phenom 300**\n\n2. **Fleet Characteristics**:\n   - The fleet includes aircraft that can accommodate various passenger capacities, typically ranging from 7 to 10 seats.\n   - The aircraft are designed for both short and long-range flights, with some models capable of flying over 5,000 miles.\n\n3. **Base of Operations**:\n   - The primary base for Air 7 LLC is located in Camarillo, California, which allows for convenient access to various destinations across the United States and beyond.\n\n4. **Service Offerings**:\n   - Air 7 LLC provides tailored private flight experiences, ensuring comfort and efficiency for their clients.\n\nThis fleet allows Air 7 LLC to cater to a wide range of travel requirements, from business trips to leisure travel.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 15.97
+    },
+    {
+        "Q": "Fleet information of Voluxis？",
+        "A": [
+            "Embraer Phenom 300",
+            "Bombardier Global 5000"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Voluxis\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Voluxis operates a fleet of six high-performance private jets, which includes the following aircraft:\n\n1. **E55P (Embraer Phenom 300)**:\n   - **Registration**: G-WZAP\n   - **Year of Manufacture**: 2017\n   - **Seating Capacity**: 8 passengers\n   - **Maximum Range**: 3,650 miles\n   - **Base Locations**: EGKB, EGLF, EGSH\n   - ![E55P Image](https://asserts.avi-go.com/plane_img/1698852179710001832195053712571.jpg)\n\n2. **F900 (Dassault Falcon 900)**: \n   - Specific details about this model were not provided, but it is known for its long-range capabilities and luxury.\n\n3. **H25B (Hawker 800)**: \n   - Again, specific details were not mentioned, but this model is recognized for its comfort and performance in the mid-size jet category.\n\nThis diverse fleet allows Voluxis to cater to a variety of client needs, from business to leisure travel, ensuring flexibility and high-quality service.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.62
+    },
+    {
+        "Q": "Fleet information of Airresource Charter LLC？",
+        "A": [
+            "Beechcraft King Air B200"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Airresource Charter LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airresource Charter LLC operates a small but efficient fleet designed to provide personalized charter services. The fleet includes:\n\n1. **Cessna Citation Latitude** - Known for its spacious cabin and advanced technology, suitable for business and leisure travel.\n2. **Pilatus PC-12** - A versatile single-engine turboprop aircraft, ideal for short to medium-haul flights.\n\nThis strategic selection of aircraft allows Airresource Charter to cater to clients seeking efficient and tailored travel solutions. \n\nIf you need more specific details about the aircraft or their capabilities, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 18.16
+    },
+    {
+        "Q": "Fleet information of Global Aviation Inc.？",
+        "A": [
+            "Bombardier Challenger 605",
+            "Cessna Citation XLS",
+            "Bombardier Learjet 35A"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Global Aviation Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Global Aviation Inc. operates a fleet that includes a variety of aircraft designed for private aviation services. Here are the key details about their fleet:\n\n1. **Fleet Composition**: \n   - The fleet consists of **six aircraft**, which include models such as the **Bombardier Challenger 300** and **Gulfstream models GIV and GV**. This selection allows for luxurious and reliable travel solutions.\n   - Additionally, they have a specialized fleet that includes the **Bombardier Challenger 605**, **Learjet 35A**, and **Cessna Citation XLS**, catering to a range of travel needs.\n\n2. **Operational Focus**: \n   - Global Aviation Inc. primarily provides services within **North America, Europe, and Central America**, emphasizing high-quality private aviation experiences.\n\n3. **Additional Aircraft**: \n   - Other aircraft in their fleet may include models like the **Cessna Citation CJ2**, **Hawker 400XP**, and **Bombardier Learjet 60**, which are also noted for their performance and comfort.\n\nThis diverse fleet enables Global Aviation Inc. to meet various client needs, from short regional flights to longer international journeys.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.94
+    },
+    {
+        "Q": "Fleet information of Nicholas Air？",
+        "A": [
+            "Cessna Citation Latitude",
+            "Embraer Phenom 300",
+            "Embraer Phenom 300",
+            "Embraer Phenom 300",
+            "Cessna Citation Latitude",
+            "Embraer Phenom 100",
+            "Embraer Phenom 100",
+            "Embraer Phenom 300",
+            "Bombardier Challenger 300"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Nicholas Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Nicholas Air operates a diverse fleet of aircraft designed to cater to various travel needs. Here are the key details about their fleet:\n\n1. **Aircraft Models**:\n   - **Cessna Citation Latitude**\n   - **Pilatus PC-12**\n   - **Embraer Phenom 100**\n   - **Embraer Phenom 300**\n   - **Cessna Citation CJ3+**\n   - **Cessna Citation M2**\n   - **Cessna Citation Sovereign**\n   - **Gulfstream G550**\n   - **Bombardier Challenger 300**\n   - **Cessna Citation Bravo**\n   - **Cessna Citation XLS+**\n\n2. **Fleet Size**: Nicholas Air has a fleet that includes a variety of models, allowing them to provide tailored solutions for both business and leisure travelers. The fleet is noted for its modern, well-maintained aircraft, emphasizing safety and punctuality.\n\n3. **Service Focus**: The company specializes in private charter services, offering personalized and efficient flying experiences. Their aircraft are equipped for both short and long-haul flights, catering to high-end clientele.\n\nThis fleet composition allows Nicholas Air to meet the demands of a wide range of customers, from business executives to leisure travelers, ensuring a high level of service and comfort.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 20.81
+    },
+    {
+        "Q": "Fleet information of Aergo International Pty Ltd？",
+        "A": [
+            "Boeing 737",
+            "Boeing 737"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Aergo International Pty Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Aergo International Pty Ltd operates a diverse fleet of aircraft, which includes various models suitable for different travel needs. Here are some key details about their fleet:\n\n1. **Aircraft Models**:\n   - **Boeing 737**: A popular choice for medium to long-haul flights, known for its reliability and capacity.\n   - **Embraer Phenom 300**: A light jet that offers comfort and efficiency for shorter routes.\n   - **Bombardier Challenger 604**: A larger business jet that provides spacious interiors and advanced technology.\n   - **Cessna Citation series**: Including models like the CJ1 and CJ2, these jets are known for their versatility and performance in regional travel.\n\n2. **Operational Focus**:\n   - Aergo International provides air charter services, catering to both domestic and international clients. Their fleet is designed to meet a variety of travel requirements, from corporate charters to leisure travel.\n\n3. **Service Areas**:\n   - The company operates flights from major Australian cities such as Brisbane, Perth, and Cairns, offering connections to various regional and international destinations.\n\nThis fleet composition allows Aergo International to offer customized charter solutions tailored to the specific needs of their clients, ensuring a seamless travel experience.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.07
+    },
+    {
+        "Q": "Fleet information of Turnkey Jet Inc.？",
+        "A": [
+            "Hawker 400XP",
+            "Bombardier Challenger 300"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Turnkey Jet Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Turnkey Jet Inc. operates a fleet of 11 aircraft, which includes a variety of medium to large jets. The fleet features notable models such as:\n\n1. **Bombardier Global Series**\n2. **Dassault Falcon 7X**\n3. **Cessna Models** (including the Cessna Citation series)\n\nThis diverse fleet allows Turnkey Jet to cater to a wide range of client needs, providing flexible and luxurious travel options. \n\nIf you need more specific details about individual aircraft or their specifications, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.11
+    },
+    {
+        "Q": "Fleet information of Jackson Jet Center？",
+        "A": [
+            "Cessna Citation Mustang"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Jackson Jet Center\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Jackson Jet Center operates a diverse fleet of aircraft suitable for various charter needs. Here are some of the key aircraft models in their fleet:\n\n1. **Pilatus PC-12** - A versatile single-engine turboprop known for its reliability and efficiency.\n2. **Cessna Citation Mustang** - A light jet that offers comfort and speed for short to medium-range flights.\n3. **Cessna Citation CJ3** - A popular light jet that combines performance with a spacious cabin.\n4. **Cessna Citation XLS** - A mid-size jet that provides a balance of range and comfort.\n5. **Bombardier Learjet 60** - A larger jet known for its speed and range, suitable for longer flights.\n6. **Pilatus PC-24** - A super versatile jet that can operate from short runways and offers a spacious cabin.\n\nThese aircraft are frequently used for various routes, including popular destinations like Las Vegas, San Francisco, and Seattle. \n\nIf you need more specific details about their fleet or services, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.44
+    },
+    {
+        "Q": "Fleet information of Pacific Missionary Aviation？",
+        "A": [
+            "Beechcraft King Air 200",
+            "Beechcraft King Air B200",
+            "Beechjet 65"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Pacific Missionary Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Pacific Missionary Aviation operates a small but versatile fleet consisting of three aircraft. The models in their fleet include:\n\n1. **Beechcraft King Air series** - Known for its reliability and performance, suitable for various mission profiles.\n2. **Beechjet 65** - A light jet that offers speed and comfort for regional flights.\n\nThis fleet allows Pacific Missionary Aviation to effectively serve its mission in Oceania and Southeast Asia, providing both spiritual and physical assistance to remote areas.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.01
+    },
+    {
+        "Q": "Fleet information of Seattle Aircraft Charter？",
+        "A": [
+            "Pilatus PC-12",
+            "Pilatus PC-12"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Seattle Aircraft Charter\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Seattle Aircraft Charter specializes in providing personalized charter flights primarily across North America. The company maintains a focused fleet that includes the versatile and highly reliable **Pilatus PC-12** aircraft. This aircraft is known for its performance and ability to access a wide range of airports, making it suitable for various travel needs.\n\nIn addition to the Pilatus PC-12, Seattle Aircraft Charter also operates other aircraft models, including:\n\n- **Cessna Citation XLS**\n- **Cessna Citation X**\n- **Bombardier Challenger 300**\n- **Hawker 800XP**\n\nThese aircraft are utilized for different routes and passenger capacities, ensuring that the company can cater to both business and leisure travel demands.\n\nIf you need more specific details about the aircraft specifications or routes, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.14
+    },
+    {
+        "Q": "Fleet information of Mhs Aviation GmbH？",
+        "A": [
+            "Bombardier Challenger 604",
+            "Dassault Falcon 2000LX",
+            "Bombardier Challenger 604",
+            "Cessna Citation CJ2+",
+            "Bombardier Global Express XRS",
+            "Embraer Phenom 300",
+            "Cessna Citation CJ2+"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Mhs Aviation GmbH\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "MHS Aviation GmbH operates a diverse fleet of aircraft, primarily focused on executive and charter services. Here are some key details about their fleet:\n\n1. **Aircraft Types**:\n   - MHS Aviation's fleet includes various models such as:\n     - **Cessna Citation Series**: Including models like CJ2+, CJ3, and XLS+.\n     - **Embraer Phenom 300**: A popular choice for light jets.\n     - **Bombardier Learjet**: Including models like Learjet 35A and Learjet 45.\n     - **Dassault Falcon**: Such as the Falcon 2000LX and Falcon 7X.\n     - **Pilatus PC-12**: Known for its versatility and performance.\n\n2. **Fleet Size**:\n   - MHS Aviation operates a total of **20 aircraft**, providing a wide range of options for different travel needs.\n\n3. **Operational Bases**:\n   - The company has operational bases in various locations, including **EDDM (Munich)** and **LIML (Milan)**, which facilitate their charter services across Europe.\n\n4. **Range and Capacity**:\n   - The aircraft in their fleet vary in terms of passenger capacity and range, accommodating from 6 to 16 passengers depending on the model. For instance, the Cessna Citation CJ3 can typically carry up to 8 passengers with a maximum range of approximately 3,000 nautical miles.\n\n5. **Special Features**:\n   - MHS Aviation's fleet is equipped for both business and leisure travel, with amenities that cater to comfort and efficiency.\n\nThis diverse fleet allows MHS Aviation to cater to a wide range of customer needs, from short regional flights to longer international journeys.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.13
+    },
+    {
+        "Q": "Fleet information of Global Jetcare？",
+        "A": [
+            "Bombardier Learjet 35A",
+            "Bombardier Learjet 35A",
+            "Bombardier Learjet 35A",
+            "Bombardier Learjet 36",
+            "Bombardier Learjet 36",
+            "Bombardier Learjet 36"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Global Jetcare\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Global Jetcare operates a diverse fleet primarily consisting of various models of Bombardier Learjets and other aircraft. Here are the key details regarding their fleet:\n\n1. **Aircraft Models**:\n   - **Bombardier Learjet 35A**\n   - **Bombardier Learjet 36**\n   - **Bombardier Learjet 60**\n   - **Cessna Citation CJ1**\n   - **Cessna Citation Bravo**\n   - **Cessna Citation V**\n   - **Cessna Citation Ultra**\n   - **Cessna Citation CJ2**\n   - **Cessna Citation CJ3+**\n   - **Embraer Phenom 300**\n   - **Gulfstream G450**\n   - **Gulfstream GIV**\n   - **Hawker 800XP**\n   - **Pilatus PC-12**\n\n2. **Fleet Composition**:\n   - The fleet includes a mix of medevac jets and business jets, catering to various charter needs.\n   - Specific configurations include multiple Learjet models, which are known for their performance and comfort in private aviation.\n\n3. **Operational Bases**:\n   - The primary operational base is located at Brooksville–Tampa Bay Airport (KBKV), from where they service various destinations.\n\n4. **Service Offerings**:\n   - Global Jetcare provides charter services for both domestic and international flights, utilizing their fleet to meet diverse customer needs.\n\nThis fleet composition allows Global Jetcare to offer flexible and efficient air travel solutions, catering to both corporate and individual clients.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.33
+    },
+    {
+        "Q": "Fleet information of South Florida Aviation Group LLC？",
+        "A": [
+            "Beechcraft King Air B200"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"South Florida Aviation Group LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "South Florida Aviation Group LLC operates a fleet of various aircraft designed for private charter services. Here are the key details about their fleet:\n\n1. **Fleet Composition**:\n   - The fleet includes models such as the **Beechcraft King Air B200**, **Cessna Citation XLS**, and **Bombardier Learjet 60**. These aircraft are known for their comfort and efficiency, catering to both business and leisure travelers.\n\n2. **Aircraft Specifications**:\n   - One of the aircraft in their fleet is a **Beechcraft King Air B200**, which has a seating capacity of 7 and a maximum range of approximately 2,156 miles.\n\n3. **Operational Focus**:\n   - The company primarily serves routes across North America, Central America, and Europe, emphasizing personalized service and flexibility.\n\n4. **Additional Aircraft**:\n   - Other aircraft models mentioned include the **Cessna Citation Bravo** and **Hawker 800XP**, which further enhance their service offerings.\n\nThis fleet allows South Florida Aviation Group LLC to provide tailored and efficient flying experiences, appealing to clients looking to avoid the hassles of commercial flying.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.88
+    },
+    {
+        "Q": "Fleet information of Boomerang Air Charter？",
+        "A": [
+            "Pilatus PC-12"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Boomerang Air Charter\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Boomerang Air Charter operates a fleet of four aircraft, which includes models such as the Cessna 402, Citation Bravo, and Citation XLS. This boutique charter airline focuses on providing personalized and efficient flying experiences, catering to clients who prefer to avoid the hassles of commercial flying. \n\nIf you need more specific details about the aircraft or services offered, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.18
+    },
+    {
+        "Q": "Fleet information of ACASS Canada Ltd？",
+        "A": [
+            "Pilatus PC-12",
+            "Cessna Citation X",
+            "Cessna Citation XLS+"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"ACASS Canada Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "ACASS Canada Ltd operates a diverse fleet of aircraft tailored for premium private charters. Their fleet includes:\n\n1. **Cessna Citation CJ3+**\n2. **Cessna Citation M2**\n3. **Cessna Citation Sovereign**\n4. **Gulfstream G550**\n5. **Bombardier Learjet 75**\n6. **Beechcraft King Air 200**\n7. **Pilatus PC-12**\n\nThe company is recognized for its commitment to punctuality and safety, utilizing modern and well-maintained aircraft to provide tailored solutions to its high-end clientele.",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.52
+    },
+    {
+        "Q": "Fleet information of Bonair？",
+        "A": [
+            "Bombardier Challenger 850",
+            "Cessna Citation Bravo",
+            "Bombardier Global Express XRS",
+            "Gulfstream GIV-SP",
+            "Hawker 850XP"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Bonair\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bonair operates a moderate fleet of five aircraft, which includes models such as the Bombardier Global Express XRS and Gulfstream GIV-SP. This fleet is designed to accommodate both short-haul and long-haul flights, providing flexibility and comfort for its clients. The airline is known for its personalized services, ensuring a high level of comfort and efficiency for every flight. \n\nIf you need more specific details about the aircraft types or their capabilities, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.68
+    },
+    {
+        "Q": "Fleet information of Elite Flight Jets？",
+        "A": [
+            "Bombardier Learjet 60",
+            "Bombardier Learjet 60",
+            "Beechcraft Premier I"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"Elite Flight Jets\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Elite Flight Jets operates a diverse fleet of aircraft, which includes various models suited for different travel needs. Here are some key details about their fleet:\n\n1. **Aircraft Models**:\n   - **Bombardier Learjet 60**: \n     - Registration: N211BD\n     - Year: 2001\n     - Seats: 7\n     - Max Range: 2,632 miles\n     - Base: KSDL\n     - Images: ![Learjet 60 Image 1](https://asserts.avi-go.com/plane_img/169953314101206593068960590127.jpg), ![Learjet 60 Image 2](https://asserts.avi-go.com/plane_img_jt/aircraft/230706150503818.jpg)\n\n   - **Beechcraft Premier I**:\n     - Registration: N888LJ\n     - Year: 2001\n     - Seats: 7\n     - Max Range: 2,632 miles\n     - Base: KSDL\n     - Images: ![Premier I Image 1](https://asserts.avi-go.com/plane_img_jt/aircraft/230706151204858.jpg), ![Premier I Image 2](https://asserts.avi-go.com/plane_img/1699533145867045604798155611537_1.jpg)\n\n2. **Operational Highlights**:\n   - Elite Flight Jets is known for providing a range of services, including charter flights and private jet services, catering to both business and leisure travelers.\n   - The fleet is maintained to high standards, ensuring safety and comfort for passengers.\n\nThis information reflects the current offerings and capabilities of Elite Flight Jets, showcasing their commitment to quality and service in the private aviation sector.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 15.49
+    },
+    {
+        "Q": "Fleet information of MC Havacilik？",
+        "A": [
+            "Hawker 800XPi"
+        ],
+        "SQL": "SELECT aircraft_details.aircraft_model_name FROM aircraft_details JOIN supplier_details ON aircraft_details.supplier_id = supplier_details.supplier_id WHERE supplier_details.supplier_name = \"MC Havacilik\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "MC Havacilik operates a diverse fleet of aircraft, primarily focusing on business aviation. Here are some key details about their fleet:\n\n1. **Hawker 800XPi**\n   - **Registration**: TC-ALT\n   - **Year of Manufacture**: 2007\n   - **Seating Capacity**: 8 passengers\n   - **Maximum Range**: 4,800 km\n\n2. **Embraer Legacy 600**\n   - This model is also part of their fleet, known for its spacious cabin and long-range capabilities.\n\n3. **Cessna Citation Bravo**\n   - Another aircraft type in their fleet, suitable for shorter regional flights.\n\n4. **Bombardier Learjet 45**\n   - A popular choice for business travel, offering speed and comfort.\n\n5. **Bombardier Challenger 300**\n   - Known for its performance and spacious interior, this aircraft is often used for longer trips.\n\n6. **Embraer Phenom 300**\n   - A light jet that combines performance with efficiency, suitable for various flight lengths.\n\nThese aircraft are utilized for a range of charter services, catering to both domestic and international destinations. \n\nIf you need more specific information about additional aircraft or services, feel free to ask!",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 15.61
+    },
+    {
+        "correct_rate": 14.0,
+        "sample_size": 50,
+        "correct_count": 7,
+        "average_time": 13.86
+    }
+]

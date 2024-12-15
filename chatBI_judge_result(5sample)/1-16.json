@@ -1,0 +1,84 @@
+[
+    {
+        "Q": "Ifly S.A.航司的官网链接是什么？",
+        "A": "http://www.ifly.gr",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Ifly S.A.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Ifly S.A.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.ifly.gr"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.2
+    },
+    {
+        "Q": "Alpha Aviation S.R.O.航司的官网链接是什么？",
+        "A": "https://www.alpha-aviation.aero",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Alpha Aviation S.R.O.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name,\n       supplier_website\nFROM supplier_details\nWHERE supplier_name IN ('Alpha Aviation S.R.O.',\n                        'Alpha Three Aviation')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Alpha Aviation S.R.O.",
+                "supplier_website": "https://www.alpha-aviation.aero"
+            },
+            {
+                "supplier_name": "Alpha Three Aviation",
+                "supplier_website": "https://www.alphathreeaviation.com/"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.46
+    },
+    {
+        "Q": "Mach One Air Charters Inc.航司的官网链接是什么？",
+        "A": "http://moaci.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Mach One Air Charters Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'Mach One Air Charters Inc.'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://moaci.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.45
+    },
+    {
+        "Q": "MAC Air Group航司的官网链接是什么？",
+        "A": "http://www.macairgroup.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"MAC Air Group\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_website\nFROM supplier_details\nWHERE supplier_name = 'MAC Air Group'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_website": "http://www.macairgroup.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.55
+    },
+    {
+        "Q": "Chrysler Aviation Inc航司的官网链接是什么？",
+        "A": "http://www.chrysleraviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Chrysler Aviation Inc\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name,\n       supplier_website\nFROM supplier_details\nWHERE supplier_name IN ('Chrysler Aviation Inc',\n                        'M&amp;n Aviation Inc')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Chrysler Aviation Inc",
+                "supplier_website": "http://www.chrysleraviation.com"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.8
+    },
+    {
+        "correct_rate": 60.0,
+        "sample_size": 5,
+        "correct_count": 3,
+        "average_time": 7.89
+    }
+]

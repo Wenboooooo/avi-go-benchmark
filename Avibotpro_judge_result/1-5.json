@@ -1,0 +1,458 @@
+[
+    {
+        "Q": "飞机注册号为N227NS的飞机是哪一家公司的？",
+        "A": "Tampa Bay Air Charter",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N227NS\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N227NS的飞机是由Tampa Bay Air Charter公司拥有的，机型为Pilatus PC-12。这是一种单发涡桨飞机，制造年份为2006年，最多可容纳8名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.43
+    },
+    {
+        "Q": "飞机注册号为N518KB的飞机是哪一家公司的？",
+        "A": "Fly Alliance Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N518KB\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N518KB的飞机属于Fly Alliance Aviation公司。这是一架2016年制造的Cessna Citation Latitude，通常可容纳8名乘客，最大航程为5000英里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.84
+    },
+    {
+        "Q": "飞机注册号为D-ARIE的飞机是哪一家公司的？",
+        "A": "Vista Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-ARIE\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为D-ARIE的飞机是由Vista Jet公司拥有的，型号为Dassault Falcon 7X。这架飞机的制造年份为2012年，座位数为13，最大航程为11019公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.85
+    },
+    {
+        "Q": "飞机注册号为T7-YBH的飞机是哪一家公司的？",
+        "A": "Tag Aviation Asia",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"T7-YBH\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为 **T7-YBH** 的飞机是 **Gulfstream G600** 型号，由 **Tag Aviation Asia** 公司运营。这架飞机的制造年份为2020年，座位数为13，最大航程为12223公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.69
+    },
+    {
+        "Q": "飞机注册号为9H-TQP的飞机是哪一家公司的？",
+        "A": "Hi Fly - Transportes Aereos S.A.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"9H-TQP\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为9H-TQP的飞机是由Hi Fly Malta运营的空客A330-202。这架飞机被租赁给了TAP航空，用于替代其A330-900neo的运营。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.35
+    },
+    {
+        "Q": "飞机注册号为N87CF的飞机是哪一家公司的？",
+        "A": "Airresource Charter LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N87CF\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N87CF的飞机是由Airresource Charter LLC公司拥有的，型号为Beechcraft King Air B200，制造年份为1983年。这架飞机的座位数为8，最大航程为2156英里，主要基地位于KLIT（阿肯色州小石城机场）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.99
+    },
+    {
+        "Q": "飞机注册号为N808CE的飞机是哪一家公司的？",
+        "A": "Shoreline Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N808CE\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N808CE的飞机属于Shoreline Aviation Inc.，型号为Cessna Citation V，制造年份为2009年，座位数为7个。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.73
+    },
+    {
+        "Q": "飞机注册号为N906TR的飞机是哪一家公司的？",
+        "A": "Sierra West Airlines",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N906TR\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N906TR的飞机属于Sierra West Airlines。这是一架1996年制造的Bombardier Learjet 60，通常可容纳7名乘客，最大航程为2632英里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.63
+    },
+    {
+        "Q": "飞机注册号为N571AW的飞机是哪一家公司的？",
+        "A": "CSI Aviation Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N571AW\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N571AW的飞机属于CSI Aviation Inc.，型号为Beechcraft King Air 350。这架飞机的制造年份为2000年，座位数为9，最大航程为2758英里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.78
+    },
+    {
+        "Q": "飞机注册号为C-FSEP的飞机是哪一家公司的？",
+        "A": "Image Air Charter",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FSEP\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为C-FSEP的飞机是由Image Air Charter公司运营的，型号为Bombardier Challenger 650。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.64
+    },
+    {
+        "Q": "飞机注册号为CN-SRL的飞机是哪一家公司的？",
+        "A": "Sarah Airways",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"CN-SRL\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为CN-SRL的飞机是Cessna Citation III，属于Sarah Airways公司。这架飞机的制造年份为1986年，能够容纳8名乘客，最大航程为3740公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.38
+    },
+    {
+        "Q": "飞机注册号为OE-GTR的飞机是哪一家公司的？",
+        "A": "Porsche Air Service GmbH",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OE-GTR\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为OE-GTR的飞机是由Porsche Air Service GmbH公司拥有的。这架飞机的型号是Cessna Citation XLS+，制造年份为2022年，能够容纳8名乘客，最大航程为3913公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.19
+    },
+    {
+        "Q": "飞机注册号为N156RE的飞机是哪一家公司的？",
+        "A": "Airstat Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N156RE\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N156RE的飞机是由Airstat Inc.拥有的，型号为Dassault Falcon 50。这是一种商务喷气机，通常用于私人和商务飞行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.29
+    },
+    {
+        "Q": "飞机注册号为B-8259的飞机是哪一家公司的？",
+        "A": "Deer Jet (Beijing)  Co., Ltd.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"B-8259\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为B-8259的飞机是由金鹿（北京）公务航空有限公司（Deer Jet (Beijing) Co. Ltd.）运营的，型号为Gulfstream G550。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.51
+    },
+    {
+        "Q": "飞机注册号为F-GXAE的飞机是哪一家公司的？",
+        "A": "ADM Aviation Executive",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"F-GXAE\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为F-GXAE的飞机属于ADM Aviation Executive公司。这是一架Embraer Phenom 300型号的飞机，制造年份为2021年，座位数为9，最大航程为3650公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.69
+    },
+    {
+        "Q": "飞机注册号为N686TX的飞机是哪一家公司的？",
+        "A": "Executive Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N686TX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N686TX的飞机是由**Executive Aviation Services**公司运营的。这架飞机的型号是**Hawker 800XP**，制造年份为2004年，最多可容纳9名乘客，最大航程为4800公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.39
+    },
+    {
+        "Q": "飞机注册号为T7-2XX的飞机是哪一家公司的？",
+        "A": "Tag Aviation S.A.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"T7-2XX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为T7-2XX的飞机是由Tag Aviation S.A.公司拥有的Gulfstream G280型号飞机。这架飞机的制造年份为2019年，座位数为10，最大航程为6667公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.71
+    },
+    {
+        "Q": "飞机注册号为N881FS的飞机是哪一家公司的？",
+        "A": "Executive Jet Management Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N881FS\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N881FS的飞机属于Executive Jet Management Inc.，型号为Gulfstream G550，制造年份为2013年，座位数为18。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.17
+    },
+    {
+        "Q": "飞机注册号为N718HC的飞机是哪一家公司的？",
+        "A": "Secure Air Charter LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N718HC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N718HC的飞机属于Secure Air Charter LLC。这是一架BAe 125-800型号的飞机，制造年份为1985年，通常可容纳8名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.38
+    },
+    {
+        "Q": "飞机注册号为G-HAPA的飞机是哪一家公司的？",
+        "A": "Centreline AV Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"G-HAPA\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为G-HAPA的飞机是由Centreline AV Ltd公司运营的。这架飞机是Embraer Legacy 500型号，制造于2018年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 13.86
+    },
+    {
+        "Q": "飞机注册号为N90KM的飞机是哪一家公司的？",
+        "A": "Skysouth Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N90KM\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N90KM的飞机属于Skysouth Aviation公司。这是一架2006年制造的Cessna Citation CJ3型飞机，通常用于私人或商务飞行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.91
+    },
+    {
+        "Q": "飞机注册号为N513BE的飞机是哪一家公司的？",
+        "A": "Premier Private Jets",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N513BE\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N513BE的飞机是由Premier Private Jets公司拥有的，型号为Hawker 800XP，制造年份为2000年。这架飞机可以容纳8名乘客，最大航程为4800公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.7
+    },
+    {
+        "Q": "飞机注册号为N609RC的飞机是哪一家公司的？",
+        "A": "Aircraft Services Group Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N609RC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N609RC的飞机属于Aircraft Services Group Inc.，型号为Hawker 800XP。这架飞机的制造年份为2005年，座位数为8，最大航程为4800公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.41
+    },
+    {
+        "Q": "飞机注册号为N143DE的飞机是哪一家公司的？",
+        "A": "Atlanta Air Charter Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N143DE\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N143DE的飞机属于**Atlanta Air Charter Inc.**，型号为**Beechcraft King Air 200**，制造年份为1979年。这架飞机的座位数为9，最大航程为2156公里，基地位于KRYY。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.67
+    },
+    {
+        "Q": "飞机注册号为SP-DOM的飞机是哪一家公司的？",
+        "A": "AMC Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"SP-DOM\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为SP-DOM的飞机是由AMC Aviation公司拥有的，机型为Bombardier Learjet 60，制造年份为2008年。这架飞机可以容纳7名乘客，最大航程为2632公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.58
+    },
+    {
+        "Q": "飞机注册号为VH-JGR的飞机是哪一家公司的？",
+        "A": "Australian Corporate Jet Centres Pty Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"VH-JGR\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为VH-JGR的飞机是由**Australian Corporate Jet Centres Pty Ltd**运营的。这架飞机的型号是**Embraer ERJ 145**，制造年份为2001，座位数为50，最大航程为2873公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.65
+    },
+    {
+        "Q": "飞机注册号为N968SR的飞机是哪一家公司的？",
+        "A": "Chrysler Aviation Inc",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N968SR\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N968SR的飞机是由Chrysler Aviation Inc.制造的Cessna Citation Ultra（型号C560）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.69
+    },
+    {
+        "Q": "飞机注册号为N88AF的飞机是哪一家公司的？",
+        "A": "Jet Linx Aviation LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N88AF\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N88AF的飞机属于Jet Linx Aviation LLC。这是一架2008年制造的Cessna Citation XLS+，可容纳8名乘客，最大航程为3913公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.53
+    },
+    {
+        "Q": "飞机注册号为OK-VAN的飞机是哪一家公司的？",
+        "A": "Air Prague S.R.O.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"OK-VAN\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为OK-VAN的飞机属于Air Prague S.R.O.，型号为Embraer Phenom 100。这架飞机的制造年份为2010年，座位数为5，最大航程为2182公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.57
+    },
+    {
+        "Q": "飞机注册号为N720MH的飞机是哪一家公司的？",
+        "A": "Sawyer Aviation, Llc",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N720MH\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N720MH的飞机是由Sawyer Aviation, LLC公司拥有的。这是一架Beechcraft Premier I型号的飞机，制造于2007年，最多可容纳6名乘客，最大航程为2095英里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.66
+    },
+    {
+        "Q": "飞机注册号为N527JC的飞机是哪一家公司的？",
+        "A": "Taughannock Aviation Corp.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N527JC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N527JC的飞机属于Taughannock Aviation Corp.，型号为Gulfstream GIV，制造年份为1991。这架飞机可以容纳14名乘客，最大航程为7778公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.86
+    },
+    {
+        "Q": "飞机注册号为N404TC的飞机是哪一家公司的？",
+        "A": "Airsf Flight Service",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N404TC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N404TC的飞机属于Airsf Flight Service公司。这是一架2017年制造的Pilatus PC-12型飞机，通常可容纳9名乘客，最大航程为3704公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.04
+    },
+    {
+        "Q": "飞机注册号为C-FJFW的飞机是哪一家公司的？",
+        "A": "Chartright Air Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FJFW\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为C-FJFW的飞机属于Chartright Air Inc.，型号为Dassault Falcon 2000EX。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.78
+    },
+    {
+        "Q": "飞机注册号为N787CH的飞机是哪一家公司的？",
+        "A": "Cirrus Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N787CH\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N787CH的飞机是由Cirrus Aviation Services公司拥有的，型号为Bombardier Learjet 45。这架飞机制造于2005年，能够容纳8名乘客，最大航程为2632公里，通常以KLAS（拉斯维加斯麦卡伦国际机场）为基地。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.4
+    },
+    {
+        "Q": "飞机注册号为N97FT的飞机是哪一家公司的？",
+        "A": "Vistajet Us Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N97FT\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N97FT的飞机属于Vistajet Us Inc.，型号为Gulfstream G550。这架飞机的制造年份为2014，座位数为14，最大航程为12501公里，通常停放在KJAX机场。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.55
+    },
+    {
+        "Q": "飞机注册号为C-FPCP的飞机是哪一家公司的？",
+        "A": "Airco Aircraft Charters Ltd",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-FPCP\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为C-FPCP的飞机属于Airco Aircraft Charters Ltd.，这是一家提供航空包机服务的公司。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.83
+    },
+    {
+        "Q": "飞机注册号为N631AD的飞机是哪一家公司的？",
+        "A": "Priester Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N631AD\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N631AD的飞机属于Priester Aviation公司。这是一架Embraer Phenom 300型号的飞机，制造于2017年，座位数为7个，最大航程为3650公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.46
+    },
+    {
+        "Q": "飞机注册号为C-GVFX的飞机是哪一家公司的？",
+        "A": "Execaire",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"C-GVFX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为C-GVFX的飞机是由Execaire公司拥有的，型号为Bombardier Challenger 300。这架飞机的制造年份为2009年，最多可容纳9名乘客，最大航程为5676公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.79
+    },
+    {
+        "Q": "飞机注册号为N1VR的飞机是哪一家公司的？",
+        "A": "West Coast Aviation Services",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N1VR\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N1VR的飞机是由**West Coast Aviation Services**公司运营的，型号为**Bombardier Challenger 604**。这架飞机的制造年份为2003，通常可容纳9名乘客，最大航程为7519公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.21
+    },
+    {
+        "Q": "飞机注册号为EC-MNH的飞机是哪一家公司的？",
+        "A": "Gestair",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"EC-MNH\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为EC-MNH的飞机是由Gestair公司拥有的，型号为Bombardier Global Express。这架飞机的制造年份为2010年，座位数为15，最大航程为11112公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.53
+    },
+    {
+        "Q": "飞机注册号为N82EM的飞机是哪一家公司的？",
+        "A": "Skystream Jet",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N82EM\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N82EM的飞机是由Skystream Jet公司拥有的，型号为Bombardier Global Express XRS，制造年份为2007年。这架飞机的座位数为13，最大航程为11390公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.59
+    },
+    {
+        "Q": "飞机注册号为N631JS的飞机是哪一家公司的？",
+        "A": "Gold Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N631JS\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N631JS的飞机是由Gold Aviation公司拥有的。这是一架Embraer Phenom 300型号的飞机，制造年份为2012年，座位数为7，最大航程为3650公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.42
+    },
+    {
+        "Q": "飞机注册号为D-CSCB的飞机是哪一家公司的？",
+        "A": "Silver Cloud Air",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"D-CSCB\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为D-CSCB的飞机是由**Silver Cloud Air**公司拥有的，型号为**Cessna Citation XLS+**，制造年份为2015年。这架飞机的座位数为9，最大航程为3913公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.18
+    },
+    {
+        "Q": "飞机注册号为N698RS的飞机是哪一家公司的？",
+        "A": "Pinnacle Air Charter LLC",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N698RS\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N698RS的飞机属于Pinnacle Air Charter LLC。这架飞机的型号是Bombardier Challenger 604，制造年份为2000年，最多可容纳12名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.76
+    },
+    {
+        "Q": "飞机注册号为N224CX的飞机是哪一家公司的？",
+        "A": "Mira Vista Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N224CX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N224CX的飞机是由Mira Vista Aviation公司拥有的Cessna Citation X。这架飞机的制造年份为2005，能够容纳8名乘客，最大航程为5741公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.77
+    },
+    {
+        "Q": "飞机注册号为N645AT的飞机是哪一家公司的？",
+        "A": "Alaska Air Transit",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N645AT\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N645AT的飞机属于Alaska Air Transit。这是一架Cessna 208型号的飞机，制造年份为2013年，最多可容纳9名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.61
+    },
+    {
+        "Q": "飞机注册号为CN-SRA的飞机是哪一家公司的？",
+        "A": "Sarah Airways",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"CN-SRA\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为CN-SRA的飞机是由**Sarah Airways**公司拥有的。这是一架Cessna Citation VII（型号C650），制造于1997年，座位数为9个，最大航程为4110公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.0
+    },
+    {
+        "Q": "飞机注册号为CX-SCA的飞机是哪一家公司的？",
+        "A": "Aeromas",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"CX-SCA\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为CX-SCA的飞机是由Aeromas公司运营的，型号为Bombardier Learjet 60。这架飞机制造于1995年，通常可容纳7名乘客，最大航程为2632公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 13.76
+    },
+    {
+        "Q": "飞机注册号为N510AN的飞机是哪一家公司的？",
+        "A": "Solairus Aviation",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N510AN\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N510AN的飞机属于Solairus Aviation公司。这是一架2013年制造的Dassault Falcon 7X，座位数为14，最大航程为11019公里，主要基地位于KPSP（棕榈泉国际机场）和KPWK（威尔金斯机场）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.36
+    },
+    {
+        "Q": "飞机注册号为N228SS的飞机是哪一家公司的？",
+        "A": "Vistajet Us Inc.",
+        "SQL": "SELECT sd.supplier_name FROM aircraft_details ad JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id WHERE ad.registration = \"N228SS\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "飞机注册号为N228SS的飞机属于Vistajet Us Inc.，型号为Bombardier Global Express，制造年份为2003。这架飞机可以容纳12名乘客，最大航程为11112公里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.97
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 50,
+        "correct_count": 50,
+        "average_time": 8.67
+    }
+]

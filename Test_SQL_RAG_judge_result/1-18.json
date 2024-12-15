@@ -1,0 +1,508 @@
+[
+    {
+        "Q": "Hawker 750机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 750\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 750\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.66
+    },
+    {
+        "Q": "Boeing 767机型的座位数是多少？",
+        "A": 96,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Boeing 767\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Boeing 767\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.3
+    },
+    {
+        "Q": "Dassault Falcon 8X机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 8X\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 8X\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.35
+    },
+    {
+        "Q": "Cessna Citation X+机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation X+\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation X+\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.48
+    },
+    {
+        "Q": "Embraer Legacy 600机型的座位数是多少？",
+        "A": 13,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 600\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 600\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.38
+    },
+    {
+        "Q": "Beechcraft King Air 350i机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350i\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350i\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.57
+    },
+    {
+        "Q": "Bombardier Challenger 605机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 605\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 605\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.35
+    },
+    {
+        "Q": "Dassault Falcon 2000LX机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000LX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000LX\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.98
+    },
+    {
+        "Q": "Bombardier Challenger 604机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 604\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 604\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.49
+    },
+    {
+        "Q": "Cessna Citation XLS+机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation XLS+\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation XLS+\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.8
+    },
+    {
+        "Q": "Piper PA-32机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-32\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-32\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.77
+    },
+    {
+        "Q": "Cessna Citation CJ2机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ2\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ2\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.18
+    },
+    {
+        "Q": "Cessna 402机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 402\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 402\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.19
+    },
+    {
+        "Q": "Cessna 340机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 340\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 340\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.55
+    },
+    {
+        "Q": "Cessna Citation CJ3+机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ3+\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ3+\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.26
+    },
+    {
+        "Q": "Dassault Falcon 900DX机型的座位数是多少？",
+        "A": 17,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900DX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900DX\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.64
+    },
+    {
+        "Q": "Embraer Praetor 500机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Praetor 500\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Praetor 500\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.5
+    },
+    {
+        "Q": "Dassault Falcon 900EX机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900EX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900EX\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.6
+    },
+    {
+        "Q": "Piper PA-28机型的座位数是多少？",
+        "A": 3,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-28\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-28\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.37
+    },
+    {
+        "Q": "Cessna Citation Bravo机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Bravo\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Bravo\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.39
+    },
+    {
+        "Q": "BAe 125-700机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"BAe 125-700\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"BAe 125-700\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.66
+    },
+    {
+        "Q": "Beechjet 400机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 400\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 400\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.23
+    },
+    {
+        "Q": "Hawker 800XPi机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800XPi\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800XPi\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.43
+    },
+    {
+        "Q": "Gulfstream GIV-SP机型的座位数是多少？",
+        "A": 13,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GIV-SP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GIV-SP\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.5
+    },
+    {
+        "Q": "Hawker 900XP机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 900XP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 900XP\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.4
+    },
+    {
+        "Q": "Cirrus SR22机型的座位数是多少？",
+        "A": 4,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cirrus SR22\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cirrus SR22\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.14
+    },
+    {
+        "Q": "Cessna Citation VI机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation VI\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation VI\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.43
+    },
+    {
+        "Q": "Gulfstream G350机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G350\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G350\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.07
+    },
+    {
+        "Q": "Hawker 1000机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 1000\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 1000\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.61
+    },
+    {
+        "Q": "Airbus A340机型的座位数是多少？",
+        "A": 100,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus A340\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus A340\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.61
+    },
+    {
+        "Q": "Bombardier Learjet 55机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 55\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 55\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.45
+    },
+    {
+        "Q": "Embraer Phenom 100机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Phenom 100\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Phenom 100\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.39
+    },
+    {
+        "Q": "Dassault Falcon 7X机型的座位数是多少？",
+        "A": 12,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 7X\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 7X\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.25
+    },
+    {
+        "Q": "Hawker 850XPi机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 850XPi\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 850XPi\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.67
+    },
+    {
+        "Q": "Dassault Falcon 900B机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900B\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900B\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.66
+    },
+    {
+        "Q": "Cessna 152机型的座位数是多少？",
+        "A": 1,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 152\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 152\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.53
+    },
+    {
+        "Q": "Dassault Falcon 900LX机型的座位数是多少？",
+        "A": 14,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900LX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900LX\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.46
+    },
+    {
+        "Q": "Beechjet 65机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 65\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 65\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.54
+    },
+    {
+        "Q": "Dassault Falcon 10机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 10\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 10\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.14
+    },
+    {
+        "Q": "Beechcraft King Air 200机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 200\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 200\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.5
+    },
+    {
+        "Q": "Embraer Legacy 500机型的座位数是多少？",
+        "A": 9,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 500\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 500\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.12
+    },
+    {
+        "Q": "Bombardier Challenger 650机型的座位数是多少？",
+        "A": 10,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 650\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 650\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.49
+    },
+    {
+        "Q": "Gulfstream G550机型的座位数是多少？",
+        "A": 16,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G550\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G550\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.63
+    },
+    {
+        "Q": "Cessna Citation Ultra机型的座位数是多少？",
+        "A": 7,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Ultra\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Ultra\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.38
+    },
+    {
+        "Q": "Bombardier Learjet 35A机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 35A\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 35A\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.42
+    },
+    {
+        "Q": "Cessna 303机型的座位数是多少？",
+        "A": 5,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 303\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Cessna 303\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.55
+    },
+    {
+        "Q": "Airbus A319机型的座位数是多少？",
+        "A": 144,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus A319\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Airbus A319\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.64
+    },
+    {
+        "Q": "Hawker 700A机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 700A\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 700A\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.63
+    },
+    {
+        "Q": "Bombardier Learjet 40机型的座位数是多少？",
+        "A": 6,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 40\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 40\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.36
+    },
+    {
+        "Q": "Hawker 800机型的座位数是多少？",
+        "A": 8,
+        "SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800\";",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.18
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 50,
+        "correct_count": 50,
+        "average_time": 3.74
+    }
+]

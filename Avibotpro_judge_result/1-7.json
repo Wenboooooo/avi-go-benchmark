@@ -1,0 +1,558 @@
+[
+    {
+        "Q": "Airbus ACJ A318 Elite的最大载客量是多少？",
+        "A": [
+            19
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ A318 Elite\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airbus ACJ A318 Elite的最大载客量为19人。这款飞机以其卓越的舒适性、空间和风格而闻名，适合进行洲际航班。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.75
+    },
+    {
+        "Q": "Boeing BBJ的最大载客量是多少？",
+        "A": [
+            40
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Boeing BBJ\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Boeing BBJ（Boeing Business Jet）的最大载客量为420人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.77
+    },
+    {
+        "Q": "Cessna 441 Conquest II的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna 441 Conquest II\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 441 Conquest II的最大载客量为8至9名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.7
+    },
+    {
+        "Q": "Gulfstream G280的最大载客量是多少？",
+        "A": [
+            10
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G280\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G280的最大载客量为16人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 16.66
+    },
+    {
+        "Q": "Hawker 800XPi的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800XPi\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 800XPi的最大载客量为8人，通常配置为8个座位，后部有一个三座沙发。在某些配置中，可能会有6个独立座位。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.51
+    },
+    {
+        "Q": "Bombardier Challenger 600的最大载客量是多少？",
+        "A": [
+            12
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 600\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Challenger 600的最大载客量为8人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.16
+    },
+    {
+        "Q": "Hawker 900XP的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Hawker 900XP\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 900XP的最大载客量为8人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.27
+    },
+    {
+        "Q": "Gulfstream G300的最大载客量是多少？",
+        "A": [
+            12
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G300\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G300的最大载客量为16人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 17.52
+    },
+    {
+        "Q": "Cessna Citation I/SP的最大载客量是多少？",
+        "A": [
+            7
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation I/SP\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation I/SP的最大载客量为7名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.06
+    },
+    {
+        "Q": "Dassault Falcon 2000EX的最大载客量是多少？",
+        "A": [
+            10
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000EX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 2000EX的最大载客量为12人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.81
+    },
+    {
+        "Q": "Bombardier Challenger 605的最大载客量是多少？",
+        "A": [
+            12
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 605\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Challenger 605的最大载客量为10名乘客。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.4
+    },
+    {
+        "Q": "Cessna 207的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna 207\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 207的最大载客量为7人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.77
+    },
+    {
+        "Q": "Piper PA-34的最大载客量是多少？",
+        "A": [
+            5
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-34\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Piper PA-34 Seneca的最大载客量为7人，包括1名飞行员和6名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.0
+    },
+    {
+        "Q": "Beechcraft King Air 350i的最大载客量是多少？",
+        "A": [
+            10
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350i\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air 350i的最大载客量为9人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.81
+    },
+    {
+        "Q": "Cessna Citation XLS的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation XLS\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation XLS的最大载客量为7名乘客。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.62
+    },
+    {
+        "Q": "Dassault Falcon 900C的最大载客量是多少？",
+        "A": [
+            14
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900C\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 900C的最大载客量为12人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.54
+    },
+    {
+        "Q": "Beechcraft King Air 350的最大载客量是多少？",
+        "A": [
+            16
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 350\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air 350的最大载客量为8至12人，具体取决于机型和配置。例如，某些配置可以容纳最多12名乘客。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.16
+    },
+    {
+        "Q": "Airbus A319的最大载客量是多少？",
+        "A": [
+            144
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Airbus A319\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airbus A319的最大载客量一般为124至156人，具体取决于航空公司的座位布局和配置。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.54
+    },
+    {
+        "Q": "Piper PA-32的最大载客量是多少？",
+        "A": [
+            5
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-32\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Piper PA-32系列飞机的最大载客量为7人。这使得它在通用航空中非常适合小型团体或家庭旅行。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.02
+    },
+    {
+        "Q": "Airbus ACJ A320的最大载客量是多少？",
+        "A": [
+            31
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Airbus ACJ A320\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airbus ACJ A320的最大载客量为420人。这一数字通常是在高密度配置下实现的，具体的载客量可能会根据不同的客舱布局和配置而有所变化。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.75
+    },
+    {
+        "Q": "Beechcraft King Air B200的最大载客量是多少？",
+        "A": [
+            13
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air B200\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft King Air B200的最大载客量为14名乘客。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.07
+    },
+    {
+        "Q": "Embraer Phenom 300E的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Embraer Phenom 300E\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer Phenom 300E的最大载客量为最多9名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.88
+    },
+    {
+        "Q": "Dassault Falcon 6X的最大载客量是多少？",
+        "A": [
+            14
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 6X\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 6X的最大载客量为14名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.34
+    },
+    {
+        "Q": "Hawker 850XPi的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Hawker 850XPi\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 850XPi的最大载客量为8人。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.67
+    },
+    {
+        "Q": "Cessna Citation Mustang的最大载客量是多少？",
+        "A": [
+            5
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Mustang\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation Mustang的最大载客量为6人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.96
+    },
+    {
+        "Q": "Cessna Citation CJ1+的最大载客量是多少？",
+        "A": [
+            7
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ1+\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation CJ1+的最大载客量为7人。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.35
+    },
+    {
+        "Q": "Gulfstream G700的最大载客量是多少？",
+        "A": [
+            15
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G700\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G700的最大载客量为19人。这款飞机以其宽敞的客舱和创新的设计而闻名，能够提供舒适的飞行体验。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.8
+    },
+    {
+        "Q": "Cessna Citation Bravo的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Bravo\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation Bravo的最大载客量为7名乘客。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.69
+    },
+    {
+        "Q": "Cessna 206的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna 206\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna 206的最大载客量为6人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.35
+    },
+    {
+        "Q": "Cessna Citation X的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation X\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation X的最大载客量为8人。这款飞机以其高速和长航程而闻名，适合商务旅行和长途飞行。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.06
+    },
+    {
+        "Q": "Cessna Citation Encore+的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Encore+\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation Encore+的最大载客量为8人。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.33
+    },
+    {
+        "Q": "Nextant 400XT的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Nextant 400XT\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Nextant 400XT的最大载客量为7人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.33
+    },
+    {
+        "Q": "Bombardier Learjet 75的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 75\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Learjet 75的最大载客量为7人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.5
+    },
+    {
+        "Q": "Dassault Falcon 900EX的最大载客量是多少？",
+        "A": [
+            15
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900EX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 900EX的最大载客量为9人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.13
+    },
+    {
+        "Q": "Cessna Citation CJ2+的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ2+\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation CJ2+的最大载客量为7人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.02
+    },
+    {
+        "Q": "Bombardier Challenger 850的最大载客量是多少？",
+        "A": [
+            50
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 850\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Challenger 850的最大载客量为15名乘客。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.62
+    },
+    {
+        "Q": "Hawker 400的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Hawker 400\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 400的最大载客量为7人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.07
+    },
+    {
+        "Q": "Beechcraft Travel Air的最大载客量是多少？",
+        "A": [
+            7
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft Travel Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beechcraft Travel Air的最大载客量为7人。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.51
+    },
+    {
+        "Q": "Pilatus PC-12的最大载客量是多少？",
+        "A": [
+            10
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Pilatus PC-12\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Pilatus PC-12的最大载客量为12人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.8
+    },
+    {
+        "Q": "Gulfstream G650的最大载客量是多少？",
+        "A": [
+            18
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G650\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gulfstream G650的最大载客量为18名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 45.09
+    },
+    {
+        "Q": "Hawker 750的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Hawker 750\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hawker 750的最大载客量为8名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.74
+    },
+    {
+        "Q": "Dassault Falcon 8X的最大载客量是多少？",
+        "A": [
+            14
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 8X\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 8X的最大载客量为8人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.59
+    },
+    {
+        "Q": "Cessna Citation X+的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation X+\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation X+的最大载客量为10名乘客，加上2名飞行员。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.35
+    },
+    {
+        "Q": "Embraer Legacy 600的最大载客量是多少？",
+        "A": [
+            37
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 600\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Embraer Legacy 600的最大载客量为14人，具体取决于机舱的配置和布局。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 15.17
+    },
+    {
+        "Q": "Bombardier Learjet 55C的最大载客量是多少？",
+        "A": [
+            7
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 55C\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Learjet 55C的最大载客量为8人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 37.95
+    },
+    {
+        "Q": "Airbus A321的最大载客量是多少？",
+        "A": [
+            236
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Airbus A321\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airbus A321的最大载客量因具体型号而异。一般来说，A321neo的最大载客量为244名乘客，而A321XLR的最大载客量为206名乘客。此外，某些配置下的A321也可以容纳高达420名乘客。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.47
+    },
+    {
+        "Q": "Dassault Falcon 2000LX的最大载客量是多少？",
+        "A": [
+            14
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000LX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dassault Falcon 2000LX的最大载客量为12人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.13
+    },
+    {
+        "Q": "Bombardier Challenger 604的最大载客量是多少？",
+        "A": [
+            18
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 604\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bombardier Challenger 604的最大载客量为9至12人，具体取决于机舱的配置和布局。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.07
+    },
+    {
+        "Q": "Cessna Citation XLS+的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation XLS+\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cessna Citation XLS+的最大载客量为7名乘客。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.68
+    },
+    {
+        "Q": "Boeing BBJ2的最大载客量是多少？",
+        "A": [
+            22
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Boeing BBJ2\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Boeing BBJ2的最大载客量为420人。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.43
+    },
+    {
+        "correct_rate": 26.0,
+        "sample_size": 50,
+        "correct_count": 13,
+        "average_time": 9.72
+    }
+]

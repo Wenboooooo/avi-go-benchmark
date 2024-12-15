@@ -1,0 +1,411 @@
+[
+    {
+        "Q": "Tyler的航空公司有哪些？",
+        "A": [
+            "First Av Group LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Tyler\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name\nFROM supplier_details\nWHERE supplier_name LIKE '%Tyler%'\nLIMIT 50;",
+        "actual_answer": [],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.18
+    },
+    {
+        "Q": "Hennepin County的航空公司有哪些？",
+        "A": [
+            "Aviation Charter Inc.",
+            "Club Jet Charter LLC"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Hennepin County\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name\nFROM supplier_details\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "24/7 Jet Inc."
+            },
+            {
+                "supplier_name": "247 Aviation Ltd"
+            },
+            {
+                "supplier_name": "45 North Aviation"
+            },
+            {
+                "supplier_name": "A-OK Jets"
+            },
+            {
+                "supplier_name": "AAC Jet"
+            },
+            {
+                "supplier_name": "AB Jets"
+            },
+            {
+                "supplier_name": "Fly Tyrol"
+            },
+            {
+                "supplier_name": "Abelag Aviation"
+            },
+            {
+                "supplier_name": "ABS Jets"
+            },
+            {
+                "supplier_name": "AC Aviation Charter AG(Switzerland)"
+            },
+            {
+                "supplier_name": "AC Aviation Charter(Austria)"
+            },
+            {
+                "supplier_name": "ACASS Canada Ltd"
+            },
+            {
+                "supplier_name": "ACASS(Ireland)"
+            },
+            {
+                "supplier_name": "Accent Airways LLC"
+            },
+            {
+                "supplier_name": "ACI Jet"
+            },
+            {
+                "supplier_name": "ACM Air Charter"
+            },
+            {
+                "supplier_name": "Acropolis Aviation Ltd"
+            },
+            {
+                "supplier_name": "Action Air Express"
+            },
+            {
+                "supplier_name": "Adirondack Flying Service"
+            },
+            {
+                "supplier_name": "ADM Aviation Executive"
+            },
+            {
+                "supplier_name": "Advanced Air LLC"
+            },
+            {
+                "supplier_name": "Aelia S.R.L"
+            },
+            {
+                "supplier_name": "AEM Aviation"
+            },
+            {
+                "supplier_name": "Aergo International Pty Ltd"
+            },
+            {
+                "supplier_name": "Aero Air Charter LLC"
+            },
+            {
+                "supplier_name": "Aero Asahi Corporation"
+            },
+            {
+                "supplier_name": "Aero Centers"
+            },
+            {
+                "supplier_name": "Aero Charter Inc."
+            },
+            {
+                "supplier_name": "Aero Dynamic Jets"
+            },
+            {
+                "supplier_name": "Aero JL S.A de C.V"
+            },
+            {
+                "supplier_name": "Aero Sotravia"
+            },
+            {
+                "supplier_name": "Aero Transporte S.A."
+            },
+            {
+                "supplier_name": "Aero-Tech Services Inc."
+            },
+            {
+                "supplier_name": "Aerocardal"
+            },
+            {
+                "supplier_name": "Aerodynamics Malaga"
+            },
+            {
+                "supplier_name": "Aeroeste"
+            },
+            {
+                "supplier_name": "Aeromas"
+            },
+            {
+                "supplier_name": "Aeronautical Charter Inc."
+            },
+            {
+                "supplier_name": "Aeronaves Tsm S.A."
+            },
+            {
+                "supplier_name": "Aeropartner"
+            },
+            {
+                "supplier_name": "Aerorutas"
+            },
+            {
+                "supplier_name": "Aerosafin S.A de C.V"
+            },
+            {
+                "supplier_name": "Aerovias DAP"
+            },
+            {
+                "supplier_name": "Aerovida S.A"
+            },
+            {
+                "supplier_name": "Aeroways GmbH"
+            },
+            {
+                "supplier_name": "Aerowest GmbH"
+            },
+            {
+                "supplier_name": "Air 7 LLC"
+            },
+            {
+                "supplier_name": "Air Adriatic D.O.O."
+            },
+            {
+                "supplier_name": "Air Alliance Group GmbH"
+            },
+            {
+                "supplier_name": "Air Alsie"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 14.8
+    },
+    {
+        "Q": "Zurich的航空公司有哪些？",
+        "A": [
+            "AC Aviation Charter AG(Switzerland)",
+            "Axis Aviation Group",
+            "Cat Aviation AG",
+            "Comlux Aviation",
+            "Execujet Europe",
+            "Jet Aviation Business Jets AG",
+            "Premium Jet AG"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Zurich\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT DISTINCT supplier_name\nFROM supplier_details\nWHERE supplier_city_name = 'Zurich'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "AC Aviation Charter AG(Switzerland)"
+            },
+            {
+                "supplier_name": "Axis Aviation Group"
+            },
+            {
+                "supplier_name": "Cat Aviation AG"
+            },
+            {
+                "supplier_name": "Comlux Aviation"
+            },
+            {
+                "supplier_name": "Execujet Europe"
+            },
+            {
+                "supplier_name": "Jet Aviation Business Jets AG"
+            },
+            {
+                "supplier_name": "Premium Jet AG"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 15.37
+    },
+    {
+        "Q": "Zweibrucken的航空公司有哪些？",
+        "A": [
+            "Arcus-air GmbH & Co. KG"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Zweibrucken\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name\nFROM supplier_details\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "24/7 Jet Inc."
+            },
+            {
+                "supplier_name": "247 Aviation Ltd"
+            },
+            {
+                "supplier_name": "45 North Aviation"
+            },
+            {
+                "supplier_name": "A-OK Jets"
+            },
+            {
+                "supplier_name": "AAC Jet"
+            },
+            {
+                "supplier_name": "AB Jets"
+            },
+            {
+                "supplier_name": "Fly Tyrol"
+            },
+            {
+                "supplier_name": "Abelag Aviation"
+            },
+            {
+                "supplier_name": "ABS Jets"
+            },
+            {
+                "supplier_name": "AC Aviation Charter AG(Switzerland)"
+            },
+            {
+                "supplier_name": "AC Aviation Charter(Austria)"
+            },
+            {
+                "supplier_name": "ACASS Canada Ltd"
+            },
+            {
+                "supplier_name": "ACASS(Ireland)"
+            },
+            {
+                "supplier_name": "Accent Airways LLC"
+            },
+            {
+                "supplier_name": "ACI Jet"
+            },
+            {
+                "supplier_name": "ACM Air Charter"
+            },
+            {
+                "supplier_name": "Acropolis Aviation Ltd"
+            },
+            {
+                "supplier_name": "Action Air Express"
+            },
+            {
+                "supplier_name": "Adirondack Flying Service"
+            },
+            {
+                "supplier_name": "ADM Aviation Executive"
+            },
+            {
+                "supplier_name": "Advanced Air LLC"
+            },
+            {
+                "supplier_name": "Aelia S.R.L"
+            },
+            {
+                "supplier_name": "AEM Aviation"
+            },
+            {
+                "supplier_name": "Aergo International Pty Ltd"
+            },
+            {
+                "supplier_name": "Aero Air Charter LLC"
+            },
+            {
+                "supplier_name": "Aero Asahi Corporation"
+            },
+            {
+                "supplier_name": "Aero Centers"
+            },
+            {
+                "supplier_name": "Aero Charter Inc."
+            },
+            {
+                "supplier_name": "Aero Dynamic Jets"
+            },
+            {
+                "supplier_name": "Aero JL S.A de C.V"
+            },
+            {
+                "supplier_name": "Aero Sotravia"
+            },
+            {
+                "supplier_name": "Aero Transporte S.A."
+            },
+            {
+                "supplier_name": "Aero-Tech Services Inc."
+            },
+            {
+                "supplier_name": "Aerocardal"
+            },
+            {
+                "supplier_name": "Aerodynamics Malaga"
+            },
+            {
+                "supplier_name": "Aeroeste"
+            },
+            {
+                "supplier_name": "Aeromas"
+            },
+            {
+                "supplier_name": "Aeronautical Charter Inc."
+            },
+            {
+                "supplier_name": "Aeronaves Tsm S.A."
+            },
+            {
+                "supplier_name": "Aeropartner"
+            },
+            {
+                "supplier_name": "Aerorutas"
+            },
+            {
+                "supplier_name": "Aerosafin S.A de C.V"
+            },
+            {
+                "supplier_name": "Aerovias DAP"
+            },
+            {
+                "supplier_name": "Aerovida S.A"
+            },
+            {
+                "supplier_name": "Aeroways GmbH"
+            },
+            {
+                "supplier_name": "Aerowest GmbH"
+            },
+            {
+                "supplier_name": "Air 7 LLC"
+            },
+            {
+                "supplier_name": "Air Adriatic D.O.O."
+            },
+            {
+                "supplier_name": "Air Alliance Group GmbH"
+            },
+            {
+                "supplier_name": "Air Alsie"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 14.71
+    },
+    {
+        "Q": "Las Vegas的航空公司有哪些？",
+        "A": [
+            "Charter Airlines LLC",
+            "Cirrus Aviation Services",
+            "Prestige Air Group"
+        ],
+        "SQL": "SELECT supplier_name FROM supplier_details WHERE supplier_city_name = \"Las Vegas\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_name\nFROM supplier_details\nWHERE supplier_city_name = 'Las Vegas'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Charter Airlines LLC"
+            },
+            {
+                "supplier_name": "Cirrus Aviation Services"
+            },
+            {
+                "supplier_name": "Prestige Air Group"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 15.0
+    },
+    {
+        "correct_rate": 40.0,
+        "sample_size": 5,
+        "correct_count": 2,
+        "average_time": 13.41
+    }
+]

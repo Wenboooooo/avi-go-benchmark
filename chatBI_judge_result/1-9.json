@@ -1,0 +1,1082 @@
+[
+    {
+        "Q": "Lublin Airport机场的三字码是什么？",
+        "A": "LUZ",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Lublin Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Lublin Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "LUZ"
+            },
+            {
+                "iata_code": "LUZ"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.0
+    },
+    {
+        "Q": "Dabra机场的三字码是什么？",
+        "A": "DRH",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Dabra\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Dabra'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "DRH"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.74
+    },
+    {
+        "Q": "Cuito Cuanavale机场的三字码是什么？",
+        "A": "CTI",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Cuito Cuanavale\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Cuito Cuanavale'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "CTI"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.88
+    },
+    {
+        "Q": "Cap D Jose D Vasquez机场的三字码是什么？",
+        "A": "ULA",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Cap D Jose D Vasquez\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Cap D Jose D Vasquez'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "ULA"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.85
+    },
+    {
+        "Q": "Fort Chipewyan Airport机场的三字码是什么？",
+        "A": "YPY",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Fort Chipewyan Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Fort Chipewyan Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "YPY"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.05
+    },
+    {
+        "Q": "Sialkot International Airport机场的三字码是什么？",
+        "A": "SKT",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Sialkot International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Sialkot International Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "SKT"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.42
+    },
+    {
+        "Q": "Falcone-Borsellino International Airport机场的三字码是什么？",
+        "A": "PMO",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Falcone-Borsellino International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Falcone-Borsellino International Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "PMO"
+            },
+            {
+                "iata_code": "PMO"
+            },
+            {
+                "iata_code": "PMO"
+            },
+            {
+                "iata_code": "PMO"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 22.21
+    },
+    {
+        "Q": "Stephenville Airport机场的三字码是什么？",
+        "A": "YJT",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Stephenville Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Stephenville Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "YJT"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 22.07
+    },
+    {
+        "Q": "Austin Mun机场的三字码是什么？",
+        "A": "AUM",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Austin Mun\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Austin Mun'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "AUM"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.37
+    },
+    {
+        "Q": "Asmara International Airport机场的三字码是什么？",
+        "A": "ASM",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Asmara International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Asmara International Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "ASM"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.07
+    },
+    {
+        "Q": "Ranai Airport机场的三字码是什么？",
+        "A": "NTX",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Ranai Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Ranai Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "NTX"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.95
+    },
+    {
+        "Q": "Thornhill Air Base机场的三字码是什么？",
+        "A": "GWE",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Thornhill Air Base\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Thornhill Air Base'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "GWE"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.34
+    },
+    {
+        "Q": "Renmark机场的三字码是什么？",
+        "A": "RMK",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Renmark\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Renmark'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "RMK"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.83
+    },
+    {
+        "Q": "La Seu D Urgell机场的三字码是什么？",
+        "A": "LEU",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"La Seu D Urgell\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'La Seu D Urgell'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "LEU"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.74
+    },
+    {
+        "Q": "San Andros机场的三字码是什么？",
+        "A": "SAQ",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"San Andros\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'San Andros'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "SAQ"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.57
+    },
+    {
+        "Q": "Arealva Airport机场的三字码是什么？",
+        "A": "JTC",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Arealva Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Arealva Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "JTC"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.98
+    },
+    {
+        "Q": "Seychelles International Airport机场的三字码是什么？",
+        "A": "SEZ",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Seychelles International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Seychelles International Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "SEZ"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.69
+    },
+    {
+        "Q": "San Marcos Mun机场的三字码是什么？",
+        "A": "HYI",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"San Marcos Mun\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'San Marcos Mun'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "HYI"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.49
+    },
+    {
+        "Q": "Rostock–Laage Airport机场的三字码是什么？",
+        "A": "RLG",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Rostock–Laage Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Rostock–Laage Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "RLG"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.42
+    },
+    {
+        "Q": "Sepe Tiaraju Airport机场的三字码是什么？",
+        "A": "GEL",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Sepe Tiaraju Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Sepe Tiaraju Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "GEL"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.13
+    },
+    {
+        "Q": "Ulawa Airport机场的三字码是什么？",
+        "A": "RNA",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Ulawa Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Ulawa Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "RNA"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.47
+    },
+    {
+        "Q": "Presidente Nicolau Lobato International Airport机场的三字码是什么？",
+        "A": "DIL",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Presidente Nicolau Lobato International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Presidente Nicolau Lobato International Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "DIL"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.51
+    },
+    {
+        "Q": "Terrance B. Lettsome Airport机场的三字码是什么？",
+        "A": "EIS",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Terrance B. Lettsome Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Terrance B. Lettsome Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "EIS"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.31
+    },
+    {
+        "Q": "Heroes De Malvinas机场的三字码是什么？",
+        "A": "TDL",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Heroes De Malvinas\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Heroes De Malvinas'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "TDL"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.53
+    },
+    {
+        "Q": "Jingdezhen Airport机场的三字码是什么？",
+        "A": "JDZ",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Jingdezhen Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Jingdezhen Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "JDZ"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.18
+    },
+    {
+        "Q": "Trent Lott Intl机场的三字码是什么？",
+        "A": "PGL",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Trent Lott Intl\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Trent Lott Intl'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "PGL"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 21.77
+    },
+    {
+        "Q": "Long Seridan Airport机场的三字码是什么？",
+        "A": "ODN",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Long Seridan Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Long Seridan Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "ODN"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.77
+    },
+    {
+        "Q": "Petrozavodsk Airport机场的三字码是什么？",
+        "A": "PES",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Petrozavodsk Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Petrozavodsk Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "PES"
+            },
+            {
+                "iata_code": "PES"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.69
+    },
+    {
+        "Q": "Leesburg Intl机场的三字码是什么？",
+        "A": "LEE",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Leesburg Intl\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Leesburg Intl'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "LEE"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.8
+    },
+    {
+        "Q": "Nuku机场的三字码是什么？",
+        "A": "UKU",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Nuku\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Nuku Hiva Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "NHV"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 19.81
+    },
+    {
+        "Q": "Tara机场的三字码是什么？",
+        "A": "XTR",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Tara\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Tara'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "XTR"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 18.9
+    },
+    {
+        "Q": "Montague-Yreka Rohrer Field机场的三字码是什么？",
+        "A": "RKC",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Montague-Yreka Rohrer Field\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Montague-Yreka Rohrer Field'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "RKC"
+            },
+            {
+                "iata_code": ""
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.87
+    },
+    {
+        "Q": "Cheddi Jagan International Airport机场的三字码是什么？",
+        "A": "GEO",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Cheddi Jagan International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Cheddi Jagan International Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "GEO"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.16
+    },
+    {
+        "Q": "El Tuqui机场的三字码是什么？",
+        "A": "OVL",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"El Tuqui\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'El Tuqui'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "OVL"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.92
+    },
+    {
+        "Q": "Madurai Airport机场的三字码是什么？",
+        "A": "IXM",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Madurai Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Madurai Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "IXM"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 22.87
+    },
+    {
+        "Q": "Lencero机场的三字码是什么？",
+        "A": "JAL",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Lencero\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT DISTINCT iata_code\nFROM airport_fbo_details\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "EHU"
+            },
+            {
+                "iata_code": ""
+            },
+            {
+                "iata_code": "OGL"
+            },
+            {
+                "iata_code": "NDC"
+            },
+            {
+                "iata_code": "IXD"
+            },
+            {
+                "iata_code": "LXG"
+            },
+            {
+                "iata_code": "XKH"
+            },
+            {
+                "iata_code": "IZT"
+            },
+            {
+                "iata_code": "LGP"
+            },
+            {
+                "iata_code": "EYK"
+            },
+            {
+                "iata_code": "IAA"
+            },
+            {
+                "iata_code": "ITU"
+            },
+            {
+                "iata_code": "KRO"
+            },
+            {
+                "iata_code": "KYZ"
+            },
+            {
+                "iata_code": "IGT"
+            },
+            {
+                "iata_code": "NNM"
+            },
+            {
+                "iata_code": "NLI"
+            },
+            {
+                "iata_code": "NYA"
+            },
+            {
+                "iata_code": "OVS"
+            },
+            {
+                "iata_code": "TGK"
+            },
+            {
+                "iata_code": "TLK"
+            },
+            {
+                "iata_code": "TBW"
+            },
+            {
+                "iata_code": "TYD"
+            },
+            {
+                "iata_code": "URJ"
+            },
+            {
+                "iata_code": "JOK"
+            },
+            {
+                "iata_code": "DEE"
+            },
+            {
+                "iata_code": "FSS"
+            },
+            {
+                "iata_code": "YXY"
+            },
+            {
+                "iata_code": "AXF"
+            },
+            {
+                "iata_code": "RHT"
+            },
+            {
+                "iata_code": "CDE"
+            },
+            {
+                "iata_code": "EJN"
+            },
+            {
+                "iata_code": "YIE"
+            },
+            {
+                "iata_code": "HDG"
+            },
+            {
+                "iata_code": "HUO"
+            },
+            {
+                "iata_code": "LLV"
+            },
+            {
+                "iata_code": "TVS"
+            },
+            {
+                "iata_code": "TGO"
+            },
+            {
+                "iata_code": "UCB"
+            },
+            {
+                "iata_code": "WUA"
+            },
+            {
+                "iata_code": "HLH"
+            },
+            {
+                "iata_code": "XIL"
+            },
+            {
+                "iata_code": "WUT"
+            },
+            {
+                "iata_code": "RLK"
+            },
+            {
+                "iata_code": "NZL"
+            },
+            {
+                "iata_code": "HCZ"
+            },
+            {
+                "iata_code": "LLF"
+            },
+            {
+                "iata_code": "WGN"
+            },
+            {
+                "iata_code": "YLX"
+            },
+            {
+                "iata_code": "YYA"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 19.34
+    },
+    {
+        "Q": "Tainan Airport机场的三字码是什么？",
+        "A": "TNN",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Tainan Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Tainan Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "TNN"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.34
+    },
+    {
+        "Q": "Senou International Airport机场的三字码是什么？",
+        "A": "BKO",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Senou International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Senou International Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "BKO"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.31
+    },
+    {
+        "Q": "Richmond Mun机场的三字码是什么？",
+        "A": "RID",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Richmond Mun\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Richmond Mun'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "RID"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.86
+    },
+    {
+        "Q": "Igrim Airport机场的三字码是什么？",
+        "A": "IRM",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Igrim Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Igrim Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "IRM"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.51
+    },
+    {
+        "Q": "Palmas Airport机场的三字码是什么？",
+        "A": "PMW",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Palmas Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Palmas Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "PMW"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.47
+    },
+    {
+        "Q": "Timmins Airport机场的三字码是什么？",
+        "A": "YTS",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Timmins Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Timmins Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "YTS"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 21.76
+    },
+    {
+        "Q": "Turkmenbashi Airport机场的三字码是什么？",
+        "A": "KRW",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Turkmenbashi Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Turkmenbashi Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "KRW"
+            },
+            {
+                "iata_code": "KRW"
+            },
+            {
+                "iata_code": "KRW"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.6
+    },
+    {
+        "Q": "Sesheke机场的三字码是什么？",
+        "A": "SJQ",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Sesheke\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Sesheke'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "SJQ"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 21.34
+    },
+    {
+        "Q": "Asosa Airport机场的三字码是什么？",
+        "A": "ASO",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Asosa Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Asosa Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "ASO"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.99
+    },
+    {
+        "Q": "Gedaref机场的三字码是什么？",
+        "A": "GSU",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Gedaref\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code,\n       airport_name\nFROM airport_fbo_details\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "EHU",
+                "airport_name": "Ezhou Huahu Airport"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Kugel-Strong"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Cuddihy Field"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Crawford"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Hanel Field"
+            },
+            {
+                "iata_code": "OGL",
+                "airport_name": "Ogle Airport"
+            },
+            {
+                "iata_code": "NDC",
+                "airport_name": "Nanded Airport"
+            },
+            {
+                "iata_code": "IXD",
+                "airport_name": "Allahabad Airport / Bamrauli Airport"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Tee Brad's"
+            },
+            {
+                "iata_code": "LXG",
+                "airport_name": "Luang Namtha Airport"
+            },
+            {
+                "iata_code": "XKH",
+                "airport_name": "Xieng Khouang Airport"
+            },
+            {
+                "iata_code": "IZT",
+                "airport_name": "Ixtepec Airport"
+            },
+            {
+                "iata_code": "LGP",
+                "airport_name": "Legazpi Airport"
+            },
+            {
+                "iata_code": "EYK",
+                "airport_name": "Beloyarsky Airport"
+            },
+            {
+                "iata_code": "IAA",
+                "airport_name": "Igarka Airport"
+            },
+            {
+                "iata_code": "ITU",
+                "airport_name": "Iturup Airport"
+            },
+            {
+                "iata_code": "KRO",
+                "airport_name": "Kurgan Airport"
+            },
+            {
+                "iata_code": "KYZ",
+                "airport_name": "Kyzyl Airport"
+            },
+            {
+                "iata_code": "IGT",
+                "airport_name": "Magas Airport"
+            },
+            {
+                "iata_code": "NNM",
+                "airport_name": "Naryan-Mar Airport"
+            },
+            {
+                "iata_code": "NLI",
+                "airport_name": "Nikolayevsk Na Amure"
+            },
+            {
+                "iata_code": "NYA",
+                "airport_name": "Nyagan Airport"
+            },
+            {
+                "iata_code": "OVS",
+                "airport_name": "Sovetsky Airport"
+            },
+            {
+                "iata_code": "TGK",
+                "airport_name": "Yuzhny"
+            },
+            {
+                "iata_code": "TLK",
+                "airport_name": "Talakan Airport"
+            },
+            {
+                "iata_code": "TBW",
+                "airport_name": "Tambov Donskoye Airport"
+            },
+            {
+                "iata_code": "TYD",
+                "airport_name": "Tynda Airport"
+            },
+            {
+                "iata_code": "URJ",
+                "airport_name": "Uraj Airport"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Melon Field"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Waynoka Municipal"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Spadaro Airport"
+            },
+            {
+                "iata_code": "JOK",
+                "airport_name": "Joshkar-Ola Airport"
+            },
+            {
+                "iata_code": "JOK",
+                "airport_name": "Joshkar-Ola Airport"
+            },
+            {
+                "iata_code": "DEE",
+                "airport_name": "Yuzhno-Kurilsk Mendeleyevo Airport"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Seaberg Ranch Airport"
+            },
+            {
+                "iata_code": "FSS",
+                "airport_name": "Kinloss"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Waterville"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Airlie"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Upperville"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Foard County"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Mcdermott Air Park"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Flying M Ranch Airport"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Seminole Spraying Service"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "North Omaha"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Picosa Ranch"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Hanes"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Todd Field"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Circle Bar Ranch"
+            },
+            {
+                "iata_code": "YXY",
+                "airport_name": "Erik Nielsen International Airport"
+            },
+            {
+                "iata_code": "",
+                "airport_name": "Owl Canyon Gliderport"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 20.02
+    },
+    {
+        "Q": "Chimore Airport机场的三字码是什么？",
+        "A": "CCA",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Chimore Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Chimore Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "CCA"
+            },
+            {
+                "iata_code": ""
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.71
+    },
+    {
+        "Q": "Aiome机场的三字码是什么？",
+        "A": "AIE",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Aiome\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Aiome'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "AIE"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.58
+    },
+    {
+        "Q": "East Midlands Airport机场的三字码是什么？",
+        "A": "EMA",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"East Midlands Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'East Midlands Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "EMA"
+            },
+            {
+                "iata_code": "EMA"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.53
+    },
+    {
+        "Q": "White Mountain Airport机场的三字码是什么？",
+        "A": "WMO",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"White Mountain Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'White Mountain Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "WMO"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 20.34
+    },
+    {
+        "correct_rate": 94.0,
+        "sample_size": 50,
+        "correct_count": 47,
+        "average_time": 19.6
+    }
+]

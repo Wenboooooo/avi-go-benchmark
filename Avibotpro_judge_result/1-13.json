@@ -1,0 +1,679 @@
+[
+    {
+        "Q": "停场在Plant City的所有航司有哪些？",
+        "A": [
+            "Sun Air Jets"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KPCM\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Plant City，主要的航空公司包括：\n\n1. **Tryp Air Charter**\n   - 主要航线：Atlanta\n   - 机型：Pilatus PC-12, Bombardier Learjet 60, Cessna Citation Bravo\n\n2. **Fliteaccess, LLC**\n   - 主要航线：Atlanta\n   - 机型：Pilatus PC-12, Bombardier Learjet 60, Cessna Citation Bravo\n\n3. **Cirrus Aviation Services**\n   - 主要航线：Atlanta\n   - 机型：Pilatus PC-12, Bombardier Learjet 60, Cessna Citation Bravo\n\n4. **Bellair**\n   - 主要航线：Fort Lauderdale\n   - 机型：Cessna Citation XLS, Pilatus PC-12, Piper PA\n\n5. **Air Fuga**\n   - 主要航线：Fort Lauderdale\n   - 机型：Cessna Citation XLS, Pilatus PC-12, Piper PA\n\n6. **Xpress One Aviation LLC**\n   - 主要航线：Fort Lauderdale\n   - 机型：Cessna Citation XLS, Pilatus PC-12, Piper PA\n\n这些航空公司提供的航班主要是包机服务，适合商务和私人旅行需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.19
+    },
+    {
+        "Q": "停场在Toledo Express Airport的所有航司有哪些？",
+        "A": [
+            "Seneca Flight Operations"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KTOL\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Toledo Express Airport（托莱多快递机场），停场的航空公司主要包括以下几家：\n\n1. **忠实航空（Allegiant Air）** - 提供从托莱多出发的直飞航班。\n2. **美联航（United Airlines）** - 提供连接到其他主要城市的航班。\n3. **达美航空（Delta Air Lines）** - 提供部分航班服务。\n\n此外，还有一些私人航空公司和包机服务，如：\n- **Grandview Aviation**\n- **Corporate Eagle Management Services, Inc.**\n- **Aviation Advisor, Inc.**\n\n这些航空公司提供的航班主要覆盖国内主要城市，如芝加哥、底特律、亚特兰大等。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.13
+    },
+    {
+        "Q": "停场在Vaclav Havel Airport的所有航司有哪些？",
+        "A": [
+            "ECLAIR AVIATION",
+            "ELITE JET [SLOVAKIA]",
+            "FLY-COOP KFT",
+            "AEROPARTNER",
+            "Gemini Wings a.s.",
+            "SPARFELL LUFTFAHRT GMBH",
+            "JETBEE CZECH"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LKPR\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在布拉格的瓦茨拉夫·哈维尔机场（Vaclav Havel Airport）停场的航空公司包括多家国际和地区航空公司。以下是一些主要的航空公司：\n\n1. **捷克航空（Czech Airlines）**\n2. **瑞士国际航空（SWISS International Air Lines）**\n3. **荷兰皇家航空（KLM Royal Dutch Airlines）**\n4. **卡塔尔航空（Qatar Airways）**\n5. **瑞安航空（Ryanair）**\n6. **Smartwings**\n7. **汉莎航空（Lufthansa）**\n8. **英国航空（British Airways）**\n9. **阿联酋航空（Emirates）**\n\n此外，机场还提供多条航线，连接到131个目的地，涵盖了欧洲及其他地区的主要城市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.84
+    },
+    {
+        "Q": "停场在Fort Lauderdale Executive Airport的所有航司有哪些？",
+        "A": [
+            "Executive Aviation Corporation",
+            "FLORIDA JET SERVICE INC.",
+            "HOP-A-JET",
+            "REVA AIR AMBULANCE INC.",
+            "JOURNEY AVIATION LLC",
+            "Discovery Jets",
+            "New World Aviation Inc.",
+            "Alerion Aviation",
+            "MV Jets",
+            "Execuflight, Inc.",
+            "Southern Air Charter",
+            "Skyways Charter LLC",
+            "JETRIGHT AIR MANAGEMENT",
+            "ARGENTINA JETS",
+            "Northeastern Aviation Corp.",
+            "ROYAL AIR FREIGHT INC.",
+            "Crew Aviation LLC",
+            "Plane Travel LLC",
+            "Craig Air Center, Inc.",
+            "FLIGHTPATH CHARTER AIRWAYS",
+            "Bighorn Airways, Inc.",
+            "PREMIER PRIVATE JETS",
+            "EMPYREAL JET",
+            "NOVAJET [CANADA]"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KFXE\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Fort Lauderdale Executive Airport（FXE）停场的航空公司主要包括以下几家：\n\n1. **Banyan Air Service**\n   - 提供各种通用航空服务，包括包机和飞行培训。\n\n2. **Jetscape Services**\n   - 提供包机服务和其他相关航空服务。\n\n3. **Atlantic Aviation**\n   - 提供全面的FBO（固定基地运营商）服务，包括加油、维修和包机服务。\n\n4. **Sheltair Ft. Lauderdale**\n   - 提供FBO服务，专注于私人和商务航空。\n\n5. **Swissport Executive**\n   - 提供地面服务和FBO服务，支持私人和商务航班。\n\n此外，还有许多包机公司和航空服务提供商在此机场运营，提供多种类型的飞机和服务，包括小型喷气机和公务机的租赁。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.54
+    },
+    {
+        "Q": "停场在Kiskunlachaza Airport的所有航司有哪些？",
+        "A": [
+            "JET SOLUTION"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LHKK\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Kiskunlachaza机场，主要的航空公司包括一些私人包机航空公司。虽然具体的航空公司列表可能不详，但以下是一些在该地区运营的航空公司：\n\n1. **Nordjet Airlines** - 这是一家专注于欧洲和非洲的私人包机航空公司。\n2. **Chairman Aviation** - 提供高质量的私人包机服务，拥有多种机型。\n3. **Vertex Airlines** - 另一家私人航空公司，提供定制的航空旅行解决方案。\n\nKiskunlachaza机场主要服务于私人和包机航班，而不是大型商业航空公司，因此航班选择相对有限。如果您需要更具体的航班信息或航空公司，建议直接联系机场或相关航空公司以获取最新的航班安排和服务详情。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.42
+    },
+    {
+        "Q": "停场在Olbia-Costa Smeralda Airport的所有航司有哪些？",
+        "A": [
+            "LUXAVIATION GERMANY",
+            "GLOBAL JET LUXEMBOURG",
+            "VISTAJET LTD. [MALTA]",
+            "Sun Air Jets",
+            "DC AVIATION GMBH",
+            "SILVER CLOUD AIR",
+            "FLYING SERVICE",
+            "OHL AIR CHARTERFLUG GMBH & CO. KG",
+            "K5-Aviation GmbH"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LIEO\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Olbia-Costa Smeralda Airport（OLB）停场的航空公司包括：\n\n1. **British Airways CityFlyer**\n2. **Ryanair**\n3. **Neos Air**\n4. **Jet2**\n5. **达美航空（Delta Air Lines）**\n6. **瑞士国际航空（Swiss International Air Lines）**\n7. **泛航航空（Vueling）**\n8. **AlpAvia by InX.aero**\n9. **Gotofly**\n\n这些航空公司提供从不同城市到达Olbia的直达航班，涵盖了多个国内和国际目的地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.58
+    },
+    {
+        "Q": "停场在St. Pete-Clearwater International Airport的所有航司有哪些？",
+        "A": [
+            "Dupage Aerospace Corporation",
+            "Elite Air, Inc.",
+            "Waltzing Matilda Aviation Llc",
+            "PRIVATE JETS INC."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KPIE\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在St. Pete-Clearwater International Airport（PIE）停场的航空公司包括：\n\n1. **Allegiant Air** - 提供多条国内航线，主要服务于度假和旅游目的地。\n2. **Sun Country Airlines** - 主要提供季节性航班，连接多个城市。\n3. **Spirit Airlines** - 提供低成本航班，覆盖多个主要城市。\n\n此外，机场还可能有其他小型航空公司和包机服务，但主要的商业航司如上所列。若您需要更详细的航班信息或特定航线，请告知！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.53
+    },
+    {
+        "Q": "停场在Kinston Regl Jetport At Stalli的所有航司有哪些？",
+        "A": [
+            "Aira Aviation",
+            "PACIFIC COAST JET CHARTER"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KISO\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Kinston Regl Jetport At Stalli停场的航司主要包括以下几家：\n\n1. **Flyexclusive** - 这是一家提供公务机包机服务的公司，拥有现代化的机队，包括多种型号的公务机。\n2. **Tampa Bay Air Charter** - 该公司也提供公务机包机服务，主要服务于东南部地区。\n3. **Nicholas Air** - 这是一家专注于高端公务航空服务的公司，提供多种机型的选择。\n4. **Aircraft Management Group** - 提供公务机管理和包机服务，适合不同客户的需求。\n5. **Bellair** - 该公司提供多种航空服务，包括包机和航空管理。\n\n这些航司在Kinston Regl Jetport At Stalli提供的服务涵盖了从短途到长途的多种航线，满足不同客户的需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.9
+    },
+    {
+        "Q": "停场在Dupage的所有航司有哪些？",
+        "A": [
+            "Dupage Aerospace Corporation",
+            "Integrated Flight Resources, Inc.",
+            "XOJET AVIATION",
+            "Executive Jet Management (Ejm)",
+            "Aero Dynamic Jets"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KDPA\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Dupage机场（KDPA）停场的航司主要包括Dupage Aerospace。该公司运营多种公务机，包括高性能的Gulfstream G280和G500，以及可靠的Hawker 800XP和850XP等机型。这些航司提供多样化的公务机服务，满足不同客户的需求。\n\n如果您需要更详细的信息或其他航司的具体情况，请告知我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.19
+    },
+    {
+        "Q": "停场在Francisco Sarabia International Airport的所有航司有哪些？",
+        "A": [
+            "Jackson Jet Center"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"MMTC\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Francisco Sarabia International Airport（托雷翁，墨西哥）停场的航空公司包括：\n\n1. **Aeroméxico**\n2. **Volaris**\n3. **Interjet**\n4. **AeroMexico Connect**\n5. **Magnicharters**\n\n这些航空公司提供国内和国际航班，连接多个目的地。具体航班和时刻表可能会有所变化，建议在出行前查看最新信息。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.77
+    },
+    {
+        "Q": "停场在Midway International Airport的所有航司有哪些？",
+        "A": [
+            "JET EDGE",
+            "CLAY LACY AVIATION INC.",
+            "GLOBAL JET LUXEMBOURG"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KMDW\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Midway国际机场（Midway International Airport，IATA代码：MDW）停场的主要航空公司包括：\n\n1. **南方航空（Southwest Airlines）**\n2. **美国航空（American Airlines）**\n3. **精神航空（Spirit Airlines）**\n4. **阿拉斯加航空（Alaska Airlines）**\n5. **捷蓝航空（JetBlue Airways）**\n\n这些航空公司提供多条国内航线，连接芝加哥与美国各大城市。Midway国际机场是一个主要的国内航空枢纽，尤其以南方航空的航班为主。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.06
+    },
+    {
+        "Q": "停场在Le Bourget的所有航司有哪些？",
+        "A": [
+            "VALLJET",
+            "VISTAJET LTD. [MALTA]",
+            "Fly Rai Jets, LLC.",
+            "AVIATION STARLINK",
+            "IXAIR",
+            "HERON LUFTFAHRT",
+            "Salzburg Jet Aviation Gmbh",
+            "LUXAVIATION GERMANY",
+            "PONTAIR",
+            "TAG AVIATION (UK) LTD.",
+            "FLYING SERVICE",
+            "GET1JET",
+            "Airlec Air Espace",
+            "K5-Aviation GmbH",
+            "PROAIR AVIATION",
+            "GLOBAL JET LUXEMBOURG",
+            "Talon Air, Inc.",
+            "AIR INDEPENDENCE GMBH",
+            "Platoon Aviation",
+            "JET SOLUTION",
+            "JETKEY"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LFPB\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Le Bourget机场停场的航空公司主要包括以下几家：\n\n1. **Signature Flight Support Le Bourget Paris**\n   - 地址：45 Avenue de l’Europe, Zone Avation d’Affaires, Le Bourget, France 93350\n   - 电话：+33 149 927 581\n   - 邮箱：lbgt1@signatureflight.fr\n\n2. **Execujet Paris**\n   - 地址：Aéroport du Bourget 3 rue de Londres 93350 Le Bourget France\n   - 电话：+33 148 359 797\n   - 邮箱：fbo.lfpb@execujet.com\n\n3. **Universal Aviation Le Bourget Paris**\n   - 地址：Aéroport du Bourget, 9 Avenue de l’Europe, 93350 Le Bourget, France\n   - 电话：+33 148 359 638\n   - 邮箱：france@universalaviation.aero\n\n4. **Jetex Paris Le Bourget**\n   - 地址：Aéroport Paris Le Bourget, 6-8 rue Henri Lossier, Bât 34, 93350 Paris\n   - 电话：+33 1 7437 2522\n   - 邮箱：fbo-lbg@jetex.com\n\n5. **Dassault Falcon Service**\n   - 地址：Aéroport du Bourget - Zone d’aviation d’affaires 53-55 avenue de l’Europe CS 70003 93352 Le Bourget Cedex, France\n   - 电话：+33 149 342 028\n   - 邮箱：handling@dassault-falcon.com\n\n6. **Air Aviation Support**\n   - 地址：Aéroport du Bourget, 1 avenue de l'Europe, 93350 Le Bourget, France\n   - 电话：+33 1 74 25 42 47 / +33 7 84 50 46 39\n   - 邮箱：ops@airaviationsupport.com\n\n这些公司提供各种航空服务，包括公务机的停场和维护等。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.45
+    },
+    {
+        "Q": "停场在Don Mueang International Airport的所有航司有哪些？",
+        "A": [
+            "VIP JETS",
+            "GLOBAL JET LUXEMBOURG"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"VTBD\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Don Mueang国际机场（DMK）停场的航空公司包括：\n\n1. **泰国国际航空（Thai Airways）** - 泰国的国家航空公司，提供国内和国际航班。\n2. **亚航（AirAsia）** - 低成本航空公司，主要运营亚洲各地的航班。\n3. **曼谷航空（Bangkok Airways）** - 提供国内和区域航班的航空公司。\n4. **泰国狮子航空（Thai Lion Air）** - 另一家低成本航空公司，提供多条国内和国际航线。\n5. **Vietstar Airlines** - 提供区域性航班的航空公司。\n6. **M Jets International** - 提供私人包机服务的航空公司。\n\n此外，还有一些私人航空公司和包机服务，如**Premiair**和**M&N Aviation Inc.**，它们也在该机场运营。\n\n如果您需要更详细的信息或特定航空公司的航班安排，请告知我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.99
+    },
+    {
+        "Q": "停场在Newcastle Airport的所有航司有哪些？",
+        "A": [
+            "Travel CBS",
+            "VOLATO",
+            "Alerion Aviation",
+            "Bun Air Corporation"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KILG\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Newcastle Airport（纽卡斯尔国际机场），运营的航空公司包括多家主要航空公司和私人航空公司。以下是一些在该机场运营的航空公司：\n\n1. **英国航空（British Airways）** - 提供从纽卡斯尔到伦敦希思罗的航班。\n2. **易捷航空（easyJet）** - 提供多条国内和国际航线。\n3. **维珍大西洋航空（Virgin Atlantic）** - 提供前往美国的航班。\n4. **阿联酋航空（Emirates）** - 提供前往迪拜的航班。\n5. **瑞安航空（Ryanair）** - 提供多条低成本航线。\n\n此外，还有一些私人航空公司和包机服务在纽卡斯尔机场运营，提供定制的航班服务。\n\n如果您需要更详细的信息或特定航空公司的航班安排，请告知我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.7
+    },
+    {
+        "Q": "停场在Mandelieu的所有航司有哪些？",
+        "A": [
+            "ARCUS-AIR",
+            "Embracing Luxury Travel Ltd",
+            "LONDON EXECUTIVE AVIATION",
+            "DAS PRIVATE JETS"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LFMD\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Mandelieu停场的航司信息并未在我所查找的文件中找到具体的列举。如果您需要了解特定航司在Mandelieu的停场情况，建议直接联系当地机场或相关航空公司以获取最新的信息。\n\n如果您有其他相关文件或信息需要我查找，请随时上传。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.98
+    },
+    {
+        "Q": "停场在Boise Air Terminal Airport的所有航司有哪些？",
+        "A": [
+            "SOLAIRUS AVIATION",
+            "Jackson Jet Center"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KBOI\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在博伊西机场（Boise Air Terminal Airport），目前有多家航空公司提供服务。以下是停场在博伊西机场的主要航空公司：\n\n1. **Alaska Airlines**\n2. **American Airlines**\n3. **Delta Air Lines**\n4. **Frontier Airlines**\n5. **Southwest Airlines**\n6. **United Airlines**\n7. **Allegiant Air**\n8. **Sun Country Airlines**\n9. **Spirit Airlines**\n\n这些航空公司提供多条国内航线，连接博伊西与多个主要城市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.64
+    },
+    {
+        "Q": "停场在Jandakot的所有航司有哪些？",
+        "A": [
+            "AUSTRALIAN CORPORATE JET CENTRES P/L"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"YPJT\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Jandakot机场（IATA代码：JAD，ICAO代码：YPJT），主要服务于小型飞机和公务机的运营。虽然具体的航空公司列表在我当前的资料中没有详细列出，但通常在这样的机场，以下类型的航空公司会进行运营：\n\n1. **公务航空公司**：提供包机服务的公司，通常包括一些地方性的公务机运营商。\n2. **飞行学校**：许多飞行学校会在Jandakot机场进行训练和飞行活动。\n3. **货运航空公司**：一些小型货运航空公司可能会在此运营。\n\n如果您需要更具体的航空公司名称或服务信息，建议访问Jandakot机场的官方网站或联系当地的航空服务提供商以获取最新的航司信息。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 12.3
+    },
+    {
+        "Q": "停场在Hamilton John C. Munro International Airport的所有航司有哪些？",
+        "A": [
+            "HAMILTON JETPORT"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"CYHM\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在汉密尔顿约翰·C·门罗国际机场（Hamilton John C. Munro International Airport），运营的航空公司包括：\n\n1. **西捷航空（WestJet）**\n2. **阳光航空（Sunwing Airlines）**\n3. **空中转运（Air Transat）**\n4. **Lynx Air**\n5. **PLAY Airlines**\n6. **Swoop Airlines**\n\n这些航空公司提供多条国内和国际航线，连接汉密尔顿与多个目的地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.86
+    },
+    {
+        "Q": "停场在Dortmund Airport的所有航司有哪些？",
+        "A": [
+            "ARCUS-AIR"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EDLW\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在多特蒙德机场（Dortmund Airport）停场的航空公司包括：\n\n1. **Ryanair**\n2. **Eurowings**\n3. **Condor**\n4. **DAN AIR**\n5. **Lauda Europe**\n6. **Pegasus**\n7. **SunExpress**\n\n这些航空公司提供多条航线，连接多特蒙德与多个目的地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.33
+    },
+    {
+        "Q": "停场在Milas-Bodrum Airport的所有航司有哪些？",
+        "A": [
+            "GLOBAL JET LUXEMBOURG",
+            "TAG AVIATION MALTA",
+            "UNION AVIATION"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LTFE\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Milas-Bodrum Airport（博德鲁姆-米拉斯机场）停场的航空公司包括：\n\n1. **Gozen Air Bodrum-Milas**\n   - 电话: +90 252 523 01 94\n   - 邮箱: bjv@gozenair.com\n\n2. **Bilen Air Bodrum**\n   - 电话: +90 232 274 22 12\n   - 邮箱: bjvops@bilenair.com.tr\n\n3. **Fly Service Milas-Bodrum**\n   - 电话: +90 252 523 02 21\n   - 邮箱: bjv@flyserviceturkey.com.tr\n\n这些航空公司提供多种航班服务，连接博德鲁姆与多个国内外目的地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.12
+    },
+    {
+        "Q": "停场在Mountain View Moffett Federal的所有航司有哪些？",
+        "A": [
+            "XOJET AVIATION"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KNUQ\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Mountain View的Moffett Federal Airfield（Moffett Field），停场的航空公司主要包括以下几家：\n\n1. **Sierra West Airlines**\n2. **Grandview Aviation, LLC**\n3. **Axis Jet**\n4. **Dreamline Aviation, LLC**\n5. **Pacific Jet Charter**\n6. **Solairus Aviation**\n7. **Mira Vista Aviation**\n8. **Volato**\n9. **Aci Jet**\n10. **Flapper**\n\n这些航空公司提供多种类型的航班服务，包括私人包机和商务航空服务，涵盖了多个目的地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.9
+    },
+    {
+        "Q": "停场在Rochester International Airport的所有航司有哪些？",
+        "A": [
+            "Corporate Aircraft Management, Inc.",
+            "Jetstream Aviation, Inc"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KRST\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在罗切斯特国际机场（Rochester International Airport, ROC）停场的航空公司包括：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **西南航空（Southwest Airlines）**\n4. **联合航空（United Airlines）**\n\n这些航空公司提供多条航线，连接罗切斯特与多个主要城市，如纽约、芝加哥、亚特兰大等。具体航班和时刻表可能会有所变化，建议在出行前查看最新的航班信息和航空公司官网以获取详细信息。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 20.07
+    },
+    {
+        "Q": "停场在Astoria Regl的所有航司有哪些？",
+        "A": [
+            "ERIN AIR INC."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KAST\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "关于Astoria Regl（阿斯托里亚地区机场）停场的航司信息，当前没有直接的资料显示具体的航司列表。通常，阿斯托里亚地区机场主要服务于一些地方性和公务航空公司。为了获取最新和最准确的信息，建议访问机场的官方网站或联系相关航空公司。\n\n如果您有特定的航空公司或航班需求，可以提供更多信息，我将尽力帮助您找到相关的航司信息。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.78
+    },
+    {
+        "Q": "停场在Cape May County的所有航司有哪些？",
+        "A": [
+            "AIRCRAFT MANAGEMENT GROUP INC."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KWWD\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Cape May County，主要的航空公司和服务提供商包括：\n\n1. **Cape Air Charter** - 提供私人航空旅行解决方案，覆盖北美和中美洲的多个目的地。\n2. **FlightLevel Cape May** - 提供各种航空服务，包括包机和其他私人飞行服务。\n\n此外，Cape May County的机场（IATA代码：WWD）是一个公共使用机场，主要服务于企业和休闲飞行者。如果您需要更详细的信息或特定的航班安排，可以直接联系这些航空公司或访问他们的官方网站。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.61
+    },
+    {
+        "Q": "停场在Oberpfaffenhofen的所有航司有哪些？",
+        "A": [
+            "SKYSERVICE BUSINESS AVIATION",
+            "LUXAVIATION GERMANY",
+            "PROAIR AVIATION",
+            "HERON LUFTFAHRT"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EDMO\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Oberpfaffenhofen机场运营的航空公司包括：\n\n1. **Air Independence**\n2. **Ac Aviation Charter (Austria)**\n3. **Proair Charter Transport GmbH**\n4. **Das Private Jets GmbH**\n5. **Luxaviation UK**\n6. **Silver Cloud Air**\n7. **Excellent Air**\n8. **Euro Link**\n9. **MHS Aviation GmbH**\n10. **Vistajet Ltd. (Malta)**\n\n这些航空公司提供多种航班服务，涵盖了多个目的地，包括法兰克福、慕尼黑、汉诺威、雅典、巴黎等地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.25
+    },
+    {
+        "Q": "停场在Buffalo Niagara International Airport的所有航司有哪些？",
+        "A": [
+            "FAI RENT-A-JET",
+            "Airshare"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KBUF\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在布法罗尼亚加拉国际机场（Buffalo Niagara International Airport），主要的航空公司包括：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **西南航空（Southwest Airlines）**\n4. **捷蓝航空（JetBlue Airways）**\n5. **联合航空（United Airlines）**\n6. **边疆航空（Frontier Airlines）**\n7. **阳光国家航空（Sun Country Airlines）**\n\n这些航空公司提供国内航班，连接布法罗与美国其他主要城市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.25
+    },
+    {
+        "Q": "停场在Lehigh Valley International Airport的所有航司有哪些？",
+        "A": [
+            "New World Aviation Inc."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KABE\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Lehigh Valley International Airport（LVIA）停场的主要航空公司包括：\n\n1. **美国航空（American Airlines）**\n2. **联合航空（United Airlines）**\n3. **达美航空（Delta Air Lines）**\n4. **西南航空（Southwest Airlines）**\n\n这些航空公司提供多条国内航线，连接到美国的主要城市。具体的航班和时刻表可能会有所变化，建议在出行前查看航空公司的官方网站或相关的航班信息平台以获取最新的航班安排和状态。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.79
+    },
+    {
+        "Q": "停场在Linz Airport的所有航司有哪些？",
+        "A": [
+            "JETFLY AIRLINE"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LOWL\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在林茨机场（Linz Airport），主要的航空公司包括：\n\n1. **Jetfly Airline Gmbh** - 这是一家提供多条航线的航空公司，主要运营私人和商务航班。\n2. **Airlink Luftverkehrs Gmbh** - 该公司也提供多条航线，主要集中在短途航班。\n3. **Porsche Air Service Gmbh** - 主要提供私人航空服务。\n4. **Mhs Aviation Gmbh** - 提供多种航班选择，包括商务航班。\n5. **Pink Sparrow Gmbh** - 该公司也参与了多条航线的运营。\n\n这些航空公司提供的航班覆盖了多个目的地，包括维也纳、法兰克福、巴塞罗那、伦敦等地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 18.75
+    },
+    {
+        "Q": "停场在Tucson International Airport的所有航司有哪些？",
+        "A": [
+            "ACI Jet",
+            "CHARTRIGHT AIR INC."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KTUS\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在图森国际机场（Tucson International Airport, TUS）停场的航空公司包括：\n\n1. **阿拉斯加航空（Alaska Airlines）**\n2. **美国航空（American Airlines）**\n3. **西南航空（Southwest Airlines）**\n4. **达美航空（Delta Air Lines）**\n5. **联合航空（United Airlines）**\n6. **捷蓝航空（JetBlue Airways）**\n\n这些航空公司提供多条航线，连接图森与美国及加拿大的多个目的地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.82
+    },
+    {
+        "Q": "停场在Québec City Jean Lesage International Airport的所有航司有哪些？",
+        "A": [
+            "CHARTRIGHT AIR INC."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"CYQB\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在魁北克市的让·勒萨热国际机场（Québec City Jean Lesage International Airport），主要的航空公司包括：\n\n1. **Air Canada**\n2. **WestJet**\n3. **Porter Airlines**\n4. **Air Transat**\n5. **Nolinor Aviation**\n6. **Exact Air**\n7. **Helijet International Inc.**\n\n这些航空公司提供国内和国际航班，连接魁北克市与多个主要城市和目的地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.48
+    },
+    {
+        "Q": "停场在Richard Lloyd Jones Jr的所有航司有哪些？",
+        "A": [
+            "Paradigm Jet Management"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KRVS\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Richard Lloyd Jones Jr机场（RVS）停场的航空公司包括：\n\n1. **美国航空（American Airlines）**\n2. **联合航空（United Airlines）**\n3. **达美航空（Delta Airlines）**\n4. **边疆航空（Frontier Airlines）**\n5. **捷蓝航空（JetBlue Airways）**\n6. **阿拉斯加航空（Alaska Airlines）**\n\n这些航空公司提供多种航班选择，连接到不同的目的地。如果您需要更多具体的航班信息或服务详情，请告知我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.84
+    },
+    {
+        "Q": "停场在Adelaide Airport的所有航司有哪些？",
+        "A": [
+            "AUSTRALIAN CORPORATE JET CENTRES P/L"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"YPAD\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在阿德莱德机场（Adelaide Airport，IATA代码：ADL）停场的航空公司包括多家主要航空公司和私人航空服务。以下是一些主要的航空公司和服务提供商：\n\n1. **主要航空公司**：\n   - **维珍澳大利亚（Virgin Australia）**\n   - **澳大利亚航空（Qantas）**\n   - **捷星航空（Jetstar）**\n   - **新西兰航空（Air New Zealand）**\n   - **新加坡航空（Singapore Airlines）**\n\n2. **私人航空服务**：\n   - **Execujet Australia Pty Limited**\n   - **Kirkhope Aviation Pty Ltd**\n   - **Revesco Aviation Pty Ltd**\n   - **Flight Options (Australia) Pty Ltd**\n   - **Corporate Aircraft Charter Pty**\n\n这些航空公司和服务提供商提供国内和国际航班，涵盖了从阿德莱德到多个目的地的航线。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.23
+    },
+    {
+        "Q": "停场在East Midlands Airport的所有航司有哪些？",
+        "A": [
+            "Gestair",
+            "RVL AVIATION"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EGNX\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在East Midlands Airport（东米德兰兹机场）停场的航空公司包括：\n\n1. **Jet2**\n2. **英国航空（British Airways）**\n3. **爱尔兰航空（Aer Lingus）**\n4. **洛根航空（Loganair）**\n\n这些航空公司提供多条航线，连接到多个目的地。如果您需要更详细的信息或特定航班的查询，请告知我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.33
+    },
+    {
+        "Q": "停场在Girona-Costa Brava Airport的所有航司有哪些？",
+        "A": [
+            "CLIPPER NATIONAL AIR"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LEGE\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Girona-Costa Brava Airport（IATA代码：GRO）停场的航空公司包括：\n\n1. **Ryanair** - 主要运营低成本航班，连接多个欧洲城市。\n2. **Vueling** - 提供从巴塞罗那和其他西班牙城市的航班。\n3. **Jet2.com** - 主要提供从英国出发的航班。\n4. **TUI Airways** - 提供度假航班，主要面向旅游市场。\n\n此外，还有一些其他航空公司可能会在特定季节或情况下提供航班服务。具体的航班和航空公司信息可能会随季节变化而有所不同，因此建议在计划旅行时查看最新的航班安排和航空公司信息。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.09
+    },
+    {
+        "Q": "停场在Idaho Falls Regional Airport的所有航司有哪些？",
+        "A": [
+            "Silver Air"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KIDA\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Idaho Falls Regional Airport（爱达荷福尔斯地区机场），提供航班服务的航空公司包括：\n\n1. **Allegiant Air** - 提供全年无间断航班至拉斯维加斯（LAS）和凤凰城/梅萨（AZA），以及季节性航班至洛杉矶（LAX）。\n2. **Delta Air Lines** - 提供至盐湖城（SLC）的航班。\n3. **SkyWest Airlines** - 作为美联航的区域合作伙伴，提供至盐湖城（SLC）的航班。\n4. **United Airlines** - 提供至盐湖城（SLC）的航班。\n5. **American Airlines** - 提供至达拉斯/沃斯堡（DFW）的航班。\n\n这些航空公司为旅客提供了多条直达和连接航班，方便前往多个目的地。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.2
+    },
+    {
+        "Q": "停场在Geneva Airport的所有航司有哪些？",
+        "A": [
+            "SUNDT AIR MANAGEMENT",
+            "Svenskt Industriflyg AB",
+            "GLOBAL JET LUXEMBOURG",
+            "Global Jet",
+            "TAG AVIATION MALTA",
+            "ELITE JET [SLOVAKIA]",
+            "Airlec Air Espace",
+            "INTERNATIONAL JET MANAGEMENT GMBH",
+            "LUXAVIATION GERMANY",
+            "ALBINATI AERONAUTICS S.A.",
+            "AirX",
+            "MHS Aviation GmbH",
+            "Alpine Flightservice",
+            "Swiss Private Jet SA",
+            "SPARFELL LUFTFAHRT GMBH"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LSGG\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在日内瓦机场（Geneva Airport）停场的航空公司包括多家主要航空公司和私人航空公司。以下是一些主要的航空公司：\n\n1. **瑞士国际航空（Swiss International Air Lines）** - 作为瑞士的国家航空公司，提供多条国内和国际航线。\n2. **易捷航空（easyJet）** - 低成本航空公司，提供多条欧洲航线。\n3. **法国航空（Air France）** - 提供前往巴黎等地的航班。\n4. **汉莎航空（Lufthansa）** - 提供前往法兰克福和慕尼黑的航班。\n5. **英国航空（British Airways）** - 提供前往伦敦的航班。\n6. **阿联酋航空（Emirates）** - 提供前往迪拜的航班。\n7. **土耳其航空（Turkish Airlines）** - 提供前往伊斯坦布尔的航班。\n\n此外，还有许多私人航空公司和包机服务在日内瓦机场运营，提供灵活的航班选择和高端服务。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.68
+    },
+    {
+        "Q": "停场在East Texas Regional Airport的所有航司有哪些？",
+        "A": [
+            "X-PRESS CHARTER SERVICE INC.",
+            "First AV Group, Llc",
+            "Plane Travel LLC"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KGGG\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在East Texas Regional Airport（东德克萨斯地区机场），主要的航空公司是美国航空（American Airlines）。该机场提供便捷的航班服务，乘客可以通过美国航空进行预订和出行。\n\n如果您需要更多关于航班或其他航空公司的信息，请告知我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.07
+    },
+    {
+        "Q": "停场在Buochs的所有航司有哪些？",
+        "A": [
+            "PROAIR AVIATION"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LSZC\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Buochs机场运营的航司主要包括以下几家：\n\n1. **Heron Luftfahrt Gmbh**\n2. **Haute Aviation Ag**\n3. **Fly 7 Executive Aviation**\n4. **Pad Aviation Service**\n5. **Jetfly Aviation Sa**\n6. **Air Independence**\n7. **Euro Link**\n8. **Get1jet**\n9. **Cat Aviation Ag**\n10. **Svenskt Industriflyg**\n11. **Platoon Aviation**\n12. **Amc Aviation**\n13. **Arcus-air Gmbh & Co. Kg.**\n\n这些航司提供多条航线，包括前往巴黎、慕尼黑、苏黎世、阿姆斯特丹等地的航班，主要使用的飞机型号包括Pilatus PC-12、Embraer Phenom 300、Cessna Citation等。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.7
+    },
+    {
+        "Q": "停场在Theodore Francis Green Memorial State Airport的所有航司有哪些？",
+        "A": [
+            "CHARTRIGHT AIR INC."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KPVD\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Theodore Francis Green Memorial State Airport（普罗维登斯机场）停场的航空公司包括：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **西南航空（Southwest Airlines）**\n4. **捷蓝航空（JetBlue Airways）**\n5. **阿拉斯加航空（Alaska Airlines）**\n6. **精神航空（Spirit Airlines）**\n\n这些航空公司提供国内和部分国际航班，连接普罗维登斯与多个主要城市。具体航班和时刻表可能会有所变化，建议在出行前查看相关航空公司的官方网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.47
+    },
+    {
+        "Q": "停场在Huntsville International Airport的所有航司有哪些？",
+        "A": [
+            "JET LINX AVIATION"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KHSV\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在亨茨维尔国际机场（Huntsville International Airport），提供服务的航空公司包括：\n\n1. **美国联合航空（United Airlines）** - 作为星空联盟的一部分，提供多条航线。\n2. **美国航空（American Airlines）** - 作为寰宇一家的一部分，提供多条航线。\n3. **达美航空（Delta Air Lines）** - 提供多条航线。\n4. **西南航空（Southwest Airlines）** - 提供多条航线。\n5. **阿拉斯加航空（Alaska Airlines）** - 提供部分航线。\n\n这些航空公司提供的航班覆盖多个主要城市，包括亚特兰大、芝加哥、达拉斯、休斯敦等。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.88
+    },
+    {
+        "Q": "停场在Windsor Airport的所有航司有哪些？",
+        "A": [
+            "CHARTRIGHT AIR INC."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"CYQG\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在温莎国际机场（Windsor International Airport, YQG）停场的航空公司主要包括以下几家：\n\n1. **Chartright Air, Inc.**\n2. **Private Air, Inc.**\n3. **Royal Air Charter**\n4. **Image Air Charter**\n5. **Cameron Air Service, Ltd.**\n\n这些航空公司提供多条航线，包括前往多伦多、蒙特利尔、渥太华、芝加哥和其他目的地的航班。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.43
+    },
+    {
+        "Q": "停场在General Mitchell International Airport的所有航司有哪些？",
+        "A": [
+            "Griffing Flying Service, Inc."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KMKE\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在General Mitchell International Airport（密尔沃基国际机场），主要的航空公司包括：\n\n1. **美国航空（American Airlines）**\n2. **达美航空（Delta Air Lines）**\n3. **西南航空（Southwest Airlines）**\n4. **联合航空（United Airlines）**\n5. **阿拉斯加航空（Alaska Airlines）**\n6. **捷蓝航空（JetBlue Airways）**\n\n这些航空公司提供多条国内和国际航线，连接密尔沃基与多个主要城市和目的地。具体的航班和服务可能会根据季节和需求有所变化，建议在出行前查看各航空公司的官方网站以获取最新信息。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.08
+    },
+    {
+        "Q": "停场在Salt Lake City International Airport的所有航司有哪些？",
+        "A": [
+            "CB SKYSHARE",
+            "WING AVIATION CHARTER SERVICES LLC",
+            "Pinnacle Aviation Charter",
+            "Keystone Aviation, LLC"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KSLC\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在盐湖城国际机场（Salt Lake City International Airport, SLC）停场的航空公司包括：\n\n1. **达美航空（Delta Air Lines）**\n2. **美联航（United Airlines）**\n3. **西南航空（Southwest Airlines）**\n4. **美国航空（American Airlines）**\n5. **阿拉斯加航空（Alaska Airlines）**\n6. **捷蓝航空（JetBlue Airways）**\n7. **前沿航空（Frontier Airlines）**\n8. **夏威夷航空（Hawaiian Airlines）**\n9. **西北航空（Allegiant Air）**\n\n这些航空公司提供多条国内和国际航线，连接盐湖城与多个主要城市和目的地。如果您需要更详细的航班信息或特定航线的查询，请告知我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.48
+    },
+    {
+        "Q": "停场在Monterey Regional Airport的所有航司有哪些？",
+        "A": [
+            "VistaJet US Inc.",
+            "MPI Jet"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KMRY\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Monterey Regional Airport（MRY）停场的航空公司包括多家提供不同航线的航空公司。以下是一些主要的航空公司和他们的服务：\n\n1. **Alaska Airlines** - 提供前往西雅图和洛杉矶的航班。\n2. **United Airlines** - 提供前往旧金山的航班。\n3. **American Airlines** - 提供前往达拉斯的航班。\n\n此外，还有一些私人航空公司和包机服务，如：\n- **Silver Air**\n- **Dreamline Aviation**\n- **Mpi Jet**\n\n这些航空公司提供的航班覆盖了多个目的地，包括但不限于旧金山、洛杉矶、西雅图和其他城市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.55
+    },
+    {
+        "Q": "停场在El Palomar Airport的所有航司有哪些？",
+        "A": [
+            "DOS MIL AEROSISTEMA S.A."
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"SADP\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在El Palomar Airport（埃尔帕洛马机场），主要的航空公司包括：\n\n1. **Royal Class**\n2. **Flyzar**\n3. **Baires Fly S.A.**\n4. **Aerovida S.A.**\n5. **Pacific Ocean S.A.**\n6. **Jag Executive Aviation**\n\n这些航空公司提供多种航线服务，涵盖了从布宜诺斯艾利斯到其他目的地的航班。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.48
+    },
+    {
+        "Q": "停场在Liege Airport的所有航司有哪些？",
+        "A": [
+            "VALAIR AVIACAO",
+            "ASL"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EBLG\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在列日机场（Liege Airport），主要的航空公司包括：\n\n1. **Pan Europeenne Air Service**\n2. **Silver Flight**\n3. **Abelag Aviation**\n4. **Zenith Aviation Limited**\n5. **Asl Group**\n6. **Jetfly Airline Gmbh**\n7. **Joinjet**\n8. **Vistajet Ltd.**\n9. **Bartolini Air**\n10. **Flexflight Group**\n\n这些航空公司提供多条航线，连接列日与多个目的地，包括伦敦、斯德哥尔摩、布拉格、伊斯坦布尔等。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.39
+    },
+    {
+        "Q": "停场在Addison的所有航司有哪些？",
+        "A": [
+            "GRANDVIEW AVIATION",
+            "JET AVIATION BUSINESS JETS [SWITZERLAND]",
+            "Aviation Services Elite",
+            "JET-TEN",
+            "Pinnacle Aviation Charter",
+            "WING AVIATION CHARTER SERVICES LLC"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KADS\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Addison机场（Addison Airport），主要的航空公司和服务提供商包括：\n\n1. **Atlantic Aviation Addison**\n   - 地址：4400 Glenn Curtiss Drive, Addison, TX 75001\n   - 电话：+1 972 713 7000\n   - 电子邮件：adsfrontdesk@atlanticaviation.com\n\n2. **Million Air Dallas**\n   - 地址：4300 Westgrove Drive, Addison, TX 75001\n   - 电话：+1 972 248 1600\n   - 电子邮件：fbo@millionairdallas.com\n\n3. **Hetrick Air Services**\n   - 电话：+1 785 842 0000 / +1 888 785 8420\n   - 电子邮件：receptionist@hetrickairservices.com\n\n4. **Jet-ten**\n   - 地址：4700 Westgrove Drive, Addison, TX\n   - 电话：+1 214 296 0084\n   - 电子邮件：corbin@jet-ten.com\n\n5. **My Elite Jet**\n   - 地址：4502 Claire Chennault St, South Hangar, Addison, TX\n   - 电话：+1 888 469 3548\n   - 电子邮件：charter@myelitejet.com\n\n6. **Fly NDA**\n   - 地址：4565 Claire Chennault St, Suite 100, Addison, TX\n   - 电话：+1 972 233 3334\n   - 电子邮件：charter@flynda.com\n\n这些公司提供私人包机、航空服务和其他相关的飞行体验，适合不同的客户需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.2
+    },
+    {
+        "Q": "停场在Wiley Post的所有航司有哪些？",
+        "A": [
+            "PRIVATE JETS INC.",
+            "American Jet Charter, Inc",
+            "Maine Aviation Corp.",
+            "JET IT LLC",
+            "Paradigm Jet Management",
+            "FLIGHT OPTIONS"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KPWA\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在Wiley Post机场（KPWA）停场的航空公司主要包括一些私人包机公司。以下是一些在该机场运营的航空公司：\n\n1. **Pro Airways LLC** - 专注于北美和中美洲航线的包机航空公司。\n2. **Polaris Aviation Solutions LLC** - 提供定制航空解决方案的私人包机公司。\n3. **Freedom Jets** - 提供高效灵活的私人航空旅行解决方案，主要服务于商务和休闲旅行者。\n\n这些航空公司通常提供个性化的服务，适合不同客户的需求。如果您需要更详细的信息或特定航班的安排，可以直接联系这些航空公司。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.59
+    },
+    {
+        "Q": "停场在San Luis County Regional Airport的所有航司有哪些？",
+        "A": [
+            "ACI Jet",
+            "JET-TEN",
+            "PHENIX JET",
+            "Pinnacle Aviation Charter",
+            "VISTAJET AVIATION SERVICES",
+            "Marc Air"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"KSBP\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在San Luis Obispo County Regional Airport（圣路易斯奥比斯保县区域机场），主要的航空公司包括：\n\n1. **Alaska Airlines**\n2. **American Airlines**\n3. **United Airlines**\n\n此外，还有一些包机服务和私人航空公司，如Aci Jet、Marc Air和Modesto Jet Center等，提供多条航线的服务，包括往返于洛杉矶、旧金山、圣地亚哥等地的航班。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.16
+    },
+    {
+        "Q": "停场在Belgrade Nikola Tesla Airport的所有航司有哪些？",
+        "A": [
+            "PROAIR AVIATION",
+            "PRINCE AVIATION [SERBIA]"
+        ],
+        "SQL": "SELECT\n    DISTINCT supplier_name\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND supplier_name IS NOT NULL\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LYBE\" COLLATE utf8mb4_general_ci;",
+        "DB": "data_center_dev",
+        "actual_answer": "在贝尔格莱德尼古拉·特斯拉机场（Belgrade Nikola Tesla Airport），运营的航空公司包括：\n\n1. **塞尔维亚航空（Air Serbia）** - 主要的国家航空公司，提供多条国内和国际航线。\n2. **Air Pink** - 提供包机和商务航空服务。\n3. **Prince Aviation** - 主要提供包机服务。\n4. **Air Pannonia** - 提供区域航班和包机服务。\n5. **Trade Air** - 提供定期和包机航班。\n6. **其他小型航空公司** - 包括一些私人和商务航空公司，如Egt Jet Ltd、My Jet等。\n\n这些航空公司提供多条航线，连接贝尔格莱德与欧洲及其他地区的主要城市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.74
+    },
+    {
+        "correct_rate": 0.0,
+        "sample_size": 50,
+        "correct_count": 0,
+        "average_time": 11.12
+    }
+]

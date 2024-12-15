@@ -1,0 +1,458 @@
+[
+    {
+        "Q": "注册号为N900EM的飞机的制造年份是什么？",
+        "A": "2006年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N900EM\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N900EM的飞机的制造年份是2006年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.28
+    },
+    {
+        "Q": "注册号为VH-PFL的飞机的制造年份是什么？",
+        "A": "2010年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"VH-PFL\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为VH-PFL的飞机是湾流G550（Gulfstream G550），其制造年份为2010年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.65
+    },
+    {
+        "Q": "注册号为RA-11005的飞机的制造年份是什么？",
+        "A": "2017年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"RA-11005\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为RA-11005的飞机是Gulfstream G650型号，制造年份为2017年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.75
+    },
+    {
+        "Q": "注册号为N888RK的飞机的制造年份是什么？",
+        "A": "2015年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N888RK\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N888RK的飞机的制造年份是1999年。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 13.56
+    },
+    {
+        "Q": "注册号为EC-NOC的飞机的制造年份是什么？",
+        "A": "2021年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"EC-NOC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为EC-NOC的飞机是Bombardier Global Express，制造年份为2021年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.5
+    },
+    {
+        "Q": "注册号为N358F的飞机的制造年份是什么？",
+        "A": "2000年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N358F\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N358F的飞机是Bombardier Learjet 60，制造年份为2000年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.64
+    },
+    {
+        "Q": "注册号为PH-NDK的飞机的制造年份是什么？",
+        "A": "2000年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"PH-NDK\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为PH-NDK的飞机是Dassault Falcon 900B，制造年份为2000年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.08
+    },
+    {
+        "Q": "注册号为N609RC的飞机的制造年份是什么？",
+        "A": "2005年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N609RC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N609RC的飞机是Hawker 800XP型号，制造年份为2002年。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.83
+    },
+    {
+        "Q": "注册号为C-GGSG的飞机的制造年份是什么？",
+        "A": "1980年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"C-GGSG\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为C-GGSG的飞机是Cessna 206，制造年份为1980年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.51
+    },
+    {
+        "Q": "注册号为N178PT的飞机的制造年份是什么？",
+        "A": "1993年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N178PT\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N178PT的飞机的制造年份是1993年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.1
+    },
+    {
+        "Q": "注册号为N611AV的飞机的制造年份是什么？",
+        "A": "2017年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N611AV\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N611AV的飞机是Bombardier Challenger 350，制造年份为2017年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.42
+    },
+    {
+        "Q": "注册号为N510GS的飞机的制造年份是什么？",
+        "A": "2001年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N510GS\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N510GS的飞机的制造年份是2001年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.28
+    },
+    {
+        "Q": "注册号为N102LJ的飞机的制造年份是什么？",
+        "A": "1997年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N102LJ\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N102LJ的飞机是由ASI Charter Inc.制造的，制造年份为1997年。这架飞机的型号是Bombardier Learjet 60，座位数为7个，最大航程为2632英里。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.87
+    },
+    {
+        "Q": "注册号为N190JA的飞机的制造年份是什么？",
+        "A": "2008年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N190JA\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N190JA的飞机的制造年份是2008年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 19.43
+    },
+    {
+        "Q": "注册号为N747JJ的飞机的制造年份是什么？",
+        "A": "2006年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N747JJ\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N747JJ的飞机的制造年份是2006年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.38
+    },
+    {
+        "Q": "注册号为N579WA的飞机的制造年份是什么？",
+        "A": "2015年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N579WA\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N579WA的飞机的制造年份是2015年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.48
+    },
+    {
+        "Q": "注册号为N454AJ的飞机的制造年份是什么？",
+        "A": "1997年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N454AJ\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N454AJ的飞机的制造年份是1997年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.1
+    },
+    {
+        "Q": "注册号为VH-JGS的飞机的制造年份是什么？",
+        "A": "2000年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"VH-JGS\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为VH-JGS的飞机是Embraer ERJ 145型号，制造年份为2000年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.8
+    },
+    {
+        "Q": "注册号为N7220J的飞机的制造年份是什么？",
+        "A": "1984年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N7220J\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N7220J的飞机的制造年份是1984年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.35
+    },
+    {
+        "Q": "注册号为N209RW的飞机的制造年份是什么？",
+        "A": "2003年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N209RW\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N209RW的飞机的制造年份是2003年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.61
+    },
+    {
+        "Q": "注册号为N560BG的飞机的制造年份是什么？",
+        "A": "2007年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N560BG\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N560BG的飞机是Cessna Citation XLS，制造年份为2007年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.03
+    },
+    {
+        "Q": "注册号为D-IBLK的飞机的制造年份是什么？",
+        "A": "2012年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"D-IBLK\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为D-IBLK的飞机是Cessna Citation CJ2+，其制造年份为2012年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.75
+    },
+    {
+        "Q": "注册号为HZ-A9的飞机的制造年份是什么？",
+        "A": "2011年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"HZ-A9\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为HZ-A9的飞机是Hawker 900XP型号，制造年份为2011年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.03
+    },
+    {
+        "Q": "注册号为DI-BEC的飞机的制造年份是什么？",
+        "A": "2016年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"DI-BEC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为DI-BEC的飞机是Diamond DA62，制造年份为2016年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.28
+    },
+    {
+        "Q": "注册号为N905LC的飞机的制造年份是什么？",
+        "A": "1995年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N905LC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N905LC的飞机是Cessna Citation Ultra，制造年份为1995年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.19
+    },
+    {
+        "Q": "注册号为LX-NST的飞机的制造年份是什么？",
+        "A": "2017年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"LX-NST\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为LX-NST的飞机是Bombardier Global 6000型号，制造年份为2017年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.51
+    },
+    {
+        "Q": "注册号为N373AR的飞机的制造年份是什么？",
+        "A": "1979年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N373AR\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N373AR的飞机的制造年份是1979年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.34
+    },
+    {
+        "Q": "注册号为SE-RHJ的飞机的制造年份是什么？",
+        "A": "2000年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"SE-RHJ\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为SE-RHJ的飞机是Cessna Citation XLS，制造年份为2000年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.06
+    },
+    {
+        "Q": "注册号为N650RA的飞机的制造年份是什么？",
+        "A": "1996年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N650RA\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N650RA的飞机的制造年份在提供的资料中没有明确列出。请确认该注册号是否正确，或者提供更多信息以便进一步查找。如果有其他相关的注册号或飞机信息，我可以帮助您找到制造年份。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.44
+    },
+    {
+        "Q": "注册号为EJ-REVA的飞机的制造年份是什么？",
+        "A": "1998年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"EJ-REVA\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为EJ-REVA的飞机的制造年份是1998年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.9
+    },
+    {
+        "Q": "注册号为N91GJ的飞机的制造年份是什么？",
+        "A": "1975年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N91GJ\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N91GJ的飞机的制造年份是1975年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.63
+    },
+    {
+        "Q": "注册号为OE-LVA的飞机的制造年份是什么？",
+        "A": "2020年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"OE-LVA\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为OE-LVA的飞机是Gulfstream G500型号，制造年份为2020年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.89
+    },
+    {
+        "Q": "注册号为LX-LFX的飞机的制造年份是什么？",
+        "A": "2006年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"LX-LFX\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为LX-LFX的飞机的制造年份是2006年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.5
+    },
+    {
+        "Q": "注册号为N770TD的飞机的制造年份是什么？",
+        "A": "2008年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N770TD\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N770TD的飞机是Bombardier Learjet 40，制造年份为2008年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 15.54
+    },
+    {
+        "Q": "注册号为N96PB的飞机的制造年份是什么？",
+        "A": "2006年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N96PB\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N96PB的飞机是Cessna Citation CJ3，制造年份为2006年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.0
+    },
+    {
+        "Q": "注册号为N43XT的飞机的制造年份是什么？",
+        "A": "2005年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N43XT\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N43XT的飞机是Gulfstream G450，制造年份为2005年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.25
+    },
+    {
+        "Q": "注册号为N755JG的飞机的制造年份是什么？",
+        "A": "2003年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N755JG\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N755JG的飞机是Cessna Citation XLS，制造年份为2003年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.92
+    },
+    {
+        "Q": "注册号为DI-LUI的飞机的制造年份是什么？",
+        "A": "2010年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"DI-LUI\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为DI-LUI的飞机是Cessna Citation CJ2+，其制造年份为2010年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.66
+    },
+    {
+        "Q": "注册号为D-IGCS的飞机的制造年份是什么？",
+        "A": "2011年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"D-IGCS\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为D-IGCS的飞机是Beechcraft King Air 90，制造年份为2011年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.09
+    },
+    {
+        "Q": "注册号为F-HXRG的飞机的制造年份是什么？",
+        "A": "2011年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"F-HXRG\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为F-HXRG的飞机的制造年份是2011年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.75
+    },
+    {
+        "Q": "注册号为N340JE的飞机的制造年份是什么？",
+        "A": "2006年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N340JE\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N340JE的飞机的制造年份是1995年。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.73
+    },
+    {
+        "Q": "注册号为N874EB的飞机的制造年份是什么？",
+        "A": "2008年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N874EB\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N874EB的飞机的制造年份是2009年。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.31
+    },
+    {
+        "Q": "注册号为OE-GTS的飞机的制造年份是什么？",
+        "A": "2018年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"OE-GTS\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为OE-GTS的飞机是Cessna Citation XLS+，其制造年份为2018年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.55
+    },
+    {
+        "Q": "注册号为D-IPIT的飞机的制造年份是什么？",
+        "A": "2021年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"D-IPIT\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为D-IPIT的飞机是Diamond DA62型号，制造年份为2021年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.6
+    },
+    {
+        "Q": "注册号为N535XJ的飞机的制造年份是什么？",
+        "A": "2006年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N535XJ\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N535XJ的飞机是Bombardier Challenger 300，制造年份为2006年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.36
+    },
+    {
+        "Q": "注册号为G-LUSO的飞机的制造年份是什么？",
+        "A": "2019年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"G-LUSO\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为G-LUSO的飞机是2019年制造的，型号为Pilatus PC-12。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.5
+    },
+    {
+        "Q": "注册号为N176US的飞机的制造年份是什么？",
+        "A": "2007年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N176US\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N176US的飞机是Hawker 900XP，制造年份为2007年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.74
+    },
+    {
+        "Q": "注册号为A7-CGA的飞机的制造年份是什么？",
+        "A": "2015年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"A7-CGA\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为A7-CGA的飞机的制造年份是2015年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 27.19
+    },
+    {
+        "Q": "注册号为N143CB的飞机的制造年份是什么？",
+        "A": "2002年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N143CB\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N143CB的飞机的制造年份是2002年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.64
+    },
+    {
+        "Q": "注册号为N850PE的飞机的制造年份是什么？",
+        "A": "2006年",
+        "SQL": "SELECT make_year FROM aircraft_details WHERE registration = \"N850PE\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "注册号为N850PE的飞机的制造年份是2006年。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.0
+    },
+    {
+        "correct_rate": 90.0,
+        "sample_size": 50,
+        "correct_count": 45,
+        "average_time": 8.78
+    }
+]

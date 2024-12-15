@@ -1,0 +1,81 @@
+[
+    {
+        "Q": "Rafael Núñez International Airport机场的三字码是什么？",
+        "A": "CTG",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Rafael Núñez International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Rafael Núñez International Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "CTG"
+            },
+            {
+                "iata_code": "CTG"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 18.82
+    },
+    {
+        "Q": "Helmuth Baungartem机场的三字码是什么？",
+        "A": "LOI",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Helmuth Baungartem\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Helmuth Baungartem'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "LOI"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 18.66
+    },
+    {
+        "Q": "Itaperuna机场的三字码是什么？",
+        "A": "ITP",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Itaperuna\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE city_name = 'Itaperuna'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "ITP"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 15.34
+    },
+    {
+        "Q": "Beatrice Mun机场的三字码是什么？",
+        "A": "BIE",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Beatrice Mun\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Beatrice Mun'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "BIE"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 18.94
+    },
+    {
+        "Q": "Huatugou Airport机场的三字码是什么？",
+        "A": "HTT",
+        "SQL": "SELECT iata_code FROM airport_fbo_details WHERE airport_name = \"Huatugou Airport\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT iata_code\nFROM airport_fbo_details\nWHERE airport_name = 'Huatugou Airport'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "iata_code": "HTT"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.18
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 5,
+        "correct_count": 5,
+        "average_time": 18.19
+    }
+]

@@ -1,0 +1,558 @@
+[
+    {
+        "Q": "Embraer Praetor 500属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Praetor 500\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Embraer Praetor 500是一款中型公务机（Midsize Business Jet）。它的设计旨在提供较长的航程和舒适的客舱环境，适合商务旅行。该机型的最大航程为6186公里，能够容纳最多8名乘客，具有较高的巡航速度和良好的飞行性能。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.64
+    },
+    {
+        "Q": "Embraer Legacy 650属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Legacy 650\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Embraer Legacy 650是一款重型喷气式飞机，主要用于商务航空。它能够容纳多达13名乘客，适合中长途飞行，航程可达7408公里（约4603英里）。这种飞机的设计旨在提供舒适的飞行体验，适合需要高效和豪华的商务旅行需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.05
+    },
+    {
+        "Q": "Cessna 404属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 404\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna 404是一种双发轻型飞机，属于小型飞机类别。它的设计主要用于短途运输和通用航空，能够搭载最多9名乘客，最大航程约为1400公里。这种飞机的特点是适合于小型机场的起降，广泛用于商务旅行、包机服务以及一些特定的货物运输任务。\n\nCessna 404的设计使其在小型飞机中具有较大的载客能力和航程，适合于多种用途，包括私人飞行和小型商业运营。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.85
+    },
+    {
+        "Q": "Beechcraft King Air 100属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 100\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft King Air 100是一种涡轮螺旋桨飞机，属于小型商务飞机类别。它是Beechcraft King Air系列的一部分，通常用于短途和中途航班，适合商务旅行和小型团体的运输。该机型最多可搭载8位乘客，航程约为1720英里（约2770公里），适合在较小的机场起降。\n\n如果您需要更多关于Beechcraft King Air 100的具体信息或其他相关机型的比较，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.98
+    },
+    {
+        "Q": "Bombardier Challenger 300属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Challenger 300\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Challenger 300是一款超中型公务机，专为长途飞行设计。它的设计旨在提供宽敞的客舱空间和舒适的飞行体验，适合商务旅行和跨大陆航班。该机型的特点包括高性能的发动机、平坦的地板和宽敞的机舱，使得乘客在飞行过程中能够享受更大的舒适度和便利性。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.52
+    },
+    {
+        "Q": "Beechcraft King Air 250属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 250\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft King Air 250是一种涡轮螺旋桨飞机，属于小型商务飞机类别。它通常用于短途和中程飞行，能够容纳大约9名乘客，航程可达3000公里（约1600英里）。这种飞机以其灵活性和高效性而受到欢迎，适合商务旅行和小型货物运输。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.75
+    },
+    {
+        "Q": "Cirrus SR22属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cirrus SR22\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cirrus SR22是一种高性能的单发小型飞机，属于轻型飞机类别。它通常被用于私人飞行和飞行训练，具有良好的飞行性能和较长的航程，适合短途和中途飞行。SR22的设计使其在小型飞机中非常受欢迎，尤其是在私人飞行和小型航空公司中。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.52
+    },
+    {
+        "Q": "BAe 125-800属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"BAe 125-800\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "BAe 125-800是一种中型喷气公务机，属于商务飞机的类别。它的设计使其适合于中短途飞行，通常用于企业和高端客户的私人航空需求。该机型的特点包括较大的客舱空间和相对较高的航程，适合于在城市间进行快速的商务旅行。\n\n具体来说，BAe 125-800的航程和载客能力使其在公务机市场中占有一席之地，适合于需要灵活调度和高效出行的用户。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.33
+    },
+    {
+        "Q": "Bombardier Learjet 55C属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 55C\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Learjet 55C是一种中型喷气机，属于商务飞机类别。它的最大航程为2632公里，通常可容纳约7名乘客。这种飞机设计用于中短途飞行，适合商务旅行和私人飞行需求。\n\n如果您需要更多关于该机型的具体信息或其他相关问题，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.44
+    },
+    {
+        "Q": "Hawker 850XP属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 850XP\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Hawker 850XP是一款中型公务机，适合中程飞行。它通常可以容纳8名乘客，具有较高的舒适性和豪华的飞行体验。该机型的最大航程约为4890公里，适合进行较长距离的商务旅行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.44
+    },
+    {
+        "Q": "Beechcraft King Air 260属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 260\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft King Air 260是一种双涡轮螺旋桨飞机，属于轻型商务飞机（也称为小型飞机）。它通常用于短途和中途航班，适合商务旅行和小型团体的运输。该机型的最大航程约为3185公里，能够容纳最多7名乘客。\n\n这种飞机的设计旨在提供高效的飞行性能和舒适的乘坐体验，适合各种用途，包括商务、医疗和公务飞行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.59
+    },
+    {
+        "Q": "Gulfstream G150属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G150\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Gulfstream G150是一款中型商务喷气机，主要用于短途和中途飞行。它的设计旨在提供高效的航程和舒适的乘坐体验，适合商务旅行和小型团体的需求。G150的航程和速度使其在中型飞机中表现出色，能够满足多种飞行需求。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.03
+    },
+    {
+        "Q": "Dassault Falcon 900EX属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 900EX\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Dassault Falcon 900EX是一种远程公务机。它属于三发涡扇公务机系列，具有较大的客舱空间和长航程，适合长途飞行和高端商务需求。这种飞机的设计强调了性能、舒适性和效率，使其在同类飞机中具有竞争力。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.77
+    },
+    {
+        "Q": "Beechcraft King Air 350iER属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 350iER\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft King Air 350iER是一种中型双发涡轮螺旋桨飞机，属于商务飞机类别。它被广泛用于私人、商业和政府用途，具有较高的有效载荷和续航能力，适合执行短途和中途航班。该机型的设计使其能够在多种环境下操作，包括较短的跑道和高海拔机场，因而在航空市场上非常受欢迎。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.83
+    },
+    {
+        "Q": "Gulfstream G300属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G300\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Gulfstream G300是一种超级远程公务机，属于远程机型。它的设计允许长时间飞行，最大航程可达7800公里（约4800英里），能够在不加油的情况下完成洲际飞行。这种飞机通常可以搭载多达13名乘客，适合长途商务旅行。\n\nGulfstream G300的特点包括宽敞的客舱和高飞行速度，使其在公务航空市场中占有一席之地。它的客舱高度足以让乘客在飞行中完全直立，提供了舒适的旅行体验。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 14.51
+    },
+    {
+        "Q": "Cessna Citation VI属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation VI\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation VI 是一种中型喷气式飞机，属于中型商务喷气机的类别。它以其较长的航程和较快的巡航速度而闻名，适合中短途商务旅行。该机型在市场上广泛应用，尤其是在包机服务中，因其舒适性和性能而受到青睐。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.41
+    },
+    {
+        "Q": "Airbus ACJ A319属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "VIP Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Airbus ACJ A319\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Airbus ACJ A319是一种中型商务喷气机，属于空中客车A319系列。它的设计基于A320系列，但经过改装以适应公务航空市场。ACJ A319通常用于长途飞行，具有较大的航程和舒适的客舱配置，适合大型团体或VIP出行。\n\n具体来说，ACJ A319的最大航程可达到约11,112公里，通常配置19个座位，提供宽敞的空间和豪华的设施，非常适合商务旅行和政府代表团的需求。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.97
+    },
+    {
+        "Q": "Embraer Praetor 600属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Praetor 600\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Embraer Praetor 600是一款中型公务机，属于中型飞机类别。它以其卓越的航程和性能而闻名，适合长途飞行，能够在较小的机场起降，提供高效的商务旅行体验。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.92
+    },
+    {
+        "Q": "Diamond DA62属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Diamond DA62\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Diamond DA62是一种轻型双发飞机，属于小型飞机类别。它设计用于多种用途，包括私人飞行、商务旅行和小型货运。DA62可以容纳五到七名乘客，具有较高的燃油效率和出色的飞行性能，适合短途和中途航线。\n\n这种飞机的特点包括：\n- **双发设计**：配备两个Austro Engine AE330涡轮增压发动机，提供良好的动力和可靠性。\n- **多功能性**：适合多种飞行任务，包括飞行学校、私人飞行和小型货运。\n- **舒适性**：内部空间设计注重乘客舒适，适合长时间飞行。\n\n总的来说，Diamond DA62是一款灵活的小型飞机，适合多种飞行需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.86
+    },
+    {
+        "Q": "Beechcraft King Air 300属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 300\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft King Air 300是一种涡轮螺旋桨飞机，属于小型商务飞机类别。它通常用于短途和中途航班，适合商务旅行和小型团体的运输需求。King Air系列以其可靠性和多功能性而闻名，适合在各种机场条件下操作，包括较短的跑道。\n\n这种飞机的设计使其能够在较高的飞行高度和较快的速度下飞行，提供了良好的航程和载客能力，通常可容纳6到8名乘客。King Air 300的特点包括较大的货舱和舒适的客舱配置，适合商务和私人飞行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.9
+    },
+    {
+        "Q": "Embraer Lineage 1000属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Lineage 1000\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Embraer Lineage 1000是一款超大型公务机，属于远程机型。它是基于Embraer E190商用飞机平台开发的，具有较大的客舱空间和长航程，适合长途飞行和高端商务旅行。Lineage 1000的航程可达7800公里，能够容纳多达19名乘客，提供豪华的飞行体验。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.91
+    },
+    {
+        "Q": "Cessna Citation CJ1+属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation CJ1+\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation CJ1+ 是一种轻型喷气式飞机，属于 C525 系列。它通常被归类为小型飞机，适合短途和中途飞行，具有较高的灵活性和经济性。CJ1+ 的最大航程约为 1,022 海里（约 1,895 公里），可以容纳最多 6 名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.66
+    },
+    {
+        "Q": "Bombardier Global 6000属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Global 6000\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Global 6000是一款远程公务机，属于超远程机型。它的设计旨在提供长距离飞行的能力，能够在不加油的情况下从日本飞往欧洲和美国等地。该机型的客舱分为多个起居区域，提供宽敞和奢华的飞行体验。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.25
+    },
+    {
+        "Q": "Cessna Citation Bravo属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Bravo\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation Bravo是一种中型喷气式飞机，属于Cessna Citation系列。它的设计主要用于商务和私人飞行，能够容纳大约6到7名乘客，航程约为2408公里（约1500英里）。这种飞机的特点是适合短途和中途飞行，提供了良好的舒适性和经济性，适合小型企业和个人使用。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.45
+    },
+    {
+        "Q": "Gulfstream G500属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G500\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Gulfstream G500是一款超远程商务喷气机，属于重型喷气机类别。它的设计旨在提供长距离飞行能力，最大航程可达9816公里（约6099英里），并且能够以高达0.85马赫的巡航速度飞行。这种飞机通常用于商务旅行，能够容纳多达18名乘客，适合长途飞行需求。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.06
+    },
+    {
+        "Q": "Cessna 172属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 172\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna 172是一种单引擎小型飞机，通常被归类为轻型飞机。它是四座位的私人飞机，广泛用于飞行训练和个人飞行。Cessna 172的设计使其适合短途飞行，最大航程约为1100公里（约684英里），因此它不属于远程飞机的类别。\n\n这种飞机因其易于操控和可靠性而受到飞行学校和私人飞行员的青睐，成为全球最畅销的飞机之一。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.63
+    },
+    {
+        "Q": "Cessna 425属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 425\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna 425是一款轻型飞机，具体来说，它是一种双发涡轮螺旋桨飞机，属于轻型公务机的类别。这种飞机通常用于短途和中途飞行，适合商务旅行和小型团体的运输。Cessna 425的设计使其能够在较小的机场起降，具备良好的灵活性和经济性，适合私人和小型企业使用。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.62
+    },
+    {
+        "Q": "Cessna 182属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 182\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna 182（也称为Cessna Skylane）是一种单引擎轻型飞机，属于小型飞机类别。它通常用于私人飞行、飞行培训和小型货物运输。Cessna 182以其稳定的飞行性能和较大的有效载荷能力而闻名，适合在短跑道上起降，具有良好的远程飞行能力，最大航程约为1100海里（约2040公里）。\n\n这种飞机的设计使其非常适合个人和小型团体的飞行需求，因而在飞行爱好者和飞行学校中非常受欢迎。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 10.01
+    },
+    {
+        "Q": "Bombardier Challenger 600属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Challenger 600\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Challenger 600是一款中型喷气式公务机，属于CL60系列。这种机型通常被归类为中型到远程公务机，适合长途飞行，最大航程可达6356公里（约3940英里），并且能够容纳多达12名乘客。\n\n这种飞机的设计使其在商务旅行中非常受欢迎，因其提供了良好的舒适性和较大的空间，同时具备较强的飞行性能，适合跨洲际的航班需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 23.05
+    },
+    {
+        "Q": "Cirrus SR20属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cirrus SR20\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cirrus SR20是一种单引擎轻型飞机，属于小型飞机类别。它通常用于私人飞行和飞行训练，具有较高的安全性和良好的飞行性能。SR20的设计旨在提供舒适的飞行体验，通常可容纳4名乘客，并具有约1943公里的最大航程。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.54
+    },
+    {
+        "Q": "Hawker 700A属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 700A\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Hawker 700A是一种中型喷气式公务机，属于Hawker系列的飞机。它的设计主要用于短途和中途飞行，通常可容纳6到8名乘客，具体取决于内部布局。Hawker 700A的最大航程约为3797公里（约2300英里），这使其适合于区域性商务旅行。\n\n总结来说，Hawker 700A可以被归类为中型公务机，适合于中短途飞行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.78
+    },
+    {
+        "Q": "Cessna 421属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 421\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna 421是一种轻型双引擎飞机，通常被归类为小型飞机。它主要用于商务飞行和私人飞行，具有较好的航程和载客能力，适合短途和中途航线。Cessna 421的设计使其在舒适性和性能之间取得了良好的平衡，适合小型航空公司和个人使用。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.15
+    },
+    {
+        "Q": "Cessna Citation CJ3属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation CJ3\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation CJ3是一款轻型公务喷气机，属于Cessna Citation系列中的一员。它被广泛认为是一种高效的轻型商务飞机，适合短途和中途航程的飞行需求。CJ3的设计旨在提供舒适的乘坐体验和出色的飞行性能，适合商务旅行和私人飞行。\n\n该机型的特点包括较大的客舱空间、较高的航程和较低的运营成本，使其在同类飞机中具有竞争力。CJ3的航程通常在2,900海里（约5,370公里）左右，适合大多数国内和部分国际航线。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.88
+    },
+    {
+        "Q": "Airbus A319属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Airliner"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Airbus A319\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "空中客车A319是一种中短程、窄体、双发动机的商用喷气客机，属于空中客车A320系列。它的设计是基于A320机型的缩短版本，通常用于短途和中途航线。A319的载客量一般在124至156人之间，最大航程可达3700公里（约2300英里），使其适合于多种航线需求。\n\n因此，A319可以被归类为中型飞机，适合于短途和中途航班。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.76
+    },
+    {
+        "Q": "Beechcraft Premier I属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft Premier I\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft Premier I 是一种轻型喷气式飞机，属于轻型喷气机类别。它的设计旨在提供高效的短途和中途航行能力，通常用于商务旅行和小型团体的运输。该机型最多可搭载6名乘客，具有相对宽敞的客舱和良好的航程性能。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.03
+    },
+    {
+        "Q": "Cessna Citation Excel属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation Excel\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation Excel属于中型公务机（Midsize Jet）类型。这种机型通常适用于中短途飞行，具有较大的客舱空间和较高的载客能力，适合商务旅行和小型团体出行。Cessna Citation Excel的设计兼具轻型喷气机和中型喷气机的优点，提供了舒适的飞行体验和相对较长的航程。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 11.05
+    },
+    {
+        "Q": "Cessna 150属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 150\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna 150是一种小型通用航空飞机，主要用于飞行训练、旅游和个人使用。它属于轻型飞机类别，通常被归类为单引擎、双座的飞机，适合初学者和私人飞行者。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.92
+    },
+    {
+        "Q": "Dassault Falcon 900属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Dassault Falcon 900\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Dassault Falcon 900是一种远程公务机，属于中型喷气机类别。它通常配备三台发动机，具有较大的客舱空间和较长的航程，适合长途飞行和商务旅行。具体来说，Falcon 900的最大航程约为6741公里，能够容纳12到14名乘客，适合高端商务需求。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.67
+    },
+    {
+        "Q": "Embraer Phenom 300E属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Embraer Phenom 300E\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Embraer Phenom 300E是一款轻型私人喷气机，适合执行短程和中程飞行任务。它的设计旨在提供高性能和舒适性，能够容纳最多七名乘客。该机型的巡航速度可达0.80马赫，具备较高的飞行效率和较低的运营成本，适合商务旅行和私人飞行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.45
+    },
+    {
+        "Q": "Gulfstream G450属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Gulfstream G450\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Gulfstream G450是一款远程公务机，专为长途旅行而设计，提供豪华的乘坐体验。它的最大航程约为12,501公里（约7,500英里），能够容纳多达14名乘客，适合商务和私人飞行需求。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 18.65
+    },
+    {
+        "Q": "Cessna 340属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 340\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna 340是一种双引擎的增压小型飞机，通常被归类为轻型飞机。它可以容纳最多6名乘客，适合短途和中途飞行，最大航程约为1400公里。这种飞机的设计使其在小型商务航空和私人飞行中非常受欢迎。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 65.67
+    },
+    {
+        "Q": "Beechcraft King Air 90属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air 90\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft King Air 90是一种双发涡轮螺旋桨飞机，属于小型商务飞机（也称为轻型公务机）。它通常用于短途和中途航班，能够容纳7到10名乘客，适合商务旅行和小型团体的运输需求。该机型的航程大约为1482公里（约800英里），使其在小型飞机中具有良好的灵活性和适用性。\n\n如果您需要更多关于Beechcraft King Air 90的具体信息或其他相关机型的比较，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.83
+    },
+    {
+        "Q": "Hawker 850XPi属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Midsize Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Hawker 850XPi\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Hawker 850XPi是一种中型商务喷气机，属于Hawker系列的飞机。它的设计主要用于短途和中途飞行，适合商务旅行和私人飞行。该机型通常可以容纳8名乘客，最大航程约为4893公里，适合在较长的航线中使用，但不属于远程喷气机的范畴。\n\n总结来说，Hawker 850XPi是一种中型商务飞机，适合中短途飞行。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.94
+    },
+    {
+        "Q": "Cessna Citation III属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation III\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation III是一种中型喷气式飞机，属于Cessna的Citation系列。它主要用于商务飞行，能够容纳大约8名乘客，航程可达3333公里（约2071英里）。这种飞机的设计旨在提供舒适的飞行体验和较高的速度，适合中短途航线。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 15.94
+    },
+    {
+        "Q": "Cessna Citation II属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna Citation II\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna Citation II 是一种中型商务喷气机，属于轻型喷气机类别。它是Cessna Citation系列的一部分，主要用于短途和中途飞行，适合商务旅行和小型团体的需求。该机型以其经济性和相对较大的机舱空间而受到青睐，适合在较小的机场起降，提供灵活的飞行选择。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.67
+    },
+    {
+        "Q": "Cessna 414属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Cessna 414\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Cessna 414是一种轻型、双引擎的运输飞机，属于小型飞机类别。它是一款加压飞机，适合短途和中途飞行，通常用于商务和私人飞行。Cessna 414的设计注重乘客舒适性和行李空间，适合需要较大舱内空间的用户。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.43
+    },
+    {
+        "Q": "Bombardier Challenger 605属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Heavy Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Challenger 605\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Challenger 605是一款重型喷气式公务机。它的设计旨在提供宽敞的客舱空间和长途飞行能力，适合商务旅行和长途航班。该机型的航程可达7400公里（约4000英里），能够容纳多达11名乘客。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.89
+    },
+    {
+        "Q": "Bombardier Global Express XRS属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Ultra Long Range"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Global Express XRS\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Global Express XRS是一款大型远程商务喷气机，属于超远程机型。它的设计旨在提供长距离飞行的能力，通常用于商务旅行和私人飞行。该机型的最大巡航高度可达15,545米，航程可达6,150海里（约11,390公里），使其能够在全球范围内进行长途飞行。\n\n此外，Global Express XRS以其宽敞、豪华的机舱而闻名，能够根据乘客的需求进行灵活的布局，提供舒适的飞行体验。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.03
+    },
+    {
+        "Q": "Beechcraft King Air B200属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Turbo Prop"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Beechcraft King Air B200\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Beechcraft King Air B200是一种涡轮螺旋桨飞机，通常被归类为轻型商务飞机。它适用于短途和中途航班，广泛用于商务旅行、医疗转运和其他小型航空服务。该机型以其可靠性和多功能性而闻名，能够在各种机场条件下操作，包括较短的跑道。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.47
+    },
+    {
+        "Q": "Bombardier Learjet 35A属于哪种机型类型（如远程、小飞机）？",
+        "A": [
+            "Light Jet"
+        ],
+        "SQL": "SELECT aircraft_type_match.aircraft_type FROM aircraft_type_match INNER JOIN dc_aircraft_model ON aircraft_type_match.`code` = dc_aircraft_model.aircraft_type WHERE name = \"Bombardier Learjet 35A\" LIMIT 1;",
+        "DB": "data_center_release",
+        "actual_answer": "Bombardier Learjet 35A是一种小型商务喷气机，属于轻型喷气机类别。它设计用于短途和中途航班，具有较好的机动性和经济性，适合商务旅行和小型团体的需求。Learjet 35A的特点包括较高的巡航速度和相对较短的起降距离，使其在多种机场环境中都能有效操作。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.03
+    },
+    {
+        "correct_rate": 66.0,
+        "sample_size": 50,
+        "correct_count": 33,
+        "average_time": 11.39
+    }
+]

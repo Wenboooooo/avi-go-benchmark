@@ -1,0 +1,886 @@
+[
+    {
+        "Q": "N642WW的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N642WW\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n642ww'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.04
+    },
+    {
+        "Q": "N215RB的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N215RB\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n215rb'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.21
+    },
+    {
+        "Q": "N899EE的制造商是谁？",
+        "A": [
+            "巴航工业"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N899EE\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'n899ee'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Latitude 33 Aviation"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 8.93
+    },
+    {
+        "Q": "N304LH的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N304LH\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n304lh'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.78
+    },
+    {
+        "Q": "9H-KIM的制造商是谁？",
+        "A": [
+            "达索"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"9H-KIM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = '9hkim'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "达索"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.41
+    },
+    {
+        "Q": "N508XJ的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N508XJ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n508xj'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.11
+    },
+    {
+        "Q": "9H-VJR的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"9H-VJR\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = '9hvjr'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.0
+    },
+    {
+        "Q": "N214CS的制造商是谁？",
+        "A": [
+            "皮拉图斯"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N214CS\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n214cs'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "皮拉图斯"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.06
+    },
+    {
+        "Q": "N2926E的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N2926E\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n2926e'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.55
+    },
+    {
+        "Q": "N928JK的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N928JK\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n928jk'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.33
+    },
+    {
+        "Q": "N310VZ的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N310VZ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n310vz'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.31
+    },
+    {
+        "Q": "N731NG的制造商是谁？",
+        "A": [
+            "皮拉图斯"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N731NG\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n731ng'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "皮拉图斯"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.76
+    },
+    {
+        "Q": "N977MR的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N977MR\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n977mr'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.34
+    },
+    {
+        "Q": "N610EP的制造商是谁？",
+        "A": [
+            "巴航工业"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N610EP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n610ep'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "巴航工业"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.24
+    },
+    {
+        "Q": "N716MD的制造商是谁？",
+        "A": [
+            "湾流"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N716MD\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n716md'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "湾流"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.18
+    },
+    {
+        "Q": "N938RD的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N938RD\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n938rd'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.87
+    },
+    {
+        "Q": "VH-VSK的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"VH-VSK\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'vhvsk'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.2
+    },
+    {
+        "Q": "9H-VID的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"9H-VID\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = '9hvid'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.91
+    },
+    {
+        "Q": "N245TX的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N245TX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n245tx'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.12
+    },
+    {
+        "Q": "N111WH的制造商是谁？",
+        "A": [
+            "达索"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N111WH\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n111wh'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "达索"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 14.7
+    },
+    {
+        "Q": "G-JSNS的制造商是谁？",
+        "A": [
+            "湾流"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"G-JSNS\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'gjsns'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "湾流"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.76
+    },
+    {
+        "Q": "N824PM的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N824PM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n824pm'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.49
+    },
+    {
+        "Q": "N8821C的制造商是谁？",
+        "A": [
+            "湾流"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N8821C\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n8821c'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "湾流"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.82
+    },
+    {
+        "Q": "N610RW的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N610RW\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n610rw'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.4
+    },
+    {
+        "Q": "C-FWXR的制造商是谁？",
+        "A": [
+            "湾流"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"C-FWXR\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'cfwxr'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "湾流"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.2
+    },
+    {
+        "Q": "N585GA的制造商是谁？",
+        "A": [
+            "湾流"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N585GA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n585ga'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "湾流"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.25
+    },
+    {
+        "Q": "N44CE的制造商是谁？",
+        "A": [
+            "湾流"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N44CE\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'n44ce'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Global Air Charters"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 8.44
+    },
+    {
+        "Q": "EJ-JMMM的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"EJ-JMMM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'ejjmmm'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.99
+    },
+    {
+        "Q": "N946MM的制造商是谁？",
+        "A": [
+            "达索"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N946MM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n946mm'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "达索"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.18
+    },
+    {
+        "Q": "N800XM的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N800XM\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n800xm'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "豪客比奇"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.25
+    },
+    {
+        "Q": "A6-RDJ的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"A6-RDJ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'a6rdj'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.71
+    },
+    {
+        "Q": "N372CZ的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N372CZ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n372cz'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.38
+    },
+    {
+        "Q": "TC-MKA的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"TC-MKA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'tcmka'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.13
+    },
+    {
+        "Q": "N899JF的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N899JF\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n899jf'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.74
+    },
+    {
+        "Q": "N33NE的制造商是谁？",
+        "A": [
+            "皮拉图斯"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N33NE\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n33ne'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "皮拉图斯"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.66
+    },
+    {
+        "Q": "N296L的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N296L\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT supplier_details.supplier_name\nFROM supplier_details\nWHERE supplier_details.supplier_id IN\n    (SELECT aircraft_details.supplier_id\n     FROM aircraft_details\n     WHERE aircraft_details.pure_reg = 'n296l')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Hop-a-jet Worldwide Jet Charter"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.36
+    },
+    {
+        "Q": "N296JA的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N296JA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n296ja'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.05
+    },
+    {
+        "Q": "YR-TII的制造商是谁？",
+        "A": [
+            "湾流"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"YR-TII\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'yrtii'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "湾流"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.17
+    },
+    {
+        "Q": "D-ARIE的制造商是谁？",
+        "A": [
+            "达索"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"D-ARIE\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT sd.supplier_name\nFROM aircraft_details ad\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE ad.pure_reg = 'darie'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Vista Jet"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 8.34
+    },
+    {
+        "Q": "N451GA的制造商是谁？",
+        "A": [
+            "湾流"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N451GA\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n451ga'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "湾流"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.94
+    },
+    {
+        "Q": "N250PK的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N250PK\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n250pk'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.09
+    },
+    {
+        "Q": "N767WF的制造商是谁？",
+        "A": [
+            "豪客比奇"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N767WF\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n767wf'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "豪客比奇"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.48
+    },
+    {
+        "Q": "N52NG的制造商是谁？",
+        "A": [
+            "皮拉图斯"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N52NG\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT DISTINCT brand_name\nFROM aircraft_details\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "湾流"
+            },
+            {
+                "brand_name": "豪客比奇"
+            },
+            {
+                "brand_name": "本田"
+            },
+            {
+                "brand_name": "塞斯纳"
+            },
+            {
+                "brand_name": "庞巴迪"
+            },
+            {
+                "brand_name": "达索"
+            },
+            {
+                "brand_name": "皮拉图斯"
+            },
+            {
+                "brand_name": "派珀"
+            },
+            {
+                "brand_name": "巴航工业"
+            },
+            {
+                "brand_name": "波音"
+            },
+            {
+                "brand_name": "空客"
+            },
+            {
+                "brand_name": "莱斯顿"
+            },
+            {
+                "brand_name": "西锐"
+            },
+            {
+                "brand_name": "钻石"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.26
+    },
+    {
+        "Q": "N271GL的制造商是谁？",
+        "A": [
+            "庞巴迪"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N271GL\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n271gl'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "庞巴迪"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.68
+    },
+    {
+        "Q": "N740XJ的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N740XJ\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n740xj'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.32
+    },
+    {
+        "Q": "OY-SKK的制造商是谁？",
+        "A": [
+            "达索"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"OY-SKK\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT s.supplier_name\nFROM aircraft_details a\nJOIN supplier_details s ON a.supplier_id = s.supplier_id\nWHERE a.pure_reg = 'oyskk'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "supplier_name": "Air Alsie"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.75
+    },
+    {
+        "Q": "ZS-MGS的制造商是谁？",
+        "A": [
+            "达索"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"ZS-MGS\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT DISTINCT brand_name\nFROM aircraft_details\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "湾流"
+            },
+            {
+                "brand_name": "豪客比奇"
+            },
+            {
+                "brand_name": "本田"
+            },
+            {
+                "brand_name": "塞斯纳"
+            },
+            {
+                "brand_name": "庞巴迪"
+            },
+            {
+                "brand_name": "达索"
+            },
+            {
+                "brand_name": "皮拉图斯"
+            },
+            {
+                "brand_name": "派珀"
+            },
+            {
+                "brand_name": "巴航工业"
+            },
+            {
+                "brand_name": "波音"
+            },
+            {
+                "brand_name": "空客"
+            },
+            {
+                "brand_name": "莱斯顿"
+            },
+            {
+                "brand_name": "西锐"
+            },
+            {
+                "brand_name": "钻石"
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.22
+    },
+    {
+        "Q": "D-BEEE的制造商是谁？",
+        "A": [
+            "巴航工业"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"D-BEEE\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'dbeee'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "巴航工业"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.36
+    },
+    {
+        "Q": "SU-SML的制造商是谁？",
+        "A": [
+            "塞斯纳"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"SU-SML\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'susml'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "塞斯纳"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.23
+    },
+    {
+        "Q": "N553CB的制造商是谁？",
+        "A": [
+            "湾流"
+        ],
+        "SQL": "SELECT brand_name FROM aircraft_details WHERE registration = \"N553CB\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT brand_name\nFROM aircraft_details\nWHERE pure_reg = 'n553cb'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "brand_name": "湾流"
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.94
+    },
+    {
+        "correct_rate": 86.0,
+        "sample_size": 50,
+        "correct_count": 43,
+        "average_time": 9.19
+    }
+]

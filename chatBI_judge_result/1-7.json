@@ -1,0 +1,3267 @@
+[
+    {
+        "Q": "Hawker 800的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Hawker 800'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.61
+    },
+    {
+        "Q": "Cessna 441 Conquest II的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna 441 Conquest II\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Cessna 441 Conquest II'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 9
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.37
+    },
+    {
+        "Q": "Dassault Falcon 20F的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 20F\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 20F'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.12
+    },
+    {
+        "Q": "Embraer Praetor 500的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Embraer Praetor 500\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Embraer Praetor 500'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 8
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.33
+    },
+    {
+        "Q": "Bombardier Learjet 60的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 60\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier Learjet 60'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.09
+    },
+    {
+        "Q": "Dassault Falcon 50EX的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 50EX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 50EX'\nLIMIT 1;",
+        "actual_answer": [
+            {
+                "seat_num": 9
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.62
+    },
+    {
+        "Q": "Cessna 182的最大载客量是多少？",
+        "A": [
+            4
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna 182\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Cessna 182'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 4
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.07
+    },
+    {
+        "Q": "Cessna 208的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna 208\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Cessna 208'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 4
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 9
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.19
+    },
+    {
+        "Q": "Bombardier Learjet 40的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 40\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier Learjet 40'\n  AND brand_name = 'Bombardier'\nLIMIT 50;",
+        "actual_answer": [],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.38
+    },
+    {
+        "Q": "Dassault Falcon 8X的最大载客量是多少？",
+        "A": [
+            14
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 8X\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 8X'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 12
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.56
+    },
+    {
+        "Q": "Beechjet 400的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 400\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Beechjet 400'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.31
+    },
+    {
+        "Q": "Cessna 206的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna 206\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Cessna 206'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 3
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.73
+    },
+    {
+        "Q": "Hawker 800SP的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800SP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Hawker 800SP'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 8
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.87
+    },
+    {
+        "Q": "Bombardier Challenger 850的最大载客量是多少？",
+        "A": [
+            50
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 850\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier Challenger 850'\n  AND brand_name = 'Bombardier'\nLIMIT 50;",
+        "actual_answer": [],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.19
+    },
+    {
+        "Q": "Cessna Citation XLS的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation XLS\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       seat_num\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Cessna Citation XLS',\n                              'Cessna Citation X',\n                              'Cessna Citation XLS+',\n                              'Cessna Citation I',\n                              'Cessna Citation V',\n                              'Cessna Citation X+')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS+",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS+",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS+",
+                "seat_num": 6
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation I",
+                "seat_num": 5
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS+",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS+",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS+",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS+",
+                "seat_num": 6
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS+",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS+",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS+",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation XLS",
+                "seat_num": 7
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 12.0
+    },
+    {
+        "Q": "Beechcraft Premier I的最大载客量是多少？",
+        "A": [
+            6
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft Premier I\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Beechcraft Premier I'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 4
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.61
+    },
+    {
+        "Q": "Piper PA-34的最大载客量是多少？",
+        "A": [
+            5
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Piper PA-34\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT MAX(seat_num) AS max_seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Piper PA-34'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "max_seat_num": 5
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.01
+    },
+    {
+        "Q": "Cessna Citation V的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation V\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "No answer",
+        "actual_answer": "No answer",
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 1.26
+    },
+    {
+        "Q": "Cessna 172的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna 172\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Cessna 172'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 4
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 8.84
+    },
+    {
+        "Q": "Hawker 400的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Hawker 400\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Hawker 400'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 9
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.64
+    },
+    {
+        "Q": "Dassault Falcon 20的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 20\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 20'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.15
+    },
+    {
+        "Q": "Gulfstream G500的最大载客量是多少？",
+        "A": [
+            19
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G500\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Gulfstream G500'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 19
+            },
+            {
+                "seat_num": 18
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 15
+            },
+            {
+                "seat_num": 18
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 18
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 15
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 13
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.6
+    },
+    {
+        "Q": "Beechcraft King Air 300的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft King Air 300\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Beechcraft King Air 300'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.32
+    },
+    {
+        "Q": "Cessna Citation M2的最大载客量是多少？",
+        "A": [
+            6
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation M2\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       seat_num\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Cessna Citation X',\n                              'Cessna Citation M2',\n                              'Cessna Citation I',\n                              'Cessna Citation V',\n                              'Cessna Citation X+')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation M2",
+                "seat_num": 6
+            },
+            {
+                "aircraft_model_name": "Cessna Citation M2",
+                "seat_num": 6
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation I",
+                "seat_num": 5
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation M2",
+                "seat_num": 6
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation M2",
+                "seat_num": 6
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation M2",
+                "seat_num": 5
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation M2",
+                "seat_num": 5
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 7
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.39
+    },
+    {
+        "Q": "Bombardier Challenger 300的最大载客量是多少？",
+        "A": [
+            13
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Challenger 300\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE brand_name = 'Bombardier'\n  AND aircraft_model_name = 'Bombardier Challenger 300'\nLIMIT 50;",
+        "actual_answer": [],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.95
+    },
+    {
+        "Q": "Embraer Legacy 500的最大载客量是多少？",
+        "A": [
+            13
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 500\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Embraer Legacy 500'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 10
+            },
+            {
+                "seat_num": 10
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 9
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 8.98
+    },
+    {
+        "Q": "Dassault Falcon 2000EX的最大载客量是多少？",
+        "A": [
+            10
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 2000EX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       MAX(seat_num) AS max_passenger_capacity\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Dassault Falcon 2000EX',\n                              'Dassault Falcon 2000EX EASy')\nGROUP BY aircraft_model_name\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX",
+                "max_passenger_capacity": 10
+            },
+            {
+                "aircraft_model_name": "Dassault Falcon 2000EX EASy",
+                "max_passenger_capacity": 10
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.76
+    },
+    {
+        "Q": "Airbus A319的最大载客量是多少？",
+        "A": [
+            144
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Airbus A319\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Airbus ACJ A319'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 40
+            },
+            {
+                "seat_num": 19
+            },
+            {
+                "seat_num": 19
+            },
+            {
+                "seat_num": 19
+            },
+            {
+                "seat_num": 19
+            },
+            {
+                "seat_num": 19
+            },
+            {
+                "seat_num": 50
+            },
+            {
+                "seat_num": 19
+            },
+            {
+                "seat_num": 19
+            },
+            {
+                "seat_num": 19
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.37
+    },
+    {
+        "Q": "Beechcraft Travel Air的最大载客量是多少？",
+        "A": [
+            7
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Beechcraft Travel Air\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Beechcraft Travel Air'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 3
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.23
+    },
+    {
+        "Q": "Embraer Praetor 600的最大载客量是多少？",
+        "A": [
+            10
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Embraer Praetor 600\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Embraer Praetor 600'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 10
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 10
+            },
+            {
+                "seat_num": 6
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.45
+    },
+    {
+        "Q": "Hawker 750的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Hawker 750\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Hawker 750'\nLIMIT 1;",
+        "actual_answer": [
+            {
+                "seat_num": 8
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.22
+    },
+    {
+        "Q": "Gulfstream GIV的最大载客量是多少？",
+        "A": [
+            16
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GIV\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       seat_num\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Gulfstream GIV',\n                              'Gulfstream GIV-SP')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 14
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 16
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 12
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 11
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 16
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 12
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 11
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 12
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV-SP",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 16
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV-SP",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 14
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV-SP",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 12
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 15
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV-SP",
+                "seat_num": 14
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 16
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 16
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 12
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 12
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 14
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 13
+            },
+            {
+                "aircraft_model_name": "Gulfstream GIV",
+                "seat_num": 15
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.38
+    },
+    {
+        "Q": "Dassault Falcon 900LX的最大载客量是多少？",
+        "A": [
+            14
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900LX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 900LX'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.61
+    },
+    {
+        "Q": "Bombardier Learjet 35A的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 35A\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier Learjet 35A'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.56
+    },
+    {
+        "Q": "Cirrus SR22的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cirrus SR22\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Cirrus SR22'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 4
+            },
+            {
+                "seat_num": 4
+            },
+            {
+                "seat_num": 4
+            },
+            {
+                "seat_num": 4
+            },
+            {
+                "seat_num": 4
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 4
+            },
+            {
+                "seat_num": 4
+            },
+            {
+                "seat_num": 4
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 3
+            },
+            {
+                "seat_num": 4
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.41
+    },
+    {
+        "Q": "Dassault Falcon 10的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 10\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 10'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 6
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 8.95
+    },
+    {
+        "Q": "Gulfstream GV的最大载客量是多少？",
+        "A": [
+            17
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream GV\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Gulfstream GV'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 17
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 17
+            },
+            {
+                "seat_num": 17
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 17
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 15
+            },
+            {
+                "seat_num": 15
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.2
+    },
+    {
+        "Q": "Beechjet 65的最大载客量是多少？",
+        "A": [
+            7
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Beechjet 65\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Beechjet 65'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 7
+            }
+        ],
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.66
+    },
+    {
+        "Q": "Gulfstream G550的最大载客量是多少？",
+        "A": [
+            18
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Gulfstream G550\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Gulfstream G550'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 18
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 11
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 18
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 18
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 18
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 17
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 18
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 15
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 18
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 18
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 18
+            },
+            {
+                "seat_num": 10
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 14
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.96
+    },
+    {
+        "Q": "Honda HondaJet的最大载客量是多少？",
+        "A": [
+            6
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Honda HondaJet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Honda HondaJet'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 5
+            },
+            {
+                "seat_num": 5
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.21
+    },
+    {
+        "Q": "Embraer ERJ 135的最大载客量是多少？",
+        "A": [
+            37
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Embraer ERJ 135\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Embraer ERJ 135'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 30
+            },
+            {
+                "seat_num": 30
+            },
+            {
+                "seat_num": 30
+            },
+            {
+                "seat_num": 30
+            },
+            {
+                "seat_num": 37
+            },
+            {
+                "seat_num": 16
+            },
+            {
+                "seat_num": 30
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.87
+    },
+    {
+        "Q": "Cessna Citation Jet的最大载客量是多少？",
+        "A": [
+            5
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation Jet\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       seat_num\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Cessna Citation X',\n                              'Cessna Citation Jet',\n                              'Cessna Citation I',\n                              'Cessna Citation V',\n                              'Cessna Citation X+')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Jet",
+                "seat_num": 4
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation I",
+                "seat_num": 5
+            },
+            {
+                "aircraft_model_name": "Cessna Citation Jet",
+                "seat_num": 5
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 7
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.24
+    },
+    {
+        "Q": "Bombardier Global 6500的最大载客量是多少？",
+        "A": [
+            14
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Global 6500\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Bombardier Global 6500'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 13
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.25
+    },
+    {
+        "Q": "Bombardier Learjet 35的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Bombardier Learjet 35\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE brand_id = 'Bombardier'\n  AND aircraft_model_name = 'Bombardier Learjet 35'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.12
+    },
+    {
+        "Q": "Cessna Citation II的最大载客量是多少？",
+        "A": [
+            11
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation II\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       seat_num\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Cessna Citation II',\n                              'Cessna Citation X',\n                              'Cessna Citation I',\n                              'Cessna Citation V',\n                              'Cessna Citation X+')\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation I",
+                "seat_num": 5
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 11
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation II",
+                "seat_num": 6
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "seat_num": 9
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.01
+    },
+    {
+        "Q": "Embraer Legacy 450的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Embraer Legacy 450\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Embraer Legacy 450'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 12.15
+    },
+    {
+        "Q": "Dassault Falcon 900EX的最大载客量是多少？",
+        "A": [
+            15
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Dassault Falcon 900EX\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Dassault Falcon 900EX'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 15
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 13
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 12
+            },
+            {
+                "seat_num": 14
+            },
+            {
+                "seat_num": 14
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.16
+    },
+    {
+        "Q": "Cessna Citation CJ1的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Cessna Citation CJ1\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT aircraft_model_name,\n       MAX(seat_num) AS max_seat_num\nFROM aircraft_details\nWHERE aircraft_model_name IN ('Cessna Citation X',\n                              'Cessna Citation CJ1',\n                              'Cessna Citation I',\n                              'Cessna Citation CJ1+',\n                              'Cessna Citation V',\n                              'Cessna Citation X+')\nGROUP BY aircraft_model_name;",
+        "actual_answer": [
+            {
+                "aircraft_model_name": "Cessna Citation X",
+                "max_seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1",
+                "max_seat_num": 8
+            },
+            {
+                "aircraft_model_name": "Cessna Citation I",
+                "max_seat_num": 6
+            },
+            {
+                "aircraft_model_name": "Cessna Citation CJ1+",
+                "max_seat_num": 7
+            },
+            {
+                "aircraft_model_name": "Cessna Citation V",
+                "max_seat_num": 9
+            },
+            {
+                "aircraft_model_name": "Cessna Citation X+",
+                "max_seat_num": 9
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.4
+    },
+    {
+        "Q": "Hawker 400XP的最大载客量是多少？",
+        "A": [
+            8
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Hawker 400XP\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Hawker 400XP'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 7
+            },
+            {
+                "seat_num": 7
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.63
+    },
+    {
+        "Q": "Hawker 800XPi的最大载客量是多少？",
+        "A": [
+            9
+        ],
+        "SQL": "SELECT max(seat_num) FROM aircraft_details WHERE aircraft_model_name = \"Hawker 800XPi\";",
+        "DB": "ai_database_dev",
+        "actual_SQL": "SELECT seat_num\nFROM aircraft_details\nWHERE aircraft_model_name = 'Hawker 800XPi'\nLIMIT 50;",
+        "actual_answer": [
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 9
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 8
+            },
+            {
+                "seat_num": 6
+            },
+            {
+                "seat_num": 8
+            }
+        ],
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 8.49
+    },
+    {
+        "correct_rate": 12.0,
+        "sample_size": 50,
+        "correct_count": 6,
+        "average_time": 9.95
+    }
+]

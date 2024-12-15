@@ -1,0 +1,458 @@
+[
+    {
+        "Q": "Fast Private Jet S.R.L.航司的官网链接是什么？",
+        "A": "https://www.fastprivatejet.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Fast Private Jet S.R.L.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Fast Private Jet S.R.L.的官网链接是 [http://www.fastprivatejet.com](http://www.fastprivatejet.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 14.06
+    },
+    {
+        "Q": "Aerowest GmbH航司的官网链接是什么？",
+        "A": "https://aerowest.net/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Aerowest GmbH\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "我没有找到Aerowest GmbH的官网链接。如果您需要更多信息或帮助，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.98
+    },
+    {
+        "Q": "Phenix Aviation航司的官网链接是什么？",
+        "A": "http://www.phenix-aviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Phenix Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Phenix Aviation's official website can be found at the following link: [Phenix Aviation](http://www.phenix-aviation.com).",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.93
+    },
+    {
+        "Q": "Trinity Private Jet Charter航司的官网链接是什么？",
+        "A": "http://www.trinityjet.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Trinity Private Jet Charter\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Trinity Private Jet Charter的官网链接是：[Trinity Private Jet Charter](http://trinityaircharter.com)。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.58
+    },
+    {
+        "Q": "Airstar Inc.航司的官网链接是什么？",
+        "A": "http://www.airstarcharter.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Airstar Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airstar Inc.的官网链接是 [http://www.airstarcharter.com](http://www.airstarcharter.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.44
+    },
+    {
+        "Q": "Tropic Ocean Airways航司的官网链接是什么？",
+        "A": "http://www.flytropic.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Tropic Ocean Airways\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Tropic Ocean Airways的官网链接是 [www.flytropic.com](http://www.flytropic.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.06
+    },
+    {
+        "Q": "Brenzil Pty Ltd航司的官网链接是什么？",
+        "A": "https://www.brenziljetcharter.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Brenzil Pty Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Brenzil Pty Ltd的官网链接是：[Brenzil Jet Charter](https://www.brenziljetcharter.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.09
+    },
+    {
+        "Q": "Cove Aviation航司的官网链接是什么？",
+        "A": "http://www.coveaviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Cove Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Cove Aviation的官网链接是 [http://www.coveaviation.com](http://www.coveaviation.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.09
+    },
+    {
+        "Q": "Hera Flight航司的官网链接是什么？",
+        "A": "https://heraflight.com/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Hera Flight\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hera Flight的官网链接是：[https://heraflight.com/](https://heraflight.com/)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.45
+    },
+    {
+        "Q": "Aira Aviation航司的官网链接是什么？",
+        "A": "http://www.airaaviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Aira Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Aira Aviation's official website can be found at the following link: [http://www.airaaviation.com](http://www.airaaviation.com).",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.13
+    },
+    {
+        "Q": "Reva Inc.航司的官网链接是什么？",
+        "A": "https://www.flyreva.com/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Reva Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Reva Inc.的官网链接是：[https://www.flyreva.com/](https://www.flyreva.com/)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.84
+    },
+    {
+        "Q": "Westair Charter航司的官网链接是什么？",
+        "A": "https://www.westaircharter.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Westair Charter\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Westair Charter的官网链接是 [http://www.wcas.aero](http://www.wcas.aero)。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.82
+    },
+    {
+        "Q": "XCEL Jet航司的官网链接是什么？",
+        "A": "https://www.xceljet.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"XCEL Jet\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "XCEL Jet的官网链接是 [https://www.xceljet.com](https://www.xceljet.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.81
+    },
+    {
+        "Q": "Skyways Charter LLC航司的官网链接是什么？",
+        "A": "http://flyskyways.net",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Skyways Charter LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Skyways Charter LLC的官网链接是 [http://www.flyskyway.com](http://www.flyskyway.com)。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 22.2
+    },
+    {
+        "Q": "Action Air Express航司的官网链接是什么？",
+        "A": "http://www.actionairexpress.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Action Air Express\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Action Air Express的官网链接是 [www.actionairexpress.com](http://www.actionairexpress.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.24
+    },
+    {
+        "Q": "Euro-asia Air Company Jsc航司的官网链接是什么？",
+        "A": "https://www.eaa.kz",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Euro-asia Air Company Jsc\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Euro-Asia Air Company JSC's official website can be found at [eaa.kz](http://eaa.kz). This site provides information about their services, fleet, and contact details.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.77
+    },
+    {
+        "Q": "Air Alliance Group GmbH航司的官网链接是什么？",
+        "A": "http://air-alliance.de",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Air Alliance Group GmbH\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Air Alliance Group GmbH的官网链接是：[www.air-alliance.de](http://www.air-alliance.de)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.94
+    },
+    {
+        "Q": "Sky LLC航司的官网链接是什么？",
+        "A": "https://www.skyllc.aero",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Sky LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Sky LLC的官网链接是 [https://www.skyllc.aero](https://www.skyllc.aero)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.61
+    },
+    {
+        "Q": "Jetcom航司的官网链接是什么？",
+        "A": "http://www.flyjetcom.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Jetcom\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "目前没有找到Jetcom航空公司的官网链接。如果您有其他相关信息或需要查找其他航空公司的官网，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.19
+    },
+    {
+        "Q": "Sky Partners Inc.航司的官网链接是什么？",
+        "A": "http://skypartnersgroup.com/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Sky Partners Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Sky Partners Inc.的官网链接是 [http://skypartnersgroup.com/](http://skypartnersgroup.com/)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.52
+    },
+    {
+        "Q": "Avcenter Inc.航司的官网链接是什么？",
+        "A": "https://www.avcenter.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Avcenter Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Avcenter Inc.的官网链接是 [avcenter.com](http://www.avcenter.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.97
+    },
+    {
+        "Q": "Regency Air LLC航司的官网链接是什么？",
+        "A": "http://www.regencyair.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Regency Air LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Regency Air LLC的官网链接是：[Regency Air, LLC](http://www.regencyair.com)。如果您需要更多信息或服务，可以通过他们的联系方式进行咨询。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.65
+    },
+    {
+        "Q": "FlyXcite航司的官网链接是什么？",
+        "A": "https://flyxcite.com/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"FlyXcite\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "FlyXcite的官网链接是 [https://flyxcite.com/](https://flyxcite.com/)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.71
+    },
+    {
+        "Q": "Sierra West Airlines航司的官网链接是什么？",
+        "A": "http://www.sierrawestairlines.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Sierra West Airlines\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Sierra West Airlines的官网链接是：[http://www.sierrawestairlines.com](http://www.sierrawestairlines.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.79
+    },
+    {
+        "Q": "GFK Flight Support航司的官网链接是什么？",
+        "A": "http://www.flygfk.com/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"GFK Flight Support\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "GFK Flight Support的官网链接是：[GFK Flight Support](https://www.altru.org/careers/)。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.69
+    },
+    {
+        "Q": "Excelaire LLC航司的官网链接是什么？",
+        "A": "http://www.excelaire.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Excelaire LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Excelaire LLC的官网链接是：[Excelaire LLC](https://www.excelaire.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.57
+    },
+    {
+        "Q": "Silver Cloud Air航司的官网链接是什么？",
+        "A": "https://www.silver-cloud-air.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Silver Cloud Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Silver Cloud Air的官网链接是 [https://www.silver-cloud-air.com](https://www.silver-cloud-air.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.45
+    },
+    {
+        "Q": "Execuflight Inc.航司的官网链接是什么？",
+        "A": "http://www.execuflight.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Execuflight Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Execuflight Inc. 的官网链接是 [http://www.execuflight.com](http://www.execuflight.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.23
+    },
+    {
+        "Q": "Dominion Aviation Services Inc.航司的官网链接是什么？",
+        "A": "https://www.dominionaviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Dominion Aviation Services Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dominion Aviation Services Inc.的官网链接是：[https://www.dominionaviation.com](https://www.dominionaviation.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.09
+    },
+    {
+        "Q": "Bartolini Air航司的官网链接是什么？",
+        "A": "https://www.bartoliniair.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Bartolini Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bartolini Air的官网链接是 [bartoliniair.com](https://www.bartoliniair.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.97
+    },
+    {
+        "Q": "Bell Air航司的官网链接是什么？",
+        "A": "https://flybellair.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Bell Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bell Air的官网链接是 [https://flybellair.com](https://flybellair.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.43
+    },
+    {
+        "Q": "Executive Jet Charter Ltd航司的官网链接是什么？",
+        "A": "http://www.execjet.co.uk",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Executive Jet Charter Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Executive Jet Charter Ltd的官网链接是：[http://www.execjet.co.uk](http://www.execjet.co.uk)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.63
+    },
+    {
+        "Q": "Spot Air航司的官网链接是什么？",
+        "A": "https://spotgroup.org/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Spot Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Spot Air的官网链接是 [https://spotgroup.org/](https://spotgroup.org/) 。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.92
+    },
+    {
+        "Q": "Jet Services Inc.航司的官网链接是什么？",
+        "A": "http://flyjetservices.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Jet Services Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "我没有找到Jet Services Inc.的官网链接。如果你有其他相关信息或具体的查询方向，我可以帮助你进一步查找。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.15
+    },
+    {
+        "Q": "Sardinian Sky Service航司的官网链接是什么？",
+        "A": "https://sardiniansky.aero",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Sardinian Sky Service\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Sardinian Sky Service的官网链接是：[Sardinian Sky Service](https://www.sss.aero)。您可以通过这个链接访问他们的官方网站，获取更多关于航班和服务的信息。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.02
+    },
+    {
+        "Q": "Air X Charter Ltd航司的官网链接是什么？",
+        "A": "https://www.airx.aero",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Air X Charter Ltd\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Air X Charter Ltd的官网链接是 [https://www.airx.aero](https://www.airx.aero) 。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.55
+    },
+    {
+        "Q": "Aspen Air Charter Co.航司的官网链接是什么？",
+        "A": "https://www.flyaspenair.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Aspen Air Charter Co.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Aspen Air Charter Co.的官网链接是：[Aspen Air Charter Co.](http://www.aspenaircharter.com)。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.69
+    },
+    {
+        "Q": "Toddcoe Aviation航司的官网链接是什么？",
+        "A": "https://www.toddcoeaviation.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Toddcoe Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Toddcoe Aviation的官网链接是：[Toddcoe Aviation](https://www.toddcoeaviation.com) 。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.63
+    },
+    {
+        "Q": "Falcon Aerospace Limited航司的官网链接是什么？",
+        "A": "https://falconaero.org",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Falcon Aerospace Limited\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Falcon Aerospace Limited的官网链接是：[Falcon Aviation](https://falconaviation.ae/)。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 14.9
+    },
+    {
+        "Q": "Scanwings航司的官网链接是什么？",
+        "A": "http://www.scanwings.fi",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Scanwings\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "我没有找到Scanwings航司的官网链接。如果你需要更多信息或其他帮助，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.67
+    },
+    {
+        "Q": "Encore Jet Management LLC航司的官网链接是什么？",
+        "A": "http://www.encorejet.us",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Encore Jet Management LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Encore Jet Management LLC的官网链接是：[Encore Jet](https://www.encorejet.us)。您可以通过这个链接访问他们的官方网站，获取更多关于他们的服务和信息。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.32
+    },
+    {
+        "Q": "Fliteaccess LLC航司的官网链接是什么？",
+        "A": "https://www.fliteaccess.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Fliteaccess LLC\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "FliteAccess LLC的官网链接是：[FliteAccess](https://www.fliteaccess.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.36
+    },
+    {
+        "Q": "Toyo Aviation航司的官网链接是什么？",
+        "A": "http://www.toyoaviation.ro",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Toyo Aviation\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Toyo Aviation的官网链接是：[Toyo Aviation](https://www.toyoaviation.com)。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.31
+    },
+    {
+        "Q": "Airshare航司的官网链接是什么？",
+        "A": "https://www.flyairshare.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Airshare\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Airshare的官网链接是 [www.flyairshare.com](http://www.flyairshare.com)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 13.77
+    },
+    {
+        "Q": "Star Jet Co., Ltd.航司的官网链接是什么？",
+        "A": "https://www.starjet.cc",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Star Jet Co., Ltd.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Star Jet Co., Ltd.的官网链接是 [www.starjet.cc](https://www.starjet.cc)。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.7
+    },
+    {
+        "Q": "Diamond Sky航司的官网链接是什么？",
+        "A": "http://diamond-sky.aero",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Diamond Sky\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "我没有找到Diamond Sky航司的官网链接。如果你有其他相关信息或需要进一步的帮助，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.19
+    },
+    {
+        "Q": "B-Jets航司的官网链接是什么？",
+        "A": "https://www.b-jets.eu",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"B-Jets\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "B-Jets的官网链接是：[B-Jets官网](https://www.starjet.cc)。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.03
+    },
+    {
+        "Q": "Ameritex Airways Inc.航司的官网链接是什么？",
+        "A": "http://www.ameritexjet.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Ameritex Airways Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "我没有找到Ameritex Airways Inc.的官网链接。如果您需要更多信息或帮助，请告诉我！",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.0
+    },
+    {
+        "Q": "North Cariboo Air航司的官网链接是什么？",
+        "A": "http://www.flynca.com",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"North Cariboo Air\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "North Cariboo Air的官网链接是：[www.northcaribooair.com](http://www.northcaribooair.com)。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.78
+    },
+    {
+        "Q": "Tag - Transport Aerien Gatineau航司的官网链接是什么？",
+        "A": "https://www.flytag.ca/",
+        "SQL": "SELECT supplier_website FROM supplier_details WHERE supplier_name = \"Tag - Transport Aerien Gatineau\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Transport Aérien Gatineau (TAG) 的官网链接是 [https://www.flytag.ca/](https://www.flytag.ca/) 。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.94
+    },
+    {
+        "correct_rate": 68.0,
+        "sample_size": 50,
+        "correct_count": 34,
+        "average_time": 8.44
+    }
+]

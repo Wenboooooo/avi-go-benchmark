@@ -1,0 +1,608 @@
+[
+    {
+        "Q": "Cessna Citation Excel的起飞重量是多少？",
+        "A": [
+            9163.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation Excel\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation Excel\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.31
+    },
+    {
+        "Q": "Bombardier Global 5500的起飞重量是多少？",
+        "A": [
+            41957.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global 5500\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global 5500\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.39
+    },
+    {
+        "Q": "Cessna Citation II的起飞重量是多少？",
+        "A": [
+            6849.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation II\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation II\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.4
+    },
+    {
+        "Q": "Beechcraft King Air 350i的起飞重量是多少？",
+        "A": [
+            6800.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 350i\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 350i\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.33
+    },
+    {
+        "Q": "Bombardier Global 6000的起飞重量是多少？",
+        "A": [
+            45132.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global 6000\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global 6000\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.56
+    },
+    {
+        "Q": "Pilatus PC-12的起飞重量是多少？",
+        "A": [
+            4740.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Pilatus PC-12\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Pilatus PC-12\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.11
+    },
+    {
+        "Q": "Bombardier Challenger 604的起飞重量是多少？",
+        "A": [
+            21863.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 604\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 604\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.67
+    },
+    {
+        "Q": "Bombardier CRJ-200的起飞重量是多少？",
+        "A": [
+            24041.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier CRJ-200\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier CRJ-200\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.75
+    },
+    {
+        "Q": "Embraer Phenom 100的起飞重量是多少？",
+        "A": [
+            4750.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer Phenom 100\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer Phenom 100\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.48
+    },
+    {
+        "Q": "Cessna Citation CJ3的起飞重量是多少？",
+        "A": [
+            6382.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation CJ3\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation CJ3\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.19
+    },
+    {
+        "Q": "Boeing BBJ2的起飞重量是多少？",
+        "A": [
+            79015.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Boeing BBJ2\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Boeing BBJ2\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.24
+    },
+    {
+        "Q": "Bombardier Challenger 350的起飞重量是多少？",
+        "A": [
+            18416.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 350\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 350\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.78
+    },
+    {
+        "Q": "Gulfstream G600的起飞重量是多少？",
+        "A": [
+            45962.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G600\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G600\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.81
+    },
+    {
+        "Q": "Hawker 850XP的起飞重量是多少？",
+        "A": [
+            12700.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Hawker 850XP\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Hawker 850XP\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.26
+    },
+    {
+        "Q": "Cessna Citation CJ1的起飞重量是多少？",
+        "A": [
+            4900.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation CJ1\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation CJ1\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.9
+    },
+    {
+        "Q": "Embraer Phenom 300的起飞重量是多少？",
+        "A": [
+            8150.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer Phenom 300\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer Phenom 300\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.61
+    },
+    {
+        "Q": "Bombardier Challenger 850的起飞重量是多少？",
+        "A": [
+            24040.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 850\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 850\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.4
+    },
+    {
+        "Q": "Gulfstream G200的起飞重量是多少？",
+        "A": [
+            16079.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G200\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G200\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.96
+    },
+    {
+        "Q": "Cessna Citation VII的起飞重量是多少？",
+        "A": [
+            10183.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation VII\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation VII\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.06
+    },
+    {
+        "Q": "Airbus A330的起飞重量是多少？",
+        "A": [
+            230024.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Airbus A330\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Airbus A330\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.98
+    },
+    {
+        "Q": "Piper PA-34的起飞重量是多少？",
+        "A": [
+            2155.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Piper PA-34\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Piper PA-34\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.48
+    },
+    {
+        "Q": "Embraer E190的起飞重量是多少？",
+        "A": [
+            51800.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer E190\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer E190\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.52
+    },
+    {
+        "Q": "Cessna Citation VI的起飞重量是多少？",
+        "A": [
+            9980.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation VI\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation VI\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.76
+    },
+    {
+        "Q": "Gulfstream G700的起飞重量是多少？",
+        "A": [
+            48800.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G700\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G700\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.92
+    },
+    {
+        "Q": "Cessna Citation X的起飞重量是多少？",
+        "A": [
+            16375.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation X\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation X\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.34
+    },
+    {
+        "Q": "Pilatus PC-24的起飞重量是多少？",
+        "A": [
+            8300.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Pilatus PC-24\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Pilatus PC-24\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.9
+    },
+    {
+        "Q": "Piper PA的起飞重量是多少？",
+        "A": [
+            1969.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Piper PA\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Piper PA\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.3
+    },
+    {
+        "Q": "Bombardier Global Express XRS的起飞重量是多少？",
+        "A": [
+            44452.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global Express XRS\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global Express XRS\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.81
+    },
+    {
+        "Q": "Dassault Falcon 900的起飞重量是多少？",
+        "A": [
+            22225.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Dassault Falcon 900\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Dassault Falcon 900\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.44
+    },
+    {
+        "Q": "Gulfstream G150的起飞重量是多少？",
+        "A": [
+            11839.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G150\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G150\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.91
+    },
+    {
+        "Q": "Gulfstream GIV的起飞重量是多少？",
+        "A": [
+            33203.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream GIV\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream GIV\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.95
+    },
+    {
+        "Q": "Embraer Legacy 650的起飞重量是多少？",
+        "A": [
+            24300.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer Legacy 650\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Embraer Legacy 650\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.6
+    },
+    {
+        "Q": "Dassault Falcon 2000的起飞重量是多少？",
+        "A": [
+            19414.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Dassault Falcon 2000\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Dassault Falcon 2000\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.12
+    },
+    {
+        "Q": "Bombardier Global 7500的起飞重量是多少？",
+        "A": [
+            48194.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global 7500\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global 7500\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.73
+    },
+    {
+        "Q": "Piper PA-46的起飞重量是多少？",
+        "A": [
+            1969.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Piper PA-46\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Piper PA-46\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.53
+    },
+    {
+        "Q": "Cessna Citation Mustang的起飞重量是多少？",
+        "A": [
+            3900.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation Mustang\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation Mustang\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.62
+    },
+    {
+        "Q": "Beechcraft King Air 350的起飞重量是多少？",
+        "A": [
+            6800.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 350\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Beechcraft King Air 350\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.52
+    },
+    {
+        "Q": "Cessna Citation M2的起飞重量是多少？",
+        "A": [
+            4853.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation M2\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation M2\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.64
+    },
+    {
+        "Q": "Boeing BBJ的起飞重量是多少？",
+        "A": [
+            70000.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Boeing BBJ\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Boeing BBJ\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.61
+    },
+    {
+        "Q": "Airbus A340的起飞重量是多少？",
+        "A": [
+            141500.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Airbus A340\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Airbus A340\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.42
+    },
+    {
+        "Q": "Gulfstream G350的起飞重量是多少？",
+        "A": [
+            32160.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G350\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream G350\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.4
+    },
+    {
+        "Q": "Boeing 737的起飞重量是多少？",
+        "A": [
+            49190.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Boeing 737\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Boeing 737\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.41
+    },
+    {
+        "Q": "Cessna Citation III的起飞重量是多少？",
+        "A": [
+            9980.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation III\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Cessna Citation III\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.34
+    },
+    {
+        "Q": "Hawker 900XP的起飞重量是多少？",
+        "A": [
+            12701.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Hawker 900XP\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Hawker 900XP\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.2
+    },
+    {
+        "Q": "Bombardier Global 6500的起飞重量是多少？",
+        "A": [
+            45132.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global 6500\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Global 6500\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.3
+    },
+    {
+        "Q": "Gulfstream GIV-SP的起飞重量是多少？",
+        "A": [
+            33203.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream GIV-SP\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream GIV-SP\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.83
+    },
+    {
+        "Q": "Gulfstream GV的起飞重量是多少？",
+        "A": [
+            41050.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream GV\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Gulfstream GV\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.28
+    },
+    {
+        "Q": "Bombardier Challenger 605的起飞重量是多少？",
+        "A": [
+            21863.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 605\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Bombardier Challenger 605\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.56
+    },
+    {
+        "Q": "Honda HondaJet的起飞重量是多少？",
+        "A": [
+            4980.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Honda HondaJet\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Honda HondaJet\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.56
+    },
+    {
+        "Q": "Dassault Falcon 7X的起飞重量是多少？",
+        "A": [
+            33113.0
+        ],
+        "SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Dassault Falcon 7X\" AND max_takeoff_weight IS NOT NULL;  ",
+        "DB": "data_center_dev",
+        "actual_SQL": "SELECT max_takeoff_weight FROM dc_aircraft_model WHERE name = \"Dassault Falcon 7X\" AND max_takeoff_weight IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 3.45
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 50,
+        "correct_count": 50,
+        "average_time": 3.75
+    }
+]

@@ -1,0 +1,458 @@
+[
+    {
+        "Q": "Ainsworth Regl机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Ainsworth, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Ainsworth Regl\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Ainsworth Regl 机场位于美国，城市是 Ainsworth。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.25
+    },
+    {
+        "Q": "Lanqi Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Yingkou, China",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Lanqi Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Lanqi Airport位于中国，城市是营口。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.91
+    },
+    {
+        "Q": "Bradley机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Fort White, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Bradley\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "布拉德利国际机场位于美国康涅狄格州哈特福德市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.74
+    },
+    {
+        "Q": "Khanbumbat机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Khanbogd, Mongolia",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Khanbumbat\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Khanbumbat机场位于蒙古国的Khanbogd市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.14
+    },
+    {
+        "Q": "Butler Municipal机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Butler, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Butler Municipal\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Butler Municipal Airport位于美国的Butler市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.59
+    },
+    {
+        "Q": "AK-10 Airstrip机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Willow, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"AK-10 Airstrip\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "AK-10 Airstrip位于美国的Willow市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.23
+    },
+    {
+        "Q": "Reed Flying Service Inc机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Acadia Parish, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Reed Flying Service Inc\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Reed Flying Service Inc位于美国的Acadia Parish。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.09
+    },
+    {
+        "Q": "Kimberley Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Kimberley, South Africa",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Kimberley Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "金伯利机场位于南非的金伯利市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.25
+    },
+    {
+        "Q": "Fowler's机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Linden, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Fowler's\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Fowler's Airport位于美国的Linden市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.7
+    },
+    {
+        "Q": "Tezpur Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Tezpur, India",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Tezpur Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Tezpur Airport位于印度的提斯浦尔（Tezpur）市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.77
+    },
+    {
+        "Q": "Gillespie County机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Fredericksburg, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Gillespie County\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gillespie County Airport位于美国德克萨斯州的弗雷德里克斯堡市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.21
+    },
+    {
+        "Q": "Botopasi机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Botopasie, Suriname",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Botopasi\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Botopasi机场位于苏里南（Suriname），城市是Botopasie。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.63
+    },
+    {
+        "Q": "Kohles机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Norfolk, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Kohles\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Kohles机场位于美国，城市是诺福克（Norfolk）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.9
+    },
+    {
+        "Q": "Sitterdorf Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Weinfelden District, Switzerland",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Sitterdorf Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Sitterdorf Airport位于瑞士的Weinfelden District。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.35
+    },
+    {
+        "Q": "Kakhonak Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Kakhonak, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Kakhonak Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Kakhonak Airport位于美国的阿拉斯加州（Alaska）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.17
+    },
+    {
+        "Q": "Breitenau机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Upper Franconia, Germany",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Breitenau\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Breitenau机场位于德国，上弗兰肯（Upper Franconia）地区。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.01
+    },
+    {
+        "Q": "Swan Hills机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Big Lakes County, Canada",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Swan Hills\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Swan Hills 机场位于加拿大的 Big Lakes County。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 14.71
+    },
+    {
+        "Q": "Martins Aerodrome机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Green Bay, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Martins Aerodrome\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Martins Aerodrome位于美国（United States）威斯康星州（Wisconsin）格林贝（Green Bay）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.66
+    },
+    {
+        "Q": "Urgench Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Urgench, Uzbekistan",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Urgench Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Urgench Airport位于乌兹别克斯坦的乌尔根奇市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.92
+    },
+    {
+        "Q": "Smiley Johnson Municipal-Bass Field机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Clarendon, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Smiley Johnson Municipal-Bass Field\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Smiley Johnson Municipal-Bass Field机场位于美国，城市是Clarendon。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.31
+    },
+    {
+        "Q": "Bresso机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Milan, Italy",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Bresso\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Bresso机场位于意大利米兰。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.19
+    },
+    {
+        "Q": "Kuopio Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Kuopio, Finland",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Kuopio Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Kuopio Airport位于芬兰的库奥皮奥市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.06
+    },
+    {
+        "Q": "Sommerset Strip机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Opelika, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Sommerset Strip\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Sommerset Strip 机场位于美国，城市是 Opelika。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.49
+    },
+    {
+        "Q": "Leitchfield-Grayson Co机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Anneta, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Leitchfield-Grayson Co\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Leitchfield-Grayson Co机场位于美国，城市是Anneta。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.44
+    },
+    {
+        "Q": "Pecos Mun机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Pecos, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Pecos Mun\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Pecos Mun机场位于美国，城市是Pecos。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.47
+    },
+    {
+        "Q": "Perkins机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Thomas, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Perkins\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Perkins机场位于美国的Perkins市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.92
+    },
+    {
+        "Q": "Levelock Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Levelock, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Levelock Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Levelock Airport位于美国，城市是Levelock。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 32.03
+    },
+    {
+        "Q": "Utila Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Utila, Honduras",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Utila Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Utila Airport位于洪都拉斯（Honduras），城市是Utila。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.69
+    },
+    {
+        "Q": "Rothenburg Gorlitz机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Rothenburg, Germany",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Rothenburg Gorlitz\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Rothenburg Gorlitz机场位于德国的Rothenburg。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.37
+    },
+    {
+        "Q": "Burgess Field机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Riverside, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Burgess Field\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Burgess Field机场位于美国，城市是Riverside。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.54
+    },
+    {
+        "Q": "M-4机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Conroe, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"M-4\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "M-4机场位于马尔代夫（Maldives），具体城市是马累（Malé）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.75
+    },
+    {
+        "Q": "Jatai机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Jatai, Brazil",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Jatai\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Jatai机场位于巴西的Jatai市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.93
+    },
+    {
+        "Q": "Desert Aire Regional机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Desert Aire, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Desert Aire Regional\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Desert Aire Regional Airport 位于美国（United States），具体城市是马塔瓦（Mattawa）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 20.46
+    },
+    {
+        "Q": "Devils Lake Regional Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Devils Lake, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Devils Lake Regional Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Devils Lake Regional Airport位于美国，城市是Devils Lake。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.3
+    },
+    {
+        "Q": "Devine Municipal机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Devine, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Devine Municipal\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Devine Municipal Airport位于美国德克萨斯州（Texas）Devine市（Devine）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.02
+    },
+    {
+        "Q": "Butler Farm Show机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Butler, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Butler Farm Show\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Butler Farm Show Airport位于美国宾夕法尼亚州的巴特勒市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.18
+    },
+    {
+        "Q": "Rio Vista Hills机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Wickenburg, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Rio Vista Hills\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Rio Vista Hills机场位于美国的Wickenburg市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.96
+    },
+    {
+        "Q": "Para De Minas机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Para De Minas, Brazil",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Para De Minas\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Para De Minas机场位于巴西的迪维诺波利斯市。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 9.25
+    },
+    {
+        "Q": "Mike's Place机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Selman, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Mike's Place\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Mike's Place机场位于印度的德里。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 5.81
+    },
+    {
+        "Q": "Rob机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Loving, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Rob\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Roberts International Airport (IATA代码：ROB) 位于利比里亚的蒙罗维亚。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.56
+    },
+    {
+        "Q": "Carlson Agricultural机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Nashua, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Carlson Agricultural\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Carlson Agricultural Airport位于美国的Nashua市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.84
+    },
+    {
+        "Q": "Kimmel Land & Cattle机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Houston, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Kimmel Land & Cattle\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Kimmel Land & Cattle 机场位于南非的金伯利市（Kimberley, South Africa）。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 7.62
+    },
+    {
+        "Q": "Windy Knoll机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Bakers Corner, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Windy Knoll\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Windy Knoll 机场位于美国，城市是 Bakers Corner。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.69
+    },
+    {
+        "Q": "Dick's机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Goldsby, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Dick's\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Dick's 机场位于美国，城市是 Goldsby。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.74
+    },
+    {
+        "Q": "Knox County Regional Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Rockland, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Knox County Regional Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Knox County Regional Airport位于美国的Rockland市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.63
+    },
+    {
+        "Q": "Toronto/Downsview机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Toronto, Canada",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Toronto/Downsview\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Toronto/Downsview机场位于加拿大（Canada）多伦多（Toronto）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.44
+    },
+    {
+        "Q": "Stevens Ranch机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Otter, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Stevens Ranch\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Stevens Ranch 机场位于美国，城市是 Otter。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.77
+    },
+    {
+        "Q": "Murmansk Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Murmansk Oblast, Russia",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Murmansk Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Murmansk Airport位于俄罗斯的摩尔曼斯克市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.75
+    },
+    {
+        "Q": "Independence State机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Independence, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Independence State\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Independence State Airport位于美国的Independence市。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.79
+    },
+    {
+        "Q": "Baraboo Wisconsin Dells机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。",
+        "A": "Baraboo, United States",
+        "SQL": "SELECT country_name, city_name FROM airport_fbo_details WHERE airport_name = \"Baraboo Wisconsin Dells\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Baraboo Wisconsin Dells 机场位于美国（United States），城市是巴拉布（Baraboo）。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.86
+    },
+    {
+        "correct_rate": 88.0,
+        "sample_size": 50,
+        "correct_count": 44,
+        "average_time": 8.46
+    }
+]

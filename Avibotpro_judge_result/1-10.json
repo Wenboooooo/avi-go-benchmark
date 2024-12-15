@@ -1,0 +1,458 @@
+[
+    {
+        "Q": "Priour Ranch机场的四字码是什么？",
+        "A": "XS23",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Priour Ranch\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Priour Ranch机场的四字码（ICAO代码）是 **XS23**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.64
+    },
+    {
+        "Q": "Amborovy Airport机场的四字码是什么？",
+        "A": "FMNM",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Amborovy Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Amborovy Airport的四字码（ICAO代码）是**FMNM**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.85
+    },
+    {
+        "Q": "Roseires Airport机场的四字码是什么？",
+        "A": "HSDZ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Roseires Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Roseires Airport的四字码是HSDZ。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.88
+    },
+    {
+        "Q": "Payne Field机场的四字码是什么？",
+        "A": "ME47",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Payne Field\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Payne Field机场的四字码是KPAE。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.82
+    },
+    {
+        "Q": "Don's Landing Field机场的四字码是什么？",
+        "A": "32MN",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Don's Landing Field\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Don's Landing Field的四字码是 **32MN**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.86
+    },
+    {
+        "Q": "Ambatondrazaka机场的四字码是什么？",
+        "A": "FMMZ",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ambatondrazaka\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Ambatondrazaka机场的四字码（ICAO代码）是FMMZ。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 13.03
+    },
+    {
+        "Q": "Pangnirtung Airport机场的四字码是什么？",
+        "A": "CYXP",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Pangnirtung Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Pangnirtung Airport的四字码是**CYXP**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.82
+    },
+    {
+        "Q": "Islesboro机场的四字码是什么？",
+        "A": "57B",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Islesboro\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Islesboro Airport的四字码是57B。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.85
+    },
+    {
+        "Q": "Gone With The Wind机场的四字码是什么？",
+        "A": "20TT",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Gone With The Wind\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "\"Gone With The Wind\" 机场的四字码是 **20TT**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.47
+    },
+    {
+        "Q": "Gile Pond机场的四字码是什么？",
+        "A": "12NH",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Gile Pond\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gile Pond 机场的四字码是 **12NH**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.15
+    },
+    {
+        "Q": "Wheatland机场的四字码是什么？",
+        "A": "23VA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Wheatland\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Wheatland Airport has the four-letter ICAO code **23VA**.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.01
+    },
+    {
+        "Q": "Madisonville Municipal机场的四字码是什么？",
+        "A": "51R",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Madisonville Municipal\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Madisonville Municipal Airport的四字代码是K2I0。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.31
+    },
+    {
+        "Q": "Quintero机场的四字码是什么？",
+        "A": "SCER",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Quintero\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Quintero机场的四字码是 **SCER**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.73
+    },
+    {
+        "Q": "Mc Donald Field机场的四字码是什么？",
+        "A": "3NC4",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Mc Donald Field\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Mc Donald Field 机场的四字码是 **3NC4**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.86
+    },
+    {
+        "Q": "Prickett-Grooms Field机场的四字码是什么？",
+        "A": "6Y9",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Prickett-Grooms Field\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Prickett-Grooms Field 机场的四字码是 **6Y9**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 12.71
+    },
+    {
+        "Q": "Marshfield Mun Harlow机场的四字码是什么？",
+        "A": "KGHG",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Marshfield Mun Harlow\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Marshfield Municipal George Harlow Field的四字码是 **KGHG**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.19
+    },
+    {
+        "Q": "Baumann Farm Inc.机场的四字码是什么？",
+        "A": "37WA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Baumann Farm Inc.\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Baumann Farm Inc.的机场四字码是 **37WA**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.43
+    },
+    {
+        "Q": "Ouessant机场的四字码是什么？",
+        "A": "LFEC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ouessant\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Ouessant Airport的四字码是 **LFEC**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.71
+    },
+    {
+        "Q": "Marcy Field机场的四字码是什么？",
+        "A": "1I1",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Marcy Field\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Marcy Field 机场的四字码是 **1I1**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.3
+    },
+    {
+        "Q": "Schubert Airstrip机场的四字码是什么？",
+        "A": "40WI",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Schubert Airstrip\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Schubert Airstrip的四字码（ICAO代码）是40WI。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.2
+    },
+    {
+        "Q": "Villaroche机场的四字码是什么？",
+        "A": "LFPM",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Villaroche\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Villaroche机场的四字码是 **LFPM**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.71
+    },
+    {
+        "Q": "Triple W机场的四字码是什么？",
+        "A": "5W5",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Triple W\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Triple W 机场的四字码是 **5W5**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.64
+    },
+    {
+        "Q": "Julia Creek Airport机场的四字码是什么？",
+        "A": "YJLC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Julia Creek Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Julia Creek Airport的四字码（ICAO代码）是YJLC。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.28
+    },
+    {
+        "Q": "Zanzibar Farm机场的四字码是什么？",
+        "A": "50KY",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Zanzibar Farm\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Zanzibar Farm Airport的四字码是 **50KY**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.85
+    },
+    {
+        "Q": "Nappa Merrie机场的四字码是什么？",
+        "A": "YNAP",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Nappa Merrie\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Nappa Merrie 机场的四字码是 YNAP。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 11.14
+    },
+    {
+        "Q": "Eureka机场的四字码是什么？",
+        "A": "05U",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Eureka\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Eureka机场的四字码（ICAO代码）是 **CYEU**。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.65
+    },
+    {
+        "Q": "Beers Farm机场的四字码是什么？",
+        "A": "PN73",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Beers Farm\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Beers Farm Airport的四字码是**PN73**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.15
+    },
+    {
+        "Q": "Sioux Gateway Airport机场的四字码是什么？",
+        "A": "KSUX",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Sioux Gateway Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Sioux Gateway Airport的四字码是KSUX。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.6
+    },
+    {
+        "Q": "Smithfield机场的四字码是什么？",
+        "A": "MT65",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Smithfield\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Smithfield Airport的四字码是 **MT65**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.62
+    },
+    {
+        "Q": "Coleman Mun机场的四字码是什么？",
+        "A": "KCOM",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Coleman Mun\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Coleman Municipal Airport的四字码（ICAO代码）是KCOM。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.57
+    },
+    {
+        "Q": "Kml机场的四字码是什么？",
+        "A": "12LA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Kml\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Kamileroi 机场的四字码是 YKML。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 6.73
+    },
+    {
+        "Q": "Little Grand Rapids Airport机场的四字码是什么？",
+        "A": "CZGR",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Little Grand Rapids Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Little Grand Rapids Airport的四字码是 **CZGR**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.42
+    },
+    {
+        "Q": "Ile D Yeu机场的四字码是什么？",
+        "A": "LFEY",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Ile D Yeu\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Île D Yeu 机场的四字码是 **LFEY**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.13
+    },
+    {
+        "Q": "Lagrange-Callaway机场的四字码是什么？",
+        "A": "KLGC",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Lagrange-Callaway\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Lagrange-Callaway Airport的四字码是KLGC。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.35
+    },
+    {
+        "Q": "Westerlind机场的四字码是什么？",
+        "A": "2ND1",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Westerlind\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Westerlind机场的四字代码是 **2ND1**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.76
+    },
+    {
+        "Q": "Toggenburg Farms机场的四字码是什么？",
+        "A": "5NK1",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Toggenburg Farms\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Toggenburg Farms Airport的四字码是5NK1。这个机场位于美国纽约州的Newark地区。如果你需要更多关于这个机场的信息，请告诉我！",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.21
+    },
+    {
+        "Q": "Hamid Karzai International Airport机场的四字码是什么？",
+        "A": "OAKB",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Hamid Karzai International Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hamid Karzai International Airport's ICAO code is **OAKB**.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 10.64
+    },
+    {
+        "Q": "Saidu Sharif机场的四字码是什么？",
+        "A": "OPSS",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Saidu Sharif\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Saidu Sharif 机场的四字码是 **OPSS**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.88
+    },
+    {
+        "Q": "Alta Airport机场的四字码是什么？",
+        "A": "ENAT",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Alta Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "阿尔塔机场的四字码是 **ENAT**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.38
+    },
+    {
+        "Q": "Capt Ben Smith - Monroe City机场的四字码是什么？",
+        "A": "K52",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Capt Ben Smith - Monroe City\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Capt. Ben Smith Airport in Monroe City has the ICAO code **K52**.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.08
+    },
+    {
+        "Q": "Gary Johnson Field机场的四字码是什么？",
+        "A": "7IN7",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Gary Johnson Field\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Gary Johnson Field的四字代码是 **7IN7**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.88
+    },
+    {
+        "Q": "Sofia West机场的四字码是什么？",
+        "A": "LBSW",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Sofia West\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Sofia West Airport has the ICAO code **LBSW**.",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 5.46
+    },
+    {
+        "Q": "Lometa Air Strip机场的四字码是什么？",
+        "A": "7TE3",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Lometa Air Strip\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Lometa Air Strip的四字码（ICAO代码）是**7TE3**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.7
+    },
+    {
+        "Q": "Huntington Mun机场的四字码是什么？",
+        "A": "KHHG",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Huntington Mun\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Huntington Municipal Airport的四字码是 **KHHG**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.53
+    },
+    {
+        "Q": "Tibooburra机场的四字码是什么？",
+        "A": "YTIB",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Tibooburra\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Tibooburra机场的四字码是YTIB。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.39
+    },
+    {
+        "Q": "Hidden River机场的四字码是什么？",
+        "A": "89VA",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Hidden River\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Hidden River Airport的四字码是22FA。",
+        "is_correct(LLM_judge)": "no",
+        "time_cost": 8.33
+    },
+    {
+        "Q": "Maran机场的四字码是什么？",
+        "A": "68FD",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Maran\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Maran 机场的四字码是 **68FD**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 9.8
+    },
+    {
+        "Q": "Erwinna Private机场的四字码是什么？",
+        "A": "PA77",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Erwinna Private\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Erwinna Private Airport的四字码是PA77。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 8.8
+    },
+    {
+        "Q": "King's机场的四字码是什么？",
+        "A": "9OR4",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"King's\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "King's Airport的四字码是 **9OR4**。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 7.83
+    },
+    {
+        "Q": "Al Ain Airport机场的四字码是什么？",
+        "A": "OMAL",
+        "SQL": "SELECT icao_code FROM airport_fbo_details WHERE airport_name = \"Al Ain Airport\";",
+        "DB": "ai_database_dev",
+        "actual_answer": "Al Ain Airport的四字码是OMAL。",
+        "is_correct(LLM_judge)": "yes",
+        "time_cost": 6.51
+    },
+    {
+        "correct_rate": 90.0,
+        "sample_size": 50,
+        "correct_count": 45,
+        "average_time": 7.68
+    }
+]
