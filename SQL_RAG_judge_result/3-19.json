@@ -1,0 +1,52 @@
+[
+    {
+        "DB": "data_center_dev",
+        "Q": "从Ili到Xinyuan County，按照飞行次数推荐排名最靠前的航司？",
+        "A": [],
+        "SQL": "SELECT\n          b.supplier_id,\n                e.supplier_name,\n                count(*) as num\n        FROM\n                zts_plane_flight a\n                JOIN aircraft_details b ON a.pure_reg= b.pure_reg\n                LEFT JOIN avigo_nlp_dev.dc_airport c ON a.dep_icao = c.icao_code\n                LEFT JOIN avigo_nlp_dev.dc_airport d ON a.arr_icao = d.icao_code\n                left join supplier_details e on b.supplier_id=e.supplier_id\n        WHERE\n                a.dep_icao <> a.arr_icao\n                AND c.search_city_id = \"1803689273528467457\"\n                AND d.search_city_id = \"1803689273595576322\"\n group by b.supplier_id,e.supplier_name\n order by num desc\n limit 10;",
+        "actual_SQL": "SELECT\n          b.supplier_id,\n                e.supplier_name,\n                count(*) as num\n        FROM\n                zts_plane_flight a\n                JOIN aircraft_details b ON a.pure_reg= b.pure_reg\n                LEFT JOIN avigo_nlp_dev.dc_airport c ON a.dep_icao = c.icao_code\n                LEFT JOIN avigo_nlp_dev.dc_airport d ON a.arr_icao = d.icao_code\n                left join supplier_details e on b.supplier_id=e.supplier_id\n        WHERE\n                a.dep_icao <> a.arr_icao\n                AND c.search_city_id = \"1803689273528467457\"\n                AND d.search_city_id = \"1803689273595576322\"\n group by b.supplier_id, e.supplier_name\n order by num desc\n limit 10;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Ili到Skane County，按照飞行次数推荐排名最靠前的航司？",
+        "A": [],
+        "SQL": "SELECT\n          b.supplier_id,\n                e.supplier_name,\n                count(*) as num\n        FROM\n                zts_plane_flight a\n                JOIN aircraft_details b ON a.pure_reg= b.pure_reg\n                LEFT JOIN avigo_nlp_dev.dc_airport c ON a.dep_icao = c.icao_code\n                LEFT JOIN avigo_nlp_dev.dc_airport d ON a.arr_icao = d.icao_code\n                left join supplier_details e on b.supplier_id=e.supplier_id\n        WHERE\n                a.dep_icao <> a.arr_icao\n                AND c.search_city_id = \"1803689273528467457\"\n                AND d.search_city_id = \"1803689274556071938\"\n group by b.supplier_id,e.supplier_name\n order by num desc\n limit 10;",
+        "actual_SQL": "SELECT\n          b.supplier_id,\n                e.supplier_name,\n                count(*) as num\n        FROM\n                zts_plane_flight a\n                JOIN aircraft_details b ON a.pure_reg= b.pure_reg\n                LEFT JOIN avigo_nlp_dev.dc_airport c ON a.dep_icao = c.icao_code\n                LEFT JOIN avigo_nlp_dev.dc_airport d ON a.arr_icao = d.icao_code\n                left join supplier_details e on b.supplier_id=e.supplier_id\n        WHERE\n                a.dep_icao <> a.arr_icao\n                AND c.search_city_id = \"1803689273528467457\"\n                AND d.search_city_id = \"1803689274556071938\"\n group by b.supplier_id,e.supplier_name\n order by num desc\n limit 10;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Xinjiang到Skane County，按照飞行次数推荐排名最靠前的航司？",
+        "A": [],
+        "SQL": "SELECT\n          b.supplier_id,\n                e.supplier_name,\n                count(*) as num\n        FROM\n                zts_plane_flight a\n                JOIN aircraft_details b ON a.pure_reg= b.pure_reg\n                LEFT JOIN avigo_nlp_dev.dc_airport c ON a.dep_icao = c.icao_code\n                LEFT JOIN avigo_nlp_dev.dc_airport d ON a.arr_icao = d.icao_code\n                left join supplier_details e on b.supplier_id=e.supplier_id\n        WHERE\n                a.dep_icao <> a.arr_icao\n                AND c.search_city_id = \"1803689273402638338\"\n                AND d.search_city_id = \"1803689274556071938\"\n group by b.supplier_id,e.supplier_name\n order by num desc\n limit 10;",
+        "actual_SQL": "SELECT\n        b.supplier_id,\n        e.supplier_name,\n        COUNT(*) as num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport d ON a.arr_icao = d.icao_code\n        LEFT JOIN supplier_details e ON b.supplier_id = e.supplier_id\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND c.search_city_id = \"1803689273402638338\"\n        AND d.search_city_id = \"1803689274556071938\"\nGROUP BY\n        b.supplier_id, e.supplier_name\nORDER BY\n        num DESC\nLIMIT 10;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Ili到Xinjiang，按照飞行次数推荐排名最靠前的航司？",
+        "A": [],
+        "SQL": "SELECT\n          b.supplier_id,\n                e.supplier_name,\n                count(*) as num\n        FROM\n                zts_plane_flight a\n                JOIN aircraft_details b ON a.pure_reg= b.pure_reg\n                LEFT JOIN avigo_nlp_dev.dc_airport c ON a.dep_icao = c.icao_code\n                LEFT JOIN avigo_nlp_dev.dc_airport d ON a.arr_icao = d.icao_code\n                left join supplier_details e on b.supplier_id=e.supplier_id\n        WHERE\n                a.dep_icao <> a.arr_icao\n                AND c.search_city_id = \"1803689273528467457\"\n                AND d.search_city_id = \"1803689273402638338\"\n group by b.supplier_id,e.supplier_name\n order by num desc\n limit 10;",
+        "actual_SQL": "SELECT\n          b.supplier_id,\n                e.supplier_name,\n                count(*) as num\n        FROM\n                zts_plane_flight a\n                JOIN aircraft_details b ON a.pure_reg= b.pure_reg\n                LEFT JOIN avigo_nlp_dev.dc_airport c ON a.dep_icao = c.icao_code\n                LEFT JOIN avigo_nlp_dev.dc_airport d ON a.arr_icao = d.icao_code\n                left join supplier_details e on b.supplier_id=e.supplier_id\n        WHERE\n                a.dep_icao <> a.arr_icao\n                AND c.search_city_id = \"1803689273528467457\"\n                AND d.search_city_id = \"1803689273402638338\"\n group by b.supplier_id,e.supplier_name\n order by num desc\n limit 10;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Xinyuan County到Ili，按照飞行次数推荐排名最靠前的航司？",
+        "A": [],
+        "SQL": "SELECT\n          b.supplier_id,\n                e.supplier_name,\n                count(*) as num\n        FROM\n                zts_plane_flight a\n                JOIN aircraft_details b ON a.pure_reg= b.pure_reg\n                LEFT JOIN avigo_nlp_dev.dc_airport c ON a.dep_icao = c.icao_code\n                LEFT JOIN avigo_nlp_dev.dc_airport d ON a.arr_icao = d.icao_code\n                left join supplier_details e on b.supplier_id=e.supplier_id\n        WHERE\n                a.dep_icao <> a.arr_icao\n                AND c.search_city_id = \"1803689273595576322\"\n                AND d.search_city_id = \"1803689273528467457\"\n group by b.supplier_id,e.supplier_name\n order by num desc\n limit 10;",
+        "actual_SQL": "SELECT\n    b.supplier_id,\n    e.supplier_name,\n    count(*) as num\nFROM\n    zts_plane_flight a\n    JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.dep_icao = c.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport d ON a.arr_icao = d.icao_code\n    LEFT JOIN supplier_details e ON b.supplier_id = e.supplier_id\nWHERE\n    a.dep_icao <> a.arr_icao\n    AND c.search_city_id = \"1803689273595576322\"\n    AND d.search_city_id = \"1803689273528467457\"\nGROUP BY\n    b.supplier_id, e.supplier_name\nORDER BY\n    num DESC\nLIMIT 10;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 5,
+        "correct_count": 5
+    }
+]

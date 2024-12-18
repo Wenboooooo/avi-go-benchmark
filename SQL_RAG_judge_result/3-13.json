@@ -1,0 +1,52 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Suba中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"11395668\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"11395668\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;",
+        "actual_SQL": "SELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"11395668\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Beni中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1195\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1195\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;",
+        "actual_SQL": "SELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1195\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Nukutavake中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295321\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295321\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;",
+        "actual_SQL": "DB: ai_database_dev\nSQL:",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Maupiti中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295379\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295379\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;",
+        "actual_SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295379\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295379\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Van Don District中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1133\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1133\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;",
+        "actual_SQL": "SELECT\n    afb.airport_name,\n    afb.icao_code,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight zpf\nJOIN\n    airport_fbo_details afb ON zpf.dep_icao = afb.icao_code OR zpf.arr_icao = afb.icao_code\nWHERE\n    afb.city_id = \"1133\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    afb.airport_name,\n    afb.icao_code\nORDER BY\n    flight_count DESC\nLIMIT 3;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "correct_rate": 20.0,
+        "sample_size": 5,
+        "correct_count": 1
+    }
+]

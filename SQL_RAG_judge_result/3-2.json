@@ -1,0 +1,52 @@
+[
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Aberdeen Field停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"31VA\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"31VA\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abadan Airport停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"OIAA\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"OIAA\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abu Simbel Airport停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"HEBL\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"HEBL\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abingdon Downs停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"YABI\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = (\n        SELECT icao_code \n        FROM airport_city_mapping \n        WHERE city_id = \"1804030537495040001\"\n    )\nCOLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abilene Executive Airpark停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"TX00\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"TX00\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "correct_rate": 80.0,
+        "sample_size": 5,
+        "correct_count": 4
+    }
+]

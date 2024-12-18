@@ -1,0 +1,617 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示所有在Aarhus Airport起降的航司、飞机，以及其对应的航线。",
+        "A": [
+            [
+                "EKAH_EKRK",
+                98,
+                "BusinessAir A.S.",
+                "9hpik"
+            ],
+            [
+                "EKAH_EKRK",
+                98,
+                "Flexflight Group",
+                "dimim,oygsa,oyjsw,oylpf,oynbs,oyrse,oytwm"
+            ],
+            [
+                "EKYT_EKAH",
+                52,
+                "Flexflight Group",
+                "oyjsw"
+            ],
+            [
+                "EKAH_EKBI",
+                31,
+                "Flexflight Group",
+                "oyjsw"
+            ],
+            [
+                "EKAH_ENGM",
+                27,
+                "Vista Jet",
+                "dcefo"
+            ],
+            [
+                "EKAH_ENGM",
+                27,
+                "KlasJet",
+                "lyflt"
+            ],
+            [
+                "EKAH_ENGM",
+                27,
+                "Flexflight Group",
+                "oyjsw"
+            ],
+            [
+                "EKAH_EKCH",
+                27,
+                "Flexflight Group",
+                "oyjsw"
+            ],
+            [
+                "EKAH_EKCH",
+                27,
+                "Air Alsie",
+                "oydbs,oyvlt"
+            ],
+            [
+                "EKAH_ENSD",
+                23,
+                "BusinessAir A.S.",
+                "9hpik"
+            ],
+            [
+                "EKAH_EGPN",
+                20,
+                "Flexflight Group",
+                "oyjsw"
+            ],
+            [
+                "EKAH_LSZH",
+                17,
+                "Atlas Air Service",
+                "dcoke,dilhd"
+            ],
+            [
+                "EKAH_LSZH",
+                17,
+                "Sylt Air GmbH",
+                "digwt"
+            ],
+            [
+                "LKPM_EKAH",
+                16,
+                "BusinessAir A.S.",
+                "9hpik"
+            ],
+            [
+                "EKAH_LFPB",
+                14,
+                "Flexflight Group",
+                "oyjsw"
+            ],
+            [
+                "EKAH_LFPB",
+                14,
+                "Valljet Airline",
+                "fhajd"
+            ],
+            [
+                "EKAH_LFPB",
+                14,
+                "Vista Jet",
+                "dcefo"
+            ]
+        ],
+        "SQL": "\nWITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"EKAH\" OR dep_icao = \"EKAH\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"EKAH\" OR dep_icao = \"EKAH\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示所有在17th Of September起降的航司、飞机，以及其对应的航线。",
+        "A": [
+            [
+                "FNBG_FNLU",
+                6,
+                "Bestfly Aircraft Management",
+                "p4bfz"
+            ],
+            [
+                "FNBG_FNLU",
+                6,
+                "Global Jet",
+                "oeixi"
+            ],
+            [
+                "FNBG_FNCT",
+                2,
+                "Bestfly Aircraft Management",
+                "p4bfz"
+            ],
+            [
+                "FNBG_FNCT",
+                2,
+                "Global Jet",
+                "oeixi"
+            ],
+            [
+                "FNBG_LEMG",
+                1,
+                "Vista Jet",
+                "9hvjy"
+            ]
+        ],
+        "SQL": "\nWITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"FNBG\" OR dep_icao = \"FNBG\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"XXXX\" OR dep_icao = \"XXXX\")  -- Replace \"XXXX\" with the appropriate ICAO code for 17th Of September\n      AND arr_date >= '2023-09-17 00:00:00'\n      AND arr_date < '2023-09-18 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示所有在A Coruña Airport起降的航司、飞机，以及其对应的航线。",
+        "A": [
+            [
+                "LECO_LEMD",
+                203,
+                "Vista Jet",
+                "9hxob"
+            ],
+            [
+                "LECO_LEMD",
+                203,
+                "Proair Charter Transport GmbH",
+                "dcova,diene,dihvq,dijlj,dimfe,dipod,dirsb"
+            ],
+            [
+                "LECO_LEMD",
+                203,
+                "Initium Aviation",
+                "ecjft"
+            ],
+            [
+                "LECO_LEMD",
+                203,
+                "Gestair",
+                "ecnoc,ecnra"
+            ],
+            [
+                "LEBB_LECO",
+                132,
+                "Proair Charter Transport GmbH",
+                "dipod,dirsb"
+            ],
+            [
+                "LEBB_LECO",
+                132,
+                "Valair Private Jets",
+                "csdos"
+            ],
+            [
+                "LPPR_LECO",
+                28,
+                "Valair Private Jets",
+                "csdos"
+            ],
+            [
+                "LPPR_LECO",
+                28,
+                "Proair Charter Transport GmbH",
+                "dihvq,dimfe,diova,dipod,dirsb"
+            ],
+            [
+                "LPPR_LECO",
+                28,
+                "Exxaero",
+                "dcetb"
+            ],
+            [
+                "LEBL_LECO",
+                28,
+                "Proair Charter Transport GmbH",
+                "dibea,diova,dipod,dirsb"
+            ],
+            [
+                "LEBL_LECO",
+                28,
+                "PHS Aviation",
+                "s5bbg"
+            ],
+            [
+                "LEBL_LECO",
+                28,
+                "Gestair",
+                "ecnoc,fhimc,fhshu"
+            ],
+            [
+                "LEBL_LECO",
+                28,
+                "Clipper National Air",
+                "ecldk"
+            ],
+            [
+                "LECO_LEXJ",
+                19,
+                "Jetfly Airline GmbH",
+                "oegll"
+            ],
+            [
+                "LECO_LEXJ",
+                19,
+                "Nordjet Airlines",
+                "ecisq"
+            ],
+            [
+                "LECO_LEXJ",
+                19,
+                "Proair Charter Transport GmbH",
+                "dimfe,dipod"
+            ],
+            [
+                "LECO_LEST",
+                18,
+                "Proair Charter Transport GmbH",
+                "dipod"
+            ],
+            [
+                "LEAS_LECO",
+                17,
+                "Proair Charter Transport GmbH",
+                "dibea,dihvq,dipod"
+            ],
+            [
+                "LEAS_LECO",
+                17,
+                "Jetfly Airline GmbH",
+                "oegll"
+            ],
+            [
+                "LECO_LEPP",
+                16,
+                "Proair Charter Transport GmbH",
+                "diene,dihvq,dipod"
+            ],
+            [
+                "LECO_LELN",
+                15,
+                "Proair Charter Transport GmbH",
+                "dipod,dirsb"
+            ]
+        ],
+        "SQL": "\nWITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"LECO\" OR dep_icao = \"LECO\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"LECO\" OR dep_icao = \"LECO\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示所有在74 Ranch起降的航司、飞机，以及其对应的航线。",
+        "A": [
+            [
+                "0XA5_KEGE",
+                2,
+                "Tavaero Jet Charter",
+                "n18rc"
+            ]
+        ],
+        "SQL": "\nWITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"0XA5\" OR dep_icao = \"0XA5\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"0XA5\" OR dep_icao = \"0XA5\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示所有在Aba Tenna D Yilma Airport起降的航司、飞机，以及其对应的航线。",
+        "A": [
+            [
+                "HAAB_HADR",
+                1,
+                "Trans Nation Airways P.L.C",
+                "etayw"
+            ]
+        ],
+        "SQL": "\nWITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"HADR\" OR dep_icao = \"HADR\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"HADR\" OR dep_icao = \"HADR\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示所有在28 De Noviembre起降的航司、飞机，以及其对应的航线。",
+        "A": [
+            [
+                "SAWT_SCEL",
+                5,
+                "Aerocardal",
+                "ccayy"
+            ],
+            [
+                "SAWT_SAWC",
+                2,
+                "Execaire",
+                "cftmi"
+            ]
+        ],
+        "SQL": "\nWITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"SAWT\" OR dep_icao = \"SAWT\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"SAWT\" OR dep_icao = \"SAWT\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示所有在A.N.R. Robinson International Airport起降的航司、飞机，以及其对应的航线。",
+        "A": [
+            [
+                "TTPP_TTCP",
+                3,
+                "Noble Air Charter",
+                "n2615q"
+            ],
+            [
+                "LPLA_TTCP",
+                2,
+                "Flexflight Group",
+                "oyinv"
+            ],
+            [
+                "TLPL_TTCP",
+                2,
+                "Vista Jet",
+                "9hope"
+            ]
+        ],
+        "SQL": "\nWITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"TTCP\" OR dep_icao = \"TTCP\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"TTCP\" OR dep_icao = \"TTCP\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示所有在Aalborg Airport起降的航司、飞机，以及其对应的航线。",
+        "A": [
+            [
+                "EKYT_EKCH",
+                116,
+                "AMC Aviation",
+                "spdrk"
+            ],
+            [
+                "EKYT_EKCH",
+                116,
+                "EFS European Flight Service",
+                "sernp"
+            ],
+            [
+                "EKYT_EKCH",
+                116,
+                "Grafair Flight Management",
+                "serlt"
+            ],
+            [
+                "EKYT_EKCH",
+                116,
+                "Mhs Aviation GmbH",
+                "dchmd"
+            ],
+            [
+                "EKYT_EKCH",
+                116,
+                "Sundt Air",
+                "lnkyv,lntrg"
+            ],
+            [
+                "EKYT_EKRN",
+                102,
+                "Sundt Air",
+                "lnkyv,lntrg"
+            ],
+            [
+                "EKYT_ENGM",
+                82,
+                "Sundt Air",
+                "lnkyv,lntrg"
+            ],
+            [
+                "EKYT_ENGM",
+                82,
+                "Jivair AB",
+                "serhj"
+            ],
+            [
+                "EKYT_ENGM",
+                82,
+                "Hummingbird Aviation Services",
+                "seriv"
+            ],
+            [
+                "EKYT_ENGM",
+                82,
+                "Flexflight Group",
+                "oycch"
+            ],
+            [
+                "EKYT_ENGM",
+                82,
+                "Blissair GmbH",
+                "dihkw"
+            ],
+            [
+                "EKYT_ENGM",
+                82,
+                "EFS European Flight Service",
+                "serdy"
+            ],
+            [
+                "EKYT_EKRK",
+                63,
+                "Flexflight Group",
+                "oyjsw,oytwm"
+            ],
+            [
+                "EKYT_EKRK",
+                63,
+                "Silver Air",
+                "n631vr"
+            ],
+            [
+                "EKYT_EKRK",
+                63,
+                "Air Alliance Group GmbH",
+                "dcicu"
+            ],
+            [
+                "EKYT_ESGG",
+                59,
+                "Jivair AB",
+                "serhj"
+            ],
+            [
+                "EKYT_EKAH",
+                52,
+                "Flexflight Group",
+                "oyjsw"
+            ],
+            [
+                "EKYT_ESSA",
+                30,
+                "EFS European Flight Service",
+                "serdy,serkl"
+            ],
+            [
+                "EKYT_ESSA",
+                30,
+                "Grafair Flight Management",
+                "serlt"
+            ],
+            [
+                "EKYT_LEMG",
+                27,
+                "Das Private Jets GmbH",
+                "dcfhz"
+            ],
+            [
+                "EKYT_LEMG",
+                27,
+                "Flexflight Group",
+                "oycch,oyinv"
+            ],
+            [
+                "EKYT_LEMG",
+                27,
+                "Valljet Airline",
+                "fhfcs"
+            ],
+            [
+                "EKYT_LEMG",
+                27,
+                "Vista Jet",
+                "9hvco,dcjmk"
+            ],
+            [
+                "EKYT_BIKF",
+                24,
+                "Flexflight Group",
+                "oycch"
+            ]
+        ],
+        "SQL": "\nWITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"EKYT\" OR dep_icao = \"EKYT\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"EKYT\" OR dep_icao = \"EKYT\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示所有在A. Paul Vance Fredericktown Regional起降的航司、飞机，以及其对应的航线。",
+        "A": [
+            [
+                "KCGI_H88",
+                4,
+                "Cape Air Charter",
+                "n858dd"
+            ]
+        ],
+        "SQL": "\nWITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"H88\" OR dep_icao = \"H88\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"H88\" OR dep_icao = \"H88\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示所有在Aamby Valley起降的航司、飞机，以及其对应的航线。",
+        "A": [
+            [
+                "VAAV_VABB",
+                17,
+                "Air Charter Services Pvt. Ltd.",
+                "vtjvv"
+            ],
+            [
+                "VAAV_VABB",
+                17,
+                "VSR Ventures Pvt Ltd",
+                "vtbaf"
+            ],
+            [
+                "VAAV_VAPO",
+                16,
+                "VSR Ventures Pvt Ltd",
+                "vtcmr"
+            ],
+            [
+                "VAAV_VIDP",
+                10,
+                "VSR Ventures Pvt Ltd",
+                "vtcmr"
+            ],
+            [
+                "VAAV_VOBG",
+                10,
+                "Flybywire International Private Ltd",
+                "vtauv"
+            ],
+            [
+                "VAAV_VOBG",
+                10,
+                "VSR Ventures Pvt Ltd",
+                "vttri"
+            ],
+            [
+                "VAAV_VOMM",
+                8,
+                "VSR Ventures Pvt Ltd",
+                "vtcmr"
+            ],
+            [
+                "VAAV_VARG",
+                4,
+                "VSR Ventures Pvt Ltd",
+                "vtssk"
+            ],
+            [
+                "VAAV_VAAU",
+                3,
+                "VSR Ventures Pvt Ltd",
+                "vttri"
+            ],
+            [
+                "VAAV_VAJJ",
+                3,
+                "Air Charter Services Pvt. Ltd.",
+                "vtjvv"
+            ]
+        ],
+        "SQL": "\nWITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"VAAV\" OR dep_icao = \"VAAV\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT *\n    FROM zts_plane_flight\n    WHERE (arr_icao = \"VAAV\" OR dep_icao = \"VAAV\")\n      AND arr_date >= '2023-11-01 00:00:00'\n      AND arr_date < '2024-11-02 00:00:00'\n      AND dep_icao <> arr_icao\n),\nbiao_2 AS (\n    SELECT\n        a.pure_reg,\n        a.dep_icao,\n        b.id AS dep_airport_id,\n        a.arr_icao,\n        c.id AS arr_airport_id\n    FROM biao_1 a\n    LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n    LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\n),\nbiao_3 AS (\n    SELECT\n        pure_reg,\n        dep_airport_id,\n        arr_airport_id,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN arr_icao\n            ELSE dep_icao\n        END AS dep_icao,\n        CASE\n            WHEN dep_airport_id > arr_airport_id THEN dep_icao\n            ELSE arr_icao\n        END AS arr_icao\n    FROM biao_2\n),\nbiao_4 AS (\n    SELECT\n        CONCAT(dep_icao, '_', arr_icao) AS flight_name,\n        COUNT(*) AS num\n    FROM biao_3\n    GROUP BY dep_icao, arr_icao\n    ORDER BY num DESC\n    LIMIT 10\n)\n\nSELECT\n    CONCAT(a.dep_icao, '_', a.arr_icao) AS flight_name,\n    d.num AS flight_num,\n    c.supplier_name,\n    GROUP_CONCAT(DISTINCT a.pure_reg) AS registration\nFROM biao_3 a\nLEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN supplier_details c ON b.supplier_id = c.supplier_id\nLEFT JOIN biao_4 d ON CONCAT(a.dep_icao, '_', a.arr_icao) = d.flight_name\nWHERE CONCAT(a.dep_icao, '_', a.arr_icao) IN (SELECT flight_name FROM biao_4)\n  AND c.supplier_name IS NOT NULL\nGROUP BY CONCAT(a.dep_icao, '_', a.arr_icao), c.supplier_name, d.num\nORDER BY flight_num DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "correct_rate": 90.0,
+        "sample_size": 10,
+        "correct_count": 9
+    }
+]

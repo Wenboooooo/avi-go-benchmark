@@ -1,0 +1,149 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2023年各月飞行量增幅最大的地区，并提供环比增幅。",
+        "A": [
+            [
+                "2023-05",
+                "Europe",
+                2,
+                1,
+                "100.00%"
+            ],
+            [
+                "2023-06",
+                "North America",
+                5,
+                7,
+                "-28.57%"
+            ],
+            [
+                "2023-07",
+                "West Asia",
+                1,
+                1,
+                "0.00%"
+            ],
+            [
+                "2023-08",
+                "North America",
+                8,
+                4,
+                "100.00%"
+            ],
+            [
+                "2023-09",
+                "North America",
+                12,
+                8,
+                "50.00%"
+            ],
+            [
+                "2023-10",
+                "Europe",
+                2,
+                1,
+                "100.00%"
+            ],
+            [
+                "2023-11",
+                "Europe",
+                4,
+                2,
+                "100.00%"
+            ],
+            [
+                "2023-12",
+                "North America",
+                2697,
+                6,
+                "44850.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n    SELECT\n        date_month,\n        arr_area_name,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1\n    WHERE\n        date_month BETWEEN '2023-01' AND '2023-12'\n        AND arr_area_name IS NOT NULL\n        AND arr_area_name <> ''\n    GROUP BY\n        date_month,\n        arr_area_name\n),\nbiao_2 AS (\n    SELECT\n        date_month,\n        arr_area_name,\n        num,\n        LAG(num) OVER (PARTITION BY arr_area_name ORDER BY date_month) AS last_num\n    FROM\n        biao_1\n),\nbiao_3 AS (\n    SELECT\n        date_month,\n        arr_area_name,\n        num,\n        last_num,\n        CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\n    FROM\n        biao_2\n    WHERE\n        last_num IS NOT NULL\n)\nSELECT\n    date_month,\n    arr_area_name,\n    num,\n    last_num,\n    rate\nFROM (\n    SELECT\n        date_month,\n        arr_area_name,\n        num,\n        last_num,\n        rate,\n        ROW_NUMBER() OVER (PARTITION BY date_month ORDER BY (num - last_num) / last_num DESC) AS rn\n    FROM\n        biao_3\n) g\nWHERE\n    g.rn = 1\nORDER BY\n    date_month ASC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年各月飞行量增幅最大的地区，并提供环比增幅。",
+        "A": [
+            [
+                "2024-02",
+                "Central Asia",
+                295,
+                270,
+                "9.26%"
+            ],
+            [
+                "2024-03",
+                "Central Asia",
+                398,
+                295,
+                "34.92%"
+            ],
+            [
+                "2024-04",
+                "Central Asia",
+                475,
+                398,
+                "19.35%"
+            ],
+            [
+                "2024-05",
+                "Eastern Europe",
+                387,
+                229,
+                "69.00%"
+            ],
+            [
+                "2024-06",
+                "Europe",
+                60132,
+                53905,
+                "11.55%"
+            ],
+            [
+                "2024-07",
+                "Central Asia",
+                1945,
+                433,
+                "349.19%"
+            ],
+            [
+                "2024-08",
+                "Central Asia",
+                3550,
+                1945,
+                "82.52%"
+            ],
+            [
+                "2024-09",
+                "North America",
+                291135,
+                298582,
+                "-2.49%"
+            ],
+            [
+                "2024-10",
+                "Central America",
+                6260,
+                5009,
+                "24.98%"
+            ],
+            [
+                "2024-11",
+                "Central America",
+                8770,
+                6260,
+                "40.10%"
+            ],
+            [
+                "2024-12",
+                "South America",
+                5042,
+                12355,
+                "-59.19%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n    SELECT\n        date_month,\n        arr_area_name,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1\n    WHERE\n        date_month BETWEEN '2024-01' AND '2024-12'\n        AND arr_area_name IS NOT NULL\n        AND arr_area_name <> ''\n    GROUP BY\n        date_month,\n        arr_area_name\n),\nbiao_2 AS (\n    SELECT\n        date_month,\n        arr_area_name,\n        num,\n        LAG(num) OVER (PARTITION BY arr_area_name ORDER BY date_month) AS last_num\n    FROM\n        biao_1\n),\nbiao_3 AS (\n    SELECT\n        date_month,\n        arr_area_name,\n        num,\n        last_num,\n        CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\n    FROM\n        biao_2\n    WHERE\n        last_num IS NOT NULL\n)\nSELECT\n    date_month,\n    arr_area_name,\n    num,\n    last_num,\n    rate\nFROM (\n    SELECT\n        date_month,\n        arr_area_name,\n        num,\n        last_num,\n        rate,\n        ROW_NUMBER() OVER (PARTITION BY date_month ORDER BY (num - last_num) / last_num DESC) AS rn\n    FROM\n        biao_3\n) g\nWHERE\n    g.rn = 1\nORDER BY\n    date_month ASC;"
+    }
+]

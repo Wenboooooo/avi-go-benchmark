@@ -1,0 +1,962 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St Louis Metro-East/Shafer Field的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"IL48\" OR a.arr_icao = \"IL48\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"IL48\" OR a.arr_icao = \"IL48\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St Louis Regl的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KALN\" OR a.arr_icao = \"KALN\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KALN\" OR a.arr_icao = \"KALN\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St Mary's Airpark的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"84KS\" OR a.arr_icao = \"84KS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"84KS\" OR a.arr_icao = \"84KS\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St Marys的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"EGHE\" OR a.arr_icao = \"EGHE\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"EGHE\" OR a.arr_icao = \"EGHE\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St Marys Mun的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KOYM\" OR a.arr_icao = \"KOYM\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KOYM\" OR a.arr_icao = \"KOYM\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St Michaelisdonn的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"EDXM\" OR a.arr_icao = \"EDXM\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"EDXM\" OR a.arr_icao = \"EDXM\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St Paul Downtown Holman的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KSTP\" OR a.arr_icao = \"KSTP\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KSTP\" OR a.arr_icao = \"KSTP\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St Paul International Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KMSP\" OR a.arr_icao = \"KMSP\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KMSP\" OR a.arr_icao = \"KMSP\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St Peter Ording的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"EDXO\" OR a.arr_icao = \"EDXO\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"EDXO\" OR a.arr_icao = \"EDXO\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St Thomas Mun的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYQS\" OR a.arr_icao = \"CYQS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYQS\" OR a.arr_icao = \"CYQS\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St Thomas Municipal的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"4S5\" OR a.arr_icao = \"4S5\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"4S5\" OR a.arr_icao = \"4S5\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St-Dominique的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CSS4\" OR a.arr_icao = \"CSS4\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CSS4\" OR a.arr_icao = \"CSS4\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St-Frédéric的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CSZ4\" OR a.arr_icao = \"CSZ4\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CSZ4\" OR a.arr_icao = \"CSZ4\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St-Mathieu-De-Beloeil的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CSB3\" OR a.arr_icao = \"CSB3\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CSB3\" OR a.arr_icao = \"CSB3\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Andrews Codroy Valley的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CDA5\" OR a.arr_icao = \"CDA5\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CDA5\" OR a.arr_icao = \"CDA5\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Anthony Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYAY\" OR a.arr_icao = \"CYAY\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYAY\" OR a.arr_icao = \"CYAY\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Catharines/Niagara District的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYSN\" OR a.arr_icao = \"CYSN\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYSN\" OR a.arr_icao = \"CYSN\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Catherine Intl的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"HESC\" OR a.arr_icao = \"HESC\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"HESC\" OR a.arr_icao = \"HESC\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Cloud Regional Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KSTC\" OR a.arr_icao = \"KSTC\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KSTC\" OR a.arr_icao = \"KSTC\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Gatien Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"LFRG\" OR a.arr_icao = \"LFRG\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"LFRG\" OR a.arr_icao = \"LFRG\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. George Regional Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KSGU\" OR a.arr_icao = \"KSGU\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KSGU\" OR a.arr_icao = \"KSGU\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. John'S International Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYYT\" OR a.arr_icao = \"CYYT\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYYT\" OR a.arr_icao = \"CYYT\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Joseph'S Landing的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"91KS\" OR a.arr_icao = \"91KS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"91KS\" OR a.arr_icao = \"91KS\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Lewis (Fox Harbour)的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CCK4\" OR a.arr_icao = \"CCK4\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CCK4\" OR a.arr_icao = \"CCK4\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Mary's County Regional的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"2W6\" OR a.arr_icao = \"2W6\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"2W6\" OR a.arr_icao = \"2W6\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Michael Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"PAMK\" OR a.arr_icao = \"PAMK\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"PAMK\" OR a.arr_icao = \"PAMK\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Paul的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CEW3\" OR a.arr_icao = \"CEW3\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CEW3\" OR a.arr_icao = \"CEW3\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Pete-Clearwater International Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KPIE\" OR a.arr_icao = \"KPIE\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KPIE\" OR a.arr_icao = \"KPIE\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Somewhere的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"6TN7\" OR a.arr_icao = \"6TN7\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"6TN7\" OR a.arr_icao = \"6TN7\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Stephen的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CCS3\" OR a.arr_icao = \"CCS3\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CCS3\" OR a.arr_icao = \"CCS3\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Tammany Regional的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"L31\" OR a.arr_icao = \"L31\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"L31\" OR a.arr_icao = \"L31\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St. Theresa Point Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYST\" OR a.arr_icao = \"CYST\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYST\" OR a.arr_icao = \"CYST\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在St.Louis Lambert International Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KSTL\" OR a.arr_icao = \"KSTL\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KSTL\" OR a.arr_icao = \"KSTL\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Sta Rosa De Conlara的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"SAOS\" OR a.arr_icao = \"SAOS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"SAOS\" OR a.arr_icao = \"SAOS\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stacey's的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"WA42\" OR a.arr_icao = \"WA42\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"WA42\" OR a.arr_icao = \"WA42\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stade的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"EDHS\" OR a.arr_icao = \"EDHS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"EDHS\" OR a.arr_icao = \"EDHS\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stafford的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"20NY\" OR a.arr_icao = \"20NY\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"20NY\" OR a.arr_icao = \"20NY\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stafford的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"GA20\" OR a.arr_icao = \"GA20\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"GA20\" OR a.arr_icao = \"GA20\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stafford Municipal的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"3TA\" OR a.arr_icao = \"3TA\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"3TA\" OR a.arr_icao = \"3TA\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stafford Regl的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KRMN\" OR a.arr_icao = \"KRMN\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KRMN\" OR a.arr_icao = \"KRMN\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stafsberg的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"ENHA\" OR a.arr_icao = \"ENHA\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"ENHA\" OR a.arr_icao = \"ENHA\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stag Air Park的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"7NC1\" OR a.arr_icao = \"7NC1\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"7NC1\" OR a.arr_icao = \"7NC1\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stage Coach Hills的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"4TX2\" OR a.arr_icao = \"4TX2\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"4TX2\" OR a.arr_icao = \"4TX2\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stagecoach的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"IA43\" OR a.arr_icao = \"IA43\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"IA43\" OR a.arr_icao = \"IA43\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stahl's Mountain的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"3PN7\" OR a.arr_icao = \"3PN7\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"3PN7\" OR a.arr_icao = \"3PN7\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stallone的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"9NJ5\" OR a.arr_icao = \"9NJ5\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"9NJ5\" OR a.arr_icao = \"9NJ5\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stambaugh的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"Y73\" OR a.arr_icao = \"Y73\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"Y73\" OR a.arr_icao = \"Y73\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stampede的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"Z90\" OR a.arr_icao = \"Z90\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"Z90\" OR a.arr_icao = \"Z90\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stampede Valley的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"6TS4\" OR a.arr_icao = \"6TS4\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"6TS4\" OR a.arr_icao = \"6TS4\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircompany North-west在Stamps Field的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"3TE5\" OR a.arr_icao = \"3TE5\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1109\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"3TE5\" OR a.arr_icao = \"3TE5\")\n    AND c.supplier_id = \"1109\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St Louis Metro-East/Shafer Field的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"IL48\" OR a.arr_icao = \"IL48\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"IL48\" OR a.arr_icao = \"IL48\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St Louis Regl的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Management Group",
+                "Cessna Citation Sovereign",
+                1,
+                1
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KALN\" OR a.arr_icao = \"KALN\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KALN\" OR a.arr_icao = \"KALN\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St Mary's Airpark的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"84KS\" OR a.arr_icao = \"84KS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"84KS\" OR a.arr_icao = \"84KS\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St Marys的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"EGHE\" OR a.arr_icao = \"EGHE\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"EGHE\" OR a.arr_icao = \"EGHE\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St Marys Mun的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KOYM\" OR a.arr_icao = \"KOYM\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KOYM\" OR a.arr_icao = \"KOYM\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St Michaelisdonn的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"EDXM\" OR a.arr_icao = \"EDXM\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"EDXM\" OR a.arr_icao = \"EDXM\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St Paul Downtown Holman的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Management Group",
+                "Cessna Citation Sovereign",
+                2,
+                2
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KSTP\" OR a.arr_icao = \"KSTP\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KSTP\" OR a.arr_icao = \"KSTP\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St Paul International Airport的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Management Group",
+                "Hawker 400XP",
+                6,
+                6
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KMSP\" OR a.arr_icao = \"KMSP\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KMSP\" OR a.arr_icao = \"KMSP\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St Peter Ording的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"EDXO\" OR a.arr_icao = \"EDXO\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"EDXO\" OR a.arr_icao = \"EDXO\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St Thomas Mun的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYQS\" OR a.arr_icao = \"CYQS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYQS\" OR a.arr_icao = \"CYQS\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St Thomas Municipal的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"4S5\" OR a.arr_icao = \"4S5\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"4S5\" OR a.arr_icao = \"4S5\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St-Dominique的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CSS4\" OR a.arr_icao = \"CSS4\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CSS4\" OR a.arr_icao = \"CSS4\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St-Frédéric的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CSZ4\" OR a.arr_icao = \"CSZ4\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CSZ4\" OR a.arr_icao = \"CSZ4\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St-Mathieu-De-Beloeil的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CSB3\" OR a.arr_icao = \"CSB3\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CSB3\" OR a.arr_icao = \"CSB3\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Andrews Codroy Valley的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CDA5\" OR a.arr_icao = \"CDA5\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CDA5\" OR a.arr_icao = \"CDA5\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Anthony Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYAY\" OR a.arr_icao = \"CYAY\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYAY\" OR a.arr_icao = \"CYAY\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Catharines/Niagara District的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Management Group",
+                "Hawker 400XP",
+                4,
+                4
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYSN\" OR a.arr_icao = \"CYSN\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYSN\" OR a.arr_icao = \"CYSN\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Catherine Intl的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"HESC\" OR a.arr_icao = \"HESC\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"HESC\" OR a.arr_icao = \"HESC\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Cloud Regional Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KSTC\" OR a.arr_icao = \"KSTC\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KSTC\" OR a.arr_icao = \"KSTC\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Gatien Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"LFRG\" OR a.arr_icao = \"LFRG\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"LFRG\" OR a.arr_icao = \"LFRG\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. George Regional Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KSGU\" OR a.arr_icao = \"KSGU\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KSGU\" OR a.arr_icao = \"KSGU\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. John'S International Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYYT\" OR a.arr_icao = \"CYYT\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYYT\" OR a.arr_icao = \"CYYT\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Joseph'S Landing的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"91KS\" OR a.arr_icao = \"91KS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"91KS\" OR a.arr_icao = \"91KS\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Lewis (Fox Harbour)的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CCK4\" OR a.arr_icao = \"CCK4\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CCK4\" OR a.arr_icao = \"CCK4\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Mary's County Regional的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Management Group",
+                "Cessna Citation Sovereign",
+                2,
+                2
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"2W6\" OR a.arr_icao = \"2W6\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"2W6\" OR a.arr_icao = \"2W6\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Michael Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"PAMK\" OR a.arr_icao = \"PAMK\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"PAMK\" OR a.arr_icao = \"PAMK\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Paul的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CEW3\" OR a.arr_icao = \"CEW3\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CEW3\" OR a.arr_icao = \"CEW3\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Pete-Clearwater International Airport的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Management Group",
+                "Hawker 400XP",
+                12,
+                16
+            ],
+            [
+                "Aircraft Management Group",
+                "Hawker 850XP",
+                4,
+                16
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KPIE\" OR a.arr_icao = \"KPIE\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KPIE\" OR a.arr_icao = \"KPIE\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Somewhere的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"6TN7\" OR a.arr_icao = \"6TN7\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"6TN7\" OR a.arr_icao = \"6TN7\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Stephen的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CCS3\" OR a.arr_icao = \"CCS3\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CCS3\" OR a.arr_icao = \"CCS3\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Tammany Regional的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"L31\" OR a.arr_icao = \"L31\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"L31\" OR a.arr_icao = \"L31\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St. Theresa Point Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYST\" OR a.arr_icao = \"CYST\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYST\" OR a.arr_icao = \"CYST\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在St.Louis Lambert International Airport的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Management Group",
+                "Hawker 400XP",
+                6,
+                9
+            ],
+            [
+                "Aircraft Management Group",
+                "Cessna Citation Sovereign",
+                3,
+                9
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KSTL\" OR a.arr_icao = \"KSTL\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KSTL\" OR a.arr_icao = \"KSTL\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Sta Rosa De Conlara的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"SAOS\" OR a.arr_icao = \"SAOS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"SAOS\" OR a.arr_icao = \"SAOS\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stacey's的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"WA42\" OR a.arr_icao = \"WA42\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"WA42\" OR a.arr_icao = \"WA42\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stade的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"EDHS\" OR a.arr_icao = \"EDHS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"EDHS\" OR a.arr_icao = \"EDHS\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stafford的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"20NY\" OR a.arr_icao = \"20NY\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"20NY\" OR a.arr_icao = \"20NY\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stafford的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"GA20\" OR a.arr_icao = \"GA20\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"GA20\" OR a.arr_icao = \"GA20\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stafford Municipal的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"3TA\" OR a.arr_icao = \"3TA\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"3TA\" OR a.arr_icao = \"3TA\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stafford Regl的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KRMN\" OR a.arr_icao = \"KRMN\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KRMN\" OR a.arr_icao = \"KRMN\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stafsberg的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"ENHA\" OR a.arr_icao = \"ENHA\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"ENHA\" OR a.arr_icao = \"ENHA\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stag Air Park的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"7NC1\" OR a.arr_icao = \"7NC1\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"7NC1\" OR a.arr_icao = \"7NC1\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stage Coach Hills的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"4TX2\" OR a.arr_icao = \"4TX2\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"4TX2\" OR a.arr_icao = \"4TX2\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stagecoach的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"IA43\" OR a.arr_icao = \"IA43\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"IA43\" OR a.arr_icao = \"IA43\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stahl's Mountain的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"3PN7\" OR a.arr_icao = \"3PN7\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"3PN7\" OR a.arr_icao = \"3PN7\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stallone的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"9NJ5\" OR a.arr_icao = \"9NJ5\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"9NJ5\" OR a.arr_icao = \"9NJ5\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stambaugh的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"Y73\" OR a.arr_icao = \"Y73\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"Y73\" OR a.arr_icao = \"Y73\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stampede的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"Z90\" OR a.arr_icao = \"Z90\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"Z90\" OR a.arr_icao = \"Z90\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stampede Valley的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"6TS4\" OR a.arr_icao = \"6TS4\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"6TS4\" OR a.arr_icao = \"6TS4\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Management Group在Stamps Field的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"3TE5\" OR a.arr_icao = \"3TE5\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1111\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"3TE5\" OR a.arr_icao = \"3TE5\")\n    AND c.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St Louis Metro-East/Shafer Field的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"IL48\" OR a.arr_icao = \"IL48\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"IL48\" OR a.arr_icao = \"IL48\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St Louis Regl的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Services Group Inc.",
+                "Embraer Legacy 600",
+                9,
+                9
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KALN\" OR a.arr_icao = \"KALN\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KALN\" OR a.arr_icao = \"KALN\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St Mary's Airpark的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"84KS\" OR a.arr_icao = \"84KS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"84KS\" OR a.arr_icao = \"84KS\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St Marys的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"EGHE\" OR a.arr_icao = \"EGHE\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"EGHE\" OR a.arr_icao = \"EGHE\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St Marys Mun的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KOYM\" OR a.arr_icao = \"KOYM\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KOYM\" OR a.arr_icao = \"KOYM\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St Michaelisdonn的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"EDXM\" OR a.arr_icao = \"EDXM\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"EDXM\" OR a.arr_icao = \"EDXM\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St Paul Downtown Holman的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KSTP\" OR a.arr_icao = \"KSTP\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KSTP\" OR a.arr_icao = \"KSTP\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St Paul International Airport的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Services Group Inc.",
+                "Gulfstream G200",
+                10,
+                18
+            ],
+            [
+                "Aircraft Services Group Inc.",
+                "Bombardier Learjet 45",
+                4,
+                18
+            ],
+            [
+                "Aircraft Services Group Inc.",
+                "Dassault Falcon 2000EX",
+                2,
+                18
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KMSP\" OR a.arr_icao = \"KMSP\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KMSP\" OR a.arr_icao = \"KMSP\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St Peter Ording的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"EDXO\" OR a.arr_icao = \"EDXO\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"EDXO\" OR a.arr_icao = \"EDXO\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St Thomas Mun的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYQS\" OR a.arr_icao = \"CYQS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYQS\" OR a.arr_icao = \"CYQS\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St Thomas Municipal的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"4S5\" OR a.arr_icao = \"4S5\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"4S5\" OR a.arr_icao = \"4S5\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St-Dominique的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CSS4\" OR a.arr_icao = \"CSS4\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CSS4\" OR a.arr_icao = \"CSS4\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St-Frédéric的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CSZ4\" OR a.arr_icao = \"CSZ4\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CSZ4\" OR a.arr_icao = \"CSZ4\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St-Mathieu-De-Beloeil的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CSB3\" OR a.arr_icao = \"CSB3\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CSB3\" OR a.arr_icao = \"CSB3\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Andrews Codroy Valley的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CDA5\" OR a.arr_icao = \"CDA5\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CDA5\" OR a.arr_icao = \"CDA5\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Anthony Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYAY\" OR a.arr_icao = \"CYAY\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYAY\" OR a.arr_icao = \"CYAY\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Catharines/Niagara District的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Services Group Inc.",
+                "Cessna Citation CJ4",
+                2,
+                6
+            ],
+            [
+                "Aircraft Services Group Inc.",
+                "Bombardier Challenger 300",
+                2,
+                6
+            ],
+            [
+                "Aircraft Services Group Inc.",
+                "Gulfstream G200",
+                2,
+                6
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYSN\" OR a.arr_icao = \"CYSN\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYSN\" OR a.arr_icao = \"CYSN\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Catherine Intl的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"HESC\" OR a.arr_icao = \"HESC\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"HESC\" OR a.arr_icao = \"HESC\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Cloud Regional Airport的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Services Group Inc.",
+                "Gulfstream G200",
+                2,
+                2
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KSTC\" OR a.arr_icao = \"KSTC\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KSTC\" OR a.arr_icao = \"KSTC\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Gatien Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"LFRG\" OR a.arr_icao = \"LFRG\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"LFRG\" OR a.arr_icao = \"LFRG\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. George Regional Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KSGU\" OR a.arr_icao = \"KSGU\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KSGU\" OR a.arr_icao = \"KSGU\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. John'S International Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYYT\" OR a.arr_icao = \"CYYT\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYYT\" OR a.arr_icao = \"CYYT\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Joseph'S Landing的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"91KS\" OR a.arr_icao = \"91KS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"91KS\" OR a.arr_icao = \"91KS\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Lewis (Fox Harbour)的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CCK4\" OR a.arr_icao = \"CCK4\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CCK4\" OR a.arr_icao = \"CCK4\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Mary's County Regional的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"2W6\" OR a.arr_icao = \"2W6\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"2W6\" OR a.arr_icao = \"2W6\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Michael Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"PAMK\" OR a.arr_icao = \"PAMK\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"PAMK\" OR a.arr_icao = \"PAMK\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Paul的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CEW3\" OR a.arr_icao = \"CEW3\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CEW3\" OR a.arr_icao = \"CEW3\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Pete-Clearwater International Airport的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Services Group Inc.",
+                "Bombardier Learjet 45",
+                4,
+                10
+            ],
+            [
+                "Aircraft Services Group Inc.",
+                "Bombardier Challenger 300",
+                2,
+                10
+            ],
+            [
+                "Aircraft Services Group Inc.",
+                "Cessna Citation CJ4",
+                2,
+                10
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KPIE\" OR a.arr_icao = \"KPIE\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KPIE\" OR a.arr_icao = \"KPIE\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Somewhere的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"6TN7\" OR a.arr_icao = \"6TN7\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"6TN7\" OR a.arr_icao = \"6TN7\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Stephen的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CCS3\" OR a.arr_icao = \"CCS3\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CCS3\" OR a.arr_icao = \"CCS3\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Tammany Regional的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"L31\" OR a.arr_icao = \"L31\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"L31\" OR a.arr_icao = \"L31\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St. Theresa Point Airport的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"CYST\" OR a.arr_icao = \"CYST\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"CYST\" OR a.arr_icao = \"CYST\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在St.Louis Lambert International Airport的航班数量及主要使用的飞机型号。",
+        "A": [
+            [
+                "Aircraft Services Group Inc.",
+                "Gulfstream G200",
+                2,
+                4
+            ],
+            [
+                "Aircraft Services Group Inc.",
+                "Dassault Falcon 2000",
+                2,
+                4
+            ]
+        ],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"KSTL\" OR a.arr_icao = \"KSTL\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"KSTL\" OR a.arr_icao = \"KSTL\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在Sta Rosa De Conlara的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"SAOS\" OR a.arr_icao = \"SAOS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"SAOS\" OR a.arr_icao = \"SAOS\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在Stacey's的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"WA42\" OR a.arr_icao = \"WA42\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"WA42\" OR a.arr_icao = \"WA42\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "展示2023-2024年中，Aircraft Services Group Inc.在Stade的航班数量及主要使用的飞机型号。",
+        "A": [],
+        "SQL": "SELECT\n    c.supplier_name,\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    (SELECT COUNT(*)\n     FROM zts_plane_flight a\n     LEFT JOIN aircraft_details b_sub ON a.pure_reg = b_sub.pure_reg\n     LEFT JOIN supplier_details c_sub ON b_sub.supplier_id = c_sub.supplier_id\n     WHERE (a.dep_icao = \"EDHS\" OR a.arr_icao = \"EDHS\")\n       AND a.arr_date >= '2023-11-01 00:00:00'\n       AND a.arr_date < '2024-11-02 00:00:00'\n       AND c_sub.supplier_id = \"1112\") AS total_flight\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nLEFT JOIN\n    supplier_details c ON b.supplier_id = c.supplier_id\nWHERE\n    (a.dep_icao = \"EDHS\" OR a.arr_icao = \"EDHS\")\n    AND c.supplier_id = \"1112\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-01 00:00:00'\nGROUP BY\n    c.supplier_name, b.aircraft_model_name\nORDER BY num desc\nLIMIT 3;"
+    }]

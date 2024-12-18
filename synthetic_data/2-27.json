@@ -1,0 +1,2215 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年247 Aviation Ltd在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                105,
+                "22.09%"
+            ],
+            [
+                "2024-03",
+                86,
+                "-18.10%"
+            ],
+            [
+                "2024-04",
+                114,
+                "32.56%"
+            ],
+            [
+                "2024-05",
+                85,
+                "-25.44%"
+            ],
+            [
+                "2024-06",
+                134,
+                "57.65%"
+            ],
+            [
+                "2024-07",
+                102,
+                "-23.88%"
+            ],
+            [
+                "2024-08",
+                125,
+                "22.55%"
+            ],
+            [
+                "2024-09",
+                84,
+                "-32.80%"
+            ],
+            [
+                "2024-10",
+                70,
+                "-16.67%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年247 Aviation Ltd在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年247 Aviation Ltd在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年247 Aviation Ltd在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年247 Aviation Ltd在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年247 Aviation Ltd在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年247 Aviation Ltd在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年247 Aviation Ltd在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年247 Aviation Ltd在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年45 North Aviation在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1004\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年45 North Aviation在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                32,
+                "128.57%"
+            ],
+            [
+                "2024-03",
+                34,
+                "6.25%"
+            ],
+            [
+                "2024-04",
+                51,
+                "50.00%"
+            ],
+            [
+                "2024-05",
+                18,
+                "-64.71%"
+            ],
+            [
+                "2024-06",
+                21,
+                "16.67%"
+            ],
+            [
+                "2024-07",
+                48,
+                "128.57%"
+            ],
+            [
+                "2024-08",
+                35,
+                "-27.08%"
+            ],
+            [
+                "2024-09",
+                42,
+                "20.00%"
+            ],
+            [
+                "2024-10",
+                27,
+                "-35.71%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1004\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年45 North Aviation在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1004\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年45 North Aviation在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1004\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年45 North Aviation在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1004\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年45 North Aviation在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1004\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年45 North Aviation在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1004\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年45 North Aviation在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1004\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年45 North Aviation在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1004\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年A-OK Jets在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1005\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年A-OK Jets在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                54,
+                "-6.90%"
+            ],
+            [
+                "2024-03",
+                44,
+                "-18.52%"
+            ],
+            [
+                "2024-04",
+                71,
+                "61.36%"
+            ],
+            [
+                "2024-05",
+                75,
+                "5.63%"
+            ],
+            [
+                "2024-06",
+                61,
+                "-18.67%"
+            ],
+            [
+                "2024-07",
+                47,
+                "-22.95%"
+            ],
+            [
+                "2024-08",
+                51,
+                "8.51%"
+            ],
+            [
+                "2024-09",
+                29,
+                "-43.14%"
+            ],
+            [
+                "2024-10",
+                8,
+                "-72.41%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1005\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年A-OK Jets在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1005\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年A-OK Jets在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1005\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年A-OK Jets在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1005\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年A-OK Jets在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1005\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年A-OK Jets在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-05",
+                1,
+                "0.00%"
+            ],
+            [
+                "2024-06",
+                1,
+                "0.00%"
+            ],
+            [
+                "2024-07",
+                2,
+                "100.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1005\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年A-OK Jets在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1005\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年A-OK Jets在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1005\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AAC Jet在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AAC Jet在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                4,
+                "-69.23%"
+            ],
+            [
+                "2024-03",
+                13,
+                "225.00%"
+            ],
+            [
+                "2024-04",
+                13,
+                "0.00%"
+            ],
+            [
+                "2024-05",
+                7,
+                "-46.15%"
+            ],
+            [
+                "2024-06",
+                18,
+                "157.14%"
+            ],
+            [
+                "2024-07",
+                8,
+                "-55.56%"
+            ],
+            [
+                "2024-08",
+                12,
+                "50.00%"
+            ],
+            [
+                "2024-09",
+                12,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AAC Jet在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AAC Jet在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AAC Jet在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AAC Jet在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AAC Jet在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AAC Jet在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AAC Jet在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AB Jets在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1008\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AB Jets在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                199,
+                "-2.45%"
+            ],
+            [
+                "2024-03",
+                232,
+                "16.58%"
+            ],
+            [
+                "2024-04",
+                214,
+                "-7.76%"
+            ],
+            [
+                "2024-05",
+                230,
+                "7.48%"
+            ],
+            [
+                "2024-06",
+                237,
+                "3.04%"
+            ],
+            [
+                "2024-07",
+                253,
+                "6.75%"
+            ],
+            [
+                "2024-08",
+                218,
+                "-13.83%"
+            ],
+            [
+                "2024-09",
+                224,
+                "2.75%"
+            ],
+            [
+                "2024-10",
+                197,
+                "-12.05%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1008\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AB Jets在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1008\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AB Jets在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1008\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AB Jets在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1008\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AB Jets在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1008\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AB Jets在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1008\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AB Jets在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1008\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AB Jets在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1008\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Fly Tyrol在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                47,
+                "23.68%"
+            ],
+            [
+                "2024-03",
+                42,
+                "-10.64%"
+            ],
+            [
+                "2024-04",
+                32,
+                "-23.81%"
+            ],
+            [
+                "2024-05",
+                66,
+                "106.25%"
+            ],
+            [
+                "2024-06",
+                69,
+                "4.55%"
+            ],
+            [
+                "2024-07",
+                59,
+                "-14.49%"
+            ],
+            [
+                "2024-08",
+                63,
+                "6.78%"
+            ],
+            [
+                "2024-09",
+                45,
+                "-28.57%"
+            ],
+            [
+                "2024-10",
+                26,
+                "-42.22%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Fly Tyrol在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Fly Tyrol在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Fly Tyrol在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Fly Tyrol在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-05",
+                2,
+                "100.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Fly Tyrol在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Fly Tyrol在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Fly Tyrol在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Fly Tyrol在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Abelag Aviation在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                103,
+                "66.13%"
+            ],
+            [
+                "2024-03",
+                90,
+                "-12.62%"
+            ],
+            [
+                "2024-04",
+                76,
+                "-15.56%"
+            ],
+            [
+                "2024-05",
+                72,
+                "-5.26%"
+            ],
+            [
+                "2024-06",
+                79,
+                "9.72%"
+            ],
+            [
+                "2024-07",
+                73,
+                "-7.59%"
+            ],
+            [
+                "2024-08",
+                65,
+                "-10.96%"
+            ],
+            [
+                "2024-09",
+                69,
+                "6.15%"
+            ],
+            [
+                "2024-10",
+                45,
+                "-34.78%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1010\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Abelag Aviation在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-03",
+                2,
+                "100.00%"
+            ],
+            [
+                "2024-05",
+                1,
+                "-50.00%"
+            ],
+            [
+                "2024-06",
+                2,
+                "100.00%"
+            ],
+            [
+                "2024-07",
+                7,
+                "250.00%"
+            ],
+            [
+                "2024-08",
+                1,
+                "-85.71%"
+            ],
+            [
+                "2024-10",
+                1,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1010\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Abelag Aviation在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1010\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Abelag Aviation在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1010\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Abelag Aviation在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                3,
+                "0.00%"
+            ],
+            [
+                "2024-03",
+                4,
+                "33.33%"
+            ],
+            [
+                "2024-05",
+                1,
+                "-75.00%"
+            ],
+            [
+                "2024-07",
+                2,
+                "100.00%"
+            ],
+            [
+                "2024-10",
+                1,
+                "-50.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1010\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Abelag Aviation在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-04",
+                1,
+                "-50.00%"
+            ],
+            [
+                "2024-10",
+                1,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1010\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Abelag Aviation在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1010\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Abelag Aviation在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1010\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Abelag Aviation在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1010\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ABS Jets在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                16,
+                "700.00%"
+            ],
+            [
+                "2024-03",
+                10,
+                "-37.50%"
+            ],
+            [
+                "2024-06",
+                30,
+                "200.00%"
+            ],
+            [
+                "2024-07",
+                31,
+                "3.33%"
+            ],
+            [
+                "2024-08",
+                30,
+                "-3.23%"
+            ],
+            [
+                "2024-09",
+                17,
+                "-43.33%"
+            ],
+            [
+                "2024-10",
+                17,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1012\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ABS Jets在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1012\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ABS Jets在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1012\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ABS Jets在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1012\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ABS Jets在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1012\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ABS Jets在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1012\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ABS Jets在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1012\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ABS Jets在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1012\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ABS Jets在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1012\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter AG(Switzerland)在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-03",
+                10,
+                "100.00%"
+            ],
+            [
+                "2024-04",
+                12,
+                "20.00%"
+            ],
+            [
+                "2024-05",
+                29,
+                "141.67%"
+            ],
+            [
+                "2024-06",
+                28,
+                "-3.45%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1013\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter AG(Switzerland)在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1013\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter AG(Switzerland)在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1013\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter AG(Switzerland)在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1013\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter AG(Switzerland)在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-04",
+                1,
+                "0.00%"
+            ],
+            [
+                "2024-05",
+                2,
+                "100.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1013\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter AG(Switzerland)在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1013\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter AG(Switzerland)在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1013\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter AG(Switzerland)在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1013\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter AG(Switzerland)在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1013\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter(Austria)在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                13,
+                "-27.78%"
+            ],
+            [
+                "2024-03",
+                37,
+                "184.62%"
+            ],
+            [
+                "2024-04",
+                25,
+                "-32.43%"
+            ],
+            [
+                "2024-05",
+                22,
+                "-12.00%"
+            ],
+            [
+                "2024-06",
+                16,
+                "-27.27%"
+            ],
+            [
+                "2024-07",
+                16,
+                "0.00%"
+            ],
+            [
+                "2024-08",
+                12,
+                "-25.00%"
+            ],
+            [
+                "2024-09",
+                28,
+                "133.33%"
+            ],
+            [
+                "2024-10",
+                13,
+                "-53.57%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1014\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter(Austria)在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1014\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter(Austria)在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1014\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter(Austria)在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1014\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter(Austria)在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-05",
+                3,
+                "200.00%"
+            ],
+            [
+                "2024-10",
+                1,
+                "-66.67%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1014\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter(Austria)在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1014\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter(Austria)在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1014\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter(Austria)在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-10",
+                1,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1014\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年AC Aviation Charter(Austria)在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1014\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS Canada Ltd在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                21,
+                "23.53%"
+            ],
+            [
+                "2024-03",
+                26,
+                "23.81%"
+            ],
+            [
+                "2024-04",
+                13,
+                "-50.00%"
+            ],
+            [
+                "2024-05",
+                18,
+                "38.46%"
+            ],
+            [
+                "2024-06",
+                19,
+                "5.56%"
+            ],
+            [
+                "2024-07",
+                32,
+                "68.42%"
+            ],
+            [
+                "2024-08",
+                31,
+                "-3.13%"
+            ],
+            [
+                "2024-09",
+                16,
+                "-48.39%"
+            ],
+            [
+                "2024-10",
+                14,
+                "-12.50%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS Canada Ltd在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                21,
+                "110.00%"
+            ],
+            [
+                "2024-03",
+                39,
+                "85.71%"
+            ],
+            [
+                "2024-04",
+                5,
+                "-87.18%"
+            ],
+            [
+                "2024-05",
+                26,
+                "420.00%"
+            ],
+            [
+                "2024-06",
+                25,
+                "-3.85%"
+            ],
+            [
+                "2024-07",
+                33,
+                "32.00%"
+            ],
+            [
+                "2024-08",
+                23,
+                "-30.30%"
+            ],
+            [
+                "2024-09",
+                19,
+                "-17.39%"
+            ],
+            [
+                "2024-10",
+                7,
+                "-63.16%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS Canada Ltd在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS Canada Ltd在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS Canada Ltd在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS Canada Ltd在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS Canada Ltd在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS Canada Ltd在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS Canada Ltd在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS(Ireland)在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                16,
+                "6.67%"
+            ],
+            [
+                "2024-03",
+                18,
+                "12.50%"
+            ],
+            [
+                "2024-04",
+                9,
+                "-50.00%"
+            ],
+            [
+                "2024-05",
+                13,
+                "44.44%"
+            ],
+            [
+                "2024-06",
+                20,
+                "53.85%"
+            ],
+            [
+                "2024-07",
+                31,
+                "55.00%"
+            ],
+            [
+                "2024-08",
+                15,
+                "-51.61%"
+            ],
+            [
+                "2024-09",
+                17,
+                "13.33%"
+            ],
+            [
+                "2024-10",
+                12,
+                "-29.41%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1016\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS(Ireland)在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-03",
+                1,
+                "0.00%"
+            ],
+            [
+                "2024-04",
+                10,
+                "900.00%"
+            ],
+            [
+                "2024-05",
+                3,
+                "-70.00%"
+            ],
+            [
+                "2024-06",
+                7,
+                "133.33%"
+            ],
+            [
+                "2024-07",
+                5,
+                "-28.57%"
+            ],
+            [
+                "2024-08",
+                3,
+                "-40.00%"
+            ],
+            [
+                "2024-10",
+                3,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1016\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS(Ireland)在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1016\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS(Ireland)在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1016\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS(Ireland)在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-06",
+                1,
+                "-66.67%"
+            ],
+            [
+                "2024-10",
+                1,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1016\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS(Ireland)在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-03",
+                5,
+                "400.00%"
+            ],
+            [
+                "2024-04",
+                1,
+                "-80.00%"
+            ],
+            [
+                "2024-05",
+                2,
+                "100.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1016\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS(Ireland)在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1016\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS(Ireland)在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1016\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACASS(Ireland)在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1016\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Accent Airways LLC在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Accent Airways LLC在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                17,
+                "-34.62%"
+            ],
+            [
+                "2024-03",
+                27,
+                "58.82%"
+            ],
+            [
+                "2024-04",
+                33,
+                "22.22%"
+            ],
+            [
+                "2024-05",
+                31,
+                "-6.06%"
+            ],
+            [
+                "2024-06",
+                29,
+                "-6.45%"
+            ],
+            [
+                "2024-07",
+                27,
+                "-6.90%"
+            ],
+            [
+                "2024-08",
+                26,
+                "-3.70%"
+            ],
+            [
+                "2024-09",
+                20,
+                "-23.08%"
+            ],
+            [
+                "2024-10",
+                18,
+                "-10.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Accent Airways LLC在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Accent Airways LLC在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Accent Airways LLC在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Accent Airways LLC在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Accent Airways LLC在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Accent Airways LLC在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Accent Airways LLC在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACI Jet在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                9,
+                "350.00%"
+            ],
+            [
+                "2024-03",
+                2,
+                "-77.78%"
+            ],
+            [
+                "2024-04",
+                1,
+                "-50.00%"
+            ],
+            [
+                "2024-05",
+                2,
+                "100.00%"
+            ],
+            [
+                "2024-06",
+                4,
+                "100.00%"
+            ],
+            [
+                "2024-07",
+                11,
+                "175.00%"
+            ],
+            [
+                "2024-08",
+                6,
+                "-45.45%"
+            ],
+            [
+                "2024-09",
+                2,
+                "-66.67%"
+            ],
+            [
+                "2024-10",
+                5,
+                "150.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACI Jet在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                116,
+                "18.37%"
+            ],
+            [
+                "2024-03",
+                157,
+                "35.34%"
+            ],
+            [
+                "2024-04",
+                139,
+                "-11.46%"
+            ],
+            [
+                "2024-05",
+                170,
+                "22.30%"
+            ],
+            [
+                "2024-06",
+                129,
+                "-24.12%"
+            ],
+            [
+                "2024-07",
+                130,
+                "0.78%"
+            ],
+            [
+                "2024-08",
+                135,
+                "3.85%"
+            ],
+            [
+                "2024-09",
+                167,
+                "23.70%"
+            ],
+            [
+                "2024-10",
+                120,
+                "-28.14%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACI Jet在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACI Jet在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACI Jet在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACI Jet在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-06",
+                3,
+                "50.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACI Jet在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-05",
+                1,
+                "-50.00%"
+            ],
+            [
+                "2024-06",
+                1,
+                "0.00%"
+            ],
+            [
+                "2024-08",
+                3,
+                "200.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACI Jet在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACI Jet在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACM Air Charter在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                24,
+                "300.00%"
+            ],
+            [
+                "2024-03",
+                23,
+                "-4.17%"
+            ],
+            [
+                "2024-04",
+                31,
+                "34.78%"
+            ],
+            [
+                "2024-05",
+                44,
+                "41.94%"
+            ],
+            [
+                "2024-06",
+                35,
+                "-20.45%"
+            ],
+            [
+                "2024-07",
+                27,
+                "-22.86%"
+            ],
+            [
+                "2024-08",
+                36,
+                "33.33%"
+            ],
+            [
+                "2024-09",
+                39,
+                "8.33%"
+            ],
+            [
+                "2024-10",
+                23,
+                "-41.03%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1020\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACM Air Charter在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-03",
+                1,
+                "-66.67%"
+            ],
+            [
+                "2024-04",
+                1,
+                "0.00%"
+            ],
+            [
+                "2024-05",
+                2,
+                "100.00%"
+            ],
+            [
+                "2024-07",
+                3,
+                "50.00%"
+            ],
+            [
+                "2024-08",
+                2,
+                "-33.33%"
+            ],
+            [
+                "2024-09",
+                7,
+                "250.00%"
+            ],
+            [
+                "2024-10",
+                1,
+                "-85.71%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1020\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACM Air Charter在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1020\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACM Air Charter在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1020\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACM Air Charter在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                2,
+                "0.00%"
+            ],
+            [
+                "2024-03",
+                1,
+                "-50.00%"
+            ],
+            [
+                "2024-04",
+                2,
+                "100.00%"
+            ],
+            [
+                "2024-09",
+                1,
+                "-50.00%"
+            ],
+            [
+                "2024-10",
+                2,
+                "100.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1020\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACM Air Charter在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-03",
+                2,
+                "100.00%"
+            ],
+            [
+                "2024-05",
+                1,
+                "-50.00%"
+            ],
+            [
+                "2024-09",
+                1,
+                "0.00%"
+            ],
+            [
+                "2024-10",
+                1,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1020\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACM Air Charter在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-03",
+                2,
+                "0.00%"
+            ],
+            [
+                "2024-06",
+                2,
+                "0.00%"
+            ],
+            [
+                "2024-07",
+                1,
+                "-50.00%"
+            ],
+            [
+                "2024-08",
+                2,
+                "100.00%"
+            ],
+            [
+                "2024-10",
+                2,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1020\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACM Air Charter在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                2,
+                "0.00%"
+            ],
+            [
+                "2024-03",
+                1,
+                "-50.00%"
+            ],
+            [
+                "2024-06",
+                1,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1020\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年ACM Air Charter在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1020\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Acropolis Aviation Ltd在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                8,
+                "166.67%"
+            ],
+            [
+                "2024-03",
+                4,
+                "-50.00%"
+            ],
+            [
+                "2024-04",
+                13,
+                "225.00%"
+            ],
+            [
+                "2024-05",
+                16,
+                "23.08%"
+            ],
+            [
+                "2024-06",
+                26,
+                "62.50%"
+            ],
+            [
+                "2024-07",
+                14,
+                "-46.15%"
+            ],
+            [
+                "2024-08",
+                20,
+                "42.86%"
+            ],
+            [
+                "2024-09",
+                15,
+                "-25.00%"
+            ],
+            [
+                "2024-10",
+                9,
+                "-40.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Acropolis Aviation Ltd在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-03",
+                4,
+                "-33.33%"
+            ],
+            [
+                "2024-04",
+                4,
+                "0.00%"
+            ],
+            [
+                "2024-05",
+                3,
+                "-25.00%"
+            ],
+            [
+                "2024-06",
+                2,
+                "-33.33%"
+            ],
+            [
+                "2024-07",
+                4,
+                "100.00%"
+            ],
+            [
+                "2024-08",
+                2,
+                "-50.00%"
+            ],
+            [
+                "2024-09",
+                5,
+                "150.00%"
+            ],
+            [
+                "2024-10",
+                2,
+                "-60.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Acropolis Aviation Ltd在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Acropolis Aviation Ltd在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Acropolis Aviation Ltd在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-03",
+                1,
+                "-50.00%"
+            ],
+            [
+                "2024-05",
+                2,
+                "100.00%"
+            ],
+            [
+                "2024-07",
+                3,
+                "50.00%"
+            ],
+            [
+                "2024-08",
+                2,
+                "-33.33%"
+            ],
+            [
+                "2024-09",
+                1,
+                "-50.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Acropolis Aviation Ltd在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-03",
+                1,
+                "0.00%"
+            ],
+            [
+                "2024-08",
+                2,
+                "100.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Acropolis Aviation Ltd在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Acropolis Aviation Ltd在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-07",
+                1,
+                "0.00%"
+            ],
+            [
+                "2024-09",
+                1,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Acropolis Aviation Ltd在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Action Air Express在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1022\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Action Air Express在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [
+            [
+                "2024-02",
+                2,
+                "-50.00%"
+            ],
+            [
+                "2024-03",
+                4,
+                "100.00%"
+            ],
+            [
+                "2024-04",
+                3,
+                "-25.00%"
+            ],
+            [
+                "2024-05",
+                4,
+                "33.33%"
+            ],
+            [
+                "2024-06",
+                6,
+                "50.00%"
+            ],
+            [
+                "2024-07",
+                6,
+                "0.00%"
+            ],
+            [
+                "2024-08",
+                1,
+                "-83.33%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1022\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Action Air Express在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1022\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Action Air Express在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1022\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Action Air Express在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1022\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Action Air Express在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1022\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Action Air Express在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1022\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Action Air Express在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1022\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Action Air Express在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1022\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Adirondack Flying Service在Europe地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1023\"\n                AND a.dep_area_name = \"Europe\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Adirondack Flying Service在North America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1023\"\n                AND a.dep_area_name = \"North America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Adirondack Flying Service在South Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1023\"\n                AND a.dep_area_name = \"South Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Adirondack Flying Service在Oceania地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1023\"\n                AND a.dep_area_name = \"Oceania\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Adirondack Flying Service在West Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1023\"\n                AND a.dep_area_name = \"West Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Adirondack Flying Service在Africa地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1023\"\n                AND a.dep_area_name = \"Africa\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Adirondack Flying Service在South America地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1023\"\n                AND a.dep_area_name = \"South America\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Adirondack Flying Service在Southeast Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1023\"\n                AND a.dep_area_name = \"Southeast Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "2024年Adirondack Flying Service在East Asia地区的每月总飞行量是多少？提供环比变化。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg COLLATE utf8mb4_general_ci\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1023\"\n                AND a.dep_area_name = \"East Asia\" COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        date_month,\n        num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL;"
+    }
+]

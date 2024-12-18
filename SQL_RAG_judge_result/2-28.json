@@ -1,0 +1,455 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的02月到07月显著增长？",
+        "A": [
+            [
+                "North America",
+                181288,
+                168798,
+                12490
+            ],
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                183706,
+                177741,
+                5965
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-02'\n                AND '2024-07'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "SELECT region, SUM(flight_volume) as total_flight_volume\nFROM flight_statistics\nWHERE flight_date BETWEEN '2024-02-01' AND '2024-07-31'\nGROUP BY region\nORDER BY total_flight_volume DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的01月到06月显著增长？",
+        "A": [
+            [
+                "North America",
+                181288,
+                168798,
+                12490
+            ],
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                168798,
+                162306,
+                6492
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-06'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "DB: ai_database_dev\nSQL:",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的01月到09月显著增长？",
+        "A": [
+            [
+                "North America",
+                181288,
+                168798,
+                12490
+            ],
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                168798,
+                162306,
+                6492
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-09'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "SELECT region, SUM(flight_volume) AS total_volume \nFROM flight_data \nWHERE flight_date BETWEEN '2024-01-01' AND '2024-09-30' \nGROUP BY region \nORDER BY total_volume DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的04月到08月显著增长？",
+        "A": [
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                183706,
+                177741,
+                5965
+            ],
+            [
+                "Europe",
+                44812,
+                39569,
+                5243
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-04'\n                AND '2024-08'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "DB: ai_database_dev\nSQL:",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的03月到07月显著增长？",
+        "A": [
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                183706,
+                177741,
+                5965
+            ],
+            [
+                "Europe",
+                44812,
+                39569,
+                5243
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-03'\n                AND '2024-07'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "SELECT region, SUM(flight_volume) AS total_flights\nFROM flight_data\nWHERE flight_date BETWEEN '2024-03-01' AND '2024-07-31'\nGROUP BY region\nORDER BY total_flights DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的03月到09月显著增长？",
+        "A": [
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                183706,
+                177741,
+                5965
+            ],
+            [
+                "Europe",
+                44812,
+                39569,
+                5243
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-03'\n                AND '2024-09'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "WITH monthly_growth AS (\n    SELECT \n        region, \n        month,\n        flights,\n        LAG(flights) OVER (PARTITION BY region ORDER BY month) AS previous_month_flights\n    FROM \n        flight_volume\n    WHERE \n        month BETWEEN '2024-03-01' AND '2024-09-30'\n),\ngrowth_calculation AS (\n    SELECT \n        region, \n        month, \n        ((flights - previous_month_flights) / NULLIF(previous_month_flights, 0)) * 100 AS growth_percentage\n    FROM \n        monthly_growth\n)\n\nSELECT \n    region\nFROM \n    growth_calculation\nWHERE \n    growth_percentage > [SIGNIFICANT_THRESHOLD]\nGROUP BY \n    region\nHAVING \n    COUNT(*) = (SELECT COUNT(DISTINCT month) FROM growth_calculation); -- Ensure all months show growth",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的03月到06月显著增长？",
+        "A": [
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                183706,
+                177741,
+                5965
+            ],
+            [
+                "Europe",
+                44812,
+                39569,
+                5243
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-03'\n                AND '2024-06'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "SELECT region, SUM(flight_count) as total_flights\nFROM flight_data\nWHERE flight_date BETWEEN '2024-03-01' AND '2024-06-30'\nGROUP BY region\nORDER BY total_flights DESC\nLIMIT 10;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的03月到08月显著增长？",
+        "A": [
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                183706,
+                177741,
+                5965
+            ],
+            [
+                "Europe",
+                44812,
+                39569,
+                5243
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-03'\n                AND '2024-08'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "SELECT region \nFROM flight_records \nWHERE flight_date BETWEEN '2024-03-01' AND '2024-08-31'\nGROUP BY region\nHAVING SUM(flight_count) > previous_period",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的02月到06月显著增长？",
+        "A": [
+            [
+                "North America",
+                181288,
+                168798,
+                12490
+            ],
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                183706,
+                177741,
+                5965
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-02'\n                AND '2024-06'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "SELECT region, \n       SUM(flight_volume) as total_flight_volume\nFROM flight_statistics\nWHERE flight_date BETWEEN '2024-02-01' AND '2024-06-30'\nGROUP BY region\nORDER BY total_flight_volume DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的01月到08月显著增长？",
+        "A": [
+            [
+                "North America",
+                181288,
+                168798,
+                12490
+            ],
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                168798,
+                162306,
+                6492
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-08'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "DB: ai_database_dev\nSQL: \nSELECT region, \n       SUM(CASE WHEN year = 2024 THEN volume ELSE 0 END) AS volume_2024,\n       SUM(CASE WHEN year = 2023 THEN volume ELSE 0 END) AS volume_2023\nFROM flight_volume\nWHERE (year = 2024 AND month BETWEEN 1 AND 8) \n   OR (year = 2023 AND month BETWEEN 1 AND 8)\nGROUP BY region\nHAVING SUM(CASE WHEN year = 2024 THEN volume ELSE 0 END) > \n       SUM(CASE WHEN year = 2023 THEN volume ELSE 0 END);",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的02月到09月显著增长？",
+        "A": [
+            [
+                "North America",
+                181288,
+                168798,
+                12490
+            ],
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                183706,
+                177741,
+                5965
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-02'\n                AND '2024-09'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "SELECT region, SUM(flight_count) AS total_flights\nFROM flight_data\nWHERE flight_date BETWEEN '2024-02-01' AND '2024-09-30'\nGROUP BY region\nORDER BY total_flights DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的01月到07月显著增长？",
+        "A": [
+            [
+                "North America",
+                181288,
+                168798,
+                12490
+            ],
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                168798,
+                162306,
+                6492
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-07'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "SELECT region_name, SUM(flight_count) AS total_flights \nFROM flight_statistics \nWHERE flight_date BETWEEN '2024-01-01' AND '2024-07-31' \nGROUP BY region_name \nHAVING total_flights > \n    (SELECT AVG(flight_count) \n    FROM flight_statistics \n    WHERE flight_date BETWEEN '2024-01-01' AND '2024-07-31') \nORDER BY total_flights DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的04月到07月显著增长？",
+        "A": [
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                183706,
+                177741,
+                5965
+            ],
+            [
+                "Europe",
+                44812,
+                39569,
+                5243
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-04'\n                AND '2024-07'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "SELECT region, (SUM(CASE WHEN month BETWEEN '2024-04-01' AND '2024-07-31' THEN flight_count ELSE 0 END) -\n                SUM(CASE WHEN month BETWEEN '2024-01-01' AND '2024-03-31' THEN flight_count ELSE 0 END)) AS growth\nFROM flight_data\nGROUP BY region\nHAVING growth > (SELECT AVG(SUM(CASE WHEN month BETWEEN '2024-04-01' AND '2024-07-31' THEN flight_count ELSE 0 END) -\n                             SUM(CASE WHEN month BETWEEN '2024-01-01' AND '2024-03-31' THEN flight_count ELSE 0 END))\n                FROM flight_data\n                GROUP BY region);",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的04月到06月显著增长？",
+        "A": [
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                183706,
+                177741,
+                5965
+            ],
+            [
+                "Europe",
+                44812,
+                39569,
+                5243
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-04'\n                AND '2024-06'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "DB: ai_database_dev\nSQL:",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的04月到09月显著增长？",
+        "A": [
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                183706,
+                177741,
+                5965
+            ],
+            [
+                "Europe",
+                44812,
+                39569,
+                5243
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-04'\n                AND '2024-09'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "SELECT region_name\nFROM flight_statistics\nWHERE year = 2024 AND month BETWEEN 4 AND 9\nGROUP BY region_name\nHAVING SUM(flight_volume) > (\n    SELECT AVG(flight_volume)\n    FROM flight_statistics\n    WHERE year = 2023 AND month BETWEEN 4 AND 9\n    GROUP BY region_name\n    HAVING region_name = flight_statistics.region_name\n)\nORDER BY SUM(flight_volume) DESC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "哪些地区的飞行量在2024年的02月到08月显著增长？",
+        "A": [
+            [
+                "North America",
+                181288,
+                168798,
+                12490
+            ],
+            [
+                "Europe",
+                39569,
+                31942,
+                7627
+            ],
+            [
+                "North America",
+                183706,
+                177741,
+                5965
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_area_name,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-02'\n                AND '2024-08'\n                AND dep_area_name IS NOT NULL\n        GROUP BY\n                a.date_month,\n                a.dep_area_name\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY dep_area_name ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        dep_area_name,\n        num,\n        last_num,\n        num - last_num AS diff_num\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        num - last_num DESC\n        LIMIT 3;",
+        "actual_SQL": "SELECT region, SUM(flight_count) AS total_flights\nFROM flight_statistics\nWHERE flight_date BETWEEN '2024-02-01' AND '2024-08-31'\nGROUP BY region\nHAVING total_flights > (\n    SELECT AVG(total_flights)\n    FROM (\n        SELECT region, SUM(flight_count) AS total_flights\n        FROM flight_statistics\n        WHERE flight_date BETWEEN '2023-02-01' AND '2023-08-31'\n        GROUP BY region\n    ) AS last_year_flights\n);",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "correct_rate": 0.0,
+        "sample_size": 16,
+        "correct_count": 0
+    }
+]

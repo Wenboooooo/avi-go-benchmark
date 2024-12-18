@@ -1,0 +1,2319 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerodynamics Malaga在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-07",
+                55
+            ],
+            [
+                "2024-05",
+                45
+            ],
+            [
+                "2024-09",
+                45
+            ],
+            [
+                "2024-08",
+                41
+            ],
+            [
+                "2024-04",
+                35
+            ],
+            [
+                "2024-03",
+                34
+            ],
+            [
+                "2024-01",
+                31
+            ],
+            [
+                "2024-02",
+                27
+            ],
+            [
+                "2024-06",
+                27
+            ],
+            [
+                "2024-10",
+                25
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1044\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight\nWHERE (dep_icao = 'LEMG'\n       OR arr_icao = 'LEMG')\n  AND YEAR(dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供2024年Aerodynamics Malaga每个月的具体飞行量数据。这些数据通常属于特定航空公司或航空部门的内部信息，而我没有访问实时或未来的具体商业数据的权限。如果你需要相关信息，建议直接联系航空公司或查阅其官方网站、新闻发布、行业报告等资源。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ABS Jets在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-06",
+                32
+            ],
+            [
+                "2024-07",
+                31
+            ],
+            [
+                "2024-08",
+                31
+            ],
+            [
+                "2024-10",
+                19
+            ],
+            [
+                "2024-09",
+                18
+            ],
+            [
+                "2024-02",
+                17
+            ],
+            [
+                "2024-03",
+                10
+            ],
+            [
+                "2024-01",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1012\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(DISTINCT zpf.pure_reg) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'ABS Jets'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于ABS Jets在2024年每个月飞行量的具体信息。这些数据取决于许多因素，包括市场需求、公司运营计划、客户需求等，而且即使这些数据存在，也是动态变化的。此外，截至我最后的更新，我没有关于未来具体运营数据的访问权限。您可以直接联系ABS Jets或访问他们的官方网站以获取最新的飞行量信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Reldan Inc.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-02",
+                26
+            ],
+            [
+                "2024-03",
+                25
+            ],
+            [
+                "2024-07",
+                23
+            ],
+            [
+                "2024-04",
+                18
+            ],
+            [
+                "2024-08",
+                16
+            ],
+            [
+                "2024-06",
+                15
+            ],
+            [
+                "2024-01",
+                13
+            ],
+            [
+                "2024-10",
+                13
+            ],
+            [
+                "2024-09",
+                9
+            ],
+            [
+                "2024-05",
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1097\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Air Reldan Inc.'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供2024年Air Reldan Inc.每个月的飞行量数据。预测未来的数据超出了我所能访问的信息范围，你可以尝试查阅相关行业报告或公司发布的财务数据获得相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aircraft Management Group在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-08",
+                271
+            ],
+            [
+                "2024-05",
+                236
+            ],
+            [
+                "2024-07",
+                228
+            ],
+            [
+                "2024-03",
+                223
+            ],
+            [
+                "2024-09",
+                214
+            ],
+            [
+                "2024-04",
+                210
+            ],
+            [
+                "2024-06",
+                200
+            ],
+            [
+                "2024-10",
+                184
+            ],
+            [
+                "2024-01",
+                169
+            ],
+            [
+                "2024-02",
+                162
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1111\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Aircraft Management Group'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法提供Aircraft Management Group在2024年每个月的具体飞行量数据，因为这些信息属于未来的数据，超出了我的训练数据范围。我建议咨询航空公司或相关管理机构的官方网站，或者使用专业的航空数据分析服务来获取这一信息。如果有其他相关的问题或者需要其他帮助，请随时告诉我。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerowest GmbH在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-06",
+                63
+            ],
+            [
+                "2024-05",
+                62
+            ],
+            [
+                "2024-08",
+                59
+            ],
+            [
+                "2024-07",
+                55
+            ],
+            [
+                "2024-09",
+                50
+            ],
+            [
+                "2024-04",
+                47
+            ],
+            [
+                "2024-03",
+                44
+            ],
+            [
+                "2024-02",
+                41
+            ],
+            [
+                "2024-01",
+                35
+            ],
+            [
+                "2024-10",
+                20
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1060\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT MONTH(zpf.dep_date) AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight AS zpf\nJOIN aircraft_details AS ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details AS sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Aerowest GmbH'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH(zpf.dep_date)\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供2024年Aerowest GmbH每个月的具体飞行量数据。这类信息需要来自航空公司或者监管机构的实际报告和统计数据。如果你需要这样的数据，建议直接联系Aerowest GmbH，或者查看相关航空行业市场报告。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air X Charter Ltd在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-07",
+                588
+            ],
+            [
+                "2024-08",
+                524
+            ],
+            [
+                "2024-06",
+                498
+            ],
+            [
+                "2024-09",
+                463
+            ],
+            [
+                "2024-05",
+                416
+            ],
+            [
+                "2024-03",
+                413
+            ],
+            [
+                "2024-04",
+                361
+            ],
+            [
+                "2024-01",
+                352
+            ],
+            [
+                "2024-02",
+                332
+            ],
+            [
+                "2024-10",
+                229
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1103\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(DISTINCT zpf.pure_reg) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Air X Charter Ltd'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我没有关于Air X Charter Ltd在2024年月度飞行量的具体信息。此外，未来的数据和具体商业运营信息不在我能提供的范围之内。对于这样的信息，您可能需要查阅该公司的公开财务报告或联系企业以获取最新的官方数据。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Pannonia D.O.O.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-05",
+                98
+            ],
+            [
+                "2024-07",
+                75
+            ],
+            [
+                "2024-08",
+                75
+            ],
+            [
+                "2024-06",
+                68
+            ],
+            [
+                "2024-09",
+                66
+            ],
+            [
+                "2024-10",
+                58
+            ],
+            [
+                "2024-02",
+                51
+            ],
+            [
+                "2024-04",
+                48
+            ],
+            [
+                "2024-03",
+                47
+            ],
+            [
+                "2024-01",
+                31
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1092\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Air Pannonia D.O.O.'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供有关2024年Air Pannonia D.O.O.每个月飞行量的具体信息。我没有此类未来数据。如果你有任何其他问题或需要获取这类数据的建议，我会很乐意提供帮助。你可以尝试联系该公司的客服部门，或者查看相关的航空业报告，获取更详细的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Alliance Executive Jets在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-06",
+                30
+            ],
+            [
+                "2024-08",
+                21
+            ],
+            [
+                "2024-07",
+                17
+            ],
+            [
+                "2024-09",
+                16
+            ],
+            [
+                "2024-05",
+                16
+            ],
+            [
+                "2024-04",
+                12
+            ],
+            [
+                "2024-02",
+                10
+            ],
+            [
+                "2024-03",
+                10
+            ],
+            [
+                "2024-01",
+                9
+            ],
+            [
+                "2024-10",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1141\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(DISTINCT zpf.pure_reg) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Alliance Executive Jets'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法提供2024年具体月份的飞行量数据，因为这些信息超出了我的训练数据范围。我建议您查看Alliance Executive Jets的官网或直接联系他们，获取最新的飞行量数据和统计信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeronautical Charter Inc.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-08",
+                15
+            ],
+            [
+                "2024-06",
+                14
+            ],
+            [
+                "2024-02",
+                13
+            ],
+            [
+                "2024-10",
+                13
+            ],
+            [
+                "2024-09",
+                13
+            ],
+            [
+                "2024-07",
+                9
+            ],
+            [
+                "2024-01",
+                6
+            ],
+            [
+                "2024-05",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1050\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(DISTINCT zpf.pure_reg) AS flight_volume\nFROM zts_plane_flight zpf\nWHERE zpf.pure_reg IN\n    (SELECT ad.pure_reg\n     FROM aircraft_details ad\n     WHERE ad.supplier_id =\n         (SELECT sd.supplier_id\n          FROM supplier_details sd\n          WHERE sd.supplier_name = 'Aeronautical Charter Inc.'))\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_volume DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供Aeronautical Charter Inc.在2024年各个月的飞行量数据，因为我没有实时访问外部数据的能力，也没有关于具体公司未来运营情况的信息。如果你需要这些信息，建议你直接联系该公司或查阅相关的行业报告和统计数据。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aitheras Aviation Group LLC在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-05",
+                22
+            ],
+            [
+                "2024-04",
+                21
+            ],
+            [
+                "2024-09",
+                20
+            ],
+            [
+                "2024-08",
+                17
+            ],
+            [
+                "2024-10",
+                17
+            ],
+            [
+                "2024-01",
+                17
+            ],
+            [
+                "2024-06",
+                9
+            ],
+            [
+                "2024-03",
+                8
+            ],
+            [
+                "2024-07",
+                8
+            ],
+            [
+                "2024-02",
+                6
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1132\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_volume\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Aitheras Aviation Group LLC'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_volume DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于未来特定公司或组织的具体信息，如Aitheras Aviation Group LLC在2024年的每个月飞行量。这类信息通常需要根据实际市场情况、公司运营策略以及外部环境变化等多种因素进行动态分析和预测。如果您需要这类信息，可以参考相关的市场分析报告或联系该公司的官方代表获取详细的经营数据。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeropartner在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-07",
+                182
+            ],
+            [
+                "2024-06",
+                171
+            ],
+            [
+                "2024-05",
+                155
+            ],
+            [
+                "2024-08",
+                143
+            ],
+            [
+                "2024-09",
+                124
+            ],
+            [
+                "2024-01",
+                101
+            ],
+            [
+                "2024-02",
+                96
+            ],
+            [
+                "2024-04",
+                88
+            ],
+            [
+                "2024-03",
+                78
+            ],
+            [
+                "2024-10",
+                71
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1052\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT MONTH(dep_date) AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight\nWHERE pure_reg IN\n    (SELECT pure_reg\n     FROM aircraft_details\n     WHERE supplier_id =\n         (SELECT supplier_id\n          FROM supplier_details\n          WHERE supplier_name = 'Aeropartner'))\n  AND YEAR(dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，目前我无法获得2024年Aeropartner每个月的飞行详细信息。因此，我无法提供准确的按月飞行量信息。您可能需要直接联系Aeropartner或查看他们的官方网站或相关的行业报告以获取最新的数据。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Charter Express Inc.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-05",
+                22
+            ],
+            [
+                "2024-01",
+                15
+            ],
+            [
+                "2024-06",
+                10
+            ],
+            [
+                "2024-02",
+                9
+            ],
+            [
+                "2024-03",
+                7
+            ],
+            [
+                "2024-04",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1073\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Air Charter Express Inc.'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供2024年Air Charter Express Inc.每个月的飞行数据。为了获取此类更新的信息，建议查阅该公司的官方网站、年度报告或者新闻发布。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Airsf Flight Service在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-08",
+                207
+            ],
+            [
+                "2024-07",
+                199
+            ],
+            [
+                "2024-10",
+                191
+            ],
+            [
+                "2024-09",
+                188
+            ],
+            [
+                "2024-04",
+                184
+            ],
+            [
+                "2024-05",
+                178
+            ],
+            [
+                "2024-03",
+                177
+            ],
+            [
+                "2024-02",
+                173
+            ],
+            [
+                "2024-01",
+                162
+            ],
+            [
+                "2024-06",
+                149
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1125\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Airsf Flight Service'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供有关Airsf Flight Service在2024年每个月的飞行量的信息。你可以查看该公司的官方网站或联系他们的客户服务以获取更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Airshare在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-04",
+                115
+            ],
+            [
+                "2024-03",
+                112
+            ],
+            [
+                "2024-07",
+                106
+            ],
+            [
+                "2024-06",
+                95
+            ],
+            [
+                "2024-09",
+                91
+            ],
+            [
+                "2024-05",
+                90
+            ],
+            [
+                "2024-02",
+                90
+            ],
+            [
+                "2024-08",
+                76
+            ],
+            [
+                "2024-10",
+                75
+            ],
+            [
+                "2024-01",
+                63
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1126\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight\nWHERE YEAR(dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法提供2024年Airshare每个月的具体飞行量数据，因为截至目前的数据来源只到2023年，而且未来数据未被公布或预测。要获得准确的飞行量信息，建议你查看Airshare的官方公告或相关的行业报告。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air-Dynamic在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-07",
+                17
+            ],
+            [
+                "2024-08",
+                15
+            ],
+            [
+                "2024-03",
+                15
+            ],
+            [
+                "2024-09",
+                15
+            ],
+            [
+                "2024-06",
+                15
+            ],
+            [
+                "2024-05",
+                13
+            ],
+            [
+                "2024-01",
+                10
+            ],
+            [
+                "2024-10",
+                6
+            ],
+            [
+                "2024-04",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1104\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight\nWHERE pure_reg IN\n    (SELECT pure_reg\n     FROM aircraft_details\n     WHERE supplier_id =\n         (SELECT supplier_id\n          FROM supplier_details\n          WHERE supplier_name = 'Air-Dynamic'))\n  AND YEAR(dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法提供2024年Air-Dynamic每个月的飞行量数据，因为这些属于未来的信息。目前并没有相关的公开数据或报告可供参考。如果你需要关于航空公司飞行量的历史数据或者趋势分析，可以查看相关航空行业报告或者直接联系航空公司获取更多信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Horizont Ltd在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-08",
+                121
+            ],
+            [
+                "2024-07",
+                111
+            ],
+            [
+                "2024-06",
+                77
+            ],
+            [
+                "2024-09",
+                61
+            ],
+            [
+                "2024-05",
+                27
+            ],
+            [
+                "2024-04",
+                15
+            ],
+            [
+                "2024-03",
+                13
+            ],
+            [
+                "2024-01",
+                9
+            ],
+            [
+                "2024-10",
+                8
+            ],
+            [
+                "2024-02",
+                7
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1081\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Air Horizont Ltd'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法获取或预测2024年Air Horizont Ltd的具体飞行量数据。如果你需要这些信息，建议查看他们的官方公告或相关航空数据报告。通常，这种信息可能会在他们的网站上、行业报告或者新闻发布中找到。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AC Aviation Charter AG(Switzerland)在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-05",
+                31
+            ],
+            [
+                "2024-06",
+                29
+            ],
+            [
+                "2024-04",
+                15
+            ],
+            [
+                "2024-03",
+                12
+            ],
+            [
+                "2024-02",
+                5
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1013\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'AC Aviation Charter AG'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于AC Aviation Charter AG（瑞士）在2024年每个月的飞行量的具体信息。此类数据可能由公司内部记录维护，并且通常不会公开发布。如果您需要获取这些信息，建议直接联系该航空公司或者查看他们的年度财报或相关公告。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerovida S.A在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-08",
+                22
+            ],
+            [
+                "2024-03",
+                20
+            ],
+            [
+                "2024-07",
+                15
+            ],
+            [
+                "2024-04",
+                14
+            ],
+            [
+                "2024-09",
+                13
+            ],
+            [
+                "2024-10",
+                9
+            ],
+            [
+                "2024-06",
+                7
+            ],
+            [
+                "2024-05",
+                4
+            ],
+            [
+                "2024-02",
+                2
+            ],
+            [
+                "2024-01",
+                1
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1058\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nINNER JOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nINNER JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Aerovida S.A'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于未来事件或数据的具体信息，例如Aerovida S.A在2024年每个月的飞行量。不过，你可以参考该航空公司的常规年度报告、官方网站或相关的行业分析报告，以获得准确的未来预测和数据。如果你有其他问题或需要更多信息，我会很乐意帮忙。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerocardal在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-04",
+                76
+            ],
+            [
+                "2024-01",
+                64
+            ],
+            [
+                "2024-03",
+                50
+            ],
+            [
+                "2024-05",
+                45
+            ],
+            [
+                "2024-08",
+                43
+            ],
+            [
+                "2024-02",
+                38
+            ],
+            [
+                "2024-09",
+                34
+            ],
+            [
+                "2024-10",
+                23
+            ],
+            [
+                "2024-07",
+                20
+            ],
+            [
+                "2024-06",
+                12
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1042\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Aerocardal'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于2024年Aerocardal每个月飞行量的数据。如果你需要了解未来的飞行安排或统计数据，建议直接访问Aerocardal的官方网站或联系他们的客户服务。通常，航空公司可能不会提前公开如此详细的未来规划，特别是涉及竞争敏感的数据。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Acropolis Aviation Ltd在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-06",
+                29
+            ],
+            [
+                "2024-08",
+                26
+            ],
+            [
+                "2024-07",
+                23
+            ],
+            [
+                "2024-09",
+                23
+            ],
+            [
+                "2024-02",
+                22
+            ],
+            [
+                "2024-05",
+                21
+            ],
+            [
+                "2024-04",
+                18
+            ],
+            [
+                "2024-10",
+                12
+            ],
+            [
+                "2024-03",
+                12
+            ],
+            [
+                "2024-01",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1021\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Acropolis Aviation Ltd'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于 Acropolis Aviation Ltd 在2024年具体每个月的飞行量数据。飞行量等具体运营数据通常不对外公开，且在我训练数据截止的时间点后，我没有相关的更新信息。如果您需要这些数据，最好直接联系该公司或查看行业报告、新闻发布等公开信息来源。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Alerion Aviation在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-02",
+                169
+            ],
+            [
+                "2024-05",
+                161
+            ],
+            [
+                "2024-03",
+                157
+            ],
+            [
+                "2024-07",
+                155
+            ],
+            [
+                "2024-04",
+                141
+            ],
+            [
+                "2024-10",
+                140
+            ],
+            [
+                "2024-01",
+                136
+            ],
+            [
+                "2024-09",
+                129
+            ],
+            [
+                "2024-08",
+                100
+            ],
+            [
+                "2024-06",
+                96
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1138\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Alerion Aviation'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供Alerion Aviation在2024年每个月的具体飞行量数据。我没有关于未来的具体数据或预测。如果您需要相关信息，建议直接联系Alerion Aviation或查看他们的官方公告和报告。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aircompany North-west在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-10",
+                58
+            ],
+            [
+                "2024-01",
+                54
+            ],
+            [
+                "2024-03",
+                50
+            ],
+            [
+                "2024-02",
+                50
+            ],
+            [
+                "2024-08",
+                48
+            ],
+            [
+                "2024-04",
+                45
+            ],
+            [
+                "2024-07",
+                42
+            ],
+            [
+                "2024-05",
+                38
+            ],
+            [
+                "2024-09",
+                34
+            ],
+            [
+                "2024-06",
+                34
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1109\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_volume\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Aircompany North-west'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_volume DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供2024年Aircompany North-west每个月的飞行量数据。飞行量数据通常由航空公司或相关行业报告提供，并且具体信息会随着时间而更新。如果您需要此类数据，建议查看Aircompany North-west的官方公告、行业报告或相关机构的统计资料。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Airflair Inc.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-09",
+                23
+            ],
+            [
+                "2024-08",
+                16
+            ],
+            [
+                "2024-07",
+                12
+            ],
+            [
+                "2024-10",
+                11
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1115\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(DISTINCT zpf.pure_reg) AS flight_count\nFROM zts_plane_flight zpf\nINNER JOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nINNER JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Airflair Inc.'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法提供Airflair Inc.在2024年每个月的具体飞行量数据，因为这些数据属于未来信息，我目前无从得知。此外，航空公司的具体飞行量通常是保密的商业信息，不会公开披露。如果你需要这样的数据，可能需要联系Airflair Inc.的相关部门或者查阅相关的行业报告。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Fuga在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-02",
+                90
+            ],
+            [
+                "2024-05",
+                79
+            ],
+            [
+                "2024-06",
+                62
+            ],
+            [
+                "2024-01",
+                58
+            ],
+            [
+                "2024-04",
+                48
+            ],
+            [
+                "2024-10",
+                43
+            ],
+            [
+                "2024-03",
+                42
+            ],
+            [
+                "2024-07",
+                40
+            ],
+            [
+                "2024-08",
+                33
+            ],
+            [
+                "2024-09",
+                15
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1079\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(DISTINCT zpf.pure_reg) AS flight_volume\nFROM zts_plane_flight zpf\nINNER JOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nINNER JOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Air Fuga'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_volume DESC\nLIMIT 50;\n```",
+        "actual_answer": "我没有办法获取关于Air Fuga在2024年每个月的飞行量具体数据，因为我没有访问未来或实时数据的能力。如果你想了解Air Fuga的运营数据，建议你直接查阅Air Fuga的官方网站、查看行业报告或联系相关航空行业的数据分析机构以获取最准确的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Center Helicopters Inc.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-05",
+                22
+            ],
+            [
+                "2024-03",
+                12
+            ],
+            [
+                "2024-01",
+                9
+            ],
+            [
+                "2024-04",
+                5
+            ],
+            [
+                "2024-02",
+                4
+            ],
+            [
+                "2024-09",
+                4
+            ],
+            [
+                "2024-10",
+                2
+            ],
+            [
+                "2024-07",
+                1
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1071\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(DISTINCT zpf.pure_reg) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Air Center Helicopters Inc.'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法提供2024年Air Center Helicopters Inc.每个月的飞行量数据，因为这些信息超出了我训练的数据范围，并且截至目前并未公开。为了获取最新的飞行量信息，建议您访问该公司的官方网站或联系相关部门以获取具体的月度飞行数据。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Adriatic D.O.O.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-07",
+                57
+            ],
+            [
+                "2024-08",
+                55
+            ],
+            [
+                "2024-06",
+                39
+            ],
+            [
+                "2024-02",
+                34
+            ],
+            [
+                "2024-09",
+                34
+            ],
+            [
+                "2024-10",
+                32
+            ],
+            [
+                "2024-01",
+                31
+            ],
+            [
+                "2024-03",
+                31
+            ],
+            [
+                "2024-04",
+                20
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1062\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT MONTH(zpf.dep_date) AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Air Adriatic D.O.O.'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH(zpf.dep_date)\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于2024年Air Adriatic D.O.O.每个月飞行量的具体信息，因为这些数据超出了我的知识截止时间（2023年10月），而且飞行量数据通常是动态的，并不在公开资料中提前发布。建议您查看航空公司的官方网站或者行业报告，以获取最新和详细的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Airailes在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-03",
+                19
+            ],
+            [
+                "2024-02",
+                17
+            ],
+            [
+                "2024-06",
+                17
+            ],
+            [
+                "2024-04",
+                13
+            ],
+            [
+                "2024-10",
+                12
+            ],
+            [
+                "2024-01",
+                11
+            ],
+            [
+                "2024-05",
+                11
+            ],
+            [
+                "2024-09",
+                6
+            ],
+            [
+                "2024-07",
+                3
+            ],
+            [
+                "2024-08",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1106\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight\nWHERE YEAR(dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供Airailes在2024年每个月确切的飞行量数据，因为这些数据属于未来的具体信息，并且没有实时更新或访问此类具体数据的能力。如果你需要了解Airailes的飞行量或相关的最新信息，建议查看航空公司官方网站、行业报告或通过联系Airailes获取最新的统计数据。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AC Aviation Charter(Austria)在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-03",
+                38
+            ],
+            [
+                "2024-09",
+                28
+            ],
+            [
+                "2024-04",
+                26
+            ],
+            [
+                "2024-05",
+                25
+            ],
+            [
+                "2024-01",
+                19
+            ],
+            [
+                "2024-06",
+                17
+            ],
+            [
+                "2024-07",
+                16
+            ],
+            [
+                "2024-10",
+                15
+            ],
+            [
+                "2024-02",
+                13
+            ],
+            [
+                "2024-08",
+                12
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1014\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(DISTINCT zpf.pure_reg) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'AC Aviation Charter'\n  AND sd.supplier_country_name = 'Austria'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于2024年AC Aviation Charter（奥地利）的具体每月飞行量，因为这需要未来的数据和具体的内部信息，而我截至2023年10月的训练数据中没有这样的详细信息。不过，如果你有兴趣了解这家公司的业务概况或一般信息，我很乐意提供帮助。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeromas在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-06",
+                19
+            ],
+            [
+                "2024-09",
+                5
+            ],
+            [
+                "2024-07",
+                4
+            ],
+            [
+                "2024-08",
+                3
+            ],
+            [
+                "2024-03",
+                2
+            ],
+            [
+                "2024-10",
+                2
+            ],
+            [
+                "2024-04",
+                1
+            ],
+            [
+                "2024-05",
+                1
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1048\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_volume\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Aeromas'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_volume DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供2024年Aeromas每个月的飞行量数据，因为这些信息尚未公布或获取。如果你需要的信息涉及未来的计划或预测，建议直接联系航空公司或查阅相关行业报告和预测。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Action Air Express在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-06",
+                6
+            ],
+            [
+                "2024-07",
+                6
+            ],
+            [
+                "2024-01",
+                4
+            ],
+            [
+                "2024-03",
+                4
+            ],
+            [
+                "2024-05",
+                4
+            ],
+            [
+                "2024-04",
+                3
+            ],
+            [
+                "2024-02",
+                2
+            ],
+            [
+                "2024-08",
+                1
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1022\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_volume\nFROM zts_plane_flight\nWHERE pure_reg IN\n    (SELECT pure_reg\n     FROM aircraft_details\n     WHERE supplier_id =\n         (SELECT supplier_id\n          FROM supplier_details\n          WHERE supplier_name = 'Action Air Express'))\n  AND YEAR(dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_volume DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供2024年Action Air Express每个月的具体飞行量数据。如果你需要这些信息，建议直接联系该航空公司或查阅相关的航空统计资料。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Unlimited在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-01",
+                69
+            ],
+            [
+                "2024-03",
+                55
+            ],
+            [
+                "2024-06",
+                48
+            ],
+            [
+                "2024-02",
+                41
+            ],
+            [
+                "2024-04",
+                33
+            ],
+            [
+                "2024-07",
+                32
+            ],
+            [
+                "2024-05",
+                30
+            ],
+            [
+                "2024-08",
+                20
+            ],
+            [
+                "2024-09",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1101\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_volume\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Air Unlimited'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_volume DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供未来特定月份的飞行量数据。Air Unlimited的飞行数据通常取决于多种因素，包括市场需求、运营计划和季节性变化等。如果你需要准确的信息，建议查看该航空公司的官方网站或寻求行业分析报告。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Prague S.R.O.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-01",
+                10
+            ],
+            [
+                "2024-02",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1096\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT month(dep_date) AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight\nWHERE pure_reg IN\n    (SELECT pure_reg\n     FROM aircraft_details\n     WHERE supplier_id =\n         (SELECT supplier_id\n          FROM supplier_details\n          WHERE supplier_name = 'Air Prague S.R.O.' ) )\n  AND YEAR(dep_date) = 2024\nGROUP BY month(dep_date)\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供2024年关于Air Prague S.R.O.的飞行量数据，因为这些信息超出了我的知识范围和更新时间。如果你需要这方面的信息，建议查阅相关航空公司的官方网站或行业分析报告，或者联系相关航空咨询机构。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Alsie在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-06",
+                275
+            ],
+            [
+                "2024-05",
+                266
+            ],
+            [
+                "2024-09",
+                253
+            ],
+            [
+                "2024-07",
+                241
+            ],
+            [
+                "2024-03",
+                232
+            ],
+            [
+                "2024-04",
+                213
+            ],
+            [
+                "2024-02",
+                184
+            ],
+            [
+                "2024-08",
+                184
+            ],
+            [
+                "2024-10",
+                181
+            ],
+            [
+                "2024-01",
+                159
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1064\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(DISTINCT zpf.pure_reg) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Air Alsie'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，目前我没有关于2024年Air Alsie每个月飞行量的具体信息。如果需要这方面的数据，建议查看航空公司官方网站、相关航空行业报告或联系行业分析机构获取准确的统计数据。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACM Air Charter在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-09",
+                49
+            ],
+            [
+                "2024-05",
+                47
+            ],
+            [
+                "2024-08",
+                43
+            ],
+            [
+                "2024-04",
+                38
+            ],
+            [
+                "2024-06",
+                38
+            ],
+            [
+                "2024-02",
+                31
+            ],
+            [
+                "2024-07",
+                31
+            ],
+            [
+                "2024-03",
+                31
+            ],
+            [
+                "2024-10",
+                30
+            ],
+            [
+                "2024-01",
+                23
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1020\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT MONTH(zpf.dep_date) AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'ACM Air Charter'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于2024年ACM Air Charter每个月的飞行量的具体数据。为了获取这类信息，建议直接访问ACM Air Charter的官网或联系他们的客户服务部门以获取最新的公司报告或新闻发布。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "45 North Aviation在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-04",
+                52
+            ],
+            [
+                "2024-07",
+                48
+            ],
+            [
+                "2024-09",
+                43
+            ],
+            [
+                "2024-03",
+                35
+            ],
+            [
+                "2024-08",
+                35
+            ],
+            [
+                "2024-02",
+                33
+            ],
+            [
+                "2024-10",
+                27
+            ],
+            [
+                "2024-06",
+                21
+            ],
+            [
+                "2024-05",
+                19
+            ],
+            [
+                "2024-01",
+                14
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1004\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = '45 North Aviation'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于2024年45 North Aviation每个月飞行量的信息。你可以尝试访问该公司的官方网站或联系他们的客户服务部门获取最新数据。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Airlec Air Espace在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-08",
+                128
+            ],
+            [
+                "2024-10",
+                121
+            ],
+            [
+                "2024-09",
+                102
+            ],
+            [
+                "2024-07",
+                101
+            ],
+            [
+                "2024-02",
+                91
+            ],
+            [
+                "2024-01",
+                90
+            ],
+            [
+                "2024-05",
+                82
+            ],
+            [
+                "2024-06",
+                82
+            ],
+            [
+                "2024-03",
+                68
+            ],
+            [
+                "2024-04",
+                66
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1117\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_volume\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Airlec Air Espace'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_volume DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法提供关于2024年Airlec Air Espace每个月飞行量的具体信息。我没有实时数据访问能力，也没有关于未来事件或具体商业数据的详细信息。你可以通过联系Airlec Air Espace或查看相关航空业的报告和数据来源来获取最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACI Jet在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-05",
+                173
+            ],
+            [
+                "2024-09",
+                170
+            ],
+            [
+                "2024-03",
+                162
+            ],
+            [
+                "2024-08",
+                149
+            ],
+            [
+                "2024-07",
+                146
+            ],
+            [
+                "2024-04",
+                141
+            ],
+            [
+                "2024-06",
+                138
+            ],
+            [
+                "2024-10",
+                128
+            ],
+            [
+                "2024-02",
+                127
+            ],
+            [
+                "2024-01",
+                109
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1019\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'ACI Jet'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于特定公司2024年飞行量的具体数据。通常，这类信息涉及商业机密或尚未发布的未来数据。建议访问ACI Jet的官方网站或联系其公关部门以获得准确的飞行量数据。另外，行业报告或新闻发布也可能提供一些相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Alfa Jet在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-03",
+                16
+            ],
+            [
+                "2024-02",
+                11
+            ],
+            [
+                "2024-04",
+                9
+            ],
+            [
+                "2024-01",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1139\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE ad.aircraft_model_name = 'Alfa Jet'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法查阅具体的未来数据，包括Alfa Jet在2024年的每月飞行量。这类信息一般会根据航空公司的运营计划和市场需求而有所变化。建议查看航空公司的官方发布或专业航空数据分析平台获取最新信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero-Tech Services Inc.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-09",
+                85
+            ],
+            [
+                "2024-07",
+                79
+            ],
+            [
+                "2024-08",
+                75
+            ],
+            [
+                "2024-10",
+                45
+            ],
+            [
+                "2024-01",
+                41
+            ],
+            [
+                "2024-02",
+                37
+            ],
+            [
+                "2024-05",
+                35
+            ],
+            [
+                "2024-03",
+                34
+            ],
+            [
+                "2024-06",
+                34
+            ],
+            [
+                "2024-04",
+                32
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1041\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nWHERE zpf.pure_reg IN\n    (SELECT ad.pure_reg\n     FROM aircraft_details ad\n     WHERE ad.supplier_id =\n         (SELECT sd.supplier_id\n          FROM supplier_details sd\n          WHERE sd.supplier_name = 'Aero-Tech Services Inc.'))\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法提供关于Aero-Tech Services Inc.在2024年每个月的飞行量的具体数据。这类信息通常不在公开资源中，并且在我最后的更新中（至2023年10月）尚未提供最新的2024年数据。如果你需要这样的信息，建议直接联系Aero-Tech Services Inc.或查看该公司的公开财务或业务报告。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AAC Jet在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-06",
+                20
+            ],
+            [
+                "2024-01",
+                16
+            ],
+            [
+                "2024-04",
+                13
+            ],
+            [
+                "2024-03",
+                13
+            ],
+            [
+                "2024-08",
+                12
+            ],
+            [
+                "2024-09",
+                12
+            ],
+            [
+                "2024-07",
+                8
+            ],
+            [
+                "2024-05",
+                7
+            ],
+            [
+                "2024-02",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1007\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT MONTH(zpf.dep_date) AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE ad.supplier_id =\n    (SELECT supplier_id\n     FROM supplier_details\n     WHERE supplier_name = 'AAC Jet')\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH(zpf.dep_date)\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法提供2024年AAC Jet每个月的具体飞行量数据，因为我没有未来的数据访问权限。此外，AAC Jet的具体运营数据可能不会公开披露，以维持商业机密。飞行量可能受到多种因素的影响，包括航空公司业务策略、市场需求、国际航线政策变化等。你可以关注AAC Jet的官网或行业报告来获取更加详细和最新的信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aircraft Services Group Inc.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-06",
+                263
+            ],
+            [
+                "2024-07",
+                249
+            ],
+            [
+                "2024-02",
+                247
+            ],
+            [
+                "2024-05",
+                236
+            ],
+            [
+                "2024-03",
+                227
+            ],
+            [
+                "2024-08",
+                214
+            ],
+            [
+                "2024-09",
+                208
+            ],
+            [
+                "2024-04",
+                207
+            ],
+            [
+                "2024-01",
+                187
+            ],
+            [
+                "2024-10",
+                136
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1112\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Aircraft Services Group Inc.'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供未来2024年Aircraft Services Group Inc.的飞行量数据。建议您查看与该公司相关的报告、新闻稿或官方网站，以获取最新和详细的飞行量信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Trek Inc.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-05",
+                73
+            ],
+            [
+                "2024-04",
+                64
+            ],
+            [
+                "2024-01",
+                64
+            ],
+            [
+                "2024-02",
+                57
+            ],
+            [
+                "2024-06",
+                49
+            ],
+            [
+                "2024-03",
+                49
+            ],
+            [
+                "2024-08",
+                44
+            ],
+            [
+                "2024-07",
+                38
+            ],
+            [
+                "2024-09",
+                33
+            ],
+            [
+                "2024-10",
+                30
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1100\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Air Trek Inc.'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法提供2024年Air Trek Inc.每个月的具体飞行量数据，因为这些信息属于未来数据，我没有访问这些实时或预测数据的能力。不过，通常可以通过公司年度报告、行业分析或者航空数据服务平台来获取相关的飞行量信息。如果您对Air Trek Inc.的运营或某些特定方面感兴趣，建议查看他们的官方网站或者查阅相关的航空行业报告。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Charter Inc.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-09",
+                161
+            ],
+            [
+                "2024-06",
+                154
+            ],
+            [
+                "2024-07",
+                140
+            ],
+            [
+                "2024-04",
+                132
+            ],
+            [
+                "2024-08",
+                131
+            ],
+            [
+                "2024-05",
+                130
+            ],
+            [
+                "2024-03",
+                117
+            ],
+            [
+                "2024-02",
+                116
+            ],
+            [
+                "2024-01",
+                100
+            ],
+            [
+                "2024-10",
+                85
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1034\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight\nWHERE pure_reg IN\n    (SELECT pure_reg\n     FROM aircraft_details\n     WHERE supplier_id IN\n         (SELECT supplier_id\n          FROM supplier_details\n          WHERE supplier_name = 'Aero Charter Inc.'))\n  AND YEAR(dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于Aero Charter Inc.在2024年每个月的飞行量的具体信息，因为我没有实时的数据访问权限。为了获取此类特定信息，您可以直接联系Aero Charter Inc.或查阅他们的官方网站、年度报告，或相关的航空业分析报告。如果您有其他问题或需要有关航空业的一般信息，我会很乐意帮忙！",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air New England LLC.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-07",
+                28
+            ],
+            [
+                "2024-09",
+                27
+            ],
+            [
+                "2024-05",
+                22
+            ],
+            [
+                "2024-06",
+                22
+            ],
+            [
+                "2024-10",
+                13
+            ],
+            [
+                "2024-01",
+                13
+            ],
+            [
+                "2024-02",
+                13
+            ],
+            [
+                "2024-08",
+                6
+            ],
+            [
+                "2024-03",
+                6
+            ],
+            [
+                "2024-04",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1089\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE ad.supplier_id =\n    (SELECT supplier_id\n     FROM supplier_details\n     WHERE supplier_name = 'Air New England LLC.')\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供未来特定年份的具体数据，如Air New England LLC在2024年每个月的飞行量。我没有访问未来数据的能力。如果你需要这些信息，建议联系航空公司或查阅相关权威的航空市场报告。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Airstream A.S.在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-04",
+                9
+            ],
+            [
+                "2024-03",
+                9
+            ],
+            [
+                "2024-10",
+                8
+            ],
+            [
+                "2024-01",
+                7
+            ],
+            [
+                "2024-05",
+                5
+            ],
+            [
+                "2024-02",
+                4
+            ],
+            [
+                "2024-08",
+                2
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1129\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_volume\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Airstream A.S.'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_volume DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供Airstream A.S.在2024年的具体飞行量数据，因为这些数据并未超出我的训练数据之内，且未来事件的数据需要从相关的官方或可靠数据来源获取。如果你需要这些信息，建议联系Airstream A.S.或者查阅相关的行业报告或新闻发布。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero JL S.A de C.V在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-01",
+                76
+            ],
+            [
+                "2024-03",
+                67
+            ],
+            [
+                "2024-06",
+                59
+            ],
+            [
+                "2024-09",
+                52
+            ],
+            [
+                "2024-02",
+                50
+            ],
+            [
+                "2024-04",
+                48
+            ],
+            [
+                "2024-08",
+                45
+            ],
+            [
+                "2024-07",
+                41
+            ],
+            [
+                "2024-05",
+                40
+            ],
+            [
+                "2024-10",
+                18
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1036\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(DISTINCT zpf.pure_reg) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Aero JL S.A de C.V'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供关于Aero JL S.A de C.V在2024年每个月的具体飞行量数据。这些数据需要从航空公司或相关行业数据库获取，通常不在公开可用的信息范围之内。如果您需要这些数据，我建议您联系航空公司直接获取，或者通过专业的数据服务或市场研究报告获取相关信息。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Airco Aircraft Charters Ltd在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-07",
+                57
+            ],
+            [
+                "2024-05",
+                56
+            ],
+            [
+                "2024-06",
+                56
+            ],
+            [
+                "2024-09",
+                56
+            ],
+            [
+                "2024-03",
+                56
+            ],
+            [
+                "2024-08",
+                50
+            ],
+            [
+                "2024-04",
+                42
+            ],
+            [
+                "2024-01",
+                35
+            ],
+            [
+                "2024-10",
+                32
+            ],
+            [
+                "2024-02",
+                22
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1108\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Airco Aircraft Charters Ltd'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供Airco Aircraft Charters Ltd在2024年每个月的具体飞行量数据。如果你需要相关信息，建议直接联系该公司或查阅他们的官方网站发布的年度报告或新闻稿。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Airresource Charter LLC在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-07",
+                17
+            ],
+            [
+                "2024-08",
+                12
+            ],
+            [
+                "2024-05",
+                10
+            ],
+            [
+                "2024-04",
+                7
+            ],
+            [
+                "2024-06",
+                6
+            ],
+            [
+                "2024-01",
+                6
+            ],
+            [
+                "2024-09",
+                6
+            ],
+            [
+                "2024-10",
+                5
+            ],
+            [
+                "2024-02",
+                3
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1124\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_volume\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Airresource Charter LLC'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_volume DESC\nLIMIT 50;\n```",
+        "actual_answer": "抱歉，我无法提供2024年Airresource Charter LLC每个月的飞行量，因为我没有访问未来数据的能力。为了获取相关信息，请关注Airresource Charter LLC的官方网站或联系他们获取最新动态和年度报告。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Intersalonika在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-07",
+                81
+            ],
+            [
+                "2024-08",
+                77
+            ],
+            [
+                "2024-05",
+                66
+            ],
+            [
+                "2024-09",
+                66
+            ],
+            [
+                "2024-10",
+                55
+            ],
+            [
+                "2024-06",
+                54
+            ],
+            [
+                "2024-04",
+                15
+            ],
+            [
+                "2024-01",
+                10
+            ],
+            [
+                "2024-03",
+                9
+            ],
+            [
+                "2024-02",
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1083\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT DATE_FORMAT(zpf.dep_date, '%Y-%m') AS MONTH,\n       COUNT(*) AS flight_count\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Air Intersalonika'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH\nORDER BY flight_count DESC\nLIMIT 50;\n```",
+        "actual_answer": "对不起，我无法提供Air Intersalonika在2024年每个月的具体飞行量数据。这些信息可能在航空公司发布的季度或年度报告中提供，或者可以通过直接联系航空公司获取。如果您想了解其航班安排或市场预测，建议查阅相关行业报告或咨询专业航空分析机构。",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Airlink Luftverkehrs GmbH在2024年每个月的飞行量是多少？按从大到小排列。",
+        "A": [
+            [
+                "2024-08",
+                143
+            ],
+            [
+                "2024-09",
+                109
+            ],
+            [
+                "2024-06",
+                107
+            ],
+            [
+                "2024-07",
+                104
+            ],
+            [
+                "2024-05",
+                74
+            ],
+            [
+                "2024-10",
+                71
+            ],
+            [
+                "2024-04",
+                57
+            ],
+            [
+                "2024-01",
+                55
+            ],
+            [
+                "2024-03",
+                52
+            ],
+            [
+                "2024-02",
+                51
+            ]
+        ],
+        "SQL": "SELECT\n    p.date_month,\n    COUNT(*) AS num\nFROM\n    zts_plane_flight_1 AS p\nINNER JOIN\n    aircraft_details AS a\nON\n    p.pure_reg = a.pure_reg\nWHERE\n    a.supplier_id = \"1118\" AND p.date_month BETWEEN '2024-01' AND '2024-12'\nGROUP BY\n    p.date_month\nORDER BY\n    num DESC;",
+        "actual_SQL": "```sql\nSELECT MONTH(zpf.dep_date) AS MONTH,\n       COUNT(*) AS flight_volume\nFROM zts_plane_flight zpf\nJOIN aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nJOIN supplier_details sd ON ad.supplier_id = sd.supplier_id\nWHERE sd.supplier_name = 'Airlink Luftverkehrs GmbH'\n  AND YEAR(zpf.dep_date) = 2024\nGROUP BY MONTH(zpf.dep_date)\nORDER BY flight_volume DESC\nLIMIT 50;\n```",
+        "actual_answer": "很抱歉，我无法提供未来特定公司，如Airlink Luftverkehrs GmbH在2024年的每个月飞行量数据。这类数据通常需要从航空公司或相关航空分析机构的数据报告中获取。你可以查阅航空公司的官方公告、年度报告或联系其客户服务获取更多信息。如果你有其他问题或者需要帮助，欢迎随时告诉我！",
+        "is_correct(LLM_judge)": "no"
+    },
+    {
+        "correct_rate": 0.0,
+        "sample_size": 50,
+        "correct_count": 0
+    }
+]

@@ -231,6 +231,18 @@ def LLM_judge(question, ref_answer, actual_response, is_print=False, llm_type='g
         print(colored(result, 'red'))
     return result
 
+def remove_whitespace_and_newlines(input_string: str) -> str:
+    """
+    移除字符串中所有的空格和换行符。
+
+    参数:
+        input_string (str): 输入的字符串
+
+    返回:
+        str: 处理后的紧凑字符串
+    """
+    return input_string.replace(" ", "").replace("\n", "").replace("\t", "").lower()
+
 def SQL_judge(ref_sql, actual_sql, connection, actual_result=None, is_print=False):
     try:
         if (not actual_sql) and (not actual_result):
@@ -238,6 +250,8 @@ def SQL_judge(ref_sql, actual_sql, connection, actual_result=None, is_print=Fals
         num = 10
         cursor = connection.cursor()
         ref_sql,  actual_sql = ref_sql.strip(), actual_sql.strip()
+        ref_sql = remove_whitespace_and_newlines(ref_sql)
+        actual_sql = remove_whitespace_and_newlines(actual_sql)
         if ref_sql == actual_sql:
             if is_print:
                 print(colored("same sql", 'red'))

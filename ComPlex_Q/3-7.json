@@ -1,0 +1,221 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在17th Of September起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Bombardier Global 7500",
+                4
+            ],
+            [
+                "Cessna Citation Excel",
+                2
+            ],
+            [
+                "Bombardier Global 6000",
+                1
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"FNBG\" OR a.arr_icao = \"FNBG\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在28 De Noviembre起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Dassault Falcon 2000EX EASy",
+                1
+            ],
+            [
+                "Gulfstream G280",
+                1
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"SAWT\" OR a.arr_icao = \"SAWT\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在4M Ranch Airfield起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Pilatus PC-12",
+                2
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"48TE\" OR a.arr_icao = \"48TE\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在74 Ranch起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Bombardier Challenger 604",
+                1
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"0XA5\" OR a.arr_icao = \"0XA5\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在A 511起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Gulfstream G450",
+                1
+            ],
+            [
+                "Hawker 800XPi",
+                1
+            ],
+            [
+                "Embraer Phenom 300",
+                1
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"RKSG\" OR a.arr_icao = \"RKSG\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在A A Ranch起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Piper PA",
+                3
+            ],
+            [
+                "Embraer Praetor 600",
+                1
+            ],
+            [
+                "Gulfstream GV",
+                1
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"WY11\" OR a.arr_icao = \"WY11\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在A Coruña Airport起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Cessna Citation CJ1",
+                194
+            ],
+            [
+                "Cessna Citation CJ2+",
+                36
+            ],
+            [
+                "Bombardier Global Express",
+                18
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"LECO\" OR a.arr_icao = \"LECO\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在A. Paul Vance Fredericktown Regional起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Cessna Citation CJ1",
+                3
+            ],
+            [
+                "Hawker 900XP",
+                1
+            ],
+            [
+                "Bombardier Challenger 604",
+                1
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"H88\" OR a.arr_icao = \"H88\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在A.N.R. Robinson International Airport起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Cessna 402",
+                7
+            ],
+            [
+                "Bombardier Challenger 604",
+                3
+            ],
+            [
+                "Bombardier Global Express",
+                1
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"TTCP\" OR a.arr_icao = \"TTCP\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在Aalborg Airport起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Beechcraft King Air B200",
+                157
+            ],
+            [
+                "Beechcraft King Air 350",
+                28
+            ],
+            [
+                "Bombardier Challenger 605",
+                22
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"EKYT\" OR a.arr_icao = \"EKYT\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在Aamby Valley起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Bombardier Learjet 45",
+                7
+            ],
+            [
+                "Embraer Legacy 600",
+                5
+            ],
+            [
+                "Beechcraft King Air B200",
+                2
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"VAAV\" OR a.arr_icao = \"VAAV\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在Aarhus Airport起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Cessna Citation CJ2+",
+                88
+            ],
+            [
+                "Cessna Citation II",
+                65
+            ],
+            [
+                "Pilatus PC-12",
+                37
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"EKAH\" OR a.arr_icao = \"EKAH\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "查询所有在Aba Tenna D Yilma Airport起降的航班，并找出最常用的飞机型号。",
+        "A": [
+            [
+                "Beechcraft King Air 350",
+                1
+            ]
+        ],
+        "SQL": "SELECT b.aircraft_model_name, count(*) AS num\nFROM zts_plane_flight a LEFT JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE ( a.dep_icao = \"HADR\" OR a.arr_icao = \"HADR\" ) AND b.aircraft_model_name IS NOT NULL\nGROUP BY b.aircraft_model_name\nORDER BY num DESC LIMIT 3;"
+    }
+]

@@ -14,7 +14,7 @@ import pandas as pd
 import time
 
 random_seed = 44
-sample_size = 50
+sample_size = 5
 random.seed(random_seed)
 
 # data_dir = "synthetic_data"
@@ -154,8 +154,8 @@ def process_file_by_SQL_RAG(file):
             if is_correct == 'yes':
                 correct_count += 1
         sampled_data.append({
-            'correct_rate': round((correct_count / sample_size) * 100, 2),
-            'sample_size': sample_size,
+            'correct_rate': round((correct_count / len(sampled_data)) * 100, 2),
+            'sample_size': len(sampled_data),
             'correct_count': correct_count,
             'average_time': round(time_total / sample_size, 2),
         })

@@ -1,0 +1,403 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Acadiana Regl在2023年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = 'KARA' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = 'KARA' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = 'KARA' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = 'KARA' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) \nSELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Ada在2024年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.dep_icao = '0D7' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.arr_icao = '0D7' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT\n        a.date_month,\n        a.dep_icao,\n        count(*) AS dep_num\n    FROM\n        zts_plane_flight_1 a\n        JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n    WHERE\n        date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.dep_icao = 'AD4' COLLATE utf8mb4_0900_ai_ci\n    GROUP BY\n        a.date_month,\n        a.dep_icao\n),\nbiao_2 AS (\n    SELECT\n        a.date_month,\n        a.arr_icao,\n        count(*) AS arr_num\n    FROM\n        zts_plane_flight_1 a\n        JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n    WHERE\n        date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.arr_icao = 'AD4' COLLATE utf8mb4_0900_ai_ci\n    GROUP BY\n        a.date_month,\n        a.arr_icao\n),\nbiao_3 AS (\n    SELECT\n        a.date_month,\n        a.dep_icao AS icao_code,\n        dep_num + arr_num AS total_num\n    FROM\n        biao_1 a\n        LEFT JOIN biao_2 b ON a.date_month = b.date_month\n),\nbiao_4 AS (\n    SELECT *, \n    lag(total_num) over (ORDER BY date_month) AS last_num \n    FROM biao_3 \n) \nSELECT\n    *,\n    concat(round((total_num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    biao_4\nWHERE\n    last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Adams在2022年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.dep_icao = '90PA' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.arr_icao = '90PA' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH monthly_flights AS (\n    SELECT\n        MONTH(dep_time) AS month,\n        COUNT(*) AS flight_count\n    FROM\n        zts_plane_status\n    WHERE\n        (dep_icao = \"KADW\" OR arr_icao = \"KADW\")\n        AND YEAR(dep_time) = 2022\n    GROUP BY\n        MONTH(dep_time)\n),\nmonthly_growth AS (\n    SELECT\n        month,\n        flight_count,\n        LAG(flight_count) OVER (ORDER BY month) AS previous_month_count,\n        CASE\n            WHEN LAG(flight_count) OVER (ORDER BY month) IS NULL THEN NULL\n            ELSE (flight_count - LAG(flight_count) OVER (ORDER BY month)) / LAG(flight_count) OVER (ORDER BY month) * 100\n        END AS month_on_month_growth\n    FROM\n        monthly_flights\n)\nSELECT\n    month,\n    flight_count,\n    month_on_month_growth\nFROM\n    monthly_growth;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Adams Private在2023年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = '94IS' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = '94IS' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH monthly_flight_counts AS (\n    SELECT\n        DATE_FORMAT(ats.arrival_time, '%Y-%m') AS month,\n        COUNT(*) AS flight_count\n    FROM\n        zts_plane_status ats\n        JOIN dc_aircraft da ON ats.pure_reg = LOWER(REPLACE(REPLACE(da.registration, ' ', ''), '-', ''))\n    WHERE\n        da.supplier_name = 'Adams Private'\n        AND ats.status IN (1, 2) -- Assuming 1 for departures, 2 for arrivals\n        AND YEAR(ats.arrival_time) = 2023\n        AND da.delete_tag = 0\n    GROUP BY\n        DATE_FORMAT(ats.arrival_time, '%Y-%m')\n),\nmonthly_growth AS (\n    SELECT\n        month,\n        flight_count,\n        LAG(flight_count) OVER (ORDER BY month) AS previous_month_count,\n        ROUND(\n            100.0 * (flight_count - LAG(flight_count) OVER (ORDER BY month)) / NULLIF(LAG(flight_count) OVER (ORDER BY month), 0),\n            2\n        ) AS mom_growth\n    FROM\n        monthly_flight_counts\n)\nSELECT\n    month,\n    flight_count,\n    IFNULL(mom_growth, 0.00) AS mom_growth_percentage\nFROM\n    monthly_growth;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Adams在2024年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.dep_icao = '90PA' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.arr_icao = '90PA' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH monthly_flights AS (\n    SELECT\n        MONTH(dep_time) AS month,\n        COUNT(*) AS flight_count\n    FROM\n        flight_schedule\n    WHERE\n        YEAR(dep_time) = 2024\n        AND airport_code = 'Adams'\n    GROUP BY\n        MONTH(dep_time)\n),\nmonthly_growth AS (\n    SELECT\n        month,\n        flight_count,\n        LAG(flight_count, 1) OVER (ORDER BY month) AS previous_month_count\n    FROM\n        monthly_flights\n)\nSELECT\n    month,\n    flight_count,\n    CASE\n        WHEN previous_month_count IS NULL THEN NULL\n        ELSE (flight_count - previous_month_count) / previous_month_count * 100\n    END AS month_over_month_growth\nFROM\n    monthly_growth;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Adair在2024年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.dep_icao = '6KY4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.arr_icao = '6KY4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH monthly_flights AS (\n    SELECT\n        MONTH(dep_time) AS month,\n        COUNT(*) AS flight_count\n    FROM\n        zts_plane_status\n    WHERE\n        (dep_icao = 'KADH' OR arr_icao = 'KADH')\n        AND YEAR(dep_time) = 2024\n        AND dep_time IS NOT NULL\n    GROUP BY\n        MONTH(dep_time)\n),\nmonthly_growth AS (\n    SELECT\n        month,\n        flight_count,\n        LAG(flight_count) OVER (ORDER BY month) AS previous_month_count\n    FROM\n        monthly_flights\n)\nSELECT\n    month,\n    flight_count,\n    CASE\n        WHEN previous_month_count IS NULL THEN NULL\n        ELSE ROUND((flight_count - previous_month_count) / previous_month_count * 100, 2)\n    END AS month_over_month_growth\nFROM\n    monthly_growth;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Ackley Municipal在2022年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.dep_icao = '4C7' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.arr_icao = '4C7' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.dep_icao = '4C7' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.arr_icao = '4C7' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS (\n        SELECT *,\n               lag(total_num) over (ORDER BY date_month) AS last_num \n        FROM biao_3\n        ) \nSELECT\n        *,\n        concat( round(( total_num - last_num ) / last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Ada Municipal在2023年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = 'KADH' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = 'KADH' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH flight_counts AS (\n    SELECT\n        date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1\n    WHERE\n        dep_city_id = '1803690262524379138'\n        AND date_month BETWEEN '2023-01' AND '2023-12'\n    GROUP BY\n        date_month\n),\nmonthly_growth AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        flight_counts\n),\ngrowth_with_rate AS (\n    SELECT\n        date_month,\n        num,\n        last_num,\n        CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\n    FROM\n        monthly_growth\n    WHERE\n        last_num IS NOT NULL\n)\nSELECT\n    date_month,\n    num,\n    last_num,\n    rate\nFROM\n    growth_with_rate\nORDER BY\n    date_month ASC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Adams County Legion Field在2022年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.dep_icao = '63C' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.arr_icao = '63C' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH monthly_flight_counts AS (\n    SELECT\n        YEAR(act_dtime) AS year,\n        MONTH(act_dtime) AS month,\n        COUNT(*) AS flight_count\n    FROM\n        zts_plane_status\n    WHERE\n        (dep_icao = \"63C\" OR arr_icao = \"63C\")\n        AND YEAR(act_dtime) = 2022\n    GROUP BY\n        year,\n        month\n),\nmonthly_growth AS (\n    SELECT\n        year,\n        month,\n        flight_count,\n        LAG(flight_count, 1) OVER (ORDER BY year, month) AS prev_month_count,\n        CASE\n            WHEN LAG(flight_count, 1) OVER (ORDER BY year, month) IS NOT NULL THEN\n                (flight_count - LAG(flight_count, 1) OVER (ORDER BY year, month)) / LAG(flight_count, 1) OVER (ORDER BY year, month) * 100\n            ELSE\n                NULL\n        END AS growth_percentage\n    FROM\n        monthly_flight_counts\n)\nSELECT\n    year,\n    month,\n    flight_count,\n    growth_percentage\nFROM\n    monthly_growth\nORDER BY\n    year,\n    month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Ada在2023年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = '0D7' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = '0D7' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = 'AD4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = 'AD4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Adams Restricted Landing Area Number 1在2024年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.dep_icao = '70LL' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.arr_icao = '70LL' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH monthly_flight_counts AS (\n    SELECT\n        MONTH(dep_time) AS month,\n        COUNT(*) AS flight_count\n    FROM\n        zts_plane_status\n    WHERE\n        (dep_icao = \"70LL\" COLLATE utf8mb4_general_ci OR arr_icao = \"70LL\" COLLATE utf8mb4_general_ci)\n        AND YEAR(dep_time) = 2024\n        AND status IN (0, 1)  -- Assuming status 0 and 1 are for takeoffs and landings\n    GROUP BY\n        MONTH(dep_time)\n),\nmonthly_growth AS (\n    SELECT\n        month,\n        flight_count,\n        LAG(flight_count, 1, 0) OVER (ORDER BY month) AS previous_month_count\n    FROM\n        monthly_flight_counts\n)\nSELECT\n    month,\n    flight_count,\n    CASE\n        WHEN previous_month_count = 0 THEN NULL\n        ELSE (flight_count - previous_month_count) / previous_month_count * 100\n    END AS month_over_month_growth\nFROM\n    monthly_growth;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Ackerman Choctaw County在2022年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.dep_icao = '9M4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.arr_icao = '9M4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.dep_icao = '9M4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.arr_icao = '9M4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Adams Private在2024年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.dep_icao = '94IS' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.arr_icao = '94IS' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH monthly_flights AS (\n    SELECT\n        YEAR(flight_date) AS year,\n        MONTH(flight_date) AS month,\n        COUNT(*) AS flight_count\n    FROM\n        flights_data\n    WHERE\n        airline_name = 'Adams Private'\n        AND YEAR(flight_date) = 2024\n    GROUP BY\n        YEAR(flight_date),\n        MONTH(flight_date)\n),\nmonthly_growth AS (\n    SELECT\n        year,\n        month,\n        flight_count,\n        LAG(flight_count) OVER (ORDER BY year, month) AS previous_month_count\n    FROM\n        monthly_flights\n)\nSELECT\n    year,\n    month,\n    flight_count,\n    CASE\n        WHEN previous_month_count IS NULL THEN NULL\n        ELSE ROUND((flight_count - previous_month_count) / previous_month_count * 100, 2)\n    END AS month_over_month_growth\nFROM\n    monthly_growth;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Ackerman Choctaw County在2023年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = '9M4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = '9M4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = '9M4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = '9M4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Acme Field在2023年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = 'WA12' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = 'WA12' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = 'WA12' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = 'WA12' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Adams在2022年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.dep_icao = '8NC' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.arr_icao = '8NC' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH monthly_flights AS (\n    SELECT\n        MONTH(dep_time) AS month,\n        COUNT(*) AS flight_count\n    FROM\n        flights\n    WHERE\n        YEAR(dep_time) = 2022\n        AND (dep_airport = \"Adams\" OR arr_airport = \"Adams\")\n    GROUP BY\n        MONTH(dep_time)\n),\nmonthly_growth AS (\n    SELECT\n        month,\n        flight_count,\n        LAG(flight_count) OVER (ORDER BY month) AS previous_month_count\n    FROM\n        monthly_flights\n)\nSELECT\n    month,\n    flight_count,\n    CASE\n        WHEN previous_month_count IS NOT NULL THEN\n            ROUND((flight_count - previous_month_count) / previous_month_count * 100, 2)\n        ELSE\n            NULL\n    END AS month_on_month_growth\nFROM\n    monthly_growth;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Adams在2023年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = '8NC' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = '8NC' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH monthly_flight_counts AS (\n    SELECT\n        YEAR(flight_date) AS year,\n        MONTH(flight_date) AS month,\n        COUNT(*) AS flight_count\n    FROM\n        flight_data\n    WHERE\n        airport_name = 'Adams'\n        AND YEAR(flight_date) = 2023\n    GROUP BY\n        YEAR(flight_date), MONTH(flight_date)\n),\nmonthly_with_prev AS (\n    SELECT\n        year,\n        month,\n        flight_count,\n        LAG(flight_count) OVER (ORDER BY year, month) AS prev_flight_count\n    FROM\n        monthly_flight_counts\n)\nSELECT\n    year,\n    month,\n    flight_count,\n    CASE \n        WHEN prev_flight_count IS NOT NULL THEN \n            (flight_count - prev_flight_count) / prev_flight_count * 100\n        ELSE \n            NULL\n    END AS month_over_month_growth\nFROM\n    monthly_with_prev\nORDER BY\n    year, month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Ada Municipal在2024年每个月的起降航班数量，并提供环比增幅。",
+        "A": [
+            [
+                "2024-02",
+                "KADH",
+                4,
+                5,
+                "-20.00%"
+            ],
+            [
+                "2024-03",
+                "KADH",
+                12,
+                4,
+                "200.00%"
+            ],
+            [
+                "2024-04",
+                "KADH",
+                21,
+                12,
+                "75.00%"
+            ],
+            [
+                "2024-05",
+                "KADH",
+                13,
+                21,
+                "-38.10%"
+            ],
+            [
+                "2024-06",
+                "KADH",
+                15,
+                13,
+                "15.38%"
+            ],
+            [
+                "2024-07",
+                "KADH",
+                16,
+                15,
+                "6.67%"
+            ],
+            [
+                "2024-08",
+                "KADH",
+                14,
+                16,
+                "-12.50%"
+            ],
+            [
+                "2024-09",
+                "KADH",
+                19,
+                14,
+                "35.71%"
+            ],
+            [
+                "2024-10",
+                "KADH",
+                11,
+                19,
+                "-42.11%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.dep_icao = 'KADH' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.arr_icao = 'KADH' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT\n        date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1\n    WHERE\n        date_month BETWEEN '2024-01' AND '2024-12'\n        AND (arr_icao = 'KADH' OR dep_icao = 'KADH')\n    GROUP BY\n        date_month\n),\nbiao_2 AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        biao_1\n),\nbiao_3 AS (\n    SELECT\n        date_month,\n        num,\n        last_num,\n        CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\n    FROM\n        biao_2\n    WHERE\n        last_num IS NOT NULL\n)\nSELECT\n    b1.date_month,\n    b1.num,\n    COALESCE(b3.rate, 'N/A') AS rate\nFROM\n    biao_1 b1\nLEFT JOIN\n    biao_3 b3 ON b1.date_month = b3.date_month\nORDER BY\n    b1.date_month ASC;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Acu在2023年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = 'SNUC' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = 'SNUC' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = 'ACU' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = 'ACU' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Adams在2023年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = '90PA' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = '90PA' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH MonthlyFlightCounts AS (\n    SELECT\n        YEAR(date) AS year,\n        MONTH(date) AS month,\n        COUNT(*) AS flight_count\n    FROM\n        flight_schedule\n    WHERE\n        airport_name = 'Adams'\n        AND YEAR(date) = 2023\n    GROUP BY\n        YEAR(date), MONTH(date)\n),\nMonthlyGrowth AS (\n    SELECT\n        year,\n        month,\n        flight_count,\n        LAG(flight_count) OVER (ORDER BY year, month) AS previous_month_count\n    FROM\n        MonthlyFlightCounts\n)\nSELECT\n    year,\n    month,\n    flight_count,\n    ROUND(\n        (flight_count - previous_month_count) / previous_month_count * 100,\n        2\n    ) AS month_over_month_growth\nFROM\n    MonthlyGrowth;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Ackerman Choctaw County在2024年每个月的起降航班数量，并提供环比增幅。",
+        "A": [
+            [
+                "2024-02",
+                "9M4",
+                4,
+                2,
+                "100.00%"
+            ],
+            [
+                "2024-03",
+                "9M4",
+                3,
+                4,
+                "-25.00%"
+            ],
+            [
+                "2024-05",
+                "9M4",
+                7,
+                3,
+                "133.33%"
+            ],
+            [
+                "2024-06",
+                "9M4",
+                3,
+                7,
+                "-57.14%"
+            ],
+            [
+                "2024-07",
+                "9M4",
+                9,
+                3,
+                "200.00%"
+            ],
+            [
+                "2024-08",
+                "9M4",
+                8,
+                9,
+                "-11.11%"
+            ],
+            [
+                "2024-09",
+                "9M4",
+                4,
+                8,
+                "-50.00%"
+            ],
+            [
+                "2024-10",
+                "9M4",
+                4,
+                4,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.dep_icao = '9M4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.arr_icao = '9M4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.dep_city_id = '1803689379753410561'\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.arr_city_id = '1803689379753410561'\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Achmad Yani International Airport在2023年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = 'WAHS' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = 'WAHS' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = 'WAHS' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = 'WAHS' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Accomack County在2024年每个月的起降航班数量，并提供环比增幅。",
+        "A": [
+            [
+                "2024-02",
+                "KMFV",
+                9,
+                22,
+                "-59.09%"
+            ],
+            [
+                "2024-03",
+                "KMFV",
+                6,
+                9,
+                "-33.33%"
+            ],
+            [
+                "2024-04",
+                "KMFV",
+                8,
+                6,
+                "33.33%"
+            ],
+            [
+                "2024-05",
+                "KMFV",
+                3,
+                8,
+                "-62.50%"
+            ],
+            [
+                "2024-07",
+                "KMFV",
+                16,
+                3,
+                "433.33%"
+            ],
+            [
+                "2024-08",
+                "KMFV",
+                null,
+                16,
+                null
+            ],
+            [
+                "2024-10",
+                "KMFV",
+                2,
+                3,
+                "-33.33%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.dep_icao = 'KMFV' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.arr_icao = 'KMFV' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_city_id,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.dep_city_id = '1803689932495568897'\n        GROUP BY\n                a.date_month,\n                a.dep_city_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_city_id,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND a.arr_city_id = '1803689932495568897'\n        GROUP BY\n                a.date_month,\n                a.arr_city_id\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_city_id AS city_id,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS (\n        SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3\n        ) \nSELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Adair在2023年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.dep_icao = '6KY4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2023-01'\n                AND '2023-12'\n                AND a.arr_icao = '6KY4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH monthly_flights AS (\n    SELECT\n        YEAR(date) AS year,\n        MONTH(date) AS month,\n        COUNT(*) AS flight_count\n    FROM\n        zts_flight_data\n    WHERE\n        arr_icao = \"KADH\" COLLATE utf8mb4_general_ci\n        AND YEAR(date) = 2023\n    GROUP BY\n        YEAR(date),\n        MONTH(date)\n),\nmonthly_growth AS (\n    SELECT\n        mf1.year,\n        mf1.month,\n        mf1.flight_count,\n        (mf1.flight_count - COALESCE(mf2.flight_count, 0)) / NULLIF(COALESCE(mf2.flight_count, 0), 0) AS growth_rate\n    FROM\n        monthly_flights mf1\n    LEFT JOIN\n        monthly_flights mf2\n    ON\n        mf1.year = mf2.year AND mf1.month = mf2.month + 1\n)\nSELECT\n    year,\n    month,\n    flight_count,\n    IFNULL(growth_rate, 0) AS growth_rate\nFROM\n    monthly_growth;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出Adair在2022年每个月的起降航班数量，并提供环比增幅。",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao,\n                count(*) AS dep_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.dep_icao = '6KY4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.dep_icao\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                a.arr_icao,\n                count(*) AS arr_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                date_month BETWEEN '2022-01'\n                AND '2022-12'\n                AND a.arr_icao = '6KY4' COLLATE utf8mb4_0900_ai_ci\n        GROUP BY\n                a.date_month,\n                a.arr_icao\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                a.dep_icao AS icao_code,\n                dep_num + arr_num AS total_num\n        FROM\n                biao_1 a\n                LEFT JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT *, lag( total_num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        *,\n        concat( round(( total_num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH monthly_flight_counts AS (\n    SELECT\n        MONTH(arrival_time) AS month,\n        COUNT(*) AS flight_count\n    FROM\n        zts_plane_status\n    WHERE\n        arr_icao = \"the ICAO code for Adair\"\n        AND YEAR(arrival_time) = 2022\n    GROUP BY\n        MONTH(arrival_time)\n),\nmonthly_growth AS (\n    SELECT\n        month,\n        flight_count,\n        LAG(flight_count) OVER (ORDER BY month) AS previous_month_count\n    FROM\n        monthly_flight_counts\n)\nSELECT\n    month,\n    flight_count,\n    (flight_count - previous_month_count) / previous_month_count * 100 AS month_over_month_growth\nFROM\n    monthly_growth;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "correct_rate": 24.0,
+        "sample_size": 25,
+        "correct_count": 6
+    }
+]

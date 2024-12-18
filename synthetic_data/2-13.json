@@ -6,17 +6,17 @@
             [
                 "165",
                 "United States",
-                1499
-            ],
-            [
-                "194",
-                "Canada",
-                24
+                151
             ],
             [
                 "105",
                 "Mexico",
-                21
+                2
+            ],
+            [
+                "194",
+                "Canada",
+                1
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1001\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -28,27 +28,27 @@
             [
                 "184",
                 "United Kingdom",
-                7927
+                961
             ],
             [
                 "4",
                 "Ireland",
-                186
+                26
+            ],
+            [
+                null,
+                null,
+                5
             ],
             [
                 "146",
                 "France",
-                19
-            ],
-            [
-                null,
-                null,
-                17
+                4
             ],
             [
                 "145",
                 "Germany",
-                14
+                3
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1002\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -60,22 +60,22 @@
             [
                 "165",
                 "United States",
-                979
+                315
             ],
             [
                 "194",
                 "Canada",
-                27
+                7
             ],
             [
                 "135",
                 "Bahamas",
-                7
+                4
             ],
             [
                 null,
                 null,
-                2
+                1
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1004\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -87,27 +87,27 @@
             [
                 "165",
                 "United States",
-                2905
-            ],
-            [
-                "194",
-                "Canada",
-                216
-            ],
-            [
-                "105",
-                "Mexico",
-                72
+                476
             ],
             [
                 "135",
                 "Bahamas",
-                53
+                13
             ],
             [
-                "215",
-                "Sint Maarten",
-                51
+                "105",
+                "Mexico",
+                12
+            ],
+            [
+                "194",
+                "Canada",
+                12
+            ],
+            [
+                "76",
+                "Puerto Rico",
+                5
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1005\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -119,22 +119,22 @@
             [
                 "105",
                 "Mexico",
-                376
+                73
             ],
             [
                 "165",
                 "United States",
-                147
+                27
             ],
             [
                 "135",
                 "Bahamas",
-                9
+                4
             ],
             [
                 "215",
                 "Sint Maarten",
-                3
+                1
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1007\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -146,27 +146,27 @@
             [
                 "165",
                 "United States",
-                15807
+                2204
             ],
             [
-                "194",
-                "Canada",
-                81
+                null,
+                null,
+                10
             ],
             [
                 "235",
                 "Turks and Caicos Islands",
-                28
+                7
             ],
             [
-                null,
-                null,
-                21
+                "194",
+                "Canada",
+                6
             ],
             [
                 "135",
                 "Bahamas",
-                18
+                5
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1008\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -178,27 +178,27 @@
             [
                 "72",
                 "Austria",
-                849
+                137
             ],
             [
                 "182",
                 "Italy",
-                744
-            ],
-            [
-                "125",
-                "Spain",
-                535
+                88
             ],
             [
                 "146",
                 "France",
-                392
+                59
             ],
             [
-                "174",
-                "Switzerland",
-                346
+                "145",
+                "Germany",
+                55
+            ],
+            [
+                "125",
+                "Spain",
+                34
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1009\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -210,27 +210,27 @@
             [
                 "10",
                 "Belgium",
-                2085
+                285
             ],
             [
                 "182",
                 "Italy",
-                2031
+                122
             ],
             [
                 "146",
                 "France",
-                932
+                114
+            ],
+            [
+                "184",
+                "United Kingdom",
+                40
             ],
             [
                 "125",
                 "Spain",
-                583
-            ],
-            [
-                "174",
-                "Switzerland",
-                229
+                36
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1010\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -242,27 +242,27 @@
             [
                 "26",
                 "Czech Republic",
-                258
-            ],
-            [
-                "182",
-                "Italy",
-                104
+                58
             ],
             [
                 "29",
                 "Croatia",
-                65
+                13
             ],
             [
-                "125",
-                "Spain",
-                64
+                "182",
+                "Italy",
+                13
             ],
             [
                 "145",
                 "Germany",
-                62
+                12
+            ],
+            [
+                "146",
+                "France",
+                10
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1012\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -274,27 +274,27 @@
             [
                 "137",
                 "Bulgaria",
-                492
-            ],
-            [
-                "146",
-                "France",
-                177
-            ],
-            [
-                "189",
-                "Greece",
-                175
+                22
             ],
             [
                 "174",
                 "Switzerland",
-                172
+                12
             ],
             [
                 "182",
                 "Italy",
-                152
+                12
+            ],
+            [
+                "146",
+                "France",
+                12
+            ],
+            [
+                "189",
+                "Greece",
+                5
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1013\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -306,27 +306,27 @@
             [
                 "145",
                 "Germany",
-                582
-            ],
-            [
-                "182",
-                "Italy",
-                287
+                95
             ],
             [
                 "146",
                 "France",
-                226
-            ],
-            [
-                "125",
-                "Spain",
-                188
+                24
             ],
             [
                 "126",
                 "Hungary",
-                118
+                18
+            ],
+            [
+                "182",
+                "Italy",
+                17
+            ],
+            [
+                "72",
+                "Austria",
+                9
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1014\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -338,27 +338,27 @@
             [
                 "194",
                 "Canada",
-                964
-            ],
-            [
-                "165",
-                "United States",
-                562
+                124
             ],
             [
                 "184",
                 "United Kingdom",
-                491
+                100
             ],
             [
-                "125",
-                "Spain",
-                373
+                "165",
+                "United States",
+                82
+            ],
+            [
+                "4",
+                "Ireland",
+                28
             ],
             [
                 "146",
                 "France",
-                224
+                25
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1015\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -370,27 +370,27 @@
             [
                 "184",
                 "United Kingdom",
-                398
-            ],
-            [
-                "125",
-                "Spain",
-                292
+                94
             ],
             [
                 "165",
                 "United States",
-                238
-            ],
-            [
-                "194",
-                "Canada",
-                179
+                22
             ],
             [
                 "146",
                 "France",
-                77
+                17
+            ],
+            [
+                "125",
+                "Spain",
+                14
+            ],
+            [
+                "194",
+                "Canada",
+                10
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1016\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -402,22 +402,22 @@
             [
                 "165",
                 "United States",
-                1696
+                257
             ],
             [
                 "135",
                 "Bahamas",
-                1161
+                204
             ],
             [
                 "150",
                 "Cuba",
-                18
+                3
             ],
             [
                 null,
                 null,
-                7
+                2
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1017\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -429,27 +429,27 @@
             [
                 "165",
                 "United States",
-                8228
-            ],
-            [
-                "125",
-                "Spain",
-                255
-            ],
-            [
-                "182",
-                "Italy",
-                178
-            ],
-            [
-                "146",
-                "France",
-                164
+                1352
             ],
             [
                 "184",
                 "United Kingdom",
-                106
+                13
+            ],
+            [
+                "105",
+                "Mexico",
+                11
+            ],
+            [
+                "182",
+                "Italy",
+                8
+            ],
+            [
+                "146",
+                "France",
+                7
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1019\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -459,29 +459,29 @@
         "Q": "在2024年ACM Air Charter的前五大目的地国家（按航班量排序）有哪些？",
         "A": [
             [
-                "125",
-                "Spain",
-                1396
-            ],
-            [
                 "145",
                 "Germany",
-                937
+                105
+            ],
+            [
+                "125",
+                "Spain",
+                47
             ],
             [
                 "29",
                 "Croatia",
-                339
+                29
+            ],
+            [
+                "184",
+                "United Kingdom",
+                23
             ],
             [
                 "174",
                 "Switzerland",
-                333
-            ],
-            [
-                "182",
-                "Italy",
-                281
+                22
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1020\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -493,27 +493,27 @@
             [
                 "4",
                 "Ireland",
-                330
-            ],
-            [
-                "165",
-                "United States",
-                253
+                50
             ],
             [
                 "184",
                 "United Kingdom",
-                153
+                43
+            ],
+            [
+                "165",
+                "United States",
+                30
             ],
             [
                 "146",
                 "France",
-                118
+                16
             ],
             [
-                "125",
-                "Spain",
-                104
+                "1",
+                "United Arab Emirates",
+                8
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1021\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -525,7 +525,7 @@
             [
                 "165",
                 "United States",
-                64
+                29
             ],
             [
                 "194",
@@ -537,38 +537,32 @@
     },
     {
         "DB": "ai_database_dev",
-        "Q": "在2024年Adirondack Flying Service的前五大目的地国家（按航班量排序）有哪些？",
-        "A": [],
-        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1023\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
-    },
-    {
-        "DB": "ai_database_dev",
         "Q": "在2024年ADM Aviation Executive的前五大目的地国家（按航班量排序）有哪些？",
         "A": [
             [
                 "146",
                 "France",
-                3713
-            ],
-            [
-                "125",
-                "Spain",
-                762
-            ],
-            [
-                "182",
-                "Italy",
-                684
+                217
             ],
             [
                 "184",
                 "United Kingdom",
-                400
+                46
+            ],
+            [
+                "182",
+                "Italy",
+                25
+            ],
+            [
+                "125",
+                "Spain",
+                18
             ],
             [
                 "174",
                 "Switzerland",
-                356
+                16
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1024\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -580,17 +574,17 @@
             [
                 "165",
                 "United States",
-                16833
+                5579
+            ],
+            [
+                null,
+                null,
+                2
             ],
             [
                 "105",
                 "Mexico",
-                2
-            ],
-            [
-                null,
-                null,
-                2
+                1
             ],
             [
                 "194",
@@ -607,27 +601,27 @@
             [
                 "182",
                 "Italy",
-                2028
+                259
             ],
             [
                 "146",
                 "France",
-                378
-            ],
-            [
-                "174",
-                "Switzerland",
-                369
+                63
             ],
             [
                 "72",
                 "Austria",
-                327
+                47
             ],
             [
-                "125",
-                "Spain",
-                300
+                "174",
+                "Switzerland",
+                42
+            ],
+            [
+                "145",
+                "Germany",
+                40
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1027\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -639,21 +633,21 @@
             [
                 "165",
                 "United States",
-                262
+                93
             ],
             [
                 "235",
                 "Turks and Caicos Islands",
-                6
-            ],
-            [
-                "76",
-                "Puerto Rico",
                 2
             ],
             [
                 "105",
                 "Mexico",
+                1
+            ],
+            [
+                "76",
+                "Puerto Rico",
                 1
             ]
         ],
@@ -666,27 +660,27 @@
             [
                 "134",
                 "Australia",
-                649
+                153
             ],
             [
                 "40",
                 "Nauru",
-                98
+                37
             ],
             [
                 "147",
                 "Fiji",
-                17
+                9
             ],
             [
                 "191",
                 "Vanuatu",
-                16
+                6
             ],
             [
-                "238",
-                "New Caledonia",
-                16
+                "53",
+                "Solomon Islands",
+                6
             ]
         ],
         "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1029\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;"
@@ -698,16 +692,16 @@
             [
                 "165",
                 "United States",
-                1867
-            ],
-            [
-                "194",
-                "Canada",
-                18
+                491
             ],
             [
                 "135",
                 "Bahamas",
+                1
+            ],
+            [
+                "194",
+                "Canada",
                 1
             ]
         ],
