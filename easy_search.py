@@ -88,8 +88,8 @@ def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, 
             response = LLM_generate(prompt, llm_name=llm_name, is_print=False)
             # print(response)
             sql = re.search(r'```sql\n(.*?)\n```', response, re.DOTALL).group(1).strip()
-            if not sql.startswith('SELECT'):
-                raise Exception("Not a SELECT query")
+            # if not sql.startswith('SELECT'):
+            #     raise Exception("Not a SELECT query")
             query_database = re.search(r'DB: (.*?)\n', response).group(1).strip()
                 
             # print(query_database)

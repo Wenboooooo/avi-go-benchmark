@@ -1,0 +1,812 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年AC Aviation Charter AG(Switzerland)的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "137",
+                "Bulgaria",
+                22
+            ],
+            [
+                "174",
+                "Switzerland",
+                12
+            ],
+            [
+                "182",
+                "Italy",
+                12
+            ],
+            [
+                "146",
+                "France",
+                12
+            ],
+            [
+                "189",
+                "Greece",
+                5
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1013\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1013\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\nLIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.38
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年45 North Aviation的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "165",
+                "United States",
+                315
+            ],
+            [
+                "194",
+                "Canada",
+                7
+            ],
+            [
+                "135",
+                "Bahamas",
+                4
+            ],
+            [
+                null,
+                null,
+                1
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1004\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1004\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.33
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年Abelag Aviation的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "10",
+                "Belgium",
+                285
+            ],
+            [
+                "182",
+                "Italy",
+                122
+            ],
+            [
+                "146",
+                "France",
+                114
+            ],
+            [
+                "184",
+                "United Kingdom",
+                40
+            ],
+            [
+                "125",
+                "Spain",
+                36
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1010\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1010\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.9
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年AAC Jet的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "105",
+                "Mexico",
+                73
+            ],
+            [
+                "165",
+                "United States",
+                27
+            ],
+            [
+                "135",
+                "Bahamas",
+                4
+            ],
+            [
+                "215",
+                "Sint Maarten",
+                1
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1007\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1007\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.66
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年A-OK Jets的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "165",
+                "United States",
+                476
+            ],
+            [
+                "135",
+                "Bahamas",
+                13
+            ],
+            [
+                "105",
+                "Mexico",
+                12
+            ],
+            [
+                "194",
+                "Canada",
+                12
+            ],
+            [
+                "76",
+                "Puerto Rico",
+                5
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1005\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1005\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 18.48
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年Acropolis Aviation Ltd的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "4",
+                "Ireland",
+                50
+            ],
+            [
+                "184",
+                "United Kingdom",
+                43
+            ],
+            [
+                "165",
+                "United States",
+                30
+            ],
+            [
+                "146",
+                "France",
+                16
+            ],
+            [
+                "1",
+                "United Arab Emirates",
+                8
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1021\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1021\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.94
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年Accent Airways LLC的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "165",
+                "United States",
+                257
+            ],
+            [
+                "135",
+                "Bahamas",
+                204
+            ],
+            [
+                "150",
+                "Cuba",
+                3
+            ],
+            [
+                null,
+                null,
+                2
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1017\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1017\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\nLIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.94
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年247 Aviation Ltd的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "184",
+                "United Kingdom",
+                961
+            ],
+            [
+                "4",
+                "Ireland",
+                26
+            ],
+            [
+                null,
+                null,
+                5
+            ],
+            [
+                "146",
+                "France",
+                4
+            ],
+            [
+                "145",
+                "Germany",
+                3
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1002\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1002\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.96
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年ACASS(Ireland)的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "184",
+                "United Kingdom",
+                94
+            ],
+            [
+                "165",
+                "United States",
+                22
+            ],
+            [
+                "146",
+                "France",
+                17
+            ],
+            [
+                "125",
+                "Spain",
+                14
+            ],
+            [
+                "194",
+                "Canada",
+                10
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1016\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1016\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.6
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年ADM Aviation Executive的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "146",
+                "France",
+                217
+            ],
+            [
+                "184",
+                "United Kingdom",
+                46
+            ],
+            [
+                "182",
+                "Italy",
+                25
+            ],
+            [
+                "125",
+                "Spain",
+                18
+            ],
+            [
+                "174",
+                "Switzerland",
+                16
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1024\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1024\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.91
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年ACASS Canada Ltd的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "194",
+                "Canada",
+                124
+            ],
+            [
+                "184",
+                "United Kingdom",
+                100
+            ],
+            [
+                "165",
+                "United States",
+                82
+            ],
+            [
+                "4",
+                "Ireland",
+                28
+            ],
+            [
+                "146",
+                "France",
+                25
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1015\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1015\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 14.19
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年Aelia S.R.L的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "182",
+                "Italy",
+                259
+            ],
+            [
+                "146",
+                "France",
+                63
+            ],
+            [
+                "72",
+                "Austria",
+                47
+            ],
+            [
+                "174",
+                "Switzerland",
+                42
+            ],
+            [
+                "145",
+                "Germany",
+                40
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1027\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1027\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.83
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年Advanced Air LLC的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "165",
+                "United States",
+                5579
+            ],
+            [
+                null,
+                null,
+                2
+            ],
+            [
+                "105",
+                "Mexico",
+                1
+            ],
+            [
+                "194",
+                "Canada",
+                1
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1025\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1025\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.43
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年Aero Air Charter LLC的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "165",
+                "United States",
+                491
+            ],
+            [
+                "135",
+                "Bahamas",
+                1
+            ],
+            [
+                "194",
+                "Canada",
+                1
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1030\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1030\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.39
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年24/7 Jet Inc.的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "165",
+                "United States",
+                151
+            ],
+            [
+                "105",
+                "Mexico",
+                2
+            ],
+            [
+                "194",
+                "Canada",
+                1
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1001\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1001\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.5
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年Action Air Express的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "165",
+                "United States",
+                29
+            ],
+            [
+                "194",
+                "Canada",
+                1
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1022\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1022\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.25
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年AC Aviation Charter(Austria)的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "145",
+                "Germany",
+                95
+            ],
+            [
+                "146",
+                "France",
+                24
+            ],
+            [
+                "126",
+                "Hungary",
+                18
+            ],
+            [
+                "182",
+                "Italy",
+                17
+            ],
+            [
+                "72",
+                "Austria",
+                9
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1014\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1014\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\nLIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.45
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年Aergo International Pty Ltd的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "134",
+                "Australia",
+                153
+            ],
+            [
+                "40",
+                "Nauru",
+                37
+            ],
+            [
+                "147",
+                "Fiji",
+                9
+            ],
+            [
+                "191",
+                "Vanuatu",
+                6
+            ],
+            [
+                "53",
+                "Solomon Islands",
+                6
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1029\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1029\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.26
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年ABS Jets的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "26",
+                "Czech Republic",
+                58
+            ],
+            [
+                "29",
+                "Croatia",
+                13
+            ],
+            [
+                "182",
+                "Italy",
+                13
+            ],
+            [
+                "145",
+                "Germany",
+                12
+            ],
+            [
+                "146",
+                "France",
+                10
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1012\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1012\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.2
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年ACM Air Charter的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "145",
+                "Germany",
+                105
+            ],
+            [
+                "125",
+                "Spain",
+                47
+            ],
+            [
+                "29",
+                "Croatia",
+                29
+            ],
+            [
+                "184",
+                "United Kingdom",
+                23
+            ],
+            [
+                "174",
+                "Switzerland",
+                22
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1020\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1020\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.95
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年Fly Tyrol的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "72",
+                "Austria",
+                137
+            ],
+            [
+                "182",
+                "Italy",
+                88
+            ],
+            [
+                "146",
+                "France",
+                59
+            ],
+            [
+                "145",
+                "Germany",
+                55
+            ],
+            [
+                "125",
+                "Spain",
+                34
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1009\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1009\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.81
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年AEM Aviation的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "165",
+                "United States",
+                93
+            ],
+            [
+                "235",
+                "Turks and Caicos Islands",
+                2
+            ],
+            [
+                "105",
+                "Mexico",
+                1
+            ],
+            [
+                "76",
+                "Puerto Rico",
+                1
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1028\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1028\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.22
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年AB Jets的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "165",
+                "United States",
+                2204
+            ],
+            [
+                null,
+                null,
+                10
+            ],
+            [
+                "235",
+                "Turks and Caicos Islands",
+                7
+            ],
+            [
+                "194",
+                "Canada",
+                6
+            ],
+            [
+                "135",
+                "Bahamas",
+                5
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1008\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1008\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.06
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "在2024年ACI Jet的前五大目的地国家（按航班量排序）有哪些？",
+        "A": [
+            [
+                "165",
+                "United States",
+                1352
+            ],
+            [
+                "184",
+                "United Kingdom",
+                13
+            ],
+            [
+                "105",
+                "Mexico",
+                11
+            ],
+            [
+                "182",
+                "Italy",
+                8
+            ],
+            [
+                "146",
+                "France",
+                7
+            ]
+        ],
+        "SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1019\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        arr_country_id,\n        arr_country_name,\n        count(*) AS num\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1019\"\nGROUP BY\n        arr_country_id,\n        arr_country_name\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.72
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 24,
+        "correct_count": 24,
+        "average_time": 4.73
+    }
+]

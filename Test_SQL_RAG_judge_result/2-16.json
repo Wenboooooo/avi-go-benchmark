@@ -1,0 +1,713 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeroeste在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-08",
+                4
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1045\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1045\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.84
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero-Tech Services Inc.在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-09",
+                85
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1041\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1041\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.77
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AAC Jet在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-06",
+                20
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1007\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1007\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.51
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ADM Aviation Executive在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-07",
+                61
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1024\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) AS num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1024\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.92
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Alliance Group GmbH在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-05",
+                88
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1063\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1063\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.95
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Advanced Air LLC在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-01",
+                637
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1025\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) AS num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1025\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.86
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Centers在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-07",
+                115
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1033\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1033\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 4.92
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerovida S.A在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-08",
+                22
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1058\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1058\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 14.46
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeroways GmbH在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-03",
+                13
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1059\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1059\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.07
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeromas在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-06",
+                19
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1048\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1048\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.21
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero JL S.A de C.V在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-01",
+                76
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1036\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1036\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.41
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Adriatic D.O.O.在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-07",
+                57
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1062\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1062\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.81
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aelia S.R.L在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-08",
+                107
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1027\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1027\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 15.45
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Acropolis Aviation Ltd在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-06",
+                29
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1021\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1021\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.4
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ABS Jets在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-06",
+                32
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1012\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1012\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.44
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerocardal在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-04",
+                76
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1042\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1042\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.55
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AEM Aviation在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-09",
+                26
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1028\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1028\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.38
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeronaves Tsm S.A.在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-10",
+                40
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1051\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1051\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.37
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "45 North Aviation在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-04",
+                52
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1004\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1004\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.51
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACI Jet在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-05",
+                173
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1019\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1019\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.86
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACASS(Ireland)在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-07",
+                36
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1016\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1016\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.63
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Alsie在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-06",
+                275
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1064\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1064\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.39
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACASS Canada Ltd在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-07",
+                67
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1015\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1015\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.71
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Dynamic Jets在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-04",
+                64
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1035\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1035\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.74
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeronautical Charter Inc.在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-08",
+                15
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1050\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1050\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.93
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerowest GmbH在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-06",
+                63
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1060\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1060\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.96
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air 7 LLC在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-08",
+                113
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1061\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1061\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.82
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Sotravia在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-07",
+                41
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1038\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1038\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 15.71
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Transporte S.A.在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-08",
+                51
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1039\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1039\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.65
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Action Air Express在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-06",
+                6
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1022\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1022\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.97
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerodynamics Malaga在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-07",
+                55
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1044\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1044\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.83
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Asahi Corporation在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-01",
+                56
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1032\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1032\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.1
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "A-OK Jets在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-05",
+                78
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1005\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1005\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.93
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "24/7 Jet Inc.在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-08",
+                26
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1001\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1001\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.45
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACM Air Charter在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-09",
+                49
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1020\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1020\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.79
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Air Charter LLC在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-10",
+                61
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1030\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1030\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.69
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerosafin S.A de C.V在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-04",
+                31
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1055\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1055\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.62
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Abelag Aviation在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-02",
+                111
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1010\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1010\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.47
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "247 Aviation Ltd在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-06",
+                135
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1002\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1002\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.6
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeropartner在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-07",
+                182
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1052\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1052\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.64
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Fly Tyrol在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-05",
+                71
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1009\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1009\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.46
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Charter Inc.在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-09",
+                161
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1034\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1034\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.57
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AC Aviation Charter(Austria)在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-03",
+                38
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1014\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1014\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.41
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AB Jets在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-07",
+                256
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1008\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1008\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.41
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AC Aviation Charter AG(Switzerland)在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-05",
+                31
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1013\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1013\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.8
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Accent Airways LLC在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-07",
+                60
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1017\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1017\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\nLIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.52
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aergo International Pty Ltd在2024年哪个月份的飞行量最大？该月的总航班数量是多少？",
+        "A": [
+            [
+                "2024-03",
+                46
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1029\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_SQL": "SELECT\n        a.date_month,\n        count(*) as num\nFROM\n        ai_database_dev.zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1029\"\n        AND a.date_month BETWEEN '2024-01'\n        AND '2024-12'\nGROUP BY\n        a.date_month\nORDER BY\n        num DESC\n        LIMIT 1;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.37
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 47,
+        "correct_count": 47,
+        "average_time": 8.1
+    }
+]

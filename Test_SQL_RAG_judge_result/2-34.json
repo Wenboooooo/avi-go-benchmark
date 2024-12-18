@@ -1,0 +1,82 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年飞行量最多的机型及每月变化情况。",
+        "A": [
+            [
+                "2024-02",
+                3375,
+                3239,
+                136,
+                "4.20%"
+            ],
+            [
+                "2024-03",
+                3611,
+                3375,
+                236,
+                "6.99%"
+            ],
+            [
+                "2024-04",
+                3618,
+                3611,
+                7,
+                "0.19%"
+            ],
+            [
+                "2024-05",
+                3949,
+                3618,
+                331,
+                "9.15%"
+            ],
+            [
+                "2024-06",
+                4309,
+                3949,
+                360,
+                "9.12%"
+            ],
+            [
+                "2024-07",
+                4942,
+                4309,
+                633,
+                "14.69%"
+            ],
+            [
+                "2024-08",
+                4673,
+                4942,
+                -269,
+                "-5.44%"
+            ],
+            [
+                "2024-09",
+                3860,
+                4673,
+                -813,
+                "-17.40%"
+            ],
+            [
+                "2024-10",
+                2648,
+                3860,
+                -1212,
+                "-31.40%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.type_code,\n                COUNT(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n        GROUP BY\n                a.date_month,\n                b.type_code\n        ),\n        most_frequent_type AS (\n        SELECT\n                b.type_code\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n        GROUP BY\n                b.type_code\n        ORDER BY\n                COUNT(*) DESC\n                LIMIT 1\n        ),\n        biao_2 AS ( SELECT b1.date_month, b1.num FROM biao_1 b1 JOIN most_frequent_type mft ON b1.type_code = mft.type_code ),\n        biao_3 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_2 ) SELECT\n        *,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_3\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.type_code,\n                COUNT(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n        GROUP BY\n                a.date_month,\n                b.type_code\n        ),\n        most_frequent_type AS (\n        SELECT\n                b.type_code\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n        GROUP BY\n                b.type_code\n        ORDER BY\n                COUNT(*) DESC\n                LIMIT 1\n        ),\n        biao_2 AS ( SELECT b1.date_month, b1.num FROM biao_1 b1 JOIN most_frequent_type mft ON b1.type_code = mft.type_code ),\n        biao_3 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_2 ) SELECT\n        *,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_3\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.0
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 1,
+        "correct_count": 1,
+        "average_time": 0.38
+    }
+]
