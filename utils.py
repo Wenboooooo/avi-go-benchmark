@@ -241,7 +241,8 @@ def remove_whitespace_and_newlines(input_string: str) -> str:
     返回:
         str: 处理后的紧凑字符串
     """
-    return input_string.replace(" ", "").replace("\n", "").replace("\t", "").lower()
+    clean_text = re.sub(r'\s+', ' ', input_string).lower()
+    return clean_text
 
 def SQL_judge(ref_sql, actual_sql, connection, actual_result=None, is_print=False):
     try:
@@ -249,10 +250,10 @@ def SQL_judge(ref_sql, actual_sql, connection, actual_result=None, is_print=Fals
             return 'no'
         num = 10
         cursor = connection.cursor()
-        ref_sql,  actual_sql = ref_sql.strip(), actual_sql.strip()
-        ref_sql = remove_whitespace_and_newlines(ref_sql)
-        actual_sql = remove_whitespace_and_newlines(actual_sql)
-        if ref_sql == actual_sql:
+        ref_sql, actual_sql = ref_sql.strip(), actual_sql.strip()
+        # ref_sql = remove_whitespace_and_newlines(ref_sql)
+        # actual_sql = remove_whitespace_and_newlines(actual_sql)
+        if remove_whitespace_and_newlines(ref_sql) == remove_whitespace_and_newlines(actual_sql):
             if is_print:
                 print(colored("same sql", 'red'))
             return 'yes'

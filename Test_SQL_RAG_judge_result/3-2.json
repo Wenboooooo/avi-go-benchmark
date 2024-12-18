@@ -1,0 +1,508 @@
+[
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在A.N.R. Robinson International Airport停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"TTCP\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"TTCP\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.1
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Aalborg Airport停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"EKYT\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"EKYT\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.57
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abbott停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"VG58\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"VG58\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.57
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在4d Ranch停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"04TT\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"04TT\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 5.5
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在16 L Ranch停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"16TT\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"16TT\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 6.39
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在3 Rivers Recreation Area停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"OG00\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"OG00\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.27
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abadan Airport停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"OIAA\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"OIAA\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.81
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abha Airport停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"OEAB\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"OEAB\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.65
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abilene Regional Airport停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"KABI\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"KABI\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.63
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abingdon Downs停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"YABI\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"YABI\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 6.42
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abraham Ranch停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"7CA1\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"7CA1\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 5.76
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Aba Hongyuan Airport停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"ZUHY\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"ZUHY\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 6.94
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abemama Atoll停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"NGTB\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"NGTB\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.54
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Aberporth停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"EGFA\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"EGFA\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.79
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abbottabad停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"OPAB\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"OPAB\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.12
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abbeville停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"LFOI\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"SC81\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 6.47
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在7R Ranch停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"CL25\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"CL25\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.87
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abide Airpark停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"MS30\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"MS30\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 5.77
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在5 Lakes停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"PA81\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"PA81\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.2
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abruzzo Airport停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"LIBP\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"LIBP\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 8.57
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abresso停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"WASC\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"WASC\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.07
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Aamby Valley停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"VAAV\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"VAAV\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.5
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在A. Paul Vance Fredericktown Regional停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"H88\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"H88\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 10.88
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在16 Ranch停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"36MT\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"36MT\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 5.5
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abdelhafid Boussouf Bou Chekif Airport停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"DAOB\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"DAOB\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.94
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在74 Ranch停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"0XA5\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"0XA5\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.83
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在4-Shipp停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"4XA5\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"4XA5\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.41
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在5B Ranch停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"1OK8\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"1OK8\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.19
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在6666 Ranch停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"6TE6\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"6TE6\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.19
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abeche停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"FTTC\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"FTTC\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 6.84
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在17th Of September停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"FNBG\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"FNBG\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.93
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在3 Mill Ranch停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"44XS\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"44XS\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.25
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在4 Winds Aerodrome停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"IN45\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"IN45\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 6.7
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在3-M's停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"96GA\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"96GA\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.14
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abaco I Walker C停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"MYAW\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"MYAW\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.16
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abilene Executive Airpark停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"TX00\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"TX00\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.48
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在28 De Noviembre停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"SAWT\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"SAWT\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.49
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abumumbazi停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"FZFE\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"FZFE\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.93
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abbaye停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"GQNE\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"GQNE\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.13
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在4M Ranch Airfield停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"48TE\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"48TE\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 6.65
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在6b Airfield停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"OK68\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"OK68\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.3
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在3 Barrel Ranch停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"TT65\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"TT65\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 12.84
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在40 Acre Airstrip停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"ID52\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"ID52\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.0
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abaete停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"SNLI\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"SNLI\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 14.63
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abbotsford International Airport停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"CYXX\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"CYXX\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.44
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Abrams Municipal停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"4D0\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"4D0\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.38
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Aanenson停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"KLYV\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"KLYV\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.37
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Aberdeen Municipal停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"U36\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"U36\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 11.39
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在Aarhus Airport停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"EKAH\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao = \"EKAH\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.55
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "查询在1904 Private Runway停场的所有公务机及其注册号",
+        "A": null,
+        "SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"4OK0\" COLLATE utf8mb4_general_ci;",
+        "actual_SQL": "SELECT\n    arr_icao AS icao_code,\n    registration\nFROM\n    zts_plane_status\nWHERE\n    status = 0\n    AND pure_reg IN (\n        SELECT\n            LOWER(REPLACE(REPLACE(registration, ' ', ''), '-', ''))\n        FROM\n            dc_aircraft\n        WHERE\n            delete_tag = 0\n    )\n    AND arr_icao =\"4OK0\" COLLATE utf8mb4_general_ci;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.98
+    },
+    {
+        "correct_rate": 54.0,
+        "sample_size": 50,
+        "correct_count": 27,
+        "average_time": 8.54
+    }
+]

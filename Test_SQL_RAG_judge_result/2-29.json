@@ -1,0 +1,3902 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Air Charter LLC的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1030",
+                "2024-02",
+                47,
+                55,
+                -8,
+                "-14.55%"
+            ],
+            [
+                "1030",
+                "2024-03",
+                46,
+                47,
+                -1,
+                "-2.13%"
+            ],
+            [
+                "1030",
+                "2024-04",
+                34,
+                46,
+                -12,
+                "-26.09%"
+            ],
+            [
+                "1030",
+                "2024-05",
+                50,
+                34,
+                16,
+                "47.06%"
+            ],
+            [
+                "1030",
+                "2024-06",
+                53,
+                50,
+                3,
+                "6.00%"
+            ],
+            [
+                "1030",
+                "2024-07",
+                59,
+                53,
+                6,
+                "11.32%"
+            ],
+            [
+                "1030",
+                "2024-08",
+                42,
+                59,
+                -17,
+                "-28.81%"
+            ],
+            [
+                "1030",
+                "2024-09",
+                46,
+                42,
+                4,
+                "9.52%"
+            ],
+            [
+                "1030",
+                "2024-10",
+                61,
+                46,
+                15,
+                "32.61%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1030\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1030\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ORDER BY\n                a.date_month\n        ),\n        biao_2 AS (\n                SELECT\n                        *,\n                        LAG(num) OVER (PARTITION BY supplier_id ORDER BY date_month) AS last_num\n                FROM\n                        biao_1\n        )\nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.34
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACASS(Ireland)的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1016",
+                "2024-02",
+                21,
+                25,
+                -4,
+                "-16.00%"
+            ],
+            [
+                "1016",
+                "2024-03",
+                28,
+                21,
+                7,
+                "33.33%"
+            ],
+            [
+                "1016",
+                "2024-04",
+                21,
+                28,
+                -7,
+                "-25.00%"
+            ],
+            [
+                "1016",
+                "2024-05",
+                20,
+                21,
+                -1,
+                "-4.76%"
+            ],
+            [
+                "1016",
+                "2024-06",
+                30,
+                20,
+                10,
+                "50.00%"
+            ],
+            [
+                "1016",
+                "2024-07",
+                36,
+                30,
+                6,
+                "20.00%"
+            ],
+            [
+                "1016",
+                "2024-08",
+                18,
+                36,
+                -18,
+                "-50.00%"
+            ],
+            [
+                "1016",
+                "2024-09",
+                17,
+                18,
+                -1,
+                "-5.56%"
+            ],
+            [
+                "1016",
+                "2024-10",
+                16,
+                17,
+                -1,
+                "-5.88%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1016\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH monthly_flights AS (\n    SELECT\n        a.date_month,\n        count(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        b.supplier_id = \"1016\"\n        AND a.date_month BETWEEN '2024-01' AND '2024-12'\n    GROUP BY\n        a.date_month\n    ORDER BY\n        a.date_month\n),\nmonthly_changes AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        monthly_flights\n)\nSELECT\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    monthly_changes\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.37
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "247 Aviation Ltd的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1002",
+                "2024-02",
+                105,
+                86,
+                19,
+                "22.09%"
+            ],
+            [
+                "1002",
+                "2024-03",
+                87,
+                105,
+                -18,
+                "-17.14%"
+            ],
+            [
+                "1002",
+                "2024-04",
+                114,
+                87,
+                27,
+                "31.03%"
+            ],
+            [
+                "1002",
+                "2024-05",
+                86,
+                114,
+                -28,
+                "-24.56%"
+            ],
+            [
+                "1002",
+                "2024-06",
+                135,
+                86,
+                49,
+                "56.98%"
+            ],
+            [
+                "1002",
+                "2024-07",
+                103,
+                135,
+                -32,
+                "-23.70%"
+            ],
+            [
+                "1002",
+                "2024-08",
+                128,
+                103,
+                25,
+                "24.27%"
+            ],
+            [
+                "1002",
+                "2024-09",
+                84,
+                128,
+                -44,
+                "-34.38%"
+            ],
+            [
+                "1002",
+                "2024-10",
+                71,
+                84,
+                -13,
+                "-15.48%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH flight_counts AS (\n    SELECT\n        a.date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1002\"\n    GROUP BY\n        a.date_month\n),\nmonthly_trend AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        flight_counts\n)\nSELECT\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    monthly_trend\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.99
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Advanced Air LLC的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1025",
+                "2024-02",
+                510,
+                637,
+                -127,
+                "-19.94%"
+            ],
+            [
+                "1025",
+                "2024-03",
+                535,
+                510,
+                25,
+                "4.90%"
+            ],
+            [
+                "1025",
+                "2024-04",
+                606,
+                535,
+                71,
+                "13.27%"
+            ],
+            [
+                "1025",
+                "2024-05",
+                620,
+                606,
+                14,
+                "2.31%"
+            ],
+            [
+                "1025",
+                "2024-06",
+                509,
+                620,
+                -111,
+                "-17.90%"
+            ],
+            [
+                "1025",
+                "2024-07",
+                549,
+                509,
+                40,
+                "7.86%"
+            ],
+            [
+                "1025",
+                "2024-08",
+                621,
+                549,
+                72,
+                "13.11%"
+            ],
+            [
+                "1025",
+                "2024-09",
+                557,
+                621,
+                -64,
+                "-10.31%"
+            ],
+            [
+                "1025",
+                "2024-10",
+                439,
+                557,
+                -118,
+                "-21.18%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1025\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                COUNT(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1025\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n),\nbiao_2 AS (\n        SELECT \n                *, \n                LAG(num) OVER (PARTITION BY supplier_id ORDER BY date_month) AS last_num \n        FROM \n                biao_1\n) \nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.31
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Fly Tyrol的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1009",
+                "2024-02",
+                48,
+                39,
+                9,
+                "23.08%"
+            ],
+            [
+                "1009",
+                "2024-03",
+                42,
+                48,
+                -6,
+                "-12.50%"
+            ],
+            [
+                "1009",
+                "2024-04",
+                32,
+                42,
+                -10,
+                "-23.81%"
+            ],
+            [
+                "1009",
+                "2024-05",
+                71,
+                32,
+                39,
+                "121.88%"
+            ],
+            [
+                "1009",
+                "2024-06",
+                69,
+                71,
+                -2,
+                "-2.82%"
+            ],
+            [
+                "1009",
+                "2024-07",
+                61,
+                69,
+                -8,
+                "-11.59%"
+            ],
+            [
+                "1009",
+                "2024-08",
+                64,
+                61,
+                3,
+                "4.92%"
+            ],
+            [
+                "1009",
+                "2024-09",
+                46,
+                64,
+                -18,
+                "-28.13%"
+            ],
+            [
+                "1009",
+                "2024-10",
+                26,
+                46,
+                -20,
+                "-43.48%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( \n            SELECT *, \n            lag(num) over (PARTITION BY supplier_id ORDER BY date_month) AS last_num \n            FROM biao_1 \n        ) \nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat(round((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 9.39
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACM Air Charter的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1020",
+                "2024-02",
+                31,
+                23,
+                8,
+                "34.78%"
+            ],
+            [
+                "1020",
+                "2024-03",
+                31,
+                31,
+                0,
+                "0.00%"
+            ],
+            [
+                "1020",
+                "2024-04",
+                38,
+                31,
+                7,
+                "22.58%"
+            ],
+            [
+                "1020",
+                "2024-05",
+                47,
+                38,
+                9,
+                "23.68%"
+            ],
+            [
+                "1020",
+                "2024-06",
+                38,
+                47,
+                -9,
+                "-19.15%"
+            ],
+            [
+                "1020",
+                "2024-07",
+                31,
+                38,
+                -7,
+                "-18.42%"
+            ],
+            [
+                "1020",
+                "2024-08",
+                43,
+                31,
+                12,
+                "38.71%"
+            ],
+            [
+                "1020",
+                "2024-09",
+                49,
+                43,
+                6,
+                "13.95%"
+            ],
+            [
+                "1020",
+                "2024-10",
+                30,
+                49,
+                -19,
+                "-38.78%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1020\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT\n        a.date_month,\n        b.supplier_id,\n        count(*) AS num\n    FROM\n        zts_plane_flight_1 a\n    JOIN \n        aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1020\"\n    GROUP BY\n        a.date_month,\n        b.supplier_id\n),\nbiao_2 AS (\n    SELECT \n        *,\n        lag(num) OVER (PARTITION BY supplier_id ORDER BY date_month) AS last_num \n    FROM \n        biao_1\n) \nSELECT\n    supplier_id,\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    concat(round((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    biao_2\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.48
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Abelag Aviation的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1010",
+                "2024-02",
+                111,
+                69,
+                42,
+                "60.87%"
+            ],
+            [
+                "1010",
+                "2024-03",
+                100,
+                111,
+                -11,
+                "-9.91%"
+            ],
+            [
+                "1010",
+                "2024-04",
+                79,
+                100,
+                -21,
+                "-21.00%"
+            ],
+            [
+                "1010",
+                "2024-05",
+                74,
+                79,
+                -5,
+                "-6.33%"
+            ],
+            [
+                "1010",
+                "2024-06",
+                85,
+                74,
+                11,
+                "14.86%"
+            ],
+            [
+                "1010",
+                "2024-07",
+                83,
+                85,
+                -2,
+                "-2.35%"
+            ],
+            [
+                "1010",
+                "2024-08",
+                71,
+                83,
+                -12,
+                "-14.46%"
+            ],
+            [
+                "1010",
+                "2024-09",
+                75,
+                71,
+                4,
+                "5.63%"
+            ],
+            [
+                "1010",
+                "2024-10",
+                52,
+                75,
+                -23,
+                "-30.67%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1010\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH monthly_flight_counts AS (\n    SELECT\n        a.date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n    JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1010\"\n    GROUP BY\n        a.date_month\n),\nmonthly_trends AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        monthly_flight_counts\n)\nSELECT\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    monthly_trends\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.6
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Accent Airways LLC的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1017",
+                "2024-02",
+                30,
+                46,
+                -16,
+                "-34.78%"
+            ],
+            [
+                "1017",
+                "2024-03",
+                51,
+                30,
+                21,
+                "70.00%"
+            ],
+            [
+                "1017",
+                "2024-04",
+                56,
+                51,
+                5,
+                "9.80%"
+            ],
+            [
+                "1017",
+                "2024-05",
+                55,
+                56,
+                -1,
+                "-1.79%"
+            ],
+            [
+                "1017",
+                "2024-06",
+                52,
+                55,
+                -3,
+                "-5.45%"
+            ],
+            [
+                "1017",
+                "2024-07",
+                60,
+                52,
+                8,
+                "15.38%"
+            ],
+            [
+                "1017",
+                "2024-08",
+                49,
+                60,
+                -11,
+                "-18.33%"
+            ],
+            [
+                "1017",
+                "2024-09",
+                40,
+                49,
+                -9,
+                "-18.37%"
+            ],
+            [
+                "1017",
+                "2024-10",
+                27,
+                40,
+                -13,
+                "-32.50%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS (\n                SELECT\n                        *,\n                        lag(num) OVER (PARTITION BY supplier_id ORDER BY date_month) AS last_num\n                FROM\n                        biao_1\n        )\nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat(round((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.44
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Fly Tyrol的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1009",
+                "2024-02",
+                48,
+                39,
+                9,
+                "23.08%"
+            ],
+            [
+                "1009",
+                "2024-03",
+                42,
+                48,
+                -6,
+                "-12.50%"
+            ],
+            [
+                "1009",
+                "2024-04",
+                32,
+                42,
+                -10,
+                "-23.81%"
+            ],
+            [
+                "1009",
+                "2024-05",
+                71,
+                32,
+                39,
+                "121.88%"
+            ],
+            [
+                "1009",
+                "2024-06",
+                69,
+                71,
+                -2,
+                "-2.82%"
+            ],
+            [
+                "1009",
+                "2024-07",
+                61,
+                69,
+                -8,
+                "-11.59%"
+            ],
+            [
+                "1009",
+                "2024-08",
+                64,
+                61,
+                3,
+                "4.92%"
+            ],
+            [
+                "1009",
+                "2024-09",
+                46,
+                64,
+                -18,
+                "-28.13%"
+            ],
+            [
+                "1009",
+                "2024-10",
+                26,
+                46,
+                -20,
+                "-43.48%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) \nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.79
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AEM Aviation的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1028",
+                "2024-02",
+                9,
+                19,
+                -10,
+                "-52.63%"
+            ],
+            [
+                "1028",
+                "2024-03",
+                10,
+                9,
+                1,
+                "11.11%"
+            ],
+            [
+                "1028",
+                "2024-04",
+                11,
+                10,
+                1,
+                "10.00%"
+            ],
+            [
+                "1028",
+                "2024-09",
+                26,
+                11,
+                15,
+                "136.36%"
+            ],
+            [
+                "1028",
+                "2024-10",
+                22,
+                26,
+                -4,
+                "-15.38%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1028\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1028\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) \nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.41
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Advanced Air LLC的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1025",
+                "2024-02",
+                510,
+                637,
+                -127,
+                "-19.94%"
+            ],
+            [
+                "1025",
+                "2024-03",
+                535,
+                510,
+                25,
+                "4.90%"
+            ],
+            [
+                "1025",
+                "2024-04",
+                606,
+                535,
+                71,
+                "13.27%"
+            ],
+            [
+                "1025",
+                "2024-05",
+                620,
+                606,
+                14,
+                "2.31%"
+            ],
+            [
+                "1025",
+                "2024-06",
+                509,
+                620,
+                -111,
+                "-17.90%"
+            ],
+            [
+                "1025",
+                "2024-07",
+                549,
+                509,
+                40,
+                "7.86%"
+            ],
+            [
+                "1025",
+                "2024-08",
+                621,
+                549,
+                72,
+                "13.11%"
+            ],
+            [
+                "1025",
+                "2024-09",
+                557,
+                621,
+                -64,
+                "-10.31%"
+            ],
+            [
+                "1025",
+                "2024-10",
+                439,
+                557,
+                -118,
+                "-21.18%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1025\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1025\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 )\nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.19
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AB Jets的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1008",
+                "2024-02",
+                202,
+                206,
+                -4,
+                "-1.94%"
+            ],
+            [
+                "1008",
+                "2024-03",
+                241,
+                202,
+                39,
+                "19.31%"
+            ],
+            [
+                "1008",
+                "2024-04",
+                214,
+                241,
+                -27,
+                "-11.20%"
+            ],
+            [
+                "1008",
+                "2024-05",
+                232,
+                214,
+                18,
+                "8.41%"
+            ],
+            [
+                "1008",
+                "2024-06",
+                239,
+                232,
+                7,
+                "3.02%"
+            ],
+            [
+                "1008",
+                "2024-07",
+                256,
+                239,
+                17,
+                "7.11%"
+            ],
+            [
+                "1008",
+                "2024-08",
+                218,
+                256,
+                -38,
+                "-14.84%"
+            ],
+            [
+                "1008",
+                "2024-09",
+                226,
+                218,
+                8,
+                "3.67%"
+            ],
+            [
+                "1008",
+                "2024-10",
+                200,
+                226,
+                -26,
+                "-11.50%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1008\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH flight_counts AS (\n    SELECT\n        a.date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n    JOIN\n        aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1008\"\n    GROUP BY\n        a.date_month\n)\nSELECT\n    date_month,\n    num,\n    LAG(num) OVER (ORDER BY date_month) AS last_num,\n    num - LAG(num) OVER (ORDER BY date_month) AS diff_num,\n    CONCAT(ROUND(((num - LAG(num) OVER (ORDER BY date_month)) / LAG(num) OVER (ORDER BY date_month)) * 100, 2), '%') AS rate\nFROM\n    flight_counts\nWHERE\n    LAG(num) OVER (ORDER BY date_month) IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 8.26
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aergo International Pty Ltd的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1029",
+                "2024-02",
+                31,
+                20,
+                11,
+                "55.00%"
+            ],
+            [
+                "1029",
+                "2024-03",
+                46,
+                31,
+                15,
+                "48.39%"
+            ],
+            [
+                "1029",
+                "2024-04",
+                45,
+                46,
+                -1,
+                "-2.17%"
+            ],
+            [
+                "1029",
+                "2024-05",
+                37,
+                45,
+                -8,
+                "-17.78%"
+            ],
+            [
+                "1029",
+                "2024-06",
+                11,
+                37,
+                -26,
+                "-70.27%"
+            ],
+            [
+                "1029",
+                "2024-07",
+                15,
+                11,
+                4,
+                "36.36%"
+            ],
+            [
+                "1029",
+                "2024-08",
+                14,
+                15,
+                -1,
+                "-6.67%"
+            ],
+            [
+                "1029",
+                "2024-09",
+                2,
+                14,
+                -12,
+                "-85.71%"
+            ],
+            [
+                "1029",
+                "2024-10",
+                10,
+                2,
+                8,
+                "400.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1029\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1029\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n),\nbiao_2 AS (\n        SELECT \n                *, \n                lag(num) OVER (PARTITION BY supplier_id ORDER BY date_month) AS last_num \n        FROM \n                biao_1\n) \nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat(round((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.23
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "24/7 Jet Inc.的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1001",
+                "2024-02",
+                8,
+                16,
+                -8,
+                "-50.00%"
+            ],
+            [
+                "1001",
+                "2024-03",
+                6,
+                8,
+                -2,
+                "-25.00%"
+            ],
+            [
+                "1001",
+                "2024-04",
+                9,
+                6,
+                3,
+                "50.00%"
+            ],
+            [
+                "1001",
+                "2024-05",
+                24,
+                9,
+                15,
+                "166.67%"
+            ],
+            [
+                "1001",
+                "2024-06",
+                11,
+                24,
+                -13,
+                "-54.17%"
+            ],
+            [
+                "1001",
+                "2024-07",
+                20,
+                11,
+                9,
+                "81.82%"
+            ],
+            [
+                "1001",
+                "2024-08",
+                26,
+                20,
+                6,
+                "30.00%"
+            ],
+            [
+                "1001",
+                "2024-09",
+                21,
+                26,
+                -5,
+                "-19.23%"
+            ],
+            [
+                "1001",
+                "2024-10",
+                13,
+                21,
+                -8,
+                "-38.10%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1001\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH monthly_flight_counts AS (\n    SELECT\n        a.date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n    JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = '1001'\n    GROUP BY\n        a.date_month\n    ORDER BY\n        a.date_month\n),\nmonthly_trends AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        monthly_flight_counts\n)\nSELECT\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / NULLIF(last_num, 0) * 100, 2), '%') AS rate\nFROM\n    monthly_trends\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 14.99
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AAC Jet的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1007",
+                "2024-02",
+                4,
+                16,
+                -12,
+                "-75.00%"
+            ],
+            [
+                "1007",
+                "2024-03",
+                13,
+                4,
+                9,
+                "225.00%"
+            ],
+            [
+                "1007",
+                "2024-04",
+                13,
+                13,
+                0,
+                "0.00%"
+            ],
+            [
+                "1007",
+                "2024-05",
+                7,
+                13,
+                -6,
+                "-46.15%"
+            ],
+            [
+                "1007",
+                "2024-06",
+                20,
+                7,
+                13,
+                "185.71%"
+            ],
+            [
+                "1007",
+                "2024-07",
+                8,
+                20,
+                -12,
+                "-60.00%"
+            ],
+            [
+                "1007",
+                "2024-08",
+                12,
+                8,
+                4,
+                "50.00%"
+            ],
+            [
+                "1007",
+                "2024-09",
+                12,
+                12,
+                0,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.19
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "45 North Aviation的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1004",
+                "2024-02",
+                33,
+                14,
+                19,
+                "135.71%"
+            ],
+            [
+                "1004",
+                "2024-03",
+                35,
+                33,
+                2,
+                "6.06%"
+            ],
+            [
+                "1004",
+                "2024-04",
+                52,
+                35,
+                17,
+                "48.57%"
+            ],
+            [
+                "1004",
+                "2024-05",
+                19,
+                52,
+                -33,
+                "-63.46%"
+            ],
+            [
+                "1004",
+                "2024-06",
+                21,
+                19,
+                2,
+                "10.53%"
+            ],
+            [
+                "1004",
+                "2024-07",
+                48,
+                21,
+                27,
+                "128.57%"
+            ],
+            [
+                "1004",
+                "2024-08",
+                35,
+                48,
+                -13,
+                "-27.08%"
+            ],
+            [
+                "1004",
+                "2024-09",
+                43,
+                35,
+                8,
+                "22.86%"
+            ],
+            [
+                "1004",
+                "2024-10",
+                27,
+                43,
+                -16,
+                "-37.21%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1004\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH monthly_flight_counts AS (\n    SELECT\n        a.date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1004\"\n    GROUP BY\n        a.date_month\n    ORDER BY\n        a.date_month\n),\ntrend_analysis AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        monthly_flight_counts\n)\nSELECT\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    trend_analysis\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 13.03
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACASS Canada Ltd的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1015",
+                "2024-02",
+                42,
+                28,
+                14,
+                "50.00%"
+            ],
+            [
+                "1015",
+                "2024-03",
+                66,
+                42,
+                24,
+                "57.14%"
+            ],
+            [
+                "1015",
+                "2024-04",
+                20,
+                66,
+                -46,
+                "-69.70%"
+            ],
+            [
+                "1015",
+                "2024-05",
+                44,
+                20,
+                24,
+                "120.00%"
+            ],
+            [
+                "1015",
+                "2024-06",
+                44,
+                44,
+                0,
+                "0.00%"
+            ],
+            [
+                "1015",
+                "2024-07",
+                67,
+                44,
+                23,
+                "52.27%"
+            ],
+            [
+                "1015",
+                "2024-08",
+                54,
+                67,
+                -13,
+                "-19.40%"
+            ],
+            [
+                "1015",
+                "2024-09",
+                35,
+                54,
+                -19,
+                "-35.19%"
+            ],
+            [
+                "1015",
+                "2024-10",
+                21,
+                35,
+                -14,
+                "-40.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ORDER BY\n                a.date_month\n),\nbiao_2 AS (\n        SELECT\n                *,\n                lag(num) over (PARTITION BY supplier_id ORDER BY date_month) AS last_num\n        FROM\n                biao_1\n)\nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat(round((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.3
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACI Jet的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1019",
+                "2024-02",
+                127,
+                109,
+                18,
+                "16.51%"
+            ],
+            [
+                "1019",
+                "2024-03",
+                162,
+                127,
+                35,
+                "27.56%"
+            ],
+            [
+                "1019",
+                "2024-04",
+                141,
+                162,
+                -21,
+                "-12.96%"
+            ],
+            [
+                "1019",
+                "2024-05",
+                173,
+                141,
+                32,
+                "22.70%"
+            ],
+            [
+                "1019",
+                "2024-06",
+                138,
+                173,
+                -35,
+                "-20.23%"
+            ],
+            [
+                "1019",
+                "2024-07",
+                146,
+                138,
+                8,
+                "5.80%"
+            ],
+            [
+                "1019",
+                "2024-08",
+                149,
+                146,
+                3,
+                "2.05%"
+            ],
+            [
+                "1019",
+                "2024-09",
+                170,
+                149,
+                21,
+                "14.09%"
+            ],
+            [
+                "1019",
+                "2024-10",
+                128,
+                170,
+                -42,
+                "-24.71%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.77
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACM Air Charter的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1020",
+                "2024-02",
+                31,
+                23,
+                8,
+                "34.78%"
+            ],
+            [
+                "1020",
+                "2024-03",
+                31,
+                31,
+                0,
+                "0.00%"
+            ],
+            [
+                "1020",
+                "2024-04",
+                38,
+                31,
+                7,
+                "22.58%"
+            ],
+            [
+                "1020",
+                "2024-05",
+                47,
+                38,
+                9,
+                "23.68%"
+            ],
+            [
+                "1020",
+                "2024-06",
+                38,
+                47,
+                -9,
+                "-19.15%"
+            ],
+            [
+                "1020",
+                "2024-07",
+                31,
+                38,
+                -7,
+                "-18.42%"
+            ],
+            [
+                "1020",
+                "2024-08",
+                43,
+                31,
+                12,
+                "38.71%"
+            ],
+            [
+                "1020",
+                "2024-09",
+                49,
+                43,
+                6,
+                "13.95%"
+            ],
+            [
+                "1020",
+                "2024-10",
+                30,
+                49,
+                -19,
+                "-38.78%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1020\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT\n        a.date_month,\n        b.supplier_id,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1020\"\n    GROUP BY\n        a.date_month,\n        b.supplier_id\n),\nbiao_2 AS (\n    SELECT *,\n        LAG(num) OVER (PARTITION BY supplier_id ORDER BY date_month) AS last_num\n    FROM biao_1\n) \nSELECT\n    supplier_id,\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    biao_2\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.46
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ADM Aviation Executive的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1024",
+                "2024-02",
+                28,
+                26,
+                2,
+                "7.69%"
+            ],
+            [
+                "1024",
+                "2024-03",
+                39,
+                28,
+                11,
+                "39.29%"
+            ],
+            [
+                "1024",
+                "2024-04",
+                19,
+                39,
+                -20,
+                "-51.28%"
+            ],
+            [
+                "1024",
+                "2024-05",
+                34,
+                19,
+                15,
+                "78.95%"
+            ],
+            [
+                "1024",
+                "2024-06",
+                50,
+                34,
+                16,
+                "47.06%"
+            ],
+            [
+                "1024",
+                "2024-07",
+                61,
+                50,
+                11,
+                "22.00%"
+            ],
+            [
+                "1024",
+                "2024-08",
+                34,
+                61,
+                -27,
+                "-44.26%"
+            ],
+            [
+                "1024",
+                "2024-09",
+                30,
+                34,
+                -4,
+                "-11.76%"
+            ],
+            [
+                "1024",
+                "2024-10",
+                34,
+                30,
+                4,
+                "13.33%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1024\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH flight_count AS (\n    SELECT\n        a.date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1024\"\n    GROUP BY\n        a.date_month\n),\nmonthly_change AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        flight_count\n)\nSELECT\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    monthly_change\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 8.11
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "24/7 Jet Inc.的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1001",
+                "2024-02",
+                8,
+                16,
+                -8,
+                "-50.00%"
+            ],
+            [
+                "1001",
+                "2024-03",
+                6,
+                8,
+                -2,
+                "-25.00%"
+            ],
+            [
+                "1001",
+                "2024-04",
+                9,
+                6,
+                3,
+                "50.00%"
+            ],
+            [
+                "1001",
+                "2024-05",
+                24,
+                9,
+                15,
+                "166.67%"
+            ],
+            [
+                "1001",
+                "2024-06",
+                11,
+                24,
+                -13,
+                "-54.17%"
+            ],
+            [
+                "1001",
+                "2024-07",
+                20,
+                11,
+                9,
+                "81.82%"
+            ],
+            [
+                "1001",
+                "2024-08",
+                26,
+                20,
+                6,
+                "30.00%"
+            ],
+            [
+                "1001",
+                "2024-09",
+                21,
+                26,
+                -5,
+                "-19.23%"
+            ],
+            [
+                "1001",
+                "2024-10",
+                13,
+                21,
+                -8,
+                "-38.10%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1001\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                ai_database_dev.zts_plane_flight_1 a\n                JOIN ai_database_dev.aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1001\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) \nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num ) / last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.91
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Action Air Express的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1022",
+                "2024-02",
+                2,
+                4,
+                -2,
+                "-50.00%"
+            ],
+            [
+                "1022",
+                "2024-03",
+                4,
+                2,
+                2,
+                "100.00%"
+            ],
+            [
+                "1022",
+                "2024-04",
+                3,
+                4,
+                -1,
+                "-25.00%"
+            ],
+            [
+                "1022",
+                "2024-05",
+                4,
+                3,
+                1,
+                "33.33%"
+            ],
+            [
+                "1022",
+                "2024-06",
+                6,
+                4,
+                2,
+                "50.00%"
+            ],
+            [
+                "1022",
+                "2024-07",
+                6,
+                6,
+                0,
+                "0.00%"
+            ],
+            [
+                "1022",
+                "2024-08",
+                1,
+                6,
+                -5,
+                "-83.33%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1022\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH monthly_flight_counts AS (\n    SELECT\n        a.date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1022\"\n    GROUP BY\n        a.date_month\n),\ntrend_analysis AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        monthly_flight_counts\n)\nSELECT\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    trend_analysis\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 7.81
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AC Aviation Charter AG(Switzerland)的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1013",
+                "2024-03",
+                12,
+                5,
+                7,
+                "140.00%"
+            ],
+            [
+                "1013",
+                "2024-04",
+                15,
+                12,
+                3,
+                "25.00%"
+            ],
+            [
+                "1013",
+                "2024-05",
+                31,
+                15,
+                16,
+                "106.67%"
+            ],
+            [
+                "1013",
+                "2024-06",
+                29,
+                31,
+                -2,
+                "-6.45%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1013\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH monthly_flight_count AS (\n    SELECT\n        a.date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n    JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1013\"\n    GROUP BY\n        a.date_month\n),\nmonthly_flight_trend AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        monthly_flight_count\n)\nSELECT\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    monthly_flight_trend\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 15.12
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AEM Aviation的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1028",
+                "2024-02",
+                9,
+                19,
+                -10,
+                "-52.63%"
+            ],
+            [
+                "1028",
+                "2024-03",
+                10,
+                9,
+                1,
+                "11.11%"
+            ],
+            [
+                "1028",
+                "2024-04",
+                11,
+                10,
+                1,
+                "10.00%"
+            ],
+            [
+                "1028",
+                "2024-09",
+                26,
+                11,
+                15,
+                "136.36%"
+            ],
+            [
+                "1028",
+                "2024-10",
+                22,
+                26,
+                -4,
+                "-15.38%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1028\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1028\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS (\n            SELECT\n                *,\n                lag(num) OVER (PARTITION BY supplier_id ORDER BY date_month) AS last_num\n            FROM\n                biao_1\n        )\nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat(round((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.47
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACASS(Ireland)的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1016",
+                "2024-02",
+                21,
+                25,
+                -4,
+                "-16.00%"
+            ],
+            [
+                "1016",
+                "2024-03",
+                28,
+                21,
+                7,
+                "33.33%"
+            ],
+            [
+                "1016",
+                "2024-04",
+                21,
+                28,
+                -7,
+                "-25.00%"
+            ],
+            [
+                "1016",
+                "2024-05",
+                20,
+                21,
+                -1,
+                "-4.76%"
+            ],
+            [
+                "1016",
+                "2024-06",
+                30,
+                20,
+                10,
+                "50.00%"
+            ],
+            [
+                "1016",
+                "2024-07",
+                36,
+                30,
+                6,
+                "20.00%"
+            ],
+            [
+                "1016",
+                "2024-08",
+                18,
+                36,
+                -18,
+                "-50.00%"
+            ],
+            [
+                "1016",
+                "2024-09",
+                17,
+                18,
+                -1,
+                "-5.56%"
+            ],
+            [
+                "1016",
+                "2024-10",
+                16,
+                17,
+                -1,
+                "-5.88%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1016\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1016\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS (\n        SELECT\n                *,\n                LAG(num) OVER (PARTITION BY supplier_id ORDER BY date_month) AS last_num\n        FROM\n                biao_1\n        )\nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.58
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ABS Jets的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1012",
+                "2024-02",
+                17,
+                2,
+                15,
+                "750.00%"
+            ],
+            [
+                "1012",
+                "2024-03",
+                10,
+                17,
+                -7,
+                "-41.18%"
+            ],
+            [
+                "1012",
+                "2024-06",
+                32,
+                10,
+                22,
+                "220.00%"
+            ],
+            [
+                "1012",
+                "2024-07",
+                31,
+                32,
+                -1,
+                "-3.13%"
+            ],
+            [
+                "1012",
+                "2024-08",
+                31,
+                31,
+                0,
+                "0.00%"
+            ],
+            [
+                "1012",
+                "2024-09",
+                18,
+                31,
+                -13,
+                "-41.94%"
+            ],
+            [
+                "1012",
+                "2024-10",
+                19,
+                18,
+                1,
+                "5.56%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1012\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1012\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.11
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Acropolis Aviation Ltd的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1021",
+                "2024-02",
+                22,
+                4,
+                18,
+                "450.00%"
+            ],
+            [
+                "1021",
+                "2024-03",
+                12,
+                22,
+                -10,
+                "-45.45%"
+            ],
+            [
+                "1021",
+                "2024-04",
+                18,
+                12,
+                6,
+                "50.00%"
+            ],
+            [
+                "1021",
+                "2024-05",
+                21,
+                18,
+                3,
+                "16.67%"
+            ],
+            [
+                "1021",
+                "2024-06",
+                29,
+                21,
+                8,
+                "38.10%"
+            ],
+            [
+                "1021",
+                "2024-07",
+                23,
+                29,
+                -6,
+                "-20.69%"
+            ],
+            [
+                "1021",
+                "2024-08",
+                26,
+                23,
+                3,
+                "13.04%"
+            ],
+            [
+                "1021",
+                "2024-09",
+                23,
+                26,
+                -3,
+                "-11.54%"
+            ],
+            [
+                "1021",
+                "2024-10",
+                12,
+                23,
+                -11,
+                "-47.83%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH monthly_flight_count AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n        GROUP BY\n                a.date_month\n),\nmonthly_trend AS (\n        SELECT\n                *,\n                lag(num) OVER (ORDER BY date_month) AS last_num\n        FROM\n                monthly_flight_count\n)\nSELECT\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n        monthly_trend\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 12.35
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Advanced Air LLC的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1025",
+                "2024-02",
+                510,
+                637,
+                -127,
+                "-19.94%"
+            ],
+            [
+                "1025",
+                "2024-03",
+                535,
+                510,
+                25,
+                "4.90%"
+            ],
+            [
+                "1025",
+                "2024-04",
+                606,
+                535,
+                71,
+                "13.27%"
+            ],
+            [
+                "1025",
+                "2024-05",
+                620,
+                606,
+                14,
+                "2.31%"
+            ],
+            [
+                "1025",
+                "2024-06",
+                509,
+                620,
+                -111,
+                "-17.90%"
+            ],
+            [
+                "1025",
+                "2024-07",
+                549,
+                509,
+                40,
+                "7.86%"
+            ],
+            [
+                "1025",
+                "2024-08",
+                621,
+                549,
+                72,
+                "13.11%"
+            ],
+            [
+                "1025",
+                "2024-09",
+                557,
+                621,
+                -64,
+                "-10.31%"
+            ],
+            [
+                "1025",
+                "2024-10",
+                439,
+                557,
+                -118,
+                "-21.18%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1025\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT\n        a.date_month,\n        b.supplier_id,\n        count(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1025\"\n    GROUP BY\n        a.date_month,\n        b.supplier_id\n),\nbiao_2 AS (\n    SELECT *,\n    lag(num) over (PARTITION BY supplier_id ORDER BY date_month) AS last_num\n    FROM biao_1\n)\nSELECT\n    supplier_id,\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    concat(round((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    biao_2\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 24.14
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ABS Jets的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1012",
+                "2024-02",
+                17,
+                2,
+                15,
+                "750.00%"
+            ],
+            [
+                "1012",
+                "2024-03",
+                10,
+                17,
+                -7,
+                "-41.18%"
+            ],
+            [
+                "1012",
+                "2024-06",
+                32,
+                10,
+                22,
+                "220.00%"
+            ],
+            [
+                "1012",
+                "2024-07",
+                31,
+                32,
+                -1,
+                "-3.13%"
+            ],
+            [
+                "1012",
+                "2024-08",
+                31,
+                31,
+                0,
+                "0.00%"
+            ],
+            [
+                "1012",
+                "2024-09",
+                18,
+                31,
+                -13,
+                "-41.94%"
+            ],
+            [
+                "1012",
+                "2024-10",
+                19,
+                18,
+                1,
+                "5.56%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1012\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH monthly_flights AS (\n    SELECT\n        a.date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1012\"\n    GROUP BY\n        a.date_month\n),\nmonthly_changes AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        monthly_flights\n)\nSELECT\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    monthly_changes\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 9.2
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "45 North Aviation的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1004",
+                "2024-02",
+                33,
+                14,
+                19,
+                "135.71%"
+            ],
+            [
+                "1004",
+                "2024-03",
+                35,
+                33,
+                2,
+                "6.06%"
+            ],
+            [
+                "1004",
+                "2024-04",
+                52,
+                35,
+                17,
+                "48.57%"
+            ],
+            [
+                "1004",
+                "2024-05",
+                19,
+                52,
+                -33,
+                "-63.46%"
+            ],
+            [
+                "1004",
+                "2024-06",
+                21,
+                19,
+                2,
+                "10.53%"
+            ],
+            [
+                "1004",
+                "2024-07",
+                48,
+                21,
+                27,
+                "128.57%"
+            ],
+            [
+                "1004",
+                "2024-08",
+                35,
+                48,
+                -13,
+                "-27.08%"
+            ],
+            [
+                "1004",
+                "2024-09",
+                43,
+                35,
+                8,
+                "22.86%"
+            ],
+            [
+                "1004",
+                "2024-10",
+                27,
+                43,
+                -16,
+                "-37.21%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1004\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1004\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) \nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.8
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "247 Aviation Ltd的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1002",
+                "2024-02",
+                105,
+                86,
+                19,
+                "22.09%"
+            ],
+            [
+                "1002",
+                "2024-03",
+                87,
+                105,
+                -18,
+                "-17.14%"
+            ],
+            [
+                "1002",
+                "2024-04",
+                114,
+                87,
+                27,
+                "31.03%"
+            ],
+            [
+                "1002",
+                "2024-05",
+                86,
+                114,
+                -28,
+                "-24.56%"
+            ],
+            [
+                "1002",
+                "2024-06",
+                135,
+                86,
+                49,
+                "56.98%"
+            ],
+            [
+                "1002",
+                "2024-07",
+                103,
+                135,
+                -32,
+                "-23.70%"
+            ],
+            [
+                "1002",
+                "2024-08",
+                128,
+                103,
+                25,
+                "24.27%"
+            ],
+            [
+                "1002",
+                "2024-09",
+                84,
+                128,
+                -44,
+                "-34.38%"
+            ],
+            [
+                "1002",
+                "2024-10",
+                71,
+                84,
+                -13,
+                "-15.48%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( \n            SELECT \n                *, \n                lag(num) OVER (PARTITION BY supplier_id ORDER BY date_month) AS last_num \n            FROM \n                biao_1 \n        ) \nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat(round((num - last_num)/last_num * 100, 2), '%') AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.21
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AC Aviation Charter AG(Switzerland)的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1013",
+                "2024-03",
+                12,
+                5,
+                7,
+                "140.00%"
+            ],
+            [
+                "1013",
+                "2024-04",
+                15,
+                12,
+                3,
+                "25.00%"
+            ],
+            [
+                "1013",
+                "2024-05",
+                31,
+                15,
+                16,
+                "106.67%"
+            ],
+            [
+                "1013",
+                "2024-06",
+                29,
+                31,
+                -2,
+                "-6.45%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1013\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH monthly_flights AS (\n    SELECT\n        a.date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1013\"\n    GROUP BY\n        a.date_month\n),\nmonthly_trend AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        monthly_flights\n)\nSELECT\n    date_month,\n    num,\n    last_num,\n    (num - last_num) AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    monthly_trend\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 13.05
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AAC Jet的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1007",
+                "2024-02",
+                4,
+                16,
+                -12,
+                "-75.00%"
+            ],
+            [
+                "1007",
+                "2024-03",
+                13,
+                4,
+                9,
+                "225.00%"
+            ],
+            [
+                "1007",
+                "2024-04",
+                13,
+                13,
+                0,
+                "0.00%"
+            ],
+            [
+                "1007",
+                "2024-05",
+                7,
+                13,
+                -6,
+                "-46.15%"
+            ],
+            [
+                "1007",
+                "2024-06",
+                20,
+                7,
+                13,
+                "185.71%"
+            ],
+            [
+                "1007",
+                "2024-07",
+                8,
+                20,
+                -12,
+                "-60.00%"
+            ],
+            [
+                "1007",
+                "2024-08",
+                12,
+                8,
+                4,
+                "50.00%"
+            ],
+            [
+                "1007",
+                "2024-09",
+                12,
+                12,
+                0,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1007\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) \nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.72
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACI Jet的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1019",
+                "2024-02",
+                127,
+                109,
+                18,
+                "16.51%"
+            ],
+            [
+                "1019",
+                "2024-03",
+                162,
+                127,
+                35,
+                "27.56%"
+            ],
+            [
+                "1019",
+                "2024-04",
+                141,
+                162,
+                -21,
+                "-12.96%"
+            ],
+            [
+                "1019",
+                "2024-05",
+                173,
+                141,
+                32,
+                "22.70%"
+            ],
+            [
+                "1019",
+                "2024-06",
+                138,
+                173,
+                -35,
+                "-20.23%"
+            ],
+            [
+                "1019",
+                "2024-07",
+                146,
+                138,
+                8,
+                "5.80%"
+            ],
+            [
+                "1019",
+                "2024-08",
+                149,
+                146,
+                3,
+                "2.05%"
+            ],
+            [
+                "1019",
+                "2024-09",
+                170,
+                149,
+                21,
+                "14.09%"
+            ],
+            [
+                "1019",
+                "2024-10",
+                128,
+                170,
+                -42,
+                "-24.71%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1019\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 15.78
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ADM Aviation Executive的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1024",
+                "2024-02",
+                28,
+                26,
+                2,
+                "7.69%"
+            ],
+            [
+                "1024",
+                "2024-03",
+                39,
+                28,
+                11,
+                "39.29%"
+            ],
+            [
+                "1024",
+                "2024-04",
+                19,
+                39,
+                -20,
+                "-51.28%"
+            ],
+            [
+                "1024",
+                "2024-05",
+                34,
+                19,
+                15,
+                "78.95%"
+            ],
+            [
+                "1024",
+                "2024-06",
+                50,
+                34,
+                16,
+                "47.06%"
+            ],
+            [
+                "1024",
+                "2024-07",
+                61,
+                50,
+                11,
+                "22.00%"
+            ],
+            [
+                "1024",
+                "2024-08",
+                34,
+                61,
+                -27,
+                "-44.26%"
+            ],
+            [
+                "1024",
+                "2024-09",
+                30,
+                34,
+                -4,
+                "-11.76%"
+            ],
+            [
+                "1024",
+                "2024-10",
+                34,
+                30,
+                4,
+                "13.33%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1024\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1024\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 19.49
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Accent Airways LLC的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1017",
+                "2024-02",
+                30,
+                46,
+                -16,
+                "-34.78%"
+            ],
+            [
+                "1017",
+                "2024-03",
+                51,
+                30,
+                21,
+                "70.00%"
+            ],
+            [
+                "1017",
+                "2024-04",
+                56,
+                51,
+                5,
+                "9.80%"
+            ],
+            [
+                "1017",
+                "2024-05",
+                55,
+                56,
+                -1,
+                "-1.79%"
+            ],
+            [
+                "1017",
+                "2024-06",
+                52,
+                55,
+                -3,
+                "-5.45%"
+            ],
+            [
+                "1017",
+                "2024-07",
+                60,
+                52,
+                8,
+                "15.38%"
+            ],
+            [
+                "1017",
+                "2024-08",
+                49,
+                60,
+                -11,
+                "-18.33%"
+            ],
+            [
+                "1017",
+                "2024-09",
+                40,
+                49,
+                -9,
+                "-18.37%"
+            ],
+            [
+                "1017",
+                "2024-10",
+                27,
+                40,
+                -13,
+                "-32.50%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1017\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 13.46
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "A-OK Jets的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1005",
+                "2024-02",
+                62,
+                68,
+                -6,
+                "-8.82%"
+            ],
+            [
+                "1005",
+                "2024-03",
+                55,
+                62,
+                -7,
+                "-11.29%"
+            ],
+            [
+                "1005",
+                "2024-04",
+                77,
+                55,
+                22,
+                "40.00%"
+            ],
+            [
+                "1005",
+                "2024-05",
+                78,
+                77,
+                1,
+                "1.30%"
+            ],
+            [
+                "1005",
+                "2024-06",
+                68,
+                78,
+                -10,
+                "-12.82%"
+            ],
+            [
+                "1005",
+                "2024-07",
+                54,
+                68,
+                -14,
+                "-20.59%"
+            ],
+            [
+                "1005",
+                "2024-08",
+                53,
+                54,
+                -1,
+                "-1.85%"
+            ],
+            [
+                "1005",
+                "2024-09",
+                31,
+                53,
+                -22,
+                "-41.51%"
+            ],
+            [
+                "1005",
+                "2024-10",
+                9,
+                31,
+                -22,
+                "-70.97%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1005\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1005\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( \n        SELECT \n                *, \n                LAG(num) OVER (PARTITION BY supplier_id ORDER BY date_month) AS last_num \n        FROM \n                biao_1 \n        )\nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 11.44
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aelia S.R.L的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1027",
+                "2024-02",
+                13,
+                30,
+                -17,
+                "-56.67%"
+            ],
+            [
+                "1027",
+                "2024-03",
+                42,
+                13,
+                29,
+                "223.08%"
+            ],
+            [
+                "1027",
+                "2024-04",
+                45,
+                42,
+                3,
+                "7.14%"
+            ],
+            [
+                "1027",
+                "2024-05",
+                78,
+                45,
+                33,
+                "73.33%"
+            ],
+            [
+                "1027",
+                "2024-06",
+                56,
+                78,
+                -22,
+                "-28.21%"
+            ],
+            [
+                "1027",
+                "2024-07",
+                41,
+                56,
+                -15,
+                "-26.79%"
+            ],
+            [
+                "1027",
+                "2024-08",
+                107,
+                41,
+                66,
+                "160.98%"
+            ],
+            [
+                "1027",
+                "2024-09",
+                71,
+                107,
+                -36,
+                "-33.64%"
+            ],
+            [
+                "1027",
+                "2024-10",
+                39,
+                71,
+                -32,
+                "-45.07%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1027\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1027\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) \nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 6.42
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Abelag Aviation的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1010",
+                "2024-02",
+                111,
+                69,
+                42,
+                "60.87%"
+            ],
+            [
+                "1010",
+                "2024-03",
+                100,
+                111,
+                -11,
+                "-9.91%"
+            ],
+            [
+                "1010",
+                "2024-04",
+                79,
+                100,
+                -21,
+                "-21.00%"
+            ],
+            [
+                "1010",
+                "2024-05",
+                74,
+                79,
+                -5,
+                "-6.33%"
+            ],
+            [
+                "1010",
+                "2024-06",
+                85,
+                74,
+                11,
+                "14.86%"
+            ],
+            [
+                "1010",
+                "2024-07",
+                83,
+                85,
+                -2,
+                "-2.35%"
+            ],
+            [
+                "1010",
+                "2024-08",
+                71,
+                83,
+                -12,
+                "-14.46%"
+            ],
+            [
+                "1010",
+                "2024-09",
+                75,
+                71,
+                4,
+                "5.63%"
+            ],
+            [
+                "1010",
+                "2024-10",
+                52,
+                75,
+                -23,
+                "-30.67%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1010\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT\n        a.date_month,\n        b.supplier_id,\n        count(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1010\"\n    GROUP BY\n        a.date_month,\n        b.supplier_id\n),\nbiao_2 AS (\n    SELECT\n        *,\n        lag(num) over (PARTITION BY supplier_id ORDER BY date_month) AS last_num\n    FROM\n        biao_1\n)\nSELECT\n    supplier_id,\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    concat(round((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    biao_2\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 16.47
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "247 Aviation Ltd的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1002",
+                "2024-02",
+                105,
+                86,
+                19,
+                "22.09%"
+            ],
+            [
+                "1002",
+                "2024-03",
+                87,
+                105,
+                -18,
+                "-17.14%"
+            ],
+            [
+                "1002",
+                "2024-04",
+                114,
+                87,
+                27,
+                "31.03%"
+            ],
+            [
+                "1002",
+                "2024-05",
+                86,
+                114,
+                -28,
+                "-24.56%"
+            ],
+            [
+                "1002",
+                "2024-06",
+                135,
+                86,
+                49,
+                "56.98%"
+            ],
+            [
+                "1002",
+                "2024-07",
+                103,
+                135,
+                -32,
+                "-23.70%"
+            ],
+            [
+                "1002",
+                "2024-08",
+                128,
+                103,
+                25,
+                "24.27%"
+            ],
+            [
+                "1002",
+                "2024-09",
+                84,
+                128,
+                -44,
+                "-34.38%"
+            ],
+            [
+                "1002",
+                "2024-10",
+                71,
+                84,
+                -13,
+                "-15.48%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1002\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH monthly_flight_count AS (\n    SELECT\n        a.date_month,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = '1002'\n    GROUP BY\n        a.date_month\n),\nmonthly_trend AS (\n    SELECT\n        date_month,\n        num,\n        LAG(num) OVER (ORDER BY date_month) AS last_num\n    FROM\n        monthly_flight_count\n)\nSELECT\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    monthly_trend\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 13.15
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Action Air Express的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1022",
+                "2024-02",
+                2,
+                4,
+                -2,
+                "-50.00%"
+            ],
+            [
+                "1022",
+                "2024-03",
+                4,
+                2,
+                2,
+                "100.00%"
+            ],
+            [
+                "1022",
+                "2024-04",
+                3,
+                4,
+                -1,
+                "-25.00%"
+            ],
+            [
+                "1022",
+                "2024-05",
+                4,
+                3,
+                1,
+                "33.33%"
+            ],
+            [
+                "1022",
+                "2024-06",
+                6,
+                4,
+                2,
+                "50.00%"
+            ],
+            [
+                "1022",
+                "2024-07",
+                6,
+                6,
+                0,
+                "0.00%"
+            ],
+            [
+                "1022",
+                "2024-08",
+                1,
+                6,
+                -5,
+                "-83.33%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1022\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH flight_counts AS (\n    SELECT\n        a.date_month,\n        b.supplier_id,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1022\"\n    GROUP BY\n        a.date_month,\n        b.supplier_id\n),\nmonthly_changes AS (\n    SELECT\n        *,\n        LAG(num) OVER (PARTITION BY supplier_id ORDER BY date_month) AS last_num\n    FROM\n        flight_counts\n)\nSELECT\n    supplier_id,\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    monthly_changes\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 10.59
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Acropolis Aviation Ltd的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1021",
+                "2024-02",
+                22,
+                4,
+                18,
+                "450.00%"
+            ],
+            [
+                "1021",
+                "2024-03",
+                12,
+                22,
+                -10,
+                "-45.45%"
+            ],
+            [
+                "1021",
+                "2024-04",
+                18,
+                12,
+                6,
+                "50.00%"
+            ],
+            [
+                "1021",
+                "2024-05",
+                21,
+                18,
+                3,
+                "16.67%"
+            ],
+            [
+                "1021",
+                "2024-06",
+                29,
+                21,
+                8,
+                "38.10%"
+            ],
+            [
+                "1021",
+                "2024-07",
+                23,
+                29,
+                -6,
+                "-20.69%"
+            ],
+            [
+                "1021",
+                "2024-08",
+                26,
+                23,
+                3,
+                "13.04%"
+            ],
+            [
+                "1021",
+                "2024-09",
+                23,
+                26,
+                -3,
+                "-11.54%"
+            ],
+            [
+                "1021",
+                "2024-10",
+                12,
+                23,
+                -11,
+                "-47.83%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1021\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) \nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.98
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AC Aviation Charter(Austria)的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1014",
+                "2024-02",
+                13,
+                19,
+                -6,
+                "-31.58%"
+            ],
+            [
+                "1014",
+                "2024-03",
+                38,
+                13,
+                25,
+                "192.31%"
+            ],
+            [
+                "1014",
+                "2024-04",
+                26,
+                38,
+                -12,
+                "-31.58%"
+            ],
+            [
+                "1014",
+                "2024-05",
+                25,
+                26,
+                -1,
+                "-3.85%"
+            ],
+            [
+                "1014",
+                "2024-06",
+                17,
+                25,
+                -8,
+                "-32.00%"
+            ],
+            [
+                "1014",
+                "2024-07",
+                16,
+                17,
+                -1,
+                "-5.88%"
+            ],
+            [
+                "1014",
+                "2024-08",
+                12,
+                16,
+                -4,
+                "-25.00%"
+            ],
+            [
+                "1014",
+                "2024-09",
+                28,
+                12,
+                16,
+                "133.33%"
+            ],
+            [
+                "1014",
+                "2024-10",
+                15,
+                28,
+                -13,
+                "-46.43%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1014\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH flights_per_month AS (\n    SELECT\n        a.date_month,\n        b.supplier_id,\n        COUNT(*) AS total_flights\n    FROM\n        zts_plane_flight_1 a\n    JOIN\n        aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = '1014'\n    GROUP BY\n        a.date_month,\n        b.supplier_id\n),\nflights_change AS (\n    SELECT\n        date_month,\n        total_flights,\n        LAG(total_flights) OVER (ORDER BY date_month) AS previous_flights\n    FROM\n        flights_per_month\n)\nSELECT\n    date_month,\n    total_flights,\n    previous_flights,\n    total_flights - previous_flights AS flights_difference,\n    CONCAT(ROUND(((total_flights - previous_flights) / previous_flights) * 100, 2), '%') AS change_rate\nFROM\n    flights_change\nWHERE\n    previous_flights IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no",
+        "time_cost": 8.44
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Fly Tyrol的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1009",
+                "2024-02",
+                48,
+                39,
+                9,
+                "23.08%"
+            ],
+            [
+                "1009",
+                "2024-03",
+                42,
+                48,
+                -6,
+                "-12.50%"
+            ],
+            [
+                "1009",
+                "2024-04",
+                32,
+                42,
+                -10,
+                "-23.81%"
+            ],
+            [
+                "1009",
+                "2024-05",
+                71,
+                32,
+                39,
+                "121.88%"
+            ],
+            [
+                "1009",
+                "2024-06",
+                69,
+                71,
+                -2,
+                "-2.82%"
+            ],
+            [
+                "1009",
+                "2024-07",
+                61,
+                69,
+                -8,
+                "-11.59%"
+            ],
+            [
+                "1009",
+                "2024-08",
+                64,
+                61,
+                3,
+                "4.92%"
+            ],
+            [
+                "1009",
+                "2024-09",
+                46,
+                64,
+                -18,
+                "-28.13%"
+            ],
+            [
+                "1009",
+                "2024-10",
+                26,
+                46,
+                -20,
+                "-43.48%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1009\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 8.2
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACASS Canada Ltd的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1015",
+                "2024-02",
+                42,
+                28,
+                14,
+                "50.00%"
+            ],
+            [
+                "1015",
+                "2024-03",
+                66,
+                42,
+                24,
+                "57.14%"
+            ],
+            [
+                "1015",
+                "2024-04",
+                20,
+                66,
+                -46,
+                "-69.70%"
+            ],
+            [
+                "1015",
+                "2024-05",
+                44,
+                20,
+                24,
+                "120.00%"
+            ],
+            [
+                "1015",
+                "2024-06",
+                44,
+                44,
+                0,
+                "0.00%"
+            ],
+            [
+                "1015",
+                "2024-07",
+                67,
+                44,
+                23,
+                "52.27%"
+            ],
+            [
+                "1015",
+                "2024-08",
+                54,
+                67,
+                -13,
+                "-19.40%"
+            ],
+            [
+                "1015",
+                "2024-09",
+                35,
+                54,
+                -19,
+                "-35.19%"
+            ],
+            [
+                "1015",
+                "2024-10",
+                21,
+                35,
+                -14,
+                "-40.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1015\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) \nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.54
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AEM Aviation的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1028",
+                "2024-02",
+                9,
+                19,
+                -10,
+                "-52.63%"
+            ],
+            [
+                "1028",
+                "2024-03",
+                10,
+                9,
+                1,
+                "11.11%"
+            ],
+            [
+                "1028",
+                "2024-04",
+                11,
+                10,
+                1,
+                "10.00%"
+            ],
+            [
+                "1028",
+                "2024-09",
+                26,
+                11,
+                15,
+                "136.36%"
+            ],
+            [
+                "1028",
+                "2024-10",
+                22,
+                26,
+                -4,
+                "-15.38%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1028\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1028\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 14.4
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Air Charter LLC的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1030",
+                "2024-02",
+                47,
+                55,
+                -8,
+                "-14.55%"
+            ],
+            [
+                "1030",
+                "2024-03",
+                46,
+                47,
+                -1,
+                "-2.13%"
+            ],
+            [
+                "1030",
+                "2024-04",
+                34,
+                46,
+                -12,
+                "-26.09%"
+            ],
+            [
+                "1030",
+                "2024-05",
+                50,
+                34,
+                16,
+                "47.06%"
+            ],
+            [
+                "1030",
+                "2024-06",
+                53,
+                50,
+                3,
+                "6.00%"
+            ],
+            [
+                "1030",
+                "2024-07",
+                59,
+                53,
+                6,
+                "11.32%"
+            ],
+            [
+                "1030",
+                "2024-08",
+                42,
+                59,
+                -17,
+                "-28.81%"
+            ],
+            [
+                "1030",
+                "2024-09",
+                46,
+                42,
+                4,
+                "9.52%"
+            ],
+            [
+                "1030",
+                "2024-10",
+                61,
+                46,
+                15,
+                "32.61%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1030\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1030\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n),\nbiao_2 AS ( \n        SELECT *, lag(num) over (PARTITION BY supplier_id ORDER BY date_month) AS last_num \n        FROM biao_1 \n)\nSELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat(round((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 12.23
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aergo International Pty Ltd的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1029",
+                "2024-02",
+                31,
+                20,
+                11,
+                "55.00%"
+            ],
+            [
+                "1029",
+                "2024-03",
+                46,
+                31,
+                15,
+                "48.39%"
+            ],
+            [
+                "1029",
+                "2024-04",
+                45,
+                46,
+                -1,
+                "-2.17%"
+            ],
+            [
+                "1029",
+                "2024-05",
+                37,
+                45,
+                -8,
+                "-17.78%"
+            ],
+            [
+                "1029",
+                "2024-06",
+                11,
+                37,
+                -26,
+                "-70.27%"
+            ],
+            [
+                "1029",
+                "2024-07",
+                15,
+                11,
+                4,
+                "36.36%"
+            ],
+            [
+                "1029",
+                "2024-08",
+                14,
+                15,
+                -1,
+                "-6.67%"
+            ],
+            [
+                "1029",
+                "2024-09",
+                2,
+                14,
+                -12,
+                "-85.71%"
+            ],
+            [
+                "1029",
+                "2024-10",
+                10,
+                2,
+                8,
+                "400.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1029\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n    SELECT\n        a.date_month,\n        b.supplier_id,\n        count(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND b.supplier_id = \"1029\"\n    GROUP BY\n        a.date_month,\n        b.supplier_id\n),\nbiao_2 AS ( \n    SELECT \n        *, \n        lag(num) over (PARTITION BY supplier_id ORDER BY date_month ) AS last_num \n    FROM biao_1 \n) \nSELECT\n    supplier_id,\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    concat(round((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    biao_2\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.7
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Abelag Aviation的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1010",
+                "2024-02",
+                111,
+                69,
+                42,
+                "60.87%"
+            ],
+            [
+                "1010",
+                "2024-03",
+                100,
+                111,
+                -11,
+                "-9.91%"
+            ],
+            [
+                "1010",
+                "2024-04",
+                79,
+                100,
+                -21,
+                "-21.00%"
+            ],
+            [
+                "1010",
+                "2024-05",
+                74,
+                79,
+                -5,
+                "-6.33%"
+            ],
+            [
+                "1010",
+                "2024-06",
+                85,
+                74,
+                11,
+                "14.86%"
+            ],
+            [
+                "1010",
+                "2024-07",
+                83,
+                85,
+                -2,
+                "-2.35%"
+            ],
+            [
+                "1010",
+                "2024-08",
+                71,
+                83,
+                -12,
+                "-14.46%"
+            ],
+            [
+                "1010",
+                "2024-09",
+                75,
+                71,
+                4,
+                "5.63%"
+            ],
+            [
+                "1010",
+                "2024-10",
+                52,
+                75,
+                -23,
+                "-30.67%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1010\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH monthly_flights AS (\n    SELECT\n        a.date_month,\n        b.supplier_id,\n        COUNT(*) AS num\n    FROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n    WHERE\n        a.date_month BETWEEN '2024-01' AND '2024-12'\n        AND b.supplier_id = \"1010\"\n    GROUP BY\n        a.date_month,\n        b.supplier_id\n),\ntrend_analysis AS (\n    SELECT\n        *,\n        LAG(num) OVER (PARTITION BY supplier_id ORDER BY date_month) AS last_num\n    FROM\n        monthly_flights\n)\nSELECT\n    supplier_id,\n    date_month,\n    num,\n    last_num,\n    num - last_num AS diff_num,\n    CONCAT(ROUND((num - last_num) / last_num * 100, 2), '%') AS rate\nFROM\n    trend_analysis\nWHERE\n    last_num IS NOT NULL\nORDER BY\n    date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 16.03
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aergo International Pty Ltd的航班总量在2024年每个月的变化趋势如何？",
+        "A": [
+            [
+                "1029",
+                "2024-02",
+                31,
+                20,
+                11,
+                "55.00%"
+            ],
+            [
+                "1029",
+                "2024-03",
+                46,
+                31,
+                15,
+                "48.39%"
+            ],
+            [
+                "1029",
+                "2024-04",
+                45,
+                46,
+                -1,
+                "-2.17%"
+            ],
+            [
+                "1029",
+                "2024-05",
+                37,
+                45,
+                -8,
+                "-17.78%"
+            ],
+            [
+                "1029",
+                "2024-06",
+                11,
+                37,
+                -26,
+                "-70.27%"
+            ],
+            [
+                "1029",
+                "2024-07",
+                15,
+                11,
+                4,
+                "36.36%"
+            ],
+            [
+                "1029",
+                "2024-08",
+                14,
+                15,
+                -1,
+                "-6.67%"
+            ],
+            [
+                "1029",
+                "2024-09",
+                2,
+                14,
+                -12,
+                "-85.71%"
+            ],
+            [
+                "1029",
+                "2024-10",
+                10,
+                2,
+                8,
+                "400.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1029\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.supplier_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN aircraft_details b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.supplier_id = \"1029\"\n        GROUP BY\n                a.date_month,\n                b.supplier_id\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( PARTITION BY supplier_id ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        supplier_id,\n        date_month,\n        num,\n        last_num,\n        num - last_num AS diff_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_2\nWHERE\n        last_num IS NOT NULL\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes",
+        "time_cost": 7.24
+    },
+    {
+        "correct_rate": 72.0,
+        "sample_size": 50,
+        "correct_count": 36,
+        "average_time": 11.33
+    }
+]
