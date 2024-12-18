@@ -1,0 +1,4781 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "24/7 Jet Inc.在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Hawker 900XP",
+                4.34
+            ],
+            [
+                "2024-01",
+                "Bombardier Challenger 601",
+                2.19
+            ],
+            [
+                "2024-02",
+                "Bombardier Challenger 601",
+                1.59
+            ],
+            [
+                "2024-03",
+                "Bombardier Challenger 601",
+                2.75
+            ],
+            [
+                "2024-04",
+                "Hawker 900XP",
+                2.88
+            ],
+            [
+                "2024-04",
+                "Bombardier Challenger 601",
+                1.85
+            ],
+            [
+                "2024-05",
+                "Hawker 900XP",
+                1.92
+            ],
+            [
+                "2024-06",
+                "Hawker 900XP",
+                2.47
+            ],
+            [
+                "2024-07",
+                "Hawker 900XP",
+                1.48
+            ],
+            [
+                "2024-08",
+                "Hawker 900XP",
+                1.7
+            ],
+            [
+                "2024-09",
+                "Hawker 900XP",
+                1.87
+            ],
+            [
+                "2024-10",
+                "Hawker 900XP",
+                2.72
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1001\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "247 Aviation Ltd在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Pilatus PC-12",
+                1.01
+            ],
+            [
+                "2024-02",
+                "Pilatus PC-12",
+                0.96
+            ],
+            [
+                "2024-03",
+                "Pilatus PC-12",
+                0.93
+            ],
+            [
+                "2024-04",
+                "Pilatus PC-12",
+                0.98
+            ],
+            [
+                "2024-05",
+                "Pilatus PC-12",
+                0.95
+            ],
+            [
+                "2024-06",
+                "Pilatus PC-12",
+                0.97
+            ],
+            [
+                "2024-07",
+                "Pilatus PC-12",
+                1.07
+            ],
+            [
+                "2024-08",
+                "Pilatus PC-12",
+                0.99
+            ],
+            [
+                "2024-09",
+                "Pilatus PC-12",
+                1.02
+            ],
+            [
+                "2024-10",
+                "Pilatus PC-12",
+                0.98
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1002\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "45 North Aviation在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation Encore",
+                1.92
+            ],
+            [
+                "2024-01",
+                "Beechcraft King Air 200",
+                0.61
+            ],
+            [
+                "2024-02",
+                "Cessna Citation Latitude",
+                1.84
+            ],
+            [
+                "2024-02",
+                "Cessna Citation Encore",
+                2.81
+            ],
+            [
+                "2024-02",
+                "Beechcraft King Air 200",
+                1.63
+            ],
+            [
+                "2024-03",
+                "Cessna Citation Latitude",
+                2.39
+            ],
+            [
+                "2024-03",
+                "Cessna Citation Encore",
+                1.86
+            ],
+            [
+                "2024-03",
+                "Beechcraft King Air 200",
+                1.01
+            ],
+            [
+                "2024-04",
+                "Cessna Citation Latitude",
+                1.98
+            ],
+            [
+                "2024-04",
+                "Cessna Citation Encore",
+                2.38
+            ],
+            [
+                "2024-04",
+                "Beechcraft King Air 200",
+                1.34
+            ],
+            [
+                "2024-05",
+                "Cessna Citation Latitude",
+                2.07
+            ],
+            [
+                "2024-05",
+                "Cessna Citation Encore",
+                2.83
+            ],
+            [
+                "2024-05",
+                "Beechcraft King Air 200",
+                1.39
+            ],
+            [
+                "2024-06",
+                "Cessna Citation Latitude",
+                1.26
+            ],
+            [
+                "2024-06",
+                "Cessna Citation Encore",
+                0.93
+            ],
+            [
+                "2024-06",
+                "Beechcraft King Air 200",
+                1.22
+            ],
+            [
+                "2024-07",
+                "Cessna Citation Latitude",
+                1.53
+            ],
+            [
+                "2024-07",
+                "Cessna Citation Encore",
+                2.4
+            ],
+            [
+                "2024-07",
+                "Beechcraft King Air 200",
+                1.1
+            ],
+            [
+                "2024-08",
+                "Cessna Citation Latitude",
+                2.33
+            ],
+            [
+                "2024-08",
+                "Cessna Citation Encore",
+                1.31
+            ],
+            [
+                "2024-08",
+                "Beechcraft King Air 200",
+                1.06
+            ],
+            [
+                "2024-09",
+                "Cessna Citation Latitude",
+                1.9
+            ],
+            [
+                "2024-09",
+                "Cessna Citation Encore",
+                1.63
+            ],
+            [
+                "2024-09",
+                "Beechcraft King Air 200",
+                1.45
+            ],
+            [
+                "2024-10",
+                "Cessna Citation Latitude",
+                1.38
+            ],
+            [
+                "2024-10",
+                "Cessna Citation Encore",
+                1.77
+            ],
+            [
+                "2024-10",
+                "Beechcraft King Air 200",
+                1.25
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1004\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "A-OK Jets在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Hawker 800XP",
+                2.51
+            ],
+            [
+                "2024-01",
+                "Gulfstream G200",
+                2.01
+            ],
+            [
+                "2024-01",
+                "Bombardier Learjet 60",
+                1.68
+            ],
+            [
+                "2024-01",
+                "Bombardier Challenger 300",
+                2.25
+            ],
+            [
+                "2024-02",
+                "Hawker 800XP",
+                2.49
+            ],
+            [
+                "2024-02",
+                "Gulfstream G200",
+                2.21
+            ],
+            [
+                "2024-02",
+                "Bombardier Learjet 60",
+                1.47
+            ],
+            [
+                "2024-02",
+                "Bombardier Challenger 300",
+                2.68
+            ],
+            [
+                "2024-03",
+                "Hawker 800XP",
+                2.33
+            ],
+            [
+                "2024-03",
+                "Gulfstream G200",
+                2.01
+            ],
+            [
+                "2024-03",
+                "Bombardier Learjet 60",
+                1.87
+            ],
+            [
+                "2024-03",
+                "Bombardier Challenger 300",
+                3.41
+            ],
+            [
+                "2024-04",
+                "Hawker 800XP",
+                1.76
+            ],
+            [
+                "2024-04",
+                "Gulfstream G200",
+                1.7
+            ],
+            [
+                "2024-04",
+                "Bombardier Learjet 60",
+                1.85
+            ],
+            [
+                "2024-04",
+                "Bombardier Challenger 300",
+                1.88
+            ],
+            [
+                "2024-05",
+                "Hawker 800XP",
+                2.48
+            ],
+            [
+                "2024-05",
+                "Gulfstream G200",
+                1.53
+            ],
+            [
+                "2024-05",
+                "Bombardier Learjet 60",
+                2.35
+            ],
+            [
+                "2024-05",
+                "Bombardier Challenger 300",
+                2.52
+            ],
+            [
+                "2024-06",
+                "Hawker 800XP",
+                2.36
+            ],
+            [
+                "2024-06",
+                "Gulfstream G200",
+                1.49
+            ],
+            [
+                "2024-06",
+                "Bombardier Learjet 60",
+                1.99
+            ],
+            [
+                "2024-06",
+                "Bombardier Challenger 300",
+                2.92
+            ],
+            [
+                "2024-07",
+                "Hawker 800XP",
+                2.25
+            ],
+            [
+                "2024-07",
+                "Gulfstream G200",
+                2.37
+            ],
+            [
+                "2024-07",
+                "Bombardier Learjet 60",
+                2.22
+            ],
+            [
+                "2024-07",
+                "Bombardier Challenger 300",
+                4.54
+            ],
+            [
+                "2024-08",
+                "Hawker 800XP",
+                2.28
+            ],
+            [
+                "2024-08",
+                "Gulfstream G200",
+                1.74
+            ],
+            [
+                "2024-08",
+                "Bombardier Learjet 60",
+                2.12
+            ],
+            [
+                "2024-08",
+                "Bombardier Challenger 300",
+                2.06
+            ],
+            [
+                "2024-09",
+                "Hawker 800XP",
+                2.24
+            ],
+            [
+                "2024-09",
+                "Gulfstream G200",
+                2.88
+            ],
+            [
+                "2024-09",
+                "Bombardier Learjet 60",
+                1.73
+            ],
+            [
+                "2024-09",
+                "Bombardier Challenger 300",
+                2.13
+            ],
+            [
+                "2024-10",
+                "Gulfstream G200",
+                2.39
+            ],
+            [
+                "2024-10",
+                "Bombardier Challenger 300",
+                1.71
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1005\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AAC Jet在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation Sovereign+",
+                1.81
+            ],
+            [
+                "2024-02",
+                "Cessna Citation Sovereign+",
+                2.25
+            ],
+            [
+                "2024-03",
+                "Cessna Citation Sovereign+",
+                1.71
+            ],
+            [
+                "2024-04",
+                "Cessna Citation Sovereign+",
+                1.43
+            ],
+            [
+                "2024-05",
+                "Cessna Citation Sovereign+",
+                1.32
+            ],
+            [
+                "2024-06",
+                "Cessna Citation Sovereign+",
+                1.53
+            ],
+            [
+                "2024-07",
+                "Cessna Citation Sovereign+",
+                1.46
+            ],
+            [
+                "2024-08",
+                "Cessna Citation Sovereign+",
+                1.5
+            ],
+            [
+                "2024-09",
+                "Cessna Citation Sovereign+",
+                1.6
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1007\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AB Jets在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Bombardier Learjet 60",
+                1.41
+            ],
+            [
+                "2024-02",
+                "Bombardier Learjet 60",
+                1.53
+            ],
+            [
+                "2024-03",
+                "Bombardier Learjet 60",
+                1.54
+            ],
+            [
+                "2024-04",
+                "Bombardier Learjet 60",
+                1.58
+            ],
+            [
+                "2024-05",
+                "Bombardier Learjet 60",
+                1.42
+            ],
+            [
+                "2024-06",
+                "Bombardier Learjet 60",
+                1.49
+            ],
+            [
+                "2024-07",
+                "Bombardier Learjet 60",
+                1.69
+            ],
+            [
+                "2024-08",
+                "Bombardier Learjet 60",
+                1.4
+            ],
+            [
+                "2024-09",
+                "Bombardier Learjet 60",
+                1.53
+            ],
+            [
+                "2024-10",
+                "Bombardier Learjet 60",
+                1.66
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1008\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Fly Tyrol在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation M2",
+                0.99
+            ],
+            [
+                "2024-01",
+                "Cessna Citation CJ3+",
+                1.04
+            ],
+            [
+                "2024-02",
+                "Cessna Citation M2",
+                1.14
+            ],
+            [
+                "2024-02",
+                "Cessna Citation CJ3+",
+                1.32
+            ],
+            [
+                "2024-03",
+                "Cessna Citation M2",
+                1.13
+            ],
+            [
+                "2024-03",
+                "Cessna Citation CJ3+",
+                1.24
+            ],
+            [
+                "2024-04",
+                "Cessna Citation M2",
+                1.15
+            ],
+            [
+                "2024-04",
+                "Cessna Citation CJ3+",
+                1.26
+            ],
+            [
+                "2024-05",
+                "Cessna Citation M2",
+                1.23
+            ],
+            [
+                "2024-05",
+                "Cessna Citation CJ3+",
+                1.54
+            ],
+            [
+                "2024-06",
+                "Cessna Citation M2",
+                1.49
+            ],
+            [
+                "2024-06",
+                "Cessna Citation CJ3+",
+                1.39
+            ],
+            [
+                "2024-07",
+                "Cessna Citation M2",
+                1.21
+            ],
+            [
+                "2024-07",
+                "Cessna Citation CJ3+",
+                1.29
+            ],
+            [
+                "2024-08",
+                "Cessna Citation M2",
+                1.37
+            ],
+            [
+                "2024-08",
+                "Cessna Citation CJ3+",
+                1.31
+            ],
+            [
+                "2024-09",
+                "Cessna Citation M2",
+                1.31
+            ],
+            [
+                "2024-09",
+                "Cessna Citation CJ3+",
+                1.68
+            ],
+            [
+                "2024-10",
+                "Cessna Citation M2",
+                1.55
+            ],
+            [
+                "2024-10",
+                "Cessna Citation CJ3+",
+                1.41
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1009\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Abelag Aviation在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Dassault Falcon 8X",
+                3.91
+            ],
+            [
+                "2024-01",
+                "Dassault Falcon 7X",
+                2.44
+            ],
+            [
+                "2024-01",
+                "Cessna Citation XLS",
+                1.27
+            ],
+            [
+                "2024-01",
+                "Cessna Citation CJ4",
+                1.43
+            ],
+            [
+                "2024-01",
+                "Bombardier Global 5500",
+                1.13
+            ],
+            [
+                "2024-02",
+                "Dassault Falcon 8X",
+                1.26
+            ],
+            [
+                "2024-02",
+                "Dassault Falcon 7X",
+                3.33
+            ],
+            [
+                "2024-02",
+                "Cessna Citation XLS",
+                1.04
+            ],
+            [
+                "2024-02",
+                "Cessna Citation CJ4",
+                1.29
+            ],
+            [
+                "2024-02",
+                "Bombardier Global 5500",
+                0.94
+            ],
+            [
+                "2024-03",
+                "Dassault Falcon 8X",
+                5.72
+            ],
+            [
+                "2024-03",
+                "Dassault Falcon 7X",
+                3.64
+            ],
+            [
+                "2024-03",
+                "Cessna Citation XLS",
+                1.17
+            ],
+            [
+                "2024-03",
+                "Cessna Citation CJ4",
+                1.2
+            ],
+            [
+                "2024-03",
+                "Bombardier Global 5500",
+                0.93
+            ],
+            [
+                "2024-04",
+                "Dassault Falcon 8X",
+                1.1
+            ],
+            [
+                "2024-04",
+                "Dassault Falcon 7X",
+                7.48
+            ],
+            [
+                "2024-04",
+                "Cessna Citation XLS",
+                1.22
+            ],
+            [
+                "2024-04",
+                "Cessna Citation CJ4",
+                1.42
+            ],
+            [
+                "2024-04",
+                "Bombardier Global 5500",
+                0.96
+            ],
+            [
+                "2024-05",
+                "Dassault Falcon 8X",
+                2.62
+            ],
+            [
+                "2024-05",
+                "Dassault Falcon 7X",
+                1.25
+            ],
+            [
+                "2024-05",
+                "Cessna Citation XLS",
+                1.61
+            ],
+            [
+                "2024-05",
+                "Cessna Citation CJ4",
+                1.55
+            ],
+            [
+                "2024-05",
+                "Bombardier Global 5500",
+                0.94
+            ],
+            [
+                "2024-06",
+                "Dassault Falcon 8X",
+                1.34
+            ],
+            [
+                "2024-06",
+                "Dassault Falcon 7X",
+                3.65
+            ],
+            [
+                "2024-06",
+                "Cessna Citation XLS",
+                1.46
+            ],
+            [
+                "2024-06",
+                "Cessna Citation CJ4",
+                1.78
+            ],
+            [
+                "2024-06",
+                "Bombardier Global 5500",
+                0.99
+            ],
+            [
+                "2024-07",
+                "Dassault Falcon 8X",
+                3.59
+            ],
+            [
+                "2024-07",
+                "Dassault Falcon 7X",
+                1.82
+            ],
+            [
+                "2024-07",
+                "Cessna Citation XLS",
+                1.24
+            ],
+            [
+                "2024-07",
+                "Cessna Citation CJ4",
+                1.59
+            ],
+            [
+                "2024-07",
+                "Cessna Citation CJ3",
+                2.84
+            ],
+            [
+                "2024-07",
+                "Bombardier Global 5500",
+                1.37
+            ],
+            [
+                "2024-08",
+                "Dassault Falcon 8X",
+                2.65
+            ],
+            [
+                "2024-08",
+                "Dassault Falcon 7X",
+                2.49
+            ],
+            [
+                "2024-08",
+                "Cessna Citation XLS",
+                1.43
+            ],
+            [
+                "2024-08",
+                "Cessna Citation CJ4",
+                2.08
+            ],
+            [
+                "2024-08",
+                "Bombardier Global 5500",
+                1.57
+            ],
+            [
+                "2024-09",
+                "Dassault Falcon 8X",
+                1.49
+            ],
+            [
+                "2024-09",
+                "Dassault Falcon 7X",
+                2.35
+            ],
+            [
+                "2024-09",
+                "Cessna Citation XLS",
+                1.23
+            ],
+            [
+                "2024-09",
+                "Bombardier Global 5500",
+                0.9
+            ],
+            [
+                "2024-10",
+                "Dassault Falcon 8X",
+                1.38
+            ],
+            [
+                "2024-10",
+                "Dassault Falcon 7X",
+                3.81
+            ],
+            [
+                "2024-10",
+                "Cessna Citation XLS",
+                1.19
+            ],
+            [
+                "2024-10",
+                "Cessna Citation CJ4",
+                1.99
+            ],
+            [
+                "2024-10",
+                "Bombardier Global 5500",
+                1.96
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1010\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ABS Jets在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation CJ2+",
+                1.32
+            ],
+            [
+                "2024-02",
+                "Cessna Citation CJ2+",
+                1.04
+            ],
+            [
+                "2024-03",
+                "Cessna Citation CJ2+",
+                1.0
+            ],
+            [
+                "2024-06",
+                "Cessna Citation CJ2+",
+                1.49
+            ],
+            [
+                "2024-07",
+                "Cessna Citation CJ2+",
+                1.45
+            ],
+            [
+                "2024-08",
+                "Cessna Citation CJ2+",
+                1.47
+            ],
+            [
+                "2024-09",
+                "Cessna Citation CJ2+",
+                1.38
+            ],
+            [
+                "2024-10",
+                "Cessna Citation CJ2+",
+                1.37
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1012\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AC Aviation Charter AG(Switzerland)在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-02",
+                "Cessna Citation XLS",
+                1.75
+            ],
+            [
+                "2024-03",
+                "Cessna Citation XLS",
+                2.04
+            ],
+            [
+                "2024-04",
+                "Cessna Citation XLS",
+                1.88
+            ],
+            [
+                "2024-05",
+                "Cessna Citation XLS",
+                1.71
+            ],
+            [
+                "2024-06",
+                "Cessna Citation XLS",
+                1.27
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1013\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AC Aviation Charter(Austria)在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Dassault Falcon 7X",
+                4.04
+            ],
+            [
+                "2024-01",
+                "Cessna Citation CJ4",
+                1.34
+            ],
+            [
+                "2024-01",
+                "Bombardier Learjet 75",
+                1.55
+            ],
+            [
+                "2024-02",
+                "Cessna Citation CJ4",
+                1.1
+            ],
+            [
+                "2024-02",
+                "Bombardier Learjet 75",
+                1.33
+            ],
+            [
+                "2024-03",
+                "Cessna Citation CJ4",
+                1.14
+            ],
+            [
+                "2024-03",
+                "Bombardier Learjet 75",
+                1.3
+            ],
+            [
+                "2024-04",
+                "Cessna Citation CJ4",
+                1.04
+            ],
+            [
+                "2024-04",
+                "Bombardier Learjet 75",
+                1.3
+            ],
+            [
+                "2024-05",
+                "Cessna Citation CJ4",
+                1.37
+            ],
+            [
+                "2024-06",
+                "Cessna Citation CJ4",
+                1.13
+            ],
+            [
+                "2024-06",
+                "Bombardier Learjet 75",
+                0.94
+            ],
+            [
+                "2024-07",
+                "Cessna Citation CJ4",
+                0.98
+            ],
+            [
+                "2024-08",
+                "Cessna Citation CJ4",
+                1.19
+            ],
+            [
+                "2024-09",
+                "Dassault Falcon 7X",
+                1.02
+            ],
+            [
+                "2024-09",
+                "Cessna Citation CJ4",
+                1.01
+            ],
+            [
+                "2024-10",
+                "Dassault Falcon 7X",
+                3.05
+            ],
+            [
+                "2024-10",
+                "Cessna Citation CJ4",
+                1.14
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1014\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACASS Canada Ltd在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Pilatus PC-12",
+                2.45
+            ],
+            [
+                "2024-01",
+                "Cessna Citation XLS+",
+                1.41
+            ],
+            [
+                "2024-01",
+                "Cessna Citation X",
+                2.44
+            ],
+            [
+                "2024-02",
+                "Pilatus PC-12",
+                1.54
+            ],
+            [
+                "2024-02",
+                "Cessna Citation XLS+",
+                1.3
+            ],
+            [
+                "2024-02",
+                "Cessna Citation X",
+                2.58
+            ],
+            [
+                "2024-03",
+                "Pilatus PC-12",
+                1.9
+            ],
+            [
+                "2024-03",
+                "Cessna Citation XLS+",
+                1.4
+            ],
+            [
+                "2024-03",
+                "Cessna Citation X",
+                2.56
+            ],
+            [
+                "2024-04",
+                "Pilatus PC-12",
+                1.58
+            ],
+            [
+                "2024-04",
+                "Cessna Citation XLS+",
+                1.44
+            ],
+            [
+                "2024-04",
+                "Cessna Citation X",
+                3.13
+            ],
+            [
+                "2024-05",
+                "Pilatus PC-12",
+                1.84
+            ],
+            [
+                "2024-05",
+                "Cessna Citation XLS+",
+                1.44
+            ],
+            [
+                "2024-05",
+                "Cessna Citation X",
+                2.16
+            ],
+            [
+                "2024-06",
+                "Pilatus PC-12",
+                1.93
+            ],
+            [
+                "2024-06",
+                "Cessna Citation XLS+",
+                1.62
+            ],
+            [
+                "2024-06",
+                "Cessna Citation X",
+                1.96
+            ],
+            [
+                "2024-07",
+                "Pilatus PC-12",
+                1.83
+            ],
+            [
+                "2024-07",
+                "Cessna Citation XLS+",
+                1.39
+            ],
+            [
+                "2024-07",
+                "Cessna Citation X",
+                2.0
+            ],
+            [
+                "2024-08",
+                "Pilatus PC-12",
+                1.74
+            ],
+            [
+                "2024-08",
+                "Cessna Citation XLS+",
+                1.62
+            ],
+            [
+                "2024-08",
+                "Cessna Citation X",
+                1.09
+            ],
+            [
+                "2024-09",
+                "Pilatus PC-12",
+                2.25
+            ],
+            [
+                "2024-09",
+                "Cessna Citation XLS+",
+                1.56
+            ],
+            [
+                "2024-10",
+                "Pilatus PC-12",
+                1.94
+            ],
+            [
+                "2024-10",
+                "Cessna Citation XLS+",
+                1.17
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1015\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACASS(Ireland)在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Gulfstream G450",
+                1.96
+            ],
+            [
+                "2024-01",
+                "Bombardier Global Express XRS",
+                4.22
+            ],
+            [
+                "2024-02",
+                "Bombardier Global Express XRS",
+                3.08
+            ],
+            [
+                "2024-03",
+                "Gulfstream G450",
+                3.48
+            ],
+            [
+                "2024-03",
+                "Bombardier Global Express XRS",
+                6.69
+            ],
+            [
+                "2024-04",
+                "Gulfstream G450",
+                1.66
+            ],
+            [
+                "2024-04",
+                "Bombardier Global Express XRS",
+                2.2
+            ],
+            [
+                "2024-05",
+                "Gulfstream G450",
+                2.59
+            ],
+            [
+                "2024-05",
+                "Bombardier Global Express XRS",
+                4.74
+            ],
+            [
+                "2024-06",
+                "Gulfstream G450",
+                3.44
+            ],
+            [
+                "2024-06",
+                "Bombardier Global Express XRS",
+                3.8
+            ],
+            [
+                "2024-07",
+                "Gulfstream G450",
+                2.23
+            ],
+            [
+                "2024-07",
+                "Bombardier Global Express XRS",
+                3.08
+            ],
+            [
+                "2024-08",
+                "Gulfstream G450",
+                4.83
+            ],
+            [
+                "2024-08",
+                "Bombardier Global Express XRS",
+                1.7
+            ],
+            [
+                "2024-09",
+                "Gulfstream G450",
+                1.06
+            ],
+            [
+                "2024-09",
+                "Bombardier Global Express XRS",
+                1.35
+            ],
+            [
+                "2024-10",
+                "Gulfstream G450",
+                3.41
+            ],
+            [
+                "2024-10",
+                "Bombardier Global Express XRS",
+                3.16
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1016\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Accent Airways LLC在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna 208",
+                1.27
+            ],
+            [
+                "2024-01",
+                "Beechcraft King Air 350i",
+                1.0
+            ],
+            [
+                "2024-02",
+                "Cessna 208",
+                1.24
+            ],
+            [
+                "2024-02",
+                "Beechcraft King Air 350i",
+                0.77
+            ],
+            [
+                "2024-03",
+                "Cessna 208",
+                1.17
+            ],
+            [
+                "2024-03",
+                "Beechcraft King Air 350i",
+                0.76
+            ],
+            [
+                "2024-04",
+                "Cessna 208",
+                1.18
+            ],
+            [
+                "2024-04",
+                "Beechcraft King Air 350i",
+                0.88
+            ],
+            [
+                "2024-05",
+                "Cessna 208",
+                1.19
+            ],
+            [
+                "2024-05",
+                "Beechcraft King Air 350i",
+                1.18
+            ],
+            [
+                "2024-06",
+                "Cessna 208",
+                1.15
+            ],
+            [
+                "2024-06",
+                "Beechcraft King Air 350i",
+                0.89
+            ],
+            [
+                "2024-07",
+                "Cessna 208",
+                1.2
+            ],
+            [
+                "2024-07",
+                "Beechcraft King Air 350i",
+                1.39
+            ],
+            [
+                "2024-08",
+                "Cessna 208",
+                1.56
+            ],
+            [
+                "2024-08",
+                "Beechcraft King Air 350i",
+                0.83
+            ],
+            [
+                "2024-09",
+                "Cessna 208",
+                1.26
+            ],
+            [
+                "2024-09",
+                "Beechcraft King Air 350i",
+                0.78
+            ],
+            [
+                "2024-10",
+                "Cessna 208",
+                1.23
+            ],
+            [
+                "2024-10",
+                "Beechcraft King Air 350i",
+                1.14
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1017\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACI Jet在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation XLS",
+                1.38
+            ],
+            [
+                "2024-01",
+                "Bombardier Global Express XRS",
+                3.24
+            ],
+            [
+                "2024-01",
+                "Bombardier Global Express",
+                3.07
+            ],
+            [
+                "2024-01",
+                "Bombardier Global 6000",
+                3.02
+            ],
+            [
+                "2024-01",
+                "Bombardier Challenger 604",
+                2.47
+            ],
+            [
+                "2024-02",
+                "Cessna Citation XLS",
+                1.59
+            ],
+            [
+                "2024-02",
+                "Bombardier Global Express XRS",
+                2.45
+            ],
+            [
+                "2024-02",
+                "Bombardier Global Express",
+                3.06
+            ],
+            [
+                "2024-02",
+                "Bombardier Global 6000",
+                2.78
+            ],
+            [
+                "2024-02",
+                "Bombardier Challenger 604",
+                2.51
+            ],
+            [
+                "2024-03",
+                "Gulfstream GIV",
+                2.92
+            ],
+            [
+                "2024-03",
+                "Cessna Citation XLS",
+                1.44
+            ],
+            [
+                "2024-03",
+                "Bombardier Global Express XRS",
+                2.35
+            ],
+            [
+                "2024-03",
+                "Bombardier Global Express",
+                3.42
+            ],
+            [
+                "2024-03",
+                "Bombardier Global 6000",
+                1.99
+            ],
+            [
+                "2024-03",
+                "Bombardier Challenger 604",
+                3.34
+            ],
+            [
+                "2024-04",
+                "Gulfstream GIV",
+                2.92
+            ],
+            [
+                "2024-04",
+                "Cessna Citation XLS",
+                1.45
+            ],
+            [
+                "2024-04",
+                "Bombardier Global Express XRS",
+                2.06
+            ],
+            [
+                "2024-04",
+                "Bombardier Global Express",
+                2.74
+            ],
+            [
+                "2024-04",
+                "Bombardier Global 6000",
+                2.44
+            ],
+            [
+                "2024-04",
+                "Bombardier Challenger 604",
+                2.95
+            ],
+            [
+                "2024-05",
+                "Gulfstream GIV",
+                1.93
+            ],
+            [
+                "2024-05",
+                "Cessna Citation XLS",
+                1.65
+            ],
+            [
+                "2024-05",
+                "Bombardier Global Express XRS",
+                3.55
+            ],
+            [
+                "2024-05",
+                "Bombardier Global Express",
+                0.82
+            ],
+            [
+                "2024-05",
+                "Bombardier Global 6000",
+                2.16
+            ],
+            [
+                "2024-05",
+                "Bombardier Challenger 604",
+                1.77
+            ],
+            [
+                "2024-06",
+                "Gulfstream GIV",
+                2.41
+            ],
+            [
+                "2024-06",
+                "Cessna Citation XLS",
+                1.51
+            ],
+            [
+                "2024-06",
+                "Bombardier Global Express XRS",
+                2.68
+            ],
+            [
+                "2024-06",
+                "Bombardier Global Express",
+                6.45
+            ],
+            [
+                "2024-06",
+                "Bombardier Global 6000",
+                2.64
+            ],
+            [
+                "2024-06",
+                "Bombardier Challenger 604",
+                2.06
+            ],
+            [
+                "2024-07",
+                "Gulfstream GIV",
+                2.31
+            ],
+            [
+                "2024-07",
+                "Cessna Citation XLS",
+                1.44
+            ],
+            [
+                "2024-07",
+                "Bombardier Global Express XRS",
+                2.48
+            ],
+            [
+                "2024-07",
+                "Bombardier Global Express",
+                0.74
+            ],
+            [
+                "2024-07",
+                "Bombardier Global 6000",
+                2.53
+            ],
+            [
+                "2024-07",
+                "Bombardier Challenger 604",
+                3.29
+            ],
+            [
+                "2024-08",
+                "Gulfstream GIV",
+                2.8
+            ],
+            [
+                "2024-08",
+                "Cessna Citation XLS",
+                1.24
+            ],
+            [
+                "2024-08",
+                "Bombardier Global Express XRS",
+                3.24
+            ],
+            [
+                "2024-08",
+                "Bombardier Global Express",
+                2.96
+            ],
+            [
+                "2024-08",
+                "Bombardier Global 6000",
+                3.21
+            ],
+            [
+                "2024-08",
+                "Bombardier Challenger 604",
+                2.49
+            ],
+            [
+                "2024-09",
+                "Gulfstream GIV",
+                2.61
+            ],
+            [
+                "2024-09",
+                "Cessna Citation XLS",
+                1.3
+            ],
+            [
+                "2024-09",
+                "Bombardier Global Express XRS",
+                2.32
+            ],
+            [
+                "2024-09",
+                "Bombardier Global Express",
+                2.22
+            ],
+            [
+                "2024-09",
+                "Bombardier Global 6000",
+                2.57
+            ],
+            [
+                "2024-09",
+                "Bombardier Challenger 604",
+                2.72
+            ],
+            [
+                "2024-10",
+                "Gulfstream GIV",
+                2.02
+            ],
+            [
+                "2024-10",
+                "Cessna Citation XLS",
+                1.42
+            ],
+            [
+                "2024-10",
+                "Bombardier Global Express XRS",
+                1.85
+            ],
+            [
+                "2024-10",
+                "Bombardier Global Express",
+                4.15
+            ],
+            [
+                "2024-10",
+                "Bombardier Global 6000",
+                3.51
+            ],
+            [
+                "2024-10",
+                "Bombardier Challenger 604",
+                2.87
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1019\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ACM Air Charter在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Bombardier Global Express",
+                4.54
+            ],
+            [
+                "2024-01",
+                "Bombardier Global 7500",
+                2.98
+            ],
+            [
+                "2024-01",
+                "Bombardier Global 6000",
+                3.6
+            ],
+            [
+                "2024-02",
+                "Bombardier Global Express",
+                6.12
+            ],
+            [
+                "2024-02",
+                "Bombardier Global 7500",
+                2.72
+            ],
+            [
+                "2024-02",
+                "Bombardier Global 6000",
+                1.45
+            ],
+            [
+                "2024-03",
+                "Bombardier Global Express",
+                10.15
+            ],
+            [
+                "2024-03",
+                "Bombardier Global 7500",
+                4.07
+            ],
+            [
+                "2024-03",
+                "Bombardier Global 6000",
+                3.65
+            ],
+            [
+                "2024-04",
+                "Bombardier Global Express",
+                2.2
+            ],
+            [
+                "2024-04",
+                "Bombardier Global 7500",
+                1.9
+            ],
+            [
+                "2024-04",
+                "Bombardier Global 6000",
+                3.28
+            ],
+            [
+                "2024-05",
+                "Bombardier Global Express",
+                1.19
+            ],
+            [
+                "2024-05",
+                "Bombardier Global 7500",
+                4.38
+            ],
+            [
+                "2024-05",
+                "Bombardier Global 6000",
+                1.51
+            ],
+            [
+                "2024-06",
+                "Bombardier Global Express",
+                1.53
+            ],
+            [
+                "2024-06",
+                "Bombardier Global 7500",
+                3.0
+            ],
+            [
+                "2024-06",
+                "Bombardier Global 6000",
+                3.27
+            ],
+            [
+                "2024-07",
+                "Bombardier Global Express",
+                2.93
+            ],
+            [
+                "2024-07",
+                "Bombardier Global 7500",
+                5.88
+            ],
+            [
+                "2024-07",
+                "Bombardier Global 6000",
+                2.13
+            ],
+            [
+                "2024-08",
+                "Bombardier Global Express",
+                3.55
+            ],
+            [
+                "2024-08",
+                "Bombardier Global 7500",
+                2.04
+            ],
+            [
+                "2024-08",
+                "Bombardier Global 6000",
+                3.36
+            ],
+            [
+                "2024-09",
+                "Bombardier Global Express",
+                3.63
+            ],
+            [
+                "2024-09",
+                "Bombardier Global 7500",
+                4.75
+            ],
+            [
+                "2024-09",
+                "Bombardier Global 6000",
+                1.79
+            ],
+            [
+                "2024-10",
+                "Bombardier Global Express",
+                1.69
+            ],
+            [
+                "2024-10",
+                "Bombardier Global 7500",
+                3.46
+            ],
+            [
+                "2024-10",
+                "Bombardier Global 6000",
+                4.35
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1020\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Acropolis Aviation Ltd在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Airbus A320",
+                2.38
+            ],
+            [
+                "2024-02",
+                "Airbus A320",
+                5.92
+            ],
+            [
+                "2024-03",
+                "Airbus A320",
+                4.84
+            ],
+            [
+                "2024-04",
+                "Airbus A320",
+                4.65
+            ],
+            [
+                "2024-05",
+                "Airbus A320",
+                3.71
+            ],
+            [
+                "2024-06",
+                "Airbus A320",
+                2.73
+            ],
+            [
+                "2024-07",
+                "Airbus A320",
+                4.68
+            ],
+            [
+                "2024-08",
+                "Airbus A320",
+                2.86
+            ],
+            [
+                "2024-09",
+                "Airbus A320",
+                4.25
+            ],
+            [
+                "2024-10",
+                "Airbus A320",
+                3.33
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1021\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Action Air Express在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna 421",
+                0.65
+            ],
+            [
+                "2024-02",
+                "Cessna 421",
+                2.37
+            ],
+            [
+                "2024-03",
+                "Cessna 421",
+                0.66
+            ],
+            [
+                "2024-04",
+                "Cessna 421",
+                0.73
+            ],
+            [
+                "2024-05",
+                "Cessna 421",
+                0.98
+            ],
+            [
+                "2024-06",
+                "Cessna 421",
+                0.9
+            ],
+            [
+                "2024-07",
+                "Cessna 421",
+                0.61
+            ],
+            [
+                "2024-08",
+                "Cessna 421",
+                1.51
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1022\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "ADM Aviation Executive在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Embraer Phenom 300",
+                1.27
+            ],
+            [
+                "2024-02",
+                "Embraer Phenom 300",
+                1.43
+            ],
+            [
+                "2024-03",
+                "Embraer Phenom 300",
+                1.17
+            ],
+            [
+                "2024-04",
+                "Embraer Phenom 300",
+                1.45
+            ],
+            [
+                "2024-05",
+                "Embraer Phenom 300",
+                1.24
+            ],
+            [
+                "2024-06",
+                "Embraer Phenom 300",
+                1.54
+            ],
+            [
+                "2024-07",
+                "Embraer Phenom 300",
+                1.38
+            ],
+            [
+                "2024-08",
+                "Embraer Phenom 300",
+                1.5
+            ],
+            [
+                "2024-09",
+                "Embraer Phenom 300",
+                1.3
+            ],
+            [
+                "2024-10",
+                "Embraer Phenom 300",
+                1.18
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1024\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Advanced Air LLC在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Pilatus PC-12",
+                1.3
+            ],
+            [
+                "2024-01",
+                "Bombardier Challenger 300",
+                1.67
+            ],
+            [
+                "2024-01",
+                "Beechcraft King Air 350",
+                2.02
+            ],
+            [
+                "2024-02",
+                "Pilatus PC-12",
+                1.24
+            ],
+            [
+                "2024-02",
+                "Bombardier Challenger 300",
+                1.34
+            ],
+            [
+                "2024-02",
+                "Beechcraft King Air 350",
+                2.25
+            ],
+            [
+                "2024-03",
+                "Pilatus PC-12",
+                1.22
+            ],
+            [
+                "2024-03",
+                "Bombardier Challenger 300",
+                2.47
+            ],
+            [
+                "2024-03",
+                "Beechcraft King Air 350",
+                2.43
+            ],
+            [
+                "2024-04",
+                "Pilatus PC-12",
+                1.16
+            ],
+            [
+                "2024-04",
+                "Bombardier Learjet 75",
+                1.8
+            ],
+            [
+                "2024-04",
+                "Bombardier Challenger 300",
+                2.28
+            ],
+            [
+                "2024-04",
+                "Beechcraft King Air 350",
+                2.35
+            ],
+            [
+                "2024-05",
+                "Pilatus PC-12",
+                1.26
+            ],
+            [
+                "2024-05",
+                "Bombardier Challenger 300",
+                1.98
+            ],
+            [
+                "2024-05",
+                "Beechcraft King Air 350",
+                2.25
+            ],
+            [
+                "2024-06",
+                "Pilatus PC-12",
+                1.21
+            ],
+            [
+                "2024-06",
+                "Bombardier Challenger 300",
+                2.56
+            ],
+            [
+                "2024-06",
+                "Beechcraft King Air 350",
+                2.23
+            ],
+            [
+                "2024-07",
+                "Pilatus PC-12",
+                1.26
+            ],
+            [
+                "2024-07",
+                "Bombardier Challenger 300",
+                2.63
+            ],
+            [
+                "2024-07",
+                "Beechcraft King Air 350",
+                2.38
+            ],
+            [
+                "2024-08",
+                "Pilatus PC-12",
+                1.27
+            ],
+            [
+                "2024-08",
+                "Bombardier Challenger 300",
+                1.88
+            ],
+            [
+                "2024-08",
+                "Beechcraft King Air 350",
+                1.79
+            ],
+            [
+                "2024-09",
+                "Pilatus PC-12",
+                1.22
+            ],
+            [
+                "2024-09",
+                "Bombardier Challenger 300",
+                2.44
+            ],
+            [
+                "2024-09",
+                "Beechcraft King Air 350",
+                0.98
+            ],
+            [
+                "2024-10",
+                "Pilatus PC-12",
+                1.23
+            ],
+            [
+                "2024-10",
+                "Bombardier Challenger 300",
+                2.01
+            ],
+            [
+                "2024-10",
+                "Beechcraft King Air 350",
+                0.95
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1025\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aelia S.R.L在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Beechcraft King Air B200",
+                1.41
+            ],
+            [
+                "2024-02",
+                "Beechcraft King Air B200",
+                1.17
+            ],
+            [
+                "2024-03",
+                "Beechcraft King Air B200",
+                1.48
+            ],
+            [
+                "2024-04",
+                "Beechcraft King Air B200",
+                1.23
+            ],
+            [
+                "2024-05",
+                "Beechcraft King Air B200",
+                1.16
+            ],
+            [
+                "2024-06",
+                "Beechcraft King Air B200",
+                1.27
+            ],
+            [
+                "2024-07",
+                "Beechcraft King Air B200",
+                1.25
+            ],
+            [
+                "2024-08",
+                "Beechcraft King Air B200",
+                1.31
+            ],
+            [
+                "2024-09",
+                "Beechcraft King Air B200",
+                1.47
+            ],
+            [
+                "2024-10",
+                "Beechcraft King Air B200",
+                1.33
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1027\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "AEM Aviation在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Hawker 800XP",
+                1.63
+            ],
+            [
+                "2024-02",
+                "Hawker 800XP",
+                1.58
+            ],
+            [
+                "2024-03",
+                "Hawker 800XP",
+                2.5
+            ],
+            [
+                "2024-04",
+                "Hawker 800XP",
+                1.63
+            ],
+            [
+                "2024-09",
+                "Hawker 800XP",
+                1.52
+            ],
+            [
+                "2024-10",
+                "Hawker 800XP",
+                1.3
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1028\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aergo International Pty Ltd在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Boeing 737",
+                10.32
+            ],
+            [
+                "2024-02",
+                "Boeing 737",
+                4.38
+            ],
+            [
+                "2024-03",
+                "Boeing 737",
+                4.57
+            ],
+            [
+                "2024-04",
+                "Boeing 737",
+                5.98
+            ],
+            [
+                "2024-05",
+                "Boeing 737",
+                8.84
+            ],
+            [
+                "2024-06",
+                "Boeing 737",
+                5.89
+            ],
+            [
+                "2024-07",
+                "Boeing 737",
+                8.48
+            ],
+            [
+                "2024-08",
+                "Boeing 737",
+                7.97
+            ],
+            [
+                "2024-09",
+                "Boeing 737",
+                3.92
+            ],
+            [
+                "2024-10",
+                "Boeing 737",
+                3.6
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1029\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Air Charter LLC在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation V",
+                1.3
+            ],
+            [
+                "2024-02",
+                "Cessna Citation V",
+                1.21
+            ],
+            [
+                "2024-03",
+                "Cessna Citation V",
+                1.09
+            ],
+            [
+                "2024-04",
+                "Cessna Citation V",
+                1.12
+            ],
+            [
+                "2024-05",
+                "Cessna Citation V",
+                1.21
+            ],
+            [
+                "2024-06",
+                "Cessna Citation V",
+                1.38
+            ],
+            [
+                "2024-07",
+                "Cessna Citation V",
+                1.62
+            ],
+            [
+                "2024-08",
+                "Cessna Citation V",
+                1.23
+            ],
+            [
+                "2024-09",
+                "Cessna Citation V",
+                1.11
+            ],
+            [
+                "2024-10",
+                "Cessna Citation V",
+                1.19
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1030\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Asahi Corporation在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation Sovereign",
+                1.12
+            ],
+            [
+                "2024-02",
+                "Cessna Citation Sovereign",
+                1.06
+            ],
+            [
+                "2024-03",
+                "Cessna Citation Sovereign",
+                0.98
+            ],
+            [
+                "2024-04",
+                "Cessna Citation Sovereign",
+                0.92
+            ],
+            [
+                "2024-05",
+                "Cessna Citation Sovereign",
+                0.93
+            ],
+            [
+                "2024-06",
+                "Cessna Citation Sovereign",
+                0.98
+            ],
+            [
+                "2024-07",
+                "Cessna Citation Sovereign",
+                1.13
+            ],
+            [
+                "2024-08",
+                "Cessna Citation Sovereign",
+                1.05
+            ],
+            [
+                "2024-09",
+                "Cessna Citation Sovereign",
+                0.88
+            ],
+            [
+                "2024-10",
+                "Cessna Citation Sovereign",
+                0.97
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1032\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Centers在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Pilatus PC-12",
+                1.32
+            ],
+            [
+                "2024-02",
+                "Pilatus PC-12",
+                1.06
+            ],
+            [
+                "2024-03",
+                "Pilatus PC-12",
+                1.31
+            ],
+            [
+                "2024-04",
+                "Pilatus PC-12",
+                1.23
+            ],
+            [
+                "2024-05",
+                "Pilatus PC-12",
+                1.29
+            ],
+            [
+                "2024-06",
+                "Pilatus PC-12",
+                1.3
+            ],
+            [
+                "2024-07",
+                "Pilatus PC-12",
+                1.69
+            ],
+            [
+                "2024-08",
+                "Pilatus PC-12",
+                1.17
+            ],
+            [
+                "2024-09",
+                "Pilatus PC-12",
+                1.27
+            ],
+            [
+                "2024-10",
+                "Pilatus PC-12",
+                1.08
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1033\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Charter Inc.在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Pilatus PC-12",
+                1.73
+            ],
+            [
+                "2024-01",
+                "Cessna Citation XLS+",
+                1.53
+            ],
+            [
+                "2024-01",
+                "Cessna Citation XLS",
+                1.19
+            ],
+            [
+                "2024-01",
+                "Cessna Citation Sovereign",
+                1.41
+            ],
+            [
+                "2024-02",
+                "Pilatus PC-12",
+                3.58
+            ],
+            [
+                "2024-02",
+                "Cessna Citation XLS+",
+                1.4
+            ],
+            [
+                "2024-02",
+                "Cessna Citation XLS",
+                1.45
+            ],
+            [
+                "2024-02",
+                "Cessna Citation Sovereign",
+                1.66
+            ],
+            [
+                "2024-03",
+                "Pilatus PC-12",
+                2.57
+            ],
+            [
+                "2024-03",
+                "Cessna Citation XLS+",
+                1.45
+            ],
+            [
+                "2024-03",
+                "Cessna Citation XLS",
+                1.44
+            ],
+            [
+                "2024-03",
+                "Cessna Citation Sovereign",
+                1.78
+            ],
+            [
+                "2024-04",
+                "Pilatus PC-12",
+                1.88
+            ],
+            [
+                "2024-04",
+                "Cessna Citation XLS+",
+                1.19
+            ],
+            [
+                "2024-04",
+                "Cessna Citation XLS",
+                1.53
+            ],
+            [
+                "2024-04",
+                "Cessna Citation Sovereign",
+                1.97
+            ],
+            [
+                "2024-05",
+                "Pilatus PC-12",
+                1.42
+            ],
+            [
+                "2024-05",
+                "Cessna Citation XLS+",
+                1.13
+            ],
+            [
+                "2024-05",
+                "Cessna Citation XLS",
+                1.35
+            ],
+            [
+                "2024-05",
+                "Cessna Citation Sovereign",
+                1.73
+            ],
+            [
+                "2024-06",
+                "Pilatus PC-12",
+                1.84
+            ],
+            [
+                "2024-06",
+                "Cessna Citation XLS+",
+                1.47
+            ],
+            [
+                "2024-06",
+                "Cessna Citation XLS",
+                1.56
+            ],
+            [
+                "2024-06",
+                "Cessna Citation Sovereign",
+                1.21
+            ],
+            [
+                "2024-07",
+                "Pilatus PC-12",
+                1.91
+            ],
+            [
+                "2024-07",
+                "Cessna Citation XLS+",
+                1.55
+            ],
+            [
+                "2024-07",
+                "Cessna Citation XLS",
+                1.19
+            ],
+            [
+                "2024-07",
+                "Cessna Citation Sovereign",
+                3.76
+            ],
+            [
+                "2024-08",
+                "Pilatus PC-12",
+                2.43
+            ],
+            [
+                "2024-08",
+                "Cessna Citation XLS+",
+                1.37
+            ],
+            [
+                "2024-08",
+                "Cessna Citation XLS",
+                1.15
+            ],
+            [
+                "2024-08",
+                "Cessna Citation Sovereign",
+                1.04
+            ],
+            [
+                "2024-08",
+                "Cessna Citation CJ2",
+                0.99
+            ],
+            [
+                "2024-09",
+                "Pilatus PC-12",
+                1.72
+            ],
+            [
+                "2024-09",
+                "Cessna Citation XLS+",
+                1.12
+            ],
+            [
+                "2024-09",
+                "Cessna Citation XLS",
+                1.31
+            ],
+            [
+                "2024-09",
+                "Cessna Citation Sovereign",
+                1.32
+            ],
+            [
+                "2024-09",
+                "Cessna Citation CJ2",
+                0.89
+            ],
+            [
+                "2024-10",
+                "Pilatus PC-12",
+                1.41
+            ],
+            [
+                "2024-10",
+                "Cessna Citation XLS+",
+                1.13
+            ],
+            [
+                "2024-10",
+                "Cessna Citation XLS",
+                1.49
+            ],
+            [
+                "2024-10",
+                "Cessna Citation Sovereign",
+                1.73
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1034\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Dynamic Jets在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation Sovereign",
+                2.34
+            ],
+            [
+                "2024-01",
+                "Cessna Citation CJ3",
+                1.5
+            ],
+            [
+                "2024-02",
+                "Cessna Citation Sovereign",
+                2.31
+            ],
+            [
+                "2024-02",
+                "Cessna Citation CJ3",
+                1.58
+            ],
+            [
+                "2024-03",
+                "Cessna Citation Sovereign",
+                1.87
+            ],
+            [
+                "2024-03",
+                "Cessna Citation CJ3",
+                1.63
+            ],
+            [
+                "2024-04",
+                "Cessna Citation Sovereign",
+                1.8
+            ],
+            [
+                "2024-04",
+                "Cessna Citation CJ3",
+                1.34
+            ],
+            [
+                "2024-05",
+                "Cessna Citation Sovereign",
+                1.73
+            ],
+            [
+                "2024-05",
+                "Cessna Citation CJ3",
+                1.25
+            ],
+            [
+                "2024-06",
+                "Cessna Citation Sovereign",
+                1.44
+            ],
+            [
+                "2024-06",
+                "Cessna Citation CJ3",
+                1.28
+            ],
+            [
+                "2024-07",
+                "Cessna Citation Sovereign",
+                1.61
+            ],
+            [
+                "2024-07",
+                "Cessna Citation CJ3",
+                1.4
+            ],
+            [
+                "2024-08",
+                "Cessna Citation Sovereign",
+                1.26
+            ],
+            [
+                "2024-08",
+                "Cessna Citation CJ3",
+                1.49
+            ],
+            [
+                "2024-09",
+                "Cessna Citation Sovereign",
+                1.12
+            ],
+            [
+                "2024-09",
+                "Cessna Citation CJ3",
+                1.06
+            ],
+            [
+                "2024-10",
+                "Cessna Citation Sovereign",
+                1.44
+            ],
+            [
+                "2024-10",
+                "Cessna Citation CJ3",
+                1.33
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1035\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero JL S.A de C.V在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Bombardier Learjet 60",
+                1.86
+            ],
+            [
+                "2024-01",
+                "Bombardier Learjet 35A",
+                1.86
+            ],
+            [
+                "2024-02",
+                "Bombardier Learjet 60",
+                2.44
+            ],
+            [
+                "2024-02",
+                "Bombardier Learjet 35A",
+                4.6
+            ],
+            [
+                "2024-03",
+                "Bombardier Learjet 60",
+                3.72
+            ],
+            [
+                "2024-03",
+                "Bombardier Learjet 35A",
+                3.11
+            ],
+            [
+                "2024-03",
+                "Bombardier Learjet 31A",
+                8.29
+            ],
+            [
+                "2024-04",
+                "Bombardier Learjet 35A",
+                2.3
+            ],
+            [
+                "2024-05",
+                "Bombardier Learjet 60",
+                2.17
+            ],
+            [
+                "2024-05",
+                "Bombardier Learjet 35A",
+                2.19
+            ],
+            [
+                "2024-06",
+                "Bombardier Learjet 60",
+                1.58
+            ],
+            [
+                "2024-06",
+                "Bombardier Learjet 35A",
+                1.96
+            ],
+            [
+                "2024-07",
+                "Bombardier Learjet 60",
+                2.04
+            ],
+            [
+                "2024-07",
+                "Bombardier Learjet 35A",
+                2.88
+            ],
+            [
+                "2024-08",
+                "Bombardier Learjet 60",
+                2.5
+            ],
+            [
+                "2024-08",
+                "Bombardier Learjet 35A",
+                2.17
+            ],
+            [
+                "2024-09",
+                "Bombardier Learjet 60",
+                1.67
+            ],
+            [
+                "2024-09",
+                "Bombardier Learjet 35A",
+                1.83
+            ],
+            [
+                "2024-10",
+                "Bombardier Learjet 60",
+                1.76
+            ],
+            [
+                "2024-10",
+                "Bombardier Learjet 35A",
+                1.64
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1036\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Sotravia在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Beechcraft King Air B200",
+                3.22
+            ],
+            [
+                "2024-02",
+                "Beechcraft King Air B200",
+                2.7
+            ],
+            [
+                "2024-03",
+                "Beechcraft King Air B200",
+                2.74
+            ],
+            [
+                "2024-04",
+                "Beechcraft King Air B200",
+                3.15
+            ],
+            [
+                "2024-04",
+                "Beechcraft King Air 200",
+                3.02
+            ],
+            [
+                "2024-05",
+                "Beechcraft King Air B200",
+                4.71
+            ],
+            [
+                "2024-05",
+                "Beechcraft King Air 200",
+                3.89
+            ],
+            [
+                "2024-06",
+                "Beechcraft King Air B200",
+                2.28
+            ],
+            [
+                "2024-06",
+                "Beechcraft King Air 200",
+                4.22
+            ],
+            [
+                "2024-07",
+                "Beechcraft King Air B200",
+                4.14
+            ],
+            [
+                "2024-07",
+                "Beechcraft King Air 200",
+                4.59
+            ],
+            [
+                "2024-08",
+                "Beechcraft King Air B200",
+                2.93
+            ],
+            [
+                "2024-08",
+                "Beechcraft King Air 200",
+                2.25
+            ],
+            [
+                "2024-09",
+                "Beechcraft King Air B200",
+                3.51
+            ],
+            [
+                "2024-09",
+                "Beechcraft King Air 200",
+                3.5
+            ],
+            [
+                "2024-10",
+                "Beechcraft King Air B200",
+                2.64
+            ],
+            [
+                "2024-10",
+                "Beechcraft King Air 200",
+                2.43
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1038\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero Transporte S.A.在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Gulfstream G100",
+                1.76
+            ],
+            [
+                "2024-02",
+                "Gulfstream G100",
+                6.21
+            ],
+            [
+                "2024-03",
+                "Gulfstream G100",
+                3.04
+            ],
+            [
+                "2024-04",
+                "Gulfstream G100",
+                3.33
+            ],
+            [
+                "2024-04",
+                "Beechcraft King Air B200",
+                1.58
+            ],
+            [
+                "2024-05",
+                "Gulfstream G100",
+                1.96
+            ],
+            [
+                "2024-05",
+                "Beechcraft King Air B200",
+                1.74
+            ],
+            [
+                "2024-06",
+                "Gulfstream G100",
+                2.27
+            ],
+            [
+                "2024-06",
+                "Beechcraft King Air B200",
+                1.19
+            ],
+            [
+                "2024-07",
+                "Gulfstream G100",
+                1.12
+            ],
+            [
+                "2024-07",
+                "Beechcraft King Air B200",
+                3.4
+            ],
+            [
+                "2024-08",
+                "Gulfstream G100",
+                1.8
+            ],
+            [
+                "2024-08",
+                "Beechcraft King Air B200",
+                1.82
+            ],
+            [
+                "2024-09",
+                "Beechcraft King Air B200",
+                1.61
+            ],
+            [
+                "2024-10",
+                "Gulfstream G100",
+                3.02
+            ],
+            [
+                "2024-10",
+                "Beechcraft King Air B200",
+                1.37
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1039\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aero-Tech Services Inc.在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Pilatus PC-12",
+                1.0
+            ],
+            [
+                "2024-01",
+                "Bombardier Learjet 45",
+                1.77
+            ],
+            [
+                "2024-02",
+                "Pilatus PC-12",
+                1.44
+            ],
+            [
+                "2024-02",
+                "Bombardier Learjet 45",
+                1.0
+            ],
+            [
+                "2024-03",
+                "Pilatus PC-12",
+                1.27
+            ],
+            [
+                "2024-03",
+                "Bombardier Learjet 45",
+                2.27
+            ],
+            [
+                "2024-04",
+                "Pilatus PC-12",
+                1.43
+            ],
+            [
+                "2024-04",
+                "Bombardier Learjet 45",
+                1.53
+            ],
+            [
+                "2024-05",
+                "Pilatus PC-12",
+                1.27
+            ],
+            [
+                "2024-05",
+                "Bombardier Learjet 45",
+                2.41
+            ],
+            [
+                "2024-06",
+                "Pilatus PC-12",
+                1.29
+            ],
+            [
+                "2024-06",
+                "Bombardier Learjet 45",
+                1.41
+            ],
+            [
+                "2024-07",
+                "Pilatus PC-12",
+                1.86
+            ],
+            [
+                "2024-07",
+                "Bombardier Learjet 45",
+                1.39
+            ],
+            [
+                "2024-08",
+                "Pilatus PC-12",
+                1.49
+            ],
+            [
+                "2024-08",
+                "Bombardier Learjet 45",
+                1.68
+            ],
+            [
+                "2024-09",
+                "Pilatus PC-12",
+                1.2
+            ],
+            [
+                "2024-09",
+                "Bombardier Learjet 45",
+                1.46
+            ],
+            [
+                "2024-10",
+                "Pilatus PC-12",
+                1.15
+            ],
+            [
+                "2024-10",
+                "Bombardier Learjet 45",
+                1.11
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1041\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerocardal在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Pilatus PC-24",
+                1.9
+            ],
+            [
+                "2024-01",
+                "Pilatus PC-12",
+                2.83
+            ],
+            [
+                "2024-01",
+                "Gulfstream G280",
+                1.64
+            ],
+            [
+                "2024-02",
+                "Pilatus PC-24",
+                3.2
+            ],
+            [
+                "2024-02",
+                "Pilatus PC-12",
+                1.64
+            ],
+            [
+                "2024-02",
+                "Gulfstream G280",
+                2.74
+            ],
+            [
+                "2024-03",
+                "Pilatus PC-24",
+                1.44
+            ],
+            [
+                "2024-03",
+                "Pilatus PC-12",
+                2.11
+            ],
+            [
+                "2024-03",
+                "Gulfstream G280",
+                2.07
+            ],
+            [
+                "2024-04",
+                "Pilatus PC-24",
+                2.54
+            ],
+            [
+                "2024-04",
+                "Pilatus PC-12",
+                1.75
+            ],
+            [
+                "2024-04",
+                "Gulfstream G280",
+                1.7
+            ],
+            [
+                "2024-05",
+                "Pilatus PC-24",
+                1.72
+            ],
+            [
+                "2024-05",
+                "Pilatus PC-12",
+                1.06
+            ],
+            [
+                "2024-05",
+                "Gulfstream G280",
+                1.79
+            ],
+            [
+                "2024-06",
+                "Gulfstream G280",
+                2.79
+            ],
+            [
+                "2024-07",
+                "Pilatus PC-24",
+                0.61
+            ],
+            [
+                "2024-07",
+                "Pilatus PC-12",
+                1.65
+            ],
+            [
+                "2024-07",
+                "Gulfstream G280",
+                2.67
+            ],
+            [
+                "2024-08",
+                "Pilatus PC-24",
+                3.18
+            ],
+            [
+                "2024-08",
+                "Pilatus PC-12",
+                1.56
+            ],
+            [
+                "2024-08",
+                "Gulfstream G280",
+                1.65
+            ],
+            [
+                "2024-09",
+                "Pilatus PC-24",
+                1.49
+            ],
+            [
+                "2024-09",
+                "Pilatus PC-12",
+                1.8
+            ],
+            [
+                "2024-09",
+                "Gulfstream G280",
+                1.14
+            ],
+            [
+                "2024-10",
+                "Pilatus PC-24",
+                1.46
+            ],
+            [
+                "2024-10",
+                "Pilatus PC-12",
+                1.78
+            ],
+            [
+                "2024-10",
+                "Gulfstream G280",
+                1.64
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1042\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerodynamics Malaga在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation CJ1",
+                1.39
+            ],
+            [
+                "2024-02",
+                "Cessna Citation CJ1",
+                1.24
+            ],
+            [
+                "2024-03",
+                "Cessna Citation CJ1",
+                1.3
+            ],
+            [
+                "2024-04",
+                "Cessna Citation CJ1",
+                1.31
+            ],
+            [
+                "2024-05",
+                "Cessna Citation CJ1",
+                1.26
+            ],
+            [
+                "2024-06",
+                "Cessna Citation CJ1",
+                1.43
+            ],
+            [
+                "2024-07",
+                "Cessna Citation CJ1",
+                1.4
+            ],
+            [
+                "2024-08",
+                "Cessna Citation CJ1",
+                1.38
+            ],
+            [
+                "2024-09",
+                "Cessna Citation CJ1",
+                1.44
+            ],
+            [
+                "2024-10",
+                "Cessna Citation CJ1",
+                1.34
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1044\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeroeste在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation Bravo",
+                0.75
+            ],
+            [
+                "2024-02",
+                "Cessna Citation Bravo",
+                0.71
+            ],
+            [
+                "2024-03",
+                "Cessna Citation Bravo",
+                0.92
+            ],
+            [
+                "2024-06",
+                "Cessna Citation Bravo",
+                0.93
+            ],
+            [
+                "2024-08",
+                "Cessna Citation Bravo",
+                1.21
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1045\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeromas在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-03",
+                "Bombardier Learjet 60",
+                1.45
+            ],
+            [
+                "2024-04",
+                "Bombardier Learjet 60",
+                0.56
+            ],
+            [
+                "2024-05",
+                "Bombardier Learjet 60",
+                0.56
+            ],
+            [
+                "2024-06",
+                "Bombardier Learjet 60",
+                1.8
+            ],
+            [
+                "2024-07",
+                "Bombardier Learjet 60",
+                2.48
+            ],
+            [
+                "2024-08",
+                "Bombardier Learjet 60",
+                2.39
+            ],
+            [
+                "2024-09",
+                "Bombardier Learjet 60",
+                2.81
+            ],
+            [
+                "2024-10",
+                "Bombardier Learjet 60",
+                0.65
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1048\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeronautical Charter Inc.在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Dassault Falcon 2000EX",
+                1.73
+            ],
+            [
+                "2024-02",
+                "Dassault Falcon 2000EX",
+                1.12
+            ],
+            [
+                "2024-05",
+                "Dassault Falcon 2000EX",
+                0.88
+            ],
+            [
+                "2024-06",
+                "Dassault Falcon 2000EX",
+                1.7
+            ],
+            [
+                "2024-07",
+                "Dassault Falcon 2000EX",
+                3.51
+            ],
+            [
+                "2024-08",
+                "Dassault Falcon 2000EX",
+                1.67
+            ],
+            [
+                "2024-09",
+                "Dassault Falcon 2000EX",
+                1.31
+            ],
+            [
+                "2024-10",
+                "Dassault Falcon 2000EX",
+                2.88
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1050\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeronaves Tsm S.A.在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation I",
+                1.36
+            ],
+            [
+                "2024-01",
+                "Bombardier CRJ-200",
+                2.28
+            ],
+            [
+                "2024-02",
+                "Bombardier CRJ-200",
+                5.79
+            ],
+            [
+                "2024-03",
+                "Cessna Citation I",
+                1.6
+            ],
+            [
+                "2024-03",
+                "Bombardier CRJ-200",
+                1.77
+            ],
+            [
+                "2024-04",
+                "Cessna Citation I",
+                0.52
+            ],
+            [
+                "2024-04",
+                "Bombardier CRJ-200",
+                0.61
+            ],
+            [
+                "2024-05",
+                "Cessna Citation I",
+                0.91
+            ],
+            [
+                "2024-05",
+                "Bombardier CRJ-200",
+                0.52
+            ],
+            [
+                "2024-06",
+                "Cessna Citation I",
+                0.95
+            ],
+            [
+                "2024-07",
+                "Cessna Citation I",
+                0.97
+            ],
+            [
+                "2024-08",
+                "Cessna Citation I",
+                0.59
+            ],
+            [
+                "2024-09",
+                "Cessna Citation I",
+                2.38
+            ],
+            [
+                "2024-09",
+                "Bombardier CRJ-200",
+                2.24
+            ],
+            [
+                "2024-09",
+                "Boeing 737",
+                1.13
+            ],
+            [
+                "2024-10",
+                "Cessna Citation I",
+                0.85
+            ],
+            [
+                "2024-10",
+                "Boeing 737",
+                1.18
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1051\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeropartner在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation XLS+",
+                1.25
+            ],
+            [
+                "2024-01",
+                "Cessna Citation XLS",
+                2.13
+            ],
+            [
+                "2024-01",
+                "Cessna Citation Mustang",
+                1.05
+            ],
+            [
+                "2024-01",
+                "Cessna Citation CJ3",
+                1.67
+            ],
+            [
+                "2024-02",
+                "Cessna Citation XLS+",
+                1.56
+            ],
+            [
+                "2024-02",
+                "Cessna Citation XLS",
+                2.28
+            ],
+            [
+                "2024-02",
+                "Cessna Citation Mustang",
+                1.07
+            ],
+            [
+                "2024-02",
+                "Cessna Citation CJ3",
+                1.77
+            ],
+            [
+                "2024-03",
+                "Cessna Citation XLS+",
+                1.36
+            ],
+            [
+                "2024-03",
+                "Cessna Citation XLS",
+                2.4
+            ],
+            [
+                "2024-03",
+                "Cessna Citation Mustang",
+                1.02
+            ],
+            [
+                "2024-03",
+                "Cessna Citation CJ3",
+                0.97
+            ],
+            [
+                "2024-04",
+                "Cessna Citation XLS+",
+                1.74
+            ],
+            [
+                "2024-04",
+                "Cessna Citation XLS",
+                2.26
+            ],
+            [
+                "2024-04",
+                "Cessna Citation Mustang",
+                1.15
+            ],
+            [
+                "2024-04",
+                "Cessna Citation CJ3",
+                1.51
+            ],
+            [
+                "2024-05",
+                "Cessna Citation XLS+",
+                1.82
+            ],
+            [
+                "2024-05",
+                "Cessna Citation XLS",
+                1.68
+            ],
+            [
+                "2024-05",
+                "Cessna Citation Mustang",
+                1.24
+            ],
+            [
+                "2024-05",
+                "Cessna Citation CJ3",
+                1.48
+            ],
+            [
+                "2024-06",
+                "Cessna Citation XLS+",
+                1.54
+            ],
+            [
+                "2024-06",
+                "Cessna Citation XLS",
+                1.33
+            ],
+            [
+                "2024-06",
+                "Cessna Citation Mustang",
+                1.18
+            ],
+            [
+                "2024-06",
+                "Cessna Citation CJ3",
+                1.35
+            ],
+            [
+                "2024-07",
+                "Cessna Citation XLS+",
+                1.72
+            ],
+            [
+                "2024-07",
+                "Cessna Citation XLS",
+                1.41
+            ],
+            [
+                "2024-07",
+                "Cessna Citation Mustang",
+                1.35
+            ],
+            [
+                "2024-07",
+                "Cessna Citation CJ3",
+                1.35
+            ],
+            [
+                "2024-08",
+                "Cessna Citation XLS+",
+                2.04
+            ],
+            [
+                "2024-08",
+                "Cessna Citation XLS",
+                1.54
+            ],
+            [
+                "2024-08",
+                "Cessna Citation Mustang",
+                1.51
+            ],
+            [
+                "2024-08",
+                "Cessna Citation CJ3",
+                1.28
+            ],
+            [
+                "2024-09",
+                "Cessna Citation XLS+",
+                1.93
+            ],
+            [
+                "2024-09",
+                "Cessna Citation XLS",
+                1.54
+            ],
+            [
+                "2024-09",
+                "Cessna Citation Sovereign",
+                1.48
+            ],
+            [
+                "2024-09",
+                "Cessna Citation Mustang",
+                1.29
+            ],
+            [
+                "2024-09",
+                "Cessna Citation CJ3",
+                1.19
+            ],
+            [
+                "2024-10",
+                "Cessna Citation XLS+",
+                2.02
+            ],
+            [
+                "2024-10",
+                "Cessna Citation XLS",
+                1.55
+            ],
+            [
+                "2024-10",
+                "Cessna Citation Sovereign",
+                2.26
+            ],
+            [
+                "2024-10",
+                "Cessna Citation Mustang",
+                0.86
+            ],
+            [
+                "2024-10",
+                "Cessna Citation CJ3",
+                2.23
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1052\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerosafin S.A de C.V在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Hawker 800XP",
+                1.1
+            ],
+            [
+                "2024-01",
+                "Hawker 400XP",
+                2.09
+            ],
+            [
+                "2024-02",
+                "Hawker 400XP",
+                1.58
+            ],
+            [
+                "2024-03",
+                "Hawker 800XP",
+                1.36
+            ],
+            [
+                "2024-03",
+                "Hawker 400XP",
+                1.91
+            ],
+            [
+                "2024-04",
+                "Hawker 800XP",
+                1.02
+            ],
+            [
+                "2024-04",
+                "Hawker 400XP",
+                1.21
+            ],
+            [
+                "2024-05",
+                "Hawker 400XP",
+                1.81
+            ],
+            [
+                "2024-06",
+                "Hawker 400XP",
+                1.58
+            ],
+            [
+                "2024-07",
+                "Hawker 400XP",
+                1.34
+            ],
+            [
+                "2024-08",
+                "Hawker 800XP",
+                0.55
+            ],
+            [
+                "2024-08",
+                "Hawker 400XP",
+                1.41
+            ],
+            [
+                "2024-09",
+                "Hawker 400XP",
+                1.53
+            ],
+            [
+                "2024-10",
+                "Hawker 400XP",
+                1.93
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1055\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerovida S.A在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Beechcraft King Air B200",
+                0.54
+            ],
+            [
+                "2024-02",
+                "Beechcraft King Air B200",
+                0.64
+            ],
+            [
+                "2024-03",
+                "Cessna Citation Ultra",
+                1.09
+            ],
+            [
+                "2024-03",
+                "Beechcraft King Air B200",
+                2.68
+            ],
+            [
+                "2024-04",
+                "Cessna Citation Ultra",
+                0.77
+            ],
+            [
+                "2024-04",
+                "Beechcraft King Air B200",
+                2.08
+            ],
+            [
+                "2024-05",
+                "Beechcraft King Air B200",
+                1.43
+            ],
+            [
+                "2024-06",
+                "Cessna Citation Ultra",
+                0.7
+            ],
+            [
+                "2024-06",
+                "Beechcraft King Air B200",
+                0.56
+            ],
+            [
+                "2024-07",
+                "Cessna Citation Ultra",
+                0.91
+            ],
+            [
+                "2024-07",
+                "Beechcraft King Air B200",
+                1.51
+            ],
+            [
+                "2024-08",
+                "Cessna Citation Ultra",
+                1.47
+            ],
+            [
+                "2024-08",
+                "Beechcraft King Air B200",
+                3.21
+            ],
+            [
+                "2024-09",
+                "Cessna Citation Ultra",
+                0.78
+            ],
+            [
+                "2024-10",
+                "Cessna Citation Ultra",
+                1.67
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1058\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aeroways GmbH在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Piper PA-46",
+                1.31
+            ],
+            [
+                "2024-02",
+                "Piper PA-46",
+                1.41
+            ],
+            [
+                "2024-03",
+                "Piper PA-46",
+                1.0
+            ],
+            [
+                "2024-04",
+                "Piper PA-46",
+                0.97
+            ],
+            [
+                "2024-05",
+                "Piper PA-46",
+                1.61
+            ],
+            [
+                "2024-06",
+                "Piper PA-46",
+                1.61
+            ],
+            [
+                "2024-07",
+                "Piper PA-46",
+                1.71
+            ],
+            [
+                "2024-08",
+                "Piper PA-46",
+                1.8
+            ],
+            [
+                "2024-09",
+                "Piper PA-46",
+                1.27
+            ],
+            [
+                "2024-10",
+                "Piper PA-46",
+                1.64
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1059\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aerowest GmbH在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation XLS+",
+                0.89
+            ],
+            [
+                "2024-02",
+                "Cessna Citation XLS+",
+                1.06
+            ],
+            [
+                "2024-03",
+                "Cessna Citation XLS+",
+                1.53
+            ],
+            [
+                "2024-04",
+                "Cessna Citation XLS+",
+                1.23
+            ],
+            [
+                "2024-05",
+                "Cessna Citation XLS+",
+                1.04
+            ],
+            [
+                "2024-06",
+                "Cessna Citation XLS+",
+                1.32
+            ],
+            [
+                "2024-07",
+                "Cessna Citation XLS+",
+                1.38
+            ],
+            [
+                "2024-08",
+                "Cessna Citation XLS+",
+                1.2
+            ],
+            [
+                "2024-09",
+                "Cessna Citation XLS+",
+                1.3
+            ],
+            [
+                "2024-10",
+                "Cessna Citation XLS+",
+                1.52
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1060\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air 7 LLC在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Gulfstream G200",
+                1.74
+            ],
+            [
+                "2024-01",
+                "Gulfstream G100",
+                2.2
+            ],
+            [
+                "2024-01",
+                "Embraer Phenom 100",
+                2.25
+            ],
+            [
+                "2024-01",
+                "Cessna Citation XLS",
+                2.04
+            ],
+            [
+                "2024-02",
+                "Gulfstream G200",
+                2.89
+            ],
+            [
+                "2024-02",
+                "Gulfstream G100",
+                2.64
+            ],
+            [
+                "2024-03",
+                "Gulfstream G200",
+                2.62
+            ],
+            [
+                "2024-03",
+                "Gulfstream G100",
+                2.38
+            ],
+            [
+                "2024-04",
+                "Gulfstream G200",
+                1.75
+            ],
+            [
+                "2024-04",
+                "Gulfstream G100",
+                2.52
+            ],
+            [
+                "2024-04",
+                "Embraer Phenom 100",
+                1.38
+            ],
+            [
+                "2024-04",
+                "Cessna Citation XLS",
+                2.11
+            ],
+            [
+                "2024-05",
+                "Gulfstream G200",
+                2.74
+            ],
+            [
+                "2024-05",
+                "Gulfstream G100",
+                2.75
+            ],
+            [
+                "2024-05",
+                "Cessna Citation XLS",
+                1.46
+            ],
+            [
+                "2024-06",
+                "Gulfstream G200",
+                2.34
+            ],
+            [
+                "2024-06",
+                "Gulfstream G100",
+                2.25
+            ],
+            [
+                "2024-06",
+                "Embraer Phenom 100",
+                1.22
+            ],
+            [
+                "2024-06",
+                "Cessna Citation XLS",
+                2.11
+            ],
+            [
+                "2024-07",
+                "Gulfstream G200",
+                4.47
+            ],
+            [
+                "2024-07",
+                "Gulfstream G100",
+                3.04
+            ],
+            [
+                "2024-07",
+                "Embraer Phenom 100",
+                0.7
+            ],
+            [
+                "2024-07",
+                "Cessna Citation XLS",
+                2.86
+            ],
+            [
+                "2024-08",
+                "Gulfstream G200",
+                1.89
+            ],
+            [
+                "2024-08",
+                "Gulfstream G100",
+                2.65
+            ],
+            [
+                "2024-08",
+                "Embraer Phenom 100",
+                0.88
+            ],
+            [
+                "2024-08",
+                "Cessna Citation XLS",
+                1.5
+            ],
+            [
+                "2024-09",
+                "Gulfstream G200",
+                1.32
+            ],
+            [
+                "2024-09",
+                "Gulfstream G100",
+                2.08
+            ],
+            [
+                "2024-09",
+                "Embraer Phenom 100",
+                1.12
+            ],
+            [
+                "2024-09",
+                "Cessna Citation XLS",
+                1.6
+            ],
+            [
+                "2024-10",
+                "Gulfstream G200",
+                2.03
+            ],
+            [
+                "2024-10",
+                "Gulfstream G100",
+                3.06
+            ],
+            [
+                "2024-10",
+                "Embraer Phenom 100",
+                0.65
+            ],
+            [
+                "2024-10",
+                "Cessna Citation XLS",
+                1.52
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1061\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Adriatic D.O.O.在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Cessna Citation XLS+",
+                1.53
+            ],
+            [
+                "2024-02",
+                "Cessna Citation XLS+",
+                1.4
+            ],
+            [
+                "2024-03",
+                "Cessna Citation XLS+",
+                1.28
+            ],
+            [
+                "2024-04",
+                "Cessna Citation XLS+",
+                1.64
+            ],
+            [
+                "2024-06",
+                "Cessna Citation XLS+",
+                1.6
+            ],
+            [
+                "2024-07",
+                "Cessna Citation XLS+",
+                2.22
+            ],
+            [
+                "2024-08",
+                "Cessna Citation XLS+",
+                1.76
+            ],
+            [
+                "2024-09",
+                "Cessna Citation XLS+",
+                1.99
+            ],
+            [
+                "2024-10",
+                "Cessna Citation XLS+",
+                2.56
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1062\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Alliance Group GmbH在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Bombardier Learjet 45",
+                2.39
+            ],
+            [
+                "2024-01",
+                "Bombardier Challenger 604",
+                3.77
+            ],
+            [
+                "2024-02",
+                "Bombardier Learjet 45",
+                2.1
+            ],
+            [
+                "2024-03",
+                "Bombardier Learjet 45",
+                1.01
+            ],
+            [
+                "2024-03",
+                "Bombardier Challenger 604",
+                4.87
+            ],
+            [
+                "2024-04",
+                "Bombardier Learjet 45",
+                1.81
+            ],
+            [
+                "2024-04",
+                "Bombardier Challenger 604",
+                4.52
+            ],
+            [
+                "2024-05",
+                "Bombardier Learjet 45",
+                2.24
+            ],
+            [
+                "2024-05",
+                "Bombardier Challenger 604",
+                2.77
+            ],
+            [
+                "2024-06",
+                "Bombardier Learjet 45",
+                2.6
+            ],
+            [
+                "2024-06",
+                "Bombardier Challenger 604",
+                4.0
+            ],
+            [
+                "2024-07",
+                "Bombardier Learjet 45",
+                1.88
+            ],
+            [
+                "2024-08",
+                "Bombardier Learjet 45",
+                1.85
+            ],
+            [
+                "2024-09",
+                "Bombardier Learjet 45",
+                2.61
+            ],
+            [
+                "2024-10",
+                "Bombardier Learjet 45",
+                2.3
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1063\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Air Alsie在2024年每个月各机型的平均飞行小时数分别是多少？",
+        "A": [
+            [
+                "2024-01",
+                "Pilatus PC-12",
+                1.62
+            ],
+            [
+                "2024-01",
+                "Dassault Falcon 8X",
+                3.4
+            ],
+            [
+                "2024-01",
+                "Dassault Falcon 7X",
+                2.84
+            ],
+            [
+                "2024-01",
+                "Dassault Falcon 2000LX",
+                2.26
+            ],
+            [
+                "2024-01",
+                "Dassault Falcon 2000",
+                1.5
+            ],
+            [
+                "2024-02",
+                "Pilatus PC-12",
+                1.44
+            ],
+            [
+                "2024-02",
+                "Dassault Falcon 8X",
+                4.13
+            ],
+            [
+                "2024-02",
+                "Dassault Falcon 7X",
+                3.27
+            ],
+            [
+                "2024-02",
+                "Dassault Falcon 2000LX",
+                1.81
+            ],
+            [
+                "2024-02",
+                "Dassault Falcon 2000",
+                1.73
+            ],
+            [
+                "2024-03",
+                "Pilatus PC-12",
+                1.38
+            ],
+            [
+                "2024-03",
+                "Dassault Falcon 8X",
+                3.81
+            ],
+            [
+                "2024-03",
+                "Dassault Falcon 7X",
+                2.71
+            ],
+            [
+                "2024-03",
+                "Dassault Falcon 2000LX",
+                1.39
+            ],
+            [
+                "2024-03",
+                "Dassault Falcon 2000",
+                1.37
+            ],
+            [
+                "2024-04",
+                "Pilatus PC-12",
+                0.58
+            ],
+            [
+                "2024-04",
+                "Dassault Falcon 8X",
+                3.79
+            ],
+            [
+                "2024-04",
+                "Dassault Falcon 7X",
+                2.54
+            ],
+            [
+                "2024-04",
+                "Dassault Falcon 2000LX",
+                1.7
+            ],
+            [
+                "2024-04",
+                "Dassault Falcon 2000",
+                1.42
+            ],
+            [
+                "2024-05",
+                "Pilatus PC-12",
+                1.34
+            ],
+            [
+                "2024-05",
+                "Dassault Falcon 8X",
+                3.64
+            ],
+            [
+                "2024-05",
+                "Dassault Falcon 7X",
+                1.63
+            ],
+            [
+                "2024-05",
+                "Dassault Falcon 2000LX",
+                2.26
+            ],
+            [
+                "2024-05",
+                "Dassault Falcon 2000",
+                1.27
+            ],
+            [
+                "2024-06",
+                "Pilatus PC-12",
+                1.31
+            ],
+            [
+                "2024-06",
+                "Dassault Falcon 8X",
+                2.27
+            ],
+            [
+                "2024-06",
+                "Dassault Falcon 7X",
+                2.68
+            ],
+            [
+                "2024-06",
+                "Dassault Falcon 2000LX",
+                1.89
+            ],
+            [
+                "2024-06",
+                "Dassault Falcon 2000",
+                1.59
+            ],
+            [
+                "2024-07",
+                "Pilatus PC-12",
+                1.43
+            ],
+            [
+                "2024-07",
+                "Dassault Falcon 8X",
+                3.5
+            ],
+            [
+                "2024-07",
+                "Dassault Falcon 7X",
+                2.18
+            ],
+            [
+                "2024-07",
+                "Dassault Falcon 2000LX",
+                1.72
+            ],
+            [
+                "2024-07",
+                "Dassault Falcon 2000",
+                1.58
+            ],
+            [
+                "2024-08",
+                "Pilatus PC-12",
+                1.47
+            ],
+            [
+                "2024-08",
+                "Dassault Falcon 8X",
+                2.25
+            ],
+            [
+                "2024-08",
+                "Dassault Falcon 7X",
+                1.88
+            ],
+            [
+                "2024-08",
+                "Dassault Falcon 2000LX",
+                1.8
+            ],
+            [
+                "2024-08",
+                "Dassault Falcon 2000",
+                1.67
+            ],
+            [
+                "2024-09",
+                "Pilatus PC-12",
+                1.44
+            ],
+            [
+                "2024-09",
+                "Dassault Falcon 8X",
+                2.65
+            ],
+            [
+                "2024-09",
+                "Dassault Falcon 7X",
+                2.61
+            ],
+            [
+                "2024-09",
+                "Dassault Falcon 2000LX",
+                2.0
+            ],
+            [
+                "2024-09",
+                "Dassault Falcon 2000",
+                1.59
+            ],
+            [
+                "2024-10",
+                "Pilatus PC-12",
+                1.26
+            ],
+            [
+                "2024-10",
+                "Dassault Falcon 8X",
+                3.44
+            ],
+            [
+                "2024-10",
+                "Dassault Falcon 7X",
+                3.05
+            ],
+            [
+                "2024-10",
+                "Dassault Falcon 2000LX",
+                1.79
+            ],
+            [
+                "2024-10",
+                "Dassault Falcon 2000",
+                1.4
+            ]
+        ],
+        "SQL": "SELECT\n        a.date_month,\n        b.aircraft_model_name,\n        round(( sum( a.diff_minutes )/ count(*))/ 60, 2 ) AS average_hours\nFROM\n        zts_plane_flight_1 a\n        JOIN aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n        b.supplier_id = \"1064\"\n        AND date_month BETWEEN '2024-01'\n        AND '2024-12'\n        AND a.diff_minutes BETWEEN 30\n        AND 1080\nGROUP BY\n        a.date_month,\n        b.aircraft_model_name\nORDER BY\n        date_month ASC,\n        aircraft_model_name DESC;"
+    }
+]

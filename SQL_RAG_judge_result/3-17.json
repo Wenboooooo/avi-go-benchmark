@@ -1,0 +1,52 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出在Maupiti中，使用频率最高的前5公务机及其航班数。",
+        "A": [],
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295379\" OR c.search_city_id = \"10295379\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295379\" OR c.search_city_id = \"10295379\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出在Arutua中，使用频率最高的前5公务机及其航班数。",
+        "A": [],
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295216\" OR c.search_city_id = \"10295216\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295216\" OR c.search_city_id = \"10295216\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出在Kerch中，使用频率最高的前5公务机及其航班数。",
+        "A": [],
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1038\" OR c.search_city_id = \"1038\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1038\" OR c.search_city_id = \"1038\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出在Tureia中，使用频率最高的前5公务机及其航班数。",
+        "A": [],
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295368\" OR c.search_city_id = \"10295368\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295368\" OR c.search_city_id = \"10295368\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\nLIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出在Hikueru中，使用频率最高的前5公务机及其航班数。",
+        "A": [],
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295301\" OR c.search_city_id = \"10295301\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295301\" OR c.search_city_id = \"10295301\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "correct_rate": 100.0,
+        "sample_size": 5,
+        "correct_count": 5
+    }
+]

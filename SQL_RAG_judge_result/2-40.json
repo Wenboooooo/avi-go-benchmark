@@ -1,0 +1,425 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "Abraham Gonzalez International Airport机场在2024年各月的飞行量（起降一起），并提供2024年每个月环比上一个月的增长率。（2024年1月环比2023年12月）",
+        "A": [
+            [
+                "2024-02",
+                100,
+                83,
+                "20.48%"
+            ],
+            [
+                "2024-03",
+                81,
+                100,
+                "-19.00%"
+            ],
+            [
+                "2024-04",
+                93,
+                81,
+                "14.81%"
+            ],
+            [
+                "2024-05",
+                115,
+                93,
+                "23.66%"
+            ],
+            [
+                "2024-06",
+                84,
+                115,
+                "-26.96%"
+            ],
+            [
+                "2024-07",
+                89,
+                84,
+                "5.95%"
+            ],
+            [
+                "2024-08",
+                69,
+                89,
+                "-22.47%"
+            ],
+            [
+                "2024-09",
+                71,
+                69,
+                "2.90%"
+            ],
+            [
+                "2024-10",
+                56,
+                71,
+                "-21.13%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"MMCS\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"MMCS\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"MMCS\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"MMCS\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) \nSELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Abqaiq机场在2024年各月的飞行量（起降一起），并提供2024年每个月环比上一个月的增长率。（2024年1月环比2023年12月）",
+        "A": [
+            [
+                "2024-03",
+                4,
+                3,
+                "33.33%"
+            ],
+            [
+                "2024-04",
+                5,
+                4,
+                "25.00%"
+            ],
+            [
+                "2024-05",
+                5,
+                5,
+                "0.00%"
+            ],
+            [
+                "2024-07",
+                3,
+                5,
+                "-40.00%"
+            ],
+            [
+                "2024-08",
+                3,
+                3,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"OEBQ\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"OEBQ\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"OEBQ\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"OEBQ\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 )\nSELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aalborg Airport机场在2024年各月的飞行量（起降一起），并提供2024年每个月环比上一个月的增长率。（2024年1月环比2023年12月）",
+        "A": [
+            [
+                "2024-02",
+                67,
+                54,
+                "24.07%"
+            ],
+            [
+                "2024-03",
+                69,
+                67,
+                "2.99%"
+            ],
+            [
+                "2024-04",
+                53,
+                69,
+                "-23.19%"
+            ],
+            [
+                "2024-05",
+                87,
+                53,
+                "64.15%"
+            ],
+            [
+                "2024-06",
+                67,
+                87,
+                "-22.99%"
+            ],
+            [
+                "2024-07",
+                91,
+                67,
+                "35.82%"
+            ],
+            [
+                "2024-08",
+                77,
+                91,
+                "-15.38%"
+            ],
+            [
+                "2024-09",
+                98,
+                77,
+                "27.27%"
+            ],
+            [
+                "2024-10",
+                60,
+                98,
+                "-38.78%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"EKYT\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"EKYT\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"EKYT\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"EKYT\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Abaco I Walker C机场在2024年各月的飞行量（起降一起），并提供2024年每个月环比上一个月的增长率。（2024年1月环比2023年12月）",
+        "A": [
+            [
+                "2024-03",
+                3,
+                5,
+                "-40.00%"
+            ],
+            [
+                "2024-09",
+                2,
+                3,
+                "-33.33%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"MYAW\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"MYAW\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"MYAW\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"MYAW\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Abaete机场在2024年各月的飞行量（起降一起），并提供2024年每个月环比上一个月的增长率。（2024年1月环比2023年12月）",
+        "A": [
+            [
+                "2024-07",
+                4,
+                4,
+                "0.00%"
+            ],
+            [
+                "2024-09",
+                3,
+                4,
+                "-25.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"SNLI\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"SNLI\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "如果你给出一个具体的问题，我可以为你生成相应的SQL查询语句。请告诉我你想查询哪个机场或其他相关信息，我会尽力帮助你。",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Abraham Lincoln Capital Airport机场在2024年各月的飞行量（起降一起），并提供2024年每个月环比上一个月的增长率。（2024年1月环比2023年12月）",
+        "A": [
+            [
+                "2024-01",
+                224,
+                2,
+                "11100.00%"
+            ],
+            [
+                "2024-02",
+                272,
+                224,
+                "21.43%"
+            ],
+            [
+                "2024-03",
+                243,
+                272,
+                "-10.66%"
+            ],
+            [
+                "2024-04",
+                245,
+                243,
+                "0.82%"
+            ],
+            [
+                "2024-05",
+                266,
+                245,
+                "8.57%"
+            ],
+            [
+                "2024-06",
+                260,
+                266,
+                "-2.26%"
+            ],
+            [
+                "2024-07",
+                233,
+                260,
+                "-10.38%"
+            ],
+            [
+                "2024-08",
+                255,
+                233,
+                "9.44%"
+            ],
+            [
+                "2024-09",
+                229,
+                255,
+                "-10.20%"
+            ],
+            [
+                "2024-10",
+                177,
+                229,
+                "-22.71%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"KSPI\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"KSPI\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"KSPI\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"KSPI\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Abha Airport机场在2024年各月的飞行量（起降一起），并提供2024年每个月环比上一个月的增长率。（2024年1月环比2023年12月）",
+        "A": [
+            [
+                "2024-02",
+                18,
+                7,
+                "157.14%"
+            ],
+            [
+                "2024-03",
+                22,
+                18,
+                "22.22%"
+            ],
+            [
+                "2024-04",
+                12,
+                22,
+                "-45.45%"
+            ],
+            [
+                "2024-05",
+                7,
+                12,
+                "-41.67%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"OEAB\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"OEAB\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"OEAB\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"OEAB\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aberdeen Regional Airport机场在2024年各月的飞行量（起降一起），并提供2024年每个月环比上一个月的增长率。（2024年1月环比2023年12月）",
+        "A": [
+            [
+                "2024-02",
+                68,
+                100,
+                "-32.00%"
+            ],
+            [
+                "2024-03",
+                106,
+                68,
+                "55.88%"
+            ],
+            [
+                "2024-04",
+                83,
+                106,
+                "-21.70%"
+            ],
+            [
+                "2024-05",
+                92,
+                83,
+                "10.84%"
+            ],
+            [
+                "2024-06",
+                93,
+                92,
+                "1.09%"
+            ],
+            [
+                "2024-07",
+                87,
+                93,
+                "-6.45%"
+            ],
+            [
+                "2024-08",
+                128,
+                87,
+                "47.13%"
+            ],
+            [
+                "2024-09",
+                88,
+                128,
+                "-31.25%"
+            ],
+            [
+                "2024-10",
+                97,
+                88,
+                "10.23%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"KABR\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"KABR\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"KABR\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"KABR\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aberdeen Field机场在2024年各月的飞行量（起降一起），并提供2024年每个月环比上一个月的增长率。（2024年1月环比2023年12月）",
+        "A": [
+            [
+                "2024-07",
+                15,
+                6,
+                "150.00%"
+            ],
+            [
+                "2024-09",
+                5,
+                15,
+                "-66.67%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"31VA\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"31VA\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"31VA\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"31VA\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "yes"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Aanenson机场在2024年各月的飞行量（起降一起），并提供2024年每个月环比上一个月的增长率。（2024年1月环比2023年12月）",
+        "A": [
+            [
+                "2024-09",
+                2,
+                6,
+                "-66.67%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"KLYV\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"KLYV\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( SELECT date_month, num, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_3 ) SELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS dep_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.dep_icao = \"KLYV\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month COLLATE utf8mb4_general_ci AS date_month,\n                COUNT(*) AS arr_count\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.arr_icao = \"KLYV\" COLLATE utf8mb4_general_ci\n                AND a.date_month BETWEEN '2023-12' COLLATE utf8mb4_general_ci\n                AND '2024-12' COLLATE utf8mb4_general_ci\n        GROUP BY\n                a.date_month COLLATE utf8mb4_general_ci\n        ),\n        biao_3 AS (\n        SELECT\n                a.date_month,\n                ( a.dep_count + b.arr_count ) AS num\n        FROM\n                biao_1 a\n                JOIN biao_2 b ON a.date_month = b.date_month\n        ),\n        biao_4 AS ( \n        SELECT \n                date_month, \n                num, \n                lag( num ) over ( ORDER BY date_month ) AS last_num \n        FROM \n                biao_3 \n        ) \nSELECT\n        date_month,\n        num,\n        last_num,\n        concat( round(( num - last_num )/ last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_4\nWHERE\n        last_num IS NOT NULL;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "correct_rate": 60.0,
+        "sample_size": 10,
+        "correct_count": 6
+    }
+]

@@ -41,7 +41,7 @@ def generate_prompt(query, few_shot_data):
 
 def query_revise(retrieval_model, query, convertion_dict, macth_dict):
     slots = "aircraft_model_name: {}\naircraft_registration: {}\nairport_name: {}\ncity_name: {}"
-    slot_filling_prompt = f'''Given the following text, please fill in the slots with the correct values:\n\nText: {query}\n\nSlots:\n{slots}\n\nYour should output a json with slot as key and value as value. For example:\n```json\n{{\n    "aircraft_model_name": "Boeing 737",\n    "aircraft_registration": "",\n    "airport_name": "",\n    "city_name": ""\n}}\n```\nIf you don't know the answer, please leave the value empty.\n\n'''
+    slot_filling_prompt = f'''Given the following text, please fill in the slots with the correct values:\n\nText: {query}\n\nSlots:\n{slots}\n\nYour should output a json with slot as key and value as value. For example:\n```json\n{{\n    "aircraft_model_name": "Boeing 737",\n    "aircraft_registration": "",\n    "airport_name": "",\n    "city_name": ""\n}}\n```\nIf you don't know the answer, please leave the value empty.\nDo not modify the table names and statement structure in the example SQL statements you provide.\n'''
 
 
     response = LLM_generate(slot_filling_prompt, is_print=True)

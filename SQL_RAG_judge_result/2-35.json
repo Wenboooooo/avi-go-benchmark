@@ -1,0 +1,52 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "Bombardier Challenger 850机型在2024年每个月的飞行量变化如何？",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.aircraft_model_id = \"Bombardier Challenger 850\"\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        *,\n        num - last_num AS diff_num\nFROM\n        biao_2\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.aircraft_model_id = \"150838\"\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        *,\n        num - last_num AS diff_num\nFROM\n        biao_2\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Bombardier Global 6000机型在2024年每个月的飞行量变化如何？",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.aircraft_model_id = \"Bombardier Global 6000\"\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        *,\n        num - last_num AS diff_num\nFROM\n        biao_2\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.aircraft_model_id = \"543837\"\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( \n        SELECT \n                *, \n                lag(num) over (ORDER BY date_month) AS last_num \n        FROM \n                biao_1 \n        ) \nSELECT\n        *,\n        num - last_num AS diff_num\nFROM\n        biao_2\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Gulfstream G450机型在2024年每个月的飞行量变化如何？",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.aircraft_model_id = \"Gulfstream G450\"\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        *,\n        num - last_num AS diff_num\nFROM\n        biao_2\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.aircraft_model_id = \"798637\"\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) \nSELECT\n        *,\n        num - last_num AS diff_num\nFROM\n        biao_2\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Embraer Phenom 300机型在2024年每个月的飞行量变化如何？",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.aircraft_model_id = \"Embraer Phenom 300\"\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        *,\n        num - last_num AS diff_num\nFROM\n        biao_2\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.aircraft_model_id = \"995197\"\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        *,\n        num - last_num AS diff_num\nFROM\n        biao_2\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "Bombardier Challenger 605机型在2024年每个月的飞行量变化如何？",
+        "A": [],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.aircraft_model_id = \"Bombardier Challenger 605\"\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        *,\n        num - last_num AS diff_num\nFROM\n        biao_2\nORDER BY\n        date_month;",
+        "actual_SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN avigo_nlp_dev.ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month BETWEEN '2024-01'\n                AND '2024-12'\n                AND b.aircraft_model_id = \"898351\"\n        GROUP BY\n                a.date_month\n        ),\n        biao_2 AS ( SELECT *, lag( num ) over ( ORDER BY date_month ) AS last_num FROM biao_1 ) SELECT\n        *,\n        num - last_num AS diff_num\nFROM\n        biao_2\nORDER BY\n        date_month;",
+        "actual_answer": null,
+        "is_correct(SQL_judge)": "no"
+    },
+    {
+        "correct_rate": 0.0,
+        "sample_size": 5,
+        "correct_count": 0
+    }
+]

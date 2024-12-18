@@ -3,13 +3,13 @@
         "DB": "ai_database_dev",
         "Q": "列出在Jamestown中，使用频率最高的前5公务机及其航班数。",
         "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1010\" OR c.search_city_id = \"1010\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1010\" OR c.search_city_id = \"1010\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
         "Q": "列出在Niue Island中，使用频率最高的前5公务机及其航班数。",
         "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1020\" OR c.search_city_id = \"1020\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1020\" OR c.search_city_id = \"1020\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
@@ -20,7 +20,7 @@
                 1
             ]
         ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1026\" OR c.search_city_id = \"1026\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1026\" OR c.search_city_id = \"1026\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
@@ -31,55 +31,55 @@
                 1
             ]
         ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295215\" OR c.search_city_id = \"10295215\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295215\" OR c.search_city_id = \"10295215\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
         "Q": "列出在Arutua中，使用频率最高的前5公务机及其航班数。",
         "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295216\" OR c.search_city_id = \"10295216\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295216\" OR c.search_city_id = \"10295216\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
         "Q": "列出在Fangatau中，使用频率最高的前5公务机及其航班数。",
         "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295218\" OR c.search_city_id = \"10295218\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295218\" OR c.search_city_id = \"10295218\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
         "Q": "列出在Hikueru中，使用频率最高的前5公务机及其航班数。",
         "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295301\" OR c.search_city_id = \"10295301\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295301\" OR c.search_city_id = \"10295301\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
         "Q": "列出在Nukutavake中，使用频率最高的前5公务机及其航班数。",
         "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295321\" OR c.search_city_id = \"10295321\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295321\" OR c.search_city_id = \"10295321\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
         "Q": "列出在Rangiroa中，使用频率最高的前5公务机及其航班数。",
         "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295326\" OR c.search_city_id = \"10295326\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295326\" OR c.search_city_id = \"10295326\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
         "Q": "列出在Reao中，使用频率最高的前5公务机及其航班数。",
         "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295340\" OR c.search_city_id = \"10295340\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295340\" OR c.search_city_id = \"10295340\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
         "Q": "列出在Tureia中，使用频率最高的前5公务机及其航班数。",
         "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295368\" OR c.search_city_id = \"10295368\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295368\" OR c.search_city_id = \"10295368\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
         "Q": "列出在Maupiti中，使用频率最高的前5公务机及其航班数。",
         "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295379\" OR c.search_city_id = \"10295379\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10295379\" OR c.search_city_id = \"10295379\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
@@ -88,9 +88,13 @@
             [
                 "VH-ILJ",
                 1
+            ],
+            [
+                "N996GA",
+                1
             ]
         ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10297424\" OR c.search_city_id = \"10297424\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"10297424\" OR c.search_city_id = \"10297424\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
@@ -99,218 +103,26 @@
             [
                 "VT-SRC",
                 9
+            ],
+            [
+                "VT-VRS",
+                9
+            ],
+            [
+                "VT-VRV",
+                2
+            ],
+            [
+                "B-651H",
+                1
             ]
         ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1030\" OR c.search_city_id = \"1030\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1030\" OR c.search_city_id = \"1030\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     },
     {
         "DB": "ai_database_dev",
         "Q": "列出在Kerch中，使用频率最高的前5公务机及其航班数。",
         "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1038\" OR c.search_city_id = \"1038\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在McKinley Park中，使用频率最高的前5公务机及其航班数。",
-        "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1057\" OR c.search_city_id = \"1057\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Neom中，使用频率最高的前5公务机及其航班数。",
-        "A": [
-            [
-                "SU-GCI",
-                3
-            ]
-        ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1068\" OR c.search_city_id = \"1068\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Mostar中，使用频率最高的前5公务机及其航班数。",
-        "A": [
-            [
-                "I-MDEA",
-                2
-            ]
-        ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1075\" OR c.search_city_id = \"1075\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Pecs中，使用频率最高的前5公务机及其航班数。",
-        "A": [
-            [
-                "OO-ROK",
-                5
-            ]
-        ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1082\" OR c.search_city_id = \"1082\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在York中，使用频率最高的前5公务机及其航班数。",
-        "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1094\" OR c.search_city_id = \"1094\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Simferopol中，使用频率最高的前5公务机及其航班数。",
-        "A": [
-            [
-                "4K-JJ888",
-                3
-            ]
-        ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1111\" OR c.search_city_id = \"1111\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在King George Island中，使用频率最高的前5公务机及其航班数。",
-        "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1120\" OR c.search_city_id = \"1120\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Dakhla-Oued Ed-Dahab中，使用频率最高的前5公务机及其航班数。",
-        "A": [
-            [
-                "9H-SOL",
-                12
-            ]
-        ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"11281886\" OR c.search_city_id = \"11281886\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Sevastopol中，使用频率最高的前5公务机及其航班数。",
-        "A": [
-            [
-                "YL-DAM",
-                1
-            ]
-        ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1132\" OR c.search_city_id = \"1132\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Van Don District中，使用频率最高的前5公务机及其航班数。",
-        "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1133\" OR c.search_city_id = \"1133\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Wangi-Wangi中，使用频率最高的前5公务机及其航班数。",
-        "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1138\" OR c.search_city_id = \"1138\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Suba中，使用频率最高的前5公务机及其航班数。",
-        "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"11395668\" OR c.search_city_id = \"11395668\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Gilgit-Baltistan中，使用频率最高的前5公务机及其航班数。",
-        "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1168878\" OR c.search_city_id = \"1168878\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Muzaffarabad中，使用频率最高的前5公务机及其航班数。",
-        "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1169606\" OR c.search_city_id = \"1169606\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Bamerny中，使用频率最高的前5公务机及其航班数。",
-        "A": [
-            [
-                "TC-ALG",
-                1
-            ]
-        ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1180\" OR c.search_city_id = \"1180\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Brampton Island中，使用频率最高的前5公务机及其航班数。",
-        "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1182\" OR c.search_city_id = \"1182\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Azad Kashmir中，使用频率最高的前5公务机及其航班数。",
-        "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1184196\" OR c.search_city_id = \"1184196\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Belep Island中，使用频率最高的前5公务机及其航班数。",
-        "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1191\" OR c.search_city_id = \"1191\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Beni中，使用频率最高的前5公务机及其航班数。",
-        "A": [
-            [
-                "A7-CHD",
-                1
-            ]
-        ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1195\" OR c.search_city_id = \"1195\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Bronnoysund中，使用频率最高的前5公务机及其航班数。",
-        "A": [],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1203\" OR c.search_city_id = \"1203\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Kaili中，使用频率最高的前5公务机及其航班数。",
-        "A": [
-            [
-                "A7-CGD",
-                1
-            ]
-        ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1216\" OR c.search_city_id = \"1216\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Ballykelly中，使用频率最高的前5公务机及其航班数。",
-        "A": [
-            [
-                "G-LUSO",
-                2
-            ]
-        ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1224\" OR c.search_city_id = \"1224\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Bodo中，使用频率最高的前5公务机及其航班数。",
-        "A": [
-            [
-                "LN-KYV",
-                67
-            ]
-        ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1225\" OR c.search_city_id = \"1225\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
-    },
-    {
-        "DB": "ai_database_dev",
-        "Q": "列出在Masai Mara中，使用频率最高的前5公务机及其航班数。",
-        "A": [
-            [
-                "OH-EAX",
-                6
-            ]
-        ],
-        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"124\" OR c.search_city_id = \"124\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 1;"
+        "SQL": "SELECT\n        d.registration,\n        count(*) AS num\nFROM\n        zts_plane_flight a\n        JOIN aircraft_details d ON a.pure_reg = d.pure_reg\n        LEFT JOIN avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\n        LEFT JOIN avigo_nlp_dev.dc_airport c ON a.arr_icao = c.icao_code\nWHERE\n        ( b.search_city_id = \"1038\" OR c.search_city_id = \"1038\" )\n        AND dep_icao <> arr_icao\nGROUP BY\n        d.registration\nORDER BY\n        num DESC\n        LIMIT 5;"
     }
 ]
