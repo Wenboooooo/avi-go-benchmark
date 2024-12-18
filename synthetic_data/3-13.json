@@ -1,0 +1,206 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Jamestown中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1010\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1010\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Niue Island中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1020\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1020\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Tiakur中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1026\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1026\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Anaa中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295215\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295215\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Arutua中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295216\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295216\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Fangatau中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295218\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295218\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Hikueru中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295301\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295301\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Nukutavake中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295321\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295321\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Rangiroa中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295326\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295326\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Reao中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295340\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295340\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Tureia中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295368\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295368\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Maupiti中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295379\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10295379\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Moorea-Maiao中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10297424\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"10297424\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Jharsuguda中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1030\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1030\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Kerch中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1038\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1038\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析McKinley Park中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1057\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1057\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Neom中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1068\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1068\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Mostar中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1075\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1075\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Pecs中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1082\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1082\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析York中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1094\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1094\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Simferopol中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1111\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1111\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析King George Island中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1120\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1120\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Dakhla-Oued Ed-Dahab中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"11281886\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"11281886\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Sevastopol中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1132\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1132\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Van Don District中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1133\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1133\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Wangi-Wangi中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1138\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1138\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Suba中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"11395668\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"11395668\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Gilgit-Baltistan中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1168878\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1168878\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Muzaffarabad中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1169606\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1169606\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Bamerny中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1180\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1180\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Brampton Island中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1182\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1182\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Azad Kashmir中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1184196\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1184196\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Belep Island中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1191\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1191\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "分析Beni中，各机场的航班量，并找出排名前三的机场。",
+        "A": null,
+        "SQL": "SELECT\n    ad.supplier_id,\n    COUNT(*) AS flight_num\nFROM\n    zts_plane_flight zpf\nJOIN\n    aircraft_details ad ON zpf.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1195\"\n    AND zpf.arr_date >= '2023-11-01 00:00:00'\n    AND zpf.arr_date < '2024-11-02 00:00:00'\n    AND zpf.dep_icao <> zpf.arr_icao\nGROUP BY\n    ad.supplier_id;\n\n-- 修正后的第二个查询\nSELECT\n    c.area_id,\n    c.area_name,\n    COUNT(*) AS flight_count\nFROM\n    zts_plane_flight a\nLEFT JOIN\n    avigo_nlp_dev.dc_airport b ON a.dep_icao = b.icao_code\nLEFT JOIN\n    avigo_nlp_dev.dc_country c ON b.country_id = c.id\nJOIN\n    aircraft_details ad ON a.pure_reg = ad.pure_reg\nWHERE\n    ad.supplier_id = \"1195\"\n    AND a.arr_date >= '2023-11-01 00:00:00'\n    AND a.arr_date < '2024-11-02 00:00:00'\n    AND a.dep_icao <> a.arr_icao\nGROUP BY\n    c.area_id,\n    c.area_name\nORDER BY\n    flight_count DESC\nLIMIT 3;"
+    }
+]

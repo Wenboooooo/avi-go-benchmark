@@ -1,0 +1,1946 @@
+[
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在16 L Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"16TT\" OR a.arr_icao = \"16TT\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在16 Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"36MT\" OR a.arr_icao = \"36MT\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在17th Of September的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Bombardier Global 7500",
+                4,
+                14,
+                14
+            ],
+            [
+                "Cessna Citation Excel",
+                2,
+                9,
+                9
+            ],
+            [
+                "Bombardier Global 6000",
+                1,
+                14,
+                14
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"FNBG\" OR a.arr_icao = \"FNBG\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在18 Meadows Aerodrome的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"18AA\" OR a.arr_icao = \"18AA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在1904 Private Runway的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"4OK0\" OR a.arr_icao = \"4OK0\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在2 X 4 Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"NM47\" OR a.arr_icao = \"NM47\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在28 De Noviembre的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Dassault Falcon 2000EX EASy",
+                1,
+                10,
+                10
+            ],
+            [
+                "Gulfstream G280",
+                1,
+                10,
+                10
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SAWT\" OR a.arr_icao = \"SAWT\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在2C Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"10TS\" OR a.arr_icao = \"10TS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在3 Barrel Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"TT65\" OR a.arr_icao = \"TT65\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在3 Mill Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"44XS\" OR a.arr_icao = \"44XS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在3 Rivers Recreation Area的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OG00\" OR a.arr_icao = \"OG00\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在3-I Rocker Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"UT79\" OR a.arr_icao = \"UT79\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在3-M's的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"96GA\" OR a.arr_icao = \"96GA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在4 Holes Field的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"44SC\" OR a.arr_icao = \"44SC\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在4 S Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"TS25\" OR a.arr_icao = \"TS25\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在4 Winds Aerodrome的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"IN45\" OR a.arr_icao = \"IN45\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在4-Shipp的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"4XA5\" OR a.arr_icao = \"4XA5\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在40 Acre Airstrip的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"ID52\" OR a.arr_icao = \"ID52\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在4d Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"04TT\" OR a.arr_icao = \"04TT\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在4M Ranch Airfield的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Pilatus PC-12",
+                2,
+                8,
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"48TE\" OR a.arr_icao = \"48TE\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在5 Lakes的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"PA81\" OR a.arr_icao = \"PA81\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在5B Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"1OK8\" OR a.arr_icao = \"1OK8\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在6 Mile Airpark的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"06TT\" OR a.arr_icao = \"06TT\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在6 Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"05OR\" OR a.arr_icao = \"05OR\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在6666 Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"6TE6\" OR a.arr_icao = \"6TE6\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在6b Airfield的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OK68\" OR a.arr_icao = \"OK68\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在7 Bays的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"73WA\" OR a.arr_icao = \"73WA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在74 Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Bombardier Challenger 604",
+                1,
+                12,
+                12
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"0XA5\" OR a.arr_icao = \"0XA5\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在7R Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"CL25\" OR a.arr_icao = \"CL25\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在85th Avenue Airstrip的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"FD02\" OR a.arr_icao = \"FD02\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在A & L的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"96KY\" OR a.arr_icao = \"96KY\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在A & P Airpark的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"LS77\" OR a.arr_icao = \"LS77\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在A 306的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"RKNC\" OR a.arr_icao = \"RKNC\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在A 511的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Gulfstream G450",
+                1,
+                14,
+                14
+            ],
+            [
+                "Hawker 800XPi",
+                1,
+                9,
+                9
+            ],
+            [
+                "Embraer Phenom 300",
+                1,
+                8,
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"RKSG\" OR a.arr_icao = \"RKSG\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在A A Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Piper PA",
+                3,
+                6,
+                6
+            ],
+            [
+                "Embraer Praetor 600",
+                1,
+                9,
+                9
+            ],
+            [
+                "Gulfstream GV",
+                1,
+                17,
+                17
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"WY11\" OR a.arr_icao = \"WY11\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在A Coruña Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation CJ1",
+                194,
+                6,
+                4
+            ],
+            [
+                "Cessna Citation CJ2+",
+                36,
+                8,
+                6
+            ],
+            [
+                "Bombardier Global Express",
+                18,
+                15,
+                13
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"LECO\" OR a.arr_icao = \"LECO\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在A G A Farms的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"61PN\" OR a.arr_icao = \"61PN\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在A J Patrol的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"LS09\" OR a.arr_icao = \"LS09\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在A Z Minerals Corporation的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"03UT\" OR a.arr_icao = \"03UT\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在A. Paul Vance Fredericktown Regional的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation CJ1",
+                3,
+                5,
+                5
+            ],
+            [
+                "Hawker 900XP",
+                1,
+                9,
+                9
+            ],
+            [
+                "Bombardier Challenger 604",
+                1,
+                9,
+                9
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"H88\" OR a.arr_icao = \"H88\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在A.N.R. Robinson International Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna 402",
+                7,
+                7,
+                7
+            ],
+            [
+                "Bombardier Challenger 604",
+                3,
+                11,
+                11
+            ],
+            [
+                "Bombardier Global Express",
+                1,
+                14,
+                14
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"TTCP\" OR a.arr_icao = \"TTCP\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aalborg Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Beechcraft King Air B200",
+                157,
+                6,
+                6
+            ],
+            [
+                "Beechcraft King Air 350",
+                28,
+                8,
+                8
+            ],
+            [
+                "Bombardier Challenger 605",
+                22,
+                12,
+                10
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"EKYT\" OR a.arr_icao = \"EKYT\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aamby Valley的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Bombardier Learjet 45",
+                7,
+                9,
+                9
+            ],
+            [
+                "Embraer Legacy 600",
+                5,
+                13,
+                13
+            ],
+            [
+                "Beechcraft King Air B200",
+                2,
+                8,
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"VAAV\" OR a.arr_icao = \"VAAV\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aanenson的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"KLYV\" OR a.arr_icao = \"KLYV\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aarhus Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation CJ2+",
+                88,
+                7,
+                6
+            ],
+            [
+                "Cessna Citation II",
+                65,
+                8,
+                8
+            ],
+            [
+                "Pilatus PC-12",
+                37,
+                8,
+                6
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"EKAH\" OR a.arr_icao = \"EKAH\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aasiaat Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"BGAA\" OR a.arr_icao = \"BGAA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aba的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"FZJF\" OR a.arr_icao = \"FZJF\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aba的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SNDH\" OR a.arr_icao = \"SNDH\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aba Hongyuan Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"ZUHY\" OR a.arr_icao = \"ZUHY\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aba Tenna D Yilma Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Beechcraft King Air 350",
+                1,
+                9,
+                9
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"HADR\" OR a.arr_icao = \"HADR\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abaco I Walker C的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna 208",
+                25,
+                9,
+                8
+            ],
+            [
+                "Piper PA",
+                7,
+                7,
+                7
+            ],
+            [
+                "Cessna 402",
+                7,
+                7,
+                7
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"MYAW\" OR a.arr_icao = \"MYAW\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abadan Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OIAA\" OR a.arr_icao = \"OIAA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abaete的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SNLI\" OR a.arr_icao = \"SNLI\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abaiang的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"NGAB\" OR a.arr_icao = \"NGAB\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abakan International Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"UNAA\" OR a.arr_icao = \"UNAA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abare的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SDLI\" OR a.arr_icao = \"SDLI\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abbaye的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"GQNE\" OR a.arr_icao = \"GQNE\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abbeville的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Pilatus PC-12",
+                3,
+                8,
+                8
+            ],
+            [
+                "Cessna Citation II",
+                1,
+                8,
+                8
+            ],
+            [
+                "Bombardier Challenger 850",
+                1,
+                13,
+                13
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"LFOI\" OR a.arr_icao = \"LFOI\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abbeville的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation XLS+",
+                2,
+                8,
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SC81\" OR a.arr_icao = \"SC81\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abbeville Crusta Meml的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Pilatus PC-12",
+                4,
+                7,
+                6
+            ],
+            [
+                "Cessna Citation Latitude",
+                4,
+                9,
+                9
+            ],
+            [
+                "Embraer Phenom 300",
+                3,
+                6,
+                6
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"KIYA\" OR a.arr_icao = \"KIYA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abbeville Municipal的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"0J0\" OR a.arr_icao = \"0J0\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abbeyshrule的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation CJ3",
+                1,
+                7,
+                7
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"EIAB\" OR a.arr_icao = \"EIAB\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abbotsford International Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Beechcraft King Air B200",
+                31,
+                7,
+                7
+            ],
+            [
+                "Hawker 800XP",
+                7,
+                8,
+                8
+            ],
+            [
+                "Boeing BBJ",
+                7,
+                18,
+                18
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"CYXX\" OR a.arr_icao = \"CYXX\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abbott的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"VG58\" OR a.arr_icao = \"VG58\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abbottabad的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Embraer Legacy 650",
+                1,
+                13,
+                13
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OPAB\" OR a.arr_icao = \"OPAB\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abbotts的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"6ME6\" OR a.arr_icao = \"6ME6\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abbs的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OYBS\" OR a.arr_icao = \"OYBS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abdanan的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OICD\" OR a.arr_icao = \"OICD\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abdelhafid Boussouf Bou Chekif Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"DAOB\" OR a.arr_icao = \"DAOB\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abeche的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Boeing BBJ",
+                1,
+                19,
+                19
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"FTTC\" OR a.arr_icao = \"FTTC\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abeid Amani Karume International Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Pilatus PC-12",
+                27,
+                8,
+                8
+            ],
+            [
+                "Bombardier Learjet 45",
+                6,
+                8,
+                8
+            ],
+            [
+                "Bombardier Global Express",
+                5,
+                12,
+                9
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"HTZA\" OR a.arr_icao = \"HTZA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abel Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"17MT\" OR a.arr_icao = \"17MT\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abel Santamaria Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Bombardier Global Express",
+                1,
+                15,
+                15
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"MUSC\" OR a.arr_icao = \"MUSC\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abemama Atoll的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"NGTB\" OR a.arr_icao = \"NGTB\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abengourou的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"DIAU\" OR a.arr_icao = \"DIAU\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aberdeen Field的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation III",
+                1,
+                8,
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"31VA\" OR a.arr_icao = \"31VA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aberdeen International Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation XLS+",
+                20,
+                9,
+                8
+            ],
+            [
+                "Pilatus PC-12",
+                18,
+                8,
+                8
+            ],
+            [
+                "Embraer Phenom 300",
+                16,
+                8,
+                6
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"EGPD\" OR a.arr_icao = \"EGPD\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aberdeen Municipal的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Dassault Falcon 900",
+                1,
+                12,
+                12
+            ],
+            [
+                "Cessna Citation CJ1",
+                1,
+                5,
+                5
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"U36\" OR a.arr_icao = \"U36\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aberdeen Regional Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Beechcraft King Air 350",
+                70,
+                9,
+                9
+            ],
+            [
+                "Beechcraft King Air 90",
+                30,
+                6,
+                6
+            ],
+            [
+                "Hawker 400XP",
+                23,
+                8,
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"KABR\" OR a.arr_icao = \"KABR\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abernathy Field的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation Bravo",
+                6,
+                7,
+                7
+            ],
+            [
+                "Embraer Phenom 300",
+                2,
+                8,
+                8
+            ],
+            [
+                "Cessna Citation XLS",
+                2,
+                9,
+                9
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"KGZS\" OR a.arr_icao = \"KGZS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aberporth的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Beechcraft King Air B200",
+                2,
+                7,
+                7
+            ],
+            [
+                "Dassault Falcon 7X",
+                1,
+                13,
+                13
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"EGFA\" OR a.arr_icao = \"EGFA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abha Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Hawker 900XP",
+                12,
+                7,
+                7
+            ],
+            [
+                "Boeing 737",
+                5,
+                56,
+                56
+            ],
+            [
+                "Gulfstream G450",
+                4,
+                12,
+                12
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OEAB\" OR a.arr_icao = \"OEAB\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abi的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"AK46\" OR a.arr_icao = \"AK46\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abide Airpark的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Beechcraft King Air B200",
+                1,
+                7,
+                7
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"MS30\" OR a.arr_icao = \"MS30\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abilene的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"14VG\" OR a.arr_icao = \"14VG\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abilene Executive Airpark的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"TX00\" OR a.arr_icao = \"TX00\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abilene Municipal的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation CJ3",
+                3,
+                7,
+                6
+            ],
+            [
+                "Embraer Phenom 300",
+                2,
+                8,
+                8
+            ],
+            [
+                "Bombardier Learjet 60",
+                1,
+                7,
+                7
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"K78\" OR a.arr_icao = \"K78\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abilene Regional Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Embraer Phenom 300",
+                6,
+                6,
+                6
+            ],
+            [
+                "Cessna Citation X",
+                6,
+                8,
+                8
+            ],
+            [
+                "Pilatus PC-12",
+                5,
+                8,
+                7
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"KABI\" OR a.arr_icao = \"KABI\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abingdon Downs的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation CJ2",
+                2,
+                6,
+                6
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"YABI\" OR a.arr_icao = \"YABI\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abong-M`BANG的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"FKAG\" OR a.arr_icao = \"FKAG\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abqaiq的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Hawker 900XP",
+                4,
+                7,
+                7
+            ],
+            [
+                "Dassault Falcon 7X",
+                1,
+                13,
+                13
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OEBQ\" OR a.arr_icao = \"OEBQ\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abraham Gonzalez International Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Boeing 737",
+                28,
+                13,
+                13
+            ],
+            [
+                "Cessna Citation III",
+                22,
+                10,
+                10
+            ],
+            [
+                "Beechcraft King Air B200",
+                9,
+                8,
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"MMCS\" OR a.arr_icao = \"MMCS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abraham Lincoln Capital Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation XLS",
+                30,
+                9,
+                7
+            ],
+            [
+                "Hawker 400XP",
+                18,
+                8,
+                6
+            ],
+            [
+                "Hawker 900XP",
+                14,
+                9,
+                9
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"KSPI\" OR a.arr_icao = \"KSPI\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abraham Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"7CA1\" OR a.arr_icao = \"7CA1\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abrams Municipal的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Beechcraft King Air 200",
+                5,
+                9,
+                8
+            ],
+            [
+                "Cessna Citation Ultra",
+                3,
+                7,
+                7
+            ],
+            [
+                "Cessna Citation XLS",
+                2,
+                8,
+                7
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"4D0\" OR a.arr_icao = \"4D0\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abresso的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"WASC\" OR a.arr_icao = \"WASC\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abruzzo Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Bombardier Global 6000",
+                26,
+                19,
+                8
+            ],
+            [
+                "Cessna Citation CJ2",
+                20,
+                7,
+                6
+            ],
+            [
+                "Cessna Citation CJ2+",
+                14,
+                7,
+                6
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"LIBP\" OR a.arr_icao = \"LIBP\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abu Dhabi International Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Boeing BBJ",
+                91,
+                28,
+                19
+            ],
+            [
+                "Bombardier Learjet 60",
+                61,
+                7,
+                6
+            ],
+            [
+                "Bombardier Global 6000",
+                40,
+                14,
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OMAA\" OR a.arr_icao = \"OMAA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abu Simbel Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Airbus A330",
+                14,
+                264,
+                264
+            ],
+            [
+                "Gulfstream G650ER",
+                1,
+                13,
+                13
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"HEBL\" OR a.arr_icao = \"HEBL\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abumumbazi的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"FZFE\" OR a.arr_icao = \"FZFE\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Abumusa Island Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OIBA\" OR a.arr_icao = \"OIBA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Acadiana Regl的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Beechcraft King Air B200",
+                11,
+                8,
+                5
+            ],
+            [
+                "Embraer Phenom 300",
+                9,
+                8,
+                6
+            ],
+            [
+                "Bombardier Learjet 45",
+                6,
+                8,
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"KARA\" OR a.arr_icao = \"KARA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Accomack County的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Piper PA-32",
+                5,
+                5,
+                5
+            ],
+            [
+                "Hawker 400XP",
+                4,
+                7,
+                7
+            ],
+            [
+                "Cessna Citation XLS",
+                2,
+                8,
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"KMFV\" OR a.arr_icao = \"KMFV\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Accurate的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"67WI\" OR a.arr_icao = \"67WI\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Achinsk Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Dassault Falcon 7X",
+                1,
+                11,
+                11
+            ],
+            [
+                "Gulfstream G550",
+                1,
+                16,
+                16
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"UNKS\" OR a.arr_icao = \"UNKS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Achmad Yani International Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"WAHS\" OR a.arr_icao = \"WAHS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Ackerman Choctaw County的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation Latitude",
+                12,
+                9,
+                9
+            ],
+            [
+                "Embraer Phenom 300",
+                9,
+                8,
+                6
+            ],
+            [
+                "Embraer Phenom 100",
+                1,
+                5,
+                5
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"9M4\" OR a.arr_icao = \"9M4\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Ackley Municipal的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"4C7\" OR a.arr_icao = \"4C7\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Acme Field的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"WA12\" OR a.arr_icao = \"WA12\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Acu的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SNUC\" OR a.arr_icao = \"SNUC\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Ada的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"0D7\" OR a.arr_icao = \"0D7\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Ada Municipal的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Beechcraft King Air 350i",
+                2,
+                9,
+                9
+            ],
+            [
+                "Bombardier Learjet 35A",
+                2,
+                8,
+                8
+            ],
+            [
+                "Cessna Citation VII",
+                2,
+                9,
+                9
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"KADH\" OR a.arr_icao = \"KADH\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adair的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"6KY4\" OR a.arr_icao = \"6KY4\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adak Island Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Gulfstream G100",
+                5,
+                7,
+                7
+            ],
+            [
+                "Beechcraft King Air B200",
+                2,
+                9,
+                9
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"PADK\" OR a.arr_icao = \"PADK\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adam的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Gulfstream GIV-SP",
+                1,
+                14,
+                14
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OOAD\" OR a.arr_icao = \"OOAD\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adams的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"8NC\" OR a.arr_icao = \"8NC\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adams的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"90PA\" OR a.arr_icao = \"90PA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adams County Legion Field的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"63C\" OR a.arr_icao = \"63C\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adams Private的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"94IS\" OR a.arr_icao = \"94IS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adams Restricted Landing Area Number 1的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"70LL\" OR a.arr_icao = \"70LL\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adams Restricted Landing Area Number 2的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"2LL7\" OR a.arr_icao = \"2LL7\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adams Strip的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"83OH\" OR a.arr_icao = \"83OH\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adana Airfield的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"40FL\" OR a.arr_icao = \"40FL\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adana Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Gulfstream G450",
+                49,
+                14,
+                14
+            ],
+            [
+                "Hawker 850XP",
+                12,
+                8,
+                8
+            ],
+            [
+                "Dassault Falcon 2000",
+                11,
+                10,
+                10
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"LTAF\" OR a.arr_icao = \"LTAF\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adazi的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Embraer ERJ 145",
+                2,
+                50,
+                50
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"EVAD\" OR a.arr_icao = \"EVAD\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Addington Field的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"4TX8\" OR a.arr_icao = \"4TX8\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Addington Field的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Beechcraft King Air B200",
+                107,
+                9,
+                9
+            ],
+            [
+                "Cessna Citation XLS",
+                28,
+                7,
+                7
+            ],
+            [
+                "Cessna Citation Sovereign",
+                12,
+                8,
+                8
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"KEKX\" OR a.arr_icao = \"KEKX\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Addis Ababa Bole International Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Beechcraft King Air 350",
+                99,
+                9,
+                9
+            ],
+            [
+                "Bombardier Global 6000",
+                10,
+                14,
+                14
+            ],
+            [
+                "Pilatus PC-12",
+                5,
+                8,
+                6
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"HAAB\" OR a.arr_icao = \"HAAB\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Addison的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Cessna Citation VII",
+                401,
+                9,
+                7
+            ],
+            [
+                "Cessna Citation X",
+                267,
+                8,
+                8
+            ],
+            [
+                "Cessna Citation XLS",
+                112,
+                9,
+                7
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"KADS\" OR a.arr_icao = \"KADS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Addison Municipal的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"2A8\" OR a.arr_icao = \"2A8\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Addison-Henley Field的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"0MS7\" OR a.arr_icao = \"0MS7\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adelaide Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Beechcraft King Air B200",
+                532,
+                13,
+                9
+            ],
+            [
+                "Beechcraft King Air 200",
+                111,
+                9,
+                9
+            ],
+            [
+                "Gulfstream G150",
+                82,
+                7,
+                7
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"YPAD\" OR a.arr_icao = \"YPAD\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adelanto的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"52CL\" OR a.arr_icao = \"52CL\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aden Adde International Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [
+            [
+                "Gulfstream G650ER",
+                2,
+                13,
+                13
+            ]
+        ],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"HCMM\" OR a.arr_icao = \"HCMM\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aden International Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OYAA\" OR a.arr_icao = \"OYAA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adin的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": [],
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"A26\" OR a.arr_icao = \"A26\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adirondack Airpark Estates的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"NY17\" OR a.arr_icao = \"NY17\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adirondack Regional Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"KSLK\" OR a.arr_icao = \"KSLK\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adisumarmo International Airport  的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"WAHQ\" OR a.arr_icao = \"WAHQ\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adisutjipto International Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"WAHH\" OR a.arr_icao = \"WAHH\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adiyaman Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"LTCP\" OR a.arr_icao = \"LTCP\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adjuntas的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"PR20\" OR a.arr_icao = \"PR20\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adkins RLA Restricted Landing Area的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"8IL0\" OR a.arr_icao = \"8IL0\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adkisson的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"IL32\" OR a.arr_icao = \"IL32\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adnan Menderes Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"LTBJ\" OR a.arr_icao = \"LTBJ\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adobe Ranch Private的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"NM37\" OR a.arr_icao = \"NM37\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adrar Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"DAUA\" OR a.arr_icao = \"DAUA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adustina的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SNAH\" OR a.arr_icao = \"SNAH\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Adventures Aloft的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"MO07\" OR a.arr_icao = \"MO07\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aek Godang Airport的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"WIME\" OR a.arr_icao = \"WIME\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aeleron的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"08LS\" OR a.arr_icao = \"08LS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aerequus的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"38PA\" OR a.arr_icao = \"38PA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aerie的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"1GA9\" OR a.arr_icao = \"1GA9\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aeritalia的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"LIMA\" OR a.arr_icao = \"LIMA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Acres的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"FD88\" OR a.arr_icao = \"FD88\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Acres的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"IL51\" OR a.arr_icao = \"IL51\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero B Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"00AA\" OR a.arr_icao = \"00AA\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Bear Field的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"CD23\" OR a.arr_icao = \"CD23\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Britton的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"MU77\" OR a.arr_icao = \"MU77\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Country的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"T31\" OR a.arr_icao = \"T31\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Estates的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"1WI6\" OR a.arr_icao = \"1WI6\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Estates的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"7IS2\" OR a.arr_icao = \"7IS2\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Estates的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"T25\" OR a.arr_icao = \"T25\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Flight Center的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"55OI\" OR a.arr_icao = \"55OI\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Lake Estates的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"30IS\" OR a.arr_icao = \"30IS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Lake Farm的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"2OI4\" OR a.arr_icao = \"2OI4\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Plaines的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"5II9\" OR a.arr_icao = \"5II9\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Plantation的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"NC21\" OR a.arr_icao = \"NC21\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Saylee的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"43TS\" OR a.arr_icao = \"43TS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aero Tech Inc的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"NM42\" OR a.arr_icao = \"NM42\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aeroacres的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"OG30\" OR a.arr_icao = \"OG30\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aeroclube的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SNJO\" OR a.arr_icao = \"SNJO\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aeroclube De Alagoas的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SNGS\" OR a.arr_icao = \"SNGS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aeroclube de Bento Gonçalves的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SSBG\" OR a.arr_icao = \"SSBG\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aeroclube De Birigui的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SJWQ\" OR a.arr_icao = \"SJWQ\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aeroclube De Itapolis的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SDIO\" OR a.arr_icao = \"SDIO\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aeroclube de Santa Catarina的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SSKT\" OR a.arr_icao = \"SSKT\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aérodrome de Sistéron-Vaumeilh的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"LFNS\" OR a.arr_icao = \"LFNS\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aérodrome de Tarbes Laloubère的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"LFDT\" OR a.arr_icao = \"LFDT\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aérodrome de Vinon的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"LFNF\" OR a.arr_icao = \"LFNF\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aerodrome Les Noyers的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"50OH\" OR a.arr_icao = \"50OH\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aerodromo Nacional De Aviacao的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"SWNV\" OR a.arr_icao = \"SWNV\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aeroflex/Andover的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"12N\" OR a.arr_icao = \"12N\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aerogrange的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"66IL\" OR a.arr_icao = \"66IL\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "总结在Aerostone Ranch的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。",
+        "A": null,
+        "SQL": "SELECT\n    b.aircraft_model_name,\n    COUNT(*) AS num,\n    MAX(b.seat_num) AS max_seat_num,\n    MIN(b.seat_num) AS min_seat_num\nFROM\n    zts_plane_flight a\nJOIN\n    aircraft_details b ON a.pure_reg = b.pure_reg\nWHERE\n    (a.dep_icao = \"03WN\" OR a.arr_icao = \"03WN\")\nGROUP BY\n    b.aircraft_model_name\nORDER BY\n    num DESC\nLIMIT 3;"
+    }]
