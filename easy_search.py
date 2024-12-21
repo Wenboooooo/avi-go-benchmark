@@ -1,5 +1,6 @@
 import numpy as np
 import os
+from tabulate import tabulate
 
 # os.environ['https_proxy'] = 'http://127.0.0.1:7890'
 # os.environ['http_proxy'] = 'http://127.0.0.1:7890'
@@ -72,7 +73,7 @@ def query_revise(retrieval_model, query, convertion_dict, macth_dict):
     return query
 
 
-def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, llm_name, connections, convertion_dict, macth_dict, only_need_sql=False):
+def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, llm_name, connections, convertion_dict, macth_dict, only_need_sql=False, result_markdown=False):
     num = 5
     while num > 0:
         try:
@@ -80,7 +81,6 @@ def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, 
             topk_similar_questions = find_topk_similar(retrieval_model, query, benchmark_questions, benchmark_question_embeddings, k=3)
             few_shot_data = [Q_templates[question] for question in topk_similar_questions]
             # query_database = few_shot_data[0]["query_database"]
-            few_shot_data
             query = query_revise(retrieval_model, query, convertion_dict, macth_dict)
 
             prompt = generate_prompt(query, few_shot_data)
@@ -94,13 +94,18 @@ def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, 
                 
             # print(query_database)
             # print(colored(sql, 'yellow'))
-            
+
+            # todo 需要去写一个Spark的版本
             if not only_need_sql:
                 connection = connections[query_database]
                 cursor = connection.cursor()
                 cursor.execute(sql)
-                result = cursor.fetchall()
-            
+                if not result_markdown:
+                    result = cursor.fetchall()
+                else:
+                    rows = cursor.fetchall()
+                    cols = [desc[0] for desc in cursor.description]
+                    result = tabulate(tabular_data=rows, headers=cols, tablefmt='pipe')
             return sql, query_database, result if not only_need_sql else None
         except Exception as e:
             print(e)
@@ -128,9 +133,10 @@ if __name__ == '__main__':
 
     
     sql, query_database, result = SQL_RAG(query, Q_templates, benchmark_question_embeddings, model, "gpt4o", connections, only_need_sql=True)
-    
-    is_correct = SQL_judge(ref_sql, sql, connections[query_database], True)
-    print(is_correct)
+    print(sql)
+    print(result)
+    # is_correct = SQL_judge(ref_sql, sql, connections[query_database], True)
+    # print(is_correct)
 
 
 

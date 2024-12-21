@@ -6,6 +6,7 @@ import os
 from termcolor import colored
 import base64
 import re
+import pandas as pd
 import datetime
 
 # os.environ['https_proxy'] = '127.0.0.1:7890'
@@ -68,7 +69,7 @@ claude_HEADERS = {
     "Authorization": f"Bearer {claude_API_KEY}"
 }
 
-# TODO: 将后面所有的generate函数重构整合到一个函数中，根据llm_name选择调用哪个模型。llm_name是具体的模型名称，而不是模型种类。比如gpt-4o, 而不是gpt。下面的gpt4o_generate、kimi_generate、qwen_generate、claude_generate等之后都要删掉。
+# TODO: 改成OpenAI风格的generate函数，注意历史记录
 def LLM_generate(text, image_paths=[], temp=None, presence_penalty=None, is_print=False, llm_name='gpt4o'):
     API_KEY = ""
     API_URL = ""
@@ -323,13 +324,6 @@ def chatbi_generate(prompt):
             num -= 1
             continue
        
-if __name__ == '__main__':
-    prompt = 'Lublin Airport机场的三字码是什么？'
-    sql, result = chatbi_generate(prompt)
-    print(sql)
-    print(result)
-
-
 
 
 import json
@@ -384,8 +378,76 @@ def avibot_pro_generate(text, image_paths=None, temp=None, presence_penalty=None
     # 返回响应结果
     return res
 
+def format_result_as_markdown(result):
+    def format_list(lst):
+        return '\n'.join(format_item(item) for item in lst)
+
+    def format_item(item):
+        if isinstance(item, (int, float)):
+            return f'- {item}'
+        elif isinstance(item, str):
+            return f'- {item}'
+        elif isinstance(item, (list, tuple)):
+            return '\n' + format_list(item)
+        else:
+            return 'Unsupported data type'
+
+    markdown_text = ''
+    if isinstance(result, (int, float)):
+        markdown_text = f'{result}'
+    elif isinstance(result, str):
+        markdown_text = f'"{result}"'
+    elif isinstance(result, (list, tuple)):
+        markdown_text = format_list(result)
+    else:
+        markdown_text = 'Unsupported data type'
+
+    return f'```\n{markdown_text}\n```'
+
+
+def parse_sql_result_to_dataframe(sql, result):
+    """
+    解析 SQL 查询结果，将其尽可能转换为 Pandas DataFrame，并提取 SQL 查询中的表名。
+
+    参数:
+    sql (str): SQL 查询语句。
+    result: 从 SQL 查询返回的结果，可以是 int、float、str、list、tuple 等任意格式。
+
+    返回:
+    tuple: (pd.DataFrame, list)，其中包含：
+           - 转换后的 Pandas 数据框。
+           - 从 SQL 中提取的表名列表。
+    """
+    # 提取表名的正则表达式
+    table_name_pattern = r"FROM\s+([a-zA-Z_][a-zA-Z0-9_\.]*)|JOIN\s+([a-zA-Z_][a-zA-Z0-9_\.]*)"
+    matches = re.findall(table_name_pattern, sql, re.IGNORECASE)
+
+    # 提取表名（处理正则结果）
+    table_names = [match[0] if match[0] else match[1] for match in matches]
+
+    # 解析 result 数据为 DataFrame
+    if isinstance(result, (int, float)):
+        df = pd.DataFrame({"value": [result]})
+    elif isinstance(result, str):
+        df = pd.DataFrame({"value": [result]})
+    elif isinstance(result, list):
+        if all(isinstance(item, (list, tuple)) for item in result):
+            df = pd.DataFrame(result)
+        else:
+            df = pd.DataFrame({"value": result})
+    elif isinstance(result, tuple):
+        df = pd.DataFrame([result])
+    elif isinstance(result, dict):
+        df = pd.DataFrame([result])
+    else:
+        try:
+            df = pd.DataFrame(result)
+        except Exception as e:
+            raise ValueError(f"无法解析 result 数据：{e}")
+
+    return df, table_names
+
 # # 示例调用
-# if __name__ == "__main__":
-#     text = "你好"
-#     result = avibot_pro_generate(text, is_print=True)
-#     print("Final result:", result)
+if __name__ == "__main__":
+    result = [1, 2.5, "text", [3, 4, "nested list", (5, 6)]]
+    print(format_result_as_markdown(result))
