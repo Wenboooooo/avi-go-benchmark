@@ -481,7 +481,73 @@ def parse_sql_result_to_dataframe(sql, result):
 
     return df, table_names
 
-async def get_query_category(query):
+async def async_get_query_category(query):
+    know_sql_queries = [
+        '列出2023年每月飞行次数最多的前10个机场，以及每个机场的起降航班数量。',
+        '28 De Noviembre机场在2024年各月的飞行量（起降一起），并提供2024年每个月环比上一个月的增长率。（2024年1月环比2023年12月）',
+        '展示所有在17th Of September起降的航司、飞机，以及其对应的航线。',
+        '总结在17th Of September的所有航班中，最常使用的前三飞机型号及其座位数（取区间）。',
+        '列出在Jamestown中，使用频率最高的前5公务机及其航班数。',
+        'Aalborg Airport机场的四字码是什么？',
+        '查询在16 L Ranch停场的所有公务机及其注册号',
+        '24/7 Jet Inc.在2024年哪个月份的飞行量最大？该月的总航班数量是多少？',
+        '请提供注册号为n829dl的飞机在2024年每个月的飞行量是多少？按月份排序。',
+        '比较24/7 Jet Inc.在2024年在第1季度与第2季度的总飞行量及变化百分比。',
+        '从Jamestown到Niue Island，哪些机型可以直飞？',
+        '24/7 Jet Inc.在2024年每个月的飞行量是多少？按从大到小排列。',
+        '24/7 Jet Inc.在2024年运营的航线中，前五条最繁忙的航线及其飞行次数是多少？',
+        '展示2023-2024年中，Aircraft Services Group Inc.在St.Louis Lambert International Airport的航班数量及主要使用的飞机型号。',
+        'Embraer Phenom 300机型的最大飞行距离是多少？',
+        'A Coruna有哪些机场？请给出机场名称和对应的四字码。',
+        '2024年247 Aviation Ltd在Europe地区的每月总飞行量是多少？提供环比变化。',
+        '24/7 Jet Inc.航司的总部位于哪个城市？',
+        'Embraer Phenom 300的起飞重量是多少？',
+        '列出2024年各月使用最多的前五个飞机型号，并提供环比变化。',
+        '提供2024年每月各个国家的飞行量及其环比增长或下降百分比。',
+        'Embraer Phenom 300的翼展是多少？',
+        'Aalborg Airport机场的三字码是什么？',
+        '列出2023年每月飞行次数最多的前10个的国家，并提供环比变化。',
+        '飞机注册号为5N-CAB的飞机是哪一家公司的？',
+        '24/7 Jet Inc.航司的官网链接是什么？',
+        '列出注册号为9hxoa的飞机在2024年所有航班的详细信息。',
+        'Los Angeles的航空公司有哪些？',
+        '24/7 Jet Inc.的航班总量在2024年每个月的变化趋势如何？',
+        '查询所有在17th Of September起降的航班，并找出最常用的飞机型号。',
+        '在2024年24/7 Jet Inc.的前五大目的地国家（按航班量排序）有哪些？',
+        '提供2024年每月24/7 Jet Inc.的各机型平均飞行小时数。',
+        'Embraer Phenom 300机型的机身长度是多少？',
+        'Embraer Phenom 300机型的座位数是多少？',
+        '注册号为5N-CAB的飞机的制造年份是什么？',
+        '列出2024年01月到07月的飞行量增幅最大？提供增幅百分比。',
+        '24/7 Jet Inc.最繁忙的前10架飞机在2024年每个月的飞行量分别是多少？按注册号排序。',
+        '24/7 Jet Inc.在2024年每个月飞往United States的航班数量是怎样的？请按环比变化排序。',
+        '5N-CAB的制造商是谁？',
+        '哪些地区的飞行量在2024年的01月到06月显著增长？',
+        'Embraer Phenom 300的最大载客量是多少？',
+        '分析Jamestown中，各机场的航班量，并找出排名前三的机场。',
+        'Embraer Phenom 300机型在2024年每个月的飞行量变化如何？',
+        'Fleet information of 24/7 Jet Inc.？',
+        '列出Acadiana Regl在2024年每个月的起降航班数量，并提供环比增幅。',
+        '列出2023年各月飞行量增幅最大的地区，并提供环比增幅。',
+        '停场在Abraham Lincoln Capital Airport的所有航司有哪些？',
+        'Aalborg Airport机场在哪个国家哪个城市？请按照先国家后城市的顺序输出。',
+        '24/7 Jet Inc.在2024年每个月各机型的平均飞行小时数分别是多少？',
+        '24/7 Jet Inc.在过去的2024年飞行量变化趋势如何？是否有显著的增减？',
+        'Embraer Phenom 300的飞行高度范围是多少？',
+        '从Xinjiang到Ili，按照飞行次数推荐排名最靠前的航司？',
+        '列出2024年飞行量最多的机型及每月变化情况。'
+    ]
+    
+    prompt = f'''请判断以下问题是哪个种类的查询，你需要在“SQL查询问题”和“开放性问题”中选择一个。如果是“SQL”查询问题，请输出“0”，如果是“开放性问题”，请输出“1”。\n\n现在已知的SQL查询问题有：\n{"\n".join(know_sql_queries)}\n\n问题：空腿调机是什么？\n种类：1\n\n问题：展示2023-2024年中，Aircraft Services Group Inc.在St.Louis Lambert International Airport的航班数量及主要使用的飞机型号。\n种类：0\n\n问题：Los Angeles的航空公司有哪些？\n种类：0\nAalborg Airport机场的四字码是什么？\n种类：0\n\n问题：除冰费是什么？在什么情况下会产生此费用？\n种类：1\n\n问题：{query}\n种类：'''
+    # print(prompt)
+    res = LLM_generate(prompt).strip()
+    print(res)
+    if '0' == res[0] or '0' == res[-1]:
+        return 0
+    else:
+        return 1
+    
+def get_query_category(query):
     know_sql_queries = [
         '列出2023年每月飞行次数最多的前10个机场，以及每个机场的起降航班数量。',
         '28 De Noviembre机场在2024年各月的飞行量（起降一起），并提供2024年每个月环比上一个月的增长率。（2024年1月环比2023年12月）',
