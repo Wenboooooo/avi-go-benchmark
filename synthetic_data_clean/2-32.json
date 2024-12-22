@@ -1,0 +1,674 @@
+[
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年01月到07月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "449833",
+                12245,
+                15086,
+                2841,
+                "23.20%"
+            ],
+            [
+                "719597",
+                13420,
+                16078,
+                2658,
+                "19.81%"
+            ],
+            [
+                "444718",
+                10636,
+                13066,
+                2430,
+                "22.85%"
+            ],
+            [
+                "568693",
+                7592,
+                9283,
+                1691,
+                "22.27%"
+            ],
+            [
+                "995197",
+                14793,
+                16290,
+                1497,
+                "10.12%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-01'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-07'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年01月到08月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "449833",
+                12245,
+                15412,
+                3167,
+                "25.86%"
+            ],
+            [
+                "719597",
+                13420,
+                15783,
+                2363,
+                "17.61%"
+            ],
+            [
+                "444718",
+                10636,
+                12510,
+                1874,
+                "17.62%"
+            ],
+            [
+                "995197",
+                14793,
+                16002,
+                1209,
+                "8.17%"
+            ],
+            [
+                "113033",
+                3181,
+                4288,
+                1107,
+                "34.80%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-01'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-08'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年01月到09月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "719597",
+                13420,
+                15998,
+                2578,
+                "19.21%"
+            ],
+            [
+                "995197",
+                14793,
+                17064,
+                2271,
+                "15.35%"
+            ],
+            [
+                "449833",
+                12245,
+                14235,
+                1990,
+                "16.25%"
+            ],
+            [
+                "444718",
+                10636,
+                12434,
+                1798,
+                "16.90%"
+            ],
+            [
+                "332441",
+                7017,
+                8093,
+                1076,
+                "15.33%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-01'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-09'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年01月到10月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "821692",
+                16,
+                25,
+                9,
+                "56.25%"
+            ],
+            [
+                "854724",
+                4,
+                12,
+                8,
+                "200.00%"
+            ],
+            [
+                "398544",
+                47,
+                53,
+                6,
+                "12.77%"
+            ],
+            [
+                "674065",
+                19,
+                24,
+                5,
+                "26.32%"
+            ],
+            [
+                "479833",
+                145,
+                149,
+                4,
+                "2.76%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-01'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-10'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年02月到07月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "449833",
+                12496,
+                15086,
+                2590,
+                "20.73%"
+            ],
+            [
+                "568693",
+                7531,
+                9283,
+                1752,
+                "23.26%"
+            ],
+            [
+                "444718",
+                11508,
+                13066,
+                1558,
+                "13.54%"
+            ],
+            [
+                "719597",
+                14602,
+                16078,
+                1476,
+                "10.11%"
+            ],
+            [
+                "995197",
+                15177,
+                16290,
+                1113,
+                "7.33%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-02'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-07'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年02月到08月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "449833",
+                12496,
+                15412,
+                2916,
+                "23.34%"
+            ],
+            [
+                "719597",
+                14602,
+                15783,
+                1181,
+                "8.09%"
+            ],
+            [
+                "444718",
+                11508,
+                12510,
+                1002,
+                "8.71%"
+            ],
+            [
+                "568693",
+                7531,
+                8358,
+                827,
+                "10.98%"
+            ],
+            [
+                "995197",
+                15177,
+                16002,
+                825,
+                "5.44%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-02'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-08'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年02月到09月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "995197",
+                15177,
+                17064,
+                1887,
+                "12.43%"
+            ],
+            [
+                "449833",
+                12496,
+                14235,
+                1739,
+                "13.92%"
+            ],
+            [
+                "719597",
+                14602,
+                15998,
+                1396,
+                "9.56%"
+            ],
+            [
+                "444718",
+                11508,
+                12434,
+                926,
+                "8.05%"
+            ],
+            [
+                "568693",
+                7531,
+                8349,
+                818,
+                "10.86%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-02'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-09'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年02月到10月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "686489",
+                458,
+                498,
+                40,
+                "8.73%"
+            ],
+            [
+                "861277",
+                3,
+                9,
+                6,
+                "200.00%"
+            ],
+            [
+                "415386",
+                36,
+                41,
+                5,
+                "13.89%"
+            ],
+            [
+                "479833",
+                144,
+                149,
+                5,
+                "3.47%"
+            ],
+            [
+                "965460",
+                28,
+                31,
+                3,
+                "10.71%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-02'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-10'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年03月到07月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "449833",
+                13076,
+                15086,
+                2010,
+                "15.37%"
+            ],
+            [
+                "568693",
+                8244,
+                9283,
+                1039,
+                "12.60%"
+            ],
+            [
+                "444718",
+                12369,
+                13066,
+                697,
+                "5.64%"
+            ],
+            [
+                "784323",
+                725,
+                1084,
+                359,
+                "49.52%"
+            ],
+            [
+                "113033",
+                3986,
+                4296,
+                310,
+                "7.78%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-03'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-07'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年03月到08月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "449833",
+                13076,
+                15412,
+                2336,
+                "17.86%"
+            ],
+            [
+                "113033",
+                3986,
+                4288,
+                302,
+                "7.58%"
+            ],
+            [
+                "784323",
+                725,
+                941,
+                216,
+                "29.79%"
+            ],
+            [
+                "444718",
+                12369,
+                12510,
+                141,
+                "1.14%"
+            ],
+            [
+                "573692",
+                3850,
+                3986,
+                136,
+                "3.53%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-03'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-08'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年03月到09月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "449833",
+                13076,
+                14235,
+                1159,
+                "8.86%"
+            ],
+            [
+                "113033",
+                3986,
+                4236,
+                250,
+                "6.27%"
+            ],
+            [
+                "434289",
+                2830,
+                3009,
+                179,
+                "6.33%"
+            ],
+            [
+                "573692",
+                3850,
+                4014,
+                164,
+                "4.26%"
+            ],
+            [
+                "231159",
+                490,
+                599,
+                109,
+                "22.24%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-03'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-09'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年03月到10月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "296440",
+                45,
+                61,
+                16,
+                "35.56%"
+            ],
+            [
+                "965460",
+                23,
+                31,
+                8,
+                "34.78%"
+            ],
+            [
+                "861277",
+                1,
+                9,
+                8,
+                "800.00%"
+            ],
+            [
+                "324639",
+                4,
+                11,
+                7,
+                "175.00%"
+            ],
+            [
+                "821692",
+                25,
+                25,
+                0,
+                "0.00%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-03'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-10'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年04月到07月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "449833",
+                13571,
+                15086,
+                1515,
+                "11.16%"
+            ],
+            [
+                "568693",
+                7887,
+                9283,
+                1396,
+                "17.70%"
+            ],
+            [
+                "444718",
+                12242,
+                13066,
+                824,
+                "6.73%"
+            ],
+            [
+                "784323",
+                688,
+                1084,
+                396,
+                "57.56%"
+            ],
+            [
+                "113033",
+                3945,
+                4296,
+                351,
+                "8.90%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-04'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-07'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年04月到08月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "449833",
+                13571,
+                15412,
+                1841,
+                "13.57%"
+            ],
+            [
+                "568693",
+                7887,
+                8358,
+                471,
+                "5.97%"
+            ],
+            [
+                "113033",
+                3945,
+                4288,
+                343,
+                "8.69%"
+            ],
+            [
+                "444718",
+                12242,
+                12510,
+                268,
+                "2.19%"
+            ],
+            [
+                "784323",
+                688,
+                941,
+                253,
+                "36.77%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-04'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-08'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年04月到09月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "449833",
+                13571,
+                14235,
+                664,
+                "4.89%"
+            ],
+            [
+                "568693",
+                7887,
+                8349,
+                462,
+                "5.86%"
+            ],
+            [
+                "113033",
+                3945,
+                4236,
+                291,
+                "7.38%"
+            ],
+            [
+                "791339",
+                1906,
+                2126,
+                220,
+                "11.54%"
+            ],
+            [
+                "444718",
+                12242,
+                12434,
+                192,
+                "1.57%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-04'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-09'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    },
+    {
+        "DB": "ai_database_dev",
+        "Q": "列出2024年04月到10月的飞行量增幅最大？提供增幅百分比。",
+        "A": [
+            [
+                "823930",
+                158,
+                185,
+                27,
+                "17.09%"
+            ],
+            [
+                "398544",
+                37,
+                53,
+                16,
+                "43.24%"
+            ],
+            [
+                "459977",
+                25,
+                35,
+                10,
+                "40.00%"
+            ],
+            [
+                "861277",
+                2,
+                9,
+                7,
+                "350.00%"
+            ],
+            [
+                "245466",
+                166,
+                171,
+                5,
+                "3.01%"
+            ]
+        ],
+        "SQL": "WITH biao_1 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS last_num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-04'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ),\n        biao_2 AS (\n        SELECT\n                a.date_month,\n                b.aircraft_model_id,\n                count(*) AS num\n        FROM\n                zts_plane_flight_1 a\n                JOIN ai_target_jet b ON a.pure_reg = b.pure_reg\n        WHERE\n                a.date_month = '2024-10'\n        GROUP BY\n                a.date_month,\n                b.aircraft_model_id\n        ) SELECT\n        a.aircraft_model_id,\n        a.last_num,\n        b.num,(\n                b.num - a.last_num\n        ) AS diff_num,\n        concat( round(( b.num - a.last_num )/ a.last_num * 100, 2 ), '%' ) AS rate\nFROM\n        biao_1 a\n        JOIN biao_2 b ON a.aircraft_model_id = b.aircraft_model_id\nORDER BY\n        ( b.num - a.last_num ) DESC\n        LIMIT 5;"
+    }
+]
