@@ -1,0 +1,254 @@
+[
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Niue Island，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1020\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Tiakur，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1026\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Anaa，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"10295215\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Arutua，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"10295216\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Fangatau，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"10295218\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Hikueru，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"10295301\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Nukutavake，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"10295321\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Rangiroa，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"10295326\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Reao，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"10295340\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Tureia，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"10295368\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Maupiti，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"10295379\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Moorea-Maiao，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"10297424\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Jharsuguda，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1030\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Kerch，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1038\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到McKinley Park，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1057\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Neom，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1068\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Mostar，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1075\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Pecs，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1082\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到York，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1094\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Simferopol，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1111\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到King George Island，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1120\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Dakhla-Oued Ed-Dahab，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"11281886\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Sevastopol，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1132\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Van Don District，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1133\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Wangi-Wangi，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1138\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Suba，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"11395668\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Gilgit-Baltistan，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1168878\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Muzaffarabad，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1169606\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Bamerny，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1180\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Brampton Island，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1182\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Azad Kashmir，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1184196\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Belep Island，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1191\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Beni，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1195\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Bronnoysund，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1203\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Kaili，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1216\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Ballykelly，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1224\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Bodo，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1225\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Masai Mara，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"124\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Baler，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1248\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到West Siang，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1252865\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Port Elizabeth，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"1257\" "
+    },
+    {
+        "DB": "data_center_dev",
+        "Q": "从Jamestown到Tynda Urban District，哪些机型可以直飞？",
+        "A": null,
+        "SQL": "SELECT\nGROUP_CONCAT(distinct b.aircraft_model) as use_aircraft_model\nFROM\ndeer.zts_plane_flight a\n        JOIN deer.zts_plane_status b ON LOWER(\n        REPLACE ( REPLACE ( a.registration, ' ', '' ), '-', '' )) = b.pure_reg\n        LEFT JOIN dc_airport c ON a.dep_icao = c.icao_code\n        LEFT JOIN dc_airport d ON a.arr_icao = d.icao_code\nWHERE\n        a.dep_icao <> a.arr_icao\n        AND b.aircraft_model IS NOT NULL\n        AND c.search_city_id = \"1010\"\n        AND d.search_city_id = \"12624879\" "
+    }
+]
