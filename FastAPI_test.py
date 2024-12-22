@@ -10,6 +10,7 @@ import time
 from utils import *
 from easy_search import SQL_RAG,preprocess_passages
 from sentence_transformers import SentenceTransformer
+import openai
 
 app = Flask(__name__)
 # 初始化检索相关内容
@@ -103,100 +104,83 @@ def generate_BaseDO_response(prompt, model, messages):
     result =  asyncio.run(inner_generate_BaseDO_response(prompt, model, messages))
     return result
 
-# 流式输出生成器（改进后的实现）
-def generate_stream_response(prompt, model, messages):
-    """
-    流式输出生成器，逐块返回数据，符合目标格式需求。
-    """
-    content = generate_BaseDO_response(prompt, model, messages)  # 生成完整的响应内容
-    chunk_size = 5  # 每次返回的字符数（可调整）
-    response_id = f"chatcmpl-{uuid.uuid4().hex[:20]}"  # 唯一ID
-    created = int(time.time())  # 时间戳
-    system_fingerprint = "fpv0_80e0c0a3"  # 模拟的系统指纹
 
-    # 分块返回
-    for i in range(0, len(content), chunk_size):
-        chunk_content = content[i:i + chunk_size]
-        yield json.dumps({
-            "id": response_id,
+# 流式输出生成器（改进后的实现）
+@app.route('/v1/chat/completions', methods=['POST'])
+def generate_stream_response():
+    print(colored(request.json, 'green'))
+    data = request.json
+    messages = data.get("messages", [])
+    model = data.get("model", "gpt-4o")
+    stream = data.get("stream", True)
+
+    if not messages:
+        return jsonify({"error": "messages 参数缺失"}), 400
+
+    # 获取用户输入内容
+    prompt = messages[-1].get("content", "")
+
+    return_obj = {
+            "id": "42",
             "object": "chat.completion.chunk",
-            "created": created,
+            "created": "42",
             "model": model,
             "choices": [
                 {
                     "index": 0,
-                    "delta": {"content": chunk_content},
+                    "delta": {"content": None},
                     "finish_reason": None
                 }
             ],
-            "system_fingerprint": system_fingerprint
-        }) + "\n"
+            "system_fingerprint": "42"
+    }
 
-    # 最后返回结束标志
-    yield json.dumps({
-        "id": response_id,
-        "object": "chat.completion.chunk",
-        "created": created,
-        "model": model,
-        "choices": [
-            {
-                "index": 0,
-                "": {},
-                "finish_reason": "stop"
-            }
-        ],
-        "system_fingerprint": system_fingerprint
-    }) + "\n"
-    yield "[DONE]\n\n"
-
-# 接口 /v1/chat/completions
-@app.route('/v1/chat/completions', methods=['POST'])
-def chat_completions():
-    try:
-        # 获取请求参数
-        data = request.json
-        messages = data.get("messages", [])
-        model = data.get("model", "gpt-4")
-        stream = data.get("stream", False)
-
-        if not messages:
-            return jsonify({"error": "messages 参数缺失"}), 400
-
-        # 获取用户输入内容
-        prompt = messages[-1].get("content", "")
-
+    category = get_query_category(prompt)
+    if category == 1:
+        print(colored("Category: LLM_generate", 'red'))
         if stream:
-            # 流式输出
-            def stream_response():
-                for chunk in generate_stream_response(prompt, model, messages):
-                    yield f"data: {chunk}\n\n"
+            def generate():
+                API_URL = GPT4O_API_URL
+                HEADERS = GPT4O_HEADERS
+                selected_model = 'gpt-4o'
+                data = {"model": selected_model, "messages": messages, "stream": True}
+                data = json.dumps(data)
+                response = requests.post(API_URL, headers=HEADERS, data=data, stream=True)
 
-            return Response(stream_response(), content_type='text/event-stream')
-        else:
-            # 一次性完整输出
-            content = generate_response(prompt, model)
-            response_data = {
-                "id": "chatcmpl-123",
-                "object": "chat.completion",
-                "created": 123456789,
-                "model": model,
-                "choices": [
-                    {
-                        "index": 0,
-                        "message": {"role": "assistant", "content": content},
-                        "finish_reason": "stop"
-                    }
-                ],
-                "usage": {
-                    "prompt_tokens": len(prompt),
-                    "completion_tokens": len(content),
-                    "total_tokens": len(prompt) + len(content)
-                }
-            }
-            return jsonify(response_data)
+                if response.status_code == 200:
+                    for line in response.iter_lines():
+                        if line:
+                            decoded_line = line.decode('utf-8')
+                            if decoded_line == 'data: [DONE]':  # Stream completion check
+                                yield 'data: [DONE]'
+                            try:
+                                line_data = json.loads(decoded_line[6:])
+                                # print(line_data)
+                                data = line_data.get('choices', [{}])[0].get('delta', {}).get('content', '')
+                                if data:
+                                    # print(data)
+                                    return_obj['choices'][0]['delta']['content'] = data
+                                    yield 'data: ' + json.dumps(return_obj) + '\n\n'
+                            except Exception as e:
+                                print(e)
+            return Response(generate(), mimetype='text/event-stream')
+    else:
+        print(colored("Category: SQL_RAG", 'red'))
+        sql, query_database, result = SQL_RAG(
+            prompt, Q_templates, benchmark_question_embeddings, retrieval_model, 
+            'gpt4o', connections, convertion_dict, match_dict, 
+            only_need_sql=False, result_markdown=True, spark_query=True
+        )
+        print(sql)
+        print(result)
+        return_obj['choices'][0]['delta']['content'] = result
+        return_obj['choices'][0]['finish_reason'] = "stop"
+        def generate():
+            yield 'data: ' + json.dumps(return_obj) + '\n\n'
+            yield 'data: [DONE]'
+        return Response(generate(), mimetype='text/event-stream')
 
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+
 
 # 接口 /v1/chat/completions/models
 @app.route('/v1/models', methods=['GET'])

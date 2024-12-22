@@ -41,13 +41,46 @@ def generate_prompt(query, few_shot_data):
     return prompt
 
 
-async def query_revise(retrieval_model, query, convertion_dict, macth_dict):
+async def async_query_revise(retrieval_model, query, convertion_dict, macth_dict):
     slots = "aircraft_model_name: {}\naircraft_registration: {}\nairport_name: {}\ncity_name: {}"
     slot_filling_prompt = f'''Given the following text, please fill in the slots with the correct values:\n\nText: {query}\n\nSlots:\n{slots}\n\nYour should output a json with slot as key and value as value. For example:\n```json\n{{\n    "aircraft_model_name": "Boeing 737",\n    "aircraft_registration": "",\n    "airport_name": "",\n    "city_name": ""\n}}\n```\nIf you don't know the answer, please leave the value empty.\nDo not modify the table names and statement structure in the example SQL statements you provide.\n'''
 
 
     # response = LLM_generate(slot_filling_prompt, is_print=True)
     response = await asyn_gpt4o_generate(slot_filling_prompt)
+    json_str = re.search(r'```json\n(.*?)\n```', response, re.DOTALL).group(1)
+    json_obj = json.loads(json_str)
+    append_strs = []
+
+    for k, v in list(json_obj.items()):
+        if not v:
+            json_obj.pop(k)
+            continue
+        if 'registration' in k:
+            continue
+        revise_v =  find_topk_similar(retrieval_model, v, macth_dict[k]['names'], macth_dict[k]['embeddings'], k=1)[0]
+        print(f'{k}: {v} --> {revise_v}')
+        json_obj[k] = revise_v
+        identifier = 'id' if k != 'airport_name' else 'icao'
+        match_value = convertion_dict[k + f'2{identifier}'][revise_v]
+        json_obj[k.replace('_name', f'_{identifier}')] = match_value
+        query.replace(v, revise_v)
+        tmp = f'''{revise_v}对应的的{k.replace('_name', f'_{identifier}')}为"{match_value}"'''
+        append_strs.append(tmp)
+        # print(colored(tmp, 'red'))
+        # query += '\n' + tmp
+
+    # print(colored(query, 'red'))
+
+    return query
+
+
+def query_revise(retrieval_model, query, convertion_dict, macth_dict):
+    slots = "aircraft_model_name: {}\naircraft_registration: {}\nairport_name: {}\ncity_name: {}"
+    slot_filling_prompt = f'''Given the following text, please fill in the slots with the correct values:\n\nText: {query}\n\nSlots:\n{slots}\n\nYour should output a json with slot as key and value as value. For example:\n```json\n{{\n    "aircraft_model_name": "Boeing 737",\n    "aircraft_registration": "",\n    "airport_name": "",\n    "city_name": ""\n}}\n```\nIf you don't know the answer, please leave the value empty.\nDo not modify the table names and statement structure in the example SQL statements you provide.\n'''
+
+
+    response = LLM_generate(slot_filling_prompt, is_print=True)
     json_str = re.search(r'```json\n(.*?)\n```', response, re.DOTALL).group(1)
     json_obj = json.loads(json_str)
     append_strs = []
@@ -137,7 +170,68 @@ def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, 
             return None, None, None
         
 
-async def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, llm_name, connections, convertion_dict, macth_dict, only_need_sql=False, result_markdown=False, spark_query=False):
+# async def async_SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, llm_name, connections, convertion_dict, macth_dict, only_need_sql=False, result_markdown=False, spark_query=False):
+#     num = 5
+#     while num > 0:
+#         try:
+#             start_time = time.time()
+#             benchmark_questions = list(Q_templates.keys())
+#             topk_similar_questions = find_topk_similar(retrieval_model, query, benchmark_questions, benchmark_question_embeddings, k=3)
+#             few_shot_data = [Q_templates[question] for question in topk_similar_questions]
+#             # query_database = few_shot_data[0]["query_database"]
+#             query = await query_revise(retrieval_model, query, convertion_dict, macth_dict)
+
+#             prompt = generate_prompt(query, few_shot_data)
+#             # print(prompt)
+#             response = await asyn_gpt4o_generate(prompt)
+#             # print(response)
+#             sql = re.search(r'```sql\n(.*?)\n```', response, re.DOTALL).group(1).strip()
+#             # if not sql.startswith('SELECT'):
+#             #     raise Exception("Not a SELECT query")
+#             query_database = re.search(r'DB: (.*?)\n', response).group(1).strip()
+                
+#             # print(query_database)
+#             # print(colored(sql, 'yellow'))
+#             end_time = time.time()
+#             print(colored(f"SQL Generation Time cost: {end_time - start_time:.2f}s", 'red'))
+
+#             if not only_need_sql:
+#                 start_time = time.time()
+#                 if spark_query:
+#                     query_database = "spark"
+#                     result_markdown = True
+#                     connection = connections[query_database]
+#                     df = connection.sql(sql)
+
+#                     columns = df.columns
+#                     rows = df.collect()
+#                     data_list = []
+#                     for row in rows:
+#                         data_list.append([row[col] for col in columns])
+
+#                     # 使用 tabulate 生成 Markdown 格式表格
+#                     result = tabulate(data_list, headers=columns, tablefmt="pipe")
+#                 else:
+#                     connection = connections[query_database]
+#                     cursor = connection.cursor()
+#                     cursor.execute(sql)
+#                     if not result_markdown:
+#                         result = cursor.fetchall()
+#                     else:
+#                         rows = cursor.fetchall()
+#                         cols = [desc[0] for desc in cursor.description]
+#                         result = tabulate(tabular_data=rows, headers=cols, tablefmt='pipe')
+#                 end_time = time.time()
+#                 print(colored(f"Query Time cost: {end_time - start_time:.2f}s", 'red'))
+#             return sql, query_database, result if not only_need_sql else None
+#         except Exception as e:
+#             print(e)
+#             num -= 1
+#             if num > 0:
+#                 continue
+#             return None, None, None
+        
+def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_model, llm_name, connections, convertion_dict, macth_dict, only_need_sql=False, result_markdown=False, spark_query=False):
     num = 5
     while num > 0:
         try:
@@ -146,11 +240,11 @@ async def SQL_RAG(query, Q_templates, benchmark_question_embeddings, retrieval_m
             topk_similar_questions = find_topk_similar(retrieval_model, query, benchmark_questions, benchmark_question_embeddings, k=3)
             few_shot_data = [Q_templates[question] for question in topk_similar_questions]
             # query_database = few_shot_data[0]["query_database"]
-            query = await query_revise(retrieval_model, query, convertion_dict, macth_dict)
+            query = query_revise(retrieval_model, query, convertion_dict, macth_dict)
 
             prompt = generate_prompt(query, few_shot_data)
             # print(prompt)
-            response = await asyn_gpt4o_generate(prompt)
+            response = LLM_generate(prompt)
             # print(response)
             sql = re.search(r'```sql\n(.*?)\n```', response, re.DOTALL).group(1).strip()
             # if not sql.startswith('SELECT'):
